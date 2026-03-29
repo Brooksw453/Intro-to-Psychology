@@ -1,0 +1,21 @@
+{
+  "chapterId": 10,
+  "weekNum": 10,
+  "title": "Understanding Emotion and Motivation",
+  "prompt": "Think about a time when your emotions influenced your motivation or your motivation shaped your emotional experience. Describe the situation and analyze it using at least one theory of emotion (James-Lange, Cannon-Bard, Schachter-Singer, or cognitive appraisal) and at least one concept related to motivation (intrinsic/extrinsic motivation, drive theory, arousal theory, or Maslow's hierarchy). How did the interplay between emotion and motivation affect your behavior and decision-making in that situation?",
+  "requirements": {
+    "initialPost": {
+      "minWords": 150,
+      "maxWords": 200,
+      "dueDay": "Wednesday",
+      "dueTime": "11:59 PM ET"
+    },
+    "replies": {
+      "count": 2,
+      "minWords": 75,
+      "maxWords": 100,
+      "dueDay": "Sunday",
+      "dueTime": "11:59 PM ET"
+    }
+  }
+}

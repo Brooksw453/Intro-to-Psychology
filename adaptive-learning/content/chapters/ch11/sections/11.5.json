@@ -1,0 +1,45 @@
+{
+  "sectionId": "11.5",
+  "chapterId": 11,
+  "title": "Humanistic Approaches",
+  "learningObjectives": [
+    "Describe Maslow's hierarchy of needs and the concept of self-actualization",
+    "Explain Rogers' person-centered theory including the real self, ideal self, and conditions of worth",
+    "Evaluate the strengths and limitations of humanistic personality theories"
+  ],
+  "keyTerms": [
+    { "term": "Self-actualization", "definition": "The realization of one's full potential, representing the highest level in Maslow's hierarchy of needs." },
+    { "term": "Hierarchy of needs", "definition": "Maslow's theory that human needs are arranged in a pyramid, with basic physiological needs at the base and self-actualization at the top." },
+    { "term": "Ideal self", "definition": "In Rogers' theory, the person you would like to be, reflecting your goals, ambitions, and values." },
+    { "term": "Real self", "definition": "In Rogers' theory, the person you actually are, based on your genuine thoughts, feelings, and behaviors." },
+    { "term": "Unconditional positive regard", "definition": "In Rogers' theory, acceptance and support of a person regardless of what the person says or does." },
+    { "term": "Congruence", "definition": "The degree of alignment between the real self and the ideal self; greater congruence is associated with psychological health." }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "Maslow's Hierarchy of Needs",
+      "body": "The **humanistic perspective** emerged in the mid-20th century as a reaction to both psychoanalysis and behaviorism. Humanistic psychologists argued that Freud's focus on dysfunction and Skinner's reduction of humans to stimulus-response machines missed the most important aspects of human experience: creativity, meaning, personal growth, and free will.\n\n**Abraham Maslow** (1908-1970) proposed that human behavior is motivated by a **hierarchy of needs**, often depicted as a pyramid. At the base are **physiological needs** (food, water, shelter), followed by **safety needs** (security, stability). Next come **belongingness and love needs** (relationships, social connection), then **esteem needs** (self-respect, recognition from others). At the pinnacle is **self-actualization** -- the drive to realize one's full potential and become the best version of oneself.\n\nMaslow argued that lower-level needs must be substantially met before higher-level needs become motivating forces. A person struggling with food insecurity is unlikely to focus on creative self-expression. However, Maslow acknowledged that the hierarchy is not rigid; some individuals may pursue higher needs even when lower ones are unmet. He studied individuals he considered self-actualized, including Abraham Lincoln, Albert Einstein, and Eleanor Roosevelt, identifying characteristics such as creativity, spontaneity, acceptance of reality, deep interpersonal relationships, and a continued freshness of appreciation for life."
+    },
+    {
+      "type": "concept",
+      "title": "Rogers' Person-Centered Theory",
+      "body": "**Carl Rogers** (1902-1987) developed a person-centered approach that places the individual's subjective experience at the heart of personality. Rogers believed that every person has an innate tendency toward growth and fulfillment, which he called the **actualizing tendency**. When this tendency is supported by the environment, healthy personality development occurs.\n\nCentral to Rogers' theory is the distinction between the **real self** (who you actually are) and the **ideal self** (who you want to be). When there is significant overlap between these two -- a state Rogers called **congruence** -- a person experiences psychological well-being. When there is a large gap between the real and ideal selves (incongruence), anxiety and dissatisfaction result.\n\nRogers argued that incongruence often develops because of **conditions of worth** -- the implicit message from parents and society that love and acceptance are conditional upon meeting certain standards. Children who receive love only when they behave in approved ways may suppress their authentic feelings and develop a distorted self-concept. In contrast, children who receive **unconditional positive regard** -- acceptance and love without conditions -- are free to explore, make mistakes, and develop authentically.\n\nIn therapy, Rogers advocated creating a supportive environment characterized by unconditional positive regard, empathy, and genuineness. He believed that within such a relationship, individuals could reconnect with their authentic selves and move toward greater congruence and self-actualization."
+    },
+    {
+      "type": "example",
+      "title": "Congruence and Incongruence",
+      "body": "Consider a college student who loves art and dreams of becoming a painter (**ideal self**) but is majoring in business because her parents expect her to pursue a \"practical\" career. She performs adequately in her courses but feels unfulfilled and anxious. According to Rogers, this student is experiencing **incongruence** -- a significant gap between her real self (a creative person drawn to artistic expression) and the self she presents to meet **conditions of worth** (a dutiful child pursuing her parents' goals).\n\nIf this student were to receive unconditional positive regard from a therapist, mentor, or supportive friend -- someone who values her regardless of her career choice -- she might feel safe enough to explore her genuine interests and work toward greater congruence. Rogers would predict that as the gap between her real and ideal selves narrows, her anxiety would decrease and her sense of well-being would increase."
+    },
+    {
+      "type": "summary",
+      "body": "Humanistic approaches emphasize personal growth, self-actualization, and the inherent goodness of human nature. Maslow's hierarchy of needs describes motivation as progressing from basic survival needs to the drive for self-actualization. Rogers' person-centered theory highlights the importance of congruence between the real and ideal selves, unconditional positive regard, and the actualizing tendency. While humanistic theories have been praised for their positive view of human nature, they have been criticized for being difficult to test empirically and for underestimating the role of unconscious and environmental forces."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-11.5",
+    "prompt": "Using Rogers' concepts of the real self, ideal self, and congruence, describe a situation (real or hypothetical) in which a person experiences incongruence. What role might conditions of worth play in creating this incongruence? How could unconditional positive regard help the person move toward greater congruence and well-being?",
+    "minWords": 100,
+    "rubric": "A strong response should: (1) accurately define the real self, ideal self, and congruence, (2) describe a specific and realistic scenario of incongruence, (3) explain how conditions of worth contribute to the gap between the real and ideal selves, (4) describe how unconditional positive regard could address the incongruence, and (5) demonstrate understanding of Rogers' broader theoretical perspective."
+  }
+}

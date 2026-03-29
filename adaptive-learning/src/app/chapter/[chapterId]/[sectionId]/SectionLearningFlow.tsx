@@ -1,0 +1,284 @@
+'use client';
+
+import { useState } from 'react';
+import { useRouter } from 'next/navigation';
+import ContentRenderer from '@/components/ContentRenderer';
+import QuizGate from '@/components/QuizGate';
+import FreeTextPrompt from '@/components/FreeTextPrompt';
+import RemediationPanel from '@/components/RemediationPanel';
+import AskQuestionPanel from '@/components/AskQuestionPanel';
+import type { SectionContent, GateQuiz, ProgressStatus } from '@/lib/types';
+
+type FlowStep = 'content' | 'quiz' | 'remediation' | 'free_text' | 'completed';
+
+interface Props {
+  section: SectionContent;
+  quiz: GateQuiz;
+  chapterId: number;
+  sectionId: string;
+  initialStatus: ProgressStatus;
+  hasPassedQuiz: boolean;
+  hasPassedFreeText: boolean;
+  savedQuizScore: number | null;
+  nextSectionUrl: string | null;
+  chapterUrl: string;
+}
+
+export default function SectionLearningFlow({
+  section,
+  quiz,
+  chapterId,
+  sectionId,
+  initialStatus,
+  hasPassedQuiz,
+  hasPassedFreeText,
+  savedQuizScore,
+  nextSectionUrl,
+  chapterUrl,
+}: Props) {
+  const router = useRouter();
+
+  // Determine initial step based on actual progress in the database
+  function getInitialStep(): FlowStep {
+    if (initialStatus === 'completed') return 'completed';
+    if (hasPassedQuiz) return 'free_text'; // Quiz done, resume at writing
+    return 'content';
+  }
+
+  const [currentStep, setCurrentStep] = useState<FlowStep>(getInitialStep());
+  const [quizScore, setQuizScore] = useState<number | null>(savedQuizScore);
+  const [freeTextScore, setFreeTextScore] = useState<number | null>(null);
+  const [missedQuestionIds, setMissedQuestionIds] = useState<string[]>([]);
+  const [remediationCount, setRemediationCount] = useState(0);
+  const [showReviewContent, setShowReviewContent] = useState(false);
+  const [reviewingContent, setReviewingContent] = useState(false);
+  const [askQuestionContext, setAskQuestionContext] = useState<{
+    blockTitle: string;
+    blockBody: string;
+  } | null>(null);
+
+  function handleReadyForQuiz() {
+    setCurrentStep('quiz');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function handleQuizResult(passed: boolean, score: number, missedIds?: string[]) {
+    setQuizScore(score);
+    if (passed) {
+      setCurrentStep('free_text');
+    } else {
+      setMissedQuestionIds(missedIds || []);
+      setRemediationCount((prev) => prev + 1);
+      setCurrentStep('remediation');
+    }
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function handleFreeTextResult(passed: boolean, score: number) {
+    setFreeTextScore(score);
+    if (passed) {
+      setCurrentStep('completed');
+      router.refresh();
+    }
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  return (
+    <div className="space-y-8">
+      {/* Progress Steps Indicator */}
+      <nav aria-label="Learning progress" className="flex flex-wrap items-center gap-2 justify-center">
+        {(['content', 'quiz', 'free_text', 'completed'] as FlowStep[]).map((step, i) => {
+          const labels = ['Read', 'Quiz', 'Write', 'Done'];
+          const isActive = step === currentStep || (step === 'quiz' && currentStep === 'remediation');
+          const isPast =
+            (step === 'content' && ['quiz', 'remediation', 'free_text', 'completed'].includes(currentStep)) ||
+            (step === 'quiz' && ['free_text', 'completed'].includes(currentStep)) ||
+            (step === 'free_text' && currentStep === 'completed');
+
+          const canClick = isPast && step === 'content' && !reviewingContent;
+
+          return (
+            <div key={step} className="flex items-center gap-2">
+              {canClick ? (
+                <button
+                  onClick={() => { setReviewingContent(true); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
+                  aria-label="Review reading material"
+                  className="flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-3 py-1.5 rounded-full text-xs sm:text-sm font-medium transition-colors bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 hover:bg-green-200 dark:hover:bg-green-900/50 cursor-pointer"
+                >
+                  <svg className="w-4 h-4" aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  {labels[i]}
+                </button>
+              ) : (
+                <div
+                  aria-current={isActive ? 'step' : undefined}
+                  className={`flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-3 py-1.5 rounded-full text-xs sm:text-sm font-medium transition-colors ${
+                    isActive
+                      ? 'bg-blue-600 text-white'
+                      : isPast
+                        ? 'bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400'
+                        : 'bg-gray-100 dark:bg-gray-700 text-gray-400'
+                  }`}
+                >
+                  {isPast ? (
+                    <svg className="w-4 h-4" aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  ) : (
+                    <span className="w-4 text-center">{i + 1}</span>
+                  )}
+                  {labels[i]}
+                </div>
+              )}
+              {i < 3 && (
+                <div className={`w-4 sm:w-8 h-0.5 ${isPast ? 'bg-green-300 dark:bg-green-700' : 'bg-gray-200 dark:bg-gray-700'}`} />
+              )}
+            </div>
+          );
+        })}
+      </nav>
+
+      {/* Review Content (when clicking Read pill after completing it) */}
+      {reviewingContent && currentStep !== 'content' && (
+        <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4 mb-4">
+          <div className="flex items-center justify-between mb-3">
+            <h3 className="text-sm font-semibold text-blue-800 dark:text-blue-300">📖 Reviewing Reading Material</h3>
+            <button
+              onClick={() => { setReviewingContent(false); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
+              className="text-sm text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 font-medium"
+            >
+              ✕ Close Review
+            </button>
+          </div>
+          <ContentRenderer section={section} />
+        </div>
+      )}
+
+      {/* Remediation Step */}
+      {currentStep === 'remediation' && (
+        <RemediationPanel
+          chapterId={chapterId}
+          sectionId={sectionId}
+          missedQuestionIds={missedQuestionIds}
+          quizScore={quizScore || 0}
+          passThreshold={quiz.passThreshold}
+          remediationCount={remediationCount}
+          onReadyToRetry={() => {
+            setCurrentStep('quiz');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }}
+          onSkip={remediationCount >= 3 ? () => {
+            setCurrentStep('free_text');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          } : undefined}
+        />
+      )}
+
+      {/* Content Step */}
+      {currentStep === 'content' && (
+        <>
+          <ContentRenderer
+            section={section}
+            onAskQuestion={(title, body) => setAskQuestionContext({ blockTitle: title, blockBody: body })}
+          />
+          <div className="flex justify-center pt-4">
+            <button
+              onClick={handleReadyForQuiz}
+              className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg shadow-sm transition-colors text-lg"
+            >
+              I&apos;m ready for the Knowledge Check
+            </button>
+          </div>
+        </>
+      )}
+
+      {/* Quiz Step */}
+      {currentStep === 'quiz' && (
+        <QuizGate
+          quiz={quiz}
+          chapterId={chapterId}
+          sectionId={sectionId}
+          onResult={handleQuizResult}
+        />
+      )}
+
+      {/* Free Text Step */}
+      {currentStep === 'free_text' && (
+        <FreeTextPrompt
+          prompt={section.freeTextPrompt}
+          chapterId={chapterId}
+          sectionId={sectionId}
+          onResult={handleFreeTextResult}
+        />
+      )}
+
+      {/* Completed Step */}
+      {currentStep === 'completed' && (
+        <div className="space-y-6">
+          <div className="bg-green-50 dark:bg-green-900/30 border border-green-200 dark:border-green-800 rounded-lg p-8 text-center">
+            <div className="text-4xl mb-4">🎉</div>
+            <h3 className="text-2xl font-bold text-green-800 dark:text-green-300 mb-2">
+              Section Complete!
+            </h3>
+            <p className="text-green-700 dark:text-green-400 mb-2">
+              You&apos;ve mastered {section.sectionId} &mdash; {section.title}
+            </p>
+            {quizScore !== null && freeTextScore !== null && (
+              <p className="text-sm text-green-600 dark:text-green-400 mb-6">
+                Quiz: {Math.round(quizScore)}% | Written: {freeTextScore}% |
+                Mastery: {Math.round(quizScore * 0.6 + freeTextScore * 0.4)}%
+              </p>
+            )}
+            <div className="flex gap-4 justify-center flex-wrap">
+              <button
+                onClick={() => router.push(chapterUrl)}
+                className="px-6 py-3 border border-green-300 dark:border-green-700 text-green-700 dark:text-green-400 font-medium rounded-lg hover:bg-green-100 dark:hover:bg-green-900/40 transition-colors"
+              >
+                Back to Chapter
+              </button>
+              <button
+                onClick={() => {
+                  setShowReviewContent(!showReviewContent);
+                  if (!showReviewContent) {
+                    setTimeout(() => window.scrollTo({ top: 400, behavior: 'smooth' }), 100);
+                  }
+                }}
+                className="px-6 py-3 border border-blue-300 dark:border-blue-700 text-blue-700 dark:text-blue-400 font-medium rounded-lg hover:bg-blue-50 dark:hover:bg-blue-900/40 transition-colors"
+              >
+                {showReviewContent ? 'Hide Content' : '📖 Review Content'}
+              </button>
+              {nextSectionUrl && (
+                <button
+                  onClick={() => router.push(nextSectionUrl)}
+                  className="px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-medium rounded-lg transition-colors"
+                >
+                  Next Section &rarr;
+                </button>
+              )}
+            </div>
+          </div>
+
+          {/* Review Content (expandable) */}
+          {showReviewContent && (
+            <ContentRenderer
+              section={section}
+              onAskQuestion={(title, body) => setAskQuestionContext({ blockTitle: title, blockBody: body })}
+            />
+          )}
+        </div>
+      )}
+
+      {/* Ask a Question Panel - slide-out from right */}
+      <AskQuestionPanel
+        isOpen={askQuestionContext !== null}
+        onClose={() => setAskQuestionContext(null)}
+        chapterId={chapterId}
+        sectionId={sectionId}
+        blockTitle={askQuestionContext?.blockTitle || ''}
+        blockBody={askQuestionContext?.blockBody || ''}
+        sectionTitle={section.title}
+      />
+    </div>
+  );
+}

@@ -1,0 +1,29 @@
+{
+  "sectionId": "9.4",
+  "chapterId": 9,
+  "questions": [
+    {
+      "id": "ch09-q07",
+      "question": "According to the dual process model of coping with bereavement, healthy grieving involves:",
+      "options": [
+        { "text": "Moving through the five stages of grief in a fixed sequence", "correct": false },
+        { "text": "Suppressing grief and focusing exclusively on practical tasks", "correct": false },
+        { "text": "Oscillating between confronting emotional pain and attending to practical life changes", "correct": true },
+        { "text": "Resolving all grief within the first year after a loss", "correct": false }
+      ],
+      "explanation": "The dual process model, proposed by Stroebe and Schut, describes healthy grieving as oscillating between loss-oriented coping (processing emotional pain) and restoration-oriented coping (managing practical changes). This model recognizes that bereaved people need both mourning and rebuilding."
+    },
+    {
+      "id": "ch09-q08",
+      "question": "Which criticism of the Kubler-Ross model of dying is most supported by current research?",
+      "options": [
+        { "text": "The model only applies to people with terminal cancer", "correct": false },
+        { "text": "The five stages are experienced in a fixed, linear order by all dying individuals", "correct": false },
+        { "text": "The grief process is more variable and individual than the stage model suggests", "correct": true },
+        { "text": "The model ignores the existence of denial as a coping mechanism", "correct": false }
+      ],
+      "explanation": "Research has shown that the grief process is highly individual and does not follow a fixed sequence of stages. Not everyone experiences all five stages, and people may move between stages or experience several simultaneously. Kubler-Ross herself acknowledged this variability."
+    }
+  ],
+  "passThreshold": 80
+}

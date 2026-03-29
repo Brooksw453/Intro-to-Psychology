@@ -1,0 +1,29 @@
+{
+  "sectionId": "13.2",
+  "chapterId": 13,
+  "questions": [
+    {
+      "id": "ch13-q03",
+      "question": "What is the primary purpose of conducting a job analysis?",
+      "options": [
+        { "text": "To determine an employee's salary", "correct": false },
+        { "text": "To systematically identify the tasks, duties, and KSAOs required for a position", "correct": true },
+        { "text": "To evaluate an employee's personality", "correct": false },
+        { "text": "To measure organizational culture", "correct": false }
+      ],
+      "explanation": "Job analysis is a systematic process that identifies the tasks, duties, and responsibilities of a job, along with the Knowledge, Skills, Abilities, and Other characteristics (KSAOs) needed to perform it. It serves as the foundation for selection, training, and evaluation."
+    },
+    {
+      "id": "ch13-q04",
+      "question": "Research shows that structured interviews are more effective than unstructured interviews because they:",
+      "options": [
+        { "text": "Allow candidates to share personal stories freely", "correct": false },
+        { "text": "Are shorter and less expensive to conduct", "correct": false },
+        { "text": "Ask all candidates the same predetermined questions, allowing objective comparison", "correct": true },
+        { "text": "Focus exclusively on personality traits", "correct": false }
+      ],
+      "explanation": "Structured interviews ask all candidates the same predetermined questions, which allows for more objective comparison between applicants and is far more predictive of actual job performance than unstructured, conversational interviews."
+    }
+  ],
+  "passThreshold": 80
+}

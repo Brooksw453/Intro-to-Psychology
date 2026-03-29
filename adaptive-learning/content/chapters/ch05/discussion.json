@@ -1,0 +1,21 @@
+{
+  "chapterId": 5,
+  "weekNum": 5,
+  "title": "Perception and Reality",
+  "prompt": "We have learned that perception is an active, constructive process rather than a passive recording of reality. Our brains use prior knowledge, expectations, and Gestalt principles to organize and interpret sensory information, and different organisms perceive entirely different aspects of the same environment based on their sensory capabilities. Given all of this, to what extent do you think our perceptions accurately represent objective reality? Discuss at least one example from the chapter (such as sensory adaptation, optical illusions, perceptual constancies, or the limited visible spectrum) to support your argument. How might the gap between sensation and perception affect everyday decisions or judgments?",
+  "requirements": {
+    "initialPost": {
+      "minWords": 150,
+      "maxWords": 200,
+      "dueDay": "Wednesday",
+      "dueTime": "11:59 PM ET"
+    },
+    "replies": {
+      "count": 2,
+      "minWords": 75,
+      "maxWords": 100,
+      "dueDay": "Sunday",
+      "dueTime": "11:59 PM ET"
+    }
+  }
+}

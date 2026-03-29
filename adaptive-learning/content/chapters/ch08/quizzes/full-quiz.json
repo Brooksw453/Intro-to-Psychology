@@ -1,0 +1,95 @@
+{
+  "sectionId": "full",
+  "chapterId": 8,
+  "questions": [
+    {
+      "id": "ch08-q09",
+      "question": "George Miller's research on short-term memory found that its capacity is approximately:",
+      "options": [
+        { "text": "3 plus or minus 1 items", "correct": false },
+        { "text": "7 plus or minus 2 items", "correct": true },
+        { "text": "12 plus or minus 3 items", "correct": false },
+        { "text": "Unlimited, but only for a brief duration", "correct": false }
+      ],
+      "explanation": "George Miller's classic research established that short-term memory can hold approximately 7 (plus or minus 2) items. This capacity can be expanded through chunking -- grouping individual items into larger, meaningful units."
+    },
+    {
+      "id": "ch08-q10",
+      "question": "The process by which short-term memories are transformed into stable long-term memories, often occurring during sleep, is called:",
+      "options": [
+        { "text": "Encoding", "correct": false },
+        { "text": "Retrieval", "correct": false },
+        { "text": "Memory consolidation", "correct": true },
+        { "text": "Elaborative rehearsal", "correct": false }
+      ],
+      "explanation": "Memory consolidation is the process by which fragile short-term memories are gradually transformed into stable, long-term memories. This process is particularly active during sleep, which is one reason why adequate sleep is essential for learning and memory."
+    },
+    {
+      "id": "ch08-q11",
+      "question": "A person with anterograde amnesia would be expected to have difficulty with which of the following?",
+      "options": [
+        { "text": "Remembering events from their childhood", "correct": false },
+        { "text": "Forming new explicit long-term memories after the onset of their condition", "correct": true },
+        { "text": "Performing well-practiced motor skills like riding a bicycle", "correct": false },
+        { "text": "Holding a brief conversation using short-term memory", "correct": false }
+      ],
+      "explanation": "Anterograde amnesia is the inability to form new long-term explicit memories after brain damage. Older memories, short-term memory, and implicit/procedural memory typically remain intact, as demonstrated by Patient H.M.'s case."
+    },
+    {
+      "id": "ch08-q12",
+      "question": "Ebbinghaus's forgetting curve demonstrated that:",
+      "options": [
+        { "text": "Memory loss occurs at a steady, constant rate over time", "correct": false },
+        { "text": "Most forgetting occurs gradually over weeks and months", "correct": false },
+        { "text": "Forgetting is most rapid shortly after learning, then levels off over time", "correct": true },
+        { "text": "Emotional memories are forgotten faster than neutral memories", "correct": false }
+      ],
+      "explanation": "Ebbinghaus discovered that forgetting follows a predictable curve: memory loss is most rapid immediately after learning (roughly 50% within the first hour), then the rate of forgetting gradually slows. Information that survives the initial rapid decline tends to be retained for much longer."
+    },
+    {
+      "id": "ch08-q13",
+      "question": "You studied for your biology exam in your bedroom. Research on context-dependent memory suggests that you would recall the material best if you:",
+      "options": [
+        { "text": "Take the exam in a completely new environment", "correct": false },
+        { "text": "Take the exam in a room that is similar to your bedroom", "correct": true },
+        { "text": "Study additional material right before the exam in a different location", "correct": false },
+        { "text": "Try to forget the study environment to avoid interference", "correct": false }
+      ],
+      "explanation": "Context-dependent memory refers to the finding that retrieval is enhanced when the conditions at retrieval match the conditions at encoding. Studying and being tested in similar environments provides contextual cues that facilitate recall."
+    },
+    {
+      "id": "ch08-q14",
+      "question": "A person vividly remembers information they heard in a news broadcast but mistakenly believes they read it in a textbook. This is an example of:",
+      "options": [
+        { "text": "The misinformation effect", "correct": false },
+        { "text": "A source monitoring error", "correct": true },
+        { "text": "Retroactive interference", "correct": false },
+        { "text": "Storage decay", "correct": false }
+      ],
+      "explanation": "A source monitoring error occurs when a person remembers information correctly but misattributes its source. In this case, the person remembers the facts accurately but incorrectly recalls where they learned them -- confusing a news broadcast with a textbook."
+    },
+    {
+      "id": "ch08-q15",
+      "question": "The spacing effect suggests that the most effective way to prepare for an exam is to:",
+      "options": [
+        { "text": "Study all material in one long session the night before", "correct": false },
+        { "text": "Spread study sessions out over several days or weeks", "correct": true },
+        { "text": "Study only once and rely on initial encoding", "correct": false },
+        { "text": "Focus on rereading notes as many times as possible in one sitting", "correct": false }
+      ],
+      "explanation": "The spacing effect demonstrates that distributing study sessions over time produces better long-term retention than massing study into a single session (cramming). Each spaced retrieval strengthens the memory, and the slight forgetting between sessions makes subsequent practice more effortful and beneficial."
+    },
+    {
+      "id": "ch08-q16",
+      "question": "Which of the following correctly pairs a brain structure with its primary memory function?",
+      "options": [
+        { "text": "Hippocampus -- procedural memory formation", "correct": false },
+        { "text": "Amygdala -- working memory processing", "correct": false },
+        { "text": "Cerebellum -- explicit memory consolidation", "correct": false },
+        { "text": "Hippocampus -- explicit memory formation", "correct": true }
+      ],
+      "explanation": "The hippocampus is essential for the formation of new explicit (declarative) memories, including both episodic (personal experiences) and semantic (facts) memories. The cerebellum supports procedural/implicit memory, and the amygdala specializes in emotional memory enhancement."
+    }
+  ],
+  "passThreshold": 80
+}

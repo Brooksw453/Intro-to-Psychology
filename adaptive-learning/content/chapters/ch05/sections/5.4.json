@@ -1,0 +1,63 @@
+{
+  "sectionId": "5.4",
+  "chapterId": 5,
+  "title": "Hearing",
+  "learningObjectives": [
+    "Describe the anatomy of the ear and how sound waves are transduced into neural signals",
+    "Explain the place theory and temporal theory of pitch perception",
+    "Identify common causes and types of hearing loss"
+  ],
+  "keyTerms": [
+    {
+      "term": "Pinna",
+      "definition": "The visible outer part of the ear that collects and funnels sound waves into the ear canal."
+    },
+    {
+      "term": "Tympanic membrane",
+      "definition": "The eardrum, a thin membrane that vibrates in response to sound waves entering the ear canal."
+    },
+    {
+      "term": "Cochlea",
+      "definition": "A fluid-filled, snail-shaped structure in the inner ear that contains the basilar membrane and hair cells responsible for transducing sound into neural signals."
+    },
+    {
+      "term": "Basilar membrane",
+      "definition": "A structure within the cochlea that vibrates in response to sound, with different regions responding to different frequencies."
+    },
+    {
+      "term": "Place theory",
+      "definition": "The theory that different frequencies of sound activate hair cells at different locations along the basilar membrane, allowing pitch perception."
+    },
+    {
+      "term": "Temporal theory",
+      "definition": "The theory that pitch perception is determined by the rate at which hair cells fire neural impulses, matching the frequency of the sound wave."
+    }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "Anatomy of the Ear",
+      "body": "The auditory system converts vibrations in the air into the rich world of sound we experience. This process begins at the **outer ear**, continues through the **middle ear**, and culminates in the **inner ear**.\n\nThe **pinna** -- the visible, fleshy part of the ear -- collects sound waves and channels them into the **ear canal** (auditory canal). At the end of the canal, sound waves strike the **tympanic membrane** (eardrum), causing it to vibrate. These vibrations are transmitted to three tiny bones in the middle ear collectively known as the **ossicles**: the malleus (hammer), incus (anvil), and stapes (stirrup). The ossicles amplify the vibrations and transmit them to the oval window, a membrane-covered opening to the inner ear.\n\nWhen the stapes pushes against the oval window, it creates pressure waves in the fluid inside the **cochlea**, a coiled, snail-shaped structure. Inside the cochlea, the **basilar membrane** runs along its length. As fluid waves travel through the cochlea, they cause different portions of the basilar membrane to vibrate. Sitting on the basilar membrane are thousands of specialized **hair cells** -- the true sensory receptors for hearing. When the basilar membrane vibrates, the hair cells bend, triggering the release of neurotransmitters and generating neural impulses that travel along the **auditory nerve** to the brain's auditory cortex in the temporal lobe."
+    },
+    {
+      "type": "concept",
+      "title": "Theories of Pitch Perception",
+      "body": "How does the brain distinguish between a high-pitched flute and a low-pitched tuba? Two theories explain pitch perception, and like the color vision theories, both turn out to be partially correct.\n\n**Place theory**, proposed by Hermann von Helmholtz, holds that different frequencies cause maximum vibration at different locations along the basilar membrane. High-frequency sounds produce the greatest vibration near the base of the cochlea (closest to the oval window), while low-frequency sounds produce maximum vibration near the apex (the far end). The brain determines pitch based on which hair cells are most active. Research has confirmed that place theory works well for explaining perception of high-frequency sounds (above about 1,000 Hz).\n\n**Temporal theory** (also called frequency theory) proposes that the entire basilar membrane vibrates at the same frequency as the incoming sound wave, and hair cells fire neural impulses at a rate matching that frequency. The brain reads pitch from the firing rate. This theory works well for low-frequency sounds (below about 500 Hz). For moderate frequencies (500-1,000 Hz), a mechanism called the **volley principle** applies: groups of hair cells take turns firing in sequence, collectively matching the frequency.\n\nTogether, place theory and temporal theory provide a comprehensive account of pitch perception across the full range of human hearing."
+    },
+    {
+      "type": "example",
+      "title": "Hearing Loss and Its Impact",
+      "body": "Hearing loss affects millions of people worldwide and comes in two primary forms. **Conductive hearing loss** results from damage to the mechanical structures that transmit sound -- the eardrum or ossicles. This type can sometimes be treated medically or with hearing aids that amplify sound. **Sensorineural hearing loss** results from damage to the hair cells in the cochlea or to the auditory nerve itself. Because hair cells in humans do not regenerate, this type of damage is typically permanent.\n\nProlonged exposure to loud sounds is a leading cause of sensorineural hearing loss. Sounds above 85 decibels (roughly the volume of heavy traffic or a loud restaurant) can damage hair cells with extended exposure. Concerts, earbuds at high volume, and power tools can all exceed safe levels. Noise-induced hearing loss is preventable with ear protection, yet it is increasingly common among younger populations due to personal audio device use. This makes understanding auditory anatomy and sound wave properties not just an academic exercise but a matter of personal health."
+    },
+    {
+      "type": "summary",
+      "body": "The auditory system converts sound waves into neural signals through a series of structures: the pinna collects sound, the tympanic membrane and ossicles amplify vibrations, and the cochlea transduces mechanical energy into neural impulses via hair cells on the basilar membrane. Pitch perception is explained by place theory for high frequencies and temporal theory for low frequencies. Hearing loss can be conductive (mechanical damage) or sensorineural (hair cell or nerve damage), with noise exposure being a major preventable cause."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-5.4",
+    "prompt": "Many young adults regularly use earbuds or headphones at high volumes for extended periods. Using your understanding of auditory anatomy and the process of sound transduction, explain what specifically happens inside the ear that leads to noise-induced hearing loss. Then propose and justify at least two evidence-based strategies for preventing this type of damage while still enjoying music.",
+    "minWords": 100,
+    "rubric": "A strong response traces the path of sound through the ear to the hair cells in the cochlea, explains that excessive sound amplitude damages or destroys hair cells that cannot regenerate, correctly identifies this as sensorineural hearing loss, proposes at least two prevention strategies (e.g., volume limiting, breaks, noise-canceling headphones to reduce need for high volume), and provides reasoning grounded in auditory science."
+  }
+}

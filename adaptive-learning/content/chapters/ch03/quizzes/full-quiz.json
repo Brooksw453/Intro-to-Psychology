@@ -1,0 +1,117 @@
+{
+  "sectionId": "full",
+  "chapterId": 3,
+  "questions": [
+    {
+      "id": "ch03-q11",
+      "question": "Which of the following best describes the relationship between genotype and phenotype?",
+      "options": [
+        { "text": "Genotype and phenotype are the same thing", "correct": false },
+        { "text": "Genotype refers to observable traits while phenotype refers to genetic makeup", "correct": false },
+        { "text": "Genotype is the genetic blueprint; phenotype is the observable trait that results from the interaction of genes and environment", "correct": true },
+        { "text": "Phenotype determines genotype through environmental influence", "correct": false }
+      ],
+      "explanation": "Genotype refers to an organism's genetic makeup (the specific alleles it carries), while phenotype refers to the observable characteristics that result from the interaction between genotype and environmental factors."
+    },
+    {
+      "id": "ch03-q12",
+      "question": "What is the function of the myelin sheath in neural communication?",
+      "options": [
+        { "text": "It produces neurotransmitters for synaptic transmission", "correct": false },
+        { "text": "It receives incoming signals from other neurons", "correct": false },
+        { "text": "It insulates the axon and speeds up the transmission of neural impulses", "correct": true },
+        { "text": "It stores the neuron's genetic information", "correct": false }
+      ],
+      "explanation": "The myelin sheath is a fatty insulating layer around the axon produced by glial cells. It speeds up neural transmission by allowing electrical signals to jump between gaps (nodes of Ranvier) through saltatory conduction."
+    },
+    {
+      "id": "ch03-q13",
+      "question": "After giving a class presentation, a student's heart rate returns to normal and digestion resumes. Which division of the nervous system is responsible for this return to calm?",
+      "options": [
+        { "text": "The sympathetic nervous system", "correct": false },
+        { "text": "The somatic nervous system", "correct": false },
+        { "text": "The central nervous system", "correct": false },
+        { "text": "The parasympathetic nervous system", "correct": true }
+      ],
+      "explanation": "The parasympathetic nervous system (the 'rest-and-digest' division) restores the body to a calm state after the stress has passed, slowing heart rate and reactivating digestion."
+    },
+    {
+      "id": "ch03-q14",
+      "question": "A patient has damage to their amygdala. Which of the following would you most expect to observe?",
+      "options": [
+        { "text": "Inability to produce speech", "correct": false },
+        { "text": "Difficulty processing emotions such as fear", "correct": true },
+        { "text": "Loss of coordination and balance", "correct": false },
+        { "text": "Inability to see objects in the left visual field", "correct": false }
+      ],
+      "explanation": "The amygdala is a limbic system structure that plays a central role in processing emotions, particularly fear and aggression. Damage to the amygdala impairs the ability to recognize and respond appropriately to threatening situations."
+    },
+    {
+      "id": "ch03-q15",
+      "question": "Which statement best describes how the nervous system and endocrine system work together?",
+      "options": [
+        { "text": "They operate completely independently with no interaction", "correct": false },
+        { "text": "The endocrine system controls the nervous system through neurotransmitters", "correct": false },
+        { "text": "The hypothalamus receives neural signals and directs the pituitary gland to release hormones", "correct": true },
+        { "text": "Hormones replace neurotransmitters when neural pathways are damaged", "correct": false }
+      ],
+      "explanation": "The hypothalamus serves as the bridge between the nervous system and endocrine system. It receives information from the nervous system and responds by directing the pituitary gland to release hormones, which then affect target organs throughout the body."
+    },
+    {
+      "id": "ch03-q16",
+      "question": "Selective serotonin reuptake inhibitors (SSRIs) treat depression by:",
+      "options": [
+        { "text": "Increasing the production of new neurons in the brain", "correct": false },
+        { "text": "Blocking the reabsorption of serotonin, keeping it active in the synapse longer", "correct": true },
+        { "text": "Stimulating the adrenal glands to release more cortisol", "correct": false },
+        { "text": "Strengthening the myelin sheath around axons in mood-related circuits", "correct": false }
+      ],
+      "explanation": "SSRIs work by blocking the reuptake of serotonin at the synapse. This allows serotonin to remain in the synaptic gap longer and continue stimulating the receiving neuron, which helps regulate mood."
+    },
+    {
+      "id": "ch03-q17",
+      "question": "The cerebellum is primarily responsible for which of the following functions?",
+      "options": [
+        { "text": "Processing visual information", "correct": false },
+        { "text": "Coordinating voluntary movement, balance, and motor learning", "correct": true },
+        { "text": "Regulating hunger, thirst, and body temperature", "correct": false },
+        { "text": "Producing and comprehending language", "correct": false }
+      ],
+      "explanation": "The cerebellum coordinates voluntary movements, maintains balance and posture, and is involved in motor learning — the process by which physical actions become automatic through practice."
+    },
+    {
+      "id": "ch03-q18",
+      "question": "An individual with phenylketonuria (PKU) is placed on a special diet from birth and develops normally. This outcome best illustrates:",
+      "options": [
+        { "text": "That genes have no effect on intelligence", "correct": false },
+        { "text": "The concept of gene-environment interaction, where environmental intervention changes the phenotype", "correct": true },
+        { "text": "That all genetic disorders can be cured through diet alone", "correct": false },
+        { "text": "That recessive alleles become dominant under certain conditions", "correct": false }
+      ],
+      "explanation": "PKU demonstrates gene-environment interaction. The genotype (recessive alleles for PKU) remains unchanged, but the environmental intervention (restricted diet) prevents the harmful phenotype from being expressed, showing that outcomes depend on the interplay of genes and environment."
+    },
+    {
+      "id": "ch03-q19",
+      "question": "The pituitary gland is often called the 'master gland' because it:",
+      "options": [
+        { "text": "Is the largest gland in the endocrine system", "correct": false },
+        { "text": "Produces neurotransmitters that control brain function", "correct": false },
+        { "text": "Controls the activity of many other endocrine glands through the hormones it releases", "correct": true },
+        { "text": "Is the only gland connected to the nervous system", "correct": false }
+      ],
+      "explanation": "The pituitary gland earns the title 'master gland' because it releases hormones that regulate the activity of many other endocrine glands, including the thyroid, adrenal glands, and gonads. It is itself regulated by the hypothalamus."
+    },
+    {
+      "id": "ch03-q20",
+      "question": "Brain lateralization refers to the tendency for:",
+      "options": [
+        { "text": "The brain to grow larger on one side during development", "correct": false },
+        { "text": "Certain cognitive processes to be more strongly associated with one hemisphere of the brain", "correct": true },
+        { "text": "All brain functions to be evenly distributed between hemispheres", "correct": false },
+        { "text": "Damage to one hemisphere to have no effect on the other", "correct": false }
+      ],
+      "explanation": "Lateralization means certain cognitive functions tend to be specialized in one hemisphere. For most people, the left hemisphere is dominant for language and logic, while the right hemisphere specializes in spatial processing and emotional expression. The two hemispheres communicate through the corpus callosum."
+    }
+  ],
+  "passThreshold": 80
+}

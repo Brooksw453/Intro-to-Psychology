@@ -1,0 +1,60 @@
+{
+  "sectionId": "1.1",
+  "chapterId": 1,
+  "title": "What Is Psychology?",
+  "learningObjectives": [
+    "Define psychology as a scientific discipline",
+    "Distinguish between psychology and pseudoscience or common sense",
+    "Identify the goals of psychological research"
+  ],
+  "keyTerms": [
+    {
+      "term": "Psychology",
+      "definition": "The scientific study of behavior and mental processes."
+    },
+    {
+      "term": "Scientific method",
+      "definition": "A systematic process for learning about the world through observation and experimentation, involving forming and testing hypotheses."
+    },
+    {
+      "term": "Hypothesis",
+      "definition": "A testable prediction about how the world will behave if a proposed explanation is correct."
+    },
+    {
+      "term": "Psyche",
+      "definition": "A Greek word meaning soul or mind, from which the term psychology is derived."
+    },
+    {
+      "term": "Biopsychosocial model",
+      "definition": "A perspective that considers biological, psychological, and social factors as interconnected influences on behavior and mental processes."
+    }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "Defining Psychology",
+      "body": "**Psychology** is the scientific study of behavior and mental processes. The word itself comes from the Greek word **psyche**, meaning soul or mind, combined with *logos*, meaning study. While people often think of psychology as simply understanding why people behave as they do, the field encompasses far more than everyday intuition.\n\nWhat makes psychology a science rather than mere speculation? Psychologists rely on the **scientific method** -- a systematic approach that involves careful observation, forming **hypotheses** (testable predictions), collecting data, and drawing conclusions based on evidence. This distinguishes psychology from common sense and folk wisdom, which may seem compelling but often prove inaccurate under scientific scrutiny.\n\nFor example, common sense might suggest that \"opposites attract\" in romantic relationships. However, decades of psychological research consistently demonstrate that similarity -- in attitudes, values, and interests -- is a much stronger predictor of relationship satisfaction and longevity. This illustrates why relying on scientific evidence rather than intuition is essential."
+    },
+    {
+      "type": "concept",
+      "title": "The Goals of Psychology",
+      "body": "Psychology as a discipline pursues four primary goals: **describe**, **explain**, **predict**, and **change** behavior and mental processes.\n\n**Describing** behavior involves systematically observing and recording what people do and experience. **Explaining** behavior goes deeper, seeking to understand the underlying causes and mechanisms. **Predicting** behavior uses patterns identified through research to forecast future actions or outcomes. Finally, **changing** behavior applies psychological knowledge to help people improve their lives, whether through therapy, education, or public policy.\n\nThese four goals build upon one another. A psychologist studying depression might first describe its symptoms (persistent sadness, loss of interest, fatigue), then explain its causes (genetic predisposition, neurotransmitter imbalances, stressful life events), predict who is most at risk, and finally develop interventions to reduce depressive symptoms."
+    },
+    {
+      "type": "example",
+      "title": "Psychology vs. Common Sense",
+      "body": "Consider these commonly held beliefs: \"We only use 10% of our brains,\" \"People learn best when taught in their preferred learning style,\" and \"Venting anger is cathartic and healthy.\" Each of these statements feels intuitively true to many people, yet psychological research has shown all three to be myths.\n\nBrain imaging studies reveal that we use virtually all parts of our brain, and most areas are active over the course of any given day. Research on learning styles has failed to demonstrate that matching instruction to a student's preferred style improves outcomes. And studies on anger expression show that venting often increases rather than decreases aggressive feelings.\n\nThese examples highlight why psychology relies on empirical evidence rather than intuition. The **biopsychosocial model** reminds us that behavior is influenced by a complex interplay of biological, psychological, and social factors -- a complexity that common sense alone cannot capture."
+    },
+    {
+      "type": "summary",
+      "title": "Section Summary",
+      "body": "Psychology is a scientific discipline dedicated to understanding behavior and mental processes through systematic observation and experimentation. Unlike common sense or folk psychology, it relies on the scientific method to develop and test hypotheses. The field pursues four interrelated goals: describing, explaining, predicting, and changing behavior. The biopsychosocial model provides a framework for understanding how biological, psychological, and social influences interact to shape human experience. By maintaining rigorous scientific standards, psychology distinguishes itself from pseudoscience and everyday speculation."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-1.1",
+    "prompt": "Think of a common belief or piece of folk wisdom about human behavior (e.g., \"money can't buy happiness\" or \"first impressions are always accurate\"). How would a psychologist use the scientific method to test whether this belief is actually true? Describe the steps you would take, including forming a hypothesis, choosing a method of data collection, and what kind of evidence would support or refute the belief.",
+    "minWords": 100,
+    "rubric": "A strong response identifies a specific common belief, formulates a clear testable hypothesis, outlines a reasonable research approach (observation, survey, experiment), considers what evidence would confirm or disconfirm the belief, and acknowledges the difference between scientific evidence and intuition."
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "sectionId": "12.5",
+  "chapterId": 12,
+  "title": "Prejudice and Discrimination",
+  "learningObjectives": [
+    "Define prejudice, stereotypes, and discrimination and explain their relationships",
+    "Identify the cognitive, emotional, and social factors that contribute to prejudice",
+    "Describe strategies for reducing prejudice and discrimination"
+  ],
+  "keyTerms": [
+    { "term": "Prejudice", "definition": "A negative attitude toward a group of people based solely on their membership in that group." },
+    { "term": "Stereotype", "definition": "A widely held, oversimplified belief about the characteristics of members of a particular group." },
+    { "term": "Discrimination", "definition": "Negative actions directed toward members of a group based solely on their group membership." },
+    { "term": "In-group bias", "definition": "The tendency to favor members of one's own group over members of other groups." },
+    { "term": "Out-group homogeneity effect", "definition": "The tendency to perceive members of an out-group as more similar to each other than members of one's own in-group." },
+    { "term": "Contact hypothesis", "definition": "The idea that prejudice can be reduced when members of different groups have sustained, cooperative, and equal-status contact." }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "Prejudice, Stereotypes, and Discrimination",
+      "body": "**Prejudice**, **stereotypes**, and **discrimination** are related but distinct concepts. **Prejudice** is a negative attitude toward an entire group of people, based solely on their group membership rather than their individual qualities. The cognitive component of prejudice is the **stereotype** -- an oversimplified, generalized belief about the characteristics of group members. **Discrimination** is the behavioral component -- negative actions directed toward individuals because of their group membership.\n\nThese three components do not always appear together. A person might hold a stereotype (cognitive) without feeling prejudice (emotional) or engaging in discrimination (behavioral). However, stereotypes often serve as the cognitive foundation that supports prejudicial attitudes and discriminatory behavior.\n\nPrejudice can be **explicit** (consciously held and openly expressed) or **implicit** (operating outside of conscious awareness). The **Implicit Association Test (IAT)** measures implicit biases by assessing the speed with which people associate positive and negative attributes with different social groups. Research using the IAT has revealed that many people who explicitly endorse egalitarian values still show implicit biases in their automatic associations.\n\nPrejudice can target any social group based on characteristics such as race, ethnicity, gender, sexual orientation, age, religion, disability, or socioeconomic status. While individual prejudice is harmful, **institutional discrimination** -- policies and practices embedded in social institutions that systematically disadvantage certain groups -- can affect entire populations."
+    },
+    {
+      "type": "concept",
+      "title": "Sources of Prejudice and Strategies for Reduction",
+      "body": "Prejudice arises from multiple sources. At the cognitive level, **social categorization** -- the tendency to classify people into groups -- can lead to **in-group bias** (favoring members of one's own group) and the **out-group homogeneity effect** (perceiving out-group members as more alike than they actually are, sometimes expressed as \"they all look/act the same\").\n\n**Social identity theory**, proposed by Henri Tajfel, suggests that people derive part of their self-esteem from their group memberships. This motivation to see one's own groups positively can lead to devaluing out-groups. Remarkably, Tajfel's minimal group experiments showed that even arbitrary group distinctions (such as a preference for one painter over another) can produce in-group favoritism.\n\n**Scapegoat theory** proposes that prejudice increases when people experience frustration and redirect their aggression toward a convenient target group. Historically, minority groups have often been scapegoated during economic downturns and social upheaval.\n\nReducing prejudice is challenging but possible. The **contact hypothesis**, developed by Gordon Allport, proposes that prejudice diminishes when members of different groups interact under specific conditions: equal status between groups, common goals, intergroup cooperation, and support from authorities. Programs like **jigsaw classrooms**, where students from different backgrounds must cooperate to complete assignments, have shown success in reducing prejudice in educational settings. Education, perspective-taking exercises, and exposure to counter-stereotypical examples can also help reduce both explicit and implicit biases."
+    },
+    {
+      "type": "example",
+      "title": "The Robbers Cave Experiment",
+      "body": "Muzafer Sherif's Robbers Cave experiment (1954) provides a powerful illustration of how intergroup conflict develops and how it can be resolved. Boys at a summer camp were divided into two groups that developed strong group identities. When the groups competed against each other, hostility quickly escalated, with name-calling, raids on each other's cabins, and refusal to interact.\n\nSimply bringing the groups together for pleasant activities (like meals or movies) did not reduce the conflict. However, when the researchers introduced **superordinate goals** -- objectives that required both groups to cooperate (such as fixing a broken water supply) -- hostility gradually decreased and friendships formed across group lines. This experiment demonstrates that competition breeds prejudice, while cooperative interdependence can reduce it, consistent with the predictions of the **contact hypothesis**."
+    },
+    {
+      "type": "summary",
+      "body": "Prejudice involves negative attitudes toward groups, stereotypes are oversimplified beliefs about group members, and discrimination involves negative behaviors based on group membership. These phenomena arise from social categorization, in-group bias, social identity needs, and scapegoating. Both explicit and implicit biases influence behavior. The contact hypothesis suggests that prejudice can be reduced through equal-status, cooperative intergroup contact with common goals and institutional support."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-12.5",
+    "prompt": "Using the concepts from this section, explain why prejudice is so difficult to eliminate even when people consciously reject discriminatory attitudes. Discuss at least two psychological mechanisms that maintain prejudice (such as implicit bias, in-group favoritism, or the out-group homogeneity effect). Then describe one evidence-based strategy for reducing prejudice and explain why it works.",
+    "minWords": 100,
+    "rubric": "A strong response should: (1) distinguish between implicit and explicit prejudice, (2) accurately describe at least two psychological mechanisms that perpetuate prejudice, (3) identify a specific evidence-based reduction strategy (e.g., contact hypothesis, jigsaw classroom), (4) explain the psychological principles that make this strategy effective, and (5) demonstrate critical thinking about the complexity of prejudice reduction."
+  }
+}

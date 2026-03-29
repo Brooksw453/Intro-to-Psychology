@@ -1,0 +1,14 @@
+{
+  "chapterId": 12,
+  "title": "Social Psychology",
+  "weekNum": 12,
+  "reading": "Psychology 2e (OpenStax), Chapter 12 (Sections 12.1-12.7)",
+  "learningObjectives": [
+    "Define social psychology and explain how social situations influence individual behavior",
+    "Describe the processes of attitude formation, persuasion, and cognitive dissonance",
+    "Analyze the factors that contribute to conformity, compliance, and obedience",
+    "Explain the causes and consequences of prejudice, discrimination, and aggression",
+    "Identify the conditions that promote prosocial behavior and altruism"
+  ],
+  "sections": ["12.1", "12.2", "12.3", "12.4", "12.5", "12.6", "12.7"]
+}

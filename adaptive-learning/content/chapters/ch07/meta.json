@@ -1,0 +1,15 @@
+{
+  "chapterId": 7,
+  "title": "Thinking and Intelligence",
+  "weekNum": 7,
+  "reading": "Psychology 2e (OpenStax), Chapter 7 (Sections 7.1-7.6)",
+  "learningObjectives": [
+    "Describe the nature of concepts, prototypes, and schemas in cognitive processing",
+    "Explain the relationship between language and thought, including key theories of language development",
+    "Compare problem-solving strategies such as algorithms, heuristics, and trial and error",
+    "Distinguish between different theories of intelligence and the concept of creativity",
+    "Evaluate the major measures of intelligence, including their reliability and validity",
+    "Analyze the roles of genetics and environment in shaping intelligence"
+  ],
+  "sections": ["7.1", "7.2", "7.3", "7.4", "7.5", "7.6"]
+}

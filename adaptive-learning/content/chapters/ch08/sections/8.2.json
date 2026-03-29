@@ -1,0 +1,58 @@
+{
+  "sectionId": "8.2",
+  "chapterId": 8,
+  "title": "Parts of the Brain Involved with Memory",
+  "learningObjectives": [
+    "Identify the key brain structures involved in different types of memory",
+    "Explain the roles of the hippocampus, amygdala, and cerebellum in memory formation and storage",
+    "Describe what cases of amnesia reveal about how memory is organized in the brain"
+  ],
+  "keyTerms": [
+    {
+      "term": "Hippocampus",
+      "definition": "A brain structure in the medial temporal lobe that is essential for the formation of new explicit (declarative) memories."
+    },
+    {
+      "term": "Amygdala",
+      "definition": "A brain structure involved in processing emotional memories and enhancing the encoding of emotionally significant events."
+    },
+    {
+      "term": "Cerebellum",
+      "definition": "A brain structure at the base of the skull that plays a key role in the formation of procedural (implicit) memories and motor learning."
+    },
+    {
+      "term": "Anterograde amnesia",
+      "definition": "The inability to form new long-term memories after the onset of brain damage, while older memories remain intact."
+    },
+    {
+      "term": "Retrograde amnesia",
+      "definition": "The loss of memories that were formed before the onset of brain damage or trauma."
+    },
+    {
+      "term": "Memory consolidation",
+      "definition": "The process by which short-term memories are transformed into stable, long-term memories, often occurring during sleep."
+    }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "Brain Structures and Memory Systems",
+      "body": "Memory is not stored in a single location in the brain. Instead, different types of memory depend on different neural structures. Understanding these brain-memory relationships has come largely from studying individuals with specific types of brain damage.\n\nThe **hippocampus**, located in the medial temporal lobe, is critical for the formation of new **explicit (declarative) memories** -- both episodic memories (personal experiences) and semantic memories (facts and general knowledge). The hippocampus acts as a sort of indexing system, binding together the various elements of an experience (sights, sounds, emotions, context) into a coherent memory. However, the hippocampus is not the final storage site for long-term memories. Over time, through a process called **memory consolidation**, memories are gradually transferred to various regions of the cerebral cortex for permanent storage. This is one reason why sleep is so important for memory -- consolidation is particularly active during sleep.\n\nThe **amygdala**, situated near the hippocampus, plays a special role in **emotional memories**. It enhances the encoding and storage of memories that have strong emotional significance. This is why emotionally charged events -- whether positive or negative -- tend to be remembered more vividly and durably than neutral events. The phenomenon of \"flashbulb memories\" (vivid, detailed recollections of surprising and emotionally significant events) is partly attributed to the amygdala's influence on memory encoding.\n\nThe **cerebellum**, located at the base of the brain, is essential for **implicit (procedural) memories** -- the unconscious memories involved in motor skills and habits. Learning to ride a bicycle, type on a keyboard, or play a musical instrument depends heavily on the cerebellum. The **basal ganglia** also contribute to procedural memory and habit formation."
+    },
+    {
+      "type": "example",
+      "title": "The Case of Patient H.M.",
+      "body": "One of the most important cases in the history of memory research is that of Henry Molaison, known for decades as Patient H.M. In 1953, surgeons removed portions of H.M.'s medial temporal lobes, including most of his hippocampus, to treat severe epilepsy. The surgery successfully reduced his seizures but produced devastating **anterograde amnesia** -- he was unable to form new explicit long-term memories for the rest of his life.\n\nH.M. could remember events from before his surgery (though with some **retrograde amnesia** for the years immediately preceding it), and his short-term memory functioned normally. He could hold a conversation, but moments after the conversation ended, he had no memory that it had occurred. Remarkably, H.M. could still learn new procedural skills. When given a mirror-tracing task repeatedly, his performance improved across sessions -- even though he had no conscious memory of ever having done the task before.\n\nH.M.'s case provided groundbreaking evidence that explicit and implicit memory systems are distinct and depend on different brain structures. His hippocampal damage impaired explicit memory formation, while his intact cerebellum and basal ganglia preserved his ability to form new procedural memories."
+    },
+    {
+      "type": "summary",
+      "body": "Different brain structures support different types of memory. The hippocampus is essential for forming new explicit memories and works with the cortex during memory consolidation. The amygdala enhances memory for emotionally significant events. The cerebellum and basal ganglia support implicit procedural memory. Cases of amnesia, particularly the famous case of Patient H.M., have been instrumental in revealing that explicit and implicit memory systems are neurologically distinct."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-8.2",
+    "prompt": "The case of Patient H.M. revealed that different types of memory rely on different brain structures. Explain what H.M.'s case taught researchers about the distinction between explicit and implicit memory. Then, using what you know about the roles of the hippocampus, amygdala, and cerebellum, predict what types of memory difficulties a person might experience if they had damage to their amygdala rather than their hippocampus.",
+    "minWords": 100,
+    "rubric": "A strong response accurately summarizes what H.M.'s case revealed (hippocampal damage impairs explicit but not implicit memory formation), correctly identifies the role of the amygdala in emotional memory, and makes a logical prediction about the effects of amygdala damage (impaired emotional memory encoding, reduced flashbulb memories, while factual and procedural memory remain relatively intact). The response should demonstrate clear understanding of the dissociation between memory systems."
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "sectionId": "10.1",
+  "chapterId": 10,
+  "title": "Motivation",
+  "learningObjectives": [
+    "Define motivation and distinguish between intrinsic and extrinsic motivation",
+    "Explain key theories of motivation including instinct theory, drive theory, arousal theory, and Maslow's hierarchy of needs",
+    "Apply motivational theories to explain everyday human behavior"
+  ],
+  "keyTerms": [
+    {
+      "term": "Motivation",
+      "definition": "The process that initiates, guides, and sustains goal-oriented behavior, involving biological, emotional, social, and cognitive forces."
+    },
+    {
+      "term": "Intrinsic motivation",
+      "definition": "The drive to engage in a behavior because it is personally rewarding or satisfying, rather than for an external reward."
+    },
+    {
+      "term": "Extrinsic motivation",
+      "definition": "The drive to engage in a behavior because of external rewards or to avoid negative consequences."
+    },
+    {
+      "term": "Hierarchy of needs",
+      "definition": "Maslow's theory that human needs are arranged in a pyramid, with basic physiological and safety needs at the base and self-actualization at the top."
+    },
+    {
+      "term": "Drive theory",
+      "definition": "The idea that physiological needs create internal states of tension (drives) that motivate behaviors to reduce those tensions and restore homeostasis."
+    },
+    {
+      "term": "Self-actualization",
+      "definition": "In Maslow's theory, the highest level of need, involving the realization of one's full potential and the pursuit of personal growth and fulfillment."
+    },
+    {
+      "term": "Arousal theory",
+      "definition": "The theory that people are motivated to maintain an optimal level of physiological arousal, which varies among individuals."
+    }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "What Is Motivation?",
+      "body": "**Motivation** refers to the process that initiates, guides, and sustains goal-oriented behavior. It is what causes us to act -- whether it is getting a glass of water to reduce thirst, reading a book to gain knowledge, or working diligently to earn a promotion. Motivation involves biological, emotional, social, and cognitive forces that activate behavior.\n\nPsychologists distinguish between two fundamental types of motivation. **Intrinsic motivation** arises from within the individual -- the behavior itself is inherently rewarding. A person who reads novels for the sheer pleasure of reading is intrinsically motivated. **Extrinsic motivation**, by contrast, involves engaging in a behavior to earn external rewards or avoid punishments. A student who studies primarily to earn good grades or avoid parental disapproval is extrinsically motivated.\n\nResearch has shown that these two types of motivation can interact in complex ways. The **overjustification effect** occurs when providing external rewards for an intrinsically motivated behavior actually decreases intrinsic motivation. For example, if a child who loves drawing is given a reward every time she draws, she may eventually draw less when the reward is removed because the activity has become associated with external reinforcement rather than personal enjoyment."
+    },
+    {
+      "type": "concept",
+      "title": "Theories of Motivation",
+      "body": "Several major theories attempt to explain what motivates human behavior. Early **instinct theories** proposed that behavior is motivated by innate, biologically programmed patterns. While instinct theory fell out of favor for explaining complex human behavior, it laid the groundwork for evolutionary psychology's examination of how natural selection shapes behavioral tendencies.\n\n**Drive theory** proposes that physiological needs create internal states of tension called drives, which motivate the organism to engage in behaviors that will reduce the tension and restore **homeostasis** -- the body's tendency to maintain a stable internal state. Hunger, thirst, and the need for sleep are classic examples of drives. When blood sugar drops, the resulting hunger drive motivates eating, which restores equilibrium. However, drive theory struggles to explain behaviors that increase rather than decrease arousal, such as skydiving or watching horror movies.\n\n**Arousal theory** addresses this limitation by proposing that people are motivated to maintain an optimal level of physiological arousal. This optimal level varies from person to person -- some people thrive on high stimulation and seek out exciting experiences, while others prefer calm and predictable environments. The Yerkes-Dodson law suggests that performance is best at moderate levels of arousal and suffers at extremes of too little or too much arousal.\n\nAbraham Maslow's **hierarchy of needs** is perhaps the most widely known motivational theory. Maslow proposed that human needs are arranged in a pyramid with five levels. At the base are **physiological needs** (food, water, shelter), followed by **safety needs** (security, stability), **belongingness and love needs** (relationships, connection), **esteem needs** (achievement, recognition), and finally **self-actualization** -- the desire to fulfill one's unique potential and become the best version of oneself. According to Maslow, lower-level needs must generally be satisfied before higher-level needs become motivating, though this hierarchy is not rigidly fixed."
+    },
+    {
+      "type": "example",
+      "title": "Motivation in Everyday Life",
+      "body": "Consider how different motivational theories explain a common scenario: a college student studying for exams. Drive theory would focus on the physiological tension created by anxiety about failing and the need to reduce that tension through studying. Arousal theory might note that the student performs best when moderately challenged -- too little pressure leads to boredom, while too much leads to paralyzing anxiety.\n\nMaslow's hierarchy offers a broader perspective. If the student is hungry, exhausted, or feels unsafe in their living situation, these unmet lower-level needs will undermine their ability to focus on academic achievement (an esteem need). A student who has strong friendships and family support (belongingness needs met) is better positioned to pursue academic excellence.\n\nThe distinction between intrinsic and extrinsic motivation is particularly relevant in educational settings. Research by Edward Deci and Richard Ryan, through their **self-determination theory**, suggests that people are most motivated when three basic psychological needs are met: **autonomy** (feeling in control of one's choices), **competence** (feeling effective and capable), and **relatedness** (feeling connected to others). Classrooms that support these needs tend to foster deeper learning and greater student engagement than those relying solely on grades and external rewards."
+    },
+    {
+      "type": "summary",
+      "body": "Motivation is the process that initiates and sustains goal-oriented behavior. Key theories include drive theory (reducing physiological tension), arousal theory (maintaining optimal stimulation), and Maslow's hierarchy of needs (progressing from basic survival to self-actualization). The distinction between intrinsic and extrinsic motivation has important implications for education, work, and personal fulfillment."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-10.1",
+    "prompt": "Think about an activity you are deeply committed to (a hobby, a sport, a career goal, or a course of study). Analyze your motivation for this activity using at least two of the theories discussed in this section (drive theory, arousal theory, Maslow's hierarchy, or intrinsic vs. extrinsic motivation). Has your motivation for this activity changed over time? If so, how would you explain that shift using motivational concepts?",
+    "minWords": 100,
+    "rubric": "A strong response identifies a specific activity, applies at least two motivational theories accurately and in a way that demonstrates understanding, reflects on whether motivation has changed over time, and uses correct terminology from the section."
+  }
+}

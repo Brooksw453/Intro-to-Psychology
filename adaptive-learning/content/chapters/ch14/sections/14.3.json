@@ -1,0 +1,44 @@
+{
+  "sectionId": "14.3",
+  "chapterId": 14,
+  "title": "Stress and Illness",
+  "learningObjectives": [
+    "Explain the relationship between stress and the immune system",
+    "Describe how chronic stress contributes to cardiovascular disease",
+    "Discuss the connection between stress and mental health conditions"
+  ],
+  "keyTerms": [
+    { "term": "Psychoneuroimmunology", "definition": "The field that studies the connections between psychological processes, the nervous system, and the immune system, particularly how stress affects immune functioning." },
+    { "term": "Immunosuppression", "definition": "The reduction in immune system effectiveness caused by factors such as chronic stress, which increases vulnerability to illness and slows healing." },
+    { "term": "Coronary heart disease", "definition": "A condition in which the blood vessels supplying the heart become narrowed or blocked, strongly linked to chronic stress, hostility, and Type A behavior patterns." },
+    { "term": "Type A behavior pattern", "definition": "A behavioral style characterized by competitiveness, time urgency, hostility, and impatience, associated with increased risk of cardiovascular disease." },
+    { "term": "Psychosomatic illness", "definition": "A physical condition that is caused or significantly worsened by psychological factors such as stress, anxiety, or emotional conflict." }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "Stress and the Immune System",
+      "body": "The field of **psychoneuroimmunology** studies how psychological processes, the nervous system, and the immune system interact. Research in this field has demonstrated that chronic stress significantly weakens immune function, a process called **immunosuppression**.\n\nWhen the body is under stress, cortisol released by the HPA axis suppresses the production and activity of lymphocytes — the white blood cells that fight infection. Short-term stress can actually enhance immune function temporarily (preparing the body for potential injury), but prolonged stress has the opposite effect, reducing the body's ability to fight infections, heal wounds, and respond to vaccines.\n\nClassic studies by Janice Kiecolt-Glaser and colleagues demonstrated this relationship clearly. In one study, medical students showed significant decreases in immune function during exam periods compared to less stressful times. In another, caregivers of people with Alzheimer's disease — who experience chronic stress — showed slower wound healing and reduced antibody response to flu vaccines compared to non-caregiving controls.\n\nStress also contributes to illness through behavioral pathways. People under stress are more likely to engage in unhealthy behaviors such as smoking, excessive alcohol consumption, poor diet, and inadequate sleep — all of which further compromise immune function and overall health."
+    },
+    {
+      "type": "concept",
+      "title": "Stress and Cardiovascular Disease",
+      "body": "The link between stress and **coronary heart disease** (CHD) is well established. Chronic stress contributes to cardiovascular problems through multiple mechanisms: elevated blood pressure, increased inflammation, arterial damage from sustained cortisol exposure, and unhealthy coping behaviors.\n\nResearch on the **Type A behavior pattern** identified a personality style characterized by competitiveness, time urgency, hostility, and impatience. Early research by Friedman and Rosenman (1959) found that men exhibiting Type A behavior were twice as likely to develop heart disease. Subsequent research refined this finding, showing that the hostility component of Type A behavior is the strongest predictor of cardiovascular risk.\n\nStress also contributes to mental health conditions. Chronic stress is a major risk factor for developing depression and anxiety disorders. The sustained elevation of cortisol associated with chronic stress can damage the hippocampus and alter brain chemistry, contributing to mood disorders. The relationship is bidirectional — stress increases risk for mental health conditions, and mental health conditions increase sensitivity to stress."
+    },
+    {
+      "type": "example",
+      "title": "Real-World Example: Caregiver Stress and Health",
+      "body": "Family caregivers of individuals with chronic illnesses such as Alzheimer's disease provide a compelling real-world example of how chronic stress affects health. Research shows that caregivers experience higher rates of depression, cardiovascular disease, and impaired immune function compared to non-caregivers of similar age. Kiecolt-Glaser's research found that wounds healed 24% more slowly in caregivers than in controls. This illustrates the profound biological impact of sustained psychological stress."
+    },
+    {
+      "type": "summary",
+      "body": "Chronic stress weakens the immune system through immunosuppression, increases risk for cardiovascular disease (especially when combined with hostility), and contributes to mental health conditions. The field of psychoneuroimmunology reveals the powerful connections between mind and body, demonstrating that psychological stress has measurable biological consequences."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-14.3",
+    "prompt": "Explain the biological pathway through which chronic stress can lead to illness, tracing the chain from stressor perception through the stress response to specific health outcomes. Use at least three specific terms from this section (e.g., HPA axis, cortisol, immunosuppression, psychoneuroimmunology) in your explanation.",
+    "minWords": 100,
+    "rubric": "Student should accurately trace the physiological pathway from stress perception to health outcomes, correctly use at least three key terms from the section, and demonstrate understanding of how chronic (not just acute) stress produces illness. Should show understanding of both direct biological pathways and indirect behavioral pathways."
+  }
+}

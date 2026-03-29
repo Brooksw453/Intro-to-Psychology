@@ -1,0 +1,29 @@
+{
+  "sectionId": "14.1",
+  "chapterId": 14,
+  "questions": [
+    {
+      "id": "ch14-q01",
+      "question": "According to Selye's general adaptation syndrome, what happens during the exhaustion stage?",
+      "options": [
+        { "text": "The body first recognizes the stressor and activates the fight-or-flight response", "correct": false },
+        { "text": "The body successfully adapts to the ongoing stressor", "correct": false },
+        { "text": "The body's resources become depleted, making the individual vulnerable to illness", "correct": true },
+        { "text": "The body releases adrenaline to prepare for immediate action", "correct": false }
+      ],
+      "explanation": "In the exhaustion stage of Selye's general adaptation syndrome, prolonged stress has depleted the body's resources. The individual becomes vulnerable to illness because the body can no longer maintain its elevated physiological response to the ongoing stressor."
+    },
+    {
+      "id": "ch14-q02",
+      "question": "A student who feels excited and motivated while preparing for a challenging presentation is experiencing:",
+      "options": [
+        { "text": "Distress", "correct": false },
+        { "text": "Eustress", "correct": true },
+        { "text": "The exhaustion stage", "correct": false },
+        { "text": "Immunosuppression", "correct": false }
+      ],
+      "explanation": "Eustress is a positive form of stress associated with manageable challenges, excitement, and motivation. A student feeling energized by preparing for a challenging presentation is experiencing eustress — stress that enhances rather than diminishes performance."
+    }
+  ],
+  "passThreshold": 80
+}

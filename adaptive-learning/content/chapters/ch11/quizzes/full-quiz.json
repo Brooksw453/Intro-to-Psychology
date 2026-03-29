@@ -1,0 +1,117 @@
+{
+  "sectionId": "full",
+  "chapterId": 11,
+  "questions": [
+    {
+      "id": "ch11-q19",
+      "question": "Which of Freud's personality structures acts as the moral compass, incorporating societal standards of right and wrong?",
+      "options": [
+        { "text": "The id", "correct": false },
+        { "text": "The ego", "correct": false },
+        { "text": "The superego", "correct": true },
+        { "text": "The preconscious", "correct": false }
+      ],
+      "explanation": "The superego represents the internalized moral standards learned from parents and society. It strives for perfection and judges behavior as right or wrong, often creating guilt when its standards are violated."
+    },
+    {
+      "id": "ch11-q20",
+      "question": "Erik Erikson's psychosocial stages differ from Freud's psychosexual stages primarily because Erikson:",
+      "options": [
+        { "text": "Rejected the idea that early experiences influence personality", "correct": false },
+        { "text": "Extended personality development across the entire lifespan and emphasized social relationships", "correct": true },
+        { "text": "Focused exclusively on biological determinants of personality", "correct": false },
+        { "text": "Eliminated the concept of unconscious processes entirely", "correct": false }
+      ],
+      "explanation": "Erikson expanded Freud's developmental framework to encompass eight stages across the entire lifespan, and he shifted the emphasis from sexual and biological drives to social relationships and identity formation."
+    },
+    {
+      "id": "ch11-q21",
+      "question": "According to Bandura, self-efficacy is best described as:",
+      "options": [
+        { "text": "A global personality trait that remains stable across all situations", "correct": false },
+        { "text": "An individual's belief in their capacity to execute behaviors necessary to produce specific outcomes", "correct": true },
+        { "text": "The unconscious drive toward self-actualization", "correct": false },
+        { "text": "The degree to which a person believes external forces control their life", "correct": false }
+      ],
+      "explanation": "Self-efficacy is a domain-specific judgment about one's ability to succeed in particular situations, not a global trait. It influences the challenges people undertake, their effort, and their persistence."
+    },
+    {
+      "id": "ch11-q22",
+      "question": "Rogers argued that psychological well-being is greatest when there is:",
+      "options": [
+        { "text": "A large gap between the real self and the ideal self", "correct": false },
+        { "text": "Congruence between the real self and the ideal self", "correct": true },
+        { "text": "Strong conditions of worth imposed by parents", "correct": false },
+        { "text": "Fixation at the genital stage of development", "correct": false }
+      ],
+      "explanation": "Rogers proposed that congruence -- significant overlap between the real self (who you are) and the ideal self (who you want to be) -- is associated with psychological health and well-being."
+    },
+    {
+      "id": "ch11-q23",
+      "question": "Kagan's longitudinal research on behaviorally inhibited children demonstrated that:",
+      "options": [
+        { "text": "Temperament has no influence on adult personality", "correct": false },
+        { "text": "All inhibited infants become introverted adults", "correct": false },
+        { "text": "Early temperamental patterns often persist but can be modified by environmental experiences", "correct": true },
+        { "text": "Biological factors completely determine personality outcomes", "correct": false }
+      ],
+      "explanation": "Kagan found that many behaviorally inhibited infants continued to show cautious behavior later, but some became more outgoing -- particularly when parents gently encouraged them to try new experiences, demonstrating the interplay between temperament and environment."
+    },
+    {
+      "id": "ch11-q24",
+      "question": "The acronym OCEAN represents the five dimensions of which personality model?",
+      "options": [
+        { "text": "Cattell's 16 Personality Factors", "correct": false },
+        { "text": "Eysenck's three-factor model", "correct": false },
+        { "text": "The Five Factor Model (Big Five)", "correct": true },
+        { "text": "Allport's trait hierarchy", "correct": false }
+      ],
+      "explanation": "OCEAN stands for Openness, Conscientiousness, Extraversion, Agreeableness, and Neuroticism -- the five broad dimensions of the Five Factor Model (Big Five), the most widely accepted trait model of personality."
+    },
+    {
+      "id": "ch11-q25",
+      "question": "Karen Horney proposed that personality is primarily shaped by:",
+      "options": [
+        { "text": "Psychosexual fixations during childhood", "correct": false },
+        { "text": "Basic anxiety arising from disturbed parent-child relationships", "correct": true },
+        { "text": "The collective unconscious and archetypes", "correct": false },
+        { "text": "Operant conditioning and reinforcement histories", "correct": false }
+      ],
+      "explanation": "Horney proposed that basic anxiety -- a child's sense of helplessness and insecurity resulting from inadequate parenting -- is the primary force shaping personality, leading to one of three interpersonal coping styles."
+    },
+    {
+      "id": "ch11-q26",
+      "question": "A major criticism of projective tests like the Rorschach is that they:",
+      "options": [
+        { "text": "Are too structured and leave no room for individual expression", "correct": false },
+        { "text": "Have questionable reliability because different examiners may interpret the same responses differently", "correct": true },
+        { "text": "Are too easy for test-takers to manipulate through impression management", "correct": false },
+        { "text": "Can only measure the Big Five personality traits", "correct": false }
+      ],
+      "explanation": "Projective tests face significant criticism regarding inter-rater reliability -- different examiners may interpret identical responses in different ways, raising questions about the consistency and objectivity of the assessment."
+    },
+    {
+      "id": "ch11-q27",
+      "question": "In individualistic cultures, people are most likely to describe themselves using:",
+      "options": [
+        { "text": "Social roles and group memberships", "correct": false },
+        { "text": "Internal personal attributes and individual accomplishments", "correct": true },
+        { "text": "Their family lineage and community standing", "correct": false },
+        { "text": "Their scores on standardized personality tests", "correct": false }
+      ],
+      "explanation": "Research shows that people in individualistic cultures tend to describe themselves using internal personal attributes (e.g., 'I am creative,' 'I am ambitious'), reflecting the cultural emphasis on autonomy and individual identity."
+    },
+    {
+      "id": "ch11-q28",
+      "question": "Freud's concept of fixation refers to:",
+      "options": [
+        { "text": "The ego's inability to use defense mechanisms effectively", "correct": false },
+        { "text": "A lingering focus of pleasure-seeking energies at an earlier psychosexual stage due to unresolved conflicts", "correct": true },
+        { "text": "An obsessive focus on achieving self-actualization", "correct": false },
+        { "text": "The tendency to project unconscious desires onto ambiguous stimuli", "correct": false }
+      ],
+      "explanation": "Fixation occurs when conflicts at a psychosexual stage are not properly resolved, causing the individual to remain psychologically 'stuck' at that stage, which Freud believed would produce characteristic personality traits in adulthood."
+    }
+  ],
+  "passThreshold": 80
+}

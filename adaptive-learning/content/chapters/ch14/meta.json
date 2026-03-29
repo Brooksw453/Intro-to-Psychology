@@ -1,0 +1,14 @@
+{
+  "chapterId": 14,
+  "title": "Stress, Lifestyle, and Health",
+  "weekNum": 14,
+  "reading": "Psychology 2e (OpenStax), Chapter 14 (Sections 14.1-14.5)",
+  "learningObjectives": [
+    "Define stress and distinguish between different types of stressors",
+    "Describe the physiological mechanisms of the stress response",
+    "Explain the relationship between stress and physical illness",
+    "Identify effective strategies for stress regulation and coping",
+    "Discuss the psychological research on happiness and subjective well-being"
+  ],
+  "sections": ["14.1", "14.2", "14.3", "14.4", "14.5"]
+}

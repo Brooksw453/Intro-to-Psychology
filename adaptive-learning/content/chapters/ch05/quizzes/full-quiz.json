@@ -1,0 +1,117 @@
+{
+  "sectionId": "full",
+  "chapterId": 5,
+  "questions": [
+    {
+      "id": "ch05-q13",
+      "question": "A researcher presents a very faint tone to participants and asks them to press a button when they hear it. The minimum intensity at which participants detect the tone 50% of the time is known as the:",
+      "options": [
+        { "text": "Difference threshold", "correct": false },
+        { "text": "Absolute threshold", "correct": true },
+        { "text": "Signal detection threshold", "correct": false },
+        { "text": "Sensory adaptation threshold", "correct": false }
+      ],
+      "explanation": "The absolute threshold is defined as the minimum amount of stimulus energy required for a person to detect the stimulus 50% of the time. This concept from Section 5.1 establishes the lower boundary of sensory detection."
+    },
+    {
+      "id": "ch05-q14",
+      "question": "The visible spectrum represents approximately what range of wavelengths?",
+      "options": [
+        { "text": "100-300 nanometers", "correct": false },
+        { "text": "380-740 nanometers", "correct": true },
+        { "text": "800-1200 nanometers", "correct": false },
+        { "text": "20-20,000 hertz", "correct": false }
+      ],
+      "explanation": "The visible spectrum spans wavelengths of approximately 380 to 740 nanometers, representing the narrow band of the electromagnetic spectrum that human photoreceptors can detect. The range of 20-20,000 Hz describes the audible range for sound, not light."
+    },
+    {
+      "id": "ch05-q15",
+      "question": "Which area of the retina provides the sharpest visual acuity?",
+      "options": [
+        { "text": "The blind spot", "correct": false },
+        { "text": "The peripheral retina", "correct": false },
+        { "text": "The fovea", "correct": true },
+        { "text": "The optic disc", "correct": false }
+      ],
+      "explanation": "The fovea is a small depression at the center of the retina densely packed with cones. Because cones provide high-resolution color vision, the fovea is responsible for the sharpest visual acuity. When you look directly at something, you aim the image at your fovea."
+    },
+    {
+      "id": "ch05-q16",
+      "question": "Which structure in the middle ear amplifies sound vibrations before transmitting them to the inner ear?",
+      "options": [
+        { "text": "The cochlea", "correct": false },
+        { "text": "The basilar membrane", "correct": false },
+        { "text": "The ossicles (malleus, incus, and stapes)", "correct": true },
+        { "text": "The pinna", "correct": false }
+      ],
+      "explanation": "The ossicles -- the three tiny bones of the middle ear (malleus, incus, and stapes) -- amplify the vibrations from the tympanic membrane and transmit them to the oval window of the cochlea in the inner ear."
+    },
+    {
+      "id": "ch05-q17",
+      "question": "Which sensory system bypasses the thalamus and sends information directly to brain regions involved in emotion and memory?",
+      "options": [
+        { "text": "Vision", "correct": false },
+        { "text": "Hearing", "correct": false },
+        { "text": "Olfaction (smell)", "correct": true },
+        { "text": "Gustation (taste)", "correct": false }
+      ],
+      "explanation": "Olfactory information is unique among the senses because it travels directly from the olfactory bulb to brain areas including the limbic system, bypassing the thalamus. This direct connection to emotion and memory centers explains why smells can trigger vivid emotional memories."
+    },
+    {
+      "id": "ch05-q18",
+      "question": "The Gestalt principle of proximity predicts that:",
+      "options": [
+        { "text": "Similar-looking objects will be perceived as a group", "correct": false },
+        { "text": "Objects that are close together will be perceived as belonging to the same group", "correct": true },
+        { "text": "Incomplete shapes will be perceived as complete", "correct": false },
+        { "text": "Moving objects will be perceived as a single unit", "correct": false }
+      ],
+      "explanation": "The Gestalt principle of proximity states that objects near each other tend to be perceived as belonging to the same group. This is distinct from similarity (grouping by shared visual features), closure (filling in gaps), and common fate (grouping by shared movement)."
+    },
+    {
+      "id": "ch05-q19",
+      "question": "A door viewed from an angle projects a trapezoidal image on the retina, yet you still perceive it as rectangular. This demonstrates:",
+      "options": [
+        { "text": "Binocular disparity", "correct": false },
+        { "text": "Sensory adaptation", "correct": false },
+        { "text": "Shape constancy", "correct": true },
+        { "text": "The figure-ground relationship", "correct": false }
+      ],
+      "explanation": "Shape constancy is the perceptual constancy that allows us to perceive an object's shape as stable even when the angle of view changes the shape of the retinal image. Despite the trapezoidal retinal image, top-down processing and experience lead us to perceive the door as rectangular."
+    },
+    {
+      "id": "ch05-q20",
+      "question": "Sensorineural hearing loss is caused by damage to which structures?",
+      "options": [
+        { "text": "The tympanic membrane and ossicles", "correct": false },
+        { "text": "The hair cells in the cochlea or the auditory nerve", "correct": true },
+        { "text": "The pinna and ear canal", "correct": false },
+        { "text": "The semicircular canals", "correct": false }
+      ],
+      "explanation": "Sensorineural hearing loss results from damage to the hair cells in the cochlea or to the auditory nerve itself. Unlike conductive hearing loss (damage to the eardrum or ossicles), sensorineural damage is typically permanent because human hair cells do not regenerate."
+    },
+    {
+      "id": "ch05-q21",
+      "question": "Which of the following is a monocular depth cue?",
+      "options": [
+        { "text": "Binocular disparity", "correct": false },
+        { "text": "Convergence", "correct": false },
+        { "text": "Linear perspective", "correct": true },
+        { "text": "Retinal disparity", "correct": false }
+      ],
+      "explanation": "Linear perspective -- the phenomenon in which parallel lines appear to converge as they recede into the distance -- is a monocular depth cue, meaning it requires only one eye to perceive. Binocular disparity (retinal disparity) and convergence are both binocular cues requiring input from both eyes."
+    },
+    {
+      "id": "ch05-q22",
+      "question": "The process by which sensory receptors convert stimulus energy into neural impulses is called:",
+      "options": [
+        { "text": "Perception", "correct": false },
+        { "text": "Accommodation", "correct": false },
+        { "text": "Adaptation", "correct": false },
+        { "text": "Transduction", "correct": true }
+      ],
+      "explanation": "Transduction is the conversion of one form of energy (such as light, sound, or chemical signals) into neural impulses that the brain can process. Each sensory system has specialized receptors that perform transduction for their particular type of stimulus energy."
+    }
+  ],
+  "passThreshold": 80
+}

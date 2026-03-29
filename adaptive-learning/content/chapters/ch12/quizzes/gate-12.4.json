@@ -1,0 +1,29 @@
+{
+  "sectionId": "12.4",
+  "chapterId": 12,
+  "questions": [
+    {
+      "id": "ch12-q07",
+      "question": "In Asch's conformity experiments, approximately what percentage of participants conformed to the incorrect group judgment at least once?",
+      "options": [
+        { "text": "About 25%", "correct": false },
+        { "text": "About 50%", "correct": false },
+        { "text": "About 75%", "correct": true },
+        { "text": "About 95%", "correct": false }
+      ],
+      "explanation": "In Asch's line-judgment experiments, approximately 75% of participants conformed to the clearly incorrect group judgment at least once, demonstrating the powerful influence of group pressure even on straightforward perceptual tasks."
+    },
+    {
+      "id": "ch12-q08",
+      "question": "In Milgram's obedience experiments, obedience levels DECREASED when:",
+      "options": [
+        { "text": "The authority figure was physically present in the room", "correct": false },
+        { "text": "The victim was in a separate room where the participant could not see them", "correct": false },
+        { "text": "Other participants modeled disobedience by refusing to continue", "correct": true },
+        { "text": "The experiment took place at a prestigious university", "correct": false }
+      ],
+      "explanation": "Milgram found that obedience decreased significantly when other participants modeled disobedience by refusing to continue. Having a social model of resistance gave participants the courage to defy the authority figure."
+    }
+  ],
+  "passThreshold": 80
+}

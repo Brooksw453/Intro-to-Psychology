@@ -1,0 +1,45 @@
+{
+  "sectionId": "13.2",
+  "chapterId": 13,
+  "title": "Industrial Psychology: Selecting and Evaluating Employees",
+  "learningObjectives": [
+    "Explain the process and importance of job analysis",
+    "Describe methods used in employee selection and recruitment",
+    "Discuss approaches to training and performance appraisal"
+  ],
+  "keyTerms": [
+    { "term": "Job analysis", "definition": "A systematic process of identifying the tasks, duties, and responsibilities of a job, as well as the knowledge, skills, and abilities required to perform it." },
+    { "term": "KSAOs", "definition": "Knowledge, Skills, Abilities, and Other characteristics — the personal attributes needed to perform a job effectively, identified through job analysis." },
+    { "term": "Structured interview", "definition": "A job interview in which all candidates are asked the same predetermined questions, allowing for more objective comparison between applicants." },
+    { "term": "Performance appraisal", "definition": "A formal evaluation of an employee's job performance, typically conducted by a supervisor, used to provide feedback and make employment decisions." },
+    { "term": "360-degree feedback", "definition": "A performance appraisal method that gathers evaluations from an employee's supervisors, peers, subordinates, and sometimes customers to provide a comprehensive assessment." },
+    { "term": "Training", "definition": "A systematic process in which employees develop job-relevant knowledge, skills, and abilities through instruction, practice, and feedback." }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "Job Analysis and Employee Selection",
+      "body": "The foundation of industrial psychology is **job analysis** — a systematic study of what a job entails. Through observation, interviews, questionnaires, and review of existing documentation, I-O psychologists identify the specific tasks involved in a position and the **KSAOs** (Knowledge, Skills, Abilities, and Other characteristics) required to perform those tasks effectively.\n\nJob analysis serves multiple purposes. It informs the creation of accurate job descriptions and advertisements, guides the development of selection criteria, helps determine fair compensation, and provides the basis for performance evaluation. Without a thorough job analysis, organizations risk hiring people who are poorly suited to their roles.\n\nEmployee selection involves choosing the best candidates from a pool of applicants. I-O psychologists have developed various tools to improve selection decisions, including cognitive ability tests, personality assessments, work sample tests, and **structured interviews**. Research consistently shows that structured interviews — in which all candidates are asked the same predetermined questions — are far more predictive of job performance than unstructured, conversational interviews.\n\nI-O psychologists also study the validity and reliability of selection tools. A selection method has **predictive validity** when scores on the assessment actually predict future job performance. Cognitive ability tests, for example, are among the strongest predictors of job performance across many occupations."
+    },
+    {
+      "type": "concept",
+      "title": "Training and Performance Appraisal",
+      "body": "Once employees are hired, **training** helps them develop the competencies needed for their roles. Effective training programs follow a systematic approach: conducting a needs assessment to identify skill gaps, designing training based on learning principles, delivering the training, and evaluating its effectiveness.\n\nTraining methods include on-the-job training, classroom instruction, mentoring, simulation-based learning, and increasingly, e-learning platforms. I-O psychologists evaluate training programs using criteria such as participant reactions, learning gains, behavior change on the job, and organizational results (like increased productivity or reduced errors).\n\n**Performance appraisal** is the process of formally evaluating how well employees are doing their jobs. Common methods include graphic rating scales (rating performance on specific dimensions), behaviorally anchored rating scales (BARS), and **360-degree feedback**, which collects evaluations from multiple sources — supervisors, peers, subordinates, and even customers.\n\nPerformance appraisals can be subject to various biases, including the halo effect (rating an employee high on all dimensions because they excel in one area), leniency bias (rating everyone favorably), and recency bias (overweighting recent performance). I-O psychologists develop strategies to minimize these biases and improve the fairness and accuracy of evaluations."
+    },
+    {
+      "type": "example",
+      "title": "Real-World Example: Bias in Hiring",
+      "body": "Research has revealed significant biases in unstructured hiring processes. Studies show that identical resumes receive different callback rates depending on the applicant's name, suggesting racial and gender bias. I-O psychologists address this by developing structured selection processes with standardized criteria, blind resume reviews, and validated assessment tools. These evidence-based approaches help organizations make fairer and more effective hiring decisions."
+    },
+    {
+      "type": "summary",
+      "body": "Industrial psychology focuses on matching people to jobs through systematic job analysis, validated selection methods, effective training programs, and fair performance appraisal systems. Research-based approaches help reduce bias and improve both organizational outcomes and employee experiences."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-13.2",
+    "prompt": "Imagine you are an I-O psychologist hired by a company that is experiencing high employee turnover. Describe how you would use job analysis and improved selection methods to address this problem. What specific tools or approaches would you recommend, and why?",
+    "minWords": 100,
+    "rubric": "Student should describe the job analysis process, recommend at least two specific selection tools (e.g., structured interviews, cognitive ability tests, personality assessments), explain why each would help reduce turnover, and demonstrate understanding of concepts like validity, KSAOs, and person-job fit."
+  }
+}

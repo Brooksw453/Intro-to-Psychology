@@ -1,0 +1,13 @@
+{
+  "chapterId": 6,
+  "title": "Learning",
+  "weekNum": 6,
+  "reading": "Psychology 2e (OpenStax), Chapter 6 (Sections 6.1-6.4)",
+  "learningObjectives": [
+    "Define learning and distinguish it from innate behaviors and reflexes",
+    "Explain the principles of classical conditioning and how associations between stimuli are formed",
+    "Describe the mechanisms of operant conditioning including reinforcement and punishment",
+    "Explain observational learning and the conditions under which modeling occurs"
+  ],
+  "sections": ["6.1", "6.2", "6.3", "6.4"]
+}

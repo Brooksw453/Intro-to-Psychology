@@ -1,0 +1,71 @@
+{
+  "sectionId": "6.2",
+  "chapterId": 6,
+  "title": "Classical Conditioning",
+  "learningObjectives": [
+    "Describe Pavlov's experiments and the process of classical conditioning",
+    "Identify the unconditioned stimulus, unconditioned response, conditioned stimulus, and conditioned response",
+    "Explain extinction, spontaneous recovery, generalization, and discrimination in classical conditioning"
+  ],
+  "keyTerms": [
+    {
+      "term": "Classical conditioning",
+      "definition": "A type of learning in which a neutral stimulus comes to elicit a response after being paired with a stimulus that naturally produces that response."
+    },
+    {
+      "term": "Unconditioned stimulus (US)",
+      "definition": "A stimulus that naturally and automatically triggers a response without prior learning."
+    },
+    {
+      "term": "Unconditioned response (UR)",
+      "definition": "The unlearned, naturally occurring response to an unconditioned stimulus."
+    },
+    {
+      "term": "Conditioned stimulus (CS)",
+      "definition": "A previously neutral stimulus that, after repeated pairing with an unconditioned stimulus, comes to trigger a conditioned response."
+    },
+    {
+      "term": "Conditioned response (CR)",
+      "definition": "The learned response to a previously neutral stimulus that has become a conditioned stimulus."
+    },
+    {
+      "term": "Extinction",
+      "definition": "The gradual weakening and disappearance of a conditioned response when the conditioned stimulus is repeatedly presented without the unconditioned stimulus."
+    },
+    {
+      "term": "Stimulus generalization",
+      "definition": "The tendency for a conditioned response to be elicited by stimuli that are similar to the conditioned stimulus."
+    },
+    {
+      "term": "Stimulus discrimination",
+      "definition": "The ability to distinguish between the conditioned stimulus and other stimuli that are similar but do not signal the unconditioned stimulus."
+    }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "Pavlov's Discovery",
+      "body": "**Classical conditioning** was discovered by the Russian physiologist Ivan Pavlov while studying digestion in dogs. Pavlov noticed that his dogs began salivating not only when food was placed in their mouths, but also when they saw the lab assistant who usually brought the food. The dogs had learned to associate the sight of the assistant with the arrival of food.\n\nTo study this phenomenon systematically, Pavlov designed an elegant experiment. He began by sounding a tone (a neutral stimulus that initially produced no salivation) and then immediately presenting food powder to the dog. The food powder is called the **unconditioned stimulus (US)** because it naturally and automatically triggers salivation -- the **unconditioned response (UR)**. After multiple pairings of the tone with the food, the tone alone began to produce salivation. The tone had become a **conditioned stimulus (CS)**, and the salivation it produced was now a **conditioned response (CR)**.\n\nSeveral factors influence the strength of classical conditioning. **Timing** is critical: the CS should ideally be presented just before the US (forward conditioning). **Consistency** matters: the CS should reliably predict the US. And **contingency** is essential: the CS must provide new information about the upcoming US. If the US occurs just as frequently without the CS, conditioning will not develop because the CS is not a reliable predictor."
+    },
+    {
+      "type": "concept",
+      "title": "Principles of Classical Conditioning",
+      "body": "Once a conditioned response is established, several important processes can modify it. **Extinction** occurs when the CS is repeatedly presented without the US. Over time, the CR gradually weakens and eventually disappears. If Pavlov's dogs heard the tone many times without receiving food, they would eventually stop salivating to the tone.\n\nHowever, extinction does not erase the original learning. **Spontaneous recovery** is the reappearance of a previously extinguished CR after a rest period. If the dogs were removed from the lab and brought back days later, the tone might again produce some salivation, suggesting that the association was suppressed rather than eliminated during extinction.\n\n**Stimulus generalization** occurs when an organism responds to stimuli that are similar to the CS. A dog conditioned to salivate to a 1000 Hz tone might also salivate to tones of 900 Hz or 1100 Hz. The more similar the stimulus is to the original CS, the stronger the response. **Stimulus discrimination** is the complementary process -- learning to respond to the CS but not to similar stimuli. Through differential training (reinforcing responses to one tone but not others), the dog can learn to distinguish the original CS from similar sounds.\n\nJohn B. Watson famously demonstrated that emotional responses could be classically conditioned in humans. In his controversial **Little Albert** experiment, Watson and Rosalie Rayner conditioned a young child to fear a white rat by pairing the rat with a loud, startling noise. Albert's fear generalized to other white, furry objects, including a rabbit and a Santa Claus mask."
+    },
+    {
+      "type": "example",
+      "title": "Classical Conditioning in Modern Life",
+      "body": "Classical conditioning shapes many aspects of everyday experience, often without our awareness. Consider the following examples:\n\n**Advertising** relies heavily on classical conditioning. Companies pair their products (neutral stimuli) with attractive models, upbeat music, or appealing imagery (unconditioned stimuli that naturally produce positive feelings). Over time, consumers develop positive associations with the brand itself.\n\n**Taste aversions** are a powerful form of classical conditioning. If you eat a particular food and then become ill (even if the illness was caused by a virus rather than the food), you may develop a strong aversion to that food. Remarkably, taste aversions can form after just a single pairing and can persist for years. This one-trial learning makes biological sense -- an organism that quickly learns to avoid foods associated with illness has a survival advantage.\n\n**Phobias** can develop through classical conditioning when a neutral object or situation becomes associated with a frightening experience. A child bitten by a dog may develop a lasting fear of all dogs. Understanding this process has led to effective treatments: **systematic desensitization** uses principles of extinction to gradually reduce phobic responses by pairing the feared stimulus with relaxation."
+    },
+    {
+      "type": "summary",
+      "body": "Classical conditioning, discovered by Pavlov, involves learning to associate a neutral stimulus with one that naturally produces a response. Through repeated pairings, the neutral stimulus becomes a conditioned stimulus that elicits a conditioned response. Key processes include extinction, spontaneous recovery, stimulus generalization, and stimulus discrimination. Classical conditioning explains many real-world phenomena including advertising effects, taste aversions, and the development and treatment of phobias."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-6.2",
+    "prompt": "Describe a real-world example of classical conditioning from your own life or from a situation you have observed. Identify the unconditioned stimulus (US), unconditioned response (UR), conditioned stimulus (CS), and conditioned response (CR) in your example. Then explain how extinction might be used to weaken or eliminate the conditioned response. Has stimulus generalization occurred in your example? If so, how?",
+    "minWords": 100,
+    "rubric": "A strong response provides a specific, concrete example of classical conditioning, correctly identifies all four components (US, UR, CS, CR), explains how the association was formed through pairing, describes a plausible extinction procedure (repeated CS presentation without the US), and addresses whether stimulus generalization has occurred with appropriate reasoning."
+  }
+}

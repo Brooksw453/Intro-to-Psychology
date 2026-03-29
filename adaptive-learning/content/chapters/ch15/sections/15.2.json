@@ -1,0 +1,60 @@
+{
+  "sectionId": "15.2",
+  "chapterId": 15,
+  "title": "Diagnosing and Classifying Psychological Disorders",
+  "learningObjectives": [
+    "Describe the purpose and structure of the Diagnostic and Statistical Manual of Mental Disorders (DSM-5)",
+    "Explain the International Classification of Diseases (ICD) and how it compares to the DSM",
+    "Discuss the advantages and criticisms of diagnostic classification systems"
+  ],
+  "keyTerms": [
+    {
+      "term": "Diagnostic and Statistical Manual of Mental Disorders (DSM-5)",
+      "definition": "The standard classification system published by the American Psychiatric Association used to diagnose psychological disorders in the United States."
+    },
+    {
+      "term": "International Classification of Diseases (ICD)",
+      "definition": "A diagnostic classification system published by the World Health Organization used internationally to classify diseases, including mental disorders."
+    },
+    {
+      "term": "Comorbidity",
+      "definition": "The co-occurrence of two or more disorders in the same individual at the same time."
+    },
+    {
+      "term": "Diagnosis",
+      "definition": "The process of identifying a disorder by examining symptoms and using established criteria."
+    },
+    {
+      "term": "Prevalence",
+      "definition": "The percentage of a population affected by a particular disorder during a specified time period."
+    }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "The DSM-5: Structure and Purpose",
+      "body": "The **Diagnostic and Statistical Manual of Mental Disorders (DSM-5)**, published by the American Psychiatric Association, is the primary classification system used by mental health professionals in the United States to diagnose psychological disorders. First published in 1952, the DSM has undergone several major revisions, with the fifth edition released in 2013.\n\nThe DSM-5 organizes disorders into categories based on shared features. Each disorder entry includes **diagnostic criteria** -- specific symptoms and conditions that must be present for a **diagnosis** to be made. These criteria specify the number, duration, and severity of symptoms required, helping clinicians make consistent and reliable diagnoses across different settings.\n\nFor example, to receive a diagnosis of major depressive disorder, a person must experience at least five of nine specified symptoms (such as depressed mood, loss of interest, sleep disturbance, fatigue, and difficulty concentrating) during the same two-week period, with at least one symptom being depressed mood or loss of interest. The symptoms must cause clinically significant distress or impairment and cannot be attributable to a substance or medical condition.\n\nThe DSM-5 also provides information about the **prevalence** of each disorder -- the proportion of the population affected during a given time period. Approximately one in five adults in the United States experiences a psychological disorder in any given year, and nearly half will experience at least one disorder during their lifetime."
+    },
+    {
+      "type": "concept",
+      "title": "The ICD and International Classification",
+      "body": "The **International Classification of Diseases (ICD)**, published by the World Health Organization, serves as the global standard for classifying diseases and health conditions, including mental disorders. While the DSM is primarily used in the United States, the ICD is used internationally and is the official classification system for insurance billing purposes even within the U.S.\n\nThe ICD and DSM share considerable overlap in their classification of mental disorders, though they differ in some organizational details and diagnostic criteria. Efforts to harmonize the two systems have increased with recent revisions, ensuring that clinicians and researchers worldwide can communicate effectively about psychological conditions.\n\n**Comorbidity** -- the co-occurrence of two or more disorders in the same individual -- is common in psychological disorders. A person with an anxiety disorder may also experience depression, or a person with a substance use disorder may also have posttraumatic stress disorder. Comorbidity complicates both diagnosis and treatment, as clinicians must address multiple conditions simultaneously."
+    },
+    {
+      "type": "example",
+      "title": "Controversies in Diagnosis",
+      "body": "Diagnostic classification systems like the DSM are not without controversy. Critics raise several important concerns. First, there is the risk of **labeling** -- once a person receives a diagnosis, that label may follow them throughout their life, shaping how others perceive and treat them. David Rosenhan's classic 1973 study demonstrated this powerfully: when healthy individuals presented themselves at psychiatric hospitals claiming to hear voices, they were admitted and diagnosed with schizophrenia. Even after behaving normally, staff continued to interpret their behavior through the lens of the diagnosis.\n\nSecond, critics argue that the DSM **medicalizes normal human experiences**. Is intense grief following the loss of a loved one truly a disorder, or a natural and healthy response to loss? The DSM-5's decision to allow a diagnosis of major depressive disorder even during bereavement sparked significant debate.\n\nThird, questions of **cultural bias** persist. The DSM was developed primarily within Western cultural contexts, and its diagnostic categories may not adequately capture how psychological distress is expressed and understood in other cultures. Culture-bound syndromes -- patterns of symptoms that are recognized as disorders only within specific cultural groups -- highlight the limitations of applying a single diagnostic framework universally.\n\nDespite these criticisms, classification systems serve essential functions: they provide a common language for clinicians, guide treatment planning, facilitate research, and enable the tracking of disorder prevalence across populations."
+    },
+    {
+      "type": "summary",
+      "title": "Section Summary",
+      "body": "The DSM-5 and ICD are the primary systems used to classify and diagnose psychological disorders. The DSM-5 provides specific diagnostic criteria for each disorder, helping ensure consistent diagnosis across clinical settings. Comorbidity, or the co-occurrence of multiple disorders, is common and complicates treatment. While classification systems serve vital functions in clinical practice and research, they face valid criticisms regarding labeling, the medicalization of normal experiences, and cultural bias."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-15.2",
+    "prompt": "Consider the advantages and disadvantages of using a standardized diagnostic system like the DSM-5 to classify psychological disorders. In what ways does having a common diagnostic framework benefit patients, clinicians, and researchers? What are the potential risks or drawbacks of diagnostic labeling? Use specific examples to support your argument.",
+    "minWords": 100,
+    "rubric": "A strong response identifies at least two benefits of standardized diagnosis (e.g., common language, treatment guidance, research consistency) and at least two risks (e.g., stigma from labeling, cultural bias, medicalization of normal experiences). The response should demonstrate critical thinking about the balance between the utility and limitations of diagnostic classification, using specific examples such as the Rosenhan study or cultural considerations."
+  }
+}

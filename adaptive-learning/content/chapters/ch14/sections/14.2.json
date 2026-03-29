@@ -1,0 +1,44 @@
+{
+  "sectionId": "14.2",
+  "chapterId": 14,
+  "title": "Stressors",
+  "learningObjectives": [
+    "Identify and describe major categories of stressors",
+    "Explain how daily hassles and major life events contribute to stress",
+    "Discuss the impact of job-related and environmental stressors"
+  ],
+  "keyTerms": [
+    { "term": "Daily hassles", "definition": "Minor everyday irritations and annoyances — such as traffic, misplaced keys, or arguments — that accumulate and can significantly impact stress levels and health." },
+    { "term": "Life events", "definition": "Major experiences that require significant adjustment, such as marriage, divorce, job loss, or the death of a loved one, measured by scales like the Social Readjustment Rating Scale." },
+    { "term": "Social Readjustment Rating Scale (SRRS)", "definition": "A scale developed by Holmes and Rahe that ranks 43 life events according to the degree of readjustment they require, with higher scores predicting greater risk of illness." },
+    { "term": "Job burnout", "definition": "A state of chronic stress characterized by emotional exhaustion, depersonalization, and a reduced sense of personal accomplishment, typically resulting from prolonged occupational stress." },
+    { "term": "Traumatic event", "definition": "An overwhelmingly negative event — such as combat, natural disaster, or assault — that can produce lasting psychological effects including PTSD." }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "Types of Stressors",
+      "body": "Stressors come in many forms and can be categorized in several ways. **Daily hassles** are the minor irritations of everyday life — commuting in traffic, dealing with difficult coworkers, managing household chores, or coping with technology problems. While each hassle may seem trivial, research by Lazarus and colleagues has shown that the cumulative effect of daily hassles can be a stronger predictor of health problems than major life events.\n\n**Life events** are significant experiences that require substantial adjustment. Thomas Holmes and Richard Rahe developed the **Social Readjustment Rating Scale (SRRS)**, which assigns point values to 43 life events based on the degree of readjustment they require. Death of a spouse ranks highest (100 points), followed by divorce (73), imprisonment (63), and death of a close family member (63). Even positive events like marriage (50) and pregnancy (40) appear on the scale because they require adjustment. People who accumulate more than 300 points in a year face significantly increased risk of illness.\n\n**Traumatic events** represent the most severe category of stressors. These include combat exposure, sexual assault, natural disasters, serious accidents, and witnessing violence. Traumatic events can produce lasting psychological effects, including posttraumatic stress disorder (PTSD), and they overwhelm normal coping mechanisms."
+    },
+    {
+      "type": "concept",
+      "title": "Occupational and Environmental Stressors",
+      "body": "The workplace is a significant source of stress for many people. Job-related stressors include excessive workload, lack of control over one's work, role ambiguity, interpersonal conflict, and job insecurity. When occupational stress becomes chronic, it can lead to **job burnout** — a syndrome characterized by emotional exhaustion, depersonalization (treating clients or colleagues as objects), and a diminished sense of personal accomplishment.\n\nEnvironmental stressors include noise, crowding, pollution, and poverty. Research has shown that chronic exposure to noise is associated with elevated cortisol levels, impaired cognitive performance in children, and cardiovascular problems. Poverty is a particularly pervasive stressor because it is associated with inadequate housing, food insecurity, limited healthcare access, and reduced educational opportunities — all of which compound the stress response.\n\nSocial stressors also play an important role. Discrimination, prejudice, and social isolation are powerful stressors that disproportionately affect minority populations. Research has documented the health effects of racial discrimination, showing links to hypertension, depression, and other stress-related conditions."
+    },
+    {
+      "type": "example",
+      "title": "Real-World Example: The Stress of Poverty",
+      "body": "Research consistently shows that people living in poverty experience higher levels of chronic stress and worse health outcomes. The constant worry about meeting basic needs — food, rent, healthcare — produces sustained activation of the stress response. Children growing up in poverty show elevated cortisol levels, which can affect brain development, particularly in areas responsible for memory and executive function. This demonstrates how environmental stressors can have profound and lasting biological effects."
+    },
+    {
+      "type": "summary",
+      "body": "Stressors range from daily hassles and major life events to traumatic experiences and chronic environmental conditions. The cumulative impact of daily hassles can be as harmful as major life events. Occupational stress can lead to burnout, while environmental stressors like poverty and discrimination have widespread health consequences."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-14.2",
+    "prompt": "Using the concepts from this section, categorize the stressors in your current life into daily hassles, life events, and chronic stressors. Which category has the greatest impact on your well-being, and why? How does this relate to the research findings about the cumulative effects of different types of stressors?",
+    "minWords": 100,
+    "rubric": "Student should correctly categorize their stressors using the terminology from the section, reflect meaningfully on which type has the greatest impact, and connect their personal experience to research findings (e.g., Lazarus's work on daily hassles or Holmes and Rahe's SRRS). Should demonstrate understanding that stress is cumulative."
+  }
+}

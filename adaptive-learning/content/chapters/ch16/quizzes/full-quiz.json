@@ -1,0 +1,95 @@
+{
+  "sectionId": "full",
+  "chapterId": 16,
+  "questions": [
+    {
+      "id": "ch16-q11",
+      "question": "Philippe Pinel is historically significant in the treatment of mental illness because he:",
+      "options": [
+        { "text": "Developed the first antipsychotic medication", "correct": false },
+        { "text": "Removed the chains from patients at the Bicetre asylum and advocated humane treatment", "correct": true },
+        { "text": "Established the first community mental health center in the United States", "correct": false },
+        { "text": "Invented electroconvulsive therapy for treatment-resistant depression", "correct": false }
+      ],
+      "explanation": "Philippe Pinel, a French physician, is credited with removing the chains from patients at the Bicetre asylum in Paris. He was a key figure in the moral treatment movement, which advocated for humane, compassionate care of people with psychological disorders."
+    },
+    {
+      "id": "ch16-q12",
+      "question": "Carl Rogers believed that therapeutic change requires the therapist to provide which three core conditions?",
+      "options": [
+        { "text": "Diagnosis, prescription, and follow-up", "correct": false },
+        { "text": "Unconditional positive regard, empathy, and genuineness", "correct": true },
+        { "text": "Interpretation, confrontation, and homework assignments", "correct": false },
+        { "text": "Free association, dream analysis, and transference", "correct": false }
+      ],
+      "explanation": "Rogers' client-centered therapy is based on three core conditions: unconditional positive regard (nonjudgmental acceptance), empathy (accurate understanding of the client's experience), and genuineness (authentic communication). These create a safe environment for self-exploration."
+    },
+    {
+      "id": "ch16-q13",
+      "question": "Cognitive-behavioral therapy (CBT) is distinctive because it:",
+      "options": [
+        { "text": "Relies exclusively on medication to treat psychological disorders", "correct": false },
+        { "text": "Combines techniques for changing distorted thinking with strategies for modifying behavior", "correct": true },
+        { "text": "Focuses solely on childhood experiences as the root of all adult problems", "correct": false },
+        { "text": "Requires a minimum of two years of weekly sessions to be effective", "correct": false }
+      ],
+      "explanation": "CBT integrates cognitive techniques (identifying and modifying distorted thoughts) with behavioral techniques (changing maladaptive behaviors). It is structured, goal-oriented, and typically time-limited, with strong research support across many conditions."
+    },
+    {
+      "id": "ch16-q14",
+      "question": "Which biomedical treatment involves delivering brief electrical pulses to the brain under anesthesia and is used primarily for severe, treatment-resistant depression?",
+      "options": [
+        { "text": "Transcranial magnetic stimulation (TMS)", "correct": false },
+        { "text": "Deep brain stimulation (DBS)", "correct": false },
+        { "text": "Electroconvulsive therapy (ECT)", "correct": true },
+        { "text": "Psychopharmacology", "correct": false }
+      ],
+      "explanation": "Electroconvulsive therapy (ECT) delivers brief electrical pulses to the brain under anesthesia. Despite its controversial history, modern ECT is safe and effective for severe, treatment-resistant depression and is sometimes used for other conditions."
+    },
+    {
+      "id": "ch16-q15",
+      "question": "Which treatment approach for opioid use disorders uses medications such as methadone or buprenorphine in combination with counseling?",
+      "options": [
+        { "text": "Aversion therapy", "correct": false },
+        { "text": "Systematic desensitization", "correct": false },
+        { "text": "Medication-assisted treatment (MAT)", "correct": true },
+        { "text": "Psychodynamic therapy", "correct": false }
+      ],
+      "explanation": "Medication-assisted treatment (MAT) combines FDA-approved medications (such as methadone, buprenorphine, or naltrexone) with counseling and behavioral therapies. Research consistently shows that MAT significantly reduces opioid use, overdose risk, and mortality."
+    },
+    {
+      "id": "ch16-q16",
+      "question": "A pattern of symptoms recognized as a disorder within one culture but not necessarily recognized in other cultures is called a:",
+      "options": [
+        { "text": "Comorbid condition", "correct": false },
+        { "text": "Culture-bound syndrome", "correct": true },
+        { "text": "Psychosomatic disorder", "correct": false },
+        { "text": "Universal disorder", "correct": false }
+      ],
+      "explanation": "Culture-bound syndromes are patterns of symptoms recognized within specific cultural groups but not necessarily shared across cultures. Examples include ataque de nervios in Latin American cultures and taijin kyofusho in Japanese culture."
+    },
+    {
+      "id": "ch16-q17",
+      "question": "Which of the following is a significant consequence of the failed implementation of deinstitutionalization in the United States?",
+      "options": [
+        { "text": "A dramatic decrease in the number of people experiencing homelessness", "correct": false },
+        { "text": "The elimination of stigma surrounding mental illness", "correct": false },
+        { "text": "Jails and prisons now house more people with severe mental illness than psychiatric hospitals", "correct": true },
+        { "text": "Universal access to community mental health services", "correct": false }
+      ],
+      "explanation": "Due to inadequate funding for community mental health centers, many people discharged from psychiatric hospitals ended up homeless or incarcerated. Today, jails and prisons house more people with severe mental illness than hospitals -- a phenomenon called 'transinstitutionalization.'"
+    },
+    {
+      "id": "ch16-q18",
+      "question": "Which barrier to mental health treatment is most directly addressed by teletherapy?",
+      "options": [
+        { "text": "Cultural stigma surrounding mental illness", "correct": false },
+        { "text": "Geographic isolation and transportation difficulties", "correct": true },
+        { "text": "Lack of evidence-based therapeutic techniques", "correct": false },
+        { "text": "Shortage of training programs for mental health professionals", "correct": false }
+      ],
+      "explanation": "Teletherapy directly addresses geographic and transportation barriers by allowing clients to receive therapy through video conferencing, phone, or digital platforms. This is particularly beneficial for people in rural or underserved areas."
+    }
+  ],
+  "passThreshold": 80
+}

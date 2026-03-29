@@ -1,0 +1,60 @@
+{
+  "sectionId": "1.4",
+  "chapterId": 1,
+  "title": "Careers in Psychology",
+  "learningObjectives": [
+    "Describe the various career options available to those with training in psychology",
+    "Distinguish between different types of psychology professionals and their training requirements",
+    "Explain how psychological training applies to careers both within and outside of traditional psychology settings"
+  ],
+  "keyTerms": [
+    {
+      "term": "Clinical psychologist",
+      "definition": "A mental health professional with a doctoral degree (PhD or PsyD) who diagnoses and treats mental, emotional, and behavioral disorders."
+    },
+    {
+      "term": "Psychiatrist",
+      "definition": "A medical doctor (MD or DO) who specializes in diagnosing and treating mental illness, with the ability to prescribe medication."
+    },
+    {
+      "term": "Industrial-organizational (I-O) psychologist",
+      "definition": "A psychologist who applies psychological principles to workplace issues including employee selection, training, and organizational behavior."
+    },
+    {
+      "term": "Forensic psychologist",
+      "definition": "A psychologist who applies psychological principles to questions involving the legal system, such as criminal profiling or competency evaluations."
+    },
+    {
+      "term": "School psychologist",
+      "definition": "A psychologist who works within educational settings to address students' learning and behavioral challenges and support academic achievement."
+    }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "Academic and Research Careers",
+      "body": "A career in psychology can take many forms depending on one's level of education and area of specialization. Those who pursue graduate education (master's or doctoral degrees) in psychology can enter academic and research positions.\n\n**Research psychologists** work in universities, government agencies, and private organizations to advance our understanding of behavior and mental processes. They design studies, analyze data, and publish findings in professional journals. Many combine research with teaching at colleges and universities.\n\nA **doctoral degree** (PhD or PsyD) is typically required for independent research and clinical practice. The **PhD** (Doctor of Philosophy) emphasizes research training, while the **PsyD** (Doctor of Psychology) emphasizes clinical practice. Both require several years of graduate study, supervised clinical experience, and typically a dissertation or doctoral project.\n\nAcademic psychologists often specialize in subfields such as cognitive psychology, developmental psychology, social psychology, or neuroscience. They contribute to knowledge through basic research (seeking fundamental understanding) and applied research (solving practical problems)."
+    },
+    {
+      "type": "concept",
+      "title": "Clinical and Counseling Careers",
+      "body": "**Clinical psychologists** represent the largest group of psychologists. They assess, diagnose, and treat mental, emotional, and behavioral disorders using psychotherapy and psychological testing. It is important to distinguish clinical psychologists from **psychiatrists** -- psychiatrists hold medical degrees (MD or DO) and can prescribe medication, while clinical psychologists typically cannot (though prescriptive authority for psychologists exists in a few U.S. states and territories).\n\n**Counseling psychologists** help people cope with everyday life challenges, relationship difficulties, career decisions, and stress. They tend to work with less severe issues than clinical psychologists, though there is significant overlap between the two fields.\n\n**School psychologists** work in educational settings, helping students with learning disabilities, behavioral problems, and emotional difficulties. They collaborate with teachers, parents, and administrators to create supportive learning environments. A specialist-level degree (EdS) or doctoral degree is typically required."
+    },
+    {
+      "type": "example",
+      "title": "Applied and Non-Traditional Career Paths",
+      "body": "Psychology training opens doors far beyond the therapy office. **Industrial-organizational (I-O) psychologists** work in business settings, addressing employee motivation, leadership development, workplace culture, and hiring processes. The Bureau of Labor Statistics consistently ranks I-O psychology among the fastest-growing occupations.\n\n**Forensic psychologists** apply psychological knowledge within the legal system. They may evaluate defendants' competency to stand trial, provide expert testimony, assist with jury selection, or work in correctional facilities. **Health psychologists** study how behavior, biology, and social context influence health and illness, often working in hospitals or public health organizations.\n\n**Sports psychologists** help athletes enhance performance and manage competitive pressure. **Neuropsychologists** assess and treat individuals with brain injuries or neurological conditions.\n\nEven a bachelor's degree in psychology provides valuable skills. Graduates work in human resources, social services, marketing research, case management, and community outreach. The analytical thinking, research literacy, communication skills, and understanding of human behavior gained through psychology training are valued across many industries."
+    },
+    {
+      "type": "summary",
+      "title": "Section Summary",
+      "body": "Psychology offers a wide array of career paths at various educational levels. Doctoral-level careers include academic research, clinical practice, and specialized applied work such as forensic, I-O, or health psychology. Master's-level and specialist-level positions include school psychology, counseling, and industrial settings. Even bachelor's-level graduates benefit from transferable skills in critical thinking, data analysis, and understanding human behavior. Key distinctions exist between clinical psychologists and psychiatrists in terms of training and prescriptive authority."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-1.4",
+    "prompt": "Imagine you are advising a college student who is interested in psychology but unsure about career options. Based on what you have learned about the different career paths in psychology, recommend two specific career paths that might suit someone who enjoys both working with people and conducting research. Explain what training each path requires and how it combines interpersonal work with scientific inquiry.",
+    "minWords": 100,
+    "rubric": "A strong response recommends two specific career paths, accurately describes the educational and training requirements for each, explains how each career combines interpersonal and research components, and demonstrates understanding of the breadth of career options available in psychology."
+  }
+}

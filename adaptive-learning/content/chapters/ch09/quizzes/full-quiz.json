@@ -1,0 +1,117 @@
+{
+  "sectionId": "full",
+  "chapterId": 9,
+  "questions": [
+    {
+      "id": "ch09-q09",
+      "question": "Which research design follows the same group of individuals over an extended period to study developmental changes?",
+      "options": [
+        { "text": "Cross-sectional research", "correct": false },
+        { "text": "Correlational research", "correct": false },
+        { "text": "Longitudinal research", "correct": true },
+        { "text": "Case study research", "correct": false }
+      ],
+      "explanation": "Longitudinal research follows the same participants over time, allowing researchers to observe actual developmental changes within individuals rather than inferring them from comparisons between different age groups."
+    },
+    {
+      "id": "ch09-q10",
+      "question": "In Piaget's theory, the ability to think abstractly and reason hypothetically first emerges during which stage?",
+      "options": [
+        { "text": "Sensorimotor stage", "correct": false },
+        { "text": "Preoperational stage", "correct": false },
+        { "text": "Concrete operational stage", "correct": false },
+        { "text": "Formal operational stage", "correct": true }
+      ],
+      "explanation": "The formal operational stage (age 12 and beyond) is characterized by the ability to think abstractly, reason hypothetically, and engage in systematic problem-solving. Earlier stages involve more concrete and perception-bound forms of thinking."
+    },
+    {
+      "id": "ch09-q11",
+      "question": "Erikson's stage of Generativity vs. Stagnation occurs during which period of life?",
+      "options": [
+        { "text": "Adolescence", "correct": false },
+        { "text": "Young adulthood", "correct": false },
+        { "text": "Middle adulthood", "correct": true },
+        { "text": "Late adulthood", "correct": false }
+      ],
+      "explanation": "Generativity vs. Stagnation is Erikson's seventh stage, occurring during middle adulthood. It involves the desire to contribute to society and guide the next generation. Failure to achieve generativity leads to feelings of stagnation and self-absorption."
+    },
+    {
+      "id": "ch09-q12",
+      "question": "According to Piaget, when a child modifies an existing schema to incorporate new information that does not fit, this process is called:",
+      "options": [
+        { "text": "Assimilation", "correct": false },
+        { "text": "Accommodation", "correct": true },
+        { "text": "Conservation", "correct": false },
+        { "text": "Scaffolding", "correct": false }
+      ],
+      "explanation": "Accommodation involves modifying existing schemas or creating new ones when new information does not fit into current mental frameworks. Assimilation, by contrast, involves fitting new information into existing schemas without changing them."
+    },
+    {
+      "id": "ch09-q13",
+      "question": "Mary Ainsworth's Strange Situation experiments were designed to study which aspect of infant development?",
+      "options": [
+        { "text": "Object permanence", "correct": false },
+        { "text": "Language acquisition", "correct": false },
+        { "text": "Attachment styles", "correct": true },
+        { "text": "Temperament categories", "correct": false }
+      ],
+      "explanation": "Ainsworth's Strange Situation was specifically designed to assess the quality of the attachment bond between infants and their caregivers by observing the infant's responses to separation from and reunion with the caregiver in a novel environment."
+    },
+    {
+      "id": "ch09-q14",
+      "question": "Carol Gilligan's critique of Kohlberg's theory of moral development argued that:",
+      "options": [
+        { "text": "Children cannot reason morally until the formal operational stage", "correct": false },
+        { "text": "Kohlberg's theory was biased toward a male perspective emphasizing justice over care", "correct": true },
+        { "text": "Moral development does not follow a stage-like progression", "correct": false },
+        { "text": "Cultural factors have no influence on moral reasoning", "correct": false }
+      ],
+      "explanation": "Gilligan argued that Kohlberg's research was based primarily on male participants and emphasized justice and rights. She proposed that women often approach moral decisions from an ethic of care, focusing on relationships and responsibility to others."
+    },
+    {
+      "id": "ch09-q15",
+      "question": "Which of the following is NOT one of the Kubler-Ross stages of dying?",
+      "options": [
+        { "text": "Denial", "correct": false },
+        { "text": "Anger", "correct": false },
+        { "text": "Acceptance", "correct": false },
+        { "text": "Resilience", "correct": true }
+      ],
+      "explanation": "The five stages in the Kubler-Ross model are denial, anger, bargaining, depression, and acceptance. Resilience is not one of these stages, though it is an important concept in bereavement research more broadly."
+    },
+    {
+      "id": "ch09-q16",
+      "question": "Vygotsky's zone of proximal development refers to:",
+      "options": [
+        { "text": "The stage at which children develop object permanence", "correct": false },
+        { "text": "The range of tasks a learner can perform with guidance but not yet independently", "correct": true },
+        { "text": "The period during which the brain is most vulnerable to teratogens", "correct": false },
+        { "text": "The gap between crystallized and fluid intelligence in older adults", "correct": false }
+      ],
+      "explanation": "The zone of proximal development describes the gap between what a learner can do alone and what they can accomplish with the help of a more knowledgeable partner. This concept has been highly influential in education, particularly in the use of scaffolding."
+    },
+    {
+      "id": "ch09-q17",
+      "question": "Research on aging and cognition has generally found that:",
+      "options": [
+        { "text": "All cognitive abilities decline sharply after age 60", "correct": false },
+        { "text": "Crystallized intelligence tends to remain stable or increase while fluid intelligence declines", "correct": true },
+        { "text": "Memory improvement is the most common cognitive change in old age", "correct": false },
+        { "text": "Cognitive decline cannot be slowed by any intervention", "correct": false }
+      ],
+      "explanation": "Research consistently shows that crystallized intelligence (accumulated knowledge and vocabulary) remains stable or increases throughout adulthood, while fluid intelligence (processing speed, working memory) tends to decline. Physical exercise and cognitive stimulation can help slow decline."
+    },
+    {
+      "id": "ch09-q18",
+      "question": "Hospice care is best described as:",
+      "options": [
+        { "text": "Aggressive medical treatment aimed at curing terminal illness", "correct": false },
+        { "text": "A type of psychotherapy for bereaved individuals", "correct": false },
+        { "text": "Comfort-focused care for terminally ill patients and their families", "correct": true },
+        { "text": "A residential facility for elderly people who cannot live independently", "correct": false }
+      ],
+      "explanation": "Hospice care focuses on providing comfort, pain relief, and quality of life for terminally ill patients and their families, rather than pursuing curative treatment. It represents a philosophy of care that emphasizes dignity and support during the dying process."
+    }
+  ],
+  "passThreshold": 80
+}

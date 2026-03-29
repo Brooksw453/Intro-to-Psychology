@@ -1,0 +1,13 @@
+{
+  "chapterId": 13,
+  "title": "Industrial-Organizational Psychology",
+  "weekNum": 13,
+  "reading": "Psychology 2e (OpenStax), Chapter 13 (Sections 13.1-13.4)",
+  "learningObjectives": [
+    "Define industrial and organizational psychology and describe its history",
+    "Explain key concepts in industrial psychology including job analysis, employee selection, and performance appraisal",
+    "Describe organizational psychology topics such as job satisfaction, leadership, and organizational culture",
+    "Understand human factors psychology and its application to workplace design and safety"
+  ],
+  "sections": ["13.1", "13.2", "13.3", "13.4"]
+}

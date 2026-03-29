@@ -1,0 +1,29 @@
+{
+  "sectionId": "6.4",
+  "chapterId": 6,
+  "questions": [
+    {
+      "id": "ch06-q07",
+      "question": "In Bandura's Bobo doll experiment, children who observed an adult behaving aggressively toward the doll:",
+      "options": [
+        { "text": "Showed no change in their own behavior", "correct": false },
+        { "text": "Were significantly more likely to imitate the aggressive behavior", "correct": true },
+        { "text": "Became less aggressive due to catharsis", "correct": false },
+        { "text": "Only imitated the behavior if they were directly rewarded for doing so", "correct": false }
+      ],
+      "explanation": "Bandura's experiment demonstrated that children who observed an aggressive adult model were significantly more likely to imitate the aggressive behavior when later left alone with the doll. This occurred without any direct reinforcement, demonstrating the power of observational learning."
+    },
+    {
+      "id": "ch06-q08",
+      "question": "According to Bandura, which of the following is NOT one of the four processes required for observational learning?",
+      "options": [
+        { "text": "Attention", "correct": false },
+        { "text": "Retention", "correct": false },
+        { "text": "Reinforcement", "correct": true },
+        { "text": "Motivation", "correct": false }
+      ],
+      "explanation": "Bandura's four processes for observational learning are attention, retention, reproduction, and motivation. While reinforcement (especially vicarious reinforcement) can influence motivation, it is not one of the four required processes. The key insight is that learning can occur without direct reinforcement."
+    }
+  ],
+  "passThreshold": 80
+}

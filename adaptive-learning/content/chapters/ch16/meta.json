@@ -1,0 +1,14 @@
+{
+  "chapterId": 16,
+  "title": "Therapy and Treatment",
+  "weekNum": 16,
+  "reading": "Psychology 2e (OpenStax), Chapter 16 (Sections 16.1-16.5)",
+  "learningObjectives": [
+    "Trace the historical evolution of mental health treatment from early asylums to modern community-based approaches",
+    "Compare and contrast the major types of psychotherapy including psychodynamic, humanistic, cognitive, and behavioral approaches",
+    "Describe the various treatment modalities including individual, group, couples, and family therapy",
+    "Explain the unique challenges involved in treating substance-related and addictive disorders",
+    "Analyze how sociocultural factors influence access to and utilization of mental health services"
+  ],
+  "sections": ["16.1", "16.2", "16.3", "16.4", "16.5"]
+}

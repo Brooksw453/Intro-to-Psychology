@@ -1,0 +1,117 @@
+{
+  "sectionId": "full",
+  "chapterId": 2,
+  "passThreshold": 80,
+  "questions": [
+    {
+      "id": "ch02-q09",
+      "question": "Confirmation bias is problematic in understanding human behavior because it leads people to:",
+      "options": [
+        { "text": "Seek out and remember information that supports their existing beliefs while ignoring contradictory evidence", "correct": true },
+        { "text": "Change their beliefs too quickly in response to new evidence", "correct": false },
+        { "text": "Refuse to form any opinions until all evidence has been collected", "correct": false },
+        { "text": "Trust scientific findings over personal experience in all situations", "correct": false }
+      ],
+      "explanation": "Confirmation bias is a cognitive tendency to selectively seek, notice, and remember information that confirms pre-existing beliefs while disregarding information that contradicts them. This is one of the key reasons psychologists rely on the scientific method rather than intuition."
+    },
+    {
+      "id": "ch02-q10",
+      "question": "A researcher studying workplace stress observes employees in their office environment without intervening or manipulating any conditions. This is an example of:",
+      "options": [
+        { "text": "An experiment", "correct": false },
+        { "text": "A case study", "correct": false },
+        { "text": "Naturalistic observation", "correct": true },
+        { "text": "A survey", "correct": false }
+      ],
+      "explanation": "Naturalistic observation involves systematically watching and recording behavior as it occurs in a natural setting without intervening or manipulating variables. Observing employees in their actual work environment without altering conditions is a classic example of this method."
+    },
+    {
+      "id": "ch02-q11",
+      "question": "In an experiment, random assignment is used to:",
+      "options": [
+        { "text": "Ensure that the sample represents the broader population", "correct": false },
+        { "text": "Reduce the impact of pre-existing differences between experimental and control groups", "correct": true },
+        { "text": "Determine which variables should be measured in the study", "correct": false },
+        { "text": "Select which participants will be included in the study", "correct": false }
+      ],
+      "explanation": "Random assignment gives each participant an equal chance of being placed in any condition of the experiment. This reduces the likelihood that pre-existing differences between participants (rather than the independent variable) account for differences between groups. Note that random assignment is different from random selection (choosing who participates)."
+    },
+    {
+      "id": "ch02-q12",
+      "question": "A correlation coefficient of -0.85 between stress and immune function indicates:",
+      "options": [
+        { "text": "A weak negative relationship between stress and immune function", "correct": false },
+        { "text": "That stress causes immune system problems", "correct": false },
+        { "text": "A strong negative relationship: as stress increases, immune function tends to decrease", "correct": true },
+        { "text": "That immune function causes stress", "correct": false }
+      ],
+      "explanation": "A correlation of -0.85 indicates a strong negative relationship -- as one variable (stress) increases, the other (immune function) tends to decrease. The negative sign indicates the direction (inverse relationship), and the magnitude (0.85, close to 1.0) indicates the strength. However, correlation does not establish causation."
+    },
+    {
+      "id": "ch02-q13",
+      "question": "Which measure of central tendency is MOST appropriate when a dataset contains several extreme outliers?",
+      "options": [
+        { "text": "Mean", "correct": false },
+        { "text": "Median", "correct": true },
+        { "text": "Mode", "correct": false },
+        { "text": "Standard deviation", "correct": false }
+      ],
+      "explanation": "The median is the most appropriate measure of central tendency when outliers are present because it represents the middle value and is not distorted by extreme scores. The mean is pulled toward outliers, making it less representative of the typical value in skewed distributions."
+    },
+    {
+      "id": "ch02-q14",
+      "question": "A researcher finds a statistically significant result (p < .05) but the actual difference between groups is very small. This illustrates the distinction between:",
+      "options": [
+        { "text": "Descriptive and inferential statistics", "correct": false },
+        { "text": "Independent and dependent variables", "correct": false },
+        { "text": "Statistical significance and practical significance", "correct": true },
+        { "text": "Type I and Type II errors", "correct": false }
+      ],
+      "explanation": "Statistical significance means the result is unlikely due to chance, but this does not automatically mean the result is large enough to matter in practice. Practical significance considers whether the magnitude of the effect is meaningful in real-world terms. A very small effect can be statistically significant with a large enough sample."
+    },
+    {
+      "id": "ch02-q15",
+      "question": "After conducting a study that involved deception, the researcher meets with each participant to explain the true purpose of the study and address any concerns. This procedure is called:",
+      "options": [
+        { "text": "Informed consent", "correct": false },
+        { "text": "Peer review", "correct": false },
+        { "text": "Debriefing", "correct": true },
+        { "text": "Replication", "correct": false }
+      ],
+      "explanation": "Debriefing occurs after a study is completed, when the researcher explains the true purpose of the research, reveals any deception that was used, and addresses participants' questions or concerns. It is an ethical requirement whenever deception has been employed."
+    },
+    {
+      "id": "ch02-q16",
+      "question": "An Institutional Review Board (IRB) is responsible for:",
+      "options": [
+        { "text": "Publishing research findings in scientific journals", "correct": false },
+        { "text": "Reviewing research proposals to ensure ethical treatment of human participants", "correct": true },
+        { "text": "Providing funding for psychological research projects", "correct": false },
+        { "text": "Training graduate students in research methodology", "correct": false }
+      ],
+      "explanation": "An IRB reviews research proposals before studies begin to ensure that participants' rights and welfare are protected, that risks are minimized and justified by potential benefits, and that informed consent procedures are adequate. All federally funded research involving human participants must receive IRB approval."
+    },
+    {
+      "id": "ch02-q17",
+      "question": "Which research method allows researchers to establish cause-and-effect relationships?",
+      "options": [
+        { "text": "Naturalistic observation", "correct": false },
+        { "text": "Correlational research", "correct": false },
+        { "text": "Survey research", "correct": false },
+        { "text": "Experimental research", "correct": true }
+      ],
+      "explanation": "Only experiments can establish cause-and-effect relationships because they involve deliberate manipulation of an independent variable, measurement of a dependent variable, random assignment to conditions, and use of control groups. These features allow researchers to isolate the effect of the independent variable."
+    },
+    {
+      "id": "ch02-q18",
+      "question": "A psychologist operationally defines 'anxiety' as a score above 25 on the Beck Anxiety Inventory. An operational definition is important because it:",
+      "options": [
+        { "text": "Ensures that anxiety is treated as a permanent trait rather than a temporary state", "correct": false },
+        { "text": "Provides a precise, measurable description of a variable that allows other researchers to replicate the study", "correct": true },
+        { "text": "Guarantees that all participants in the study will experience the same level of anxiety", "correct": false },
+        { "text": "Eliminates the need for a control group in the experiment", "correct": false }
+      ],
+      "explanation": "An operational definition specifies exactly how a variable is measured or manipulated in a study. This precision is essential for replication -- other researchers can repeat the study using the same measurement criteria. Without clear operational definitions, different researchers might measure the same concept in incompatible ways."
+    }
+  ]
+}

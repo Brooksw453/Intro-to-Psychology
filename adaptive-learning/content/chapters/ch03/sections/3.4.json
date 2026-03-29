@@ -1,0 +1,47 @@
+{
+  "sectionId": "3.4",
+  "chapterId": 3,
+  "title": "The Brain and Spinal Cord",
+  "learningObjectives": [
+    "Identify the major structures of the brain and their primary functions",
+    "Describe the organization and functions of the cerebral cortex",
+    "Explain the role of the spinal cord in reflexes and information relay"
+  ],
+  "keyTerms": [
+    { "term": "Cerebral cortex", "definition": "The thin, wrinkled outer layer of the cerebrum responsible for higher-order functions such as thinking, planning, language, and voluntary movement." },
+    { "term": "Frontal lobe", "definition": "The region of the cerebral cortex at the front of the brain involved in reasoning, planning, motor control, and speech production." },
+    { "term": "Limbic system", "definition": "A group of interconnected brain structures including the hippocampus, amygdala, and hypothalamus involved in emotion, memory, and motivation." },
+    { "term": "Hippocampus", "definition": "A structure in the limbic system essential for the formation of new explicit memories." },
+    { "term": "Amygdala", "definition": "A limbic system structure involved in processing emotions, especially fear and aggression." },
+    { "term": "Brain stem", "definition": "The oldest and innermost region of the brain, responsible for automatic survival functions such as breathing, heart rate, and consciousness." },
+    { "term": "Cerebellum", "definition": "A structure at the rear of the brain that coordinates voluntary movement, balance, and motor learning." },
+    { "term": "Lateralization", "definition": "The tendency for certain cognitive processes to be specialized to one hemisphere of the brain." }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "Major Brain Structures",
+      "body": "The human brain can be understood as a series of structures that developed over the course of evolution, with older regions handling basic survival functions and newer regions supporting complex thought. At the base of the brain sits the **brain stem**, which controls fundamental life-sustaining processes such as breathing, heart rate, blood pressure, and sleep-wake cycles. The brain stem includes the medulla, pons, and midbrain, and it serves as the relay station connecting the spinal cord to higher brain regions.\n\nBehind the brain stem is the **cerebellum**, sometimes called the \"little brain.\" Despite its small size, the cerebellum contains more neurons than the rest of the brain combined. It coordinates voluntary movements, maintains balance and posture, and plays a role in motor learning — the process by which physical actions become automatic through practice.\n\nAbove the brain stem lies the **limbic system**, a ring of structures involved in emotion, motivation, and memory. The **amygdala** processes emotional reactions, particularly fear and aggression. The **hippocampus** is critical for forming new explicit (declarative) memories — the kind you can consciously recall, such as facts and personal experiences. Damage to the hippocampus can result in the inability to form new long-term memories, as demonstrated in the famous case of patient H.M. The hypothalamus, also part of the limbic system, regulates hunger, thirst, body temperature, and the endocrine system."
+    },
+    {
+      "type": "concept",
+      "title": "The Cerebral Cortex and Brain Lateralization",
+      "body": "The **cerebral cortex** is the brain's outermost layer, a thin sheet of neurons with a wrinkled surface that dramatically increases its surface area. This is the structure most associated with what we think of as \"higher\" mental functions: reasoning, planning, language, and conscious experience.\n\nThe cortex is divided into two hemispheres, each of which contains four lobes. The **frontal lobe** at the front of the brain is involved in executive functions such as decision-making, planning, and impulse control. It also contains the motor cortex, which controls voluntary movement, and Broca's area, which is essential for speech production. The parietal lobe, behind the frontal lobe, processes sensory information including touch, pressure, and spatial awareness. The temporal lobe, on the sides of the brain, handles auditory processing and contains Wernicke's area for language comprehension. The occipital lobe at the back of the brain is primarily responsible for visual processing.\n\nThe brain exhibits **lateralization**, meaning certain functions tend to be more strongly associated with one hemisphere. In most people, the left hemisphere is dominant for language and logical reasoning, while the right hemisphere specializes in spatial processing, face recognition, and emotional expression. However, the two hemispheres constantly communicate through a thick bundle of nerve fibers called the corpus callosum. Split-brain research, conducted on patients whose corpus callosum was severed to treat severe epilepsy, has provided remarkable insights into hemispheric specialization."
+    },
+    {
+      "type": "example",
+      "title": "Real-World Example: Phineas Gage and the Frontal Lobe",
+      "body": "One of the most famous cases in neuroscience involves Phineas Gage, a 19th-century railroad worker who survived an accident in which a large iron rod was driven through his frontal lobe. Although Gage survived physically, his personality changed dramatically. Previously described as responsible and well-liked, he became impulsive, irritable, and unable to plan effectively. Gage's case provided some of the earliest evidence that the **frontal lobe** plays a critical role in personality, decision-making, and social behavior, helping establish the field of neuropsychology."
+    },
+    {
+      "type": "summary",
+      "body": "The brain is organized from the most primitive structures (brain stem) to the most advanced (cerebral cortex). The limbic system manages emotion and memory through structures like the amygdala and hippocampus. The cerebral cortex, divided into frontal, parietal, temporal, and occipital lobes, supports higher cognitive functions. Lateralization means each hemisphere has specialized strengths, though the two halves work together through the corpus callosum."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-3.4",
+    "prompt": "Imagine a neuroscientist discovers that a patient has damage to a specific brain structure. The patient can still move, see, and hear, but cannot form new memories of personal experiences. Based on what you learned in this section, identify which brain structure is most likely damaged, explain its normal function, describe what brain system it belongs to, and discuss how this damage would affect the patient's daily life.",
+    "minWords": 100,
+    "rubric": "A strong response should: (1) correctly identify the hippocampus as the damaged structure, (2) explain its role in forming new explicit/declarative memories, (3) place it within the limbic system, (4) describe realistic daily-life consequences such as inability to remember new people or events, and (5) potentially reference relevant case studies like patient H.M."
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "sectionId": "8.4",
+  "chapterId": 8,
+  "questions": [
+    {
+      "id": "ch08-q07",
+      "question": "Research on the testing effect has shown that:",
+      "options": [
+        { "text": "Rereading notes is more effective than self-testing for long-term retention", "correct": false },
+        { "text": "Testing is only useful as an assessment tool and does not enhance learning", "correct": false },
+        { "text": "Actively retrieving information from memory through practice tests strengthens long-term retention", "correct": true },
+        { "text": "Students perform best when they avoid any form of testing until the final exam", "correct": false }
+      ],
+      "explanation": "The testing effect (retrieval practice) is one of the most well-supported findings in memory research. Actively retrieving information from memory strengthens the memory trace and makes future retrieval easier, producing significantly better long-term retention than passive review strategies like rereading."
+    },
+    {
+      "id": "ch08-q08",
+      "question": "A student memorizes a list of 20 historical dates by creating a vivid mental image of each event placed at a specific location along their walk to school. This student is using:",
+      "options": [
+        { "text": "The spacing effect", "correct": false },
+        { "text": "Maintenance rehearsal", "correct": false },
+        { "text": "The method of loci", "correct": true },
+        { "text": "Retroactive interference", "correct": false }
+      ],
+      "explanation": "The method of loci (memory palace technique) involves mentally placing items to be remembered at specific locations along a familiar route. To recall the items, the person mentally walks through the route and 'sees' each item at its designated location, leveraging the brain's strong spatial memory system."
+    }
+  ],
+  "passThreshold": 80
+}

@@ -1,0 +1,46 @@
+{
+  "sectionId": "11.2",
+  "chapterId": 11,
+  "title": "Freud and the Psychodynamic Perspective",
+  "learningObjectives": [
+    "Describe Freud's view of the mind including the conscious, preconscious, and unconscious",
+    "Explain the structure of personality according to Freud (id, ego, superego)",
+    "Identify and describe Freud's psychosexual stages of development and defense mechanisms"
+  ],
+  "keyTerms": [
+    { "term": "Unconscious", "definition": "The level of the mind containing thoughts, feelings, and desires that lie outside of conscious awareness but still influence behavior." },
+    { "term": "Id", "definition": "The component of personality that operates on the pleasure principle, seeking immediate gratification of basic drives." },
+    { "term": "Ego", "definition": "The component of personality that operates on the reality principle, mediating between the demands of the id, superego, and reality." },
+    { "term": "Superego", "definition": "The component of personality that serves as the moral compass, incorporating societal standards of right and wrong." },
+    { "term": "Defense mechanisms", "definition": "Unconscious strategies the ego uses to reduce anxiety by distorting reality." },
+    { "term": "Psychosexual stages", "definition": "Freud's theory that personality develops through a series of childhood stages in which pleasure-seeking energies focus on different erogenous zones." },
+    { "term": "Fixation", "definition": "A lingering focus of pleasure-seeking energies at an earlier psychosexual stage, caused by unresolved conflicts." }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "The Structure of the Mind and Personality",
+      "body": "Sigmund Freud (1856-1939) was one of the most influential and controversial figures in the history of psychology. His **psychodynamic perspective** proposed that much of human behavior is driven by forces outside of conscious awareness. Freud compared the mind to an iceberg: only a small portion is visible above the surface (the **conscious** mind), while a vast reservoir of thoughts, memories, and desires lies hidden below (the **unconscious**).\n\nBetween these two levels lies the **preconscious**, which contains information not currently in awareness but readily accessible. The unconscious, however, holds repressed memories, forbidden desires, and painful experiences that are actively kept from awareness because they would produce anxiety.\n\nFreud proposed that personality is composed of three interacting systems. The **id** is the most primitive component, present from birth, and operates entirely on the **pleasure principle** -- seeking immediate satisfaction of basic drives such as hunger, thirst, and sexual desire. The **ego** develops during infancy and operates on the **reality principle**, finding realistic ways to satisfy the id's demands while considering social norms. The **superego** develops last, incorporating moral standards learned from parents and society. It strives for perfection and judges behavior as right or wrong.\n\nWhen these three systems conflict, anxiety results. The ego manages this anxiety through **defense mechanisms** -- unconscious strategies that distort reality to protect the individual from distress. Common defense mechanisms include **repression** (pushing threatening thoughts into the unconscious), **projection** (attributing one's own unacceptable thoughts to others), **displacement** (redirecting emotions toward a safer target), **sublimation** (channeling unacceptable impulses into socially acceptable activities), and **rationalization** (creating logical explanations for irrational behavior)."
+    },
+    {
+      "type": "concept",
+      "title": "Psychosexual Stages of Development",
+      "body": "Freud argued that personality is largely established during the first five to six years of life through a series of **psychosexual stages**. At each stage, the child's pleasure-seeking energy (or **libido**) focuses on a different area of the body.\n\nDuring the **oral stage** (birth to about 18 months), pleasure centers on the mouth through sucking, biting, and chewing. In the **anal stage** (18 months to about 3 years), the focus shifts to controlling bladder and bowel movements, with toilet training as a key challenge. The **phallic stage** (3 to about 6 years) centers on the genitals, and Freud believed children develop unconscious sexual desires for the opposite-sex parent (the **Oedipus complex** in boys and the corresponding process in girls).\n\nFollowing the phallic stage, the child enters a **latency period** (age 6 to puberty) during which sexual feelings are dormant and energy is directed toward social and intellectual activities. Finally, the **genital stage** begins at puberty and continues through adulthood, with mature sexual interests emerging.\n\nFreud proposed that if conflicts at any stage are not properly resolved, the individual may become \"stuck\" or **fixated** at that stage, leading to characteristic personality traits in adulthood. For example, fixation at the oral stage might lead to excessive dependence, smoking, or overeating."
+    },
+    {
+      "type": "example",
+      "title": "Defense Mechanisms in Action",
+      "body": "Defense mechanisms operate unconsciously and are part of everyday life. Consider a student who receives a poor grade on an exam. Through **rationalization**, the student might claim, \"The test was unfair and poorly written,\" rather than acknowledging insufficient studying. Through **projection**, the student might accuse classmates of not studying either. Through **displacement**, the student might go home and snap at a roommate instead of confronting the professor.\n\nWhile defense mechanisms can be adaptive in the short term by reducing anxiety, excessive reliance on them can prevent individuals from dealing with problems realistically. Freud believed that psychoanalysis -- a therapeutic technique involving free association, dream analysis, and exploration of the unconscious -- could help individuals gain insight into their unconscious conflicts and reduce their dependence on maladaptive defenses."
+    },
+    {
+      "type": "summary",
+      "body": "Freud's psychodynamic theory proposes that personality is shaped by unconscious forces and early childhood experiences. The mind operates on three levels (conscious, preconscious, unconscious), and personality consists of three structures (id, ego, superego) that frequently conflict. The ego employs defense mechanisms to manage anxiety, and personality develops through psychosexual stages where fixation can produce lasting personality patterns."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-11.2",
+    "prompt": "Identify a defense mechanism from Freud's theory and describe a realistic scenario in which a person might use it. Then evaluate Freud's psychodynamic perspective: What do you see as its greatest strength and its most significant limitation as a theory of personality?",
+    "minWords": 100,
+    "rubric": "A strong response should: (1) correctly identify and define a specific defense mechanism, (2) provide a realistic and detailed scenario illustrating its use, (3) identify a genuine strength of psychodynamic theory (e.g., recognition of unconscious processes), (4) identify a meaningful limitation (e.g., lack of empirical testability, overemphasis on sexuality), and (5) demonstrate critical thinking rather than simple recall."
+  }
+}

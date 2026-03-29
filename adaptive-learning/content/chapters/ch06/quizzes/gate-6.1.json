@@ -1,0 +1,29 @@
+{
+  "sectionId": "6.1",
+  "chapterId": 6,
+  "questions": [
+    {
+      "id": "ch06-q01",
+      "question": "Which of the following best defines learning as psychologists use the term?",
+      "options": [
+        { "text": "Any change in behavior, whether temporary or permanent", "correct": false },
+        { "text": "A relatively permanent change in behavior or knowledge resulting from experience", "correct": true },
+        { "text": "The acquisition of information through formal education", "correct": false },
+        { "text": "An automatic response to environmental stimuli that requires no prior experience", "correct": false }
+      ],
+      "explanation": "Psychologists define learning as a relatively permanent change in behavior or knowledge that results from experience. This definition excludes temporary changes (like fatigue), changes due to biological maturation, and innate responses like reflexes."
+    },
+    {
+      "id": "ch06-q02",
+      "question": "A baby automatically pulls its hand away when it touches something hot. This is an example of:",
+      "options": [
+        { "text": "Classical conditioning", "correct": false },
+        { "text": "Operant conditioning", "correct": false },
+        { "text": "A reflex", "correct": true },
+        { "text": "Observational learning", "correct": false }
+      ],
+      "explanation": "A reflex is an unlearned, automatic motor response to a sensory stimulus. Pulling away from a hot surface is a reflexive action that does not require prior learning or experience, distinguishing it from the various types of learned behavior."
+    }
+  ],
+  "passThreshold": 80
+}

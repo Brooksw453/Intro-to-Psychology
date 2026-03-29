@@ -1,0 +1,67 @@
+{
+  "sectionId": "7.2",
+  "chapterId": 7,
+  "title": "Language",
+  "learningObjectives": [
+    "Identify the components of language including phonemes, morphemes, syntax, and semantics",
+    "Explain major theories of language acquisition, including Chomsky's and Skinner's perspectives",
+    "Describe the relationship between language and thought, including the linguistic relativity hypothesis"
+  ],
+  "keyTerms": [
+    {
+      "term": "Language",
+      "definition": "A system of communication using symbols (words, signs, sounds) arranged according to rules (grammar) that convey meaning."
+    },
+    {
+      "term": "Phoneme",
+      "definition": "The smallest unit of sound in a language that can distinguish one word from another."
+    },
+    {
+      "term": "Morpheme",
+      "definition": "The smallest unit of language that carries meaning, including prefixes, suffixes, and root words."
+    },
+    {
+      "term": "Syntax",
+      "definition": "The set of rules governing how words are combined to form grammatically correct sentences."
+    },
+    {
+      "term": "Semantics",
+      "definition": "The study of meaning in language, including how words and sentences convey meaning."
+    },
+    {
+      "term": "Linguistic relativity hypothesis",
+      "definition": "The proposal, associated with Sapir and Whorf, that the language a person speaks influences how that person thinks and perceives the world."
+    },
+    {
+      "term": "Overgeneralization",
+      "definition": "A language error in which children apply grammatical rules too broadly, such as saying 'goed' instead of 'went.'"
+    }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "The Building Blocks of Language",
+      "body": "**Language** is a structured system of communication that uses symbols and rules to convey meaning. It is one of the most remarkable human capacities, allowing us to share complex ideas, express emotions, record history, and plan for the future. Understanding language requires examining its fundamental components.\n\nThe smallest units of sound in a language are called **phonemes**. English has approximately 44 phonemes, including the sounds represented by individual letters and letter combinations like \"th\" and \"sh.\" Phonemes themselves do not carry meaning, but changing a single phoneme can change the meaning of a word entirely -- consider \"bat\" versus \"pat.\"\n\n**Morphemes** are the smallest meaningful units of language. The word \"unhappiness\" contains three morphemes: \"un-\" (meaning not), \"happy\" (a state of well-being), and \"-ness\" (indicating a quality or state). Some morphemes can stand alone as words (free morphemes like \"happy\"), while others must be attached to other morphemes (bound morphemes like \"un-\" and \"-ness\").\n\n**Syntax** refers to the grammatical rules that govern how words are arranged into sentences. In English, the typical syntax follows a subject-verb-object pattern: \"The dog chased the cat.\" Rearranging the words changes the meaning or produces a nonsensical sentence. **Semantics** concerns the actual meaning conveyed by words and sentences. The sentence \"Colorless green ideas sleep furiously\" is syntactically correct but semantically meaningless, illustrating that grammar and meaning are distinct aspects of language."
+    },
+    {
+      "type": "concept",
+      "title": "Language Development and Theories of Acquisition",
+      "body": "Children acquire language at a remarkably rapid pace. By age six, most children have a vocabulary of approximately 13,000 words and can produce grammatically complex sentences. This development follows a predictable sequence: cooing (around 2 months), babbling (around 6 months), first words (around 12 months), two-word combinations (around 18-24 months), and increasingly complex sentences thereafter.\n\nTwo major theoretical perspectives have shaped our understanding of how children learn language. B.F. Skinner proposed that language is acquired through **operant conditioning** -- children learn to speak by being reinforced (praised, responded to) for producing correct sounds and words. Parents shape language through selective reinforcement and modeling.\n\nNoam Chomsky challenged this view, arguing that the speed and uniformity of language development across cultures suggests an innate biological capacity. He proposed that humans are born with a **language acquisition device (LAD)**, an innate mental structure that provides the basic grammatical framework common to all languages. This idea of a **universal grammar** helps explain why children can generate sentences they have never heard before and why all human languages share certain structural features.\n\nA key piece of evidence for the biological basis of language is **overgeneralization**, where children apply grammatical rules too broadly. When a child says \"I goed to the store\" instead of \"I went to the store,\" they are demonstrating knowledge of the past-tense rule -- even though no one taught them this rule explicitly and no one modeled the incorrect form. This suggests an innate capacity for extracting and applying grammatical patterns."
+    },
+    {
+      "type": "example",
+      "title": "Language, Thought, and the Sapir-Whorf Hypothesis",
+      "body": "Does the language you speak shape the way you think? The **linguistic relativity hypothesis**, proposed by Edward Sapir and Benjamin Lee Whorf, suggests that it does. The strong version of this hypothesis claims that language determines thought -- that people literally cannot think about concepts for which they have no words. The weaker version suggests that language influences thought, making certain ideas easier or harder to express and consider.\n\nResearch has provided support for the weaker version. For example, studies of the Dani people of Papua New Guinea, who have only two color terms (roughly \"light\" and \"dark\"), found that they could still distinguish between colors but were slower to do so compared to speakers of languages with more color terms. Russian speakers, who have separate words for light blue and dark blue, are faster at distinguishing between these shades than English speakers.\n\nThese findings suggest that while language does not imprison thought, it does create cognitive shortcuts that make some distinctions more natural and accessible. Bilingual individuals often report that they think and even feel differently depending on which language they are using, further supporting the idea that language and cognition are deeply interconnected."
+    },
+    {
+      "type": "summary",
+      "body": "Language is built from phonemes (sounds), morphemes (meaningful units), syntax (grammar rules), and semantics (meaning). Children acquire language rapidly through a combination of innate biological capacity and environmental input. Skinner emphasized learning through reinforcement, while Chomsky proposed an innate language acquisition device. The linguistic relativity hypothesis suggests that language influences -- though does not determine -- the way we think about and perceive the world."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-7.2",
+    "prompt": "Consider the linguistic relativity hypothesis in the context of modern life. How might the specific language or terminology used in a particular field (such as technology, medicine, or law) influence how professionals in that field think about problems? Provide a specific example and explain whether you believe language shapes thought, thought shapes language, or both.",
+    "minWords": 100,
+    "rubric": "A strong response demonstrates understanding of the linguistic relativity hypothesis (both strong and weak versions), provides a concrete example from a professional field showing how specialized vocabulary may shape cognitive processing, and takes a reasoned position on the relationship between language and thought with supporting logic."
+  }
+}

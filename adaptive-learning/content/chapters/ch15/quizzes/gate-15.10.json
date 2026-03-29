@@ -1,0 +1,29 @@
+{
+  "sectionId": "15.10",
+  "chapterId": 15,
+  "questions": [
+    {
+      "id": "ch15-q19",
+      "question": "Which of the following is true about the diagnosis of ADHD?",
+      "options": [
+        { "text": "Symptoms must appear only in one setting, such as school", "correct": false },
+        { "text": "A child must display only hyperactive symptoms to be diagnosed", "correct": false },
+        { "text": "Symptoms must be present before age 12 and occur in two or more settings", "correct": true },
+        { "text": "The disorder can only be diagnosed in children under age 10", "correct": false }
+      ],
+      "explanation": "To receive a diagnosis of ADHD, symptoms must be present before age 12, occur in at least two settings (such as home and school), and clearly interfere with functioning. This helps distinguish ADHD from normal childhood behavior."
+    },
+    {
+      "id": "ch15-q20",
+      "question": "Autism spectrum disorder is characterized by deficits in which two areas?",
+      "options": [
+        { "text": "Memory and attention", "correct": false },
+        { "text": "Social communication and restricted, repetitive behaviors", "correct": true },
+        { "text": "Reading comprehension and mathematical reasoning", "correct": false },
+        { "text": "Motor coordination and language production", "correct": false }
+      ],
+      "explanation": "ASD is defined by two core features: persistent deficits in social communication and social interaction, and restricted, repetitive patterns of behavior, interests, or activities. The term 'spectrum' reflects the wide range of severity and presentation."
+    }
+  ],
+  "passThreshold": 80
+}

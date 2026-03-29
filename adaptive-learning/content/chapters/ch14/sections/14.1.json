@@ -1,0 +1,45 @@
+{
+  "sectionId": "14.1",
+  "chapterId": 14,
+  "title": "What Is Stress?",
+  "learningObjectives": [
+    "Define stress and differentiate between eustress and distress",
+    "Describe the physiological stress response including the general adaptation syndrome",
+    "Explain the role of the HPA axis and sympathetic nervous system in the stress response"
+  ],
+  "keyTerms": [
+    { "term": "Stress", "definition": "A process whereby an individual perceives and responds to events appraised as overwhelming or threatening to one's well-being." },
+    { "term": "Stressor", "definition": "An event, experience, or environmental condition that triggers the stress response." },
+    { "term": "Eustress", "definition": "A positive form of stress that can motivate performance and is associated with manageable challenges, excitement, or personal growth." },
+    { "term": "Distress", "definition": "A negative form of stress that overwhelms coping resources and can lead to anxiety, diminished performance, and health problems." },
+    { "term": "General adaptation syndrome (GAS)", "definition": "Hans Selye's three-stage model of the body's physiological response to prolonged stress: alarm, resistance, and exhaustion." },
+    { "term": "HPA axis", "definition": "The hypothalamic-pituitary-adrenal axis — a neuroendocrine system that regulates the body's stress response by releasing cortisol and other stress hormones." }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "Understanding Stress",
+      "body": "**Stress** is a process in which an individual perceives and responds to events that are appraised as overwhelming or threatening. The events that provoke the stress response are called **stressors**, while the reactions to those events — both physiological and psychological — constitute the stress response.\n\nImportantly, not all stress is harmful. **Eustress** is a positive form of stress associated with manageable challenges, excitement, and motivation. Starting a new job, preparing for a competition, or working toward an important goal can all produce eustress that enhances performance. **Distress**, by contrast, occurs when demands exceed coping resources and leads to anxiety, diminished functioning, and potential health problems.\n\nThe experience of stress is highly subjective. The same event can be perceived as threatening by one person and challenging by another. This is captured by Richard Lazarus's **cognitive appraisal** model, which proposes that stress depends on two evaluations: *primary appraisal* (\"Is this event a threat?\") and *secondary appraisal* (\"Do I have the resources to cope with it?\"). An event becomes stressful only when a person perceives it as threatening AND believes their coping resources are insufficient."
+    },
+    {
+      "type": "concept",
+      "title": "The Physiology of Stress",
+      "body": "When a stressor is perceived, the body activates two major physiological systems. The **sympathetic nervous system** triggers the immediate fight-or-flight response, releasing adrenaline (epinephrine) and noradrenaline. This produces rapid increases in heart rate, blood pressure, breathing rate, and muscle tension — preparing the body for immediate action.\n\nThe **HPA axis** (hypothalamic-pituitary-adrenal axis) provides a slower but longer-lasting stress response. The hypothalamus signals the pituitary gland, which in turn stimulates the adrenal cortex to release **cortisol**. Cortisol mobilizes energy stores, suppresses the immune system, and helps the body sustain its response to ongoing stressors.\n\nHans Selye proposed the **general adaptation syndrome (GAS)** to describe how the body responds to prolonged stress in three stages:\n\n1. **Alarm stage**: The body recognizes the stressor and activates the fight-or-flight response\n2. **Resistance stage**: The body attempts to adapt to the ongoing stressor, maintaining elevated physiological arousal\n3. **Exhaustion stage**: If stress continues, the body's resources become depleted, making the individual vulnerable to illness and breakdown"
+    },
+    {
+      "type": "example",
+      "title": "Real-World Example: The Stress of College Life",
+      "body": "College students frequently experience both eustress and distress. Preparing for an exam can produce eustress that motivates studying, while facing multiple deadlines, financial pressures, and social challenges simultaneously can produce distress. Research shows that college students who experience chronic stress without adequate coping resources are more susceptible to illness, particularly during finals week — a real-world demonstration of Selye's exhaustion stage."
+    },
+    {
+      "type": "summary",
+      "body": "Stress is a subjective process involving the perception of and response to threatening events. The body responds through the sympathetic nervous system (fight-or-flight) and the HPA axis (cortisol release). Selye's general adaptation syndrome describes three stages of prolonged stress: alarm, resistance, and exhaustion."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-14.1",
+    "prompt": "Describe a recent stressful experience in your life. Using Lazarus's cognitive appraisal model, explain how your primary and secondary appraisals influenced your stress level. Would you classify this experience as eustress or distress, and why? Which stage of Selye's general adaptation syndrome best describes your physiological response?",
+    "minWords": 100,
+    "rubric": "Student should correctly apply Lazarus's primary and secondary appraisal concepts to their experience, accurately distinguish between eustress and distress, and connect their experience to at least one stage of Selye's GAS. Should demonstrate understanding that stress is subjective and influenced by cognitive appraisal."
+  }
+}

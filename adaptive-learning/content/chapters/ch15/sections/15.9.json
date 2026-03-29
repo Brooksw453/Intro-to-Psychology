@@ -1,0 +1,60 @@
+{
+  "sectionId": "15.9",
+  "chapterId": 15,
+  "title": "Dissociative Disorders",
+  "learningObjectives": [
+    "Define dissociation and explain how it differs from normal variations in consciousness",
+    "Describe the key features of dissociative amnesia, depersonalization/derealization disorder, and dissociative identity disorder",
+    "Discuss the controversies surrounding dissociative identity disorder"
+  ],
+  "keyTerms": [
+    {
+      "term": "Dissociation",
+      "definition": "A disconnection between a person's thoughts, feelings, surroundings, or actions, involving disruptions in consciousness, memory, identity, or perception."
+    },
+    {
+      "term": "Dissociative amnesia",
+      "definition": "A disorder characterized by an inability to recall important personal information, usually related to a traumatic or stressful event, that is too extensive to be explained by ordinary forgetfulness."
+    },
+    {
+      "term": "Dissociative fugue",
+      "definition": "A subtype of dissociative amnesia involving sudden, unexpected travel away from home with an inability to recall one's past and confusion about personal identity."
+    },
+    {
+      "term": "Depersonalization/derealization disorder",
+      "definition": "A disorder involving persistent or recurrent experiences of feeling detached from one's own mental processes or body, or feeling that the surrounding world is unreal."
+    },
+    {
+      "term": "Dissociative identity disorder (DID)",
+      "definition": "A disorder characterized by the presence of two or more distinct personality states that alternately control behavior, accompanied by gaps in memory for important personal information."
+    }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "Understanding Dissociative Disorders",
+      "body": "**Dissociation** involves a disruption in the normally integrated functions of consciousness, memory, identity, emotion, perception, or behavior. Mild dissociation is a common, everyday experience -- daydreaming, losing track of time while absorbed in a book, or \"highway hypnosis\" (arriving at a destination without remembering the drive) are all examples. However, when dissociation becomes severe, persistent, and distressing, it may indicate a **dissociative disorder**.\n\nDissociative disorders are thought to arise primarily as responses to overwhelming trauma, particularly trauma experienced in childhood. Dissociation may function as a psychological defense mechanism, allowing the mind to separate itself from experiences that are too painful to integrate into conscious awareness.\n\n**Dissociative amnesia** involves an inability to recall important autobiographical information, usually of a traumatic or stressful nature, that cannot be attributed to ordinary forgetfulness, substance use, or a neurological condition. The memory loss may be localized (unable to recall events during a specific time period), selective (able to recall some but not all events during a period), or, rarely, generalized (complete loss of identity and life history). **Dissociative fugue** is a rare subtype in which a person suddenly and unexpectedly travels away from home, is unable to recall their past, and may be confused about their identity or assume a new one."
+    },
+    {
+      "type": "concept",
+      "title": "Depersonalization/Derealization and Dissociative Identity Disorder",
+      "body": "**Depersonalization/derealization disorder** involves persistent or recurrent episodes in which a person feels detached from their own mental processes, body, or actions (depersonalization) or experiences the external world as unreal, dreamlike, or distorted (derealization). During these episodes, a person may feel like they are watching themselves from outside their body or that people and objects around them are foggy, artificial, or lacking in depth. Importantly, reality testing remains intact -- the person knows that these experiences are not real, which distinguishes this disorder from psychosis.\n\n**Dissociative identity disorder (DID)**, formerly known as multiple personality disorder, is the most controversial of the dissociative disorders. DID is characterized by the presence of two or more distinct personality states (sometimes called \"alters\") that recurrently take control of the person's behavior. Each personality state may have its own name, personal history, and characteristics, including different mannerisms, speech patterns, and even different physiological responses. Individuals with DID also experience significant gaps in memory for everyday events, important personal information, and traumatic events.\n\nDID is strongly associated with severe, chronic childhood trauma, particularly physical and sexual abuse. The prevailing theory suggests that young children who cannot physically escape overwhelming abuse may dissociate as a protective mechanism, and that this dissociative coping strategy becomes elaborated over time into distinct personality states."
+    },
+    {
+      "type": "example",
+      "title": "The DID Controversy",
+      "body": "Dissociative identity disorder remains one of the most debated diagnoses in psychology. Skeptics raise several concerns. First, the dramatic increase in diagnosed cases following the publication of the book *Sybil* (1973) and its media adaptations suggests that cultural awareness -- or suggestibility -- may play a role in the apparent prevalence of the disorder. Prior to the 1970s, DID was exceedingly rare; afterward, thousands of cases were reported.\n\nSecond, critics argue that some cases of DID may be iatrogenic -- inadvertently created or encouraged by therapeutic techniques such as hypnosis and guided imagery, which may lead suggestible clients to develop symptoms that align with the therapist's expectations. Some therapists who specialize in dissociative disorders have been found to diagnose DID at much higher rates than other clinicians.\n\nSupporters of the DID diagnosis counter that the increase in cases reflects improved recognition of a previously underdiagnosed condition rather than overdiagnosis. They point to neuroimaging studies showing distinct patterns of brain activity associated with different personality states and to the consistent association between DID and severe childhood trauma across cultures.\n\nRegardless of one's position in this debate, it is crucial to approach individuals who present with dissociative symptoms with compassion and evidence-based assessment, recognizing the genuine suffering that underlies these experiences."
+    },
+    {
+      "type": "summary",
+      "title": "Section Summary",
+      "body": "Dissociative disorders involve disruptions in consciousness, memory, identity, or perception, often in response to overwhelming trauma. Dissociative amnesia involves inability to recall important personal information, while depersonalization/derealization disorder involves feeling detached from oneself or one's surroundings. Dissociative identity disorder, characterized by multiple distinct personality states, remains controversial, with debate centering on whether the increase in diagnoses reflects improved recognition or the influence of therapeutic suggestion and cultural factors."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-15.9",
+    "prompt": "Dissociative identity disorder (DID) is one of the most controversial diagnoses in psychology. Some researchers view it as a genuine disorder caused by severe childhood trauma, while others argue that it may be influenced by therapeutic suggestion or cultural factors. Summarize the key arguments on both sides of this debate. What evidence would you find most convincing in resolving the controversy?",
+    "minWords": 100,
+    "rubric": "A strong response presents arguments from both perspectives fairly: the trauma model (association with childhood abuse, neuroimaging evidence, cross-cultural consistency) and the sociocognitive model (increase in cases after media attention, potential iatrogenic influence, therapist variability in diagnosis rates). The response should identify what type of evidence might help resolve the debate and demonstrate critical thinking rather than simply taking a side."
+  }
+}

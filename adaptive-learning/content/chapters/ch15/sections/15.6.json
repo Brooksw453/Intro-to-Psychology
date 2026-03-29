@@ -1,0 +1,56 @@
+{
+  "sectionId": "15.6",
+  "chapterId": 15,
+  "title": "Posttraumatic Stress Disorder",
+  "learningObjectives": [
+    "Describe the diagnostic criteria and symptom clusters of posttraumatic stress disorder (PTSD)",
+    "Identify the types of traumatic events most commonly associated with PTSD",
+    "Explain the risk and protective factors that influence whether a person develops PTSD after trauma exposure"
+  ],
+  "keyTerms": [
+    {
+      "term": "Posttraumatic stress disorder (PTSD)",
+      "definition": "A disorder triggered by experiencing or witnessing a traumatic event, characterized by intrusive memories, avoidance, negative changes in mood and cognition, and heightened arousal."
+    },
+    {
+      "term": "Flashback",
+      "definition": "A dissociative reaction in which a person with PTSD feels as though they are reliving the traumatic event, including sensory experiences from the original trauma."
+    },
+    {
+      "term": "Hypervigilance",
+      "definition": "A state of heightened alertness and scanning of the environment for potential threats, commonly experienced by individuals with PTSD."
+    },
+    {
+      "term": "Trauma",
+      "definition": "Exposure to actual or threatened death, serious injury, or sexual violence, whether experienced directly, witnessed, or learned about."
+    }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "Understanding PTSD",
+      "body": "**Posttraumatic stress disorder (PTSD)** develops in some individuals after exposure to a traumatic event involving actual or threatened death, serious injury, or sexual violence. The **trauma** may be experienced directly, witnessed in person, learned about when it happens to a close family member or friend, or experienced through repeated professional exposure (as with first responders or military personnel).\n\nPTSD is organized around four symptom clusters. The first is **intrusion symptoms**: the person involuntarily re-experiences the traumatic event through distressing memories, nightmares, or **flashbacks** -- vivid dissociative episodes in which the person feels as if the event is happening again, complete with the original sensory and emotional experiences. A combat veteran, for example, might hear a car backfire and momentarily believe they are back in a firefight.\n\nThe second cluster involves **avoidance**: the person makes deliberate efforts to avoid reminders of the trauma, including thoughts, feelings, people, places, activities, or situations associated with the event. A person who survived a serious car accident might avoid driving or even riding in vehicles.\n\nThe third cluster involves **negative alterations in cognition and mood**: the person may develop persistent negative beliefs about themselves or the world (\"I am permanently damaged,\" \"No one can be trusted\"), experience emotional numbness, lose interest in previously enjoyed activities, feel detached from others, or be unable to experience positive emotions.\n\nThe fourth cluster involves **alterations in arousal and reactivity**: the person may exhibit irritability, angry outbursts, reckless or self-destructive behavior, **hypervigilance** (a constant state of being on guard for danger), an exaggerated startle response, difficulty concentrating, and sleep disturbances."
+    },
+    {
+      "type": "concept",
+      "title": "Risk and Protective Factors",
+      "body": "Not everyone who experiences a traumatic event develops PTSD. Research indicates that approximately 5-10% of people will develop PTSD at some point in their lives, though rates vary significantly depending on the type of trauma. Interpersonal violence -- such as sexual assault, combat, or childhood abuse -- carries a higher risk of PTSD than natural disasters or accidents.\n\nSeveral **risk factors** increase vulnerability to PTSD. These include prior trauma exposure (especially in childhood), pre-existing mental health conditions, lack of social support, the severity and duration of the traumatic event, and perceived life threat during the event. Biological factors, including genetic predisposition and stress hormone dysregulation, also play a role.\n\n**Protective factors** that reduce the likelihood of developing PTSD include strong social support networks, effective coping strategies, a sense of personal agency, and access to mental health services following the traumatic event. Early intervention after trauma exposure can be particularly beneficial.\n\nIt is essential to understand that developing PTSD is not a sign of weakness. The disorder reflects the brain's response to an overwhelming experience and is influenced by factors largely beyond the individual's control. Many people with PTSD experience significant improvement with evidence-based treatments such as cognitive processing therapy, prolonged exposure therapy, and eye movement desensitization and reprocessing (EMDR)."
+    },
+    {
+      "type": "example",
+      "title": "PTSD Beyond the Battlefield",
+      "body": "While PTSD is commonly associated with military combat, it can develop following any qualifying traumatic event. A survivor of sexual assault may experience intrusive memories and nightmares about the attack, avoid social situations and locations that remind them of the trauma, develop persistent feelings of shame and self-blame, and become hypervigilant about personal safety. A first responder who repeatedly witnesses death and injury may develop PTSD through cumulative exposure to traumatic material.\n\nChildren can also develop PTSD, though their symptoms may manifest differently than in adults. Rather than vivid flashbacks, children may reenact the traumatic event through repetitive play, experience frightening dreams without recognizable content, or develop new fears that seem unrelated to the trauma.\n\nRecognizing the wide range of traumatic experiences that can lead to PTSD is important for ensuring that all people who develop the disorder receive appropriate support and treatment, regardless of the specific nature of their trauma."
+    },
+    {
+      "type": "summary",
+      "title": "Section Summary",
+      "body": "PTSD develops after exposure to a traumatic event and is characterized by four symptom clusters: intrusion (flashbacks, nightmares), avoidance of trauma reminders, negative changes in cognition and mood, and heightened arousal and reactivity. Not everyone exposed to trauma develops PTSD; risk factors include prior trauma, lack of social support, and severity of the event, while protective factors include strong social connections and effective coping. PTSD can result from many types of trauma, not just combat, and effective evidence-based treatments are available."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-15.6",
+    "prompt": "Why do some people develop PTSD after a traumatic event while others do not? Drawing on the risk and protective factors discussed in this section, explain the factors that influence whether trauma leads to PTSD. How might understanding these factors help us design better prevention and intervention programs for trauma survivors?",
+    "minWords": 100,
+    "rubric": "A strong response identifies multiple risk factors (e.g., prior trauma, lack of support, severity of event) and protective factors (e.g., social support, coping skills, access to services) and explains how they interact to influence PTSD development. The response should demonstrate understanding that PTSD is not a sign of weakness and should propose at least one practical implication for prevention or intervention based on these factors."
+  }
+}

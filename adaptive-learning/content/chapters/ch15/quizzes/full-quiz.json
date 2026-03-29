@@ -1,0 +1,117 @@
+{
+  "sectionId": "full",
+  "chapterId": 15,
+  "questions": [
+    {
+      "id": "ch15-q23",
+      "question": "Which criterion for defining abnormal behavior focuses on whether the behavior interferes with a person's ability to maintain employment, relationships, or self-care?",
+      "options": [
+        { "text": "Statistical rarity", "correct": false },
+        { "text": "Violation of social norms", "correct": false },
+        { "text": "Personal distress", "correct": false },
+        { "text": "Maladaptive functioning", "correct": true }
+      ],
+      "explanation": "Maladaptive functioning refers to behavior that interferes with a person's ability to carry out daily activities such as work, relationships, and self-care. This criterion focuses on functional consequences rather than subjective experience or statistical rarity."
+    },
+    {
+      "id": "ch15-q24",
+      "question": "David Rosenhan's classic study, in which healthy individuals were admitted to psychiatric hospitals after claiming to hear voices, primarily demonstrated concerns about:",
+      "options": [
+        { "text": "The effectiveness of antipsychotic medications", "correct": false },
+        { "text": "The power of diagnostic labeling and its persistence", "correct": true },
+        { "text": "The prevalence of auditory hallucinations in the general population", "correct": false },
+        { "text": "The superiority of the ICD over the DSM classification system", "correct": false }
+      ],
+      "explanation": "Rosenhan's study demonstrated how diagnostic labels can shape perception -- once labeled, the pseudopatients' normal behaviors were interpreted through the lens of their diagnosis, illustrating the potential dangers of psychiatric labeling."
+    },
+    {
+      "id": "ch15-q25",
+      "question": "Which anxiety disorder involves an intense fear of situations where escape might be difficult or help might be unavailable during panic-like symptoms?",
+      "options": [
+        { "text": "Social anxiety disorder", "correct": false },
+        { "text": "Specific phobia", "correct": false },
+        { "text": "Agoraphobia", "correct": true },
+        { "text": "Generalized anxiety disorder", "correct": false }
+      ],
+      "explanation": "Agoraphobia involves intense fear and avoidance of situations where escape might be difficult or help unavailable if panic-like symptoms occur. This can include open spaces, enclosed spaces, crowds, or public transportation."
+    },
+    {
+      "id": "ch15-q26",
+      "question": "The self-reinforcing cycle in OCD is maintained primarily through which behavioral principle?",
+      "options": [
+        { "text": "Positive reinforcement -- the compulsion produces pleasure", "correct": false },
+        { "text": "Negative reinforcement -- the compulsion temporarily reduces anxiety", "correct": true },
+        { "text": "Punishment -- the obsession punishes unwanted thoughts", "correct": false },
+        { "text": "Extinction -- the obsession gradually weakens over time", "correct": false }
+      ],
+      "explanation": "The OCD cycle is maintained through negative reinforcement: performing the compulsion temporarily reduces the anxiety caused by the obsession. However, this relief is short-lived, and the obsessive thought returns, prompting further compulsions and strengthening the cycle."
+    },
+    {
+      "id": "ch15-q27",
+      "question": "A combat veteran who experiences vivid episodes of feeling as though they are reliving a traumatic battle is experiencing:",
+      "options": [
+        { "text": "Delusions", "correct": false },
+        { "text": "Flashbacks", "correct": true },
+        { "text": "Dissociative amnesia", "correct": false },
+        { "text": "Depersonalization", "correct": false }
+      ],
+      "explanation": "Flashbacks are dissociative reactions in which a person with PTSD feels as though the traumatic event is happening again, complete with the original sensory and emotional experiences. They are a key intrusion symptom of PTSD."
+    },
+    {
+      "id": "ch15-q28",
+      "question": "Aaron Beck's cognitive triad, relevant to understanding depression, proposes that a person with depression holds negative views of:",
+      "options": [
+        { "text": "Their parents, their peers, and their teachers", "correct": false },
+        { "text": "Themselves, the world, and the future", "correct": true },
+        { "text": "Their intelligence, their appearance, and their health", "correct": false },
+        { "text": "Their childhood, their adolescence, and their adulthood", "correct": false }
+      ],
+      "explanation": "Beck's cognitive triad describes three interconnected negative views held by people with depression: a negative view of themselves (I am worthless), the world (the world is unfair), and the future (things will never improve)."
+    },
+    {
+      "id": "ch15-q29",
+      "question": "Which statement about schizophrenia is accurate?",
+      "options": [
+        { "text": "People with schizophrenia have multiple distinct personalities", "correct": false },
+        { "text": "People with schizophrenia are more likely to be victims of violence than perpetrators", "correct": true },
+        { "text": "Schizophrenia affects approximately 15% of the population", "correct": false },
+        { "text": "Negative symptoms are easier to treat than positive symptoms", "correct": false }
+      ],
+      "explanation": "Contrary to media portrayals, people with schizophrenia are far more likely to be victims of violence than perpetrators. Schizophrenia is also distinct from dissociative identity disorder (multiple personality disorder) and affects approximately 1% of the population."
+    },
+    {
+      "id": "ch15-q30",
+      "question": "Which therapy has been specifically developed and shown to be effective for treating borderline personality disorder?",
+      "options": [
+        { "text": "Systematic desensitization", "correct": false },
+        { "text": "Psychoanalytic free association", "correct": false },
+        { "text": "Dialectical behavior therapy (DBT)", "correct": true },
+        { "text": "Electroconvulsive therapy (ECT)", "correct": false }
+      ],
+      "explanation": "Dialectical behavior therapy (DBT), developed by Marsha Linehan, was specifically designed for borderline personality disorder. DBT teaches skills in emotional regulation, distress tolerance, mindfulness, and interpersonal effectiveness."
+    },
+    {
+      "id": "ch15-q31",
+      "question": "Research has conclusively shown that the claimed link between vaccines and autism spectrum disorder is:",
+      "options": [
+        { "text": "Supported by a small number of well-designed studies", "correct": false },
+        { "text": "Still under investigation with no clear answer", "correct": false },
+        { "text": "Based on fraudulent research and has been thoroughly debunked", "correct": true },
+        { "text": "Only relevant to certain genetic subgroups", "correct": false }
+      ],
+      "explanation": "The original claim linking vaccines to autism was based on fraudulent research. Extensive subsequent studies involving millions of children have found no association between vaccines and autism spectrum disorder."
+    },
+    {
+      "id": "ch15-q32",
+      "question": "Personality disorders are distinct from other psychological disorders because they:",
+      "options": [
+        { "text": "Only affect people over the age of 40", "correct": false },
+        { "text": "Are temporary conditions that resolve without treatment", "correct": false },
+        { "text": "Involve enduring, inflexible patterns woven into the person's character", "correct": true },
+        { "text": "Are exclusively caused by childhood head injuries", "correct": false }
+      ],
+      "explanation": "Personality disorders involve enduring, pervasive, and inflexible patterns of inner experience and behavior that are traceable to adolescence or early adulthood. Unlike many other disorders, these patterns are ego-syntonic -- the person may not recognize them as problematic."
+    }
+  ],
+  "passThreshold": 80
+}

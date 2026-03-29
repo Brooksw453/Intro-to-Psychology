@@ -1,0 +1,29 @@
+{
+  "sectionId": "11.1",
+  "chapterId": 11,
+  "questions": [
+    {
+      "id": "ch11-q01",
+      "question": "Which of the following best defines personality?",
+      "options": [
+        { "text": "A temporary emotional state that varies from moment to moment", "correct": false },
+        { "text": "The long-standing traits and patterns that propel individuals to consistently think, feel, and behave in specific ways", "correct": true },
+        { "text": "The set of behaviors a person displays only in social situations", "correct": false },
+        { "text": "A person's intelligence level combined with their learned skills", "correct": false }
+      ],
+      "explanation": "Personality refers to the enduring traits and patterns that lead individuals to consistently think, feel, and behave in characteristic ways across situations and over time, distinguishing it from temporary mood states or situational behaviors."
+    },
+    {
+      "id": "ch11-q02",
+      "question": "A psychologist who emphasizes free will, personal growth, and the striving for self-actualization is working from which theoretical perspective?",
+      "options": [
+        { "text": "Psychodynamic perspective", "correct": false },
+        { "text": "Trait perspective", "correct": false },
+        { "text": "Humanistic perspective", "correct": true },
+        { "text": "Social-cognitive perspective", "correct": false }
+      ],
+      "explanation": "The humanistic perspective, developed by theorists like Maslow and Rogers, emphasizes personal growth, free will, and the inherent goodness of people, including the striving for self-actualization."
+    }
+  ],
+  "passThreshold": 80
+}

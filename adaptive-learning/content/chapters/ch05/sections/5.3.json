@@ -1,0 +1,71 @@
+{
+  "sectionId": "5.3",
+  "chapterId": 5,
+  "title": "Vision",
+  "learningObjectives": [
+    "Describe the anatomy of the eye and the path light takes through it",
+    "Explain the roles of rods and cones in visual processing",
+    "Compare and contrast the trichromatic and opponent-process theories of color vision"
+  ],
+  "keyTerms": [
+    {
+      "term": "Cornea",
+      "definition": "The transparent outer covering of the eye that begins to focus incoming light waves."
+    },
+    {
+      "term": "Retina",
+      "definition": "The light-sensitive inner surface at the back of the eye containing photoreceptor cells (rods and cones) that transduce light into neural signals."
+    },
+    {
+      "term": "Rods",
+      "definition": "Photoreceptors concentrated in the periphery of the retina that are specialized for detecting low levels of light and movement but not color."
+    },
+    {
+      "term": "Cones",
+      "definition": "Photoreceptors concentrated in the fovea that are responsible for color vision and detecting fine detail in bright light."
+    },
+    {
+      "term": "Fovea",
+      "definition": "A small area in the center of the retina densely packed with cones, providing the sharpest visual acuity."
+    },
+    {
+      "term": "Trichromatic theory",
+      "definition": "The theory that color perception is based on three types of cone receptors, each sensitive to a different range of wavelengths (short, medium, and long)."
+    },
+    {
+      "term": "Opponent-process theory",
+      "definition": "The theory that color perception depends on receptors that operate in opposing pairs: red-green, blue-yellow, and black-white."
+    },
+    {
+      "term": "Optic nerve",
+      "definition": "The bundle of nerve fibers that carries visual information from the retina to the brain."
+    }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "Anatomy of the Eye",
+      "body": "Vision begins when light enters the eye through the **cornea**, a transparent protective layer that bends (refracts) incoming light. The light then passes through the **pupil**, the adjustable opening controlled by the colored **iris**. In bright conditions, the iris contracts to reduce the pupil size and limit light entry; in dim conditions, the iris dilates to allow more light in.\n\nBehind the pupil, the **lens** further focuses the light onto the **retina** at the back of the eye. The lens changes shape through a process called **accommodation** to focus on objects at different distances -- flattening for distant objects and thickening for near ones. On the retina, the focused image is actually inverted (upside-down and reversed), but the brain corrects this during perception.\n\nThe retina contains two types of photoreceptor cells. **Rods** number approximately 120 million and are distributed mostly in the peripheral areas of the retina. They are extremely sensitive to light, making them essential for night vision, but they do not detect color. **Cones** number approximately 6 million and are concentrated in the **fovea**, a tiny pit at the center of the retina. Cones require more light to function but provide sharp detail and color vision. When you look directly at something, you are aiming the image at your fovea to take advantage of its dense concentration of cones."
+    },
+    {
+      "type": "concept",
+      "title": "Theories of Color Vision",
+      "body": "How do we see color? Two complementary theories explain different stages of color processing. The **trichromatic theory** (also called the Young-Helmholtz theory) proposes that the retina contains three types of cones, each maximally sensitive to a different wavelength: short wavelengths (blue), medium wavelengths (green), and long wavelengths (red). Every color we perceive results from the combined pattern of activation across these three cone types. This theory explains color blindness -- if one type of cone is absent or malfunctioning, a person cannot distinguish certain colors. The most common form is red-green color blindness, which occurs more frequently in males because the genes for red and green cones are located on the X chromosome.\n\nThe **opponent-process theory**, proposed by Ewald Hering, argues that color processing occurs in opposing pairs: red versus green, blue versus yellow, and black versus white. This theory explains phenomena that trichromatic theory cannot, such as afterimages. If you stare at a red square for 30 seconds and then look at a white surface, you will see a green afterimage. This happens because the red-sensitive cells become fatigued, and when you shift your gaze, the opponent green process dominates temporarily.\n\nResearch has shown that both theories are correct but operate at different levels. Trichromatic processing occurs at the level of the retina (in the cones), while opponent-process mechanisms operate in the ganglion cells of the retina and in the **lateral geniculate nucleus** of the thalamus. Visual information then travels via the **optic nerve** to the visual cortex in the occipital lobe for higher-level processing."
+    },
+    {
+      "type": "example",
+      "title": "The Blind Spot and Visual Filling-In",
+      "body": "Where the optic nerve exits the retina, there are no photoreceptors at all, creating a **blind spot** in each eye. You can demonstrate this: close your right eye, hold a piece of paper at arm's length with a small X on the right side and a dot on the left, focus on the X, and slowly bring the paper closer. At a certain distance, the dot will disappear as its image falls on your blind spot.\n\nRemarkably, you do not normally notice your blind spots. The brain fills in the missing information using data from the surrounding area and from the other eye. This phenomenon illustrates a crucial principle: perception is not a passive recording of reality but an active construction by the brain. Your visual system constantly makes predictions and fills in gaps to present a seamless, coherent visual experience."
+    },
+    {
+      "type": "summary",
+      "body": "The visual system transforms light into meaningful images through a series of structures. Light passes through the cornea, pupil, and lens to reach the retina, where rods and cones transduce it into neural signals. Rods handle low-light and peripheral vision, while cones provide color and detail in the fovea. Color vision is explained by trichromatic theory at the receptor level and opponent-process theory at higher processing levels. The brain actively constructs visual experience, as demonstrated by phenomena like blind-spot filling."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-5.3",
+    "prompt": "Consider a person who has red-green color blindness. Using your understanding of the trichromatic and opponent-process theories, explain why this condition occurs at a biological level. Then describe at least two specific real-world challenges this person might face and how modern design practices (such as in traffic signals or digital interfaces) attempt to accommodate color vision differences.",
+    "minWords": 100,
+    "rubric": "A strong response correctly explains that red-green color blindness results from absent or dysfunctional medium- or long-wavelength cones (trichromatic theory), connects this to the X-linked genetic pattern, identifies specific real-world challenges (e.g., distinguishing traffic lights, interpreting color-coded information), and describes at least one accommodation strategy (e.g., positional cues in traffic lights, using patterns or labels alongside color in design)."
+  }
+}

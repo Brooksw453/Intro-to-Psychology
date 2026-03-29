@@ -1,0 +1,59 @@
+{
+  "sectionId": "9.4",
+  "chapterId": 9,
+  "title": "Death and Dying",
+  "learningObjectives": [
+    "Describe Kubler-Ross's five stages of grief and evaluate their strengths and limitations",
+    "Explain how cultural, individual, and developmental factors influence the experience of death and dying",
+    "Discuss psychological perspectives on bereavement and coping with loss"
+  ],
+  "keyTerms": [
+    {
+      "term": "Hospice",
+      "definition": "A philosophy and program of care that focuses on comfort and quality of life for terminally ill patients and their families, rather than curative treatment."
+    },
+    {
+      "term": "Bereavement",
+      "definition": "The state of having lost a significant person through death, encompassing both the objective situation of loss and the emotional response."
+    },
+    {
+      "term": "Grief",
+      "definition": "The emotional, psychological, and physical response to loss, which can include sadness, anger, guilt, and physical symptoms."
+    },
+    {
+      "term": "Kubler-Ross model",
+      "definition": "A theory proposing that people facing death experience five emotional stages: denial, anger, bargaining, depression, and acceptance."
+    },
+    {
+      "term": "Palliative care",
+      "definition": "Medical care focused on providing relief from the symptoms and stress of a serious illness, with the goal of improving quality of life."
+    }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "The Kubler-Ross Model of Dying",
+      "body": "Elisabeth Kubler-Ross was a pioneering psychiatrist who transformed how the medical profession and society think about death and dying. Through extensive interviews with terminally ill patients, she developed the **Kubler-Ross model**, which proposes that people facing death commonly experience five emotional stages.\n\nThe first stage is **denial**, in which the person struggles to accept the reality of their diagnosis. This is often followed by **anger**, as the individual grapples with feelings of injustice and asks \"Why me?\" The third stage, **bargaining**, involves attempting to negotiate -- often with a higher power -- for more time or a different outcome. **Depression** follows as the person begins to confront the reality of their impending loss, experiencing deep sadness about what they will leave behind. Finally, **acceptance** represents a stage of relative peace, where the individual comes to terms with their mortality.\n\nIt is important to note that Kubler-Ross herself emphasized that these stages are not experienced in a fixed, linear sequence. Not everyone goes through all five stages, and people may move back and forth between stages or experience several simultaneously. Despite these caveats, the model has been widely -- and sometimes inaccurately -- applied as a rigid framework, which has drawn criticism from researchers who argue that the grief process is far more variable and individual than the stage model suggests."
+    },
+    {
+      "type": "concept",
+      "title": "Bereavement, Grief, and Coping",
+      "body": "**Bereavement** refers to the experience of losing someone significant through death, while **grief** encompasses the emotional, psychological, and physical responses to that loss. **Grief** can manifest in many ways, including intense sadness, anger, guilt, anxiety, physical symptoms such as fatigue and changes in appetite, and difficulty concentrating.\n\nResearch on bereavement has identified several patterns of grieving. Most bereaved individuals experience acute grief that gradually lessens over time, a process sometimes called **resilient grieving**. A smaller percentage experience **chronic grief**, in which intense grief symptoms persist for years. Some individuals show **delayed grief**, where the full emotional impact does not emerge until well after the loss.\n\nThe **dual process model** of coping with bereavement, proposed by Stroebe and Schut, suggests that healthy grieving involves oscillating between two orientations: loss-oriented coping (confronting and processing the emotional pain of loss) and restoration-oriented coping (attending to the practical life changes and new challenges that result from the loss). This model recognizes that grieving people need both to mourn and to rebuild their lives.\n\n**Palliative care** and **hospice** programs play important roles in supporting both dying individuals and their families. **Palliative care** focuses on relieving suffering and improving quality of life for people with serious illnesses, while **hospice** provides comprehensive comfort care for those who are terminally ill, typically when curative treatment is no longer pursued."
+    },
+    {
+      "type": "example",
+      "title": "Cultural Perspectives on Death",
+      "body": "Cultural beliefs and practices profoundly shape how people understand, prepare for, and respond to death. In many Western cultures, death is often feared and avoided as a topic of conversation, and the dying process is frequently medicalized -- taking place in hospitals rather than homes. In contrast, many other cultures embrace death as a natural transition and incorporate it into daily life and celebration.\n\nFor example, the Mexican tradition of Dia de los Muertos (Day of the Dead) celebrates deceased loved ones with altars, food, music, and gatherings at gravesites. Rather than treating death as a taboo, this tradition honors the memory of the departed and maintains a continuing bond between the living and the dead. Similarly, in many Buddhist traditions, death is viewed as a transition rather than an ending, and meditation on mortality is considered an important spiritual practice.\n\nChildren's understanding of death also changes with development. Young children in the preoperational stage may view death as temporary and reversible -- like a character in a cartoon who gets up again after being flattened. By the concrete operational stage, most children understand that death is final, universal, and irreversible. Adolescents and adults can engage in more abstract thinking about the meaning of death and its implications for how one lives.\n\nThese cultural and developmental factors highlight the importance of considering context when supporting bereaved individuals. Grief counselors and psychologists increasingly recognize that there is no single \"right\" way to grieve, and effective support must be sensitive to cultural norms and individual needs."
+    },
+    {
+      "type": "summary",
+      "body": "The Kubler-Ross model identifies five stages of dying -- denial, anger, bargaining, depression, and acceptance -- though the grief process is highly individual and nonlinear. The dual process model describes healthy grieving as oscillating between loss-oriented and restoration-oriented coping. Cultural beliefs, developmental stage, and individual differences all shape how people experience death, dying, and bereavement. Hospice and palliative care programs provide important support for terminally ill individuals and their families."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-9.4",
+    "prompt": "Reflect on how your own cultural background, family experiences, or personal beliefs have shaped your understanding of death and dying. How do these influences compare to the psychological perspectives discussed in this section (e.g., Kubler-Ross, the dual process model)? If you were designing a grief support program for a diverse community, what cultural considerations would you incorporate and why?",
+    "minWords": 100,
+    "rubric": "A strong response reflects thoughtfully on personal or cultural influences on attitudes toward death, connects personal experience to at least one psychological perspective from the section, and proposes specific culturally sensitive elements for a grief support program with clear reasoning."
+  }
+}

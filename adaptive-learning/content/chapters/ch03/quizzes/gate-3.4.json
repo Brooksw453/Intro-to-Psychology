@@ -1,0 +1,29 @@
+{
+  "sectionId": "3.4",
+  "chapterId": 3,
+  "questions": [
+    {
+      "id": "ch03-q07",
+      "question": "A patient suffers damage to the hippocampus. Which of the following abilities would most likely be impaired?",
+      "options": [
+        { "text": "Coordinating balance and voluntary movement", "correct": false },
+        { "text": "Forming new long-term explicit memories", "correct": true },
+        { "text": "Regulating breathing and heart rate", "correct": false },
+        { "text": "Processing visual information from the eyes", "correct": false }
+      ],
+      "explanation": "The hippocampus is a limbic system structure essential for forming new explicit (declarative) memories. Damage to the hippocampus impairs the ability to create new long-term memories of facts and personal experiences, while balance is handled by the cerebellum and vital functions by the brain stem."
+    },
+    {
+      "id": "ch03-q08",
+      "question": "Which lobe of the cerebral cortex is most associated with executive functions such as planning, decision-making, and impulse control?",
+      "options": [
+        { "text": "The occipital lobe", "correct": false },
+        { "text": "The temporal lobe", "correct": false },
+        { "text": "The parietal lobe", "correct": false },
+        { "text": "The frontal lobe", "correct": true }
+      ],
+      "explanation": "The frontal lobe is responsible for higher-order executive functions including planning, reasoning, decision-making, and impulse control. The occipital lobe handles vision, the temporal lobe handles hearing and language comprehension, and the parietal lobe processes sensory information."
+    }
+  ],
+  "passThreshold": 80
+}

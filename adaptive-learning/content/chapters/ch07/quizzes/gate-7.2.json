@@ -1,0 +1,29 @@
+{
+  "sectionId": "7.2",
+  "chapterId": 7,
+  "questions": [
+    {
+      "id": "ch07-q03",
+      "question": "A child says 'I goed to the park' instead of 'I went to the park.' This error is an example of:",
+      "options": [
+        { "text": "A phoneme substitution error", "correct": false },
+        { "text": "Overgeneralization of a grammatical rule", "correct": true },
+        { "text": "Evidence that language is learned purely through imitation", "correct": false },
+        { "text": "A failure of semantic understanding", "correct": false }
+      ],
+      "explanation": "Overgeneralization occurs when children apply grammatical rules too broadly. Saying 'goed' instead of 'went' shows the child has internalized the past-tense rule (add '-ed') but has not yet learned the irregular exception, supporting Chomsky's view that language acquisition involves innate rule-extraction abilities."
+    },
+    {
+      "id": "ch07-q04",
+      "question": "The linguistic relativity hypothesis suggests that:",
+      "options": [
+        { "text": "All languages share an identical deep structure", "correct": false },
+        { "text": "Children can only learn language during a critical period", "correct": false },
+        { "text": "The language a person speaks influences how they think and perceive the world", "correct": true },
+        { "text": "Language development is entirely determined by operant conditioning", "correct": false }
+      ],
+      "explanation": "The linguistic relativity hypothesis, associated with Sapir and Whorf, proposes that the language we speak influences our thought processes and perception. The weaker version of this hypothesis, which has received more empirical support, suggests language influences but does not determine thought."
+    }
+  ],
+  "passThreshold": 80
+}

@@ -1,0 +1,45 @@
+{
+  "sectionId": "13.3",
+  "chapterId": 13,
+  "title": "Organizational Psychology: The Social Dimension of Work",
+  "learningObjectives": [
+    "Describe the major theories of job satisfaction",
+    "Explain different leadership styles and theories",
+    "Discuss the role of organizational culture and teamwork in workplace effectiveness"
+  ],
+  "keyTerms": [
+    { "term": "Job satisfaction", "definition": "The degree to which an employee feels positively or negatively about their job, influenced by factors such as the work itself, pay, advancement opportunities, and relationships with coworkers." },
+    { "term": "Organizational culture", "definition": "The shared values, beliefs, norms, and practices that characterize an organization and shape how its members behave and interact." },
+    { "term": "Transformational leadership", "definition": "A leadership style in which leaders inspire and motivate followers to exceed expectations by articulating a compelling vision, providing intellectual stimulation, and showing genuine concern for followers' development." },
+    { "term": "Transactional leadership", "definition": "A leadership style focused on supervision, organization, and performance, using rewards and punishments to motivate employees based on established goals and expectations." },
+    { "term": "Theory X and Theory Y", "definition": "Douglas McGregor's contrasting management assumptions: Theory X assumes workers are lazy and need external control, while Theory Y assumes workers are self-motivated and seek responsibility." },
+    { "term": "Organizational citizenship behavior", "definition": "Voluntary behaviors that go beyond formal job requirements and contribute to organizational functioning, such as helping coworkers or volunteering for extra tasks." }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "Job Satisfaction and Motivation",
+      "body": "**Job satisfaction** refers to how content employees are with their jobs. Research consistently shows that job satisfaction is related to important outcomes including productivity, absenteeism, turnover, and even physical health. Satisfied workers tend to be more productive, miss fewer days of work, and are less likely to leave the organization.\n\nSeveral theories attempt to explain what makes workers satisfied. Frederick Herzberg's **two-factor theory** distinguishes between *hygiene factors* (salary, job security, working conditions) that prevent dissatisfaction and *motivator factors* (achievement, recognition, meaningful work) that actively produce satisfaction. According to Herzberg, simply eliminating sources of dissatisfaction does not create satisfaction — organizations must also provide opportunities for growth and accomplishment.\n\nDouglas McGregor proposed **Theory X and Theory Y** to describe contrasting management philosophies. Theory X managers assume employees are inherently lazy and need close supervision and external rewards to perform. Theory Y managers assume employees are self-motivated, seek responsibility, and can be trusted to work independently. Research suggests that Theory Y approaches generally lead to higher satisfaction and productivity."
+    },
+    {
+      "type": "concept",
+      "title": "Leadership and Organizational Culture",
+      "body": "Leadership is a central topic in organizational psychology. **Transactional leadership** focuses on managing through established systems of rewards and consequences. Transactional leaders set clear expectations, monitor performance, and provide feedback based on whether goals are met.\n\n**Transformational leadership**, by contrast, involves inspiring and motivating followers to achieve more than they thought possible. Transformational leaders articulate a compelling vision, serve as role models, encourage creative thinking, and show genuine concern for each follower's development. Research has found that transformational leadership is associated with higher employee satisfaction, greater organizational commitment, and improved performance.\n\n**Organizational culture** encompasses the shared values, norms, and practices that define how an organization operates. Some organizations have cultures that emphasize innovation and risk-taking, while others prioritize stability and rule-following. Culture shapes everything from how decisions are made to how conflicts are resolved.\n\nWorkers who display **organizational citizenship behavior** (OCB) go beyond their formal job requirements to help the organization. Examples include mentoring new employees, volunteering for committees, and helping coworkers with their tasks. OCB contributes significantly to organizational effectiveness and is influenced by both job satisfaction and organizational culture."
+    },
+    {
+      "type": "example",
+      "title": "Real-World Example: Workplace Culture at Zappos",
+      "body": "Online retailer Zappos became famous for its unique organizational culture, which emphasizes employee happiness and customer service above all else. The company offered new hires $2,000 to quit after their training period — ensuring that only people who genuinely wanted to be part of the culture would stay. This approach reflects organizational psychology principles about person-organization fit and how culture shapes behavior and commitment."
+    },
+    {
+      "type": "summary",
+      "body": "Organizational psychology examines the social dimensions of work, including job satisfaction, leadership styles, and organizational culture. Theories like Herzberg's two-factor theory and McGregor's Theory X/Theory Y help explain worker motivation, while research on transformational leadership and organizational citizenship behavior reveals what makes workplaces effective and fulfilling."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-13.3",
+    "prompt": "Consider a workplace you are familiar with (a current or past job, a school organization, or even a sports team). Would you describe the leadership style as more transactional or transformational? How does the organizational culture influence members' satisfaction and behavior? Use specific concepts from this section to support your analysis.",
+    "minWords": 100,
+    "rubric": "Student should correctly identify and describe a leadership style using concepts from this section, analyze how organizational culture influences behavior, and apply at least two specific concepts (e.g., Theory X/Y, OCB, Herzberg's factors) to their real-world example. Analysis should go beyond surface-level observations."
+  }
+}

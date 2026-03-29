@@ -1,0 +1,67 @@
+{
+  "sectionId": "7.1",
+  "chapterId": 7,
+  "title": "What Is Cognition?",
+  "learningObjectives": [
+    "Define cognition and describe its role in everyday functioning",
+    "Explain the nature of concepts, prototypes, and natural and artificial categories",
+    "Describe how schemas and cognitive scripts guide expectations and behavior"
+  ],
+  "keyTerms": [
+    {
+      "term": "Cognition",
+      "definition": "The mental activity of thinking, including processing, understanding, remembering, and communicating information."
+    },
+    {
+      "term": "Concept",
+      "definition": "A mental category used to group objects, events, or ideas that share common features."
+    },
+    {
+      "term": "Prototype",
+      "definition": "The best or most typical example of a particular concept or category."
+    },
+    {
+      "term": "Natural concept",
+      "definition": "A mental grouping that is created naturally through everyday experience rather than by following a strict set of rules."
+    },
+    {
+      "term": "Artificial concept",
+      "definition": "A concept defined by a specific set of characteristics or rules, such as geometric shapes."
+    },
+    {
+      "term": "Schema",
+      "definition": "A mental framework or pattern of thought that organizes categories of information and the relationships among them."
+    },
+    {
+      "term": "Cognitive script",
+      "definition": "A set of behaviors associated with a particular place or event that guides expected sequences of action."
+    }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "The Nature of Cognition",
+      "body": "**Cognition** refers to the mental activities involved in acquiring, processing, storing, and using information. Every time you solve a problem, recall a memory, make a decision, or use language, you are engaging in cognition. It is a broad term that encompasses thinking, reasoning, judging, and imagining -- the full range of higher mental processes that define human intellectual life.\n\nAt the heart of cognition is the ability to form **concepts**. A concept is a mental category that groups together objects, events, qualities, or ideas that share common properties. Concepts allow us to organize the enormous amount of information we encounter daily. Without them, every experience would seem entirely new, and we would be unable to generalize from past encounters.\n\nPsychologists distinguish between two types of concepts. **Natural concepts** emerge through everyday experience and are somewhat flexible. For example, your concept of \"vehicle\" might include cars, trucks, bicycles, and boats -- even though these differ considerably. **Artificial concepts**, by contrast, are defined by strict, clearly stated rules. A triangle, for instance, must have exactly three sides and interior angles that sum to 180 degrees. Artificial concepts are common in mathematics and science but less common in everyday thought."
+    },
+    {
+      "type": "concept",
+      "title": "Prototypes, Schemas, and Cognitive Scripts",
+      "body": "When we use natural concepts, we often rely on a **prototype** -- the most typical or best example of a concept. When someone says \"bird,\" you are more likely to picture a robin or a sparrow than a penguin or an ostrich, even though all are technically birds. Prototypes help us make rapid category judgments; the more closely something resembles our prototype, the more quickly we identify it as a member of that category.\n\nBeyond individual concepts, we organize knowledge into larger structures called **schemas**. A schema is a mental framework that shapes how we perceive and interpret new information. For example, your schema for \"college classroom\" likely includes desks, a whiteboard, a professor, and students. Schemas help us navigate familiar situations efficiently, but they can also lead to errors when we encounter situations that do not fit our existing frameworks.\n\nA specific type of schema is a **cognitive script**, which outlines a predictable sequence of events for a familiar situation. Your script for \"dining at a restaurant\" might include being seated, reading the menu, ordering food, eating, paying the bill, and leaving a tip. Scripts allow us to behave appropriately in routine situations without having to consciously think through every step. However, when the script is violated -- such as a restaurant that requires you to pay before ordering -- it can cause confusion or discomfort.\n\nSchemas and scripts are shaped by culture and personal experience. A person who grew up in one cultural context may have very different schemas for social interactions than someone from another background. This is one reason why cross-cultural misunderstandings can occur -- people are operating from different cognitive frameworks without realizing it."
+    },
+    {
+      "type": "example",
+      "title": "Prototypes in Everyday Life",
+      "body": "Consider how quickly you can categorize something as \"furniture.\" If someone shows you a picture of a wooden chair, you instantly recognize it as furniture. But what about a beanbag? A tree stump used as a seat? A hammock? These items take longer to categorize because they are further from your **prototype** of furniture.\n\nThis effect has practical consequences. In legal settings, jurors may have prototypes of what a \"criminal\" looks like, which can introduce bias. In medical settings, a doctor's prototype of a particular disease may cause them to overlook atypical presentations. Understanding prototypes helps us recognize where our rapid categorization might lead us astray and where more careful, deliberate thinking is needed."
+    },
+    {
+      "type": "summary",
+      "body": "Cognition encompasses all mental activities involved in thinking and processing information. We organize knowledge through concepts (both natural and artificial), prototypes (best examples of categories), schemas (mental frameworks for interpreting information), and cognitive scripts (expected sequences of events). These cognitive tools allow efficient processing but can also introduce biases and errors when situations deviate from our established patterns."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-7.1",
+    "prompt": "Think about a cognitive script you follow regularly in your daily life (such as going to a grocery store, attending a class, or visiting the doctor). Describe the script in detail, then explain what happens cognitively when that script is disrupted -- for example, if a step is missing or occurs out of order. How do schemas and prototypes also play a role in your expectations during this routine?",
+    "minWords": 100,
+    "rubric": "A strong response identifies a specific cognitive script with its sequential steps, explains the cognitive disruption that occurs when the script is violated (confusion, discomfort, need for conscious processing), and connects the experience to schemas and prototypes. The response should demonstrate understanding of how these cognitive structures both help and hinder our daily functioning."
+  }
+}

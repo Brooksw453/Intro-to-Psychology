@@ -1,0 +1,46 @@
+{
+  "sectionId": "3.3",
+  "chapterId": 3,
+  "title": "Parts of the Nervous System",
+  "learningObjectives": [
+    "Distinguish between the central nervous system and the peripheral nervous system",
+    "Describe the functions of the somatic and autonomic nervous systems",
+    "Explain the roles of the sympathetic and parasympathetic divisions of the autonomic nervous system"
+  ],
+  "keyTerms": [
+    { "term": "Central nervous system (CNS)", "definition": "The part of the nervous system consisting of the brain and spinal cord; serves as the main processing center for the entire nervous system." },
+    { "term": "Peripheral nervous system (PNS)", "definition": "The part of the nervous system that connects the central nervous system to the rest of the body, including sensory and motor neurons." },
+    { "term": "Somatic nervous system", "definition": "The division of the PNS that controls voluntary movements of skeletal muscles and carries sensory information to the CNS." },
+    { "term": "Autonomic nervous system", "definition": "The division of the PNS that regulates involuntary bodily functions such as heart rate, digestion, and breathing." },
+    { "term": "Sympathetic nervous system", "definition": "The division of the autonomic nervous system that mobilizes the body's energy and resources during times of stress or danger (fight-or-flight response)." },
+    { "term": "Parasympathetic nervous system", "definition": "The division of the autonomic nervous system that calms the body, conserves energy, and maintains routine bodily functions (rest-and-digest response)." },
+    { "term": "Fight-or-flight response", "definition": "A physiological reaction triggered by the sympathetic nervous system in response to perceived threat, preparing the body for action." }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "Organization of the Nervous System",
+      "body": "The human nervous system is a vast communication network that can be divided into two major parts. The **central nervous system (CNS)** consists of the brain and spinal cord and serves as the command center for the entire body. The **peripheral nervous system (PNS)** includes all the nerves that branch out from the brain and spinal cord and extend to every other part of the body, connecting the CNS to muscles, glands, and sensory receptors.\n\nThe PNS is further divided into two functional components. The **somatic nervous system** controls voluntary movements — the actions you consciously decide to perform, such as reaching for a glass of water or typing on a keyboard. It also carries sensory information (such as touch, pain, and temperature) from the body's receptors back to the CNS for processing.\n\nThe **autonomic nervous system** operates largely below conscious awareness and regulates the body's internal environment. It controls functions that you generally do not think about, including heart rate, digestion, respiratory rate, and pupil dilation. The autonomic nervous system is essential for maintaining homeostasis, the stable internal conditions that the body needs to function properly."
+    },
+    {
+      "type": "concept",
+      "title": "Sympathetic and Parasympathetic Divisions",
+      "body": "The autonomic nervous system has two complementary branches that work together like a gas pedal and a brake. The **sympathetic nervous system** activates the body's **fight-or-flight response** when you perceive a threat or experience stress. It increases heart rate, dilates pupils, diverts blood flow to skeletal muscles, and releases glucose for quick energy. These changes prepare you to confront or flee from danger.\n\nThe **parasympathetic nervous system** does the opposite. Often called the \"rest-and-digest\" system, it slows the heart rate, stimulates digestion, and promotes energy conservation. After a stressful event passes, the parasympathetic system returns the body to its baseline state.\n\nThese two divisions are not simply on or off; they constantly adjust their relative activity to meet the body's changing demands. For example, during a calm meal, the parasympathetic system is dominant and promotes digestion. If you suddenly hear a fire alarm, the sympathetic system rapidly takes over, redirecting resources away from digestion and toward the muscles you need to evacuate the building."
+    },
+    {
+      "type": "example",
+      "title": "Real-World Example: Stress and the Autonomic Nervous System",
+      "body": "Consider what happens in your body before giving a public speech. As you approach the podium, your sympathetic nervous system activates: your heart pounds, your palms sweat, your mouth goes dry, and you may feel butterflies in your stomach as blood is diverted away from your digestive system. Once the speech is over and the perceived threat has passed, your parasympathetic nervous system gradually restores calm — your heart rate slows, your breathing deepens, and digestion resumes. This everyday experience demonstrates how the two branches of the autonomic nervous system constantly balance activation and relaxation to help you respond to the demands of your environment."
+    },
+    {
+      "type": "summary",
+      "body": "The nervous system is organized into the central nervous system (brain and spinal cord) and the peripheral nervous system (all other nerves). The PNS includes the somatic nervous system for voluntary movement and the autonomic nervous system for involuntary functions. The autonomic system's sympathetic and parasympathetic divisions work in opposition to mobilize the body during stress and restore it to calm afterward."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-3.3",
+    "prompt": "Describe a stressful situation you have experienced or can imagine (e.g., a job interview, a near-miss car accident, or a surprise encounter). Explain how your sympathetic and parasympathetic nervous systems would respond during and after the event. Include specific physiological changes for each division.",
+    "minWords": 100,
+    "rubric": "A strong response should: (1) describe a specific stressful scenario, (2) correctly identify at least three physiological changes triggered by the sympathetic nervous system, (3) describe the parasympathetic response that follows, (4) demonstrate understanding that the two divisions work in opposition, and (5) use correct terminology including fight-or-flight and rest-and-digest."
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "sectionId": "8.1",
+  "chapterId": 8,
+  "questions": [
+    {
+      "id": "ch08-q01",
+      "question": "According to the Atkinson-Shiffrin model, what is the correct sequence of memory stages?",
+      "options": [
+        { "text": "Short-term memory, sensory memory, long-term memory", "correct": false },
+        { "text": "Sensory memory, short-term memory, long-term memory", "correct": true },
+        { "text": "Long-term memory, short-term memory, sensory memory", "correct": false },
+        { "text": "Encoding, sensory memory, retrieval", "correct": false }
+      ],
+      "explanation": "The Atkinson-Shiffrin model describes information flowing from sensory memory (brief initial recording) to short-term memory (limited capacity, brief duration) to long-term memory (virtually unlimited capacity, potentially permanent storage)."
+    },
+    {
+      "id": "ch08-q02",
+      "question": "A student connects a new psychology term to a personal experience from their own life in order to remember it better. This strategy is an example of:",
+      "options": [
+        { "text": "Maintenance rehearsal", "correct": false },
+        { "text": "Sensory memory processing", "correct": false },
+        { "text": "Elaborative rehearsal", "correct": true },
+        { "text": "Chunking", "correct": false }
+      ],
+      "explanation": "Elaborative rehearsal involves thinking about the meaning of new information and connecting it to existing knowledge or personal experiences. This produces deeper encoding than maintenance rehearsal (simple repetition) and results in more durable long-term memories."
+    }
+  ],
+  "passThreshold": 80
+}

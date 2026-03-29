@@ -1,0 +1,14 @@
+{
+  "chapterId": 15,
+  "title": "Psychological Disorders",
+  "weekNum": 15,
+  "reading": "Psychology 2e (OpenStax), Chapter 15 (Sections 15.1-15.11)",
+  "learningObjectives": [
+    "Define psychological disorders and explain how they are distinguished from typical behavior",
+    "Describe the major classification systems used to diagnose psychological disorders and the controversies surrounding them",
+    "Identify the symptoms, causes, and prevalence of the major categories of psychological disorders including anxiety, mood, psychotic, dissociative, and personality disorders",
+    "Explain the biological, psychological, and sociocultural perspectives on the origins of psychological disorders",
+    "Recognize the importance of using person-first, non-stigmatizing language when discussing psychological disorders"
+  ],
+  "sections": ["15.1", "15.2", "15.3", "15.4", "15.5", "15.6", "15.7", "15.8", "15.9", "15.10", "15.11"]
+}

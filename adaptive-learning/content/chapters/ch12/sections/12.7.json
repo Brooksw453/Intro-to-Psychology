@@ -1,0 +1,45 @@
+{
+  "sectionId": "12.7",
+  "chapterId": 12,
+  "title": "Prosocial Behavior",
+  "learningObjectives": [
+    "Define prosocial behavior, altruism, and the bystander effect",
+    "Explain Latane and Darley's decision model of bystander intervention",
+    "Identify the factors that increase or decrease helping behavior"
+  ],
+  "keyTerms": [
+    { "term": "Prosocial behavior", "definition": "Voluntary behavior intended to benefit others, such as helping, sharing, or comforting." },
+    { "term": "Altruism", "definition": "Helping behavior motivated purely by concern for another person's well-being, without expectation of personal benefit." },
+    { "term": "Bystander effect", "definition": "The phenomenon in which the presence of other people reduces an individual's likelihood of helping someone in distress." },
+    { "term": "Diffusion of responsibility", "definition": "The tendency for each individual in a group to feel less personal responsibility for taking action when other bystanders are present." },
+    { "term": "Reciprocal altruism", "definition": "Helping behavior based on the expectation that the favor will be returned in the future." },
+    { "term": "Empathy-altruism hypothesis", "definition": "Batson's theory that empathic concern for another person produces truly altruistic motivation to help." }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "Prosocial Behavior and Altruism",
+      "body": "While social psychology has documented many troubling aspects of human behavior -- prejudice, aggression, blind obedience -- it has also revealed the remarkable capacity for kindness and helping. **Prosocial behavior** refers to any voluntary action intended to benefit others, including helping, sharing, donating, cooperating, and comforting. **Altruism** is a specific form of prosocial behavior motivated purely by concern for another person's well-being, without expectation of personal reward.\n\nWhy do people help others? Several explanations have been proposed. **Evolutionary psychology** suggests that helping kin (kin selection) and helping non-kin with the expectation of future reciprocation (**reciprocal altruism**) both have survival value. **Social exchange theory** frames helping as a cost-benefit analysis: people help when the perceived benefits (feeling good, gaining social approval, reducing guilt) outweigh the costs (time, effort, risk).\n\nDaniel Batson's **empathy-altruism hypothesis** offers a different perspective. Batson argues that when people feel genuine **empathic concern** for someone in distress -- truly seeing the situation from the other person's perspective -- they are motivated to help regardless of personal benefit. Research supporting this hypothesis has shown that high empathy leads to helping even when easy escape from the situation is available, challenging the purely self-interested view of human motivation."
+    },
+    {
+      "type": "concept",
+      "title": "The Bystander Effect",
+      "body": "One of social psychology's most important contributions to understanding helping behavior is the discovery of the **bystander effect** -- the finding that the presence of other people reduces an individual's likelihood of helping someone in distress. This phenomenon was investigated following the 1964 murder of Kitty Genovese in New York City, which was reported (with some inaccuracies) as having been witnessed by 38 bystanders who did nothing.\n\nJohn Darley and Bibb Latane developed a **decision model of bystander intervention** identifying five steps a person must go through before helping: (1) **notice** the event, (2) **interpret** it as an emergency, (3) **assume personal responsibility** for helping, (4) **decide how to help**, and (5) **implement** the helping behavior. Failure at any step means the person will not intervene.\n\nThe bystander effect operates through two primary mechanisms. **Diffusion of responsibility** occurs when the presence of others leads each individual to feel less personally responsible for taking action (\"Someone else will help\"). **Pluralistic ignorance** occurs when bystanders look to each other for cues about how to react; if no one appears concerned, each individual may conclude that the situation is not actually an emergency.\n\nResearch has identified several factors that increase helping. People are more likely to help when they are the **only bystander**, when the situation is clearly an emergency, when they feel **competent** to provide help, when the victim is perceived as **similar** to themselves, when they are in a **good mood**, and when they have recently been exposed to prosocial models or norms."
+    },
+    {
+      "type": "example",
+      "title": "Overcoming the Bystander Effect",
+      "body": "Understanding the bystander effect has practical applications. Emergency training programs now teach people to counteract diffusion of responsibility by pointing to a specific person and giving them a direct instruction: \"You in the red shirt, call 911.\" This simple technique eliminates the ambiguity of responsibility and dramatically increases the likelihood of assistance.\n\nResearch by Darley and Latane also demonstrated that being educated about the bystander effect itself can reduce its power. In one study, students who had learned about the bystander effect in a psychology class were significantly more likely to help in a subsequent staged emergency than students who had not been exposed to the concept. Knowledge of the psychological barriers to helping can empower people to overcome them.\n\nProsocial behavior can also be cultivated through community design. Neighborhoods with strong social ties and a sense of collective responsibility report higher rates of helping behavior and lower rates of bystander inaction. This suggests that prosocial behavior is not merely an individual trait but is also a product of the social environment."
+    },
+    {
+      "type": "summary",
+      "body": "Prosocial behavior encompasses voluntary actions that benefit others, with altruism representing helping motivated purely by concern for others. The bystander effect demonstrates that the presence of others can inhibit helping through diffusion of responsibility and pluralistic ignorance. Darley and Latane's five-step decision model explains the cognitive process leading to intervention. Factors such as empathy, mood, competence, similarity to the victim, and direct responsibility assignment all increase helping behavior."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-12.7",
+    "prompt": "Describe a situation (real or hypothetical) in which the bystander effect might prevent someone from receiving help. Using Darley and Latane's five-step decision model, identify at which step(s) the helping process might break down. Then propose at least two specific strategies that could be used to overcome the bystander effect in that situation.",
+    "minWords": 100,
+    "rubric": "A strong response should: (1) describe a realistic scenario involving the bystander effect, (2) correctly outline the five steps of Darley and Latane's decision model, (3) identify the specific step(s) at which helping breaks down, (4) propose at least two practical strategies for overcoming the bystander effect, and (5) explain the psychological mechanisms that make these strategies effective."
+  }
+}

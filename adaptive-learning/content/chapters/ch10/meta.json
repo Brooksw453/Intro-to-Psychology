@@ -1,0 +1,13 @@
+{
+  "chapterId": 10,
+  "title": "Emotion and Motivation",
+  "weekNum": 10,
+  "reading": "Psychology 2e (OpenStax), Chapter 10 (Sections 10.1-10.4)",
+  "learningObjectives": [
+    "Explain the major theories and concepts of motivation",
+    "Describe the physiological and psychological mechanisms that regulate hunger and eating",
+    "Discuss the biological and cultural factors that influence human sexual behavior",
+    "Compare and contrast major theories of emotion and identify the components of emotional experience"
+  ],
+  "sections": ["10.1", "10.2", "10.3", "10.4"]
+}

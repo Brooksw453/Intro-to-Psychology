@@ -1,0 +1,71 @@
+{
+  "sectionId": "6.3",
+  "chapterId": 6,
+  "title": "Operant Conditioning",
+  "learningObjectives": [
+    "Explain Thorndike's law of effect and Skinner's contributions to operant conditioning",
+    "Distinguish between positive reinforcement, negative reinforcement, positive punishment, and negative punishment",
+    "Describe schedules of reinforcement and their effects on behavior"
+  ],
+  "keyTerms": [
+    {
+      "term": "Operant conditioning",
+      "definition": "A type of learning in which behavior is strengthened or weakened by the consequences that follow it."
+    },
+    {
+      "term": "Reinforcement",
+      "definition": "Any consequence that increases the likelihood that a behavior will be repeated."
+    },
+    {
+      "term": "Positive reinforcement",
+      "definition": "Strengthening a behavior by adding a desirable stimulus after the behavior occurs."
+    },
+    {
+      "term": "Negative reinforcement",
+      "definition": "Strengthening a behavior by removing an aversive stimulus after the behavior occurs."
+    },
+    {
+      "term": "Punishment",
+      "definition": "Any consequence that decreases the likelihood that a behavior will be repeated."
+    },
+    {
+      "term": "Shaping",
+      "definition": "The reinforcement of successive approximations of a target behavior, used to teach complex behaviors step by step."
+    },
+    {
+      "term": "Fixed-ratio schedule",
+      "definition": "A reinforcement schedule in which a reward is given after a set number of responses."
+    },
+    {
+      "term": "Variable-ratio schedule",
+      "definition": "A reinforcement schedule in which a reward is given after an unpredictable number of responses, producing the highest and most consistent rate of responding."
+    }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "Foundations of Operant Conditioning",
+      "body": "While classical conditioning involves learning associations between stimuli, **operant conditioning** involves learning associations between behaviors and their consequences. The foundational idea comes from Edward Thorndike's **law of effect**: behaviors followed by satisfying consequences tend to be repeated, while behaviors followed by unpleasant consequences tend to diminish.\n\nThorndike demonstrated this using puzzle boxes -- cats placed inside had to discover the correct action (pressing a lever) to escape and reach food. Through trial and error, the cats gradually reduced the time needed to escape, as successful behaviors were \"stamped in\" by the rewarding consequence.\n\n**B.F. Skinner** expanded on Thorndike's work and became the most influential figure in operant conditioning research. Skinner developed the **operant chamber** (often called a Skinner box), an enclosed apparatus in which an animal could perform a simple behavior (pressing a lever or pecking a key) and receive consequences (food pellets, electric shock, etc.). Skinner argued that virtually all voluntary behavior is governed by its consequences and that by carefully controlling consequences, any behavior that an organism is physically capable of performing can be shaped and maintained.\n\nA critical distinction exists between operant and classical conditioning: in classical conditioning, the organism is passive -- the response is elicited by the stimulus. In operant conditioning, the organism is active -- it operates on the environment, and its behavior is shaped by what happens next."
+    },
+    {
+      "type": "concept",
+      "title": "Reinforcement, Punishment, and Schedules",
+      "body": "Consequences in operant conditioning fall into two broad categories: **reinforcement** (which increases behavior) and **punishment** (which decreases behavior). Each can be either positive (adding a stimulus) or negative (removing a stimulus).\n\n- **Positive reinforcement**: Adding something desirable after a behavior. A student studies and earns an A (the good grade increases future studying).\n- **Negative reinforcement**: Removing something aversive after a behavior. Taking aspirin removes a headache (headache relief increases future aspirin-taking). Note: negative reinforcement is NOT punishment -- it still increases behavior.\n- **Positive punishment**: Adding something aversive after a behavior. A child touches a hot stove and feels pain (pain decreases future stove-touching).\n- **Negative punishment**: Removing something desirable after a behavior. A teenager breaks curfew and loses car privileges (loss of privileges decreases future curfew violations).\n\n**Shaping** is used to teach complex behaviors by reinforcing **successive approximations** -- small steps that progressively approach the target behavior. To train a rat to press a lever, a researcher might first reinforce approaching the lever, then touching it, then pressing it.\n\nHow often and when reinforcement occurs matters enormously. **Continuous reinforcement** (rewarding every instance) produces rapid learning but also rapid extinction. **Partial reinforcement schedules** produce slower learning but much greater resistance to extinction. The four main schedules are **fixed-ratio** (reward after a set number of responses), **variable-ratio** (reward after an unpredictable number), **fixed-interval** (reward for the first response after a set time), and **variable-interval** (reward for the first response after an unpredictable time). Variable-ratio schedules produce the highest, most consistent response rates -- this is why slot machines and social media notifications are so compelling."
+    },
+    {
+      "type": "example",
+      "title": "Operant Conditioning in the Real World",
+      "body": "Operant conditioning principles are embedded in nearly every aspect of society. **Workplaces** use positive reinforcement through salaries, bonuses, and promotions to encourage productive behavior. Sales commissions operate on a fixed-ratio schedule (earn a commission for every sale), while piece-rate pay reinforces each unit of production.\n\n**Education** relies on reinforcement through grades, praise, and privileges. A teacher who rewards class participation with points is using positive reinforcement. Taking away recess for misbehavior is negative punishment. The effectiveness of these approaches depends on the timing, consistency, and value of the consequences to the individual student.\n\n**Technology** has become remarkably effective at leveraging operant conditioning. Social media platforms use variable-ratio reinforcement -- sometimes you check your phone and find likes, comments, or interesting content (reinforcement), and sometimes you do not. Because the reinforcement is unpredictable, checking behavior becomes persistent and resistant to extinction. Game designers use similar principles with random loot drops and achievement systems.\n\nUnderstanding these principles empowers people to recognize how consequences shape their behavior and to deliberately design environments that promote desired behaviors -- whether managing a classroom, training a pet, or building healthier personal habits."
+    },
+    {
+      "type": "summary",
+      "body": "Operant conditioning involves learning from the consequences of behavior. Reinforcement (positive or negative) increases behavior, while punishment (positive or negative) decreases it. Skinner demonstrated how shaping can teach complex behaviors through successive approximations. Reinforcement schedules -- continuous, fixed-ratio, variable-ratio, fixed-interval, and variable-interval -- determine the pattern and persistence of learned behaviors. Variable-ratio schedules produce the most persistent responding, a principle exploited in gambling and social media design."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-6.3",
+    "prompt": "Social media platforms are often described as being designed to be addictive. Using your understanding of operant conditioning, analyze how a specific social media platform uses reinforcement principles to keep users engaged. Identify the specific reinforcement schedule at work, explain why it is effective based on what you know about schedules of reinforcement, and discuss whether this represents an ethical use of psychological principles. What could users do to counteract these effects?",
+    "minWords": 100,
+    "rubric": "A strong response identifies a specific platform and describes its reinforcement mechanisms (e.g., likes, notifications, content feeds), correctly identifies the variable-ratio schedule and explains why it produces high, persistent response rates resistant to extinction, offers a thoughtful ethical analysis (considering both user engagement and potential harms), and proposes at least one concrete strategy for counteracting conditioned checking behavior."
+  }
+}

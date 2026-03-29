@@ -1,0 +1,117 @@
+{
+  "sectionId": "full",
+  "chapterId": 10,
+  "questions": [
+    {
+      "id": "ch10-q09",
+      "question": "The overjustification effect occurs when:",
+      "options": [
+        { "text": "A person becomes more intrinsically motivated after receiving external rewards", "correct": false },
+        { "text": "External rewards decrease a person's intrinsic motivation for an activity", "correct": true },
+        { "text": "A person's arousal level exceeds the optimal level for performance", "correct": false },
+        { "text": "Higher-level needs are pursued before lower-level needs are met", "correct": false }
+      ],
+      "explanation": "The overjustification effect occurs when providing external rewards for an intrinsically motivated behavior actually decreases the person's intrinsic motivation. The person begins to attribute their behavior to the external reward rather than their own interest."
+    },
+    {
+      "id": "ch10-q10",
+      "question": "According to drive theory, behavior is motivated by the need to:",
+      "options": [
+        { "text": "Achieve self-actualization", "correct": false },
+        { "text": "Maximize physiological arousal", "correct": false },
+        { "text": "Reduce internal tension and restore homeostasis", "correct": true },
+        { "text": "Satisfy cognitive curiosity", "correct": false }
+      ],
+      "explanation": "Drive theory proposes that physiological needs create internal tensions (drives) that motivate behaviors aimed at reducing those tensions and restoring homeostasis -- the body's stable internal state. Hunger, thirst, and fatigue are classic examples of drives."
+    },
+    {
+      "id": "ch10-q11",
+      "question": "Set point theory suggests that:",
+      "options": [
+        { "text": "All people should weigh the same amount", "correct": false },
+        { "text": "The body has a natural weight range it actively works to maintain", "correct": true },
+        { "text": "Eating disorders are caused by an improperly set body weight target", "correct": false },
+        { "text": "Metabolism is unrelated to hunger regulation", "correct": false }
+      ],
+      "explanation": "Set point theory proposes that each person's body has a natural weight range that it actively works to maintain through physiological mechanisms. When weight drops below this range, metabolism slows and hunger increases; the reverse occurs when weight exceeds the range."
+    },
+    {
+      "id": "ch10-q12",
+      "question": "Leptin resistance in individuals with obesity means that:",
+      "options": [
+        { "text": "Their bodies produce too little leptin", "correct": false },
+        { "text": "Their brains become less responsive to leptin's satiety signals", "correct": true },
+        { "text": "Ghrelin is no longer produced by the stomach", "correct": false },
+        { "text": "The hypothalamus stops regulating hunger entirely", "correct": false }
+      ],
+      "explanation": "In leptin resistance, the brain becomes less responsive to leptin despite high levels being produced by fat cells. This means the normal satiety signal is weakened, contributing to chronic overeating even though the body has adequate fat stores."
+    },
+    {
+      "id": "ch10-q13",
+      "question": "Which hormone plays a key role in sexual desire in both males and females?",
+      "options": [
+        { "text": "Estrogen only", "correct": false },
+        { "text": "Oxytocin", "correct": false },
+        { "text": "Testosterone", "correct": true },
+        { "text": "Prolactin", "correct": false }
+      ],
+      "explanation": "Testosterone is the primary androgen hormone that plays a key role in sexual desire in both males and females. While testosterone levels are much higher in males, it contributes to sexual motivation across genders."
+    },
+    {
+      "id": "ch10-q14",
+      "question": "The James-Lange theory of emotion proposes that:",
+      "options": [
+        { "text": "Physiological arousal and emotion occur simultaneously", "correct": false },
+        { "text": "We experience emotion first, which then causes physiological changes", "correct": false },
+        { "text": "We perceive physiological changes in our body, which then produce the emotional experience", "correct": true },
+        { "text": "Emotion requires both arousal and a cognitive label", "correct": false }
+      ],
+      "explanation": "The James-Lange theory argues that we experience emotion as a result of perceiving physiological changes in our body. We feel sad because we cry, afraid because we tremble -- not the other way around."
+    },
+    {
+      "id": "ch10-q15",
+      "question": "Paul Ekman's research on facial expressions found that:",
+      "options": [
+        { "text": "All emotional expressions are culturally learned", "correct": false },
+        { "text": "Six basic emotions are universally recognized across cultures", "correct": true },
+        { "text": "Facial expressions have no connection to internal emotional states", "correct": false },
+        { "text": "Only positive emotions produce consistent facial expressions", "correct": false }
+      ],
+      "explanation": "Ekman's cross-cultural research identified six basic emotions -- happiness, sadness, anger, fear, surprise, and disgust -- that are recognized and expressed through similar facial expressions across diverse cultures, suggesting a universal biological basis."
+    },
+    {
+      "id": "ch10-q16",
+      "question": "In the Dutton and Aron bridge study, men on the swaying suspension bridge were more likely to call the female researcher because:",
+      "options": [
+        { "text": "The bridge made them feel confident and assertive", "correct": false },
+        { "text": "They misattributed their fear-induced arousal to romantic attraction", "correct": true },
+        { "text": "The Cannon-Bard theory predicts attraction increases in dangerous settings", "correct": false },
+        { "text": "They experienced a cognitive appraisal of the researcher as threatening", "correct": false }
+      ],
+      "explanation": "This classic study supported the Schachter-Singer two-factor theory. The men experienced physiological arousal from the frightening bridge and misattributed that arousal to attraction toward the woman, demonstrating how cognitive labeling of arousal shapes emotional experience."
+    },
+    {
+      "id": "ch10-q17",
+      "question": "According to the Yerkes-Dodson law:",
+      "options": [
+        { "text": "Higher arousal always leads to better performance", "correct": false },
+        { "text": "Performance is best at moderate levels of arousal", "correct": true },
+        { "text": "Intrinsic motivation is always superior to extrinsic motivation", "correct": false },
+        { "text": "Self-actualization can only occur when all other needs are met", "correct": false }
+      ],
+      "explanation": "The Yerkes-Dodson law states that performance is optimal at moderate levels of arousal. Too little arousal leads to boredom and poor performance, while too much arousal leads to anxiety and reduced performance."
+    },
+    {
+      "id": "ch10-q18",
+      "question": "Which theory of emotion emphasizes that our evaluation of a situation determines our emotional response, such that the same event can produce different emotions in different people?",
+      "options": [
+        { "text": "James-Lange theory", "correct": false },
+        { "text": "Cannon-Bard theory", "correct": false },
+        { "text": "Cognitive appraisal theory", "correct": true },
+        { "text": "Schachter-Singer two-factor theory", "correct": false }
+      ],
+      "explanation": "Cognitive appraisal theory, associated with Richard Lazarus, emphasizes that our evaluation (appraisal) of a situation relative to our goals and coping resources determines our emotional response. This explains why the same event can produce very different emotions in different people."
+    }
+  ],
+  "passThreshold": 80
+}

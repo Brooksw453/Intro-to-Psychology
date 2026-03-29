@@ -1,0 +1,60 @@
+{
+  "sectionId": "15.5",
+  "chapterId": 15,
+  "title": "Obsessive-Compulsive and Related Disorders",
+  "learningObjectives": [
+    "Describe the key features of obsessive-compulsive disorder including obsessions and compulsions",
+    "Distinguish between OCD and related disorders such as body dysmorphic disorder and hoarding disorder",
+    "Explain the biological and cognitive factors thought to contribute to OCD"
+  ],
+  "keyTerms": [
+    {
+      "term": "Obsessive-compulsive disorder (OCD)",
+      "definition": "A disorder characterized by intrusive, unwanted thoughts (obsessions) and repetitive behaviors or mental acts (compulsions) performed to reduce the anxiety caused by the obsessions."
+    },
+    {
+      "term": "Obsessions",
+      "definition": "Persistent, unwanted, and intrusive thoughts, urges, or images that cause significant anxiety or distress."
+    },
+    {
+      "term": "Compulsions",
+      "definition": "Repetitive behaviors or mental acts that a person feels driven to perform in response to an obsession, often according to rigid rules."
+    },
+    {
+      "term": "Body dysmorphic disorder",
+      "definition": "A disorder characterized by preoccupation with perceived defects or flaws in physical appearance that are not observable or appear slight to others."
+    },
+    {
+      "term": "Hoarding disorder",
+      "definition": "A disorder characterized by persistent difficulty discarding possessions, regardless of their actual value, resulting in accumulation that clutters living spaces."
+    }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "Obsessive-Compulsive Disorder",
+      "body": "**Obsessive-compulsive disorder (OCD)** is characterized by the presence of **obsessions**, **compulsions**, or both. **Obsessions** are persistent, intrusive, unwanted thoughts, urges, or images that cause marked anxiety or distress. Common obsessions include fears of contamination, doubts about whether one has locked a door or turned off the stove, unwanted aggressive or sexual thoughts, and a need for symmetry or exactness.\n\nImportantly, people with OCD recognize that their obsessions are products of their own mind rather than externally imposed. They do not want these thoughts and often find them deeply distressing and contrary to their values. A loving parent who experiences intrusive thoughts about harming their child, for instance, is horrified by these thoughts precisely because they conflict with the person's actual desires and character.\n\n**Compulsions** are repetitive behaviors (such as hand washing, checking, or ordering) or mental acts (such as counting, praying, or silently repeating words) that the person feels driven to perform in response to an obsession. Compulsions are aimed at reducing the anxiety caused by obsessions or preventing a feared event, even though they are not realistically connected to the feared outcome. A person with contamination obsessions may wash their hands dozens of times per day until the skin is raw and cracked. A person with checking compulsions may return home multiple times to verify that the stove is off, even when they clearly remember turning it off.\n\nOCD affects approximately 1-2% of the population and typically emerges in late adolescence or early adulthood. Without treatment, it tends to follow a chronic course that can severely impair occupational, social, and personal functioning."
+    },
+    {
+      "type": "concept",
+      "title": "Related Disorders",
+      "body": "The DSM-5 groups several related conditions alongside OCD. **Body dysmorphic disorder (BDD)** involves a preoccupation with one or more perceived defects or flaws in physical appearance that are not observable or appear slight to others. A person with BDD may spend hours examining, attempting to fix, or hiding the perceived flaw. They may repeatedly seek reassurance from others, compare their appearance to others, or undergo unnecessary cosmetic procedures. BDD causes significant distress and impairment and should not be confused with normal concerns about appearance.\n\n**Hoarding disorder** is characterized by persistent difficulty discarding or parting with possessions, regardless of their actual value. This difficulty is due to a perceived need to save items and distress associated with discarding them, resulting in the accumulation of possessions that clutter living areas and substantially compromise their intended use. In severe cases, a person with hoarding disorder may be unable to use their kitchen, bathroom, or bedroom because of accumulated items, creating fire hazards and unsanitary conditions.\n\nOther related conditions include **trichotillomania** (hair-pulling disorder), which involves recurrent pulling out of one's hair resulting in hair loss, and **excoriation disorder** (skin-picking disorder), which involves recurrent picking of the skin resulting in skin lesions. Like OCD, these conditions involve repetitive behaviors that the person finds difficult to control despite negative consequences."
+    },
+    {
+      "type": "example",
+      "title": "The OCD Cycle",
+      "body": "Understanding OCD requires recognizing the self-reinforcing cycle that maintains the disorder. Consider a person who experiences an intrusive thought that their hands are contaminated with dangerous germs (the obsession). This thought triggers intense anxiety. To relieve the anxiety, the person washes their hands thoroughly (the compulsion). After washing, the anxiety temporarily decreases, which reinforces the washing behavior through negative reinforcement -- the removal of an unpleasant state.\n\nHowever, the relief is short-lived. The obsessive thought returns, often with greater intensity, prompting another round of washing. Over time, the person may need to wash longer, more frequently, or in more elaborate rituals to achieve the same level of relief. The compulsion, rather than solving the problem, actually strengthens the obsessive-compulsive cycle.\n\nResearch points to both biological and cognitive factors in OCD. Neuroimaging studies have identified abnormalities in the orbitofrontal cortex, caudate nucleus, and thalamus -- brain regions involved in error detection and behavioral inhibition. Serotonin dysfunction also appears to play a role, as medications that increase serotonin availability often reduce OCD symptoms. Cognitive theories emphasize the role of inflated responsibility beliefs and thought-action fusion, in which a person believes that thinking about something is morally equivalent to doing it."
+    },
+    {
+      "type": "summary",
+      "title": "Section Summary",
+      "body": "OCD is characterized by intrusive, unwanted obsessions and repetitive compulsions performed to reduce the resulting anxiety. The disorder follows a self-reinforcing cycle in which compulsions provide temporary relief but ultimately strengthen the pattern. Related disorders include body dysmorphic disorder, hoarding disorder, trichotillomania, and excoriation disorder. Biological factors such as brain circuit abnormalities and serotonin dysfunction, along with cognitive factors like inflated responsibility and thought-action fusion, contribute to OCD."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-15.5",
+    "prompt": "Many people casually say things like \"I'm so OCD\" when they prefer things neat or organized. How does this colloquial use of the term differ from the clinical reality of obsessive-compulsive disorder? Explain the actual nature of OCD, including the obsession-compulsion cycle, and discuss why trivializing the disorder through casual language can be harmful.",
+    "minWords": 100,
+    "rubric": "A strong response distinguishes between ordinary preferences for order and the clinical features of OCD (intrusive unwanted thoughts, compulsions performed to reduce distress, significant impairment). It should describe the obsession-compulsion cycle and explain how casual misuse of the term minimizes the suffering of people with OCD and contributes to misunderstanding. The response should use person-first, respectful language."
+  }
+}

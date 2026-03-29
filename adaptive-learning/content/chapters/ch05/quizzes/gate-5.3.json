@@ -1,0 +1,29 @@
+{
+  "sectionId": "5.3",
+  "chapterId": 5,
+  "questions": [
+    {
+      "id": "ch05-q05",
+      "question": "Which type of photoreceptor is primarily responsible for color vision and detecting fine detail?",
+      "options": [
+        { "text": "Rods", "correct": false },
+        { "text": "Cones", "correct": true },
+        { "text": "Ganglion cells", "correct": false },
+        { "text": "Bipolar cells", "correct": false }
+      ],
+      "explanation": "Cones are the photoreceptor cells concentrated in the fovea that are responsible for color vision and sharp visual acuity. They require brighter light to function. Rods, by contrast, are specialized for low-light conditions and do not detect color."
+    },
+    {
+      "id": "ch05-q06",
+      "question": "After staring at a red image for 30 seconds and then looking at a white wall, you see a green afterimage. Which theory of color vision best explains this phenomenon?",
+      "options": [
+        { "text": "Trichromatic theory", "correct": false },
+        { "text": "Opponent-process theory", "correct": true },
+        { "text": "Feature detection theory", "correct": false },
+        { "text": "Signal detection theory", "correct": false }
+      ],
+      "explanation": "Opponent-process theory explains afterimages. It proposes that color is processed in opposing pairs (red-green, blue-yellow, black-white). When red-sensitive cells become fatigued, the opposing green process temporarily dominates, producing a green afterimage."
+    }
+  ],
+  "passThreshold": 80
+}

@@ -1,0 +1,29 @@
+{
+  "sectionId": "15.9",
+  "chapterId": 15,
+  "questions": [
+    {
+      "id": "ch15-q17",
+      "question": "Dissociative identity disorder is characterized by:",
+      "options": [
+        { "text": "Persistent hallucinations and delusions about one's identity", "correct": false },
+        { "text": "The presence of two or more distinct personality states that alternately control behavior", "correct": true },
+        { "text": "Chronic feelings of detachment caused by substance abuse", "correct": false },
+        { "text": "A sudden loss of motor function without a neurological explanation", "correct": false }
+      ],
+      "explanation": "Dissociative identity disorder (DID) involves two or more distinct personality states that recurrently take control of the person's behavior, along with gaps in memory for important personal information. It is strongly associated with severe childhood trauma."
+    },
+    {
+      "id": "ch15-q18",
+      "question": "A person who persistently feels detached from their own body or experiences the world around them as unreal most likely has:",
+      "options": [
+        { "text": "Dissociative amnesia", "correct": false },
+        { "text": "Schizophrenia", "correct": false },
+        { "text": "Depersonalization/derealization disorder", "correct": true },
+        { "text": "Generalized anxiety disorder", "correct": false }
+      ],
+      "explanation": "Depersonalization/derealization disorder involves persistent or recurrent feelings of detachment from one's body or mental processes (depersonalization) or a sense that the external world is unreal (derealization). Unlike psychosis, reality testing remains intact."
+    }
+  ],
+  "passThreshold": 80
+}

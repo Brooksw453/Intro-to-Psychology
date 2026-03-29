@@ -1,0 +1,29 @@
+{
+  "sectionId": "1.1",
+  "chapterId": 1,
+  "passThreshold": 80,
+  "questions": [
+    {
+      "id": "ch01-q01",
+      "question": "Which of the following best describes psychology as a discipline?",
+      "options": [
+        { "text": "The philosophical study of the soul and consciousness", "correct": false },
+        { "text": "The scientific study of behavior and mental processes", "correct": true },
+        { "text": "The medical treatment of mental illness through medication", "correct": false },
+        { "text": "The study of supernatural and paranormal phenomena", "correct": false }
+      ],
+      "explanation": "Psychology is defined as the scientific study of behavior and mental processes. It is distinct from philosophy, medicine, and pseudoscience because it relies on the scientific method to investigate its questions."
+    },
+    {
+      "id": "ch01-q02",
+      "question": "A psychologist observes that students who sleep fewer than six hours perform worse on exams and predicts that increasing sleep will improve test scores. Which goals of psychology does this scenario illustrate?",
+      "options": [
+        { "text": "Describe and change", "correct": false },
+        { "text": "Explain and change", "correct": false },
+        { "text": "Describe and predict", "correct": true },
+        { "text": "Predict and change", "correct": false }
+      ],
+      "explanation": "The psychologist first describes the relationship between sleep and performance (observing the pattern), then predicts future outcomes based on that pattern. The goals of description and prediction are illustrated here. Changing behavior would involve implementing an intervention, and explaining would involve identifying the mechanism behind the relationship."
+    }
+  ]
+}

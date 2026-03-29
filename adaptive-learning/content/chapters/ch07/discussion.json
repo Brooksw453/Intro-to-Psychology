@@ -1,0 +1,21 @@
+{
+  "chapterId": 7,
+  "weekNum": 7,
+  "title": "Intelligence: Nature, Nurture, and Measurement",
+  "prompt": "Intelligence is measured and defined in many different ways. Consider the theories of intelligence discussed in this chapter (Spearman's g, Gardner's multiple intelligences, Sternberg's triarchic theory) along with what we know about the roles of genetics and environment. Do you believe current intelligence tests adequately capture what it means to be 'intelligent'? What important aspects of intelligence might these tests miss? Draw on specific concepts from the chapter, such as emotional intelligence, creativity, stereotype threat, or the Flynn effect, to support your argument.",
+  "requirements": {
+    "initialPost": {
+      "minWords": 150,
+      "maxWords": 200,
+      "dueDay": "Wednesday",
+      "dueTime": "11:59 PM ET"
+    },
+    "replies": {
+      "count": 2,
+      "minWords": 75,
+      "maxWords": 100,
+      "dueDay": "Sunday",
+      "dueTime": "11:59 PM ET"
+    }
+  }
+}

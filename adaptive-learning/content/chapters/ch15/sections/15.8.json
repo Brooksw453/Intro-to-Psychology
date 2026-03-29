@@ -1,0 +1,64 @@
+{
+  "sectionId": "15.8",
+  "chapterId": 15,
+  "title": "Schizophrenia",
+  "learningObjectives": [
+    "Describe the positive, negative, and cognitive symptoms of schizophrenia",
+    "Explain the biological factors associated with schizophrenia including genetics, neurotransmitter theories, and brain abnormalities",
+    "Discuss the role of environmental factors in the development of schizophrenia"
+  ],
+  "keyTerms": [
+    {
+      "term": "Schizophrenia",
+      "definition": "A severe psychological disorder characterized by disturbances in thought, perception, emotion, and behavior, lasting at least six months with at least one month of active symptoms."
+    },
+    {
+      "term": "Hallucination",
+      "definition": "A perceptual experience that occurs in the absence of an external stimulus, such as hearing voices that are not there."
+    },
+    {
+      "term": "Delusion",
+      "definition": "A firmly held false belief that persists despite evidence to the contrary and is not shared by others in the person's culture."
+    },
+    {
+      "term": "Disorganized thinking",
+      "definition": "A symptom of schizophrenia in which a person's speech and thought patterns are fragmented, incoherent, or illogical."
+    },
+    {
+      "term": "Negative symptoms",
+      "definition": "Symptoms of schizophrenia that reflect a reduction or absence of normal functions, including flat affect, alogia, avolition, and social withdrawal."
+    },
+    {
+      "term": "Dopamine hypothesis",
+      "definition": "The theory that schizophrenia is caused in part by excessive dopamine activity in certain brain pathways."
+    }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "Symptoms of Schizophrenia",
+      "body": "**Schizophrenia** is among the most severe and debilitating psychological disorders, affecting approximately 1% of the population worldwide. It typically emerges in late adolescence or early adulthood and requires at least six months of disturbance, including at least one month of active-phase symptoms.\n\nThe symptoms of schizophrenia are traditionally divided into three categories. **Positive symptoms** represent additions to or distortions of normal experience. These include **hallucinations** -- perceptual experiences without an external stimulus. Auditory hallucinations, particularly hearing voices, are the most common type. The voices may comment on the person's behavior, issue commands, or carry on conversations. Visual, tactile, and olfactory hallucinations also occur but are less frequent.\n\n**Delusions** are firmly held false beliefs that persist despite clear evidence to the contrary. Common types include persecutory delusions (believing one is being followed, spied on, or conspired against), grandiose delusions (believing one has extraordinary abilities or importance), and referential delusions (believing that random events or media messages are directed specifically at oneself). **Disorganized thinking** is apparent in the person's speech, which may shift rapidly between unrelated topics (loose associations), include invented words (neologisms), or become so scrambled as to be incomprehensible (word salad).\n\n**Negative symptoms** involve a reduction or absence of normal functions. These include **flat affect** (severely reduced emotional expression), **alogia** (reduced speech output), **avolition** (inability to initiate and persist in goal-directed activities), and **anhedonia** (inability to experience pleasure). Negative symptoms are often more persistent and harder to treat than positive symptoms and contribute significantly to the functional impairment experienced by people with schizophrenia.\n\n**Cognitive symptoms** include difficulties with attention, working memory, and executive functions such as planning and decision-making."
+    },
+    {
+      "type": "concept",
+      "title": "Causes and Risk Factors",
+      "body": "Schizophrenia has a strong genetic component. A person with one biological parent who has schizophrenia has approximately a 13% risk of developing the disorder, compared to about 1% in the general population. For identical twins, the concordance rate is approximately 48%, indicating that while genetics play a significant role, environmental factors are also important -- otherwise the concordance rate would be 100%.\n\nThe **dopamine hypothesis** proposes that schizophrenia is associated with excessive dopamine activity in certain brain pathways. This theory is supported by the fact that antipsychotic medications, which block dopamine receptors, reduce positive symptoms, and that drugs that increase dopamine (such as amphetamines) can produce psychotic symptoms in healthy individuals. However, the dopamine hypothesis alone does not fully account for the disorder, and other neurotransmitters, including glutamate and serotonin, are also implicated.\n\nBrain imaging studies have revealed structural differences in the brains of people with schizophrenia, including enlarged ventricles (fluid-filled spaces) and reduced volume in the prefrontal cortex and temporal lobes. These structural differences suggest that neurodevelopmental processes may be disrupted.\n\nEnvironmental factors that increase risk include prenatal complications (such as maternal infection, malnutrition, or stress during pregnancy), birth complications, childhood adversity, cannabis use during adolescence, urban upbringing, and social isolation. The diathesis-stress model is particularly relevant here: a genetic vulnerability may remain latent until triggered by environmental stressors."
+    },
+    {
+      "type": "example",
+      "title": "Living with Schizophrenia",
+      "body": "Understanding what it is like to live with schizophrenia helps counter the many myths and misconceptions about the disorder. Contrary to popular belief, schizophrenia is not the same as \"split personality\" or dissociative identity disorder. People with schizophrenia do not have multiple distinct personalities. Additionally, people with schizophrenia are far more likely to be victims of violence than perpetrators -- the association between schizophrenia and violence is vastly overstated by media portrayals.\n\nConsider a young adult who gradually begins to withdraw from friends, struggles to concentrate in classes, and starts experiencing auditory hallucinations -- hearing voices that criticize their behavior. As the symptoms intensify, maintaining employment and relationships becomes increasingly difficult. With appropriate treatment -- which typically includes antipsychotic medication to manage positive symptoms, psychosocial rehabilitation to build daily living skills, and family support and education -- many people with schizophrenia can manage their symptoms and lead meaningful, fulfilling lives.\n\nEarly intervention is crucial. Research consistently demonstrates that the sooner treatment begins after the onset of psychotic symptoms, the better the long-term outcomes. Programs that provide coordinated specialty care, combining medication management, therapy, family involvement, and supported education or employment, have shown particularly promising results."
+    },
+    {
+      "type": "summary",
+      "title": "Section Summary",
+      "body": "Schizophrenia is a severe disorder characterized by positive symptoms (hallucinations, delusions, disorganized thinking), negative symptoms (flat affect, alogia, avolition), and cognitive symptoms. It has a strong genetic basis, and the dopamine hypothesis highlights the role of neurotransmitter dysfunction. Brain structure abnormalities and environmental risk factors also contribute. Despite common misconceptions, schizophrenia is not multiple personality disorder, and people with the condition are more often victims than perpetrators of violence. Early intervention and comprehensive treatment significantly improve outcomes."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-15.8",
+    "prompt": "Popular media often portrays people with schizophrenia as dangerous or as having \"split personalities.\" Based on what you have learned in this section, how do these portrayals differ from the clinical reality of schizophrenia? Discuss at least two common misconceptions and explain why accurate public understanding of this disorder matters for the well-being of people who live with it.",
+    "minWords": 100,
+    "rubric": "A strong response identifies at least two specific misconceptions (e.g., schizophrenia equals split personality, people with schizophrenia are inherently violent) and corrects them with accurate information from the section. The response should explain how misconceptions contribute to stigma and barriers to treatment, and demonstrate respectful, person-first language throughout."
+  }
+}

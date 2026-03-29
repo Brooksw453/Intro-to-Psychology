@@ -1,0 +1,64 @@
+{
+  "sectionId": "15.4",
+  "chapterId": 15,
+  "title": "Anxiety Disorders",
+  "learningObjectives": [
+    "Differentiate between normal anxiety and anxiety disorders",
+    "Describe the symptoms and features of specific phobia, social anxiety disorder, panic disorder, agoraphobia, and generalized anxiety disorder",
+    "Explain the biological, cognitive, and learning-based explanations for anxiety disorders"
+  ],
+  "keyTerms": [
+    {
+      "term": "Anxiety disorder",
+      "definition": "A group of disorders characterized by excessive, persistent fear or worry that is disproportionate to the actual threat and interferes with daily functioning."
+    },
+    {
+      "term": "Specific phobia",
+      "definition": "An intense, irrational fear of a specific object or situation that is disproportionate to any actual danger."
+    },
+    {
+      "term": "Social anxiety disorder",
+      "definition": "A disorder characterized by extreme fear of being scrutinized, negatively evaluated, or embarrassed in social or performance situations."
+    },
+    {
+      "term": "Panic disorder",
+      "definition": "A disorder marked by recurrent, unexpected panic attacks along with persistent worry about future attacks or their consequences."
+    },
+    {
+      "term": "Agoraphobia",
+      "definition": "A disorder involving intense fear and avoidance of situations where escape might be difficult or help unavailable during a panic attack."
+    },
+    {
+      "term": "Generalized anxiety disorder (GAD)",
+      "definition": "A disorder characterized by excessive, uncontrollable worry about a variety of everyday matters persisting for at least six months."
+    }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "Understanding Anxiety Disorders",
+      "body": "Anxiety is a normal and adaptive emotion. It alerts us to potential threats, motivates preparation, and can enhance performance in moderate amounts. An **anxiety disorder**, however, occurs when anxiety becomes excessive, persistent, and disproportionate to the actual threat. People with anxiety disorders experience fear and worry that interfere significantly with daily life, relationships, and occupational functioning.\n\nAnxiety disorders are among the most common psychological disorders, affecting approximately 19% of adults in the United States each year. Women are diagnosed with anxiety disorders at roughly twice the rate of men. These disorders tend to emerge in childhood or adolescence and, without treatment, often follow a chronic course.\n\nA **specific phobia** is an intense, irrational fear of a particular object or situation. Common phobias include fear of animals (such as spiders or snakes), natural environments (such as heights or storms), blood-injection-injury (such as needles), and specific situations (such as flying or enclosed spaces). The fear experienced by a person with a phobia is far greater than the actual danger posed by the feared stimulus. A person with a severe spider phobia, for example, may avoid outdoor activities, refuse to enter basements, or experience debilitating panic upon encountering even a small, harmless spider.\n\n**Social anxiety disorder** (formerly called social phobia) involves an intense fear of social situations in which the person might be scrutinized, judged, or embarrassed. This goes far beyond ordinary shyness. A person with social anxiety disorder may avoid speaking in class, eating in front of others, or attending social gatherings. The fear of negative evaluation can be so paralyzing that it significantly limits educational, occupational, and social opportunities."
+    },
+    {
+      "type": "concept",
+      "title": "Panic Disorder, Agoraphobia, and Generalized Anxiety Disorder",
+      "body": "**Panic disorder** is characterized by recurrent, unexpected **panic attacks** -- sudden surges of intense fear or discomfort that peak within minutes. During a panic attack, a person may experience a pounding heart, sweating, trembling, shortness of breath, chest pain, nausea, dizziness, and a terrifying sense that they are dying or losing control. The attacks are so distressing that individuals develop persistent worry about having additional attacks, which can lead to significant behavioral changes.\n\n**Agoraphobia** involves intense fear and avoidance of situations where escape might be difficult or help might not be available if panic-like symptoms occur. This can include being in open spaces, enclosed spaces, crowds, or using public transportation. In severe cases, a person with agoraphobia may become confined to their home. While agoraphobia often co-occurs with panic disorder, it can also develop independently.\n\n**Generalized anxiety disorder (GAD)** is characterized by excessive, uncontrollable worry about a wide range of everyday concerns -- finances, health, family, work -- that persists for at least six months. Unlike phobias, which focus on specific triggers, GAD involves a diffuse, free-floating anxiety. People with GAD often experience muscle tension, restlessness, fatigue, difficulty concentrating, irritability, and sleep disturbances. They frequently describe themselves as \"chronic worriers\" and find it nearly impossible to relax.\n\nResearch suggests that anxiety disorders arise from a combination of genetic vulnerability, neurobiological factors (such as overactivity in the amygdala), cognitive patterns (such as overestimating threats and underestimating coping abilities), and learning experiences (such as classical conditioning of fear responses)."
+    },
+    {
+      "type": "example",
+      "title": "Living with an Anxiety Disorder",
+      "body": "Consider a college student who begins experiencing unexpected panic attacks during lectures. The first attack seems to come out of nowhere -- suddenly their heart is racing, they cannot catch their breath, and they are convinced they are having a heart attack. After visiting the emergency room and learning that nothing is physically wrong, the student feels relieved but confused.\n\nWhen a second and third attack occur, the student begins to dread going to class. They start sitting near the door so they can leave quickly if an attack strikes. Eventually, they begin skipping classes altogether, which causes their grades to drop. This pattern illustrates how panic disorder can escalate: the fear of panic attacks becomes its own source of anxiety, creating a cycle that increasingly restricts the person's life.\n\nWith appropriate treatment -- which might include cognitive-behavioral therapy to address catastrophic thinking about bodily sensations and possibly medication to reduce the frequency of attacks -- many people with panic disorder experience significant improvement. Understanding that panic attacks, while terrifying, are not medically dangerous is often a crucial first step in treatment."
+    },
+    {
+      "type": "summary",
+      "title": "Section Summary",
+      "body": "Anxiety disorders involve excessive, persistent fear or worry that is disproportionate to the actual threat and impairs daily functioning. Specific phobia involves intense fear of a particular object or situation, while social anxiety disorder centers on fear of social evaluation. Panic disorder is marked by recurrent, unexpected panic attacks, and agoraphobia involves avoidance of situations where escape might be difficult. Generalized anxiety disorder is characterized by chronic, excessive worry about everyday matters. These disorders arise from the interplay of genetic, neurobiological, cognitive, and learning factors."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-15.4",
+    "prompt": "Imagine you are explaining the difference between normal anxiety and an anxiety disorder to a friend who says, \"Everyone gets anxious sometimes -- it's not a real disorder.\" How would you explain the distinction? Use at least one specific anxiety disorder as an example to illustrate how clinical anxiety differs from everyday worry or nervousness.",
+    "minWords": 100,
+    "rubric": "A strong response clearly distinguishes between normal adaptive anxiety and clinical anxiety disorders by discussing factors such as intensity, duration, proportionality to the threat, and functional impairment. The response should describe at least one specific anxiety disorder (e.g., GAD, panic disorder, specific phobia) with enough detail to demonstrate understanding. It should convey a compassionate, non-stigmatizing tone."
+  }
+}

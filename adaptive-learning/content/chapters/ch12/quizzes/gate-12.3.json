@@ -1,0 +1,29 @@
+{
+  "sectionId": "12.3",
+  "chapterId": 12,
+  "questions": [
+    {
+      "id": "ch12-q05",
+      "question": "In Festinger's classic cognitive dissonance experiment, participants paid only $1 to lie about a boring task later rated the task as more enjoyable because:",
+      "options": [
+        { "text": "They received a large enough reward to justify the lie", "correct": false },
+        { "text": "They had insufficient justification for lying and changed their attitude to reduce dissonance", "correct": true },
+        { "text": "They were using the peripheral route to persuasion", "correct": false },
+        { "text": "They experienced normative social influence from the experimenter", "correct": false }
+      ],
+      "explanation": "Participants paid $1 could not justify their lie with the small payment (insufficient justification), so they reduced cognitive dissonance by changing their attitude to align with their behavior -- actually believing the task was more enjoyable."
+    },
+    {
+      "id": "ch12-q06",
+      "question": "According to the elaboration likelihood model, persuasion through careful evaluation of the quality of arguments occurs via the:",
+      "options": [
+        { "text": "Peripheral route", "correct": false },
+        { "text": "Central route", "correct": true },
+        { "text": "Subliminal route", "correct": false },
+        { "text": "Conditioning route", "correct": false }
+      ],
+      "explanation": "The central route to persuasion involves careful, thoughtful evaluation of the arguments presented. This route requires motivation and ability to process the message and produces more lasting attitude change than the peripheral route."
+    }
+  ],
+  "passThreshold": 80
+}

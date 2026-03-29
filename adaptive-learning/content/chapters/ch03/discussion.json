@@ -1,0 +1,21 @@
+{
+  "chapterId": 3,
+  "weekNum": 3,
+  "title": "The Brain-Behavior Connection",
+  "prompt": "This chapter explores how biological systems — from genes to neurons to brain structures to hormones — influence our thoughts, feelings, and behaviors. Choose one specific biological mechanism discussed in Chapter 3 (e.g., the fight-or-flight response, neurotransmitter function, brain lateralization, or gene-environment interaction) and explain how it affects everyday human behavior. Provide a concrete, real-world example from your own life or from current events that illustrates this brain-behavior connection. Then, reflect on the implications: does understanding the biological basis of behavior change how we should think about personal responsibility, mental health treatment, or education?",
+  "requirements": {
+    "initialPost": {
+      "minWords": 150,
+      "maxWords": 200,
+      "dueDay": "Wednesday",
+      "dueTime": "11:59 PM ET"
+    },
+    "replies": {
+      "count": 2,
+      "minWords": 75,
+      "maxWords": 100,
+      "dueDay": "Sunday",
+      "dueTime": "11:59 PM ET"
+    }
+  }
+}

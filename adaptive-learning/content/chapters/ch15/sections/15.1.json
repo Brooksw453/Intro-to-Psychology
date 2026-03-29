@@ -1,0 +1,60 @@
+{
+  "sectionId": "15.1",
+  "chapterId": 15,
+  "title": "What Are Psychological Disorders?",
+  "learningObjectives": [
+    "Define psychological disorder and identify the criteria used to determine when behavior is abnormal",
+    "Explain the concept of harmful dysfunction and its role in defining mental disorders",
+    "Discuss the impact of stigma on individuals living with psychological disorders"
+  ],
+  "keyTerms": [
+    {
+      "term": "Psychological disorder",
+      "definition": "A condition characterized by abnormal thoughts, feelings, and behaviors that cause distress or impair functioning."
+    },
+    {
+      "term": "Harmful dysfunction",
+      "definition": "A model suggesting that a disorder exists when an internal mechanism fails to perform its natural function and the failure is harmful to the individual."
+    },
+    {
+      "term": "Atypical behavior",
+      "definition": "Behavior that deviates from what is considered normal or expected within a given cultural context."
+    },
+    {
+      "term": "Stigma",
+      "definition": "Negative attitudes and beliefs that lead to discrimination against people identified as having a psychological disorder."
+    },
+    {
+      "term": "Etiology",
+      "definition": "The cause or causes of a disorder, including biological, psychological, and social factors."
+    }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "Defining Abnormal Behavior",
+      "body": "A **psychological disorder** is a condition characterized by abnormal thoughts, feelings, and behaviors that cause significant distress or impairment in daily functioning. But what exactly qualifies as \"abnormal\"? This question has challenged psychologists, psychiatrists, and societies for centuries.\n\nSeveral criteria are commonly used to determine whether behavior crosses the threshold from typical to disordered. First, the behavior may be **atypical** -- it deviates statistically from what most people in a given culture experience. However, statistical rarity alone is insufficient. Being exceptionally intelligent or talented is statistically unusual but certainly not disordered.\n\nSecond, the behavior may violate **social norms** -- the unwritten rules governing acceptable conduct within a culture. Yet social norms vary across cultures and change over time, making this criterion culturally relative. Behaviors once considered disordered (such as homosexuality, which was listed in the DSM until 1973) are now understood as normal variations of human experience.\n\nThird, the behavior may cause **personal distress** -- the individual genuinely suffers as a result of their thoughts, feelings, or actions. A person experiencing persistent anxiety that interferes with sleep, work, and relationships is clearly distressed. However, some individuals with psychological disorders may not recognize or report distress, particularly those experiencing mania or certain personality disorders.\n\nFourth, the behavior may result in **impairment** or **maladaptive functioning** -- it interferes with the person's ability to carry out daily activities such as maintaining employment, sustaining relationships, or caring for themselves. This criterion focuses on functional consequences rather than subjective experience."
+    },
+    {
+      "type": "concept",
+      "title": "The Harmful Dysfunction Model",
+      "body": "Psychologist Jerome Wakefield proposed the **harmful dysfunction** model as a way to integrate multiple perspectives on what constitutes a disorder. According to this framework, a genuine psychological disorder exists when two conditions are met: (1) an internal psychological mechanism fails to perform its naturally selected function, and (2) this failure causes harm to the individual as judged by the standards of their culture.\n\nThis model attempts to balance objective biological considerations with subjective cultural values. The dysfunction component draws on evolutionary psychology, suggesting that our mental mechanisms evolved to serve specific adaptive functions. When these mechanisms break down -- for example, when the fear response activates in the absence of any real danger -- a dysfunction exists. The harm component acknowledges that not every dysfunction is necessarily a disorder; it must also produce negative consequences for the individual within their social context.\n\nUnderstanding the **etiology** (causes) of psychological disorders is essential for effective treatment. Modern perspectives recognize that most disorders arise from a complex interplay of biological, psychological, and social factors rather than any single cause."
+    },
+    {
+      "type": "example",
+      "title": "The Problem of Stigma",
+      "body": "**Stigma** surrounding psychological disorders remains one of the most significant barriers to treatment and recovery. Research consistently shows that people with mental health conditions face discrimination in employment, housing, and social relationships. A person with depression may avoid seeking help because they fear being labeled \"weak\" or \"crazy.\" A person with schizophrenia may face suspicion and social exclusion based on inaccurate media portrayals linking mental illness to violence.\n\nLanguage plays a crucial role in either reinforcing or reducing stigma. Using person-first language -- saying \"a person with bipolar disorder\" rather than \"a bipolar person\" -- emphasizes the humanity of the individual rather than defining them by their diagnosis. Similarly, avoiding terms like \"committed suicide\" (which implies criminality) in favor of \"died by suicide\" reflects a more compassionate and accurate understanding.\n\nPublic education campaigns and contact-based interventions, in which people share their lived experiences with mental health conditions, have shown promise in reducing stigma. When we recognize that psychological disorders are medical conditions rather than character flaws, we create an environment where individuals are more likely to seek and receive the help they need."
+    },
+    {
+      "type": "summary",
+      "title": "Section Summary",
+      "body": "Psychological disorders are defined by abnormal thoughts, feelings, and behaviors that cause distress or functional impairment. Multiple criteria -- including statistical rarity, violation of social norms, personal distress, and maladaptive functioning -- are used to evaluate abnormality, though no single criterion is sufficient on its own. The harmful dysfunction model integrates biological and cultural perspectives by requiring both an internal dysfunction and culturally recognized harm. Stigma remains a major barrier to treatment, and person-first language is essential for respectful and accurate discourse about mental health."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-15.1",
+    "prompt": "Consider the criteria used to define psychological disorders (statistical rarity, violation of social norms, personal distress, and maladaptive functioning). Can you think of a behavior that might meet one or two of these criteria but would NOT be considered a psychological disorder? Explain why no single criterion is sufficient for defining abnormality, and discuss how cultural context influences our understanding of what is \"normal\" versus \"disordered.\"",
+    "minWords": 100,
+    "rubric": "A strong response identifies a specific behavior that meets some but not all criteria for abnormality (e.g., extreme sports, cultural rituals, grief), explains why multiple criteria must be considered together, and demonstrates understanding of how cultural and historical context shapes definitions of normality. The response should reference at least two of the four criteria discussed in the section."
+  }
+}

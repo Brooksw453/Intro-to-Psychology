@@ -1,0 +1,63 @@
+{
+  "sectionId": "10.4",
+  "chapterId": 10,
+  "title": "Emotion",
+  "learningObjectives": [
+    "Identify the components of emotional experience including physiological arousal, cognitive appraisal, and behavioral expression",
+    "Compare and contrast major theories of emotion including the James-Lange, Cannon-Bard, Schachter-Singer, and cognitive appraisal theories",
+    "Explain the role of biology, culture, and cognition in the experience and expression of emotion"
+  ],
+  "keyTerms": [
+    {
+      "term": "Emotion",
+      "definition": "A complex psychological state involving physiological arousal, a subjective experience or feeling, and a behavioral or expressive response."
+    },
+    {
+      "term": "James-Lange theory",
+      "definition": "The theory that emotions result from the perception of physiological changes in the body -- we feel afraid because we tremble, rather than trembling because we feel afraid."
+    },
+    {
+      "term": "Cannon-Bard theory",
+      "definition": "The theory that physiological arousal and the subjective experience of emotion occur simultaneously and independently, rather than one causing the other."
+    },
+    {
+      "term": "Schachter-Singer two-factor theory",
+      "definition": "The theory that emotion results from the combination of physiological arousal and a cognitive label or interpretation of that arousal."
+    },
+    {
+      "term": "Cognitive appraisal",
+      "definition": "The process of evaluating a situation to determine its personal significance, which shapes the emotional response."
+    },
+    {
+      "term": "Display rules",
+      "definition": "Cultural norms that dictate when, where, and how emotions should be expressed in social situations."
+    }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "Components of Emotion",
+      "body": "**Emotion** is a complex psychological phenomenon that involves three interconnected components: physiological arousal, subjective experience, and behavioral expression. When you encounter a growling dog, your heart races (physiological arousal), you feel afraid (subjective experience), and you may freeze or back away (behavioral expression).\n\nThe physiological component of emotion involves activation of the autonomic nervous system. The sympathetic branch triggers the \"fight or flight\" response -- increased heart rate, rapid breathing, sweating, and the release of stress hormones such as adrenaline and cortisol. Different emotions may involve somewhat different physiological patterns, though there is considerable overlap.\n\nThe subjective component is the conscious feeling or experience of the emotion -- the felt quality of joy, anger, sadness, or fear. While the basic emotions appear to be universal, the richness and complexity of emotional experience varies across individuals and cultures.\n\nThe behavioral component includes facial expressions, body language, vocal tone, and actions. Paul Ekman's research identified six basic emotions -- happiness, sadness, anger, fear, surprise, and disgust -- that appear to be recognized and expressed universally across cultures through similar facial expressions. However, **display rules** -- cultural norms governing when and how emotions should be expressed -- shape the behavioral component significantly. For example, some cultures encourage the open expression of grief, while others value emotional restraint."
+    },
+    {
+      "type": "concept",
+      "title": "Theories of Emotion",
+      "body": "Psychologists have long debated the relationship between the components of emotion, and several influential theories offer different perspectives on how emotions arise.\n\nThe **James-Lange theory**, proposed independently by William James and Carl Lange in the 1880s, argues that emotions are the result of physiological reactions to events. According to this theory, we do not cry because we are sad; rather, we feel sad because we cry. The perception of bodily changes -- a racing heart, tense muscles, tears -- gives rise to the emotional experience. This theory predicts that different emotions should produce distinctly different physiological patterns.\n\nThe **Cannon-Bard theory** challenges this view, arguing that physiological arousal and the subjective experience of emotion occur simultaneously and independently. Walter Cannon pointed out that physiological responses are often too slow and too similar across different emotions to be the primary cause of emotional experience. According to this theory, the thalamus sends signals simultaneously to the cortex (producing the conscious feeling) and to the autonomic nervous system (producing physiological arousal).\n\nStanley Schachter and Jerome Singer proposed the **Schachter-Singer two-factor theory**, which holds that emotion results from two factors: physiological arousal and a cognitive label for that arousal. When we experience arousal, we look to our environment and circumstances to determine what we are feeling. The same physiological arousal could be interpreted as excitement, anxiety, or anger depending on the situational context.\n\nMore recently, Richard Lazarus's **cognitive appraisal** theory emphasizes that our evaluation of a situation determines our emotional response. According to this view, the same event can produce different emotions in different people depending on how they appraise it. A public speaking engagement might generate excitement in one person and terror in another, depending on how each person evaluates the situation relative to their goals, abilities, and coping resources."
+    },
+    {
+      "type": "example",
+      "title": "Emotion in Context: The Bridge Study",
+      "body": "One of the most famous demonstrations of the two-factor theory of emotion was conducted by Donald Dutton and Arthur Aron. Male participants crossed either a high, swaying suspension bridge over a deep canyon or a low, stable bridge. A female research assistant met each participant on the bridge and gave him her phone number. Men who crossed the frightening suspension bridge were significantly more likely to call the woman afterward, presumably because they misattributed their fear-induced physiological arousal (racing heart, sweaty palms) to romantic attraction.\n\nThis study illustrates a key prediction of the Schachter-Singer theory: when people experience unexplained physiological arousal, they look to situational cues to label their emotional state. The arousal produced by the scary bridge was cognitively relabeled as attraction to the woman.\n\nHowever, the relationship between cognition and emotion is not always straightforward. Robert Zajonc argued that some emotional responses occur without conscious cognitive processing -- we can feel fear in response to a snake before we have consciously identified it as a threat. This suggests that while **cognitive appraisal** plays an important role in many emotional experiences, some emotions can be triggered by rapid, unconscious processing through subcortical pathways involving the amygdala.\n\nThe interplay between these different theoretical perspectives highlights the complexity of emotional experience. Modern researchers generally acknowledge that emotion involves multiple pathways and processes, with both rapid automatic responses and slower, more deliberate cognitive evaluations contributing to our rich emotional lives."
+    },
+    {
+      "type": "summary",
+      "body": "Emotion involves three components: physiological arousal, subjective experience, and behavioral expression. Major theories differ on how these components relate: the James-Lange theory emphasizes bodily responses as the source of emotion, the Cannon-Bard theory proposes that arousal and feeling occur simultaneously, the Schachter-Singer two-factor theory highlights the role of cognitive labeling, and cognitive appraisal theory emphasizes our evaluation of situations. Cultural display rules shape emotional expression, while basic emotions appear to be universally recognized."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-10.4",
+    "prompt": "Recall a recent situation in which you experienced a strong emotion (positive or negative). Describe the physiological sensations, subjective feelings, and behavioral responses you experienced. Then, apply at least two theories of emotion from this section (James-Lange, Cannon-Bard, Schachter-Singer, or cognitive appraisal) to explain how each theory would account for your emotional experience. Which theory do you think best explains what happened, and why?",
+    "minWords": 100,
+    "rubric": "A strong response describes a specific emotional experience with attention to all three components (physiological, subjective, behavioral), accurately applies at least two emotion theories to the experience, evaluates which theory provides the best explanation with clear reasoning, and uses correct terminology from the section."
+  }
+}

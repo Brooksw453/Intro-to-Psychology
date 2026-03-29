@@ -1,0 +1,59 @@
+{
+  "sectionId": "6.4",
+  "chapterId": 6,
+  "title": "Observational Learning (Modeling)",
+  "learningObjectives": [
+    "Define observational learning and explain Bandura's contribution to learning theory",
+    "Describe the Bobo doll experiment and its findings",
+    "Identify the four processes required for observational learning to occur"
+  ],
+  "keyTerms": [
+    {
+      "term": "Observational learning",
+      "definition": "Learning that occurs by watching the behavior of others and the consequences of those behaviors, without direct reinforcement."
+    },
+    {
+      "term": "Model",
+      "definition": "The person or character whose behavior is observed and potentially imitated in observational learning."
+    },
+    {
+      "term": "Vicarious reinforcement",
+      "definition": "The process by which observing a model being rewarded for a behavior increases the likelihood that the observer will imitate that behavior."
+    },
+    {
+      "term": "Prosocial behavior",
+      "definition": "Voluntary behavior intended to help or benefit others, such as sharing, cooperating, or comforting."
+    },
+    {
+      "term": "Self-efficacy",
+      "definition": "An individual's belief in their own ability to succeed at a specific task, which influences whether they attempt and persist at new behaviors."
+    }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "Bandura and Observational Learning",
+      "body": "While behaviorists like Skinner emphasized direct experience and reinforcement, **Albert Bandura** demonstrated that learning can also occur simply by watching others. **Observational learning** (also called social learning or modeling) involves acquiring new behaviors, information, or attitudes by observing other people and the consequences of their actions.\n\nBandura's most famous study was the **Bobo doll experiment** (1961). Children watched an adult model interact with a large inflatable Bobo doll. In one condition, the adult aggressively punched, kicked, and hit the doll with a mallet while shouting hostile phrases. In a control condition, the adult played quietly with other toys. When the children were later left alone in a room with the Bobo doll and other toys, those who had observed the aggressive model were significantly more likely to imitate the aggressive behavior -- often reproducing the exact actions and phrases they had witnessed.\n\nIn later variations of the study, Bandura showed that consequences observed by the child mattered. When children watched a model being rewarded for aggressive behavior, they were more likely to imitate it. When they watched a model being punished, they were less likely to imitate -- but crucially, they had still learned the behavior. When later offered rewards for performing the aggressive acts, the children who had seen the model punished could reproduce the behavior just as accurately. This distinction between **learning** and **performance** was a breakthrough: it showed that reinforcement influences whether a learned behavior is displayed, not whether it is acquired."
+    },
+    {
+      "type": "concept",
+      "title": "Four Processes of Observational Learning",
+      "body": "Bandura identified four cognitive processes that must occur for observational learning to take place:\n\n1. **Attention**: The observer must notice and attend to the model's behavior. Factors that increase attention include the model's attractiveness, prestige, similarity to the observer, and the distinctiveness of the behavior. We pay more attention to models we admire or identify with.\n\n2. **Retention**: The observer must remember the observed behavior. This involves mentally encoding and storing a representation of the behavior. If you cannot recall what you saw, you cannot reproduce it later.\n\n3. **Reproduction**: The observer must be physically and mentally capable of reproducing the behavior. Watching a professional gymnast does not mean you can immediately perform a backflip -- motor skills, physical ability, and practice all play a role.\n\n4. **Motivation**: The observer must have a reason to imitate the behavior. **Vicarious reinforcement** (seeing the model rewarded) increases motivation to imitate, while **vicarious punishment** (seeing the model punished) decreases it. Personal incentives and **self-efficacy** -- the belief that one can successfully perform the behavior -- also influence whether imitation occurs.\n\nBandura's work moved learning theory beyond strict behaviorism by incorporating cognitive factors. His **social cognitive theory** recognizes that learning involves an interaction among the person (cognitive factors, beliefs, self-efficacy), the behavior, and the environment -- a concept he called **reciprocal determinism**."
+    },
+    {
+      "type": "example",
+      "title": "Media, Modeling, and Behavior",
+      "body": "Observational learning has profound implications for understanding the influence of media on behavior. Children and adolescents are exposed to countless models through television, movies, video games, and social media. Research consistently shows that exposure to media violence can increase aggressive thoughts, feelings, and behaviors -- consistent with Bandura's findings that observing aggression increases the likelihood of imitating it.\n\nHowever, observational learning is not limited to negative outcomes. **Prosocial behavior** can also be modeled and learned. Children's educational programs deliberately model sharing, kindness, cooperation, and problem-solving. Studies have found that children who watch prosocial media content demonstrate more helping and sharing behavior than control groups.\n\nIn the workplace, new employees often learn organizational culture, unwritten norms, and practical skills by observing experienced colleagues -- a process called **mentoring** when formalized. Medical students learn surgical techniques by observing skilled surgeons. Athletes improve by studying film of expert performers. In each case, the four processes of attention, retention, reproduction, and motivation determine whether observation translates into learned behavior.\n\nSocial media influencers represent a modern form of modeling. Their behaviors -- from purchasing decisions to fitness routines to communication styles -- are observed and imitated by millions of followers, illustrating the far-reaching power of observational learning in the digital age."
+    },
+    {
+      "type": "summary",
+      "body": "Observational learning, demonstrated by Bandura's Bobo doll experiments, shows that people can learn new behaviors simply by watching others without direct reinforcement. Four processes are required: attention, retention, reproduction, and motivation. Vicarious reinforcement and punishment influence whether learned behaviors are performed but not whether they are acquired. Bandura's social cognitive theory integrates cognitive factors into learning theory through the concept of reciprocal determinism. Observational learning has significant implications for understanding the effects of media, mentoring, and social influence on behavior."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-6.4",
+    "prompt": "Consider a behavior or skill you learned primarily through observation rather than direct instruction or reinforcement. Describe the situation and identify the model you observed. Then analyze your experience through the lens of Bandura's four processes: How did attention, retention, reproduction, and motivation each play a role? Was vicarious reinforcement or punishment involved? How does this experience illustrate the difference between learning and performance?",
+    "minWords": 100,
+    "rubric": "A strong response provides a specific example of observational learning from personal experience, identifies the model, systematically addresses all four of Bandura's processes (attention, retention, reproduction, motivation) with relevant details, discusses whether vicarious reinforcement or punishment was involved, and reflects on the distinction between learning (acquiring the behavior) and performance (displaying it)."
+  }
+}

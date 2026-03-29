@@ -1,0 +1,15 @@
+{
+  "chapterId": 5,
+  "title": "Sensation and Perception",
+  "weekNum": 5,
+  "reading": "Psychology 2e (OpenStax), Chapter 5 (Sections 5.1-5.6)",
+  "learningObjectives": [
+    "Distinguish between sensation and perception and explain how they work together",
+    "Describe the basic principles of waves and wavelengths as they relate to sensory experience",
+    "Explain how the visual system processes light into meaningful images",
+    "Describe the anatomy and function of the auditory system",
+    "Identify the sensory systems responsible for taste, smell, touch, and body position",
+    "Apply Gestalt principles to explain how the brain organizes perceptual information"
+  ],
+  "sections": ["5.1", "5.2", "5.3", "5.4", "5.5", "5.6"]
+}

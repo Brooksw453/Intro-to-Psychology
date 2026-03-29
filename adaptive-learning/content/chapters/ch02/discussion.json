@@ -1,0 +1,21 @@
+{
+  "chapterId": 2,
+  "weekNum": 2,
+  "title": "Discussion: Evaluating Research Claims in the Media",
+  "prompt": "Find a recent news article, social media post, or advertisement that makes a claim about human behavior or psychology (e.g., \"screen time causes depression in teens\" or \"this supplement boosts memory by 50%\"). Share the claim and evaluate it using concepts from this chapter. What research method was likely used? Can the claim establish causation, or is it based on correlational data? What ethical considerations might apply to studying this topic? What additional information would you need to determine whether the claim is credible? Reference at least two specific concepts from the chapter (e.g., correlation vs. causation, statistical significance, peer review, informed consent) in your analysis.",
+  "requirements": {
+    "initialPost": {
+      "minWords": 150,
+      "maxWords": 200,
+      "dueDay": "Wednesday",
+      "dueTime": "11:59 PM ET"
+    },
+    "replies": {
+      "count": 2,
+      "minWords": 75,
+      "maxWords": 100,
+      "dueDay": "Sunday",
+      "dueTime": "11:59 PM ET"
+    }
+  }
+}

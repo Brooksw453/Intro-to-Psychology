@@ -1,0 +1,95 @@
+{
+  "sectionId": "full",
+  "chapterId": 14,
+  "questions": [
+    {
+      "id": "ch14-q11",
+      "question": "According to Lazarus's cognitive appraisal model, stress occurs when a person:",
+      "options": [
+        { "text": "Encounters any change in their routine", "correct": false },
+        { "text": "Perceives an event as threatening AND believes coping resources are insufficient", "correct": true },
+        { "text": "Experiences the alarm stage of the general adaptation syndrome", "correct": false },
+        { "text": "Has a Type A personality", "correct": false }
+      ],
+      "explanation": "Lazarus's model proposes that stress depends on two cognitive evaluations: primary appraisal (Is this a threat?) and secondary appraisal (Can I cope?). Stress occurs when both conditions are met — the event is perceived as threatening AND coping resources are judged inadequate."
+    },
+    {
+      "id": "ch14-q12",
+      "question": "Cortisol is released primarily through activation of the:",
+      "options": [
+        { "text": "Parasympathetic nervous system", "correct": false },
+        { "text": "HPA axis", "correct": true },
+        { "text": "Somatic nervous system", "correct": false },
+        { "text": "Reticular activating system", "correct": false }
+      ],
+      "explanation": "Cortisol is released through the HPA (hypothalamic-pituitary-adrenal) axis. The hypothalamus signals the pituitary gland, which stimulates the adrenal cortex to release cortisol. This provides a slower but longer-lasting stress response compared to the immediate fight-or-flight reaction."
+    },
+    {
+      "id": "ch14-q13",
+      "question": "A syndrome characterized by emotional exhaustion, depersonalization, and reduced personal accomplishment resulting from chronic occupational stress is called:",
+      "options": [
+        { "text": "General adaptation syndrome", "correct": false },
+        { "text": "Type A behavior", "correct": false },
+        { "text": "Job burnout", "correct": true },
+        { "text": "Psychosomatic illness", "correct": false }
+      ],
+      "explanation": "Job burnout is a syndrome resulting from chronic occupational stress, characterized by three components: emotional exhaustion (feeling drained), depersonalization (treating people as objects), and reduced sense of personal accomplishment."
+    },
+    {
+      "id": "ch14-q14",
+      "question": "Kiecolt-Glaser's research with medical students demonstrated that:",
+      "options": [
+        { "text": "Students with Type A behavior performed better on exams", "correct": false },
+        { "text": "Immune function decreased during high-stress exam periods", "correct": true },
+        { "text": "Social support had no effect on stress levels", "correct": false },
+        { "text": "Eustress improved immune function permanently", "correct": false }
+      ],
+      "explanation": "Kiecolt-Glaser's classic studies showed that medical students demonstrated significant decreases in immune function during stressful exam periods compared to less stressful times, providing clear evidence of the link between psychological stress and immunosuppression."
+    },
+    {
+      "id": "ch14-q15",
+      "question": "An emotion-focused coping strategy would be most appropriate when:",
+      "options": [
+        { "text": "You can take direct action to change the stressor", "correct": false },
+        { "text": "The stressor is uncontrollable and you need to manage your emotional response", "correct": true },
+        { "text": "You have abundant social support", "correct": false },
+        { "text": "Problem-focused coping is too time-consuming", "correct": false }
+      ],
+      "explanation": "Emotion-focused coping is most appropriate when stressors are uncontrollable — when direct action cannot change the situation. In these cases, managing the emotional response (through support-seeking, reframing, relaxation) is more adaptive than trying to change what cannot be changed."
+    },
+    {
+      "id": "ch14-q16",
+      "question": "Csikszentmihalyi's concept of flow describes a state in which a person:",
+      "options": [
+        { "text": "Uses emotion-focused coping to manage stress", "correct": false },
+        { "text": "Reaches the resistance stage of the general adaptation syndrome", "correct": false },
+        { "text": "Is completely absorbed in a challenging activity that matches their skill level", "correct": true },
+        { "text": "Experiences hedonic adaptation after a positive event", "correct": false }
+      ],
+      "explanation": "Flow is a state of complete absorption in an activity, characterized by deep enjoyment, effortless concentration, and loss of time awareness. It occurs when a challenging activity matches the person's skill level, and it contributes to lasting well-being."
+    },
+    {
+      "id": "ch14-q17",
+      "question": "Twin studies on happiness suggest that approximately what percentage of variation in happiness is attributable to genetic factors?",
+      "options": [
+        { "text": "10%", "correct": false },
+        { "text": "25%", "correct": false },
+        { "text": "50%", "correct": true },
+        { "text": "90%", "correct": false }
+      ],
+      "explanation": "Twin studies suggest that approximately 50% of the variation in happiness is attributable to genetic factors, supporting the set point theory. The remaining 50% is influenced by life circumstances and intentional activities, meaning there is substantial room for increasing happiness through deliberate choices."
+    },
+    {
+      "id": "ch14-q18",
+      "question": "The Roseto Effect demonstrated the health benefits of:",
+      "options": [
+        { "text": "Regular exercise and healthy diet", "correct": false },
+        { "text": "Problem-focused coping strategies", "correct": false },
+        { "text": "Strong community bonds and social cohesion", "correct": true },
+        { "text": "Positive psychology interventions", "correct": false }
+      ],
+      "explanation": "The Roseto Effect showed that residents of Roseto, Pennsylvania had remarkably low rates of heart disease despite typical risk factors. The protective factor was their tightly-knit community with strong social bonds. When these bonds weakened over time, heart disease rates increased to match surrounding communities."
+    }
+  ],
+  "passThreshold": 80
+}

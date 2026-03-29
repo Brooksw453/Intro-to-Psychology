@@ -1,0 +1,45 @@
+{
+  "sectionId": "4.4",
+  "chapterId": 4,
+  "title": "Sleep Problems and Disorders",
+  "learningObjectives": [
+    "Identify the major sleep disorders and their symptoms",
+    "Distinguish between different types of insomnia and their causes",
+    "Explain the symptoms and causes of narcolepsy, sleep apnea, and parasomnias"
+  ],
+  "keyTerms": [
+    { "term": "Insomnia", "definition": "A sleep disorder characterized by persistent difficulty falling asleep, staying asleep, or waking too early, resulting in impaired daytime functioning." },
+    { "term": "Narcolepsy", "definition": "A chronic sleep disorder marked by overwhelming daytime drowsiness and sudden, uncontrollable episodes of falling asleep during the day." },
+    { "term": "Sleep apnea", "definition": "A sleep disorder in which breathing repeatedly stops and starts during sleep, disrupting sleep quality and reducing oxygen levels." },
+    { "term": "Parasomnia", "definition": "A category of sleep disorders involving abnormal behaviors, movements, or experiences during sleep, such as sleepwalking or night terrors." },
+    { "term": "Cataplexy", "definition": "A sudden, temporary loss of voluntary muscle control often triggered by strong emotions, commonly associated with narcolepsy." },
+    { "term": "Night terrors", "definition": "Episodes of intense fear, screaming, and agitation during NREM stage 3 sleep, most common in children, with no memory of the event upon waking." }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "Insomnia and Its Varieties",
+      "body": "Sleep disorders are remarkably common, affecting an estimated 50 to 70 million Americans. The most prevalent is **insomnia**, which involves persistent difficulty falling asleep, staying asleep, or waking up too early, accompanied by daytime impairment such as fatigue, irritability, or difficulty concentrating.\n\nInsomnia can be acute (short-term, often triggered by stress or life changes) or chronic (lasting three months or longer, occurring at least three nights per week). Chronic insomnia is frequently comorbid with psychological disorders such as anxiety and depression, creating a vicious cycle: the disorder disrupts sleep, and poor sleep worsens the disorder.\n\nTreatment approaches include cognitive-behavioral therapy for insomnia (CBT-I), which addresses the thought patterns and behaviors that perpetuate sleep difficulties. CBT-I techniques include stimulus control (associating the bed only with sleep), sleep restriction (limiting time in bed to actual sleep time), and cognitive restructuring (challenging anxious thoughts about sleep). Research has shown CBT-I to be more effective than sleep medications for long-term management of chronic insomnia."
+    },
+    {
+      "type": "concept",
+      "title": "Narcolepsy, Sleep Apnea, and Parasomnias",
+      "body": "**Narcolepsy** is a neurological disorder characterized by excessive daytime sleepiness and sudden, involuntary transitions into sleep. People with narcolepsy may fall asleep at inappropriate times — during conversations, meals, or even while driving. Many individuals with narcolepsy also experience **cataplexy**, sudden episodes of muscle weakness triggered by strong emotions such as laughter or surprise. Narcolepsy is caused by the loss of neurons that produce hypocretin (orexin), a neurotransmitter that helps regulate wakefulness.\n\n**Sleep apnea** is a disorder in which the airway becomes blocked during sleep, causing breathing to stop repeatedly — sometimes hundreds of times per night. Each interruption, called an apneic event, causes a brief arousal that prevents the sleeper from reaching deep, restorative stages. People with sleep apnea often snore loudly and feel excessively tired during the day despite spending a normal amount of time in bed. Untreated sleep apnea is associated with high blood pressure, heart disease, and increased accident risk.\n\n**Parasomnias** are a category of disorders involving unusual behaviors during sleep. Sleepwalking (somnambulism) typically occurs during deep NREM stage 3 sleep and involves walking or performing complex actions while remaining asleep. **Night terrors**, also occurring during stage 3, involve episodes of intense fear with screaming and thrashing, but unlike nightmares, the individual rarely remembers the event. REM sleep behavior disorder involves the failure of the normal muscle paralysis during REM sleep, causing individuals to physically act out their dreams."
+    },
+    {
+      "type": "example",
+      "title": "Real-World Example: The Public Health Impact of Sleep Apnea",
+      "body": "**Sleep apnea** affects an estimated 22 million Americans, yet many cases go undiagnosed. Consider a truck driver who snores heavily and wakes feeling unrefreshed despite eight hours in bed. During the day, he struggles with drowsiness and has several near-miss incidents on the road. After a sleep study, he is diagnosed with obstructive sleep apnea and prescribed a continuous positive airway pressure (CPAP) machine, which keeps his airway open during sleep. After treatment, his daytime alertness improves dramatically. This scenario highlights how undiagnosed sleep disorders can have serious consequences not only for the individual but for public safety."
+    },
+    {
+      "type": "summary",
+      "body": "Common sleep disorders include insomnia (difficulty initiating or maintaining sleep), narcolepsy (sudden sleep attacks and cataplexy caused by loss of hypocretin-producing neurons), sleep apnea (repeated breathing interruptions that prevent restorative sleep), and parasomnias such as sleepwalking and night terrors. These disorders significantly impact quality of life and can have serious health and safety consequences when untreated."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-4.4",
+    "prompt": "A coworker mentions that they feel exhausted every day even though they go to bed early and think they sleep through the night. Their partner reports that they snore very loudly. Based on what you learned about sleep disorders, what condition might this person have? Describe the disorder, explain why the person feels tired despite spending adequate time in bed, and suggest what steps they should take.",
+    "minWords": 100,
+    "rubric": "A strong response should: (1) correctly identify sleep apnea as the likely disorder, (2) explain the mechanism (repeated airway blockage causing brief arousals that prevent restorative deep sleep), (3) describe why the person is unaware of the disruptions, (4) mention health risks associated with untreated sleep apnea, and (5) recommend seeking a medical evaluation or sleep study."
+  }
+}

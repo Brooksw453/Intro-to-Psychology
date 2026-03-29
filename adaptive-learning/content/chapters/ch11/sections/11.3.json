@@ -1,0 +1,45 @@
+{
+  "sectionId": "11.3",
+  "chapterId": 11,
+  "title": "Neo-Freudians: Adler, Erikson, Jung, and Horney",
+  "learningObjectives": [
+    "Explain how neo-Freudian theories departed from Freud's original ideas",
+    "Describe the key contributions of Adler, Erikson, Jung, and Horney to personality theory",
+    "Compare and contrast the neo-Freudian perspectives with Freud's psychodynamic theory"
+  ],
+  "keyTerms": [
+    { "term": "Inferiority complex", "definition": "In Adler's theory, a condition that develops when a person is unable to compensate for normal feelings of inferiority." },
+    { "term": "Psychosocial stages", "definition": "Erikson's eight-stage theory of development in which individuals face a central conflict at each stage that shapes personality." },
+    { "term": "Collective unconscious", "definition": "In Jung's theory, a shared repository of knowledge and experiences inherited from all of humanity's past." },
+    { "term": "Archetypes", "definition": "Universal symbols and themes that reside in the collective unconscious and emerge in dreams, myths, and art." },
+    { "term": "Basic anxiety", "definition": "In Horney's theory, a child's sense of helplessness and insecurity resulting from inadequate parenting." },
+    { "term": "Neo-Freudian", "definition": "Theorists who accepted Freud's basic ideas about the unconscious and early experience but modified his theory in significant ways." }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "Departures from Freud",
+      "body": "While Freud's ideas were groundbreaking, several of his followers and contemporaries disagreed with aspects of his theory and developed their own perspectives. These **neo-Freudian** theorists generally accepted the importance of the unconscious mind and the influence of early childhood experiences, but they placed less emphasis on sexual and aggressive drives and more emphasis on social and cultural factors.\n\n**Alfred Adler** (1870-1937) proposed that the primary motivation in human life is not sexual gratification but rather the striving for superiority -- the desire to overcome challenges and improve oneself. Adler believed that everyone begins life with feelings of inferiority due to their small size and lack of power as children. Most people compensate for these feelings by developing skills and achieving goals. However, when individuals cannot overcome their sense of inadequacy, they may develop an **inferiority complex**, becoming withdrawn, pessimistic, or overly dependent on others. Adler also emphasized **birth order** as an influence on personality, suggesting that firstborns, middle children, and youngest children develop distinct personality characteristics based on their family position."
+    },
+    {
+      "type": "concept",
+      "title": "Erikson, Jung, and Horney",
+      "body": "**Erik Erikson** (1902-1994) extended Freud's developmental theory across the entire lifespan. His **psychosocial stages** describe eight crises or conflicts that individuals face from infancy through old age. Unlike Freud's psychosexual stages, Erikson's stages emphasize social relationships and identity formation rather than biological drives. Key stages include trust versus mistrust in infancy, identity versus role confusion in adolescence, and integrity versus despair in late adulthood. Successfully resolving each crisis contributes to a healthy personality, while failure can lead to difficulties at later stages.\n\n**Carl Jung** (1875-1961) agreed with Freud about the existence of the unconscious but proposed a much broader view. In addition to a personal unconscious (similar to Freud's concept), Jung described a **collective unconscious** -- a universal layer of the mind shared by all humans that contains inherited memories and images called **archetypes**. Common archetypes include the persona (the social mask we wear), the shadow (the darker, hidden side of personality), the anima/animus (the feminine side in men and masculine side in women), and the self (the unified, integrated personality). Jung also distinguished between **introversion** (directing energy inward) and **extraversion** (directing energy outward) as fundamental personality orientations.\n\n**Karen Horney** (1885-1952) challenged Freud's views on women, particularly his concept of penis envy, which she argued reflected cultural biases rather than psychological truths. Horney proposed that personality is shaped primarily by **basic anxiety** -- a child's deep sense of helplessness and insecurity arising from disturbed relationships with parents. To cope with this anxiety, individuals develop one of three interpersonal styles: moving toward people (seeking approval and affection), moving against people (seeking power and control), or moving away from people (seeking independence and self-sufficiency)."
+    },
+    {
+      "type": "example",
+      "title": "Applying Neo-Freudian Ideas",
+      "body": "Consider a young professional who consistently avoids taking on leadership roles despite being highly capable. Adler might explain this behavior as an unresolved **inferiority complex**, perhaps stemming from being the youngest child and always feeling overshadowed by older siblings. Erikson might trace the issue to an incomplete resolution of the identity versus role confusion stage during adolescence, leaving the person unsure of their professional identity. Jung might suggest the individual is an introvert whose natural orientation conflicts with the extraverted demands of leadership. Horney might argue that basic anxiety from childhood led the person to adopt a \"moving away from people\" coping style, avoiding situations that require assertiveness.\n\nEach neo-Freudian perspective offers a distinct yet potentially complementary explanation, illustrating how these theorists expanded and enriched our understanding of personality beyond Freud's original framework."
+    },
+    {
+      "type": "summary",
+      "body": "Neo-Freudian theorists accepted foundational psychodynamic principles but shifted emphasis from sexual drives to social and cultural influences. Adler focused on striving for superiority and inferiority complexes, Erikson proposed lifespan psychosocial development, Jung introduced the collective unconscious and archetypes, and Horney emphasized basic anxiety and interpersonal coping styles. Together, these theorists broadened the psychodynamic perspective considerably."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-11.3",
+    "prompt": "Choose one of the neo-Freudian theorists discussed in this section (Adler, Erikson, Jung, or Horney). Explain how their theory improves upon or departs from Freud's original psychodynamic perspective. Provide a specific example of how their theory could explain a personality trait or behavior that Freud's original theory handles less effectively.",
+    "minWords": 100,
+    "rubric": "A strong response should: (1) accurately describe the chosen neo-Freudian's key theoretical contributions, (2) clearly explain how the theory departs from Freud's original ideas, (3) provide a specific and realistic example illustrating the theory's explanatory power, (4) demonstrate understanding of why the departure represents an improvement or alternative perspective, and (5) use terminology from the section accurately."
+  }
+}

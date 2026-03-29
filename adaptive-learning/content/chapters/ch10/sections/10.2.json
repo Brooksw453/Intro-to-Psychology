@@ -1,0 +1,63 @@
+{
+  "sectionId": "10.2",
+  "chapterId": 10,
+  "title": "Hunger and Eating",
+  "learningObjectives": [
+    "Describe the physiological mechanisms that regulate hunger and satiety",
+    "Explain how psychological, social, and cultural factors influence eating behavior",
+    "Discuss the causes and consequences of eating disorders and obesity"
+  ],
+  "keyTerms": [
+    {
+      "term": "Glucose",
+      "definition": "A simple sugar that serves as the body's primary source of energy; blood glucose levels play a key role in hunger regulation."
+    },
+    {
+      "term": "Leptin",
+      "definition": "A hormone produced by fat cells that signals satiety to the brain, helping to regulate long-term energy balance."
+    },
+    {
+      "term": "Ghrelin",
+      "definition": "A hormone produced in the stomach that stimulates appetite and signals hunger to the brain."
+    },
+    {
+      "term": "Set point theory",
+      "definition": "The idea that the body has a natural weight range that it works to maintain through physiological mechanisms that regulate hunger and metabolism."
+    },
+    {
+      "term": "Anorexia nervosa",
+      "definition": "An eating disorder characterized by an intense fear of gaining weight, distorted body image, and severe caloric restriction leading to dangerously low body weight."
+    },
+    {
+      "term": "Bulimia nervosa",
+      "definition": "An eating disorder characterized by episodes of binge eating followed by compensatory behaviors such as purging, fasting, or excessive exercise."
+    }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "The Physiology of Hunger",
+      "body": "Hunger is regulated by a complex interplay of physiological signals involving the brain, hormones, and the digestive system. The **hypothalamus** plays a central role in this process. The lateral hypothalamus acts as a hunger center -- when stimulated, it triggers eating behavior. The ventromedial hypothalamus functions as a satiety center -- when stimulated, it signals the organism to stop eating.\n\n**Glucose**, a simple sugar, serves as the body's primary energy source. When blood glucose levels drop, the liver sends signals to the brain that trigger hunger. Conversely, rising glucose levels after a meal contribute to feelings of fullness. However, glucose is just one of many signals the body uses to regulate eating.\n\nTwo key hormones play opposing roles in hunger regulation. **Ghrelin**, produced in the stomach, is sometimes called the \"hunger hormone\" because its levels rise before meals and stimulate appetite. **Leptin**, produced by fat cells, signals satiety and helps regulate long-term energy balance. When fat stores increase, leptin levels rise, theoretically reducing appetite. However, many individuals with obesity develop **leptin resistance**, meaning their brains become less responsive to leptin's satiety signals, contributing to chronic overeating.\n\nThe **set point theory** proposes that each person's body has a natural weight range that it actively works to maintain. When body weight drops below this set point, metabolism slows and hunger increases; when weight rises above it, metabolism may increase and appetite may decrease. This mechanism helps explain why dieting is often difficult and why many people regain weight after losing it."
+    },
+    {
+      "type": "concept",
+      "title": "Psychological and Cultural Influences on Eating",
+      "body": "While biology provides the foundation for hunger, psychological, social, and cultural factors powerfully shape what, when, and how much we eat. Stress, boredom, and emotional states can trigger eating even in the absence of physiological hunger -- a phenomenon known as **emotional eating**. Many people learn to use food as a source of comfort or reward, creating patterns that can be difficult to change.\n\nSocial influences on eating are well-documented. Research shows that people tend to eat more when dining with others than when eating alone, a phenomenon called **social facilitation of eating**. The size of plates, glasses, and portions also affects consumption -- larger containers lead to larger servings and more eating, often without conscious awareness.\n\nCultural norms dictate which foods are considered acceptable or desirable, when meals should be eaten, and what constitutes an appropriate portion. These cultural patterns are learned early in life and can be remarkably resistant to change. The globalization of food culture has introduced new dietary patterns in many societies, contributing to changing rates of obesity and eating disorders worldwide.\n\nThe media plays a significant role in shaping body image and eating behavior, particularly among adolescents and young adults. Exposure to idealized body images in advertising, social media, and entertainment can contribute to body dissatisfaction and disordered eating patterns."
+    },
+    {
+      "type": "example",
+      "title": "Eating Disorders: When Eating Goes Wrong",
+      "body": "Eating disorders represent a serious disruption of normal eating behavior and affect millions of people worldwide. **Anorexia nervosa** is characterized by an intense fear of gaining weight, a distorted perception of body size, and severe restriction of food intake leading to dangerously low body weight. Despite being underweight, individuals with anorexia often perceive themselves as overweight. This disorder has the highest mortality rate of any mental illness, due to both medical complications and suicide.\n\n**Bulimia nervosa** involves a cycle of binge eating -- consuming large amounts of food in a short period while feeling a loss of control -- followed by compensatory behaviors such as self-induced vomiting, laxative use, fasting, or excessive exercise. Unlike anorexia, individuals with bulimia may maintain a relatively normal weight, which can make the disorder harder to detect.\n\n**Binge-eating disorder** involves recurrent episodes of binge eating without the compensatory behaviors seen in bulimia. It is the most common eating disorder and is associated with obesity, though not all people with binge-eating disorder are obese.\n\nResearch suggests that eating disorders arise from a complex interaction of genetic predisposition, neurobiological factors, psychological traits (such as perfectionism and low self-esteem), and sociocultural pressures (including the thin ideal promoted by media). Treatment typically involves a combination of psychotherapy, nutritional counseling, and sometimes medication, with cognitive-behavioral therapy showing particular effectiveness."
+    },
+    {
+      "type": "summary",
+      "body": "Hunger is regulated by physiological mechanisms involving the hypothalamus, glucose, ghrelin, and leptin, as well as the body's set point for weight. Psychological factors such as stress and emotion, social influences, and cultural norms also powerfully shape eating behavior. Eating disorders -- including anorexia nervosa, bulimia nervosa, and binge-eating disorder -- result from a complex interplay of biological, psychological, and sociocultural factors."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-10.2",
+    "prompt": "Consider the various factors that influence your own eating behavior -- physiological signals (hunger, fullness), emotional states, social situations, cultural norms, and media influences. Choose a specific recent eating experience and analyze the factors that influenced what, when, and how much you ate. Which factors were you consciously aware of at the time, and which operated outside your awareness? How does this analysis connect to the physiological and psychological concepts discussed in this section?",
+    "minWords": 100,
+    "rubric": "A strong response describes a specific eating experience, identifies at least three influencing factors (from different categories such as physiological, psychological, social, or cultural), distinguishes between conscious and unconscious influences, and connects the analysis to specific concepts from the section (e.g., ghrelin, emotional eating, social facilitation)."
+  }
+}

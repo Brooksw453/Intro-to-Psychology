@@ -1,0 +1,47 @@
+{
+  "sectionId": "3.1",
+  "chapterId": 3,
+  "title": "Human Genetics",
+  "learningObjectives": [
+    "Explain the relationship between genes, chromosomes, and DNA",
+    "Distinguish between dominant and recessive alleles and predict phenotypic outcomes",
+    "Describe how gene-environment interactions shape psychological traits"
+  ],
+  "keyTerms": [
+    { "term": "Deoxyribonucleic acid (DNA)", "definition": "A molecule that carries genetic instructions for the development, functioning, and reproduction of all known living organisms." },
+    { "term": "Gene", "definition": "A sequence of DNA that provides the code for constructing a protein and serves as a unit of heredity." },
+    { "term": "Chromosome", "definition": "A long strand of DNA found in the cell nucleus; humans have 23 pairs (46 total)." },
+    { "term": "Dominant allele", "definition": "A form of a gene that is expressed in the phenotype even when only one copy is present." },
+    { "term": "Recessive allele", "definition": "A form of a gene that is expressed in the phenotype only when two copies are present." },
+    { "term": "Genotype", "definition": "An organism's underlying genetic makeup for a particular trait." },
+    { "term": "Phenotype", "definition": "The observable physical or behavioral characteristics of an organism, determined by both genotype and environment." },
+    { "term": "Behavioral genetics", "definition": "A field that studies the influence of genetic and environmental factors on individual differences in behavior." }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "The Building Blocks of Heredity",
+      "body": "Every cell in your body contains a complete set of instructions for building and maintaining you as an organism. These instructions are encoded in **deoxyribonucleic acid (DNA)**, the remarkable molecule that serves as the blueprint for life. DNA is organized into segments called **genes**, each of which provides the code for constructing a specific protein. These proteins go on to determine everything from the color of your eyes to the neurotransmitters that influence your mood.\n\nGenes are arranged on structures called **chromosomes**. Humans typically have 23 pairs of chromosomes, for a total of 46. You inherit one chromosome in each pair from your biological mother and one from your biological father. The 23rd pair determines biological sex: females typically have two X chromosomes (XX), while males typically have one X and one Y chromosome (XY).\n\nEach gene can come in different versions called **alleles**. When the two alleles for a trait are the same, the individual is described as homozygous for that trait. When they differ, the individual is heterozygous. A **dominant allele** is expressed whenever it is present, while a **recessive allele** is expressed only when an individual carries two copies. For example, the allele for brown eyes is dominant over the allele for blue eyes. Your **genotype** refers to the specific combination of alleles you carry, while your **phenotype** is the trait you actually display."
+    },
+    {
+      "type": "concept",
+      "title": "Gene-Environment Interaction and Behavioral Genetics",
+      "body": "Although popular culture sometimes frames the debate as \"nature versus nurture,\" contemporary psychology recognizes that genes and the environment interact in complex ways to shape behavior. The field of **behavioral genetics** investigates how genetic variation and environmental influences contribute to individual differences in traits such as intelligence, personality, and vulnerability to psychological disorders.\n\nTwin studies are a primary method in behavioral genetics. Researchers compare the similarity of identical (monozygotic) twins, who share virtually 100% of their DNA, with fraternal (dizygotic) twins, who share about 50%. If identical twins are more alike on a measured trait than fraternal twins, genetic factors are likely contributing. Studies of identical twins raised apart provide even stronger evidence, because similarities between them cannot be attributed to a shared family environment.\n\nIt is important to note that having a genetic predisposition for a trait does not guarantee its expression. Environmental factors such as nutrition, stress, education, and social interaction can activate or silence genes through processes collectively known as epigenetics. This means that your experiences can literally change which genes are turned on or off, influencing everything from physical health to emotional well-being."
+    },
+    {
+      "type": "example",
+      "title": "Real-World Example: Phenylketonuria (PKU)",
+      "body": "**Phenylketonuria (PKU)** is a classic example of how genes and environment interact. PKU is caused by a recessive allele that prevents the body from properly metabolizing the amino acid phenylalanine. If left untreated, phenylalanine builds up to toxic levels and causes severe intellectual disability. However, when PKU is detected through newborn screening (which is now routine), the child can be placed on a special diet low in phenylalanine, and normal cognitive development occurs. The genotype has not changed, but the environmental intervention changes the phenotype entirely. This case illustrates why the nature-versus-nurture debate is misleading: the outcome depends on the interaction between genetic and environmental factors."
+    },
+    {
+      "type": "summary",
+      "body": "Human genetics provides the foundation for understanding the biological influences on behavior. DNA, organized into genes on chromosomes, carries hereditary instructions passed from parents to offspring. Dominant and recessive alleles interact to produce observable phenotypes, but genes never act in isolation; environmental factors shape how genetic predispositions are expressed through gene-environment interactions and epigenetic processes."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-3.1",
+    "prompt": "Choose a psychological trait or behavior (e.g., intelligence, shyness, risk-taking) and explain how both genetic and environmental factors might interact to shape its development in an individual. Use specific concepts from this section such as genotype, phenotype, and gene-environment interaction in your response.",
+    "minWords": 100,
+    "rubric": "A strong response should: (1) identify a specific psychological trait, (2) explain the genetic component using terms like genotype, alleles, or heritability, (3) describe relevant environmental factors that could influence expression of the trait, (4) demonstrate understanding that genes and environment interact rather than acting independently, and (5) provide a concrete example illustrating the interaction."
+  }
+}

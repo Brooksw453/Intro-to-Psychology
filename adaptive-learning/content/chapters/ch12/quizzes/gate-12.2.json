@@ -1,0 +1,29 @@
+{
+  "sectionId": "12.2",
+  "chapterId": 12,
+  "questions": [
+    {
+      "id": "ch12-q03",
+      "question": "Goffman's concept of 'front stage' and 'back stage' behavior illustrates that people:",
+      "options": [
+        { "text": "Always present their authentic selves to others", "correct": false },
+        { "text": "Present different versions of themselves depending on the social context", "correct": true },
+        { "text": "Are unable to control how others perceive them", "correct": false },
+        { "text": "Behave identically in public and private settings", "correct": false }
+      ],
+      "explanation": "Goffman's dramaturgical approach suggests that people have a front stage (the public persona displayed to others) and a back stage (where they can relax and be themselves), demonstrating that self-presentation varies by context."
+    },
+    {
+      "id": "ch12-q04",
+      "question": "A person who is highly attuned to social cues and readily adapts their behavior to match different social situations would be described as:",
+      "options": [
+        { "text": "A low self-monitor", "correct": false },
+        { "text": "A high self-monitor", "correct": true },
+        { "text": "An introvert", "correct": false },
+        { "text": "A person with an external locus of control", "correct": false }
+      ],
+      "explanation": "High self-monitors are highly sensitive to social cues and readily adjust their behavior to fit the demands of different situations, making them skilled at impression management across varied social contexts."
+    }
+  ],
+  "passThreshold": 80
+}

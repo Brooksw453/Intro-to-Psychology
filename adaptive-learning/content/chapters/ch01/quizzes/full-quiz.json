@@ -1,0 +1,117 @@
+{
+  "sectionId": "full",
+  "chapterId": 1,
+  "passThreshold": 80,
+  "questions": [
+    {
+      "id": "ch01-q09",
+      "question": "The four goals of psychology are to:",
+      "options": [
+        { "text": "Observe, hypothesize, experiment, and publish", "correct": false },
+        { "text": "Describe, explain, predict, and change behavior", "correct": true },
+        { "text": "Diagnose, treat, prevent, and cure mental illness", "correct": false },
+        { "text": "Research, teach, practice, and advocate", "correct": false }
+      ],
+      "explanation": "The four goals of psychology are to describe, explain, predict, and change behavior and mental processes. These goals guide psychological research and practice, building from observation toward application."
+    },
+    {
+      "id": "ch01-q10",
+      "question": "Wundt's method of introspection was criticized primarily because:",
+      "options": [
+        { "text": "It was too expensive to conduct in laboratory settings", "correct": false },
+        { "text": "It focused too much on observable behavior rather than mental processes", "correct": false },
+        { "text": "Introspective reports were subjective and difficult to verify objectively", "correct": true },
+        { "text": "It required participants to have advanced training in philosophy", "correct": false }
+      ],
+      "explanation": "Introspection required participants to systematically observe and report their own conscious experiences, but these reports were inherently subjective. Different observers could report different experiences in response to the same stimuli, making the data unreliable and hard to verify."
+    },
+    {
+      "id": "ch01-q11",
+      "question": "William James's functionalism was influenced by which major scientific theory?",
+      "options": [
+        { "text": "Einstein's theory of relativity", "correct": false },
+        { "text": "Darwin's theory of natural selection", "correct": true },
+        { "text": "Newton's laws of motion", "correct": false },
+        { "text": "Mendel's laws of inheritance", "correct": false }
+      ],
+      "explanation": "Functionalism was heavily influenced by Charles Darwin's theory of natural selection. James argued that mental processes should be understood in terms of their function -- how they help organisms adapt to and survive in their environments."
+    },
+    {
+      "id": "ch01-q12",
+      "question": "Sigmund Freud's psychoanalytic theory is distinctive in its emphasis on:",
+      "options": [
+        { "text": "Observable behavior and environmental reinforcement", "correct": false },
+        { "text": "Self-actualization and reaching one's full potential", "correct": false },
+        { "text": "Unconscious motivations, desires, and early childhood experiences", "correct": true },
+        { "text": "Cognitive schemas and information processing", "correct": false }
+      ],
+      "explanation": "Freud's psychoanalytic theory proposed that much of human behavior is driven by unconscious desires, memories, and conflicts, with early childhood experiences playing a particularly formative role. This distinguished his approach from behaviorism, humanism, and cognitive perspectives."
+    },
+    {
+      "id": "ch01-q13",
+      "question": "A researcher studying how cultural norms around eye contact vary between Japan and the United States is working within which perspective?",
+      "options": [
+        { "text": "Cognitive psychology", "correct": false },
+        { "text": "Evolutionary psychology", "correct": false },
+        { "text": "Biopsychology", "correct": false },
+        { "text": "Cross-cultural psychology", "correct": true }
+      ],
+      "explanation": "Cross-cultural psychology examines how psychological phenomena, including social norms and behaviors like eye contact, vary across different cultures. This perspective challenges the assumption that findings from one culture apply universally."
+    },
+    {
+      "id": "ch01-q14",
+      "question": "Abraham Maslow's hierarchy of needs proposes that people must:",
+      "options": [
+        { "text": "Resolve unconscious conflicts before they can function normally", "correct": false },
+        { "text": "Satisfy basic physiological and safety needs before pursuing higher-level needs like self-actualization", "correct": true },
+        { "text": "Be conditioned through rewards and punishments to achieve personal growth", "correct": false },
+        { "text": "Develop cognitive schemas before they can process emotions", "correct": false }
+      ],
+      "explanation": "Maslow's hierarchy of needs, a key concept in humanistic psychology, proposes that people are motivated by a sequence of needs. Basic needs (physiological, safety) must be met before people can focus on higher-level needs (belonging, esteem, self-actualization)."
+    },
+    {
+      "id": "ch01-q15",
+      "question": "Which of the following professionals is MOST likely to prescribe medication for a mental health condition?",
+      "options": [
+        { "text": "A counseling psychologist", "correct": false },
+        { "text": "A school psychologist", "correct": false },
+        { "text": "A psychiatrist", "correct": true },
+        { "text": "An industrial-organizational psychologist", "correct": false }
+      ],
+      "explanation": "Psychiatrists hold medical degrees (MD or DO) and are trained to prescribe medication. Other psychology professionals listed here typically do not have prescriptive authority."
+    },
+    {
+      "id": "ch01-q16",
+      "question": "Margaret Floy Washburn is historically significant in psychology because she:",
+      "options": [
+        { "text": "Developed the first intelligence test for children", "correct": false },
+        { "text": "Was the first woman to earn a PhD in psychology", "correct": true },
+        { "text": "Founded the humanistic psychology movement", "correct": false },
+        { "text": "Conducted the first cross-cultural psychology study", "correct": false }
+      ],
+      "explanation": "Margaret Floy Washburn became the first woman to earn a PhD in psychology in 1894. Her achievement was a landmark in a field that was initially dominated by men and marked an important step toward greater diversity in psychology."
+    },
+    {
+      "id": "ch01-q17",
+      "question": "The biopsychosocial model suggests that behavior is best understood by considering:",
+      "options": [
+        { "text": "Only biological factors such as genetics and brain chemistry", "correct": false },
+        { "text": "The interaction of biological, psychological, and social factors", "correct": true },
+        { "text": "Environmental reinforcement and punishment exclusively", "correct": false },
+        { "text": "Evolutionary adaptations from ancestral environments", "correct": false }
+      ],
+      "explanation": "The biopsychosocial model is an integrative framework that considers biological factors (genetics, brain chemistry), psychological factors (thoughts, emotions, personality), and social factors (culture, relationships, socioeconomic status) as interconnected influences on behavior and mental processes."
+    },
+    {
+      "id": "ch01-q18",
+      "question": "A forensic psychologist would be MOST likely to:",
+      "options": [
+        { "text": "Help an athlete improve performance under pressure", "correct": false },
+        { "text": "Design a corporate training program for new employees", "correct": false },
+        { "text": "Evaluate a defendant's competency to stand trial", "correct": true },
+        { "text": "Conduct therapy with children who have learning disabilities", "correct": false }
+      ],
+      "explanation": "Forensic psychologists apply psychological expertise to legal questions. Evaluating a defendant's competency to stand trial is a core forensic psychology activity, along with providing expert testimony, assisting with jury selection, and working in correctional settings."
+    }
+  ]
+}

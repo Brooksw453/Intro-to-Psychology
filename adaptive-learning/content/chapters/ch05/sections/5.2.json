@@ -1,0 +1,59 @@
+{
+  "sectionId": "5.2",
+  "chapterId": 5,
+  "title": "Waves and Wavelengths",
+  "learningObjectives": [
+    "Describe the physical properties of light waves and sound waves",
+    "Explain how wavelength, amplitude, and frequency relate to perceptual experience",
+    "Distinguish between the electromagnetic spectrum and audible sound range"
+  ],
+  "keyTerms": [
+    {
+      "term": "Wavelength",
+      "definition": "The distance between two successive peaks of a wave, which determines the color of light or pitch of sound we perceive."
+    },
+    {
+      "term": "Amplitude",
+      "definition": "The height of a wave, which determines the brightness of light or loudness of sound."
+    },
+    {
+      "term": "Frequency",
+      "definition": "The number of wave cycles that pass a given point per second, measured in hertz (Hz)."
+    },
+    {
+      "term": "Electromagnetic spectrum",
+      "definition": "The full range of electromagnetic radiation, from gamma rays to radio waves, of which visible light is only a small portion."
+    },
+    {
+      "term": "Visible spectrum",
+      "definition": "The narrow band of electromagnetic wavelengths (approximately 380-740 nanometers) that human eyes can detect."
+    }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "Properties of Waves",
+      "body": "Both light and sound travel in waves, and understanding these waves is essential for understanding how we see and hear. A wave can be described by three key properties: **wavelength**, **amplitude**, and **frequency**.\n\n**Wavelength** is the distance from one peak of a wave to the next. For light, wavelength determines the color we perceive -- shorter wavelengths correspond to blue and violet light, while longer wavelengths correspond to red and orange. For sound, wavelength is related to **pitch** -- how high or low a sound seems. Short-wavelength sound waves produce high-pitched sounds (like a whistle), while long-wavelength waves produce low-pitched sounds (like a bass drum).\n\n**Amplitude** refers to the height of the wave from its midpoint to its peak. For light, greater amplitude means greater brightness. For sound, greater amplitude means greater loudness. A whisper has low amplitude; a shout has high amplitude.\n\n**Frequency** is the number of complete wave cycles that pass a given point per second and is measured in **hertz (Hz)**. Frequency and wavelength are inversely related -- as wavelength increases, frequency decreases, and vice versa. The human ear can detect sounds ranging from about 20 Hz to 20,000 Hz, though sensitivity to high frequencies typically declines with age."
+    },
+    {
+      "type": "concept",
+      "title": "The Electromagnetic Spectrum and Visible Light",
+      "body": "Light is a form of electromagnetic radiation that travels in waves at approximately 186,000 miles per second. The **electromagnetic spectrum** encompasses the full range of electromagnetic wavelengths, from extremely short gamma rays (used in medical imaging) to very long radio waves (used in broadcasting).\n\nHumans can only see a tiny sliver of this spectrum, known as the **visible spectrum**, which spans wavelengths of approximately 380 to 740 nanometers. Within this range, different wavelengths are perceived as different colors: violet at the short end, progressing through blue, green, yellow, and orange, to red at the long end. White light, such as sunlight, contains all wavelengths of the visible spectrum mixed together. When white light passes through a prism, it separates into its component wavelengths, producing a rainbow.\n\nOther animals can detect wavelengths outside the human visible range. Bees, for example, can see ultraviolet light, which helps them locate nectar-producing patterns on flowers that are invisible to the human eye. Some snakes can detect infrared radiation, allowing them to sense the body heat of prey in complete darkness. These examples remind us that our perception of reality is shaped and limited by the biological capabilities of our sensory systems."
+    },
+    {
+      "type": "example",
+      "title": "Sound Waves in Music",
+      "body": "Music provides an excellent illustration of how wave properties translate into perceptual experience. When a guitarist plucks a string, the string vibrates back and forth, creating sound waves that travel through the air to your ears. A thicker, longer string vibrates more slowly, producing a low-frequency wave that you perceive as a low pitch. A thinner, shorter string vibrates faster, producing a high-frequency wave perceived as a high pitch.\n\nThe loudness of the note depends on amplitude -- how hard the string is plucked determines the height of the resulting sound wave. Strumming gently produces a soft tone (low amplitude), while strumming forcefully produces a loud tone (high amplitude). A note's **timbre**, or tonal quality, explains why a guitar and a piano playing the same note at the same volume still sound distinctly different. Timbre results from the unique combination of additional frequencies (overtones) that each instrument produces alongside the fundamental frequency."
+    },
+    {
+      "type": "summary",
+      "body": "Light and sound both travel in waves characterized by wavelength, amplitude, and frequency. Wavelength determines color (for light) and pitch (for sound), while amplitude determines brightness and loudness. The electromagnetic spectrum encompasses all electromagnetic radiation, but humans can only perceive the narrow visible spectrum. Understanding these physical properties is foundational to understanding how our sensory systems transform physical energy into psychological experience."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-5.2",
+    "prompt": "Imagine you are explaining to a friend why different animals experience the world differently based on their sensory capabilities. Using your knowledge of the electromagnetic spectrum and sound wave properties, compare how a human, a bee, and a bat might each perceive the same outdoor environment differently. What does this tell us about the relationship between physical reality and our experience of it?",
+    "minWords": 100,
+    "rubric": "A strong response explains that different species have different sensory ranges (e.g., bees see UV light, bats use echolocation with ultrasonic frequencies), correctly relates wavelength and frequency to sensory experience, discusses the human visible spectrum and audible range as limited windows into physical reality, and reflects on how biology shapes perception of the environment."
+  }
+}

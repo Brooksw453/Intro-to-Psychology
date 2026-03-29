@@ -1,0 +1,72 @@
+{
+  "sectionId": "2.2",
+  "chapterId": 2,
+  "title": "Approaches to Research",
+  "learningObjectives": [
+    "Compare and contrast descriptive, correlational, and experimental research designs",
+    "Identify independent and dependent variables in an experiment",
+    "Explain why correlation does not equal causation"
+  ],
+  "keyTerms": [
+    {
+      "term": "Operational definition",
+      "definition": "A precise description of how a variable is measured or manipulated in a study, allowing other researchers to replicate the procedure."
+    },
+    {
+      "term": "Independent variable",
+      "definition": "The variable that is deliberately manipulated by the researcher in an experiment to observe its effect."
+    },
+    {
+      "term": "Dependent variable",
+      "definition": "The variable that is measured in an experiment; it is expected to change as a result of the manipulation of the independent variable."
+    },
+    {
+      "term": "Control group",
+      "definition": "The group in an experiment that does not receive the experimental treatment and serves as a baseline for comparison."
+    },
+    {
+      "term": "Correlation",
+      "definition": "A statistical measure that describes the strength and direction of the relationship between two variables, ranging from -1.0 to +1.0."
+    },
+    {
+      "term": "Random assignment",
+      "definition": "A procedure in which each participant has an equal chance of being placed in any condition of an experiment, reducing the impact of pre-existing differences."
+    },
+    {
+      "term": "Naturalistic observation",
+      "definition": "A research method that involves observing and recording behavior in its natural setting without intervention."
+    },
+    {
+      "term": "Survey",
+      "definition": "A research method that uses questionnaires or interviews to gather information about people's attitudes, beliefs, experiences, or behaviors."
+    }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "Descriptive Research Methods",
+      "body": "Psychologists use various research methods, each with distinct strengths and limitations. **Descriptive research** aims to systematically observe and describe behavior without manipulating any variables.\n\n**Naturalistic observation** involves watching and recording behavior as it occurs in a natural setting. Jane Goodall's decades-long study of chimpanzee behavior in the wild is a famous example. The strength of this approach is its ecological validity -- behavior is observed in real-world contexts. However, the researcher has no control over variables, making it impossible to determine cause and effect.\n\n**Surveys** collect data through questionnaires or interviews, allowing researchers to gather information from large numbers of people efficiently. The Kinsey reports on human sexual behavior, published in the late 1940s and early 1950s, relied heavily on survey methods. Surveys are useful for studying attitudes, beliefs, and self-reported behaviors, but they are vulnerable to response biases such as social desirability bias, where participants give answers they believe are socially acceptable rather than truthful.\n\n**Case studies** involve intensive, in-depth examination of a single individual or a small group. The famous case of Phineas Gage -- a railroad worker who survived an iron rod passing through his skull in 1848 -- provided early evidence about the role of the frontal lobes in personality and decision-making. Case studies can generate rich, detailed data, but their findings may not generalize to the broader population."
+    },
+    {
+      "type": "concept",
+      "title": "Correlational Research",
+      "body": "**Correlational research** examines the relationship between two or more variables without manipulating them. The strength and direction of this relationship are expressed as a **correlation coefficient**, a number ranging from -1.0 to +1.0.\n\nA **positive correlation** (0 to +1.0) means that as one variable increases, the other also tends to increase. For example, there is a positive correlation between hours spent studying and exam scores. A **negative correlation** (0 to -1.0) means that as one variable increases, the other tends to decrease. For instance, increased stress is negatively correlated with immune system functioning.\n\nA critical principle in research methodology is that **correlation does not equal causation**. Finding that two variables are related does not tell us that one causes the other. For example, research shows a positive correlation between ice cream sales and drowning deaths. Does eating ice cream cause drowning? Of course not -- a **third variable**, hot weather, independently increases both ice cream consumption and swimming activity. This illustrates why correlational data, while valuable for identifying relationships, cannot establish cause and effect."
+    },
+    {
+      "type": "concept",
+      "title": "Experimental Research",
+      "body": "The **experiment** is the only research method that can establish cause-and-effect relationships. In an experiment, the researcher manipulates an **independent variable** (the presumed cause) and measures its effect on a **dependent variable** (the presumed effect), while controlling other factors that might influence the outcome.\n\nTo ensure that any differences between groups are due to the independent variable and not pre-existing differences, researchers use **random assignment** -- a procedure that gives each participant an equal chance of being placed in any condition. The **experimental group** receives the treatment, while the **control group** does not, serving as a baseline for comparison.\n\nVariables must be carefully defined using **operational definitions** -- precise descriptions of how each variable is measured or manipulated. For example, if a researcher hypothesizes that exercise reduces anxiety, the operational definition of \"exercise\" might be \"30 minutes of moderate-intensity aerobic activity three times per week,\" and \"anxiety\" might be operationally defined as the score on a standardized anxiety questionnaire. Clear operational definitions allow other researchers to replicate the study."
+    },
+    {
+      "type": "summary",
+      "title": "Section Summary",
+      "body": "Psychologists employ three major categories of research design. Descriptive methods (naturalistic observation, surveys, case studies) systematically describe behavior but cannot determine causation. Correlational research measures the strength and direction of relationships between variables but cannot establish that one variable causes changes in another. Experiments are the only method that can establish causation, using manipulation of independent variables, measurement of dependent variables, random assignment, and control groups. Operational definitions ensure that studies can be replicated."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-2.2",
+    "prompt": "A news headline reports: \"Study finds that people who eat breakfast every day earn higher salaries.\" Based on what you have learned about research methods, evaluate this claim. What type of research design was likely used? Can we conclude that eating breakfast causes higher earnings? What alternative explanations (third variables) might account for this relationship? What kind of study would be needed to establish a causal connection?",
+    "minWords": 100,
+    "rubric": "A strong response correctly identifies this as likely correlational research, explains why correlation does not imply causation, proposes at least one plausible third variable (e.g., socioeconomic status, health consciousness), and describes how an experiment with random assignment could better test causation. The response should demonstrate clear understanding of the differences between correlational and experimental research."
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "sectionId": "5.1",
+  "chapterId": 5,
+  "title": "Sensation versus Perception",
+  "learningObjectives": [
+    "Define sensation and perception and distinguish between them",
+    "Explain the concepts of absolute threshold and difference threshold",
+    "Describe sensory adaptation and subliminal perception"
+  ],
+  "keyTerms": [
+    {
+      "term": "Sensation",
+      "definition": "The process by which sensory receptors detect and transduce stimulus energy from the environment into neural impulses."
+    },
+    {
+      "term": "Perception",
+      "definition": "The brain's process of organizing and interpreting sensory information to give it meaning."
+    },
+    {
+      "term": "Absolute threshold",
+      "definition": "The minimum amount of stimulus energy required for a person to detect the stimulus 50% of the time."
+    },
+    {
+      "term": "Difference threshold",
+      "definition": "The minimum difference in stimulus intensity required to detect a change, also known as the just noticeable difference (JND)."
+    },
+    {
+      "term": "Sensory adaptation",
+      "definition": "The tendency of sensory receptors to become less responsive to a constant, unchanging stimulus over time."
+    },
+    {
+      "term": "Transduction",
+      "definition": "The conversion of stimulus energy into neural impulses that the brain can interpret."
+    }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "From Stimulus to Meaning",
+      "body": "Every moment of your waking life, your brain is bombarded with information from the outside world. Light enters your eyes, sound waves reach your ears, and chemical molecules land on your tongue. But how does raw physical energy become a meaningful experience like seeing a sunset or hearing a melody? The answer lies in two related but distinct processes: **sensation** and **perception**.\n\n**Sensation** refers to the detection of physical energy from the environment by our sensory organs. Your eyes detect light, your ears detect sound waves, and your skin detects pressure and temperature. Each sensory system has specialized receptor cells that perform **transduction** -- the conversion of one form of energy into neural signals that the brain can process. For example, photoreceptor cells in the retina convert light energy into electrochemical signals that travel along the optic nerve to the brain.\n\n**Perception**, on the other hand, is what happens when the brain takes those raw neural signals and organizes, interprets, and gives them meaning. Perception is an active process in which the brain draws on experience, expectations, and context to construct a coherent picture of reality. When you look at a friend's face, sensation is the pattern of light hitting your retina; perception is recognizing that the pattern is your friend and noticing they look tired.\n\nAn important idea in this area is **bottom-up processing**, which begins with sensory receptors and works up to the brain's integration of sensory information. In contrast, **top-down processing** uses our existing knowledge, expectations, and context to interpret incoming sensory data. Most perceptual experiences involve both processes working together simultaneously."
+    },
+    {
+      "type": "concept",
+      "title": "Thresholds and Signal Detection",
+      "body": "Not every stimulus is strong enough to be detected. The **absolute threshold** is the minimum intensity of a stimulus that can be detected 50% of the time. For vision, this might be a candle flame seen from 30 miles away on a dark, clear night. For hearing, it could be the ticking of a watch at 20 feet in a quiet room.\n\nOnce we can detect a stimulus, how much must it change before we notice the difference? The **difference threshold**, or **just noticeable difference (JND)**, answers this question. Weber's Law states that the JND is proportional to the magnitude of the original stimulus. If you are holding a one-pound weight, you might notice an additional ounce. But if you are holding a fifty-pound weight, an additional ounce would go undetected -- you would need a much larger increase to notice the change.\n\n**Signal detection theory** recognizes that detecting a stimulus is not purely a mechanical process. Our ability to detect stimuli depends not only on the strength of the signal but also on our psychological state -- our motivation, expectations, and level of alertness. A parent might wake to the faintest cry from their baby, while sleeping through louder sounds, because they are primed to detect that particular signal."
+    },
+    {
+      "type": "example",
+      "title": "Sensory Adaptation in Everyday Life",
+      "body": "Have you ever jumped into a cold swimming pool and found that after a few minutes, the water feels fine? This is **sensory adaptation** -- the tendency of sensory receptors to become less responsive to a stimulus that remains constant. When you first enter the pool, the temperature difference between your body and the water produces a strong signal. Over time, your thermoreceptors adjust and the cold sensation fades.\n\nSensory adaptation occurs across all senses. You stop noticing the hum of your refrigerator, the pressure of your watch on your wrist, or the smell of your own home. This process is adaptive because it frees up cognitive resources to focus on new, potentially important changes in the environment rather than constant background stimulation. A sudden new smell or unexpected sound immediately grabs your attention precisely because it differs from the adapted baseline."
+    },
+    {
+      "type": "summary",
+      "body": "Sensation and perception are complementary processes that allow us to experience the world. Sensation involves detecting and transducing physical stimuli, while perception involves organizing and interpreting that information. Our ability to detect stimuli depends on absolute and difference thresholds, as well as psychological factors described by signal detection theory. Sensory adaptation ensures we remain attentive to changes rather than constant stimulation."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-5.1",
+    "prompt": "Think about a time when your expectations influenced how you perceived something -- perhaps you misheard song lyrics, saw a shape in the clouds, or tasted something differently because of how it looked. Describe the experience and explain how top-down processing and bottom-up processing each played a role. How does this example illustrate the difference between sensation and perception?",
+    "minWords": 100,
+    "rubric": "A strong response provides a specific personal or relatable example, correctly distinguishes between sensation (raw sensory input) and perception (interpretation), explains how top-down processing (expectations, prior knowledge) influenced the experience, identifies the role of bottom-up processing (stimulus-driven input), and demonstrates understanding that perception is an active, constructive process."
+  }
+}

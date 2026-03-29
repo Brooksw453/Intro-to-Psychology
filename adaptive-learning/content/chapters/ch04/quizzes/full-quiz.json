@@ -1,0 +1,117 @@
+{
+  "sectionId": "full",
+  "chapterId": 4,
+  "questions": [
+    {
+      "id": "ch04-q13",
+      "question": "The pineal gland releases melatonin in response to signals from the suprachiasmatic nucleus. What is the primary function of melatonin?",
+      "options": [
+        { "text": "To increase alertness and energy during the day", "correct": false },
+        { "text": "To promote drowsiness and help regulate the sleep-wake cycle", "correct": true },
+        { "text": "To enhance memory consolidation during REM sleep", "correct": false },
+        { "text": "To stimulate the fight-or-flight response at night", "correct": false }
+      ],
+      "explanation": "Melatonin is a hormone released by the pineal gland when signaled by the SCN in response to decreasing light levels. Its primary function is to promote sleepiness and regulate the timing of the sleep-wake cycle as part of the circadian rhythm."
+    },
+    {
+      "id": "ch04-q14",
+      "question": "The adaptive function theory of sleep proposes that sleep evolved primarily to:",
+      "options": [
+        { "text": "Allow the brain to process and store memories", "correct": false },
+        { "text": "Keep organisms inactive during dangerous periods, conserving energy and promoting survival", "correct": true },
+        { "text": "Provide the body with time to eliminate toxins from the bloodstream", "correct": false },
+        { "text": "Allow neurons to regenerate their myelin sheaths", "correct": false }
+      ],
+      "explanation": "The adaptive (evolutionary/preservation) theory suggests that sleep evolved because being inactive during periods of darkness protected organisms from predators and conserved energy when foraging would be inefficient. This explains why prey animals tend to sleep less than predators."
+    },
+    {
+      "id": "ch04-q15",
+      "question": "Sleep spindles, which are thought to play a role in memory consolidation, are most characteristic of which sleep stage?",
+      "options": [
+        { "text": "NREM stage 1", "correct": false },
+        { "text": "NREM stage 2", "correct": true },
+        { "text": "NREM stage 3", "correct": false },
+        { "text": "REM sleep", "correct": false }
+      ],
+      "explanation": "Sleep spindles are brief bursts of rapid brain wave activity that are a hallmark of NREM stage 2. Research suggests they play an important role in transferring information from short-term to long-term memory storage."
+    },
+    {
+      "id": "ch04-q16",
+      "question": "Which feature distinguishes REM sleep from all other sleep stages?",
+      "options": [
+        { "text": "The brain becomes completely inactive during REM sleep", "correct": false },
+        { "text": "REM sleep occurs only during the first half of the night", "correct": false },
+        { "text": "The brain is highly active while the body's voluntary muscles are temporarily paralyzed", "correct": true },
+        { "text": "Heart rate and breathing become extremely slow and regular during REM sleep", "correct": false }
+      ],
+      "explanation": "REM sleep is paradoxical: the brain produces fast, desynchronized activity similar to wakefulness, yet the body's voluntary muscles are paralyzed (atonia). This muscle paralysis prevents the sleeper from acting out the vivid dreams characteristic of this stage."
+    },
+    {
+      "id": "ch04-q17",
+      "question": "Cognitive-behavioral therapy for insomnia (CBT-I) addresses sleep difficulties by:",
+      "options": [
+        { "text": "Prescribing sedative medications to induce sleep chemically", "correct": false },
+        { "text": "Changing thought patterns and behaviors that perpetuate sleep problems", "correct": true },
+        { "text": "Using hypnosis to induce deep NREM stage 3 sleep", "correct": false },
+        { "text": "Surgically correcting airway obstructions that prevent sleep", "correct": false }
+      ],
+      "explanation": "CBT-I treats insomnia by targeting the cognitive and behavioral factors that maintain sleep difficulties. Techniques include stimulus control, sleep restriction, and cognitive restructuring of anxious thoughts about sleep. Research has shown CBT-I to be more effective than medications for long-term insomnia management."
+    },
+    {
+      "id": "ch04-q18",
+      "question": "Alcohol is classified as a depressant because it:",
+      "options": [
+        { "text": "Makes people feel sad and depressed", "correct": false },
+        { "text": "Blocks dopamine reuptake and overstimulates the reward system", "correct": false },
+        { "text": "Slows CNS activity by enhancing the effects of the inhibitory neurotransmitter GABA", "correct": true },
+        { "text": "Mimics endorphins and binds to opioid receptors in the brain", "correct": false }
+      ],
+      "explanation": "Alcohol is a depressant because it slows central nervous system activity by enhancing the effects of GABA, the brain's primary inhibitory neurotransmitter. This reduces neural firing, leading to impaired judgment, slowed reaction times, and reduced coordination."
+    },
+    {
+      "id": "ch04-q19",
+      "question": "The social-cognitive theory of hypnosis differs from dissociation theory in that it argues:",
+      "options": [
+        { "text": "Hypnosis creates a genuine split in consciousness with a hidden observer", "correct": false },
+        { "text": "Hypnotic effects result from the participant's expectations and motivation rather than a true altered state", "correct": true },
+        { "text": "Hypnosis is identical to NREM stage 3 sleep", "correct": false },
+        { "text": "Only individuals with narcolepsy can be hypnotized", "correct": false }
+      ],
+      "explanation": "The social-cognitive theory proposes that hypnotic behaviors result from participants' expectations, beliefs about hypnosis, and motivation to cooperate — not from a genuine altered state of consciousness. This contrasts with dissociation theory, which views hypnosis as producing a real split in awareness."
+    },
+    {
+      "id": "ch04-q20",
+      "question": "A musician becomes so absorbed in performing that she loses track of time, feels completely engaged, and performs at her best. This experience is best described as:",
+      "options": [
+        { "text": "REM sleep behavior disorder", "correct": false },
+        { "text": "Hypnotic dissociation", "correct": false },
+        { "text": "A flow state", "correct": true },
+        { "text": "Automatic processing", "correct": false }
+      ],
+      "explanation": "A flow state, described by psychologist Mihaly Csikszentmihalyi, involves complete absorption in a challenging activity with feelings of energized focus, full involvement, and loss of time awareness. It occurs most readily when task difficulty matches the individual's skill level."
+    },
+    {
+      "id": "ch04-q21",
+      "question": "The mesolimbic dopamine pathway is important in understanding substance use disorder because:",
+      "options": [
+        { "text": "It regulates the circadian rhythm and makes drug users sleep too much", "correct": false },
+        { "text": "Addictive drugs produce dopamine surges in this reward circuit, and the brain recalibrates, reducing baseline dopamine activity", "correct": true },
+        { "text": "It produces the myelin that insulates neurons affected by drugs", "correct": false },
+        { "text": "It is the only brain pathway affected by hallucinogenic drugs", "correct": false }
+      ],
+      "explanation": "The mesolimbic dopamine pathway is the brain's reward circuit. Addictive drugs produce dopamine surges far exceeding natural rewards. Over time, the brain adapts by reducing baseline dopamine activity, meaning the individual needs the drug just to feel normal — driving the compulsive use cycle of substance use disorder."
+    },
+    {
+      "id": "ch04-q22",
+      "question": "A person who has been taking a prescription opioid painkiller for several months finds that the original dose no longer provides adequate pain relief. This phenomenon is called:",
+      "options": [
+        { "text": "Withdrawal", "correct": false },
+        { "text": "Cataplexy", "correct": false },
+        { "text": "Tolerance", "correct": true },
+        { "text": "Dissociation", "correct": false }
+      ],
+      "explanation": "Tolerance occurs when the brain adapts to repeated drug exposure, reducing its sensitivity. The user then needs a higher dose to achieve the same effect. With opioids, tolerance develops because the brain decreases its own endorphin production and reduces the number of opioid receptors."
+    }
+  ],
+  "passThreshold": 80
+}

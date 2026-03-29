@@ -1,0 +1,29 @@
+{
+  "sectionId": "1.2",
+  "chapterId": 1,
+  "passThreshold": 80,
+  "questions": [
+    {
+      "id": "ch01-q03",
+      "question": "Wilhelm Wundt is credited with establishing the first psychology laboratory in 1879. Which school of thought is most closely associated with his work?",
+      "options": [
+        { "text": "Functionalism", "correct": false },
+        { "text": "Behaviorism", "correct": false },
+        { "text": "Structuralism", "correct": true },
+        { "text": "Humanism", "correct": false }
+      ],
+      "explanation": "Wundt founded structuralism, which sought to identify the basic elements of conscious experience through the method of introspection. His laboratory at the University of Leipzig marked the formal beginning of psychology as an experimental science."
+    },
+    {
+      "id": "ch01-q04",
+      "question": "Which school of psychology rejected the study of mental processes and focused exclusively on observable behavior?",
+      "options": [
+        { "text": "Psychoanalysis", "correct": false },
+        { "text": "Functionalism", "correct": false },
+        { "text": "Humanism", "correct": false },
+        { "text": "Behaviorism", "correct": true }
+      ],
+      "explanation": "Behaviorism, championed by John B. Watson and later B.F. Skinner, argued that psychology should only study observable, measurable behavior. Watson rejected the study of consciousness and mental processes as unscientific because they could not be directly observed."
+    }
+  ]
+}

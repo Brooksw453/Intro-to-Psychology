@@ -1,0 +1,45 @@
+{
+  "sectionId": "4.3",
+  "chapterId": 4,
+  "title": "Stages of Sleep",
+  "learningObjectives": [
+    "Describe the stages of sleep including NREM and REM sleep",
+    "Explain how brain wave patterns change across sleep stages",
+    "Discuss the typical sleep cycle and how it progresses through the night"
+  ],
+  "keyTerms": [
+    { "term": "NREM sleep", "definition": "Non-rapid eye movement sleep, encompassing stages 1-3 of the sleep cycle, characterized by progressively deeper sleep and slower brain waves." },
+    { "term": "REM sleep", "definition": "Rapid eye movement sleep, a stage characterized by fast brain wave activity, vivid dreaming, and temporary muscle paralysis." },
+    { "term": "Sleep spindles", "definition": "Brief bursts of rapid brain wave activity that occur during NREM stage 2, thought to be involved in memory consolidation." },
+    { "term": "Delta waves", "definition": "Slow, high-amplitude brain waves associated with deep NREM stage 3 sleep." },
+    { "term": "Sleep cycle", "definition": "A complete progression through all sleep stages, lasting approximately 90 minutes, repeated 4-5 times per night." },
+    { "term": "Electroencephalogram (EEG)", "definition": "A device that measures and records the brain's electrical activity through electrodes placed on the scalp." }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "NREM Sleep Stages",
+      "body": "Scientists study sleep by recording brain wave patterns using an **electroencephalogram (EEG)**. These recordings reveal that sleep is not a uniform state but a series of distinct stages with characteristic brain activity patterns.\n\n**NREM sleep** (non-rapid eye movement sleep) includes three stages of progressively deeper sleep. Stage 1 is the lightest stage, lasting only a few minutes as you transition from wakefulness to sleep. Brain waves slow from the rapid beta waves of alertness to the slightly slower alpha waves and then to theta waves. During this stage, you may experience hypnagogic hallucinations — brief, dreamlike sensory experiences — or sudden muscle contractions called hypnic jerks.\n\nStage 2 represents a deeper level of sleep and accounts for roughly half of your total sleep time. Brain waves continue to slow, but this stage is marked by the appearance of **sleep spindles** — brief bursts of rapid neural activity — and K-complexes (large, slow waves). Sleep spindles are believed to play an important role in memory consolidation, helping transfer information from short-term to long-term storage.\n\nStage 3 is the deepest stage of NREM sleep, often called slow-wave sleep. The EEG shows predominantly **delta waves** — slow, high-amplitude waves indicating that large groups of neurons are firing in synchrony. This stage is most important for physical restoration: growth hormone is released, tissue repair occurs, and the immune system is strengthened. It is very difficult to wake someone from stage 3 sleep, and if awakened, the person typically feels groggy and disoriented."
+    },
+    {
+      "type": "concept",
+      "title": "REM Sleep and the Sleep Cycle",
+      "body": "After progressing through the three NREM stages, the sleeper enters **REM sleep**, named for the rapid eye movements that occur during this stage. REM sleep is paradoxical: while the brain becomes highly active — producing fast, desynchronized waves similar to wakefulness — the body's voluntary muscles are temporarily paralyzed (a phenomenon called atonia). This paralysis likely prevents sleepers from physically acting out their dreams.\n\nREM sleep is the stage most strongly associated with vivid, narrative-like dreaming. While some dreaming occurs in NREM stages, REM dreams tend to be more elaborate, emotionally intense, and bizarre. REM sleep is also thought to play an important role in emotional processing and creative problem-solving.\n\nA complete **sleep cycle** progresses from stage 1 through stage 3 and then into REM sleep, lasting approximately 90 minutes. A typical night's sleep includes four to five complete cycles. However, the composition of each cycle changes throughout the night: early cycles contain more deep NREM stage 3 sleep (prioritizing physical restoration), while later cycles contain longer periods of REM sleep (prioritizing memory and emotional processing). This is why waking up early may cut into your REM sleep disproportionately, even if you obtained a reasonable number of total sleep hours."
+    },
+    {
+      "type": "example",
+      "title": "Real-World Example: Why Alarm Clocks Feel Worse at Certain Times",
+      "body": "Have you ever noticed that waking up feels much harder at some times than others, even when you have slept the same number of hours? This is because your alarm may be interrupting different stages of sleep. Being awakened from deep stage 3 NREM sleep produces the most severe grogginess (called sleep inertia), while waking during lighter stage 1 or stage 2 sleep feels relatively easy. Some modern \"smart alarm\" apps attempt to address this by using motion sensors to estimate your sleep stage and wake you during a lighter phase within a set time window, aligning with the natural structure of the **sleep cycle**."
+    },
+    {
+      "type": "summary",
+      "body": "Sleep consists of NREM stages 1-3 (progressing from light to deep sleep with increasingly slow brain waves) and REM sleep (active brain, paralyzed body, vivid dreams). A complete sleep cycle lasts about 90 minutes and repeats 4-5 times per night. Early cycles emphasize deep NREM sleep for physical restoration, while later cycles prioritize REM sleep for memory consolidation and emotional processing."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-4.3",
+    "prompt": "A friend tells you they have been setting their alarm to get only five hours of sleep so they can study more before exams. Using your knowledge of sleep stages and the sleep cycle, explain what specific stages of sleep they are most likely losing, what functions those stages serve, and how this strategy is likely to affect their exam performance and overall health.",
+    "minWords": 100,
+    "rubric": "A strong response should: (1) identify that later sleep cycles contain more REM sleep, which is disproportionately lost when total sleep time is cut short, (2) explain the functions of REM sleep (memory consolidation, emotional processing, dreaming), (3) note that deep NREM stage 3 sleep is also important for physical restoration, (4) connect the loss of these stages to impaired memory consolidation and exam performance, and (5) provide a recommendation based on sleep science."
+  }
+}

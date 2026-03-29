@@ -1,0 +1,44 @@
+{
+  "sectionId": "4.2",
+  "chapterId": 4,
+  "title": "Sleep and Why We Sleep",
+  "learningObjectives": [
+    "Describe the major theories explaining why we sleep",
+    "Explain the cognitive and physical consequences of sleep deprivation",
+    "Discuss the relationship between sleep and memory consolidation"
+  ],
+  "keyTerms": [
+    { "term": "Sleep deprivation", "definition": "A condition of not having enough sleep, which can impair cognitive functioning, mood, and physical health." },
+    { "term": "Adaptive function of sleep", "definition": "An evolutionary theory proposing that sleep evolved to conserve energy and keep organisms safe during periods when activity would be dangerous." },
+    { "term": "Restorative theory of sleep", "definition": "The theory that sleep allows the body and brain to repair themselves, restore depleted resources, and consolidate memories." },
+    { "term": "Cognitive function", "definition": "Mental processes including attention, memory, reasoning, and decision-making that are significantly impaired by insufficient sleep." },
+    { "term": "Sleep debt", "definition": "The cumulative effect of not getting enough sleep over time, which cannot be fully recovered by a single night of extended sleep." }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "Why Do We Sleep?",
+      "body": "Humans spend roughly one-third of their lives asleep, yet the precise reasons for sleep remain one of the most active areas of research in psychology and neuroscience. Several theories attempt to explain why sleep is so essential.\n\nThe **adaptive function of sleep** theory, also called the evolutionary or preservation theory, suggests that sleep evolved as a survival mechanism. By becoming inactive during the night — when predators were most dangerous and foraging was least productive — our ancestors increased their chances of survival. Different species' sleep patterns support this idea: animals with few natural predators tend to sleep more, while prey animals sleep less and more lightly.\n\nThe **restorative theory of sleep** proposes that sleep provides the body with an opportunity to repair and rejuvenate itself. During sleep, the body increases production of growth hormone, repairs cellular damage, and strengthens the immune system. The brain, too, benefits: recent research has revealed that during sleep, the glymphatic system flushes out metabolic waste products that accumulate during waking hours, including proteins associated with neurodegenerative diseases like Alzheimer's.\n\nA third important perspective emphasizes sleep's role in **cognitive function** and memory. Studies consistently show that sleep, particularly certain stages, is critical for consolidating memories — the process of transforming new, fragile memories into stable, long-term ones. Students who sleep after studying retain significantly more material than those who remain awake for an equivalent period."
+    },
+    {
+      "type": "concept",
+      "title": "The Consequences of Sleep Deprivation",
+      "body": "**Sleep deprivation** has wide-ranging negative effects on nearly every aspect of human functioning. Even modest sleep loss — getting six hours instead of eight — can impair attention, reaction time, and decision-making. Chronic sleep deprivation accumulates into a **sleep debt** that becomes increasingly difficult to repay.\n\nCognitively, sleep-deprived individuals show reduced ability to concentrate, impaired working memory, and poorer judgment. Studies of medical residents working extended shifts have found error rates comparable to those seen in individuals with blood alcohol levels above the legal driving limit. Emotionally, sleep deprivation increases irritability, anxiety, and vulnerability to depression. Physically, chronic insufficient sleep is associated with increased risk of obesity, diabetes, cardiovascular disease, and weakened immune function.\n\nPerhaps most concerning for students, sleep deprivation directly undermines learning. Without adequate sleep, the brain's ability to encode new information and consolidate it into long-term memory is significantly compromised. Pulling an \"all-nighter\" before an exam may feel productive, but research consistently shows it leads to worse performance compared to studying and then sleeping."
+    },
+    {
+      "type": "example",
+      "title": "Real-World Example: Sleep and Academic Performance",
+      "body": "A large-scale study of college students found that those who consistently obtained seven to eight hours of sleep per night earned significantly higher GPAs than those who slept six hours or fewer. The researchers found that the relationship between sleep and grades was as strong as the relationship between class attendance and grades. This finding illustrates the restorative theory in action: adequate sleep supports the memory consolidation processes necessary for retaining course material. It also underscores why sleep scientists recommend that students prioritize sleep as a study strategy rather than sacrificing it for additional hours of cramming."
+    },
+    {
+      "type": "summary",
+      "body": "Sleep serves multiple functions including evolutionary protection, physical restoration, brain waste clearance, and memory consolidation. Sleep deprivation impairs cognition, emotional regulation, physical health, and academic performance. Sleep debt accumulates over time and cannot be easily repaid, making consistent, adequate sleep essential for optimal functioning."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-4.2",
+    "prompt": "Think about a time when you were significantly sleep-deprived (or imagine such a scenario). Describe the specific cognitive, emotional, and physical effects you experienced or would expect. Then, using the theories of sleep discussed in this section, explain why sleep deprivation produces these effects and what this tells us about the functions of sleep.",
+    "minWords": 100,
+    "rubric": "A strong response should: (1) describe specific effects of sleep deprivation across at least two domains (cognitive, emotional, physical), (2) connect each effect to at least one theory of sleep function (restorative, adaptive, or memory consolidation), (3) demonstrate understanding of why sleep is necessary rather than just listing effects, (4) reference relevant concepts such as sleep debt or memory consolidation, and (5) provide a thoughtful personal or hypothetical example."
+  }
+}

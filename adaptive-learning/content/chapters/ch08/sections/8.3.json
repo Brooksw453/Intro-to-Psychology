@@ -1,0 +1,68 @@
+{
+  "sectionId": "8.3",
+  "chapterId": 8,
+  "title": "Problems with Memory",
+  "learningObjectives": [
+    "Describe the major theories of forgetting, including interference, decay, and retrieval failure",
+    "Explain the misinformation effect and how false memories can be created",
+    "Discuss the reliability of eyewitness testimony and factors that affect its accuracy",
+    "Identify the controversy surrounding repressed and recovered memories"
+  ],
+  "keyTerms": [
+    {
+      "term": "Transience",
+      "definition": "The decreasing accessibility of a memory over time, as described by Ebbinghaus's forgetting curve."
+    },
+    {
+      "term": "Proactive interference",
+      "definition": "Forgetting that occurs when previously learned information interferes with the ability to learn and remember new information."
+    },
+    {
+      "term": "Retroactive interference",
+      "definition": "Forgetting that occurs when newly learned information interferes with the recall of previously learned information."
+    },
+    {
+      "term": "Misinformation effect",
+      "definition": "The tendency for new, misleading information introduced after an event to distort a person's memory of the original event."
+    },
+    {
+      "term": "False memory",
+      "definition": "A recollection of an event that did not actually happen or a distorted recollection of an actual event, often experienced with high confidence."
+    },
+    {
+      "term": "Source monitoring error",
+      "definition": "The failure to correctly identify the source of a memory, such as confusing something imagined with something actually experienced."
+    },
+    {
+      "term": "Forgetting curve",
+      "definition": "Ebbinghaus's discovery that forgetting occurs rapidly at first and then levels off, with the greatest memory loss occurring shortly after learning."
+    }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "Why We Forget",
+      "body": "Forgetting is a normal and even adaptive part of memory. Without the ability to forget, our minds would be overwhelmed by trivial details. However, understanding why forgetting occurs helps us develop strategies to reduce unwanted memory loss.\n\nHermann Ebbinghaus conducted pioneering research on memory in the 1880s using lists of nonsense syllables. He discovered the **forgetting curve** -- the finding that memory loss is most rapid immediately after learning, with the rate of forgetting gradually slowing over time. His research showed that within one hour, roughly 50% of newly learned information is forgotten, and within a day, about 70% is lost. However, the information that survives the initial rapid decline tends to be retained for much longer.\n\nSeveral theories explain why forgetting occurs. **Encoding failure** means the information was never properly encoded in the first place -- you cannot forget what you never truly learned. **Storage decay** suggests that memories fade over time if they are not accessed. **Interference** is one of the most well-supported explanations. **Proactive interference** occurs when old memories interfere with new learning (for example, when your old phone number keeps intruding when you try to remember your new one). **Retroactive interference** occurs when new information interferes with old memories (learning a new phone number may make it harder to recall the old one).\n\n**Retrieval failure** occurs when the information is stored in memory but cannot be accessed. Context-dependent memory and state-dependent memory demonstrate that retrieval is enhanced when the conditions at retrieval match the conditions at encoding. Studying in the same room where you will take the exam, or being in the same emotional state, can improve recall."
+    },
+    {
+      "type": "concept",
+      "title": "Memory Distortion and False Memories",
+      "body": "Memory is not like a video recording that plays back events exactly as they occurred. Instead, memory is a **reconstructive** process -- we actively rebuild memories each time we recall them, filling in gaps with assumptions, expectations, and information encountered after the original event.\n\nElizabeth Loftus's research on the **misinformation effect** dramatically demonstrated how easily memories can be distorted. In her classic studies, participants watched a video of a car accident and were later asked questions using different wording. Those asked \"How fast were the cars going when they smashed into each other?\" gave higher speed estimates and were more likely to falsely remember seeing broken glass than those asked about cars that \"hit\" each other. The phrasing of the question altered the participants' memories of the event.\n\nLoftus and her colleagues have even shown that entirely **false memories** can be implanted. In one study, participants were convinced that they had been lost in a shopping mall as children -- an event that never actually happened. Participants not only reported remembering the event but added vivid, detailed embellishments over time. This research has profound implications for the legal system and for therapeutic practices.\n\n**Source monitoring errors** occur when we remember information but misattribute its origin. You might remember a fact but be unable to recall whether you read it in a textbook, heard it in a lecture, or saw it on social media. In more serious cases, people may confuse something they imagined or dreamed with something that actually occurred."
+    },
+    {
+      "type": "example",
+      "title": "Eyewitness Testimony and the Justice System",
+      "body": "Eyewitness testimony has traditionally been considered highly convincing evidence in criminal cases. Jurors tend to believe confident eyewitnesses. However, decades of research -- and the advent of DNA exoneration -- have revealed that eyewitness memory is far less reliable than commonly assumed. Mistaken eyewitness identification has been identified as a leading factor in wrongful convictions.\n\nSeveral factors reduce eyewitness accuracy: the stress of the event, the presence of a weapon (which draws attention away from the perpetrator's face), cross-racial identification difficulties, and the passage of time. Post-event information, including conversations with other witnesses and leading questions from investigators, can further distort the witness's memory through the **misinformation effect**.\n\nThese findings have led to reforms in how police lineups are conducted, including the use of double-blind procedures (where the administrator does not know which person is the suspect) and instructions that the perpetrator may or may not be present. These changes reflect the practical application of memory research to improve justice outcomes."
+    },
+    {
+      "type": "summary",
+      "body": "Forgetting occurs through encoding failure, storage decay, interference (proactive and retroactive), and retrieval failure. Memory is reconstructive rather than reproductive -- we rebuild memories each time we recall them. The misinformation effect shows that post-event information can distort memories, and entirely false memories can be implanted with surprising ease. These findings have critical implications for eyewitness testimony and the justice system, leading to reforms in identification procedures."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-8.3",
+    "prompt": "Elizabeth Loftus's research on the misinformation effect and false memories has had significant implications for the legal system. Describe how memory distortion could affect a criminal investigation -- from the initial witness interview through the trial. What specific safeguards could be put in place at each stage to minimize the impact of memory errors? Reference at least two concepts from this section in your answer.",
+    "minWords": 100,
+    "rubric": "A strong response accurately describes the misinformation effect and/or false memory research, traces potential memory distortion across multiple stages of a criminal investigation (witness interviews, police lineups, courtroom testimony), proposes specific evidence-based safeguards (double-blind lineups, avoiding leading questions, recording initial statements), and correctly references at least two relevant concepts such as source monitoring errors, interference, or the reconstructive nature of memory."
+  }
+}

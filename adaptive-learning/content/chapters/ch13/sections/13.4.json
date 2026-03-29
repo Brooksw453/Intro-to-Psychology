@@ -1,0 +1,44 @@
+{
+  "sectionId": "13.4",
+  "chapterId": 13,
+  "title": "Human Factors Psychology and Workplace Design",
+  "learningObjectives": [
+    "Define human factors psychology and its goals",
+    "Explain how human factors research improves workplace safety and efficiency",
+    "Describe the relationship between cognitive load, attention, and workplace errors"
+  ],
+  "keyTerms": [
+    { "term": "Human factors psychology", "definition": "The study of how people interact with machines, tools, and technology, with the goal of designing systems that are safe, efficient, and compatible with human capabilities and limitations." },
+    { "term": "Ergonomics", "definition": "The science of designing equipment, workspaces, and systems to fit the physical and cognitive capabilities of the people who use them." },
+    { "term": "Cognitive load", "definition": "The total amount of mental effort required to complete a task, which can be managed through good system design to reduce errors and improve performance." },
+    { "term": "Usability", "definition": "The degree to which a product, system, or interface can be used effectively, efficiently, and satisfactorily by its intended users." },
+    { "term": "Human error", "definition": "Mistakes or unintended actions by workers that can result from poor system design, excessive cognitive demands, fatigue, or inadequate training rather than individual carelessness." }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "Understanding Human Factors Psychology",
+      "body": "**Human factors psychology** (also called **ergonomics**) studies how people interact with machines, tools, and systems in their work environments. Rather than blaming workers for mistakes, human factors psychologists recognize that most **human errors** result from poorly designed systems that exceed human cognitive or physical capabilities.\n\nThe field encompasses several key areas of study. Attention research examines how workers maintain vigilance during monitoring tasks and how system design can support sustained attention. Cognitive engineering studies how workers interact with complex automated systems and make decisions based on the information software provides. Task analysis breaks down jobs into their component elements to identify opportunities for improving efficiency and safety.\n\nA central concept in human factors psychology is **cognitive load** — the total amount of mental effort required to complete a task. When cognitive demands exceed a worker's capacity, errors increase. Well-designed systems manage cognitive load by presenting information clearly, reducing unnecessary complexity, and providing appropriate decision support.\n\n**Usability** testing is a core method in human factors research. Psychologists observe users as they interact with products or systems, measuring factors like task completion time, error rates, and user satisfaction. This data drives iterative design improvements that make systems more intuitive and less error-prone."
+    },
+    {
+      "type": "concept",
+      "title": "Applications in Safety and Design",
+      "body": "Human factors psychology has critical applications in high-stakes environments where errors can have severe consequences. In healthcare, human factors research has improved medication administration systems, surgical checklists, and electronic health records to reduce medical errors. In aviation, the design of cockpit displays, alarm systems, and crew resource management protocols reflects decades of human factors research.\n\nWorkplace safety is a primary concern. Research shows that factors like fatigue, shift work, excessive multitasking, and poorly designed controls contribute to accidents. Human factors psychologists design interventions such as standardized procedures, improved signage, better lighting, and rest schedules to reduce accident rates.\n\nThe rise of digital technology has expanded the field considerably. User experience (UX) design draws heavily on human factors principles to create websites, apps, and software that are intuitive and efficient. Display design research informs how information should be presented on screens to minimize errors — for example, using color coding, spatial grouping, and progressive disclosure of information."
+    },
+    {
+      "type": "example",
+      "title": "Real-World Example: Aviation Safety",
+      "body": "The aviation industry is a leading example of human factors psychology in action. After analyzing cockpit errors, researchers found that many crashes resulted not from pilot incompetence but from poorly designed instrument panels, confusing alarm systems, and communication breakdowns between crew members. This led to the development of crew resource management (CRM) training, standardized cockpit layouts, and human-centered alarm systems. These interventions dramatically reduced aviation accident rates and serve as a model for other industries."
+    },
+    {
+      "type": "summary",
+      "body": "Human factors psychology studies how people interact with systems and technology, aiming to reduce errors and improve safety through better design. Key concepts include cognitive load, usability, and the understanding that most human errors stem from system design flaws rather than individual carelessness. The field has critical applications in aviation, healthcare, and digital technology."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-13.4",
+    "prompt": "Identify a product, system, or interface you use regularly that is poorly designed from a human factors perspective. Describe the specific design flaws, explain how they increase cognitive load or lead to errors, and propose improvements based on human factors principles from this section.",
+    "minWords": 100,
+    "rubric": "Student should identify a specific design problem, explain it using human factors concepts (cognitive load, usability, human error), and propose evidence-based improvements. Strong answers demonstrate understanding that design should accommodate human limitations rather than expecting users to adapt to poor design."
+  }
+}

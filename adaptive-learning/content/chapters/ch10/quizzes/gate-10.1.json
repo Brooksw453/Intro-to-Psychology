@@ -1,0 +1,29 @@
+{
+  "sectionId": "10.1",
+  "chapterId": 10,
+  "questions": [
+    {
+      "id": "ch10-q01",
+      "question": "A student who studies hard because she genuinely finds the subject fascinating is demonstrating which type of motivation?",
+      "options": [
+        { "text": "Extrinsic motivation", "correct": false },
+        { "text": "Intrinsic motivation", "correct": true },
+        { "text": "Drive reduction", "correct": false },
+        { "text": "Homeostatic motivation", "correct": false }
+      ],
+      "explanation": "Intrinsic motivation arises from within the individual -- the behavior itself is inherently rewarding. Studying because the subject is genuinely fascinating reflects intrinsic motivation, as opposed to extrinsic motivation driven by external rewards like grades."
+    },
+    {
+      "id": "ch10-q02",
+      "question": "According to Maslow's hierarchy of needs, which need must generally be satisfied before a person can focus on esteem needs?",
+      "options": [
+        { "text": "Self-actualization needs", "correct": false },
+        { "text": "Physiological needs only", "correct": false },
+        { "text": "Belongingness and love needs", "correct": true },
+        { "text": "Aesthetic needs", "correct": false }
+      ],
+      "explanation": "In Maslow's hierarchy, needs must generally be met from the bottom up: physiological, safety, belongingness and love, esteem, and self-actualization. Belongingness and love needs come directly below esteem needs and must typically be satisfied first."
+    }
+  ],
+  "passThreshold": 80
+}

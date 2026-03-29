@@ -1,0 +1,21 @@
+{
+  "chapterId": 16,
+  "weekNum": 16,
+  "title": "Improving Access to Mental Health Care",
+  "prompt": "Despite the availability of effective treatments for psychological disorders, many people never receive the help they need. Drawing on what you learned in this chapter about treatment approaches, modalities, and sociocultural factors, propose a specific plan to improve mental health care access in your community or on your campus. Consider barriers such as cost, stigma, cultural differences, and provider availability. What type of treatment program would you create, who would it serve, and how would you address at least two specific barriers to care? Support your proposal with concepts from the chapter.",
+  "requirements": {
+    "initialPost": {
+      "minWords": 150,
+      "maxWords": 200,
+      "dueDay": "Wednesday",
+      "dueTime": "11:59 PM ET"
+    },
+    "replies": {
+      "count": 2,
+      "minWords": 75,
+      "maxWords": 100,
+      "dueDay": "Sunday",
+      "dueTime": "11:59 PM ET"
+    }
+  }
+}

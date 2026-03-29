@@ -1,0 +1,29 @@
+{
+  "sectionId": "6.2",
+  "chapterId": 6,
+  "questions": [
+    {
+      "id": "ch06-q03",
+      "question": "In Pavlov's experiment, the tone that was initially neutral but eventually caused the dogs to salivate is called the:",
+      "options": [
+        { "text": "Unconditioned stimulus", "correct": false },
+        { "text": "Unconditioned response", "correct": false },
+        { "text": "Conditioned stimulus", "correct": true },
+        { "text": "Conditioned response", "correct": false }
+      ],
+      "explanation": "The tone was initially a neutral stimulus that did not produce salivation. After repeated pairings with the food (unconditioned stimulus), the tone became a conditioned stimulus -- a previously neutral stimulus that now triggers a conditioned response (salivation)."
+    },
+    {
+      "id": "ch06-q04",
+      "question": "After conditioning, a dog salivates to a 1000 Hz tone. It also salivates (though less strongly) to tones of 900 Hz and 1100 Hz. This is an example of:",
+      "options": [
+        { "text": "Extinction", "correct": false },
+        { "text": "Spontaneous recovery", "correct": false },
+        { "text": "Stimulus generalization", "correct": true },
+        { "text": "Stimulus discrimination", "correct": false }
+      ],
+      "explanation": "Stimulus generalization occurs when an organism responds to stimuli that are similar to the conditioned stimulus. The dog's salivation to tones similar (but not identical) to the original CS demonstrates generalization, with response strength decreasing as similarity decreases."
+    }
+  ],
+  "passThreshold": 80
+}

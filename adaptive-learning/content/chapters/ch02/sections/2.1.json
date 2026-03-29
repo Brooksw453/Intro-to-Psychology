@@ -1,0 +1,64 @@
+{
+  "sectionId": "2.1",
+  "chapterId": 2,
+  "title": "Why Is Research Important?",
+  "learningObjectives": [
+    "Explain why scientific research is preferable to intuition and authority for understanding behavior",
+    "Describe the steps of the scientific method as applied to psychology",
+    "Distinguish between basic and applied research"
+  ],
+  "keyTerms": [
+    {
+      "term": "Empirical",
+      "definition": "Based on or verified by observation and experience rather than theory or logic alone."
+    },
+    {
+      "term": "Theory",
+      "definition": "A well-substantiated explanation of some aspect of the natural world that incorporates facts, laws, inferences, and tested hypotheses."
+    },
+    {
+      "term": "Hypothesis",
+      "definition": "A testable prediction, often derived from a theory, about the relationship between variables."
+    },
+    {
+      "term": "Falsifiable",
+      "definition": "Capable of being tested and potentially proven wrong through observation or experimentation."
+    },
+    {
+      "term": "Peer review",
+      "definition": "A process in which other experts in the field evaluate a researcher's work before it is published in a scientific journal."
+    },
+    {
+      "term": "Replication",
+      "definition": "The process of repeating a study to determine whether the original findings can be reproduced."
+    }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "The Value of Scientific Research",
+      "body": "Why do psychologists conduct research instead of simply relying on personal experience and intuition? The answer lies in the many ways that everyday reasoning can lead us astray. Humans are prone to **cognitive biases** -- systematic errors in thinking that distort our perception of reality.\n\nFor instance, **confirmation bias** leads us to notice and remember information that confirms our existing beliefs while ignoring contradictory evidence. We may believe that people behave more erratically during a full moon because we selectively remember unusual incidents that occurred on those nights, while forgetting the many full moons when nothing unusual happened. Systematic research repeatedly finds no relationship between lunar cycles and human behavior.\n\nThe **scientific method** provides a structured framework for minimizing these biases. It requires researchers to form **falsifiable** hypotheses -- predictions that can be tested and potentially disproven. Science advances not by proving ideas correct but by subjecting them to rigorous tests that could reveal them to be wrong. An idea that cannot be tested or disproven is outside the realm of science."
+    },
+    {
+      "type": "concept",
+      "title": "Steps of the Scientific Method",
+      "body": "The scientific method in psychology follows a systematic process. Researchers begin by making **observations** about the world, which lead them to ask questions. These questions are informed by existing **theories** -- broad explanations that organize and predict phenomena.\n\nFrom a theory, researchers derive a specific **hypothesis**, a testable prediction about the relationship between variables. They then design and conduct a study to test this hypothesis, carefully collecting **empirical** data -- information based on direct observation and measurement rather than speculation.\n\nOnce data are collected, researchers analyze their findings using statistical methods. The results either support or fail to support the hypothesis. Importantly, a single study rarely settles a question. **Replication** -- repeating a study to see whether the findings hold -- is essential for building confidence in results. Only findings that can be replicated across multiple studies and laboratories are considered reliable.\n\nFinally, researchers submit their work for **peer review**, a process in which other experts evaluate the methodology, analysis, and conclusions before publication. This serves as a quality control mechanism, helping to catch errors and strengthen the credibility of published findings."
+    },
+    {
+      "type": "example",
+      "title": "Basic vs. Applied Research",
+      "body": "Psychological research can be broadly categorized as **basic research** or **applied research**. Basic research aims to expand fundamental knowledge about behavior and mental processes without immediate concern for practical application. For example, a cognitive psychologist studying how working memory capacity changes with age is conducting basic research.\n\nApplied research, in contrast, is designed to address specific practical problems. A psychologist developing a new intervention to reduce test anxiety in college students is conducting applied research. The distinction is not always clear-cut -- basic research often yields findings that later prove practically useful, and applied research can reveal fundamental principles.\n\nConsider research on memory. Basic research by Hermann Ebbinghaus on the \"forgetting curve\" demonstrated that memory declines rapidly after initial learning and then levels off. This fundamental finding later informed applied research on effective study strategies, such as spaced practice (distributing study sessions over time rather than cramming), which is now widely recommended to students."
+    },
+    {
+      "type": "summary",
+      "title": "Section Summary",
+      "body": "Scientific research is essential in psychology because everyday reasoning is vulnerable to cognitive biases like confirmation bias. The scientific method provides a structured approach to understanding behavior: observe, form hypotheses, collect empirical data, analyze findings, and replicate results. Peer review ensures quality control before publication. Psychology includes both basic research (expanding fundamental knowledge) and applied research (solving practical problems), and both contribute to the field's growth."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-2.1",
+    "prompt": "Think about a claim you have encountered in the media or on social media about human behavior or psychology (e.g., \"listening to Mozart makes babies smarter\" or \"people only use 10% of their brains\"). How would you apply the scientific method to evaluate this claim? Describe the steps you would take, including what would make the claim falsifiable, how you might test it, and why replication would be important.",
+    "minWords": 100,
+    "rubric": "A strong response identifies a specific claim, explains what makes a claim scientifically testable (falsifiable), outlines a reasonable research approach with hypothesis and data collection, discusses the importance of replication, and demonstrates understanding of why the scientific method is superior to accepting claims based on authority or anecdote."
+  }
+}

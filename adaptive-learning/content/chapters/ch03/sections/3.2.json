@@ -1,0 +1,47 @@
+{
+  "sectionId": "3.2",
+  "chapterId": 3,
+  "title": "Cells of the Nervous System",
+  "learningObjectives": [
+    "Describe the structure and function of neurons and their major components",
+    "Explain how neural impulses are generated and transmitted",
+    "Identify the role of neurotransmitters in synaptic communication"
+  ],
+  "keyTerms": [
+    { "term": "Neuron", "definition": "A specialized cell of the nervous system that receives, processes, and transmits electrochemical signals." },
+    { "term": "Soma", "definition": "The cell body of a neuron, containing the nucleus and organelles that keep the cell alive." },
+    { "term": "Dendrite", "definition": "A branch-like extension of a neuron that receives incoming signals from other neurons." },
+    { "term": "Axon", "definition": "A long, tail-like extension of a neuron that carries electrical impulses away from the soma toward other cells." },
+    { "term": "Myelin sheath", "definition": "A fatty insulating layer that surrounds the axon and speeds up the transmission of neural impulses." },
+    { "term": "Synapse", "definition": "The junction between two neurons where information is transmitted chemically via neurotransmitters." },
+    { "term": "Neurotransmitter", "definition": "A chemical messenger released at the synapse that transmits signals between neurons." },
+    { "term": "Glial cell", "definition": "A non-neuronal cell in the nervous system that provides support, nutrition, insulation, and protection for neurons." }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "Neuron Structure",
+      "body": "The nervous system's basic functional unit is the **neuron**, a specialized cell designed to receive, process, and transmit information. Although neurons come in many shapes and sizes, most share a common structure consisting of three main parts.\n\nThe **soma** (cell body) contains the nucleus and the metabolic machinery that keeps the neuron alive. Extending from the soma are **dendrites**, tree-like branches that receive incoming signals from other neurons. Think of dendrites as the neuron's antennae, listening for messages from thousands of neighboring cells. On the other side of the soma is the **axon**, a long fiber that carries electrical signals away from the cell body toward other neurons, muscles, or glands.\n\nMany axons are wrapped in a **myelin sheath**, a fatty insulating layer produced by specialized **glial cells**. The myelin sheath is not continuous; small gaps called nodes of Ranvier allow the electrical signal to jump rapidly from node to node, a process called saltatory conduction. This dramatically increases the speed of neural transmission. Diseases that damage the myelin sheath, such as multiple sclerosis, result in slowed or disrupted neural communication, leading to symptoms like muscle weakness and impaired coordination.\n\nGlial cells are far more numerous than neurons and perform essential support functions. Astrocytes regulate the chemical environment around neurons, oligodendrocytes produce myelin in the central nervous system, and microglia act as the brain's immune defense system."
+    },
+    {
+      "type": "concept",
+      "title": "Neural Communication: The Action Potential and Synaptic Transmission",
+      "body": "Neurons communicate through a combination of electrical and chemical processes. When a neuron is at rest, its interior is negatively charged relative to the outside, creating a **resting potential** of approximately -70 millivolts. This state is maintained by ion channels and sodium-potassium pumps that regulate the flow of charged particles across the cell membrane.\n\nWhen a neuron receives sufficient stimulation from its dendrites, the cell membrane becomes permeable to positively charged sodium ions, which rush inward and rapidly reverse the charge. This rapid change in voltage is called an **action potential**, and it follows an all-or-none principle: the neuron either fires completely or does not fire at all. The action potential travels down the axon like a wave until it reaches the axon terminal.\n\nAt the end of the axon lies the **synapse**, a tiny gap between one neuron and the next. When the action potential arrives at the axon terminal, it triggers the release of chemical messengers called **neurotransmitters** from small sacs called synaptic vesicles. These neurotransmitters cross the synaptic gap and bind to receptor sites on the dendrites of the receiving neuron. Depending on the type of neurotransmitter and receptor, the signal may be excitatory (making the receiving neuron more likely to fire) or inhibitory (making it less likely to fire). After transmission, neurotransmitters are either broken down by enzymes or reabsorbed by the sending neuron through a process called **reuptake**."
+    },
+    {
+      "type": "example",
+      "title": "Real-World Example: How Antidepressants Work",
+      "body": "Selective serotonin reuptake inhibitors (SSRIs) such as fluoxetine (Prozac) provide a practical example of synaptic transmission. Serotonin is a **neurotransmitter** associated with mood regulation. In some individuals with depression, serotonin is reabsorbed too quickly after release, reducing its availability in the synapse. SSRIs block the reuptake process, allowing serotonin to remain in the synaptic gap longer and continue stimulating the receiving neuron. This example illustrates how understanding the mechanics of the synapse has led to targeted pharmaceutical treatments for psychological disorders."
+    },
+    {
+      "type": "summary",
+      "body": "Neurons are the fundamental communication cells of the nervous system, consisting of dendrites, a soma, and an axon. Neural signals travel electrically within a neuron via action potentials and chemically between neurons via neurotransmitters released at the synapse. Glial cells provide critical support including myelination, which speeds neural transmission."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-3.2",
+    "prompt": "Imagine you are explaining to a friend how a pain signal travels from their hand (after touching a hot stove) to their brain. Trace the path of the neural impulse, describing what happens at each stage including the roles of dendrites, the axon, the action potential, the synapse, and neurotransmitters.",
+    "minWords": 100,
+    "rubric": "A strong response should: (1) correctly sequence the steps of neural communication from stimulus to brain, (2) accurately describe the action potential and its all-or-none nature, (3) explain what happens at the synapse including neurotransmitter release and receptor binding, (4) use key vocabulary terms correctly, and (5) demonstrate understanding that the process involves both electrical and chemical transmission."
+  }
+}

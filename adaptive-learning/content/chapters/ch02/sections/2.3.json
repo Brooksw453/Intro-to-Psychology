@@ -1,0 +1,68 @@
+{
+  "sectionId": "2.3",
+  "chapterId": 2,
+  "title": "Analyzing Findings",
+  "learningObjectives": [
+    "Distinguish between descriptive and inferential statistics",
+    "Explain the purpose of measures of central tendency and variability",
+    "Describe what statistical significance means and why it matters in research"
+  ],
+  "keyTerms": [
+    {
+      "term": "Descriptive statistics",
+      "definition": "Numbers that summarize and organize data from a research study, such as measures of central tendency and variability."
+    },
+    {
+      "term": "Mean",
+      "definition": "The arithmetic average of a set of scores, calculated by dividing the sum of all scores by the number of scores."
+    },
+    {
+      "term": "Median",
+      "definition": "The middle value in a dataset when scores are arranged in order; it is not affected by extreme scores."
+    },
+    {
+      "term": "Mode",
+      "definition": "The most frequently occurring value in a dataset."
+    },
+    {
+      "term": "Standard deviation",
+      "definition": "A measure of variability that indicates the average distance of scores from the mean of a distribution."
+    },
+    {
+      "term": "Inferential statistics",
+      "definition": "Statistical procedures used to draw conclusions about whether findings from a sample can be generalized to a larger population."
+    },
+    {
+      "term": "Statistical significance",
+      "definition": "A determination that the results of a study are unlikely to have occurred by chance alone, typically defined as a probability (p-value) of less than .05."
+    }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "Descriptive Statistics: Summarizing Data",
+      "body": "After collecting data, researchers need systematic ways to organize and summarize their findings. **Descriptive statistics** are numbers that describe and organize data in meaningful ways.\n\nThe most common descriptive statistics are **measures of central tendency**, which identify the center or typical value in a dataset. The **mean** is the arithmetic average -- add all the scores and divide by the number of scores. The **median** is the middle value when scores are arranged in order. The **mode** is the most frequently occurring value.\n\nWhy use different measures? Each has advantages. The mean uses all data points and is the most commonly reported, but it can be distorted by extreme scores (outliers). For example, if most employees at a company earn between $40,000 and $60,000, but the CEO earns $5 million, the mean salary would be misleadingly high. In such cases, the median provides a more accurate picture of the typical salary because it is not affected by outliers. The mode is useful for categorical data, such as identifying the most common response on a survey."
+    },
+    {
+      "type": "concept",
+      "title": "Variability and Distributions",
+      "body": "Measures of central tendency tell us about the center of a distribution, but they do not reveal how spread out the data are. **Measures of variability** describe the degree to which scores in a dataset differ from one another.\n\nThe **range** is the simplest measure of variability -- the difference between the highest and lowest scores. However, it is affected by outliers and uses only two data points. The **standard deviation** provides a more informative measure by calculating the average distance of each score from the mean. A small standard deviation indicates that scores cluster closely around the mean, while a large standard deviation indicates that scores are widely spread.\n\nMany psychological variables follow a **normal distribution** (bell curve), where most scores cluster near the mean and fewer scores fall at the extremes. Understanding the shape of a distribution helps researchers interpret their data and identify patterns. When data are **skewed** -- with most scores clustered at one end and a long tail extending to the other -- the mean can be misleading, and the median may be a more appropriate measure of central tendency."
+    },
+    {
+      "type": "concept",
+      "title": "Inferential Statistics: Drawing Conclusions",
+      "body": "While descriptive statistics summarize data, **inferential statistics** help researchers determine whether their findings are meaningful -- whether they reflect genuine patterns in the population or are simply due to chance.\n\nThe central question in inferential statistics is: \"Could these results have occurred by random chance alone?\" Researchers use statistical tests to calculate the probability (called the **p-value**) that their results would occur if there were no real effect. By convention, results are considered **statistically significant** when the p-value is less than .05, meaning there is less than a 5% probability that the results occurred by chance.\n\nHowever, statistical significance does not necessarily mean practical significance. A study might find a statistically significant difference between two groups that is too small to matter in the real world. For example, a new study technique might produce a statistically significant improvement of 0.5 points on a 100-point exam -- real but practically meaningless.\n\nResearchers must also be cautious about **Type I errors** (concluding there is an effect when there is not) and **Type II errors** (failing to detect a real effect). These concepts underscore why replication across multiple studies is critical."
+    },
+    {
+      "type": "summary",
+      "title": "Section Summary",
+      "body": "Analyzing research findings requires both descriptive and inferential statistics. Descriptive statistics, including measures of central tendency (mean, median, mode) and variability (range, standard deviation), summarize and organize data. Inferential statistics help researchers determine whether findings are statistically significant -- that is, unlikely to have occurred by chance alone (p < .05). Statistical significance does not guarantee practical significance, and researchers must consider Type I and Type II errors. Understanding these statistical tools is essential for critically evaluating psychological research."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-2.3",
+    "prompt": "Imagine a researcher reports that a new therapy technique produces a \"statistically significant\" improvement in depression scores compared to a control group, with a mean improvement of 1.2 points on a 50-point depression scale. Based on what you have learned about analyzing findings, discuss whether statistical significance alone is enough to conclude that this therapy is practically useful. What additional information would you want to know before recommending this therapy, and why?",
+    "minWords": 100,
+    "rubric": "A strong response distinguishes between statistical significance and practical significance, identifies that a 1.2-point improvement on a 50-point scale may be too small to be meaningful, discusses additional information needed (effect size, sample size, standard deviation, clinical significance thresholds), and demonstrates understanding of how inferential statistics inform but do not solely determine the value of research findings."
+  }
+}

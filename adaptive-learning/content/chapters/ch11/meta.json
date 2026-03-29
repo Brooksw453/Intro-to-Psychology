@@ -1,0 +1,14 @@
+{
+  "chapterId": 11,
+  "title": "Personality",
+  "weekNum": 11,
+  "reading": "Psychology 2e (OpenStax), Chapter 11 (Sections 11.1-11.9)",
+  "learningObjectives": [
+    "Define personality and explain the major theoretical perspectives used to study it",
+    "Compare and contrast psychodynamic, humanistic, trait, biological, and learning approaches to personality",
+    "Describe how cultural factors influence the expression and assessment of personality",
+    "Evaluate the strengths and limitations of different personality assessment methods",
+    "Apply personality theories to understand individual differences in behavior"
+  ],
+  "sections": ["11.1", "11.2", "11.3", "11.4", "11.5", "11.6", "11.7", "11.8", "11.9"]
+}

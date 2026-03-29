@@ -1,0 +1,29 @@
+{
+  "sectionId": "5.2",
+  "chapterId": 5,
+  "questions": [
+    {
+      "id": "ch05-q03",
+      "question": "Which property of a light wave determines the color we perceive?",
+      "options": [
+        { "text": "Amplitude", "correct": false },
+        { "text": "Wavelength", "correct": true },
+        { "text": "Speed", "correct": false },
+        { "text": "Purity", "correct": false }
+      ],
+      "explanation": "Wavelength determines the color of light we perceive. Shorter wavelengths are seen as blue/violet, while longer wavelengths are seen as red/orange. Amplitude, by contrast, determines brightness."
+    },
+    {
+      "id": "ch05-q04",
+      "question": "What does the amplitude of a sound wave determine about our perception of sound?",
+      "options": [
+        { "text": "The pitch of the sound", "correct": false },
+        { "text": "The timbre or tonal quality of the sound", "correct": false },
+        { "text": "The loudness of the sound", "correct": true },
+        { "text": "The direction the sound is coming from", "correct": false }
+      ],
+      "explanation": "The amplitude (height) of a sound wave determines its perceived loudness. Greater amplitude produces louder sounds. Pitch, by contrast, is determined by frequency (or wavelength)."
+    }
+  ],
+  "passThreshold": 80
+}

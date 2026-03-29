@@ -1,0 +1,44 @@
+{
+  "sectionId": "12.1",
+  "chapterId": 12,
+  "title": "What Is Social Psychology?",
+  "learningObjectives": [
+    "Define social psychology and distinguish it from sociology and personality psychology",
+    "Explain the concept of situationism and the fundamental attribution error",
+    "Describe how social context shapes individual thoughts, feelings, and behaviors"
+  ],
+  "keyTerms": [
+    { "term": "Social psychology", "definition": "The scientific study of how individuals' thoughts, feelings, and behaviors are influenced by the actual, imagined, or implied presence of others." },
+    { "term": "Situationism", "definition": "The perspective that behavior is primarily determined by situational factors rather than by stable personality traits." },
+    { "term": "Fundamental attribution error", "definition": "The tendency to overestimate the influence of internal factors (personality) and underestimate the influence of situational factors when explaining others' behavior." },
+    { "term": "Attribution", "definition": "The process of explaining the causes of behavior, either as internal (dispositional) or external (situational) factors." },
+    { "term": "Actor-observer bias", "definition": "The tendency to attribute one's own behavior to situational factors while attributing others' behavior to dispositional factors." }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "Defining Social Psychology",
+      "body": "**Social psychology** is the scientific study of how individuals' thoughts, feelings, and behaviors are influenced by the actual, imagined, or implied presence of others. While personality psychology focuses on individual differences and internal characteristics, social psychology examines how the social environment -- other people, social norms, group dynamics -- shapes what we think, feel, and do.\n\nSocial psychologists investigate a broad range of phenomena, from why people conform to group pressure to how attitudes are formed and changed, from what triggers aggression to what motivates helping behavior. A key insight of social psychology is that the power of the situation is often far greater than people realize. Ordinary people can behave in extraordinary ways -- both positively and negatively -- depending on social circumstances.\n\nThis emphasis on situational forces is sometimes called **situationism**. Social psychologists have repeatedly demonstrated that behavior often has less to do with the kind of person someone is and more to do with the kind of situation they are in. This does not mean that personality is irrelevant, but it does mean that situational factors deserve far more credit (and blame) than common intuition suggests."
+    },
+    {
+      "type": "concept",
+      "title": "Attributions and the Fundamental Attribution Error",
+      "body": "One of the most important concepts in social psychology is **attribution** -- the process by which people explain the causes of behavior. When you see someone act in a certain way, you naturally try to determine why. Was the behavior caused by something about the person (an **internal** or dispositional attribution) or something about the situation (an **external** or situational attribution)?\n\nResearch consistently shows that people in Western cultures tend to commit the **fundamental attribution error** (also called correspondence bias) -- the tendency to overestimate the role of internal, dispositional factors and underestimate the role of external, situational factors when explaining others' behavior. If a classmate arrives late to class, you are more likely to think, \"They are irresponsible,\" than to consider situational explanations such as traffic or a family emergency.\n\nInterestingly, this bias is asymmetric. The **actor-observer bias** describes the tendency to explain our own behavior using situational factors (\"I was late because traffic was terrible\") while explaining others' behavior using dispositional factors (\"She was late because she is disorganized\"). This asymmetry arises in part because we have access to information about our own circumstances but must infer the circumstances of others.\n\nCultural factors also influence attribution patterns. Research suggests that the fundamental attribution error is more pronounced in individualistic cultures, which emphasize personal agency, than in collectivistic cultures, which place greater emphasis on contextual and relational factors."
+    },
+    {
+      "type": "example",
+      "title": "The Power of the Situation",
+      "body": "One of the most dramatic demonstrations of situational power comes from Philip Zimbardo's 1971 Stanford prison experiment. College students were randomly assigned to play the role of either guard or prisoner in a simulated prison. Within days, many \"guards\" began exhibiting authoritarian and even abusive behavior, while many \"prisoners\" showed signs of extreme stress and helplessness. The study was terminated after only six days because of the participants' alarming psychological deterioration.\n\nAlthough the study has been criticized on methodological and ethical grounds, it powerfully illustrates the core message of social psychology: the situation can exert extraordinary influence over behavior. The participants were psychologically healthy college students, yet the social roles and power dynamics of the simulated prison environment produced behavior that none of them would have predicted in advance. This finding challenges the common assumption that bad behavior is always the product of bad people."
+    },
+    {
+      "type": "summary",
+      "body": "Social psychology examines how the social environment shapes individual thoughts, feelings, and behaviors. The field emphasizes the power of situational factors, often underestimated due to the fundamental attribution error. Attribution processes -- how we explain the causes of behavior -- are influenced by cognitive biases and cultural context. Understanding social psychology provides crucial insight into why people behave differently across situations."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-12.1",
+    "prompt": "Think of a recent situation in which you made a judgment about someone's behavior (for example, a driver who cut you off, a coworker who was short with you, or a friend who canceled plans). Describe the attribution you initially made. Was it dispositional or situational? Now reconsider the situation using the concept of the fundamental attribution error. What situational factors might have been at play that you initially overlooked?",
+    "minWords": 100,
+    "rubric": "A strong response should: (1) describe a specific real or realistic situation, (2) identify the initial attribution as dispositional or situational, (3) correctly define the fundamental attribution error, (4) generate plausible situational explanations for the behavior, and (5) demonstrate genuine reflection on how this cognitive bias influenced the initial judgment."
+  }
+}

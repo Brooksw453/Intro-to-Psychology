@@ -1,0 +1,29 @@
+{
+  "sectionId": "5.4",
+  "chapterId": 5,
+  "questions": [
+    {
+      "id": "ch05-q07",
+      "question": "What is the function of the cochlea in the auditory system?",
+      "options": [
+        { "text": "To amplify sound vibrations before they reach the inner ear", "correct": false },
+        { "text": "To collect sound waves from the environment", "correct": false },
+        { "text": "To transduce sound vibrations into neural signals through hair cells on the basilar membrane", "correct": true },
+        { "text": "To maintain balance and spatial orientation", "correct": false }
+      ],
+      "explanation": "The cochlea is a fluid-filled structure in the inner ear containing the basilar membrane and hair cells. When sound vibrations travel through the cochlear fluid, different parts of the basilar membrane vibrate, bending the hair cells and triggering neural impulses that travel to the brain."
+    },
+    {
+      "id": "ch05-q08",
+      "question": "According to place theory, how does the brain determine the pitch of a sound?",
+      "options": [
+        { "text": "By the rate at which hair cells fire neural impulses", "correct": false },
+        { "text": "By which location along the basilar membrane vibrates most in response to the sound frequency", "correct": true },
+        { "text": "By comparing sound input from both ears", "correct": false },
+        { "text": "By the amplitude of vibration in the tympanic membrane", "correct": false }
+      ],
+      "explanation": "Place theory proposes that different sound frequencies cause maximum vibration at different locations along the basilar membrane. High-frequency sounds activate hair cells near the base of the cochlea, while low-frequency sounds activate cells near the apex. The brain reads pitch from which location is most active."
+    }
+  ],
+  "passThreshold": 80
+}

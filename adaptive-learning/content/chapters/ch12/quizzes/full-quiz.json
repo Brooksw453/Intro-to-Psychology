@@ -1,0 +1,117 @@
+{
+  "sectionId": "full",
+  "chapterId": 12,
+  "questions": [
+    {
+      "id": "ch12-q15",
+      "question": "The actor-observer bias describes the tendency to:",
+      "options": [
+        { "text": "Attribute both our own and others' behavior to personality traits", "correct": false },
+        { "text": "Attribute our own behavior to situational factors while attributing others' behavior to dispositional factors", "correct": true },
+        { "text": "Assume all group members share the same motivations", "correct": false },
+        { "text": "Overestimate our ability to predict others' behavior", "correct": false }
+      ],
+      "explanation": "The actor-observer bias is the asymmetric attribution pattern in which we explain our own behavior situationally ('I was late because of traffic') while explaining others' behavior dispositionally ('She was late because she's disorganized')."
+    },
+    {
+      "id": "ch12-q16",
+      "question": "The foot-in-the-door persuasion technique works by:",
+      "options": [
+        { "text": "Making a large request first, then retreating to a smaller one", "correct": false },
+        { "text": "Using fear appeals to motivate attitude change", "correct": false },
+        { "text": "Making a small request first, then following with a larger request", "correct": true },
+        { "text": "Presenting both sides of an argument to appear balanced", "correct": false }
+      ],
+      "explanation": "The foot-in-the-door technique involves first making a small request that the person is likely to agree to, which changes their self-concept, making them more likely to comply with a subsequent larger request to remain consistent."
+    },
+    {
+      "id": "ch12-q17",
+      "question": "Normative social influence differs from informational social influence in that normative influence involves:",
+      "options": [
+        { "text": "Conforming because you believe the group has better information", "correct": false },
+        { "text": "Conforming because you want to be liked and accepted by the group", "correct": true },
+        { "text": "Following explicit orders from an authority figure", "correct": false },
+        { "text": "Changing attitudes through the central route to persuasion", "correct": false }
+      ],
+      "explanation": "Normative social influence occurs when people conform to gain social approval and avoid rejection, while informational social influence occurs when people conform because they believe the group may have better information about reality."
+    },
+    {
+      "id": "ch12-q18",
+      "question": "Tajfel's minimal group experiments demonstrated that:",
+      "options": [
+        { "text": "Only deeply meaningful group distinctions produce intergroup bias", "correct": false },
+        { "text": "Even arbitrary, trivial group distinctions can produce in-group favoritism", "correct": true },
+        { "text": "Prejudice requires sustained intergroup conflict", "correct": false },
+        { "text": "The contact hypothesis is ineffective at reducing prejudice", "correct": false }
+      ],
+      "explanation": "Tajfel's research showed that even when groups were formed on completely arbitrary bases (like preference for one abstract painter over another), participants still showed favoritism toward their own group, revealing how easily in-group bias can emerge."
+    },
+    {
+      "id": "ch12-q19",
+      "question": "According to the frustration-aggression hypothesis:",
+      "options": [
+        { "text": "Aggression is purely biological and unrelated to environmental factors", "correct": false },
+        { "text": "Frustration -- the blocking of a goal -- increases the likelihood of aggression", "correct": true },
+        { "text": "Only instrumental aggression results from frustration", "correct": false },
+        { "text": "Frustration always leads to prosocial behavior", "correct": false }
+      ],
+      "explanation": "The frustration-aggression hypothesis proposes that frustration (being blocked from achieving a goal) increases the readiness for aggression. While the original theory claimed frustration always produces aggression, revised versions recognize it as increasing the probability."
+    },
+    {
+      "id": "ch12-q20",
+      "question": "In Darley and Latane's decision model of bystander intervention, the five steps in order are:",
+      "options": [
+        { "text": "Notice, interpret, assume responsibility, decide how to help, implement", "correct": true },
+        { "text": "Interpret, notice, decide, assume responsibility, implement", "correct": false },
+        { "text": "Assume responsibility, notice, interpret, decide, implement", "correct": false },
+        { "text": "Notice, decide, interpret, implement, assume responsibility", "correct": false }
+      ],
+      "explanation": "Darley and Latane's model specifies five sequential steps: (1) notice the event, (2) interpret it as an emergency, (3) assume personal responsibility, (4) decide how to help, and (5) implement the helping behavior. Failure at any step prevents intervention."
+    },
+    {
+      "id": "ch12-q21",
+      "question": "Groupthink is most likely to occur when:",
+      "options": [
+        { "text": "Group members have diverse backgrounds and openly disagree", "correct": false },
+        { "text": "The group values consensus over critical evaluation of alternatives", "correct": true },
+        { "text": "An external authority figure imposes a decision on the group", "correct": false },
+        { "text": "Group members use the central route to evaluate ideas", "correct": false }
+      ],
+      "explanation": "Groupthink occurs when the desire for group harmony and consensus overrides critical thinking. Group members suppress dissent, ignore contradictory evidence, and develop an illusion of invulnerability, leading to poor decisions."
+    },
+    {
+      "id": "ch12-q22",
+      "question": "Self-presentation strategies include all of the following EXCEPT:",
+      "options": [
+        { "text": "Self-promotion and ingratiation", "correct": false },
+        { "text": "Intimidation and exemplification", "correct": false },
+        { "text": "Reciprocal altruism and diffusion of responsibility", "correct": true },
+        { "text": "Supplication", "correct": false }
+      ],
+      "explanation": "Self-presentation strategies include self-promotion, ingratiation, intimidation, exemplification, and supplication. Reciprocal altruism and diffusion of responsibility are concepts from prosocial behavior and the bystander effect, not impression management strategies."
+    },
+    {
+      "id": "ch12-q23",
+      "question": "Implicit prejudice differs from explicit prejudice in that implicit prejudice:",
+      "options": [
+        { "text": "Is always expressed through discriminatory behavior", "correct": false },
+        { "text": "Operates outside of conscious awareness and can be measured by tests like the IAT", "correct": true },
+        { "text": "Only affects people who openly endorse discriminatory attitudes", "correct": false },
+        { "text": "Is easier to change through education than explicit prejudice", "correct": false }
+      ],
+      "explanation": "Implicit prejudice operates below conscious awareness and can exist even in people who explicitly endorse egalitarian values. The Implicit Association Test (IAT) measures these automatic associations that individuals may not be aware of holding."
+    },
+    {
+      "id": "ch12-q24",
+      "question": "Deindividuation increases the likelihood of aggression because it:",
+      "options": [
+        { "text": "Increases self-awareness and personal accountability", "correct": false },
+        { "text": "Reduces self-awareness and individual accountability, especially in groups or when anonymous", "correct": true },
+        { "text": "Strengthens the superego's control over the id", "correct": false },
+        { "text": "Enhances empathic concern for potential victims", "correct": false }
+      ],
+      "explanation": "Deindividuation is the loss of self-awareness and individual accountability that occurs in crowds or when anonymous. This reduction in personal responsibility and self-monitoring can unleash aggressive behavior that individuals would normally suppress."
+    }
+  ],
+  "passThreshold": 80
+}

@@ -1,0 +1,10 @@
+{
+  "chapterId": 11,
+  "weekNum": 11,
+  "title": "Theories of Personality: Which Perspective Best Explains Who We Are?",
+  "prompt": "This chapter introduced multiple theoretical perspectives on personality, including psychodynamic, humanistic, trait, learning, and biological approaches. Choose the perspective you find most convincing for explaining personality and argue for its strengths using a specific real-world example (from your own life or a public figure). Then, identify one limitation of your chosen perspective and explain how a different theory might address that weakness. Your response should demonstrate understanding of at least two different perspectives and their key concepts.",
+  "requirements": {
+    "initialPost": { "minWords": 150, "maxWords": 200, "dueDay": "Wednesday", "dueTime": "11:59 PM ET" },
+    "replies": { "count": 2, "minWords": 75, "maxWords": 100, "dueDay": "Sunday", "dueTime": "11:59 PM ET" }
+  }
+}

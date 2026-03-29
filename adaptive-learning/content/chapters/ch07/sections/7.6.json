@@ -1,0 +1,59 @@
+{
+  "sectionId": "7.6",
+  "chapterId": 7,
+  "title": "The Source of Intelligence",
+  "learningObjectives": [
+    "Evaluate the relative contributions of genetics and environment to intelligence",
+    "Describe key research methods used to study the heritability of intelligence, including twin and adoption studies",
+    "Discuss how socioeconomic factors, education, and culture influence intellectual development and test performance"
+  ],
+  "keyTerms": [
+    {
+      "term": "Nature versus nurture",
+      "definition": "The longstanding debate about the relative contributions of genetic inheritance (nature) and environmental factors (nurture) to human traits such as intelligence."
+    },
+    {
+      "term": "Heritability",
+      "definition": "A statistical estimate of the proportion of variation in a trait within a population that is attributable to genetic differences among individuals."
+    },
+    {
+      "term": "Range of reaction",
+      "definition": "The concept that genes establish a range of possible outcomes for a trait, with the environment determining where within that range the individual falls."
+    },
+    {
+      "term": "Stereotype threat",
+      "definition": "The situational anxiety experienced when a person is at risk of confirming a negative stereotype about their social group, which can impair performance."
+    },
+    {
+      "term": "Growth mindset",
+      "definition": "The belief that intelligence and abilities can be developed through effort, learning, and persistence, as opposed to a fixed mindset that views these traits as innate and unchangeable."
+    }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "Genetics and Intelligence",
+      "body": "The question of where intelligence comes from has been one of the most contentious debates in psychology. The **nature versus nurture** debate asks whether intelligence is primarily determined by our genes or shaped by our environment. Modern research makes clear that the answer is both -- genes and environment interact in complex ways to produce individual differences in intelligence.\n\n**Heritability** estimates suggest that genetic factors account for approximately 50-80% of the variation in intelligence within a population. This evidence comes primarily from twin studies and adoption studies. Identical twins (who share 100% of their genes) show more similar IQ scores than fraternal twins (who share about 50%), even when identical twins are raised in different environments. Adopted children's IQ scores tend to correlate more strongly with their biological parents' scores than with their adoptive parents' scores, particularly as the children grow older.\n\nHowever, it is crucial to understand what heritability does and does not mean. A heritability estimate of 0.70 does not mean that 70% of any individual's intelligence is genetic. It means that 70% of the variation in IQ scores within a particular population can be attributed to genetic differences. Heritability is a population-level statistic, not an individual one. Furthermore, heritability estimates can change depending on the environment. In highly uniform environments (where everyone has similar opportunities), genetic differences account for more of the variation; in highly unequal environments, environmental factors play a larger role."
+    },
+    {
+      "type": "concept",
+      "title": "Environmental Influences and the Interaction of Nature and Nurture",
+      "body": "Environmental factors have a powerful influence on intellectual development. Nutrition, access to education, socioeconomic status, exposure to environmental toxins (such as lead), parenting practices, and cultural values all affect cognitive development. Children raised in impoverished environments with limited stimulation tend to score lower on IQ tests, while enrichment programs can produce meaningful gains, particularly when implemented early in life.\n\nThe concept of **range of reaction** helps reconcile the nature-nurture debate. Genes do not determine a fixed level of intelligence; instead, they establish a range of possible outcomes. A child born with genetic potential for high intelligence may not reach that potential if raised in a deprived environment, while a supportive, enriching environment can help a child maximize their genetic potential. This means that both genes and environment are necessary components of the full picture.\n\n**Stereotype threat**, identified by Claude Steele and Joshua Aronson, demonstrates how social and psychological factors can affect test performance. When members of a negatively stereotyped group are reminded of that stereotype before taking a test, their performance tends to suffer -- not because of any lack of ability, but because of the anxiety and cognitive load created by the awareness of the stereotype. This finding has important implications for understanding group differences in test scores and for designing fairer testing environments.\n\nCarol Dweck's research on **growth mindset** versus fixed mindset further illustrates the role of beliefs and environment. Students who believe that intelligence can be developed through effort (growth mindset) tend to embrace challenges, persist through difficulties, and ultimately achieve more than students who believe intelligence is a fixed trait. This research suggests that the way we think about intelligence itself can influence intellectual outcomes."
+    },
+    {
+      "type": "example",
+      "title": "The Interaction of Genes and Environment",
+      "body": "Consider two children born with similar genetic potential for cognitive ability. One is raised in a home with abundant books, stimulating conversation, good nutrition, and access to quality schools. The other grows up in poverty, with limited educational resources and exposure to environmental stressors. Despite their similar genetic endowments, these children are likely to develop very different IQ scores -- illustrating the **range of reaction** concept.\n\nThe **Flynn effect** provides population-level evidence for environmental influence. The steady rise in IQ scores over generations cannot be explained by genetic changes (which occur far too slowly) and instead points to improvements in nutrition, education, and environmental complexity. This effect reminds us that intelligence, as measured by tests, is not fixed but is responsive to the conditions in which people develop."
+    },
+    {
+      "type": "summary",
+      "body": "Intelligence results from the complex interplay of genetic and environmental factors. Twin and adoption studies demonstrate significant genetic influence, but heritability estimates are population-level statistics that do not determine individual outcomes. Environmental factors including nutrition, education, socioeconomic conditions, and cultural context powerfully shape cognitive development. The range of reaction concept, stereotype threat research, and growth mindset findings all demonstrate that genes set possibilities while environments determine which possibilities are realized."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-7.6",
+    "prompt": "How might understanding the concepts of range of reaction, stereotype threat, and growth mindset change the way schools approach student assessment and academic support? Propose at least two specific changes a school could implement based on these research findings, and explain the psychological reasoning behind each change.",
+    "minWords": 100,
+    "rubric": "A strong response accurately defines at least two of the three concepts (range of reaction, stereotype threat, growth mindset), proposes specific and actionable school changes grounded in these concepts, provides clear psychological reasoning connecting each proposed change to the underlying research, and demonstrates understanding of how environment interacts with genetic potential."
+  }
+}

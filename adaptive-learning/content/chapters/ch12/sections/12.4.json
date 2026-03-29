@@ -1,0 +1,45 @@
+{
+  "sectionId": "12.4",
+  "chapterId": 12,
+  "title": "Conformity, Compliance, and Obedience",
+  "learningObjectives": [
+    "Distinguish between conformity, compliance, and obedience",
+    "Describe the key findings of Asch's conformity experiments and Milgram's obedience studies",
+    "Identify the factors that increase or decrease conformity and obedience"
+  ],
+  "keyTerms": [
+    { "term": "Conformity", "definition": "The tendency to change behavior or beliefs to match those of the group, even without a direct request." },
+    { "term": "Compliance", "definition": "Changing behavior in response to a direct request from another person." },
+    { "term": "Obedience", "definition": "Changing behavior in response to a command from an authority figure." },
+    { "term": "Informational social influence", "definition": "Conformity that results from accepting information from others as evidence about reality, particularly in ambiguous situations." },
+    { "term": "Normative social influence", "definition": "Conformity that results from the desire to be liked and accepted by the group." },
+    { "term": "Groupthink", "definition": "A phenomenon in which the desire for group consensus overrides realistic appraisal of alternatives, leading to poor decision-making." }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "Conformity and Social Influence",
+      "body": "Social influence takes many forms. **Conformity** occurs when individuals change their behavior or beliefs to match those of the group, even when no direct request has been made. **Compliance** involves changing behavior in response to a direct request. **Obedience** involves changing behavior in response to a command from an authority figure. Each represents a different level of social pressure.\n\nSolomon Asch's classic conformity experiments (1950s) demonstrated the power of group pressure. Participants were asked to judge which of three comparison lines matched a standard line -- a task with an obvious correct answer. However, the other \"participants\" (who were actually confederates) unanimously gave an incorrect answer on critical trials. Remarkably, about 75% of participants conformed to the clearly incorrect group judgment at least once, and the overall conformity rate was approximately 37%.\n\nWhy do people conform? Two primary mechanisms have been identified. **Normative social influence** occurs when people conform to be liked and accepted by the group -- they fear rejection or ridicule. **Informational social influence** occurs when people conform because they genuinely believe the group may be right, especially in ambiguous or unfamiliar situations. Asch found that conformity increased with group size (up to a point), decreased when the participant had an ally, and decreased when participants could respond privately rather than publicly."
+    },
+    {
+      "type": "concept",
+      "title": "Obedience and the Milgram Experiments",
+      "body": "Stanley Milgram's obedience experiments (1960s) are among the most famous and controversial studies in psychology. Participants were instructed by an authority figure (the experimenter) to administer what they believed were increasingly powerful electric shocks to another person (actually a confederate) whenever that person answered a question incorrectly. Despite hearing cries of pain and pleas to stop, approximately 65% of participants obeyed the experimenter's instructions all the way to the maximum voltage.\n\nMilgram identified several factors that influenced obedience levels. Obedience increased when the authority figure was physically present and perceived as legitimate, when the victim was in a separate room, and when no other participants modeled disobedience. Obedience decreased when the authority figure was absent, when the participant had to physically touch the victim, and when other \"participants\" refused to continue.\n\nThese findings have profound implications for understanding real-world atrocities. Milgram conducted his research partly to understand how ordinary people could participate in the Holocaust. His results suggest that obedience to authority is a deeply ingrained social behavior and that ordinary individuals can be led to cause harm under the right situational pressures.\n\n**Groupthink**, a concept developed by Irving Janis, describes a related phenomenon in which the desire for group harmony and consensus overrides critical thinking and realistic evaluation of alternatives. Groupthink can lead to disastrous decisions when group members suppress dissent, ignore contradictory evidence, and develop an illusion of invulnerability."
+    },
+    {
+      "type": "example",
+      "title": "Conformity in Everyday Life",
+      "body": "Conformity is not limited to laboratory settings. Consider a new employee who notices that all colleagues eat lunch at their desks rather than in the break room. Even though the employee prefers eating in the break room, they begin eating at their desk to fit in -- an example of **normative social influence**. Or consider a student who is unsure about the answer to a question during a class discussion. When several classmates confidently offer the same answer, the student accepts their judgment -- an example of **informational social influence**.\n\nConformity can be beneficial (following traffic laws, adhering to professional dress codes) or harmful (going along with bullying, participating in dangerous hazing rituals). Understanding the mechanisms of conformity helps individuals recognize when social pressure may be leading them to act against their own values or better judgment."
+    },
+    {
+      "type": "summary",
+      "body": "Social influence operates through conformity, compliance, and obedience. Asch's experiments demonstrated that people often conform to incorrect group judgments due to normative and informational social influence. Milgram's studies revealed that most people will obey authority figures even when ordered to harm others. Factors such as group size, presence of allies, proximity to the victim, and legitimacy of the authority figure modulate these effects. Groupthink further illustrates how group dynamics can override individual judgment."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-12.4",
+    "prompt": "Describe a situation from your own experience in which you conformed to group pressure or resisted it. Was the social influence normative (desire to fit in), informational (believing the group might be right), or both? What factors made conformity more or less likely in that situation? Connect your experience to the findings from Asch's or Milgram's research.",
+    "minWords": 100,
+    "rubric": "A strong response should: (1) describe a specific and realistic conformity situation, (2) correctly identify the type of social influence at work (normative vs. informational), (3) discuss factors that increased or decreased conformity pressure, (4) draw a meaningful connection to Asch's or Milgram's research findings, and (5) demonstrate critical reflection rather than simple narrative."
+  }
+}

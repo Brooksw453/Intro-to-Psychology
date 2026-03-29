@@ -1,0 +1,63 @@
+{
+  "sectionId": "7.5",
+  "chapterId": 7,
+  "title": "Measures of Intelligence",
+  "learningObjectives": [
+    "Describe the history of intelligence testing, including the contributions of Binet, Simon, Terman, and Wechsler",
+    "Explain key psychometric concepts including standardization, reliability, validity, and the normal distribution",
+    "Discuss the classification of intellectual disability and giftedness based on IQ scores"
+  ],
+  "keyTerms": [
+    {
+      "term": "Intelligence quotient (IQ)",
+      "definition": "A score derived from standardized intelligence tests, originally calculated as mental age divided by chronological age multiplied by 100."
+    },
+    {
+      "term": "Standardization",
+      "definition": "The process of establishing consistent procedures for administering and scoring a test, as well as creating norms based on a representative sample."
+    },
+    {
+      "term": "Reliability",
+      "definition": "The consistency of a test's results; a reliable test produces stable, consistent scores across repeated administrations."
+    },
+    {
+      "term": "Validity",
+      "definition": "The extent to which a test measures what it claims to measure."
+    },
+    {
+      "term": "Normal distribution",
+      "definition": "A symmetrical, bell-shaped frequency distribution in which most scores cluster around the mean, with fewer scores at the extremes."
+    },
+    {
+      "term": "Flynn effect",
+      "definition": "The well-documented observation that average IQ scores have been rising steadily across generations in many countries."
+    }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "The History of Intelligence Testing",
+      "body": "The modern era of intelligence testing began in the early 1900s when the French government commissioned psychologist Alfred Binet and his colleague Theodore Simon to develop a test that could identify children who needed additional academic support. The resulting Binet-Simon scale assessed children's reasoning, judgment, and problem-solving abilities and introduced the concept of **mental age** -- the level of intellectual functioning typical of a particular chronological age.\n\nLewis Terman of Stanford University adapted the Binet-Simon scale for American use, creating the Stanford-Binet Intelligence Scale. Terman adopted the **intelligence quotient (IQ)**, a concept developed by William Stern, which was originally calculated by dividing a child's mental age by their chronological age and multiplying by 100. A child whose mental age matched their chronological age would have an IQ of 100.\n\nDavid Wechsler later developed a family of intelligence tests -- the Wechsler Adult Intelligence Scale (WAIS), the Wechsler Intelligence Scale for Children (WISC), and the Wechsler Preschool and Primary Scale of Intelligence (WPPSI). Wechsler's tests were innovative because they provided separate scores for verbal comprehension, perceptual reasoning, working memory, and processing speed, rather than a single overall score. Modern IQ scores are calculated using a deviation method, comparing an individual's performance to the distribution of scores in their age group."
+    },
+    {
+      "type": "concept",
+      "title": "Psychometric Properties and Score Interpretation",
+      "body": "For an intelligence test to be useful, it must meet several psychometric criteria. **Standardization** involves administering the test to a large, representative sample to establish norms -- average scores for different groups against which individual scores can be compared. Tests must also be administered and scored in a consistent manner.\n\n**Reliability** refers to the consistency of test results. A reliable test produces similar scores when the same person takes it on different occasions (test-retest reliability) or when different versions of the test are administered (alternate-forms reliability). **Validity** refers to whether the test actually measures what it claims to measure. A test can be reliable without being valid -- it might consistently measure something, but that something might not be intelligence.\n\nIQ scores follow a **normal distribution** (bell curve), with a mean of 100 and a standard deviation of approximately 15. This means that about 68% of people score between 85 and 115, and about 95% score between 70 and 130. Scores below 70 may indicate **intellectual disability** (when accompanied by deficits in adaptive functioning), while scores above 130 are sometimes used to classify individuals as **gifted**.\n\nThe **Flynn effect** refers to the well-documented finding that average IQ scores have been rising steadily -- approximately 3 points per decade -- across many countries over the past century. Proposed explanations include improved nutrition, greater access to education, increased environmental complexity, and greater familiarity with testing. This effect requires periodic renorming of intelligence tests to maintain the mean at 100."
+    },
+    {
+      "type": "example",
+      "title": "IQ Testing in Context",
+      "body": "Consider a child who scores 75 on an IQ test. Does this score alone warrant a diagnosis of intellectual disability? The answer is no. Modern diagnostic criteria require that low IQ scores be accompanied by significant limitations in **adaptive functioning** -- the practical, everyday skills needed for self-care, communication, and social interaction. A person with an IQ of 75 who holds a job, maintains relationships, and lives independently would not be diagnosed with intellectual disability.\n\nSimilarly, a high IQ score does not guarantee success. Research on gifted individuals, including Terman's famous longitudinal study of high-IQ children, found that while high intelligence was associated with many positive outcomes, factors such as motivation, emotional health, and opportunity also played critical roles. This underscores the point that IQ scores capture one important dimension of human capability but not the whole picture."
+    },
+    {
+      "type": "summary",
+      "body": "Intelligence testing has evolved from Binet's original mental age concept through the Stanford-Binet and Wechsler scales to modern assessments that provide multiple subscores. Useful tests must demonstrate standardization, reliability, and validity. IQ scores follow a normal distribution with a mean of 100. The Flynn effect shows that average scores have risen over time. Importantly, IQ scores must be interpreted in context -- alongside adaptive functioning for disability diagnoses and alongside motivational and environmental factors for predicting life outcomes."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-7.5",
+    "prompt": "A school district is considering using a single IQ test score to place students into academic tracks (advanced, regular, or remedial). Drawing on your understanding of reliability, validity, the Flynn effect, and the limitations of IQ testing, argue for or against this policy. What alternative approaches might provide a more complete picture of student ability?",
+    "minWords": 100,
+    "rubric": "A strong response demonstrates understanding of key psychometric concepts (reliability, validity, standardization), identifies specific limitations of using a single IQ score for placement decisions, references the Flynn effect or cultural/socioeconomic factors that affect test performance, and proposes concrete alternatives (multiple assessments, adaptive functioning measures, portfolio-based evaluation) for a more equitable approach."
+  }
+}

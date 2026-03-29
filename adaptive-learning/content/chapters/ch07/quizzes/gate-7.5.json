@@ -1,0 +1,29 @@
+{
+  "sectionId": "7.5",
+  "chapterId": 7,
+  "questions": [
+    {
+      "id": "ch07-q09",
+      "question": "The Flynn effect refers to:",
+      "options": [
+        { "text": "The tendency for IQ scores to decrease with age", "correct": false },
+        { "text": "The observation that identical twins have nearly identical IQ scores", "correct": false },
+        { "text": "The steady rise in average IQ scores across generations over time", "correct": true },
+        { "text": "The difference in IQ scores between males and females", "correct": false }
+      ],
+      "explanation": "The Flynn effect is the well-documented observation that average IQ scores have been rising steadily (approximately 3 points per decade) across many countries. This rise is attributed to environmental factors such as improved nutrition, greater access to education, and increased environmental complexity."
+    },
+    {
+      "id": "ch07-q10",
+      "question": "A test that produces consistent, stable scores when the same person takes it on multiple occasions demonstrates high:",
+      "options": [
+        { "text": "Validity", "correct": false },
+        { "text": "Standardization", "correct": false },
+        { "text": "Heritability", "correct": false },
+        { "text": "Reliability", "correct": true }
+      ],
+      "explanation": "Reliability refers to the consistency of a test's results. Test-retest reliability, specifically, means that the test produces similar scores when the same person takes it on different occasions. A test can be reliable without being valid -- it may consistently measure something that is not actually what it claims to measure."
+    }
+  ],
+  "passThreshold": 80
+}

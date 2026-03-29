@@ -1,0 +1,63 @@
+{
+  "sectionId": "9.2",
+  "chapterId": 9,
+  "title": "Lifespan Theories",
+  "learningObjectives": [
+    "Describe Erikson's theory of psychosocial development and identify the eight stages",
+    "Explain Piaget's theory of cognitive development and the four stages of intellectual growth",
+    "Compare Kohlberg's and Gilligan's theories of moral development"
+  ],
+  "keyTerms": [
+    {
+      "term": "Psychosocial development",
+      "definition": "Erikson's theory that personality develops through eight stages across the lifespan, each involving a central crisis that must be resolved."
+    },
+    {
+      "term": "Schema",
+      "definition": "In Piaget's theory, a mental framework or concept that organizes and interprets information."
+    },
+    {
+      "term": "Assimilation",
+      "definition": "The process of incorporating new information into an existing schema."
+    },
+    {
+      "term": "Accommodation",
+      "definition": "The process of modifying existing schemas or creating new ones to incorporate information that does not fit."
+    },
+    {
+      "term": "Preconventional morality",
+      "definition": "In Kohlberg's theory, the earliest level of moral reasoning based on self-interest and the consequences of actions."
+    },
+    {
+      "term": "Zone of proximal development",
+      "definition": "In Vygotsky's theory, the range of tasks a learner can perform with the guidance of a more skilled partner but not yet independently."
+    }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "Erikson's Psychosocial Development",
+      "body": "Erik Erikson proposed one of the most influential lifespan theories, arguing that **psychosocial development** occurs through eight stages from infancy to old age. Each stage presents a central conflict or crisis that the individual must navigate. Successfully resolving each crisis leads to the development of a psychological virtue, while failure can result in difficulties later in life.\n\nThe eight stages are: (1) **Trust vs. Mistrust** (infancy) -- infants learn whether the world is a safe and reliable place; (2) **Autonomy vs. Shame and Doubt** (toddlerhood) -- children develop a sense of personal control and independence; (3) **Initiative vs. Guilt** (preschool) -- children begin to assert power and control through directing play and social interaction; (4) **Industry vs. Inferiority** (school age) -- children develop competence through academic and social achievements; (5) **Identity vs. Role Confusion** (adolescence) -- teens develop a personal identity and sense of self; (6) **Intimacy vs. Isolation** (young adulthood) -- young adults form intimate, loving relationships; (7) **Generativity vs. Stagnation** (middle adulthood) -- adults contribute to society and guide the next generation; and (8) **Integrity vs. Despair** (late adulthood) -- older adults reflect on their lives with a sense of fulfillment or regret.\n\nErikson's theory was groundbreaking because it extended development across the entire lifespan rather than ending with adolescence, as Freud's theory had."
+    },
+    {
+      "type": "concept",
+      "title": "Piaget's Cognitive Development",
+      "body": "Jean Piaget proposed that children's cognitive development progresses through four qualitatively distinct stages. At each stage, children think about the world in fundamentally different ways.\n\nThe **sensorimotor stage** (birth to about 2 years) involves learning through sensory experiences and motor actions. A key achievement of this stage is **object permanence** -- the understanding that objects continue to exist even when they cannot be seen. The **preoperational stage** (ages 2-7) is characterized by the development of language and symbolic thinking, but children at this stage tend to be **egocentric**, having difficulty seeing things from another person's perspective. They also lack **conservation** -- the understanding that quantity remains the same despite changes in shape or appearance.\n\nIn the **concrete operational stage** (ages 7-11), children develop logical thinking about concrete events. They master conservation and can classify objects into categories. Finally, the **formal operational stage** (age 12 and beyond) brings the ability to think abstractly, reason hypothetically, and engage in systematic problem-solving.\n\nPiaget's core concepts of **schema**, **assimilation**, and **accommodation** describe how children build and modify their mental frameworks. When new information fits an existing **schema**, children use **assimilation** to incorporate it. When new information does not fit, they must use **accommodation** to modify their schemas or create new ones."
+    },
+    {
+      "type": "example",
+      "title": "Moral Development: Kohlberg, Gilligan, and Vygotsky",
+      "body": "Lawrence Kohlberg extended Piaget's work to study moral reasoning, proposing three levels of moral development. At the **preconventional morality** level, individuals make moral decisions based on direct consequences -- avoiding punishment or seeking rewards. At the conventional level, moral reasoning is guided by social rules and the desire to maintain social order. At the postconventional level, individuals reason based on abstract principles of justice and individual rights.\n\nCarol Gilligan challenged Kohlberg's theory, arguing that it was biased toward a male perspective emphasizing justice and rights. Gilligan proposed that women often approach moral decisions from an **ethic of care**, focusing on relationships, compassion, and responsibility to others rather than abstract principles of justice. Her work highlighted how gender and cultural context can shape moral reasoning.\n\nLev Vygotsky offered another important perspective on cognitive development, emphasizing the role of social interaction and culture. His concept of the **zone of proximal development** describes the gap between what a learner can do independently and what they can achieve with guidance from a more knowledgeable partner. This idea has profoundly influenced educational practices, particularly the use of **scaffolding** -- providing temporary support that is gradually removed as the learner becomes more competent."
+    },
+    {
+      "type": "summary",
+      "body": "Major lifespan theories include Erikson's eight-stage psychosocial model spanning infancy through old age, Piaget's four-stage cognitive development theory describing qualitative shifts in thinking, and Kohlberg's and Gilligan's complementary approaches to moral development. Vygotsky's sociocultural perspective emphasizes the role of social interaction and the zone of proximal development in learning."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-9.2",
+    "prompt": "Choose one of Erikson's psychosocial stages that you have personally experienced or observed in someone you know. Describe the central conflict of that stage and explain how it was resolved (or is being resolved). How did the resolution -- or lack of resolution -- of this crisis affect the person's development? Connect your example to at least one other developmental theory discussed in this section (Piaget, Kohlberg, Gilligan, or Vygotsky).",
+    "minWords": 100,
+    "rubric": "A strong response identifies a specific Erikson stage, describes the central conflict accurately, provides a concrete personal or observed example, analyzes how the crisis resolution affected development, and meaningfully connects the example to at least one other developmental theory from the section."
+  }
+}

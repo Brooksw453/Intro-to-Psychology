@@ -1,0 +1,44 @@
+{
+  "sectionId": "14.5",
+  "chapterId": 14,
+  "title": "The Pursuit of Happiness",
+  "learningObjectives": [
+    "Define subjective well-being and its components",
+    "Describe the factors that research has shown contribute to happiness",
+    "Explain the concepts of hedonic adaptation and the set point theory of happiness"
+  ],
+  "keyTerms": [
+    { "term": "Subjective well-being", "definition": "A person's overall evaluation of their life, encompassing life satisfaction, the presence of positive emotions, and the absence of negative emotions." },
+    { "term": "Hedonic adaptation", "definition": "The tendency for people to return to a relatively stable level of happiness despite major positive or negative life events or changes." },
+    { "term": "Positive psychology", "definition": "A branch of psychology founded by Martin Seligman that focuses on studying human strengths, virtues, and factors that contribute to a fulfilling and meaningful life." },
+    { "term": "Flow", "definition": "A state of complete absorption in an activity, described by Mihaly Csikszentmihalyi, in which a person is fully immersed and experiences deep enjoyment and a sense of effortless concentration." },
+    { "term": "Gratitude", "definition": "A positive emotional response involving appreciation for what one has, which research has shown to be strongly associated with greater happiness and well-being." }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "What Makes People Happy?",
+      "body": "**Subjective well-being** — what researchers call happiness — has three components: high life satisfaction, frequent positive emotions, and infrequent negative emotions. The scientific study of happiness has grown substantially under the influence of **positive psychology**, a movement founded by Martin Seligman that shifted psychology's focus from treating mental illness to understanding what makes life worth living.\n\nResearch has identified several factors consistently associated with greater happiness. Strong social relationships are the single strongest predictor of subjective well-being. People who have close friendships, supportive family relationships, and romantic partnerships report significantly higher life satisfaction. Interestingly, the quality of relationships matters far more than the quantity.\n\nIncome and wealth have a more complex relationship with happiness. Research suggests that income increases happiness primarily when it lifts people out of poverty and meets basic needs. Beyond a comfortable middle-class income, additional wealth produces diminishing returns in terms of happiness. This finding challenges the common assumption that more money always leads to more happiness.\n\nOther factors associated with happiness include regular physical exercise, meaningful work, spiritual or religious practice, acts of kindness toward others, and **gratitude** — the practice of appreciating what one has. Studies show that people who regularly express gratitude report higher levels of happiness and lower levels of depression."
+    },
+    {
+      "type": "concept",
+      "title": "Hedonic Adaptation and the Science of Lasting Happiness",
+      "body": "**Hedonic adaptation** is the well-documented tendency for people to return to a baseline level of happiness after experiencing positive or negative life events. Lottery winners, for example, typically return to their pre-winning level of happiness within a year or two. Similarly, people who experience serious injuries often adapt and report higher well-being than expected.\n\nThis phenomenon is related to the **set point theory** of happiness, which proposes that each person has a genetically influenced baseline level of happiness to which they tend to return. Twin studies suggest that approximately 50% of the variation in happiness is attributable to genetic factors, leaving the other 50% influenced by life circumstances and intentional activities.\n\nMihaly Csikszentmihalyi's concept of **flow** provides insight into one pathway to sustained well-being. Flow occurs when a person is completely absorbed in a challenging activity that matches their skill level. During flow, people lose track of time, feel a sense of effortless concentration, and experience deep enjoyment. Activities that produce flow — from playing music to rock climbing to solving complex problems — contribute to long-term happiness because they involve growth and engagement rather than passive pleasure.\n\nResearch by Sonja Lyubomirsky and colleagues suggests that lasting happiness comes from intentional activities — things people choose to do — rather than from changes in circumstances. Practices like expressing gratitude, performing acts of kindness, savoring positive experiences, and pursuing meaningful goals are more effective at producing sustained happiness than acquiring material possessions."
+    },
+    {
+      "type": "example",
+      "title": "Real-World Example: The Gratitude Journal",
+      "body": "In a well-known study, psychologist Robert Emmons found that participants who wrote down five things they were grateful for each week for 10 weeks reported significantly higher levels of happiness and optimism compared to participants who wrote about hassles or neutral events. They also exercised more and had fewer physical complaints. This simple, free intervention demonstrates that intentional activities can meaningfully increase subjective well-being."
+    },
+    {
+      "type": "summary",
+      "body": "Happiness research reveals that strong social relationships are the strongest predictor of well-being, while money has diminishing returns beyond meeting basic needs. Hedonic adaptation means people return to a baseline happiness level after life changes. Lasting happiness comes from intentional activities like gratitude practice, pursuing flow experiences, and meaningful social connections rather than from external circumstances."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-14.5",
+    "prompt": "Based on the happiness research presented in this section, design a personal 'well-being plan' for yourself that includes at least three evidence-based strategies for increasing your subjective well-being. For each strategy, explain the research that supports its effectiveness and how you would implement it in your daily life.",
+    "minWords": 100,
+    "rubric": "Student should propose at least three evidence-based strategies from the section (e.g., gratitude practice, social connection, flow activities, acts of kindness), cite the supporting research for each, and describe realistic implementation plans. Should demonstrate understanding of hedonic adaptation and why intentional activities are more effective than circumstantial changes."
+  }
+}

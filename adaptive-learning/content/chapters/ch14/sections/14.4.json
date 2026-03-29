@@ -1,0 +1,44 @@
+{
+  "sectionId": "14.4",
+  "chapterId": 14,
+  "title": "Regulation of Stress",
+  "learningObjectives": [
+    "Distinguish between problem-focused and emotion-focused coping strategies",
+    "Explain the role of social support in stress management",
+    "Describe evidence-based stress reduction techniques"
+  ],
+  "keyTerms": [
+    { "term": "Coping", "definition": "The cognitive and behavioral efforts used to manage, reduce, or tolerate the demands created by stressful situations." },
+    { "term": "Problem-focused coping", "definition": "A coping strategy aimed at directly addressing the source of stress by changing the stressful situation itself, such as studying harder for an exam or seeking additional resources." },
+    { "term": "Emotion-focused coping", "definition": "A coping strategy aimed at managing the emotional distress caused by a stressor rather than changing the stressor itself, such as seeking emotional support or using relaxation techniques." },
+    { "term": "Social support", "definition": "The perception or reality that one is cared for, has assistance available from others, and is part of a supportive social network, which serves as a powerful buffer against the effects of stress." },
+    { "term": "Perceived control", "definition": "The belief that one has the ability to influence outcomes and manage stressors, which significantly reduces the negative effects of stress on health and well-being." }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "Coping Strategies",
+      "body": "**Coping** refers to the cognitive and behavioral efforts people use to manage stressful demands. Lazarus and Folkman identified two major types of coping strategies.\n\n**Problem-focused coping** involves taking direct action to change or eliminate the source of stress. Examples include creating a study plan for an upcoming exam, seeking professional advice about a financial problem, or having a difficult conversation with someone causing interpersonal conflict. Problem-focused coping is generally most effective when the stressor is controllable — when there are concrete steps that can be taken to address the situation.\n\n**Emotion-focused coping** aims to reduce the emotional distress associated with a stressor without necessarily changing the situation. Strategies include seeking emotional support from friends and family, reframing the situation in more positive terms, meditation, exercise, and journaling. Emotion-focused coping is particularly valuable when stressors are uncontrollable — when direct action cannot change the situation.\n\nResearch suggests that the most resilient individuals use flexible coping, matching their strategy to the demands of the situation. People who rely exclusively on one type of coping tend to have worse outcomes than those who can adaptively shift between problem-focused and emotion-focused approaches."
+    },
+    {
+      "type": "concept",
+      "title": "Social Support and Stress Reduction Techniques",
+      "body": "**Social support** is one of the most powerful buffers against stress. Research consistently shows that people with strong social networks experience less stress, recover more quickly from illness, and live longer than socially isolated individuals. Social support works through multiple mechanisms: providing practical assistance (tangible support), offering advice and information (informational support), and making people feel valued and cared for (emotional support).\n\n**Perceived control** also plays a critical role in stress management. Classic research by Langer and Rodin (1976) found that nursing home residents who were given greater control over simple daily decisions showed improved health, happiness, and even lower mortality rates compared to residents who had decisions made for them. The belief that one can influence outcomes reduces the stress response even when control is limited.\n\nEvidence-based stress reduction techniques include:\n\n- **Mindfulness meditation**: Regular practice reduces cortisol levels and improves emotional regulation\n- **Exercise**: Physical activity reduces stress hormones and stimulates endorphin production\n- **Progressive muscle relaxation**: Systematically tensing and relaxing muscle groups reduces physical tension\n- **Cognitive restructuring**: Changing how one thinks about stressors by challenging irrational or catastrophic thoughts\n- **Biofeedback**: Using technology to monitor physiological responses and learn to control them"
+    },
+    {
+      "type": "example",
+      "title": "Real-World Example: The Power of Social Connection",
+      "body": "The Roseto Effect provides a striking example of social support's protective power. Researchers studying the town of Roseto, Pennsylvania, in the 1960s found that residents had remarkably low rates of heart disease despite having typical risk factors like high-fat diets and smoking. The key difference was their tightly-knit Italian-American community, which provided strong social cohesion and mutual support. As the community became more Americanized and social bonds weakened in later decades, heart disease rates rose to match neighboring towns."
+    },
+    {
+      "type": "summary",
+      "body": "Effective stress management involves matching coping strategies to the situation — problem-focused coping for controllable stressors and emotion-focused coping for uncontrollable ones. Social support and perceived control are powerful stress buffers. Evidence-based techniques like mindfulness, exercise, and cognitive restructuring can significantly reduce the impact of stress."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-14.4",
+    "prompt": "Describe a stressful situation you have faced and analyze the coping strategies you used. Were they primarily problem-focused or emotion-focused? Were they effective? Based on the research presented in this section, what alternative strategies might you try in a similar future situation, and why?",
+    "minWords": 100,
+    "rubric": "Student should correctly identify their coping strategies as problem-focused or emotion-focused, evaluate their effectiveness using concepts from the section, and propose research-based alternatives. Should demonstrate understanding of flexible coping and the match between coping strategy and stressor controllability."
+  }
+}

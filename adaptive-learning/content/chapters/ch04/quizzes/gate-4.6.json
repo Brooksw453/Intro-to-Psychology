@@ -1,0 +1,29 @@
+{
+  "sectionId": "4.6",
+  "chapterId": 4,
+  "questions": [
+    {
+      "id": "ch04-q11",
+      "question": "According to Ernest Hilgard's dissociation theory, what happens during hypnosis?",
+      "options": [
+        { "text": "The person is simply pretending to be hypnotized to please the hypnotist", "correct": false },
+        { "text": "Consciousness splits, with one part responding to suggestions while a hidden observer remains aware of reality", "correct": true },
+        { "text": "The brain enters REM sleep while the person remains physically awake", "correct": false },
+        { "text": "The autonomic nervous system takes over all voluntary functions", "correct": false }
+      ],
+      "explanation": "Hilgard's dissociation theory proposes that hypnosis creates a genuine division in consciousness. One stream of awareness follows the hypnotist's suggestions, while a 'hidden observer' remains aware of what is actually happening, as demonstrated in his ice water pain experiments."
+    },
+    {
+      "id": "ch04-q12",
+      "question": "Research on meditation has shown that regular practice is associated with which of the following brain changes?",
+      "options": [
+        { "text": "Increased amygdala reactivity and heightened stress responses", "correct": false },
+        { "text": "Decreased cortical thickness in attention-related brain regions", "correct": false },
+        { "text": "Reduced amygdala activity and increased cortical thickness in areas related to attention", "correct": true },
+        { "text": "Complete elimination of theta and alpha brain wave activity", "correct": false }
+      ],
+      "explanation": "Neuroscience research has found that regular meditation practice is associated with reduced amygdala activity (less stress reactivity), increased cortical thickness in regions related to attention and sensory processing, and shifts toward alpha and theta brain wave patterns associated with relaxation and focused attention."
+    }
+  ],
+  "passThreshold": 80
+}

@@ -1,0 +1,63 @@
+{
+  "sectionId": "9.3",
+  "chapterId": 9,
+  "title": "Stages of Development",
+  "learningObjectives": [
+    "Describe the major physical, cognitive, and psychosocial milestones of prenatal development and infancy",
+    "Explain the key developmental changes during childhood and adolescence",
+    "Identify the physical, cognitive, and psychosocial changes associated with adulthood and aging"
+  ],
+  "keyTerms": [
+    {
+      "term": "Teratogen",
+      "definition": "Any environmental agent -- such as a drug, virus, or chemical -- that can cause harm to a developing embryo or fetus."
+    },
+    {
+      "term": "Attachment",
+      "definition": "The emotional bond that forms between an infant and a primary caregiver, influencing the child's sense of security."
+    },
+    {
+      "term": "Temperament",
+      "definition": "An individual's innate disposition or behavioral style, including activity level, emotional reactivity, and sociability."
+    },
+    {
+      "term": "Puberty",
+      "definition": "The period of rapid physical maturation involving hormonal and bodily changes that occur primarily during early adolescence."
+    },
+    {
+      "term": "Emerging adulthood",
+      "definition": "A developmental period from roughly ages 18 to 25, characterized by identity exploration, instability, and self-focus."
+    },
+    {
+      "term": "Cognitive decline",
+      "definition": "Age-related decreases in certain mental abilities, particularly processing speed and some forms of memory, that typically begin in middle to late adulthood."
+    }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "Prenatal Development and Infancy",
+      "body": "Human development begins at conception and proceeds through three prenatal stages: the germinal stage (first two weeks), the embryonic stage (weeks 3-8), and the fetal stage (week 9 to birth). During these stages, the developing organism is particularly vulnerable to **teratogens** -- environmental agents such as alcohol, certain medications, infections, and environmental toxins that can cause birth defects or developmental problems. Fetal alcohol spectrum disorders, for example, result from maternal alcohol consumption during pregnancy and can cause lasting cognitive and behavioral impairments.\n\nAt birth, infants possess a set of reflexes -- automatic, involuntary responses to stimulation -- that serve important survival functions. The rooting and sucking reflexes facilitate feeding, while the grasping reflex promotes physical contact with caregivers. As the brain develops rapidly during the first two years, these reflexes give way to more voluntary and coordinated movements.\n\n**Attachment** -- the emotional bond between infant and caregiver -- is a critical aspect of early psychosocial development. Mary Ainsworth's Strange Situation experiments identified several attachment styles: secure attachment (the child uses the caregiver as a safe base for exploration), avoidant attachment (the child shows little distress at separation), and anxious-ambivalent attachment (the child shows intense distress and difficulty being comforted). Research consistently shows that secure attachment in infancy predicts better social and emotional outcomes later in life.\n\nInfants also differ in **temperament** -- their innate behavioral style. Thomas and Chess identified three broad temperament categories: easy (adaptable, positive mood), difficult (irregular, intense reactions), and slow-to-warm-up (cautious, low intensity). Temperament interacts with parenting style to shape the child's developmental trajectory."
+    },
+    {
+      "type": "concept",
+      "title": "Childhood, Adolescence, and Adulthood",
+      "body": "During childhood, physical growth follows predictable patterns, with the brain reaching about 90% of its adult size by age 5. Cognitive abilities expand dramatically as children progress through Piaget's stages, developing increasingly sophisticated thinking skills. Socially, children learn to navigate peer relationships, develop empathy, and internalize cultural norms and values.\n\nAdolescence begins with **puberty**, the period of rapid physical and sexual maturation triggered by hormonal changes. The brain continues to develop during this period, with the prefrontal cortex -- responsible for planning, decision-making, and impulse control -- not fully maturing until the mid-20s. This developmental lag helps explain why adolescents sometimes engage in risky behavior despite knowing the potential consequences. Psychosocially, adolescence is marked by the search for identity, increased importance of peer relationships, and the gradual development of autonomy from parents.\n\n**Emerging adulthood**, a concept proposed by Jeffrey Arnett, describes the period from roughly ages 18 to 25 as a distinct developmental stage characterized by identity exploration, instability, self-focus, feeling in-between, and a sense of possibilities. This stage has become more prominent in industrialized societies where education is prolonged and marriage and parenthood are delayed.\n\nAdulthood brings continued development in all three domains. Physical abilities generally peak in the 20s and 30s, with gradual declines beginning in middle age. **Cognitive decline** in processing speed and certain memory functions is a normal part of aging, though crystallized intelligence -- accumulated knowledge and vocabulary -- tends to remain stable or even increase throughout adulthood. Psychosocially, adults navigate the challenges of establishing careers, forming families, and eventually reflecting on their life's meaning and legacy."
+    },
+    {
+      "type": "example",
+      "title": "The Aging Brain: Decline and Resilience",
+      "body": "Consider Maria, a 72-year-old retired teacher. She notices that she occasionally struggles to recall names and takes longer to learn new technology than she once did. These changes reflect normal age-related declines in fluid intelligence -- the ability to process new information quickly. However, Maria's vocabulary, teaching expertise, and life wisdom have only grown with age, illustrating the preservation of crystallized intelligence.\n\nResearch on aging reveals that the picture is far more nuanced than simple decline. While some cognitive abilities diminish, older adults often compensate through experience and strategy. Studies of neuroplasticity show that the brain retains the capacity to form new neural connections throughout life, particularly when people remain physically active, socially engaged, and intellectually stimulated. Programs that combine physical exercise with cognitive challenges have been shown to slow or even partially reverse age-related cognitive changes.\n\nMoreover, emotional well-being often improves with age. The socioemotional selectivity theory, proposed by Laura Carstensen, suggests that as people perceive their remaining time as limited, they prioritize emotionally meaningful goals and relationships over acquiring new knowledge or expanding their social networks. This shift helps explain why older adults frequently report greater life satisfaction and emotional stability compared to younger adults."
+    },
+    {
+      "type": "summary",
+      "body": "Development proceeds through prenatal stages, infancy, childhood, adolescence, emerging adulthood, and later adulthood. Key themes include vulnerability to teratogens during prenatal development, the formation of attachment bonds in infancy, identity exploration during adolescence, and the interplay of cognitive decline and resilience during aging. Development in all three domains -- physical, cognitive, and psychosocial -- continues throughout the entire lifespan."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-9.3",
+    "prompt": "Think about a person you know well who is in a different life stage than you (e.g., a grandparent, a young child, or a teenager). Describe at least two specific developmental changes this person is experiencing or has experienced in their current life stage, drawing on the physical, cognitive, and psychosocial domains. How do these changes align with or differ from the normative patterns described in this section? What environmental or cultural factors might be influencing their development?",
+    "minWords": 100,
+    "rubric": "A strong response identifies a specific person and life stage, describes at least two developmental changes across different domains (physical, cognitive, or psychosocial), connects observations to normative patterns from the section content, and considers environmental or cultural influences on development."
+  }
+}

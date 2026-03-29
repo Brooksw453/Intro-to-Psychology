@@ -1,0 +1,71 @@
+{
+  "sectionId": "7.3",
+  "chapterId": 7,
+  "title": "Problem Solving",
+  "learningObjectives": [
+    "Describe common problem-solving strategies including algorithms, heuristics, and trial and error",
+    "Identify barriers to effective problem solving such as mental set, functional fixedness, and confirmation bias",
+    "Explain how biases and heuristics can lead to errors in judgment and decision making"
+  ],
+  "keyTerms": [
+    {
+      "term": "Algorithm",
+      "definition": "A step-by-step problem-solving strategy that guarantees a correct solution if followed precisely."
+    },
+    {
+      "term": "Heuristic",
+      "definition": "A mental shortcut or rule of thumb that allows for quicker decision making but does not guarantee a correct solution."
+    },
+    {
+      "term": "Mental set",
+      "definition": "The tendency to approach a problem in a particular way, often one that has been successful in the past, even when a different approach is needed."
+    },
+    {
+      "term": "Functional fixedness",
+      "definition": "The tendency to think of objects only in terms of their typical functions, preventing creative problem solving."
+    },
+    {
+      "term": "Confirmation bias",
+      "definition": "The tendency to search for, interpret, and remember information that confirms one's preexisting beliefs while ignoring contradictory evidence."
+    },
+    {
+      "term": "Anchoring bias",
+      "definition": "The tendency to rely too heavily on the first piece of information encountered (the anchor) when making decisions."
+    },
+    {
+      "term": "Representativeness heuristic",
+      "definition": "A mental shortcut in which the likelihood of an event is judged based on how closely it matches a prototype or typical case."
+    },
+    {
+      "term": "Availability heuristic",
+      "definition": "A mental shortcut in which the likelihood of an event is judged based on how easily examples come to mind."
+    }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "Strategies for Solving Problems",
+      "body": "When faced with a problem -- a situation in which there is a gap between your current state and a desired goal -- you must select a strategy for finding a solution. Psychologists have identified several common approaches.\n\nAn **algorithm** is a step-by-step procedure that guarantees a solution. Following a recipe exactly is an algorithmic approach to cooking. Mathematical formulas are algorithms. While reliable, algorithms can be time-consuming and impractical for complex or poorly defined problems.\n\nA **heuristic** is a mental shortcut or rule of thumb that simplifies decision making. Heuristics are faster than algorithms but do not guarantee a correct answer. For example, the rule \"buy the cheapest option\" is a heuristic for shopping. It will often lead to a satisfactory result but not always the best one.\n\n**Trial and error** involves trying different solutions until one works. While this approach requires no special knowledge, it can be inefficient. A more sophisticated strategy is **means-ends analysis**, where you identify the difference between your current state and your goal, then take steps to reduce that difference. Working backward from the goal to the starting point is another effective strategy for well-defined problems."
+    },
+    {
+      "type": "concept",
+      "title": "Barriers to Problem Solving and Decision-Making Biases",
+      "body": "Even intelligent people frequently make errors in problem solving and judgment. Several cognitive barriers can prevent effective solutions.\n\n**Mental set** is the tendency to approach a new problem using strategies that worked in the past, even when those strategies are no longer effective. If you always solve a particular type of math problem one way, you may fail to see a simpler method. **Functional fixedness** is a specific type of mental set in which you can only see objects in terms of their traditional uses. The classic example is failing to realize that a coin can be used as a screwdriver when no actual screwdriver is available.\n\n**Confirmation bias** is one of the most pervasive cognitive biases. It is the tendency to seek out, notice, and remember information that confirms what we already believe while ignoring or discounting contradictory evidence. A person who believes a particular diet is effective will remember the times it seemed to work and forget the times it did not.\n\nOther important biases affect judgment and decision making. The **anchoring bias** occurs when the first piece of information we encounter disproportionately influences subsequent judgments. Real estate agents, for example, can be influenced by an arbitrary listing price even when they have independent knowledge of a property's value. The **representativeness heuristic** leads us to judge probability based on resemblance to a prototype rather than actual statistical likelihood. The **availability heuristic** causes us to overestimate the probability of events that are easy to recall -- often because they are vivid, recent, or emotionally charged. This is why people tend to overestimate the risk of airplane crashes (which are dramatic and heavily covered by media) while underestimating the risk of car accidents (which are far more common but less newsworthy)."
+    },
+    {
+      "type": "example",
+      "title": "Heuristics and Biases in Real-World Decisions",
+      "body": "Consider a hiring manager reviewing job applications. The **representativeness heuristic** might lead them to favor a candidate who \"looks the part\" -- who matches their prototype of a successful employee -- over a candidate with stronger qualifications but an unconventional background. **Confirmation bias** might cause the manager to ask questions designed to confirm their initial impression rather than objectively assess each candidate. The **anchoring bias** might cause the first salary number mentioned to dominate the entire negotiation.\n\nThese biases are not signs of incompetence; they are predictable features of human cognition. Understanding them is the first step toward mitigating their effects. Structured interviews, blind resume reviews, and decision checklists are all tools designed to counteract these natural cognitive tendencies in high-stakes situations."
+    },
+    {
+      "type": "summary",
+      "body": "Problem solving involves strategies ranging from guaranteed algorithms to faster but fallible heuristics and trial and error. Cognitive barriers such as mental set, functional fixedness, and confirmation bias can impede effective problem solving. Decision-making biases including anchoring, the representativeness heuristic, and the availability heuristic lead to systematic errors in judgment that can be mitigated through awareness and structured decision-making processes."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-7.3",
+    "prompt": "Describe a real-life decision you have made (or observed someone make) where a cognitive bias such as confirmation bias, anchoring bias, the availability heuristic, or the representativeness heuristic played a role. Explain which bias was at work, how it influenced the decision, and what a more rational decision-making process might have looked like.",
+    "minWords": 100,
+    "rubric": "A strong response identifies a specific real-life decision, correctly names and defines the relevant cognitive bias, clearly explains how the bias influenced the outcome, and proposes a concrete alternative approach that would reduce the bias's influence. The response should demonstrate understanding of why these biases are natural features of human cognition."
+  }
+}

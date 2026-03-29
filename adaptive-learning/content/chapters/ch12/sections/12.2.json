@@ -1,0 +1,44 @@
+{
+  "sectionId": "12.2",
+  "chapterId": 12,
+  "title": "Self-presentation",
+  "learningObjectives": [
+    "Define self-presentation and impression management",
+    "Describe the roles people play and the strategies they use to manage others' impressions",
+    "Explain how social roles and self-monitoring influence self-presentation"
+  ],
+  "keyTerms": [
+    { "term": "Self-presentation", "definition": "The process by which people attempt to control the impressions others form of them." },
+    { "term": "Impression management", "definition": "The conscious or unconscious effort to influence how others perceive you through appearance, behavior, and communication." },
+    { "term": "Social role", "definition": "A set of expected behaviors and obligations associated with a particular position in a social group." },
+    { "term": "Self-monitoring", "definition": "The degree to which individuals regulate their behavior to fit the social situation and the expectations of others." },
+    { "term": "Front stage / back stage", "definition": "Goffman's dramaturgical metaphor describing the difference between the self presented to others (front stage) and the private self (back stage)." }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "Managing Impressions",
+      "body": "**Self-presentation** refers to the process by which people attempt to control the impressions others form of them. Also called **impression management**, this process is a fundamental aspect of social interaction. Whether we are aware of it or not, we constantly adjust our behavior, appearance, and communication to influence how others perceive us.\n\nSociologist Erving Goffman likened social interaction to a theatrical performance. He proposed that people have a **front stage** -- the public persona they display to others -- and a **back stage** -- where they can relax and be themselves without an audience. Just as actors perform different roles depending on the play, people adopt different presentations depending on the social context. You might present yourself as serious and competent in a job interview, warm and approachable at a party, and relaxed and unguarded with close friends.\n\nSelf-presentation strategies can take many forms. **Self-promotion** involves highlighting your competence and achievements. **Ingratiation** involves making yourself likeable through flattery, humor, or doing favors. **Intimidation** involves projecting power to gain compliance. **Exemplification** involves appearing dedicated or morally worthy. **Supplication** involves presenting yourself as helpless to elicit assistance. People typically use different strategies depending on their goals and the social context."
+    },
+    {
+      "type": "concept",
+      "title": "Social Roles and Self-Monitoring",
+      "body": "A **social role** is a set of expected behaviors and obligations associated with a particular position in a group or society. People simultaneously occupy multiple roles -- student, employee, friend, sibling, teammate -- and each role carries expectations about how they should behave. When people transition between roles, they often adjust their self-presentation accordingly.\n\nThe concept of **self-monitoring** describes individual differences in the extent to which people regulate their behavior to fit social expectations. **High self-monitors** are highly attuned to social cues and readily adapt their behavior to match the demands of different situations. They are skilled at reading the room and adjusting their presentation accordingly. **Low self-monitors** are more likely to behave consistently across situations, expressing their true attitudes and feelings regardless of social expectations.\n\nResearch shows that high self-monitors tend to be more successful in occupations that require social flexibility, such as sales, management, and acting. However, they may also be perceived as less authentic. Low self-monitors may be valued for their consistency and genuineness, but they may struggle in situations that require social adaptability.\n\nSelf-presentation is not inherently dishonest. It is a normal and necessary part of social functioning. However, the gap between the presented self and the authentic self can become a source of stress when individuals feel compelled to maintain a facade that conflicts with their genuine identity."
+    },
+    {
+      "type": "example",
+      "title": "Self-Presentation in the Digital Age",
+      "body": "Social media has dramatically expanded the arena for self-presentation. Platforms like Instagram, LinkedIn, and TikTok provide curated stages where individuals carefully construct their public personas. A college student might post photos of social gatherings and travel adventures on Instagram (presenting as fun and popular), maintain a polished professional profile on LinkedIn (presenting as competent and ambitious), and share humorous, unfiltered content with close friends on private accounts.\n\nThis digital impression management parallels Goffman's front stage/back stage distinction but adds new complexities. The permanent, searchable nature of online content means that self-presentation errors are harder to retract. Research has linked excessive social media self-presentation to increased social comparison, anxiety, and diminished well-being, particularly when individuals perceive a growing gap between their curated online persona and their actual lived experience."
+    },
+    {
+      "type": "summary",
+      "body": "Self-presentation is the process of managing the impressions others form of us. People employ various strategies -- self-promotion, ingratiation, intimidation, exemplification, and supplication -- depending on context and goals. Social roles shape behavioral expectations, and self-monitoring describes individual differences in adaptability to social situations. Digital platforms have introduced new dimensions to impression management, with implications for authenticity and well-being."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-12.2",
+    "prompt": "Describe how you engage in self-presentation differently across two distinct social contexts (for example, at work versus with close friends, or in person versus on social media). What impression management strategies do you use in each context? Would you describe yourself as a high or low self-monitor, and what evidence supports your assessment?",
+    "minWords": 100,
+    "rubric": "A strong response should: (1) identify two distinct social contexts, (2) describe specific self-presentation strategies used in each, (3) correctly apply the concept of self-monitoring to their own behavior, (4) provide concrete behavioral evidence for their self-assessment, and (5) demonstrate understanding of why self-presentation varies across situations."
+  }
+}

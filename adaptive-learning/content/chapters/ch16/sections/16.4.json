@@ -1,0 +1,64 @@
+{
+  "sectionId": "16.4",
+  "chapterId": 16,
+  "title": "Substance-Related and Addictive Disorders: A Special Case",
+  "learningObjectives": [
+    "Distinguish between substance use disorder and recreational substance use based on diagnostic criteria",
+    "Describe the biological, psychological, and social factors that contribute to substance use disorders",
+    "Explain the major treatment approaches for substance use disorders including detoxification, medication-assisted treatment, and behavioral therapies"
+  ],
+  "keyTerms": [
+    {
+      "term": "Substance use disorder",
+      "definition": "A condition characterized by a problematic pattern of substance use leading to clinically significant impairment or distress, including tolerance, withdrawal, and inability to control use."
+    },
+    {
+      "term": "Tolerance",
+      "definition": "A phenomenon in which increasing amounts of a substance are needed to achieve the desired effect, or the same amount produces a diminished effect."
+    },
+    {
+      "term": "Withdrawal",
+      "definition": "A set of physiological and psychological symptoms that occur when a person who is physically dependent on a substance reduces or stops using it."
+    },
+    {
+      "term": "Detoxification",
+      "definition": "The medically supervised process of safely managing the acute physical symptoms of withdrawal from a substance."
+    },
+    {
+      "term": "Medication-assisted treatment (MAT)",
+      "definition": "The use of FDA-approved medications in combination with counseling and behavioral therapies to treat substance use disorders."
+    },
+    {
+      "term": "Relapse",
+      "definition": "A return to substance use after a period of abstinence, often viewed as a common part of the recovery process rather than a treatment failure."
+    }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "Understanding Substance Use Disorders",
+      "body": "**Substance use disorder** represents a significant public health challenge, affecting millions of individuals and families worldwide. The DSM-5 defines substance use disorder as a problematic pattern of substance use leading to clinically significant impairment or distress. The diagnosis is based on the presence of at least two of eleven criteria within a 12-month period, including impaired control (using more than intended, inability to cut down), social impairment (failing to fulfill obligations, giving up activities), risky use (using in hazardous situations, continued use despite problems), and pharmacological indicators (**tolerance** and **withdrawal**).\n\n**Tolerance** occurs when a person needs increasing amounts of a substance to achieve the desired effect, or when the same amount produces a diminished effect over time. **Withdrawal** refers to the physiological and psychological symptoms that occur when a person who is physically dependent on a substance reduces or stops using it. Withdrawal symptoms vary by substance but can range from uncomfortable (anxiety, irritability, nausea) to life-threatening (seizures from alcohol or benzodiazepine withdrawal).\n\nSubstance use disorders exist on a continuum of severity -- mild (2-3 criteria), moderate (4-5 criteria), and severe (6 or more criteria). This reflects the DSM-5's move away from the older distinction between \"substance abuse\" and \"substance dependence\" toward a single, dimensional diagnosis. It is essential to use person-first language: we say \"a person with a substance use disorder\" rather than \"an addict\" or \"a substance abuser,\" recognizing that the condition is a medical disorder rather than a moral failing."
+    },
+    {
+      "type": "concept",
+      "title": "Treatment Approaches",
+      "body": "Treating substance use disorders requires addressing biological, psychological, and social dimensions. **Detoxification** is often the first step, involving medically supervised management of withdrawal symptoms. While detoxification is necessary for safety, it is not a treatment in itself -- without follow-up care, relapse rates are extremely high.\n\n**Medication-assisted treatment (MAT)** combines FDA-approved medications with counseling and behavioral therapies. For opioid use disorders, medications such as methadone (a long-acting opioid agonist), buprenorphine (a partial agonist), and naltrexone (an antagonist that blocks opioid effects) have demonstrated significant effectiveness in reducing use, preventing overdose, and supporting recovery. For alcohol use disorders, medications including disulfiram (which causes unpleasant effects when alcohol is consumed), naltrexone, and acamprosate can reduce cravings and support abstinence.\n\nBehavioral therapies play a critical role in treatment. **Cognitive-behavioral therapy** helps individuals identify triggers for substance use, develop coping strategies, and modify thinking patterns that maintain the disorder. **Motivational interviewing** is a client-centered approach that helps people resolve ambivalence about change and strengthen their motivation for recovery. **Contingency management** provides tangible rewards for maintaining abstinence, leveraging the principles of operant conditioning.\n\n**Relapse** is common in substance use disorders and should be understood as a part of the recovery process rather than a treatment failure. Research indicates that relapse rates for substance use disorders (40-60%) are comparable to relapse rates for other chronic medical conditions such as diabetes and hypertension. A comprehensive, long-term approach to treatment that includes ongoing support, monitoring, and adjustment of the treatment plan offers the best outcomes."
+    },
+    {
+      "type": "example",
+      "title": "The Opioid Crisis and Treatment Innovation",
+      "body": "The opioid epidemic in the United States illustrates both the devastating impact of substance use disorders and the importance of evidence-based treatment. Beginning in the late 1990s with the overprescription of opioid pain medications, the crisis has evolved to include heroin and synthetic opioids such as fentanyl, resulting in tens of thousands of overdose deaths each year.\n\nResearch consistently demonstrates that medication-assisted treatment for opioid use disorders saves lives. People receiving MAT are significantly less likely to die from overdose, engage in criminal activity, or contract infectious diseases compared to those receiving no treatment or abstinence-only approaches. Despite this evidence, access to MAT remains limited due to regulatory barriers, stigma within the medical profession and the general public, and insufficient funding.\n\nHarm reduction strategies -- such as naloxone distribution (a medication that reverses opioid overdoses), needle exchange programs, and supervised consumption sites -- have also shown effectiveness in reducing deaths and disease transmission. While these approaches are sometimes controversial because they do not require abstinence, they are grounded in the public health principle of meeting people where they are and reducing the most dangerous consequences of substance use while supporting pathways to recovery."
+    },
+    {
+      "type": "summary",
+      "title": "Section Summary",
+      "body": "Substance use disorders involve a problematic pattern of substance use characterized by impaired control, social impairment, risky use, and pharmacological indicators such as tolerance and withdrawal. Treatment typically begins with detoxification, followed by medication-assisted treatment and behavioral therapies such as CBT, motivational interviewing, and contingency management. Relapse is common and should be viewed as part of the recovery process. The opioid crisis highlights the importance of evidence-based treatment and harm reduction strategies. Person-first language is essential when discussing substance use disorders."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-16.4",
+    "prompt": "Some people view substance use disorders as a matter of personal choice or moral weakness, while the medical and psychological community increasingly views them as chronic medical conditions. Based on what you have learned about the biological, psychological, and social factors involved, which perspective do you find more supported by the evidence? How does the way we frame substance use disorders affect the types of treatment and support that people receive?",
+    "minWords": 100,
+    "rubric": "A strong response discusses the biological (tolerance, withdrawal, neurochemical changes), psychological (cognitive patterns, coping mechanisms), and social (environmental triggers, peer influence) factors that support viewing substance use disorders as medical conditions. It should explain how the framing of addiction as a moral failing versus a medical condition affects access to treatment, stigma, and public policy. The response should use person-first, non-stigmatizing language."
+  }
+}

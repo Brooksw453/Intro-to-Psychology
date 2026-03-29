@@ -1,0 +1,44 @@
+{
+  "sectionId": "11.1",
+  "chapterId": 11,
+  "title": "What Is Personality?",
+  "learningObjectives": [
+    "Define personality and explain why it is a central topic in psychology",
+    "Identify the key characteristics that personality theories seek to explain",
+    "Describe the major theoretical perspectives on personality"
+  ],
+  "keyTerms": [
+    { "term": "Personality", "definition": "The long-standing traits and patterns that propel individuals to consistently think, feel, and behave in specific ways." },
+    { "term": "Psychodynamic perspective", "definition": "A theoretical approach that emphasizes unconscious processes and early childhood experiences as determinants of personality." },
+    { "term": "Humanistic perspective", "definition": "A theoretical approach that emphasizes personal growth, free will, and the inherent goodness of people." },
+    { "term": "Trait perspective", "definition": "A theoretical approach that focuses on identifying and measuring stable individual characteristics called traits." },
+    { "term": "Social-cognitive perspective", "definition": "A theoretical approach that emphasizes the interaction of cognitive processes, behavior, and the environment in shaping personality." }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "Defining Personality",
+      "body": "**Personality** refers to the long-standing traits and patterns that propel individuals to consistently think, feel, and behave in specific ways. It is what makes you uniquely you -- the characteristic way you approach the world, interact with others, and respond to challenges. While your mood may shift from hour to hour, your personality remains relatively stable across situations and over time.\n\nPsychologists who study personality are interested in several fundamental questions. Why do people differ from one another? How consistent is behavior across different situations? Can personality change over the lifespan, and if so, how? What makes someone psychologically healthy versus unhealthy? These questions have driven the development of multiple theoretical perspectives, each offering a different lens for understanding human individuality.\n\nPersonality is not merely an academic curiosity. Understanding personality has practical implications for clinical psychology, organizational behavior, education, and everyday social interactions. Employers use personality assessments in hiring decisions, therapists consider personality patterns when developing treatment plans, and researchers study personality to predict outcomes ranging from academic achievement to physical health."
+    },
+    {
+      "type": "concept",
+      "title": "Major Theoretical Perspectives",
+      "body": "Over the past century, psychologists have developed several major frameworks for understanding personality. The **psychodynamic perspective**, pioneered by Sigmund Freud, emphasizes the role of unconscious motives, early childhood experiences, and internal conflicts. Psychodynamic theorists argue that much of what drives behavior lies below conscious awareness.\n\nThe **humanistic perspective**, developed by theorists like Abraham Maslow and Carl Rogers, takes a more optimistic view of human nature. Humanistic psychologists emphasize personal growth, free will, and the striving for self-actualization -- the realization of one's full potential.\n\nThe **trait perspective** focuses on identifying and measuring the stable characteristics that differentiate one person from another. Trait theorists like Gordon Allport, Raymond Cattell, and the developers of the Big Five model seek to describe personality in terms of measurable dimensions.\n\nThe **social-cognitive perspective** emphasizes the role of learning, cognitive processes, and the environment. Theorists like Albert Bandura argue that personality is shaped by the ongoing interaction between a person's thoughts, behaviors, and social context.\n\nFinally, **biological approaches** examine how genetics, brain structures, and neurochemistry contribute to personality differences. Each perspective offers valuable insights, and contemporary psychology recognizes that a comprehensive understanding of personality requires integrating multiple viewpoints."
+    },
+    {
+      "type": "example",
+      "title": "Personality in Everyday Life",
+      "body": "Consider two college students, Mia and Jordan, who are both assigned to lead a group project. Mia immediately takes charge, delegates tasks, and sets firm deadlines. Jordan, in contrast, prefers to build consensus, asks group members for input, and remains flexible about timelines. Their different approaches reflect stable personality patterns that likely show up in many areas of their lives.\n\nA psychodynamic theorist might explore how early family experiences shaped their leadership styles. A humanistic psychologist might ask whether each student feels free to express their authentic self. A trait theorist would measure dimensions like extraversion and conscientiousness to quantify the differences. A social-cognitive theorist might examine how each student's beliefs about their own competence influence their behavior. These varied perspectives illustrate that personality is a rich, multifaceted construct that no single theory can fully explain."
+    },
+    {
+      "type": "summary",
+      "body": "Personality encompasses the enduring patterns of thinking, feeling, and behaving that make each individual unique. Psychologists study personality through multiple theoretical lenses, including psychodynamic, humanistic, trait, social-cognitive, and biological perspectives. Each approach emphasizes different aspects of personality and offers distinct explanations for why people differ from one another."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-11.1",
+    "prompt": "Think about your own personality or that of someone you know well. Choose two of the theoretical perspectives discussed in this section (psychodynamic, humanistic, trait, social-cognitive, or biological) and explain how each would account for a specific personality characteristic you have observed. Which perspective do you find more convincing for explaining this trait, and why?",
+    "minWords": 100,
+    "rubric": "A strong response should: (1) identify a specific personality characteristic, (2) accurately apply two different theoretical perspectives to explain that characteristic, (3) demonstrate understanding of the key assumptions of each perspective, (4) provide a reasoned argument for which perspective is more convincing, and (5) use vocabulary from the section correctly."
+  }
+}

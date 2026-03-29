@@ -1,0 +1,29 @@
+{
+  "sectionId": "3.1",
+  "chapterId": 3,
+  "questions": [
+    {
+      "id": "ch03-q01",
+      "question": "A person carries one dominant allele for brown eyes and one recessive allele for blue eyes. What eye color will this person display?",
+      "options": [
+        { "text": "Blue eyes, because recessive traits are more common", "correct": false },
+        { "text": "Brown eyes, because the dominant allele is expressed when at least one copy is present", "correct": true },
+        { "text": "A blend of brown and blue, because the alleles mix together", "correct": false },
+        { "text": "It depends entirely on environmental factors, not alleles", "correct": false }
+      ],
+      "explanation": "When an individual is heterozygous (carrying one dominant and one recessive allele), the dominant allele determines the phenotype. Brown eyes are dominant over blue, so this person will display brown eyes."
+    },
+    {
+      "id": "ch03-q02",
+      "question": "Identical twins raised in different families show similar levels of introversion. Fraternal twins raised together show less similarity on this trait. What does this pattern most strongly suggest?",
+      "options": [
+        { "text": "Introversion is entirely determined by the environment", "correct": false },
+        { "text": "Shared family environment is the primary cause of introversion", "correct": false },
+        { "text": "Genetic factors make a significant contribution to introversion", "correct": true },
+        { "text": "Introversion cannot be measured reliably in twin studies", "correct": false }
+      ],
+      "explanation": "When identical twins (who share 100% of their DNA) are more similar on a trait than fraternal twins (who share about 50%), even when raised apart, this suggests a strong genetic contribution. The fact that identical twins raised separately are still similar rules out shared environment as the primary explanation."
+    }
+  ],
+  "passThreshold": 80
+}

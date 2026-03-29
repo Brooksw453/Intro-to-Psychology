@@ -1,0 +1,60 @@
+{
+  "sectionId": "2.4",
+  "chapterId": 2,
+  "title": "Ethics",
+  "learningObjectives": [
+    "Describe the key ethical principles that guide psychological research with human participants",
+    "Explain the role of Institutional Review Boards (IRBs) in protecting research participants",
+    "Discuss the ethical considerations involved in animal research in psychology"
+  ],
+  "keyTerms": [
+    {
+      "term": "Informed consent",
+      "definition": "The process of obtaining agreement from research participants after they have been fully informed about the study's purpose, procedures, risks, and their right to withdraw."
+    },
+    {
+      "term": "Debriefing",
+      "definition": "A procedure conducted after a study in which participants are fully informed about the purpose of the research, particularly if any deception was used."
+    },
+    {
+      "term": "Institutional Review Board (IRB)",
+      "definition": "A committee at a research institution that reviews and approves research proposals to ensure ethical treatment of human participants."
+    },
+    {
+      "term": "Deception",
+      "definition": "The deliberate withholding or misrepresentation of information about a study to participants, permitted only when necessary and when participants are debriefed afterward."
+    },
+    {
+      "term": "Confidentiality",
+      "definition": "The ethical obligation to protect participants' personal information and data from being disclosed to unauthorized parties."
+    }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "Ethical Principles for Human Research",
+      "body": "The ethical conduct of psychological research is guided by principles established by the American Psychological Association (APA) and enforced through institutional oversight. These principles were developed in response to historical abuses in research.\n\nThe most fundamental principle is **informed consent** -- participants must be told about the study's purpose, procedures, potential risks, and their right to withdraw at any time without penalty. Participants must voluntarily agree to participate based on this information.\n\n**Confidentiality** requires that participants' personal information and responses remain protected. Researchers must store data securely and typically report findings in ways that prevent individual participants from being identified.\n\nSome psychological research involves **deception** -- deliberately withholding or misrepresenting information about the study's true purpose. Deception is permitted only when the research cannot be conducted without it, when it poses no serious risk, and when participants are fully **debriefed** afterward. During debriefing, the researcher explains the study's true purpose, why deception was necessary, and addresses any concerns the participant may have."
+    },
+    {
+      "type": "example",
+      "title": "Landmark Studies and Ethical Concerns",
+      "body": "Several landmark studies in psychology's history raised profound ethical questions that shaped current standards. **Stanley Milgram's obedience studies** (1960s) deceived participants into believing they were delivering painful electric shocks to another person. While the shocks were not real, many participants experienced significant psychological distress. The study revealed important truths about human obedience to authority but raised serious questions about the ethics of causing participant distress.\n\n**Philip Zimbardo's Stanford Prison Experiment** (1971) assigned college students to roles as \"guards\" or \"prisoners\" in a simulated prison. The study was terminated early because guards became abusive and prisoners showed signs of severe emotional disturbance. The study has been widely criticized for failing to adequately protect participants.\n\nThe **Tuskegee Syphilis Study** (1932-1972), conducted by the U.S. Public Health Service, is perhaps the most infamous example of research ethics violations. Researchers withheld treatment from African American men with syphilis, even after effective treatment became available, in order to study the disease's progression. This study led directly to the establishment of modern research ethics regulations and **Institutional Review Boards (IRBs)**."
+    },
+    {
+      "type": "concept",
+      "title": "Institutional Oversight and Animal Research",
+      "body": "Today, all federally funded research involving human participants must be reviewed and approved by an **Institutional Review Board (IRB)**. The IRB evaluates whether the potential benefits of the research justify any risks to participants, whether informed consent procedures are adequate, and whether participants' rights and welfare are protected.\n\nAnimal research in psychology also follows strict ethical guidelines. The APA requires that animals be treated humanely, that the research serve a clear scientific purpose, and that the potential benefits justify any distress or harm to the animals. **Institutional Animal Care and Use Committees (IACUCs)** review and approve animal research protocols.\n\nAnimal research has contributed to significant advances in understanding learning, memory, brain function, and the development of treatments for psychological disorders. For example, much of what we know about the biological mechanisms of addiction and the effects of early-life stress on brain development comes from carefully controlled animal studies. However, the ethical debate about using animals in research continues, with advocates arguing for reduction, refinement, and replacement of animal use wherever possible.\n\nResearchers have a responsibility to conduct studies that respect the dignity and welfare of all participants -- human and animal -- and to contribute to knowledge in ways that benefit society."
+    },
+    {
+      "type": "summary",
+      "title": "Section Summary",
+      "body": "Ethical principles are central to psychological research. Key principles for human research include informed consent, confidentiality, careful use of deception with debriefing, and the right to withdraw. Historical studies by Milgram, Zimbardo, and the Tuskegee syphilis study highlighted the need for stronger protections. Institutional Review Boards now evaluate all federally funded research. Animal research is governed by separate ethical guidelines and overseen by IACUCs. These safeguards ensure that research benefits society while minimizing harm to participants."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-2.4",
+    "prompt": "Consider Milgram's obedience study, in which participants were deceived into believing they were administering painful electric shocks. Do you think this study should have been conducted? Weigh the scientific value of the findings (what the study revealed about human obedience to authority) against the ethical concerns (participant distress, deception). If you were on an IRB reviewing this study today, what changes would you require, and why?",
+    "minWords": 100,
+    "rubric": "A strong response addresses both the scientific value of Milgram's findings and the ethical concerns, takes a reasoned position on whether the study was justified, proposes specific changes an IRB might require (e.g., enhanced informed consent, right to withdraw, debriefing, reduced deception), and demonstrates understanding of how modern ethical principles balance the pursuit of knowledge with the protection of participants."
+  }
+}

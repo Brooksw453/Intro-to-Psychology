@@ -1,0 +1,64 @@
+{
+  "sectionId": "15.11",
+  "chapterId": 15,
+  "title": "Personality Disorders",
+  "learningObjectives": [
+    "Define personality disorder and describe the general characteristics shared across personality disorders",
+    "Identify the three clusters of personality disorders and provide examples from each",
+    "Discuss the features, causes, and treatment challenges associated with antisocial personality disorder and borderline personality disorder"
+  ],
+  "keyTerms": [
+    {
+      "term": "Personality disorder",
+      "definition": "An enduring pattern of inner experience and behavior that deviates markedly from cultural expectations, is pervasive and inflexible, has an onset in adolescence or early adulthood, and leads to distress or impairment."
+    },
+    {
+      "term": "Antisocial personality disorder",
+      "definition": "A personality disorder characterized by a pervasive pattern of disregard for and violation of the rights of others, including deceitfulness, impulsivity, irritability, and lack of remorse."
+    },
+    {
+      "term": "Borderline personality disorder",
+      "definition": "A personality disorder characterized by instability in interpersonal relationships, self-image, and emotions, along with marked impulsivity."
+    },
+    {
+      "term": "Narcissistic personality disorder",
+      "definition": "A personality disorder characterized by a pervasive pattern of grandiosity, need for admiration, and lack of empathy."
+    },
+    {
+      "term": "Cluster A personality disorders",
+      "definition": "A group of personality disorders characterized by odd or eccentric behavior, including paranoid, schizoid, and schizotypal personality disorders."
+    },
+    {
+      "term": "Cluster B personality disorders",
+      "definition": "A group of personality disorders characterized by dramatic, emotional, or erratic behavior, including antisocial, borderline, histrionic, and narcissistic personality disorders."
+    }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "Understanding Personality Disorders",
+      "body": "A **personality disorder** is an enduring pattern of inner experience and behavior that deviates markedly from the expectations of the individual's culture. This pattern is pervasive across a wide range of personal and social situations, inflexible and longstanding (typically traceable to adolescence or early adulthood), and leads to clinically significant distress or impairment in social, occupational, or other important areas of functioning.\n\nUnlike many psychological disorders that represent a departure from a person's normal functioning, personality disorders are woven into the fabric of who a person is. The patterns are ego-syntonic -- meaning the person may not recognize that their behavior is problematic, instead viewing it as simply \"who they are.\" This makes personality disorders particularly challenging to treat, as individuals may see no need for change.\n\nThe DSM-5 organizes personality disorders into three clusters based on shared characteristics. **Cluster A** personality disorders are characterized by odd or eccentric behavior and include paranoid personality disorder (pervasive distrust and suspiciousness), schizoid personality disorder (detachment from social relationships and restricted emotional expression), and schizotypal personality disorder (eccentric behavior and cognitive or perceptual distortions).\n\n**Cluster B** personality disorders involve dramatic, emotional, or erratic behavior and include antisocial, borderline, histrionic, and narcissistic personality disorders. **Cluster C** personality disorders are characterized by anxious or fearful behavior and include avoidant personality disorder (social inhibition and hypersensitivity to criticism), dependent personality disorder (excessive need to be taken care of), and obsessive-compulsive personality disorder (preoccupation with orderliness and control, which is distinct from OCD)."
+    },
+    {
+      "type": "concept",
+      "title": "Antisocial and Borderline Personality Disorders",
+      "body": "**Antisocial personality disorder (ASPD)** involves a pervasive pattern of disregard for and violation of the rights of others. People with ASPD may repeatedly engage in behaviors that are grounds for arrest, deceive others through lying or manipulation, act impulsively without regard for consequences, display irritability and aggressiveness, show reckless disregard for the safety of themselves and others, behave irresponsibly, and lack remorse for the harm they cause. A diagnosis requires evidence of conduct disorder before age 15 and the individual must be at least 18 years old.\n\nASPD is more prevalent in men than women. Contributing factors include genetic predisposition, neurobiological differences (such as reduced activity in the prefrontal cortex and amygdala, which are involved in impulse control and emotional processing), and environmental factors such as childhood abuse, neglect, and unstable family environments. ASPD is one of the most difficult personality disorders to treat because individuals with ASPD rarely seek treatment voluntarily and may use therapeutic relationships manipulatively.\n\n**Borderline personality disorder (BPD)** is characterized by a pervasive pattern of instability in interpersonal relationships, self-image, and emotions, along with marked impulsivity. People with BPD may make frantic efforts to avoid real or imagined abandonment, alternate between idealizing and devaluing others, experience chronic feelings of emptiness, display intense and inappropriate anger, and engage in impulsive and potentially self-damaging behaviors. Self-harming behaviors and suicidal ideation are common.\n\nBPD is more commonly diagnosed in women, though this may partly reflect gender bias in diagnosis. Childhood trauma, particularly emotional abuse and neglect, is strongly associated with BPD. **Dialectical behavior therapy (DBT)**, developed by Marsha Linehan, has demonstrated significant effectiveness in treating BPD by teaching emotional regulation, distress tolerance, mindfulness, and interpersonal effectiveness skills."
+    },
+    {
+      "type": "example",
+      "title": "The Challenge of Person-First Language in Personality Disorders",
+      "body": "Personality disorders present a unique challenge for person-first language because the disorder is, by definition, embedded in the person's enduring patterns of thinking, feeling, and relating. Nonetheless, it is essential to distinguish between the person and the disorder. Saying \"a person with borderline personality disorder\" rather than \"a borderline\" acknowledges the individual's full humanity beyond their diagnosis.\n\nConsider a person with borderline personality disorder who experiences intense fear of abandonment. When a friend is late to a meeting, the person may interpret this as evidence that the friend does not care about them, triggering overwhelming emotional distress and impulsive behavior such as sending angry messages. Understanding this reaction as a symptom of a disorder -- rather than a character flaw -- allows for compassion and encourages treatment-seeking.\n\n**Narcissistic personality disorder** similarly illustrates the importance of distinguishing clinical diagnosis from casual usage. While the term \"narcissist\" is widely used colloquially to describe anyone who seems self-centered, the clinical disorder involves a pervasive pattern of grandiosity, need for admiration, and lack of empathy that causes significant impairment and distress. Casual misuse of diagnostic terms can trivialize the genuine suffering of people with these conditions and contribute to misunderstanding."
+    },
+    {
+      "type": "summary",
+      "title": "Section Summary",
+      "body": "Personality disorders involve enduring, inflexible patterns of inner experience and behavior that deviate from cultural expectations and cause significant impairment. They are organized into three clusters: odd/eccentric (Cluster A), dramatic/emotional/erratic (Cluster B), and anxious/fearful (Cluster C). Antisocial personality disorder involves a pattern of rights violation and lack of remorse, while borderline personality disorder involves instability in relationships, self-image, and emotions. Both have complex etiologies involving genetic, neurobiological, and environmental factors. Treatment is challenging but possible, particularly with specialized approaches like dialectical behavior therapy for BPD."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-15.11",
+    "prompt": "Terms like \"narcissist\" and \"borderline\" are frequently used in everyday conversation to describe difficult people. How does the casual use of personality disorder labels differ from their clinical meaning? Discuss at least one specific personality disorder and explain why using diagnostic terms loosely can be harmful both to individuals who have these conditions and to public understanding of mental health.",
+    "minWords": 100,
+    "rubric": "A strong response contrasts the casual use of at least one personality disorder term with its clinical definition (including specific diagnostic criteria such as pervasiveness, inflexibility, onset, and impairment). It should explain how casual misuse trivializes genuine suffering, contributes to stigma, and undermines accurate understanding of mental health conditions. The response should use person-first language throughout."
+  }
+}

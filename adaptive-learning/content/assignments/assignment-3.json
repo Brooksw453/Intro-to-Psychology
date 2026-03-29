@@ -1,0 +1,71 @@
+{
+  "assignmentId": 3,
+  "title": "Social & Individual Differences Analysis",
+  "points": 150,
+  "description": "Examine your psychological topic through the lenses of emotion and motivation, personality theory, social psychology, and applied psychology to understand how individual and social factors shape your phenomenon.",
+  "relatedChapters": [10, 11, 12, 13],
+  "context": {
+    "purpose": "This third assignment extends your research portfolio by analyzing how emotional, personality, social, and organizational factors relate to your chosen psychological topic. You'll integrate concepts from Chapters 10-13.",
+    "goals": [
+      "Analyze the emotional and motivational dimensions of your topic",
+      "Apply personality theories to understand individual differences",
+      "Examine social psychological influences on your topic",
+      "Explore applied and organizational psychology connections"
+    ],
+    "whatToExpect": "Each section examines your topic through a different social-psychological lens. The AI coach will help you develop nuanced analysis and integrate multiple perspectives."
+  },
+  "sections": [
+    {
+      "key": "emotion-motivation",
+      "title": "Emotion & Motivation Factors",
+      "instructions": "Analyze the emotional and motivational dimensions of your psychological topic using concepts from Chapter 10. Discuss which theories of motivation (e.g., drive theory, arousal theory, Maslow's hierarchy) help explain behaviors related to your topic. Examine how emotions are involved — consider theories of emotion (James-Lange, Cannon-Bard, Schachter-Singer) and how emotional regulation relates to your phenomenon.",
+      "minWords": 150,
+      "maxWords": 400,
+      "rubric": "Student should apply at least one motivation theory and one emotion theory to their topic, use correct terminology, and provide specific examples of how motivation and emotion interact with their psychological phenomenon. Analysis should go beyond listing theories to show genuine application.",
+      "tips": [
+        "Consider both intrinsic and extrinsic motivation in relation to your topic",
+        "Think about how hunger, arousal, or achievement motivation might be relevant",
+        "Discuss how emotional experiences shape behavior related to your topic"
+      ]
+    },
+    {
+      "key": "personality-factors",
+      "title": "Personality Theory Applications",
+      "instructions": "Apply personality theories from Chapter 11 to your psychological topic. Choose at least two different theoretical perspectives (psychodynamic, trait, humanistic, social-cognitive, or biological) and explain how each would interpret individual differences in experiences related to your topic. Discuss how personality assessment might be used in studying your phenomenon.",
+      "minWords": 150,
+      "maxWords": 400,
+      "rubric": "Student should accurately describe at least two personality theories, correctly apply them to their topic, and discuss how personality differences might explain variations in how people experience or are affected by the psychological phenomenon. Should demonstrate understanding that different theories offer complementary rather than competing explanations.",
+      "tips": [
+        "Compare how Freud vs. a trait theorist vs. a humanist would explain individual differences related to your topic",
+        "Consider the Big Five personality traits and how they might predict responses to your topic",
+        "Think about how personality assessments could be useful in researching your topic"
+      ]
+    },
+    {
+      "key": "social-influences",
+      "title": "Social Psychology Perspectives",
+      "instructions": "Examine the social psychological dimensions of your topic using concepts from Chapter 12. Discuss how social influence (conformity, obedience, persuasion), attitudes, attribution, group dynamics, prejudice, or prosocial behavior relate to your phenomenon. Consider how social context shapes individual experiences with your topic.",
+      "minWords": 150,
+      "maxWords": 400,
+      "rubric": "Student should apply at least two social psychology concepts to their topic, demonstrate understanding of how social context influences individual behavior, reference relevant research or theories (e.g., Milgram, Asch, fundamental attribution error), and show critical thinking about the social dimensions of their phenomenon.",
+      "tips": [
+        "Consider how group pressure, social norms, or conformity affect your topic",
+        "Think about attribution — how do people explain the causes of your phenomenon?",
+        "Discuss whether prejudice, stereotyping, or discrimination play a role"
+      ]
+    },
+    {
+      "key": "applied-context",
+      "title": "Applied & Organizational Connections",
+      "instructions": "Explore how your psychological topic connects to applied settings, particularly the workplace and organizational environments discussed in Chapter 13. Discuss how industrial-organizational psychology concepts (job satisfaction, leadership, employee selection, workplace design, human factors) might intersect with your topic. Consider practical applications of your research topic.",
+      "minWords": 150,
+      "maxWords": 400,
+      "rubric": "Student should make meaningful connections between their topic and applied/organizational psychology, discuss at least one specific workplace or organizational application, and demonstrate understanding of how psychological research translates into real-world practice. Should avoid generic statements about 'psychology in the workplace.'",
+      "tips": [
+        "Think about how your topic affects workplace productivity, satisfaction, or safety",
+        "Consider whether human factors psychology is relevant to your topic",
+        "Discuss how organizations might use psychological research on your topic to improve outcomes"
+      ]
+    }
+  ]
+}

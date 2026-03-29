@@ -1,0 +1,29 @@
+{
+  "sectionId": "3.2",
+  "chapterId": 3,
+  "questions": [
+    {
+      "id": "ch03-q03",
+      "question": "Which part of the neuron receives incoming signals from other neurons?",
+      "options": [
+        { "text": "The axon", "correct": false },
+        { "text": "The myelin sheath", "correct": false },
+        { "text": "The dendrites", "correct": true },
+        { "text": "The soma", "correct": false }
+      ],
+      "explanation": "Dendrites are the branch-like extensions of a neuron that serve as the primary receivers of incoming signals from other neurons. The axon carries signals away from the cell body, and the soma is the cell body containing the nucleus."
+    },
+    {
+      "id": "ch03-q04",
+      "question": "After an action potential reaches the axon terminal, what happens next at the synapse?",
+      "options": [
+        { "text": "The electrical signal jumps directly to the next neuron", "correct": false },
+        { "text": "Neurotransmitters are released from synaptic vesicles into the synaptic gap", "correct": true },
+        { "text": "The myelin sheath transmits the signal chemically", "correct": false },
+        { "text": "Glial cells carry the message to the receiving neuron", "correct": false }
+      ],
+      "explanation": "When an action potential arrives at the axon terminal, it triggers the release of neurotransmitters from synaptic vesicles. These chemical messengers cross the synaptic gap and bind to receptors on the receiving neuron. The signal is electrical within a neuron but chemical between neurons."
+    }
+  ],
+  "passThreshold": 80
+}

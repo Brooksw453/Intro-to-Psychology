@@ -1,0 +1,44 @@
+{
+  "sectionId": "11.4",
+  "chapterId": 11,
+  "title": "Learning Approaches",
+  "learningObjectives": [
+    "Explain how behavioral and social-cognitive theories account for personality development",
+    "Describe Bandura's concept of reciprocal determinism and self-efficacy",
+    "Discuss Rotter's locus of control and Mischel's critique of trait consistency"
+  ],
+  "keyTerms": [
+    { "term": "Reciprocal determinism", "definition": "Bandura's model in which personal factors, behavior, and the environment continuously interact to shape personality." },
+    { "term": "Self-efficacy", "definition": "An individual's belief in their capacity to execute behaviors necessary to produce specific outcomes." },
+    { "term": "Locus of control", "definition": "Rotter's concept describing the degree to which people believe they control outcomes in their lives (internal) or that external forces control outcomes (external)." },
+    { "term": "Social-cognitive theory", "definition": "A perspective emphasizing that personality is formed through observational learning, cognitive processes, and the interplay between the person and the environment." },
+    { "term": "Person-situation debate", "definition": "The ongoing discussion about whether behavior is determined more by stable personality traits or by situational factors." }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "Behavioral Foundations of Personality",
+      "body": "Learning approaches to personality emerged from the behaviorist tradition, which argues that personality is essentially a collection of learned behaviors. B.F. Skinner maintained that personality is nothing more than a set of behavior patterns acquired through **operant conditioning** -- behaviors that have been reinforced tend to recur, while those that have been punished tend to diminish. From this perspective, personality differences arise because different people have different reinforcement histories.\n\nFor example, a child who is consistently praised for being outgoing and sociable is likely to develop extraverted behavior patterns. A child who is rewarded for quiet, independent play may develop more introverted tendencies. The strict behaviorist view does not appeal to internal mental states or unconscious drives; instead, it locates the causes of personality entirely in the external environment.\n\nWhile pure behaviorism offered important insights about how reinforcement shapes behavior, many psychologists felt it was too narrow. It could not easily explain why people sometimes behave consistently across different situations or why individuals interpret and respond to the same environment differently. These limitations gave rise to more sophisticated learning-based approaches that incorporated cognitive processes."
+    },
+    {
+      "type": "concept",
+      "title": "Bandura's Social-Cognitive Theory and Rotter's Locus of Control",
+      "body": "Albert Bandura expanded on behaviorist principles by proposing **social-cognitive theory**, which emphasizes that personality develops through the continuous interaction among personal factors (beliefs, expectations, attitudes), behaviors, and the environment. He called this three-way interaction **reciprocal determinism**.\n\nA central concept in Bandura's theory is **self-efficacy** -- an individual's belief in their ability to succeed in specific situations or accomplish specific tasks. Self-efficacy is not a global personality trait but rather a domain-specific judgment. A student might have high self-efficacy for writing essays but low self-efficacy for solving math problems. Self-efficacy influences which challenges people take on, how much effort they invest, and how long they persist when facing obstacles. It develops through mastery experiences, vicarious learning (observing others succeed), verbal persuasion, and physiological states.\n\n**Julian Rotter** contributed the concept of **locus of control**, which describes the extent to which individuals believe they have control over the outcomes of events in their lives. People with an **internal locus of control** believe their actions determine outcomes, while those with an **external locus of control** believe that luck, fate, or powerful others control what happens to them. Research consistently shows that an internal locus of control is associated with greater motivation, better academic performance, and higher life satisfaction.\n\n**Walter Mischel** challenged traditional trait theories by arguing that behavior is more strongly influenced by situational factors than by stable traits. His work ignited the **person-situation debate**, which continues to shape how psychologists think about the consistency and predictability of personality."
+    },
+    {
+      "type": "example",
+      "title": "Reciprocal Determinism in Practice",
+      "body": "Imagine a student named Alex who believes they are a strong public speaker (personal factor). This belief leads Alex to volunteer for presentations (behavior), which results in positive feedback from instructors and classmates (environment). That positive feedback, in turn, strengthens Alex's confidence in public speaking, creating an upward cycle. This illustrates Bandura's **reciprocal determinism**: the personal belief influenced the behavior, the behavior shaped the environment, and the environment reinforced the personal belief.\n\nNow consider the opposite scenario. A student with low **self-efficacy** for public speaking avoids presentations, receives no practice or positive feedback, and maintains their low confidence. Both examples show how personality is not a fixed internal structure but an ongoing, dynamic process shaped by the interplay of cognition, behavior, and context."
+    },
+    {
+      "type": "summary",
+      "body": "Learning approaches explain personality as the product of behavioral conditioning, observational learning, and cognitive interpretation of experience. Bandura's social-cognitive theory introduces reciprocal determinism and self-efficacy as key mechanisms. Rotter's locus of control captures individual differences in perceived control over life outcomes. Mischel's person-situation debate challenged the assumption that traits alone predict behavior, emphasizing the importance of situational context."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-11.4",
+    "prompt": "Using Bandura's concept of reciprocal determinism, analyze a specific behavior or habit of your own. Identify the personal factors (beliefs, expectations), behaviors, and environmental factors involved, and explain how they interact to reinforce the behavior pattern. How might changing one element of the triad alter the others?",
+    "minWords": 100,
+    "rubric": "A strong response should: (1) correctly define reciprocal determinism, (2) identify a specific personal behavior or habit, (3) clearly distinguish the personal, behavioral, and environmental components, (4) explain how these three components interact to maintain the behavior, and (5) propose a realistic change to one element and predict its effects on the others."
+  }
+}

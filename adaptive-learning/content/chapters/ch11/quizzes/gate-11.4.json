@@ -1,0 +1,29 @@
+{
+  "sectionId": "11.4",
+  "chapterId": 11,
+  "questions": [
+    {
+      "id": "ch11-q07",
+      "question": "Bandura's concept of reciprocal determinism states that personality is shaped by the continuous interaction of:",
+      "options": [
+        { "text": "The id, ego, and superego", "correct": false },
+        { "text": "Personal factors, behavior, and the environment", "correct": true },
+        { "text": "Genetics, temperament, and culture", "correct": false },
+        { "text": "Conscious, preconscious, and unconscious processes", "correct": false }
+      ],
+      "explanation": "Reciprocal determinism is Bandura's model proposing that personal factors (beliefs, expectations), behaviors, and the environment continuously interact to shape personality, with each element influencing the others."
+    },
+    {
+      "id": "ch11-q08",
+      "question": "A person who believes that their success depends primarily on luck and fate rather than their own efforts would be described as having:",
+      "options": [
+        { "text": "High self-efficacy", "correct": false },
+        { "text": "An internal locus of control", "correct": false },
+        { "text": "An external locus of control", "correct": true },
+        { "text": "A strong superego", "correct": false }
+      ],
+      "explanation": "Rotter's concept of locus of control distinguishes between people who believe they control their own outcomes (internal) and those who believe external forces like luck, fate, or powerful others control outcomes (external)."
+    }
+  ],
+  "passThreshold": 80
+}

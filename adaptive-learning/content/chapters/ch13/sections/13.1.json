@@ -1,0 +1,44 @@
+{
+  "sectionId": "13.1",
+  "chapterId": 13,
+  "title": "What Is Industrial and Organizational Psychology?",
+  "learningObjectives": [
+    "Define industrial and organizational psychology",
+    "Describe the history and development of I-O psychology",
+    "Distinguish between industrial and organizational branches of the field"
+  ],
+  "keyTerms": [
+    { "term": "Industrial and organizational (I-O) psychology", "definition": "A branch of psychology that applies the principles of psychology to the workplace, focusing on both the selection and evaluation of employees (industrial) and the social dynamics of work (organizational)." },
+    { "term": "Industrial psychology", "definition": "The branch of I-O psychology that focuses on job analysis, employee selection, training, and performance appraisal." },
+    { "term": "Organizational psychology", "definition": "The branch of I-O psychology that examines job satisfaction, leadership, organizational culture, teamwork, and employee motivation." },
+    { "term": "Human factors psychology", "definition": "The study of how workers interact with tools, equipment, and technology in the workplace, with the goal of improving design for safety and efficiency." },
+    { "term": "Hawthorne effect", "definition": "The tendency for people to change their behavior when they know they are being observed, originally discovered during productivity studies at the Hawthorne Works factory." }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "Defining I-O Psychology",
+      "body": "**Industrial and organizational (I-O) psychology** is a branch of psychology that applies psychological theories, principles, and research findings to workplace settings. Unlike many areas of psychology that focus on understanding individuals in clinical or research settings, I-O psychology directly addresses the practical challenges of the modern workplace.\n\nThe field is broadly divided into two complementary branches. **Industrial psychology**, sometimes called personnel psychology, focuses on identifying the best person for a given job. This includes developing job analyses, creating selection criteria, designing training programs, and evaluating employee performance. The goal is to match the right people to the right positions and help them develop the skills they need to succeed.\n\n**Organizational psychology** takes a broader view, examining the social and psychological dynamics that shape work environments. This includes studying **job satisfaction**, leadership styles, organizational culture, teamwork, and employee motivation. Organizational psychologists seek to understand how workplace environments affect employee well-being and productivity.\n\nA third area, **human factors psychology** (sometimes called ergonomics), studies how workers interact with their tools, equipment, and work environments. Human factors psychologists design systems and interfaces that account for human capabilities and limitations, with the goal of reducing errors and improving safety."
+    },
+    {
+      "type": "concept",
+      "title": "History of I-O Psychology",
+      "body": "The roots of I-O psychology trace back to the early 20th century. Hugo Münsterberg and Walter Dill Scott are often credited as founders of the field. Münsterberg, a German psychologist who worked at Harvard, applied experimental psychology to business problems and published *Psychology and Industrial Efficiency* in 1913.\n\nThe field gained significant momentum during World War I, when psychologists developed the Army Alpha and Army Beta tests to evaluate and place military recruits. Robert Yerkes led this effort, and the success of these large-scale testing programs demonstrated the practical value of psychological assessment.\n\nThe **Hawthorne effect** emerged from studies conducted at the Western Electric Hawthorne Works in the 1920s and 1930s. Researchers, including Elton Mayo, found that workers' productivity increased simply because they knew they were being observed — regardless of the specific changes made to working conditions. This finding shifted attention toward the social and psychological factors that influence work behavior, laying the groundwork for organizational psychology.\n\nDuring World War II, I-O psychologists expanded their work to include training program design, team development, and human factors engineering for military equipment. After the war, these methods were widely adopted by businesses and organizations, establishing I-O psychology as a vital applied field."
+    },
+    {
+      "type": "example",
+      "title": "Real-World Application: Google's People Analytics",
+      "body": "Modern companies like Google employ I-O psychologists and use data-driven approaches — sometimes called \"people analytics\" — to improve hiring, management, and employee satisfaction. Google's Project Oxygen, for example, used data to identify the key behaviors that distinguish effective managers from ineffective ones. They found that being a good coach, empowering teams, and expressing interest in employees' well-being were more important than technical expertise. This research-based approach to management directly reflects the principles of I-O psychology."
+    },
+    {
+      "type": "summary",
+      "body": "Industrial and organizational psychology applies psychological principles to the workplace. The field encompasses industrial psychology (hiring, training, evaluation), organizational psychology (satisfaction, leadership, culture), and human factors psychology (workplace design). The field has grown from early 20th-century intelligence testing to become a vital applied discipline."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-13.1",
+    "prompt": "Think about a job you have held or a workplace you are familiar with. Identify one challenge that could be addressed by an industrial psychologist and one that could be addressed by an organizational psychologist. Explain how each branch of I-O psychology would approach the problem differently, using specific concepts from this section.",
+    "minWords": 100,
+    "rubric": "Student should correctly distinguish between industrial and organizational psychology, identify a realistic workplace problem for each branch, and describe how each would approach the problem using specific I-O concepts (e.g., job analysis, selection, satisfaction, leadership). Strong answers demonstrate understanding that the two branches address different but complementary aspects of work."
+  }
+}

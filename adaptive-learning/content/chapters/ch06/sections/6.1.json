@@ -1,0 +1,55 @@
+{
+  "sectionId": "6.1",
+  "chapterId": 6,
+  "title": "What Is Learning?",
+  "learningObjectives": [
+    "Define learning as a relatively permanent change in behavior due to experience",
+    "Distinguish learned behaviors from reflexes and instincts",
+    "Identify the major types of learning studied in psychology"
+  ],
+  "keyTerms": [
+    {
+      "term": "Learning",
+      "definition": "A relatively permanent change in behavior or knowledge that results from experience."
+    },
+    {
+      "term": "Instinct",
+      "definition": "An unlearned, innate behavior pattern that is characteristic of all members of a species and triggered by specific stimuli."
+    },
+    {
+      "term": "Reflex",
+      "definition": "An unlearned, automatic motor response to a sensory stimulus, such as pulling your hand away from a hot surface."
+    },
+    {
+      "term": "Associative learning",
+      "definition": "Learning that occurs when an organism makes connections between stimuli or between a behavior and its consequences."
+    }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "Defining Learning",
+      "body": "**Learning** is one of the most fundamental topics in psychology. Psychologists define it as a relatively permanent change in behavior or knowledge that results from experience. This definition has several important components. First, learning involves a change -- something must be different after the learning experience compared to before. Second, the change is relatively permanent, which distinguishes learning from temporary states like fatigue or intoxication that might also alter behavior. Third, the change results from experience rather than from biological maturation (such as a baby learning to walk as muscles develop) or from temporary physiological states.\n\nNot all behaviors are learned. **Reflexes** are automatic, involuntary responses to specific stimuli that are hardwired into the nervous system. When your doctor taps below your kneecap and your leg kicks, this knee-jerk reflex does not require learning. Similarly, **instincts** are complex, unlearned behavior patterns that are characteristic of an entire species. Birds building nests and salmon swimming upstream to spawn are instinctive behaviors that do not require prior experience or training.\n\nHowever, the vast majority of human behavior is learned rather than instinctive. Language, social customs, academic knowledge, athletic skills, emotional responses, and even many of our preferences and fears are products of learning. The flexibility that learning provides is one of the great advantages of the human species -- rather than being locked into rigid, predetermined behavior patterns, we can adapt our behavior based on experience."
+    },
+    {
+      "type": "concept",
+      "title": "Types of Learning",
+      "body": "Psychologists have identified several major categories of learning. **Associative learning** involves forming connections between events, stimuli, or behaviors. The two primary forms of associative learning are **classical conditioning** (learning to associate two stimuli so that one comes to produce a response originally triggered by the other) and **operant conditioning** (learning to associate a behavior with its consequences). These will be explored in depth in the following sections.\n\n**Observational learning** involves acquiring new behaviors by watching and imitating others, without direct reinforcement. A child who learns to tie shoes by watching a parent demonstrates observational learning. This type of learning plays a crucial role in human development and cultural transmission.\n\nNon-associative forms of learning also exist. **Habituation** occurs when an organism decreases its response to a repeated, harmless stimulus -- you eventually stop noticing the ticking of a clock. **Sensitization** is the opposite: an increased response to a stimulus after exposure to a particularly strong or threatening event. After a car accident, you might become hyperaware of every squeal of brakes.\n\nUnderstanding these different forms of learning provides a framework for examining how experience shapes behavior, from the simplest reflexive responses to complex social behaviors."
+    },
+    {
+      "type": "example",
+      "title": "Learning in Everyday Life",
+      "body": "Consider your morning routine. You have learned to silence your alarm, navigate to the kitchen, operate a coffee maker, and drive or walk a familiar route -- all without much conscious thought. Each of these skills was once novel and required deliberate effort to acquire. Now they are automatic, demonstrating how deeply learning shapes daily life.\n\nEven emotional responses are often learned. If you once got food poisoning from a specific restaurant, you may feel queasy just thinking about eating there again. This learned aversion illustrates classical conditioning. If you studied hard and received an A on an exam, the positive consequence made you more likely to study hard in the future -- an example of operant conditioning. And if you learned to cook a recipe by watching a cooking show, you were engaging in observational learning.\n\nThese examples illustrate that learning is not confined to classrooms and textbooks. It is a continuous process that shapes virtually every aspect of behavior, from basic survival skills to complex social interactions."
+    },
+    {
+      "type": "summary",
+      "body": "Learning is a relatively permanent change in behavior or knowledge resulting from experience, distinct from reflexes and instincts. Psychologists study several types of learning: associative learning (classical and operant conditioning), observational learning, and non-associative forms like habituation and sensitization. Learning is pervasive in human life, shaping everything from motor skills to emotional responses and social behaviors."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-6.1",
+    "prompt": "Identify three specific behaviors you engage in regularly and classify each as primarily the result of classical conditioning, operant conditioning, or observational learning. For each behavior, explain which type of learning produced it and describe the specific stimuli, consequences, or models that were involved. How does recognizing the learning process behind your behaviors change your understanding of them?",
+    "minWords": 100,
+    "rubric": "A strong response identifies three distinct behaviors, correctly classifies each under the appropriate type of learning (classical conditioning, operant conditioning, or observational learning), provides specific details about the learning process involved (e.g., the unconditioned and conditioned stimuli, reinforcers/punishers, or the model observed), and includes some reflection on how awareness of these learning processes provides insight into one's own behavior."
+  }
+}

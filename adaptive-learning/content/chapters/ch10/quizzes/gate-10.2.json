@@ -1,0 +1,29 @@
+{
+  "sectionId": "10.2",
+  "chapterId": 10,
+  "questions": [
+    {
+      "id": "ch10-q03",
+      "question": "Which hormone is produced by the stomach and signals hunger to the brain?",
+      "options": [
+        { "text": "Leptin", "correct": false },
+        { "text": "Insulin", "correct": false },
+        { "text": "Ghrelin", "correct": true },
+        { "text": "Cortisol", "correct": false }
+      ],
+      "explanation": "Ghrelin is produced in the stomach and stimulates appetite, with levels rising before meals. Leptin, by contrast, is produced by fat cells and signals satiety. Ghrelin and leptin work together as opposing signals to regulate hunger."
+    },
+    {
+      "id": "ch10-q04",
+      "question": "Which eating disorder is characterized by episodes of binge eating followed by compensatory behaviors such as purging?",
+      "options": [
+        { "text": "Anorexia nervosa", "correct": false },
+        { "text": "Bulimia nervosa", "correct": true },
+        { "text": "Binge-eating disorder", "correct": false },
+        { "text": "Avoidant/restrictive food intake disorder", "correct": false }
+      ],
+      "explanation": "Bulimia nervosa involves a cycle of binge eating followed by compensatory behaviors such as self-induced vomiting, laxative use, or excessive exercise. Binge-eating disorder involves bingeing without compensatory behaviors, while anorexia nervosa involves severe caloric restriction."
+    }
+  ],
+  "passThreshold": 80
+}

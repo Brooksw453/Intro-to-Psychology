@@ -1,0 +1,106 @@
+{
+  "sectionId": "full",
+  "chapterId": 6,
+  "questions": [
+    {
+      "id": "ch06-q09",
+      "question": "Which of the following behaviors would a psychologist classify as learned rather than innate?",
+      "options": [
+        { "text": "A newborn baby rooting for a nipple when its cheek is stroked", "correct": false },
+        { "text": "A child flinching when a door slams loudly", "correct": false },
+        { "text": "A student feeling anxious when entering a classroom where they previously failed an exam", "correct": true },
+        { "text": "A person blinking when a puff of air hits their eye", "correct": false }
+      ],
+      "explanation": "The anxiety felt in a specific classroom is a learned response (classical conditioning -- the classroom became associated with the negative experience of failure). The other options are innate reflexes: rooting, startle response, and the blink reflex."
+    },
+    {
+      "id": "ch06-q10",
+      "question": "In classical conditioning, what is the unconditioned response?",
+      "options": [
+        { "text": "A learned reaction to a previously neutral stimulus", "correct": false },
+        { "text": "The naturally occurring reaction to the unconditioned stimulus", "correct": true },
+        { "text": "The neutral stimulus before conditioning takes place", "correct": false },
+        { "text": "The stimulus that naturally triggers a response without learning", "correct": false }
+      ],
+      "explanation": "The unconditioned response (UR) is the unlearned, naturally occurring response to an unconditioned stimulus. In Pavlov's experiment, salivation in response to food is the UR -- it happens automatically without any prior conditioning."
+    },
+    {
+      "id": "ch06-q11",
+      "question": "A conditioned response that reappears after a rest period following extinction is called:",
+      "options": [
+        { "text": "Stimulus generalization", "correct": false },
+        { "text": "Spontaneous recovery", "correct": true },
+        { "text": "Reconditioning", "correct": false },
+        { "text": "Higher-order conditioning", "correct": false }
+      ],
+      "explanation": "Spontaneous recovery is the reappearance of a previously extinguished conditioned response after a rest period. It demonstrates that extinction suppresses rather than eliminates the original conditioned association."
+    },
+    {
+      "id": "ch06-q12",
+      "question": "Taking an aspirin to relieve a headache is an example of which operant conditioning principle?",
+      "options": [
+        { "text": "Positive reinforcement", "correct": false },
+        { "text": "Negative reinforcement", "correct": true },
+        { "text": "Positive punishment", "correct": false },
+        { "text": "Negative punishment", "correct": false }
+      ],
+      "explanation": "Taking aspirin is negatively reinforced because it removes an aversive stimulus (the headache). The removal of pain strengthens the behavior of taking aspirin in the future. Negative reinforcement increases behavior by removing something unpleasant."
+    },
+    {
+      "id": "ch06-q13",
+      "question": "A dog trainer gives a treat every time the dog sits on command. This is an example of:",
+      "options": [
+        { "text": "Variable-ratio reinforcement", "correct": false },
+        { "text": "Fixed-interval reinforcement", "correct": false },
+        { "text": "Continuous reinforcement", "correct": true },
+        { "text": "Variable-interval reinforcement", "correct": false }
+      ],
+      "explanation": "Continuous reinforcement means rewarding every correct response. Giving a treat each time the dog sits on command reinforces every instance of the behavior. This produces rapid learning but also rapid extinction if reinforcement stops."
+    },
+    {
+      "id": "ch06-q14",
+      "question": "In Bandura's later Bobo doll studies, children who watched a model being punished for aggression:",
+      "options": [
+        { "text": "Never learned the aggressive behavior", "correct": false },
+        { "text": "Learned the behavior but were less likely to perform it spontaneously", "correct": true },
+        { "text": "Were more likely to be aggressive than children who saw the model rewarded", "correct": false },
+        { "text": "Could not reproduce the behavior even when offered incentives", "correct": false }
+      ],
+      "explanation": "Bandura's research showed that children who observed a model being punished still learned the aggressive behaviors but were less likely to perform them spontaneously. When later offered incentives, they could reproduce the behaviors, demonstrating the important distinction between learning and performance."
+    },
+    {
+      "id": "ch06-q15",
+      "question": "Shaping involves reinforcing:",
+      "options": [
+        { "text": "Only the final target behavior", "correct": false },
+        { "text": "Every behavior the organism performs", "correct": false },
+        { "text": "Successive approximations of the target behavior", "correct": true },
+        { "text": "The behavior on a variable-ratio schedule", "correct": false }
+      ],
+      "explanation": "Shaping is the process of reinforcing successive approximations -- small steps that progressively approach the desired target behavior. Each step closer to the goal is reinforced, while earlier approximations are no longer reinforced, gradually guiding the organism toward the complete behavior."
+    },
+    {
+      "id": "ch06-q16",
+      "question": "Which concept from Bandura's social cognitive theory describes the interaction among a person's thoughts, their behavior, and their environment?",
+      "options": [
+        { "text": "Vicarious reinforcement", "correct": false },
+        { "text": "Self-efficacy", "correct": false },
+        { "text": "Reciprocal determinism", "correct": true },
+        { "text": "Stimulus generalization", "correct": false }
+      ],
+      "explanation": "Reciprocal determinism is Bandura's concept that personal factors (cognitions, beliefs), behavior, and environmental factors all influence each other bidirectionally. This concept was central to his social cognitive theory and represented a move beyond strict behaviorism."
+    },
+    {
+      "id": "ch06-q17",
+      "question": "A person develops a strong aversion to a food after getting sick just once after eating it. This one-trial learning is an example of:",
+      "options": [
+        { "text": "Operant conditioning through positive punishment", "correct": false },
+        { "text": "A conditioned taste aversion through classical conditioning", "correct": true },
+        { "text": "Observational learning from watching others get sick", "correct": false },
+        { "text": "Habituation to the food stimulus", "correct": false }
+      ],
+      "explanation": "Conditioned taste aversions are a form of classical conditioning in which a food (CS) becomes associated with illness (US) after just a single pairing. This one-trial learning has strong biological/survival value, as organisms that quickly learn to avoid sickness-causing foods have an adaptive advantage."
+    }
+  ],
+  "passThreshold": 80
+}

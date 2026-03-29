@@ -1,0 +1,44 @@
+{
+  "sectionId": "4.1",
+  "chapterId": 4,
+  "title": "What Is Consciousness?",
+  "learningObjectives": [
+    "Define consciousness and describe it as a continuum of awareness",
+    "Distinguish between different levels of awareness including focused attention, daydreaming, and unconscious processing",
+    "Explain the concept of biological rhythms and their influence on consciousness"
+  ],
+  "keyTerms": [
+    { "term": "Consciousness", "definition": "An individual's awareness of internal thoughts, feelings, and external stimuli at any given moment." },
+    { "term": "Biological rhythms", "definition": "Internal cycles of biological activity that occur on a regular basis, including circadian rhythms." },
+    { "term": "Circadian rhythm", "definition": "A roughly 24-hour cycle in physiological processes including the sleep-wake cycle, regulated by the brain's suprachiasmatic nucleus." },
+    { "term": "Suprachiasmatic nucleus (SCN)", "definition": "A small region in the hypothalamus that serves as the body's master biological clock, regulating circadian rhythms based on light exposure." },
+    { "term": "Melatonin", "definition": "A hormone produced by the pineal gland that promotes sleepiness and helps regulate the sleep-wake cycle." }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "The Nature of Consciousness",
+      "body": "**Consciousness** refers to your awareness of your own thoughts, feelings, sensations, and the world around you. Rather than being a simple on-off switch, consciousness exists on a continuum ranging from full, focused awareness to complete unconsciousness.\n\nAt the highest level of awareness, you are fully alert and attentive — for example, when you are carefully following a lecture or navigating a tricky driving situation. Below this level lies a state of automatic processing, where you perform routine tasks (such as walking or brushing your teeth) with minimal conscious attention. Further along the continuum, daydreaming represents a state where your attention drifts away from the immediate environment and turns inward to fantasies and thoughts. Sleep represents a significantly reduced level of consciousness, though the brain remains remarkably active during certain sleep stages. At the far end of the continuum, states such as coma or general anesthesia involve the deepest loss of conscious awareness.\n\nThe study of consciousness has fascinated philosophers and psychologists for centuries. William James, one of the founders of American psychology, described consciousness as a \"stream\" — a continuous, ever-changing flow of thoughts and perceptions rather than a collection of separate, fixed states."
+    },
+    {
+      "type": "concept",
+      "title": "Biological Rhythms and the Circadian Clock",
+      "body": "Your daily patterns of wakefulness and sleepiness are governed by internal **biological rhythms** — predictable cycles of physiological activity that repeat over regular time periods. The most important of these for understanding consciousness is the **circadian rhythm**, an approximately 24-hour cycle that regulates the sleep-wake pattern, body temperature, hormone release, and other functions.\n\nThe circadian rhythm is controlled by the **suprachiasmatic nucleus (SCN)**, a tiny cluster of neurons in the hypothalamus. The SCN acts as the body's master clock, receiving direct input from specialized photoreceptors in the eyes that detect light levels. When light decreases in the evening, the SCN signals the pineal gland to release **melatonin**, a hormone that promotes drowsiness. When light increases in the morning, melatonin production drops, and you feel more alert.\n\nDisruptions to the circadian rhythm can have significant effects on both physical and psychological well-being. Jet lag occurs when rapid travel across time zones puts your internal clock out of sync with the local light-dark cycle. Shift workers who regularly alternate between day and night shifts experience chronic circadian disruption, which has been associated with increased rates of sleep disorders, cardiovascular disease, and depression."
+    },
+    {
+      "type": "example",
+      "title": "Real-World Example: Screen Time and Circadian Disruption",
+      "body": "Modern technology poses a challenge to healthy circadian functioning. The blue light emitted by smartphones, tablets, and computer screens mimics daylight and can suppress **melatonin** production when used in the evening. Research has shown that individuals who use screens extensively before bedtime take longer to fall asleep, experience reduced sleep quality, and feel sleepier the following day. This is because the blue light tricks the **suprachiasmatic nucleus** into acting as though it is still daytime, delaying the natural onset of drowsiness. Many sleep experts now recommend reducing screen exposure for at least 30 minutes before bed or using blue-light filtering settings."
+    },
+    {
+      "type": "summary",
+      "body": "Consciousness is a continuum of awareness ranging from full alertness to deep unconsciousness. Biological rhythms, particularly the circadian rhythm controlled by the suprachiasmatic nucleus, regulate our daily patterns of wakefulness and sleep. Environmental factors such as light exposure and screen use can disrupt these natural cycles, affecting both sleep quality and overall well-being."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-4.1",
+    "prompt": "Reflect on your own daily routines and habits. Describe at least two ways in which your circadian rhythm influences your behavior, mood, or cognitive performance throughout the day. Then identify one habit (e.g., screen use, caffeine consumption, irregular sleep schedule) that might be disrupting your circadian rhythm and explain the biological mechanism behind the disruption.",
+    "minWords": 100,
+    "rubric": "A strong response should: (1) correctly define or reference the circadian rhythm and its biological basis, (2) provide two specific personal examples of how daily rhythms affect behavior or mood, (3) identify a specific disrupting habit, (4) explain the biological mechanism (e.g., melatonin suppression from blue light, SCN signaling), and (5) demonstrate application of section concepts to personal experience."
+  }
+}

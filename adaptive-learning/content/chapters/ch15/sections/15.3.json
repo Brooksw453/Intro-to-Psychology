@@ -1,0 +1,60 @@
+{
+  "sectionId": "15.3",
+  "chapterId": 15,
+  "title": "Perspectives on Psychological Disorders",
+  "learningObjectives": [
+    "Compare the biological, psychological, and sociocultural perspectives on the origins of psychological disorders",
+    "Explain the diathesis-stress model and how it integrates multiple perspectives",
+    "Describe how the biopsychosocial model accounts for the complexity of psychological disorders"
+  ],
+  "keyTerms": [
+    {
+      "term": "Diathesis-stress model",
+      "definition": "A theory proposing that psychological disorders result from the interaction between a predisposition (diathesis) toward a disorder and environmental stressors that trigger it."
+    },
+    {
+      "term": "Biopsychosocial model",
+      "definition": "An integrative approach that considers the interplay of biological, psychological, and social factors in understanding psychological disorders."
+    },
+    {
+      "term": "Supernatural perspective",
+      "definition": "A historical view attributing psychological disorders to demonic possession, divine punishment, or other spiritual forces."
+    },
+    {
+      "term": "Medical model",
+      "definition": "A perspective that views psychological disorders as diseases with biological causes that can be diagnosed, treated, and potentially cured."
+    },
+    {
+      "term": "Psychodynamic perspective",
+      "definition": "An approach that attributes psychological disorders to unconscious conflicts, childhood experiences, and defense mechanisms."
+    }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "Historical and Modern Perspectives",
+      "body": "Throughout history, societies have explained psychological disorders in vastly different ways. The **supernatural perspective**, dominant for much of human history, attributed abnormal behavior to demonic possession, witchcraft, or divine punishment. People exhibiting unusual behaviors were sometimes subjected to exorcisms, imprisoned, or even executed.\n\nThe **medical model** emerged as a more scientific alternative, viewing psychological disorders as diseases with biological causes. Just as a physician diagnoses and treats pneumonia, a psychiatrist diagnoses and treats depression. This perspective emphasizes the role of genetics, neurotransmitter imbalances, brain structure abnormalities, and hormonal factors in the development of disorders. The medical model has been enormously influential in destigmatizing mental illness by framing it as a health condition rather than a moral failing.\n\nThe **psychodynamic perspective**, rooted in the work of Sigmund Freud, attributes psychological disorders to unconscious conflicts, unresolved childhood experiences, and maladaptive defense mechanisms. While many of Freud's specific theories have been revised or abandoned, the broader recognition that early experiences and unconscious processes influence mental health remains influential.\n\nBehavioral and cognitive perspectives focus on learned behaviors and thought patterns. From a behavioral standpoint, disorders develop through classical and operant conditioning -- a person may develop a phobia after a traumatic experience with a specific stimulus. Cognitive perspectives emphasize distorted thinking patterns, such as the tendency to catastrophize or engage in all-or-nothing thinking."
+    },
+    {
+      "type": "concept",
+      "title": "Integrative Models",
+      "body": "Modern psychology recognizes that no single perspective can fully explain the complexity of psychological disorders. The **diathesis-stress model** offers an integrative framework by proposing that disorders result from the interaction between a predisposition (diathesis) and environmental stressors. The diathesis may be biological (such as a genetic vulnerability), psychological (such as a tendency toward negative thinking), or social (such as growing up in an unstable environment). When sufficient stress occurs in the presence of a diathesis, a disorder may develop.\n\nFor example, two people may carry a genetic predisposition for depression. One person, who has strong social support and effective coping skills, may never develop the disorder. The other person, who experiences job loss, isolation, and relationship difficulties, may develop a major depressive episode. The genetic predisposition alone does not determine the outcome -- it is the interaction between vulnerability and environmental factors that matters.\n\nThe **biopsychosocial model** extends this integrative approach by explicitly considering three categories of factors. **Biological factors** include genetics, neurochemistry, brain structure, and physical health. **Psychological factors** include personality traits, coping strategies, cognitive patterns, and emotional regulation abilities. **Social factors** include family dynamics, socioeconomic status, cultural context, and exposure to trauma or adversity. This model recognizes that these three domains constantly interact and influence one another in shaping mental health outcomes."
+    },
+    {
+      "type": "example",
+      "title": "Applying the Biopsychosocial Model",
+      "body": "Consider how the biopsychosocial model might explain the development of an anxiety disorder in a college student. Biologically, the student may have inherited a tendency toward heightened nervous system reactivity from a parent who also experienced anxiety. Psychologically, the student may have developed a habit of catastrophic thinking -- interpreting minor setbacks as major disasters. Socially, the student may be navigating financial pressures, academic demands, and the challenge of living away from family for the first time.\n\nNo single factor causes the anxiety disorder on its own. Rather, the biological vulnerability makes the student more reactive to stress, the cognitive patterns amplify the perceived threat, and the social circumstances provide the stressors that trigger and maintain the anxiety. Effective treatment would ideally address all three domains -- perhaps through medication to reduce physiological arousal, cognitive-behavioral therapy to change maladaptive thought patterns, and practical support to address environmental stressors.\n\nThis integrative approach reflects the current consensus in clinical psychology: psychological disorders are best understood and treated by considering the whole person within their biological, psychological, and social context."
+    },
+    {
+      "type": "summary",
+      "title": "Section Summary",
+      "body": "Multiple perspectives have been used to explain psychological disorders, from supernatural beliefs to modern scientific models. The medical model emphasizes biological causes, while psychodynamic, behavioral, and cognitive perspectives highlight psychological factors. The diathesis-stress model explains how a predisposition interacts with environmental stressors to produce a disorder. The biopsychosocial model provides the most comprehensive framework, integrating biological, psychological, and social factors to account for the complexity of mental health conditions."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-15.3",
+    "prompt": "Choose a psychological disorder you are aware of (such as depression, anxiety, or an eating disorder) and explain how the biopsychosocial model would account for its development. Identify at least one biological, one psychological, and one social factor that might contribute to this disorder. How does this integrative approach differ from relying on a single perspective?",
+    "minWords": 100,
+    "rubric": "A strong response selects a specific disorder and identifies at least one relevant factor from each domain of the biopsychosocial model (biological, psychological, social). The response should demonstrate understanding of how these factors interact rather than simply listing them independently. It should also explain how the integrative approach provides a more complete picture than any single-perspective explanation."
+  }
+}

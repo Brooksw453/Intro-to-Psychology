@@ -1,0 +1,72 @@
+{
+  "sectionId": "8.1",
+  "chapterId": 8,
+  "title": "How Memory Functions",
+  "learningObjectives": [
+    "Describe the three processes of memory: encoding, storage, and retrieval",
+    "Compare the Atkinson-Shiffrin model of memory with the levels of processing framework",
+    "Distinguish between sensory memory, short-term memory, and long-term memory",
+    "Explain the concept of working memory and its role in cognitive processing"
+  ],
+  "keyTerms": [
+    {
+      "term": "Encoding",
+      "definition": "The process of converting sensory information into a form that can be stored in memory."
+    },
+    {
+      "term": "Storage",
+      "definition": "The retention of encoded information in memory over time."
+    },
+    {
+      "term": "Retrieval",
+      "definition": "The process of accessing and bringing stored information into conscious awareness."
+    },
+    {
+      "term": "Sensory memory",
+      "definition": "The brief, initial recording of sensory information (lasting only a fraction of a second to a few seconds) before it is processed further or lost."
+    },
+    {
+      "term": "Short-term memory",
+      "definition": "The memory system that holds a limited amount of information (approximately 7 items) for a brief period (about 15-30 seconds) without rehearsal."
+    },
+    {
+      "term": "Long-term memory",
+      "definition": "The memory system with virtually unlimited capacity that stores information for extended periods, potentially for a lifetime."
+    },
+    {
+      "term": "Working memory",
+      "definition": "An active system for temporarily holding and manipulating information needed for complex cognitive tasks such as reasoning and comprehension."
+    },
+    {
+      "term": "Elaborative rehearsal",
+      "definition": "A memory strategy that involves thinking about the meaning of new information and connecting it to existing knowledge, leading to deeper encoding."
+    }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "The Three Processes of Memory",
+      "body": "Memory is not a single process but involves three interconnected stages: **encoding**, **storage**, and **retrieval**. Understanding each stage helps explain how memories are formed, maintained, and accessed -- and how failures at any stage can lead to forgetting.\n\n**Encoding** is the first step, in which sensory information is transformed into a form that the brain can process and store. Not all information that reaches our senses gets encoded. Attention plays a critical role -- we tend to encode information that we actively attend to while filtering out the rest. Encoding can occur at different levels. Simple maintenance rehearsal (repeating information over and over) produces shallow encoding, while **elaborative rehearsal** -- connecting new information to existing knowledge, thinking about its meaning, or visualizing it -- produces much deeper, more durable encoding.\n\n**Storage** refers to the retention of encoded information over time. As we will see, different memory systems store information for different durations and in different capacities. **Retrieval** is the process of accessing stored information when it is needed. Even when information has been successfully encoded and stored, retrieval can fail -- the experience of having a word \"on the tip of your tongue\" is a common example of a retrieval failure."
+    },
+    {
+      "type": "concept",
+      "title": "The Atkinson-Shiffrin Model and Types of Memory",
+      "body": "The most influential model of memory was proposed by Richard Atkinson and Richard Shiffrin in 1968. Their model describes three distinct memory stores through which information flows.\n\n**Sensory memory** is the initial, very brief recording of sensory information. Visual sensory memory (iconic memory) lasts less than a second, while auditory sensory memory (echoic memory) lasts about 3-4 seconds. Sensory memory has a large capacity but an extremely short duration. Only information that receives attention moves to the next stage.\n\n**Short-term memory (STM)** holds a limited amount of information for a brief period -- typically about 15-30 seconds without rehearsal. George Miller's classic research suggested that STM can hold approximately 7 (plus or minus 2) items. However, the capacity of STM can be expanded through **chunking** -- grouping individual items into larger, meaningful units. For example, the sequence 1-9-4-1-1-7-7-6 is difficult to remember as eight separate digits but becomes much easier when chunked as 1941-1776 (two historically significant years).\n\n**Long-term memory (LTM)** has virtually unlimited capacity and can store information for years or even a lifetime. Information moves from short-term to long-term memory through rehearsal and encoding processes. Long-term memory is further divided into **explicit (declarative) memory** -- conscious memories of facts (semantic memory) and personal experiences (episodic memory) -- and **implicit (nondeclarative) memory** -- unconscious memories such as procedural skills (like riding a bicycle) and conditioned responses.\n\nAlan Baddeley's model of **working memory** expanded on the concept of short-term memory by describing it as an active processing system rather than a passive holding area. Working memory includes a central executive that directs attention, a phonological loop for verbal information, a visuospatial sketchpad for visual and spatial information, and an episodic buffer that integrates information from multiple sources."
+    },
+    {
+      "type": "example",
+      "title": "Memory in Action: Studying for an Exam",
+      "body": "Consider the difference between two study strategies. Student A reads through their notes repeatedly the night before the exam (maintenance rehearsal). Student B spaces their study sessions over several days, creates concept maps connecting new terms to material they already know, and tests themselves with practice questions (**elaborative rehearsal** and retrieval practice).\n\nResearch consistently shows that Student B will remember more. This is because elaborative rehearsal creates deeper encoding by establishing meaningful connections in long-term memory. The spacing effect means that distributed practice is more effective than massed practice (cramming). Self-testing strengthens retrieval pathways, making the information more accessible during the actual exam.\n\nThis example illustrates a practical application of memory research: the way you study matters far more than how long you study. Understanding the difference between shallow and deep processing can transform academic performance."
+    },
+    {
+      "type": "summary",
+      "body": "Memory operates through three processes: encoding (transforming information for storage), storage (retaining information over time), and retrieval (accessing stored information). The Atkinson-Shiffrin model describes three memory stores -- sensory, short-term, and long-term -- each with different capacities and durations. Working memory actively manipulates information for complex tasks. Deeper encoding through elaborative rehearsal produces stronger, more durable memories than shallow maintenance rehearsal."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-8.1",
+    "prompt": "Describe your current study habits in terms of the memory concepts covered in this section. Are you primarily using maintenance rehearsal or elaborative rehearsal? Based on what you have learned about encoding, storage, and retrieval, identify at least two specific changes you could make to your study approach and explain the psychological reasoning behind each change.",
+    "minWords": 100,
+    "rubric": "A strong response accurately describes the student's current study habits using correct memory terminology (encoding, rehearsal types, short-term vs. long-term memory), identifies at least two specific evidence-based changes (such as elaborative rehearsal, spacing, chunking, or retrieval practice), and provides clear psychological reasoning connecting each change to memory processes described in the section."
+  }
+}

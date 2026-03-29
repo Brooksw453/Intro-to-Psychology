@@ -1,0 +1,64 @@
+{
+  "sectionId": "1.2",
+  "chapterId": 1,
+  "title": "History of Psychology",
+  "learningObjectives": [
+    "Describe the contributions of key figures in the history of psychology",
+    "Compare and contrast structuralism, functionalism, and psychoanalysis",
+    "Explain how psychology evolved from philosophy into an independent scientific discipline"
+  ],
+  "keyTerms": [
+    {
+      "term": "Structuralism",
+      "definition": "An early school of psychology focused on breaking down mental processes into their most basic components, primarily through introspection."
+    },
+    {
+      "term": "Introspection",
+      "definition": "A process by which individuals systematically examine and report their own conscious experiences and mental states."
+    },
+    {
+      "term": "Functionalism",
+      "definition": "A school of psychology focused on how mental activities help an organism adapt to its environment, influenced by Darwin's theory of evolution."
+    },
+    {
+      "term": "Psychoanalytic theory",
+      "definition": "Sigmund Freud's theory proposing that behavior is driven by unconscious motivations, desires, and conflicts."
+    },
+    {
+      "term": "Behaviorism",
+      "definition": "A school of psychology that focuses exclusively on observable behavior and rejects the study of unobservable mental processes."
+    },
+    {
+      "term": "Humanism",
+      "definition": "A perspective in psychology that emphasizes free will, personal growth, and the potential for self-actualization."
+    }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "The Birth of Psychology as a Science",
+      "body": "Psychology's roots stretch back to ancient Greek philosophers like Plato and Aristotle, who debated questions about the mind, perception, and human nature. However, psychology did not become a distinct scientific discipline until the late 19th century.\n\nThe pivotal moment came in 1879 when **Wilhelm Wundt** established the first psychology laboratory at the University of Leipzig in Germany. Wundt is widely regarded as the father of experimental psychology. He developed the approach known as **structuralism**, which aimed to identify the fundamental components of conscious experience. His primary research method was **introspection** -- training participants to systematically observe and report their own sensations, feelings, and thoughts in response to stimuli.\n\n**Edward Titchener**, a student of Wundt who brought structuralism to the United States, further refined this approach at Cornell University. However, structuralism faced criticism because introspective reports were inherently subjective and difficult to verify objectively."
+    },
+    {
+      "type": "concept",
+      "title": "Functionalism and the Expansion of Psychology",
+      "body": "In response to structuralism's limitations, **William James** developed **functionalism** at Harvard University. Influenced by Charles Darwin's theory of natural selection, James argued that psychologists should focus not on the structure of consciousness but on its function -- how mental processes help organisms adapt to their environment and survive.\n\nJames's landmark textbook *The Principles of Psychology* (1890) shaped the discipline for decades. Functionalism broadened psychology's scope to include topics like emotion, habit, learning, and individual differences.\n\nMeanwhile, **Sigmund Freud** in Vienna developed **psychoanalytic theory**, proposing that much of human behavior is driven by unconscious desires, memories, and conflicts. Freud's ideas about the unconscious mind, defense mechanisms, and the importance of early childhood experiences were revolutionary and controversial. His method of **psychoanalysis** -- using techniques like free association and dream interpretation -- became the first widely practiced form of psychotherapy."
+    },
+    {
+      "type": "concept",
+      "title": "Behaviorism and Humanism",
+      "body": "In the early 20th century, **John B. Watson** launched the **behaviorism** movement, arguing that psychology should study only observable, measurable behavior -- not consciousness or mental states. Watson believed that the environment shapes behavior through learning processes, famously asserting that he could train any healthy infant to become any type of specialist through proper conditioning.\n\n**B.F. Skinner** became the most influential behaviorist, developing the concept of **operant conditioning** and demonstrating how consequences (rewards and punishments) shape behavior. Behaviorism dominated American psychology for decades.\n\nBy mid-century, some psychologists pushed back against both psychoanalysis and behaviorism. **Carl Rogers** and **Abraham Maslow** championed **humanism**, emphasizing free will, personal growth, and the innate drive toward **self-actualization** -- fulfilling one's greatest potential. Maslow's well-known hierarchy of needs proposed that people must satisfy basic physiological and safety needs before pursuing higher-level needs for belonging, esteem, and self-actualization."
+    },
+    {
+      "type": "summary",
+      "title": "Section Summary",
+      "body": "Psychology evolved from philosophical speculation into an empirical science through the work of key figures. Wundt established the first experimental laboratory and developed structuralism, which sought to identify the basic elements of consciousness through introspection. James proposed functionalism, shifting focus to how mental processes help organisms adapt. Freud's psychoanalytic theory emphasized unconscious motivation. Watson and Skinner advanced behaviorism, restricting psychology to observable behavior. Rogers and Maslow introduced humanism, focusing on personal growth and self-actualization. Each movement addressed perceived limitations of its predecessors and expanded psychology's scope."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-1.2",
+    "prompt": "Choose two of the major schools of thought in psychology's history (structuralism, functionalism, psychoanalysis, behaviorism, or humanism). Compare them by explaining how each would approach understanding a specific behavior, such as why a student procrastinates on studying for an exam. What would each perspective emphasize, and what would each potentially overlook?",
+    "minWords": 100,
+    "rubric": "A strong response selects two distinct perspectives, accurately describes each approach, applies both to the specific behavior example, identifies what each perspective emphasizes and what it might miss, and demonstrates understanding of the historical progression of psychological thought."
+  }
+}

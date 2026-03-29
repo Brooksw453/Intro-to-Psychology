@@ -1,0 +1,29 @@
+{
+  "sectionId": "13.3",
+  "chapterId": 13,
+  "questions": [
+    {
+      "id": "ch13-q05",
+      "question": "According to Herzberg's two-factor theory, which of the following is a motivator factor that actively produces job satisfaction?",
+      "options": [
+        { "text": "Salary", "correct": false },
+        { "text": "Job security", "correct": false },
+        { "text": "Achievement and recognition", "correct": true },
+        { "text": "Working conditions", "correct": false }
+      ],
+      "explanation": "Herzberg distinguished between hygiene factors (salary, security, conditions) that prevent dissatisfaction and motivator factors (achievement, recognition, meaningful work) that actively create satisfaction. Simply removing dissatisfaction does not produce satisfaction."
+    },
+    {
+      "id": "ch13-q06",
+      "question": "A leader who inspires followers by articulating a compelling vision and showing genuine concern for their development is displaying:",
+      "options": [
+        { "text": "Transactional leadership", "correct": false },
+        { "text": "Transformational leadership", "correct": true },
+        { "text": "Theory X management", "correct": false },
+        { "text": "Laissez-faire leadership", "correct": false }
+      ],
+      "explanation": "Transformational leadership involves inspiring and motivating followers to exceed expectations through vision, intellectual stimulation, and genuine concern for followers' development. This contrasts with transactional leadership, which focuses on rewards and consequences."
+    }
+  ],
+  "passThreshold": 80
+}

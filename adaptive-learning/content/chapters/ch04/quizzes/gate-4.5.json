@@ -1,0 +1,29 @@
+{
+  "sectionId": "4.5",
+  "chapterId": 4,
+  "questions": [
+    {
+      "id": "ch04-q09",
+      "question": "Cocaine produces its euphoric effects primarily by:",
+      "options": [
+        { "text": "Enhancing GABA activity and slowing the central nervous system", "correct": false },
+        { "text": "Mimicking endorphins and binding to opioid receptors", "correct": false },
+        { "text": "Blocking the reuptake of dopamine, flooding the synapse with this neurotransmitter", "correct": true },
+        { "text": "Altering serotonin receptors to produce sensory distortions", "correct": false }
+      ],
+      "explanation": "Cocaine is a stimulant that works by blocking the reuptake of dopamine at the synapse. This causes dopamine to accumulate in the synaptic gap, producing intense feelings of euphoria and energy. This mechanism also contributes to cocaine's high addiction potential."
+    },
+    {
+      "id": "ch04-q10",
+      "question": "Tolerance to a psychoactive drug develops because:",
+      "options": [
+        { "text": "The drug becomes less potent over time due to chemical degradation", "correct": false },
+        { "text": "The brain adapts to the drug's presence by adjusting neurotransmitter production or receptor sensitivity", "correct": true },
+        { "text": "The liver stops processing the drug, allowing it to accumulate", "correct": false },
+        { "text": "The person becomes psychologically bored with the drug's effects", "correct": false }
+      ],
+      "explanation": "Tolerance develops as the brain adapts to repeated drug exposure by reducing its own neurotransmitter production, decreasing the number of receptors, or making receptors less sensitive. This means the user needs more of the drug to achieve the same effect."
+    }
+  ],
+  "passThreshold": 80
+}

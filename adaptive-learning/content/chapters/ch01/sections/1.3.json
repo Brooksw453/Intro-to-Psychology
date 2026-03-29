@@ -1,0 +1,64 @@
+{
+  "sectionId": "1.3",
+  "chapterId": 1,
+  "title": "Contemporary Psychology",
+  "learningObjectives": [
+    "Identify the major contemporary perspectives in psychology",
+    "Distinguish between the various subfields and branches of modern psychology",
+    "Explain how diversity and multicultural perspectives have shaped the field"
+  ],
+  "keyTerms": [
+    {
+      "term": "Cognitive psychology",
+      "definition": "The study of mental processes including attention, memory, perception, problem-solving, language, and decision-making."
+    },
+    {
+      "term": "Biopsychology",
+      "definition": "A branch of psychology that analyzes how the brain, neurotransmitters, and other aspects of biology influence behavior and mental processes."
+    },
+    {
+      "term": "Evolutionary psychology",
+      "definition": "A perspective that applies principles of natural selection to explain psychological traits and behaviors as adaptations."
+    },
+    {
+      "term": "Social psychology",
+      "definition": "The scientific study of how individuals' thoughts, feelings, and behaviors are influenced by the actual, imagined, or implied presence of others."
+    },
+    {
+      "term": "Developmental psychology",
+      "definition": "The scientific study of how and why human beings change over the course of their life, from conception through old age."
+    },
+    {
+      "term": "Cross-cultural psychology",
+      "definition": "A branch of psychology that examines how cultural factors influence human behavior and mental processes."
+    }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "Modern Perspectives in Psychology",
+      "body": "Contemporary psychology does not rely on a single theoretical framework. Instead, psychologists draw from multiple perspectives to understand behavior and mental processes.\n\nThe **biological perspective** (also called **biopsychology** or neuroscience) examines how physiology, genetics, and brain chemistry influence behavior. Advances in brain imaging technologies such as fMRI and PET scans have dramatically expanded our understanding of the neural basis of behavior.\n\n**Cognitive psychology** emerged in the 1950s and 1960s as a reaction against behaviorism's refusal to study mental processes. Cognitive psychologists study how people perceive, think, remember, and solve problems. This perspective treats the mind as an information-processing system, somewhat analogous to a computer.\n\n**Evolutionary psychology** applies Darwin's theory of natural selection to behavior, proposing that many psychological traits -- such as fears, mating preferences, and social behaviors -- are adaptations that evolved because they helped our ancestors survive and reproduce.\n\nThe **sociocultural perspective** emphasizes the role of social interactions, cultural norms, and societal expectations in shaping behavior. **Cross-cultural psychology** specifically examines how psychological phenomena vary across different cultures, challenging the assumption that findings from one cultural context apply universally."
+    },
+    {
+      "type": "concept",
+      "title": "Subfields of Modern Psychology",
+      "body": "Modern psychology encompasses dozens of specialized subfields. **Clinical psychology** is the largest subfield, focusing on the assessment, diagnosis, and treatment of mental disorders. **Counseling psychology** addresses everyday life stressors and adjustment difficulties rather than severe psychopathology.\n\n**Developmental psychology** studies how people grow and change across the lifespan, from prenatal development through aging. **Social psychology** investigates how the presence of others -- real or imagined -- influences thoughts, feelings, and behavior, studying phenomena like conformity, persuasion, and group dynamics.\n\n**Industrial-organizational (I-O) psychology** applies psychological principles to the workplace, addressing issues like employee motivation, hiring practices, and organizational culture. **Forensic psychology** applies psychological expertise to legal questions, including criminal profiling, eyewitness testimony, and competency evaluations.\n\n**Health psychology** examines how psychological factors affect physical health and illness, studying topics like stress management, health behaviors, and coping with chronic disease."
+    },
+    {
+      "type": "example",
+      "title": "Diversity and Multicultural Perspectives",
+      "body": "Psychology's early history was dominated by White, male, Western perspectives. Pioneers like **Margaret Floy Washburn** (the first woman to earn a PhD in psychology in 1894) and **Francis Cecil Sumner** (the first African American to earn a PhD in psychology in 1920) broke important barriers but faced significant discrimination.\n\n**Kenneth and Mamie Clark** conducted groundbreaking research on the psychological effects of segregation on African American children. Their doll studies, which demonstrated that Black children in segregated settings often preferred White dolls over Black dolls, were cited in the landmark Supreme Court case *Brown v. Board of Education* (1954).\n\nToday, the field increasingly recognizes that culture, ethnicity, gender, socioeconomic status, and other dimensions of diversity profoundly shape human experience. The **biopsychosocial model** has expanded to incorporate cultural and environmental factors, reinforcing the idea that no single perspective can fully explain human behavior."
+    },
+    {
+      "type": "summary",
+      "title": "Section Summary",
+      "body": "Contemporary psychology is a diverse and multi-perspective field. Major perspectives include the biological, cognitive, evolutionary, and sociocultural approaches, each offering distinct insights into behavior and mental processes. The discipline encompasses numerous subfields -- from clinical and developmental psychology to I-O and forensic psychology. The field has grown more inclusive over time, with increasing attention to how culture, ethnicity, gender, and other dimensions of diversity shape psychological phenomena."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-1.3",
+    "prompt": "Choose a specific human behavior (e.g., aggression, helping a stranger, fear of public speaking). Explain how at least three different contemporary psychological perspectives (biological, cognitive, evolutionary, sociocultural, etc.) would each explain this behavior differently. What does this multi-perspective approach tell us about the complexity of understanding human behavior?",
+    "minWords": 100,
+    "rubric": "A strong response selects a specific behavior, accurately applies at least three contemporary perspectives to explain it, demonstrates understanding of how perspectives complement one another, and reflects on the value of a multi-perspective approach to understanding complex human behavior."
+  }
+}

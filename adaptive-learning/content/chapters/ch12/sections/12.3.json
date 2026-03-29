@@ -1,0 +1,45 @@
+{
+  "sectionId": "12.3",
+  "chapterId": 12,
+  "title": "Attitudes and Persuasion",
+  "learningObjectives": [
+    "Define attitudes and describe how they are formed and measured",
+    "Explain cognitive dissonance and how it motivates attitude change",
+    "Describe the central and peripheral routes to persuasion"
+  ],
+  "keyTerms": [
+    { "term": "Attitude", "definition": "An evaluation of a person, idea, or object that includes cognitive, affective, and behavioral components." },
+    { "term": "Cognitive dissonance", "definition": "The psychological discomfort experienced when holding two or more contradictory beliefs, values, or attitudes simultaneously." },
+    { "term": "Elaboration likelihood model", "definition": "A theory proposing that persuasion occurs through either a central route (careful evaluation of arguments) or a peripheral route (reliance on superficial cues)." },
+    { "term": "Central route", "definition": "Persuasion that occurs when individuals carefully evaluate the quality and logic of arguments." },
+    { "term": "Peripheral route", "definition": "Persuasion that occurs through superficial cues such as the attractiveness or credibility of the speaker rather than argument quality." },
+    { "term": "Foot-in-the-door technique", "definition": "A persuasion strategy that involves first making a small request, then following up with a larger one." }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "Understanding Attitudes",
+      "body": "An **attitude** is an evaluation -- positive, negative, or neutral -- of a person, idea, or object. Attitudes have three components: a **cognitive component** (beliefs about the attitude object), an **affective component** (feelings toward it), and a **behavioral component** (the tendency to act in certain ways toward it). For example, your attitude toward exercise might include the belief that it is healthy (cognitive), a feeling of enjoyment when working out (affective), and a tendency to exercise regularly (behavioral).\n\nAttitudes are formed through multiple pathways. **Direct experience** with an object tends to produce stronger attitudes than secondhand information. **Social learning** -- observing the attitudes of parents, peers, and media figures -- also shapes our evaluations. **Classical conditioning** can create attitudes through association (pairing a product with pleasant music in a commercial), and **operant conditioning** can strengthen attitudes that are rewarded and weaken those that are punished.\n\nAn important question in social psychology is whether attitudes predict behavior. The relationship is not as straightforward as one might expect. Attitudes are more likely to predict behavior when they are strong, specific to the behavior in question, easily accessible in memory, and formed through direct experience. When attitudes and behavior conflict, psychological tension can result."
+    },
+    {
+      "type": "concept",
+      "title": "Cognitive Dissonance and Persuasion",
+      "body": "**Cognitive dissonance**, a concept introduced by Leon Festinger in 1957, refers to the psychological discomfort that arises when a person holds two or more contradictory beliefs, values, or attitudes, or when their behavior conflicts with their attitudes. Because dissonance is uncomfortable, people are motivated to reduce it -- typically by changing one of the conflicting beliefs, adding new cognitions, or minimizing the importance of the conflict.\n\nFestinger's classic study involved participants performing an extremely boring task and then being paid either $1 or $20 to tell the next participant that the task was enjoyable. Paradoxically, those paid only $1 later rated the task as more enjoyable than those paid $20. The $1 group could not justify their lie with the money (insufficient justification), so they reduced dissonance by actually changing their attitude about the task.\n\nPersuasion research has identified two primary routes through which attitudes change. The **elaboration likelihood model**, developed by Richard Petty and John Cacioppo, proposes that persuasion can occur via a **central route** or a **peripheral route**. The **central route** involves careful, thoughtful evaluation of the arguments presented. This route produces lasting attitude change but requires motivation and ability to process the message. The **peripheral route** relies on superficial cues -- the speaker's attractiveness, celebrity endorsements, catchy slogans, or the number of arguments presented (regardless of quality). Peripheral persuasion is easier to achieve but produces less durable attitude change."
+    },
+    {
+      "type": "example",
+      "title": "Cognitive Dissonance in Everyday Decisions",
+      "body": "Cognitive dissonance commonly arises after major decisions. After purchasing an expensive car, for instance, a buyer might experience dissonance when reading negative reviews. To reduce this discomfort, they might selectively seek out positive reviews, emphasize the car's best features, or downplay the importance of its shortcomings. This post-decision dissonance helps explain why people often become more enthusiastic about their choices after making them.\n\nThe **foot-in-the-door technique** exploits cognitive dissonance for persuasion. A charity might first ask you to sign a petition (small request). Once you comply, you begin to see yourself as someone who supports the cause. When they later ask for a donation (larger request), refusing would create dissonance with your new self-image, making you more likely to agree. This technique works because the initial small commitment changes your self-concept, creating pressure to behave consistently."
+    },
+    {
+      "type": "summary",
+      "body": "Attitudes are evaluations with cognitive, affective, and behavioral components, formed through direct experience, social learning, and conditioning. Cognitive dissonance -- the discomfort of holding contradictory cognitions -- motivates attitude change. The elaboration likelihood model describes two routes to persuasion: the central route (thoughtful evaluation) produces durable change, while the peripheral route (superficial cues) produces more transient change. Understanding these processes helps explain both everyday decision-making and strategic persuasion."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-12.3",
+    "prompt": "Describe a time when you experienced cognitive dissonance -- a conflict between your behavior and your beliefs or between two of your beliefs. How did you resolve the dissonance? Did you change your behavior, change your attitude, or add a new cognition to reduce the discomfort? Explain how Festinger's theory of cognitive dissonance accounts for your experience.",
+    "minWords": 100,
+    "rubric": "A strong response should: (1) accurately define cognitive dissonance, (2) describe a specific personal experience of dissonance, (3) identify the conflicting cognitions or the behavior-attitude conflict, (4) explain the strategy used to reduce dissonance, and (5) connect the experience to Festinger's theoretical framework."
+  }
+}

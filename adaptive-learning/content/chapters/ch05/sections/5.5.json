@@ -1,0 +1,63 @@
+{
+  "sectionId": "5.5",
+  "chapterId": 5,
+  "title": "The Other Senses",
+  "learningObjectives": [
+    "Describe how the chemical senses of taste and smell function",
+    "Explain the somatosensory system including touch, temperature, and pain",
+    "Identify the vestibular and kinesthetic senses and their roles in body awareness"
+  ],
+  "keyTerms": [
+    {
+      "term": "Gustation",
+      "definition": "The sense of taste, mediated by taste receptor cells on the tongue that detect sweet, sour, salty, bitter, and umami."
+    },
+    {
+      "term": "Olfaction",
+      "definition": "The sense of smell, mediated by olfactory receptor neurons in the nasal cavity that bind to airborne chemical molecules."
+    },
+    {
+      "term": "Somatosensation",
+      "definition": "The sense of touch, including the perception of pressure, temperature, and pain through receptors in the skin."
+    },
+    {
+      "term": "Gate control theory",
+      "definition": "The theory that pain signals can be blocked or allowed to pass to the brain by a neural gate in the spinal cord, influenced by both physical and psychological factors."
+    },
+    {
+      "term": "Vestibular sense",
+      "definition": "The sensory system located in the inner ear that provides information about balance, body position, and spatial orientation."
+    },
+    {
+      "term": "Kinesthesia",
+      "definition": "The sense that provides awareness of the position and movement of body parts through receptors in muscles, tendons, and joints."
+    }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "The Chemical Senses: Taste and Smell",
+      "body": "**Gustation** (taste) and **olfaction** (smell) are called chemical senses because they respond to chemical molecules rather than physical energy like light or sound. These two senses work closely together -- much of what we experience as the flavor of food is actually the combined input of both taste and smell.\n\nTaste receptors are clustered in **taste buds**, which are located primarily on the tongue's papillae (the small bumps you can see on your tongue). Humans can detect five basic tastes: **sweet**, **sour**, **salty**, **bitter**, and **umami** (a savory, meaty flavor). Each taste has an adaptive function. Sweet signals calorie-rich foods; salty indicates the presence of needed minerals; sour and bitter may warn of spoiled or potentially toxic substances; and umami signals protein content.\n\nOlfaction begins when airborne chemical molecules enter the nasal cavity and bind to **olfactory receptor neurons** embedded in the olfactory epithelium high inside the nose. Humans have approximately 350 types of olfactory receptors, each responding to different molecular shapes. Unlike other senses, olfactory information travels directly to the **olfactory bulb** and then to the brain, bypassing the thalamus. It connects closely to the **limbic system**, which is involved in emotion and memory. This direct connection explains why smells can trigger powerful emotional memories -- the scent of baking cookies may instantly transport you back to your grandmother's kitchen."
+    },
+    {
+      "type": "concept",
+      "title": "Touch, Pain, and Body Position",
+      "body": "**Somatosensation** encompasses the sense of touch and includes the perception of pressure, vibration, temperature, and pain. The skin contains several types of specialized receptors. **Meissner's corpuscles** near the skin surface detect light touch and texture. **Pacinian corpuscles** deeper in the skin detect deep pressure and vibration. **Thermoreceptors** respond to temperature changes, and **nociceptors** respond to potentially damaging stimuli, producing the sensation of pain.\n\nPain is a complex experience that is not simply proportional to tissue damage. The **gate control theory** of pain, proposed by Ronald Melzack and Patrick Wall, suggests that a neural gate in the spinal cord can open or close to allow or block pain signals from reaching the brain. The gate can be closed by competing signals (rubbing a bumped elbow sends non-pain touch signals that partially block pain transmission), by signals from the brain (distraction, positive emotions, or expectations of relief can reduce pain), or by endorphins (the body's natural painkillers). This theory explains why the same injury can feel more or less painful depending on context and psychological state.\n\nTwo additional senses help us navigate through space. The **vestibular sense** uses structures in the inner ear -- the semicircular canals and otolith organs -- to detect head movement, gravity, and body position, providing our sense of balance. **Kinesthesia** relies on receptors in muscles, tendons, and joints to provide awareness of where our body parts are and how they are moving, even with our eyes closed."
+    },
+    {
+      "type": "example",
+      "title": "Why Food Tastes Bland When You Have a Cold",
+      "body": "When you have a cold and your nasal passages are congested, food often seems to lose its flavor. This everyday experience demonstrates the critical role that olfaction plays in what we perceive as taste. When you chew food, volatile chemical molecules are released and normally travel up through the back of the throat to the olfactory receptors (a process called retronasal olfaction). Nasal congestion blocks this pathway, dramatically reducing the flavor information available to the brain.\n\nYou can test this yourself: hold your nose tightly and try to distinguish between a slice of raw apple and a slice of raw potato by taste alone. Without smell, both taste similarly bland and slightly sweet. This demonstrates that the rich complexity of flavor -- distinguishing apple from pear, or vanilla from cinnamon -- depends largely on smell rather than taste. The five basic taste qualities provide broad categories, but olfaction provides the detailed nuance."
+    },
+    {
+      "type": "summary",
+      "body": "The chemical senses of taste and smell detect molecules in food and air. Taste identifies five basic qualities, while smell uses hundreds of receptor types and connects directly to brain areas involved in emotion and memory. Somatosensation includes touch, temperature, and pain, with gate control theory explaining how pain signals can be modulated by physical and psychological factors. The vestibular and kinesthetic senses maintain our awareness of balance, body position, and movement."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-5.5",
+    "prompt": "The gate control theory of pain suggests that psychological factors can influence the physical experience of pain. Drawing on this theory, explain why a soldier wounded in battle might not feel pain until after the fighting is over, or why a person receiving a placebo might report genuine pain relief. What are the practical implications of this theory for modern approaches to pain management?",
+    "minWords": 100,
+    "rubric": "A strong response accurately describes gate control theory (neural gate in spinal cord modulated by competing signals, brain signals, and endorphins), applies it to explain the provided examples (e.g., adrenaline, distraction, and cognitive appraisal closing the gate; placebo expectations triggering endorphin release), and discusses practical implications such as cognitive-behavioral pain management, mindfulness, or the integration of psychological and medical approaches to treating chronic pain."
+  }
+}

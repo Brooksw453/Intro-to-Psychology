@@ -1,0 +1,13 @@
+{
+  "chapterId": 2,
+  "title": "Psychological Research",
+  "weekNum": 2,
+  "reading": "Psychology 2e (OpenStax), Chapter 2 (Sections 2.1-2.4)",
+  "learningObjectives": [
+    "Explain why the scientific method is essential for psychological research",
+    "Compare and contrast different research designs including experiments, correlational studies, and surveys",
+    "Interpret basic statistical concepts used to analyze psychological data",
+    "Identify ethical principles and guidelines that govern research with human and animal participants"
+  ],
+  "sections": ["2.1", "2.2", "2.3", "2.4"]
+}

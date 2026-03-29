@@ -1,0 +1,71 @@
+{
+  "sectionId": "7.4",
+  "chapterId": 7,
+  "title": "What Are Intelligence and Creativity?",
+  "learningObjectives": [
+    "Define intelligence and describe the major theories including Spearman's g, Gardner's multiple intelligences, and Sternberg's triarchic theory",
+    "Explain the concept of emotional intelligence and its significance",
+    "Describe creativity and its relationship to intelligence"
+  ],
+  "keyTerms": [
+    {
+      "term": "Intelligence",
+      "definition": "The ability to learn from experience, solve problems, and use knowledge to adapt to new situations."
+    },
+    {
+      "term": "General intelligence (g)",
+      "definition": "Spearman's concept of a single underlying factor of intelligence that influences performance on all cognitive tasks."
+    },
+    {
+      "term": "Multiple intelligences",
+      "definition": "Gardner's theory that intelligence consists of eight or more distinct types, including linguistic, logical-mathematical, musical, and interpersonal."
+    },
+    {
+      "term": "Triarchic theory of intelligence",
+      "definition": "Sternberg's theory proposing three types of intelligence: analytical (academic problem solving), creative (generating novel ideas), and practical (everyday problem solving)."
+    },
+    {
+      "term": "Emotional intelligence",
+      "definition": "The ability to perceive, understand, manage, and use emotions effectively in oneself and others."
+    },
+    {
+      "term": "Creativity",
+      "definition": "The ability to generate ideas or solutions that are both novel and useful or appropriate."
+    },
+    {
+      "term": "Divergent thinking",
+      "definition": "A thought process that involves generating multiple different solutions or ideas from a single starting point."
+    },
+    {
+      "term": "Convergent thinking",
+      "definition": "A thought process that involves narrowing down multiple possibilities to arrive at a single correct answer."
+    }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "Defining and Theorizing Intelligence",
+      "body": "**Intelligence** is one of the most studied yet most debated concepts in psychology. Most psychologists agree that intelligence involves the ability to learn from experience, solve problems, and adapt to new situations, but they disagree about whether intelligence is a single general ability or a collection of distinct capacities.\n\nCharles Spearman proposed that a single factor, which he called **general intelligence (g)**, underlies all cognitive abilities. He observed that people who perform well on one type of cognitive test tend to perform well on others, suggesting a common underlying factor. While the concept of g has strong statistical support, critics argue that it oversimplifies the nature of human cognitive abilities.\n\nHoward Gardner proposed the theory of **multiple intelligences**, arguing that intelligence is not a single entity but consists of at least eight distinct types: linguistic, logical-mathematical, spatial, musical, bodily-kinesthetic, interpersonal, intrapersonal, and naturalistic. According to Gardner, a gifted musician and a talented mathematician are both intelligent, just in different ways. While widely popular in education, this theory has been criticized for lacking strong empirical evidence and for potentially conflating intelligence with talent or skill.\n\nRobert Sternberg offered a middle ground with his **triarchic theory of intelligence**, which identifies three types: analytical intelligence (the ability to evaluate and compare ideas, used in academic problem solving), creative intelligence (the ability to generate novel and useful ideas), and practical intelligence (the ability to apply knowledge to real-world situations, sometimes called \"street smarts\"). Sternberg argues that traditional intelligence tests measure only analytical intelligence and miss the other two crucial dimensions."
+    },
+    {
+      "type": "concept",
+      "title": "Emotional Intelligence and Creativity",
+      "body": "**Emotional intelligence (EI)**, a concept popularized by Daniel Goleman, refers to the ability to perceive, understand, manage, and effectively use emotions. People with high emotional intelligence can read social situations accurately, regulate their own emotional responses, empathize with others, and use emotional information to guide thinking and behavior. Research suggests that emotional intelligence predicts success in relationships and certain workplace outcomes, sometimes independently of traditional cognitive intelligence.\n\n**Creativity** is the ability to produce ideas or solutions that are both original and appropriate. It is related to, but distinct from, intelligence. Research suggests that a certain baseline level of intelligence is necessary for creativity, but beyond that threshold, higher intelligence does not necessarily lead to greater creativity.\n\nPsychologists distinguish between **divergent thinking** -- generating many possible solutions to a problem -- and **convergent thinking** -- narrowing options to find a single correct answer. Creativity is most closely associated with divergent thinking. Tests of creativity often ask people to list unusual uses for common objects (like a brick or a paperclip) or to find connections between seemingly unrelated concepts.\n\nCreative individuals tend to share certain traits: openness to new experiences, willingness to take risks, tolerance for ambiguity, and persistence in the face of obstacles. Importantly, creativity is not limited to the arts; scientific breakthroughs, innovative business strategies, and novel engineering solutions all require creative thinking."
+    },
+    {
+      "type": "example",
+      "title": "Multiple Intelligences in Practice",
+      "body": "Consider two students: one excels at writing essays and analyzing literature (high linguistic intelligence), while the other struggles with writing but can take apart and reassemble a car engine with ease (high bodily-kinesthetic intelligence). Traditional IQ tests would likely favor the first student, but Gardner's framework recognizes both as demonstrating genuine intelligence in different domains.\n\nSternberg's triarchic theory offers another lens. A student who earns top grades (analytical intelligence) may struggle to apply that knowledge in a real-world internship (practical intelligence), while a classmate with average grades may thrive in the workplace because of superior practical and creative intelligence. These examples illustrate why relying on a single measure of intelligence can provide an incomplete and potentially misleading picture of a person's capabilities."
+    },
+    {
+      "type": "summary",
+      "body": "Intelligence can be understood as a single general ability (Spearman's g), as multiple distinct capacities (Gardner's multiple intelligences), or as three interacting types (Sternberg's triarchic theory). Emotional intelligence adds the dimension of understanding and managing emotions. Creativity, characterized by divergent thinking, is related to but distinct from intelligence and involves generating novel, useful ideas. These varied perspectives highlight the complexity of human cognitive abilities."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-7.4",
+    "prompt": "Compare two different theories of intelligence (such as Spearman's g, Gardner's multiple intelligences, or Sternberg's triarchic theory). Which theory do you believe best captures what it means to be intelligent, and why? Use a concrete example of a person (real or hypothetical) whose abilities would be assessed differently under each theory.",
+    "minWords": 100,
+    "rubric": "A strong response accurately describes at least two theories of intelligence, identifies key differences between them, provides a concrete example showing how a person might be evaluated differently under each theory, and takes a reasoned position supported by logical argument. The response should demonstrate understanding of the strengths and limitations of each theory."
+  }
+}

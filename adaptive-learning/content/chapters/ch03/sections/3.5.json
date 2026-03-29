@@ -1,0 +1,45 @@
+{
+  "sectionId": "3.5",
+  "chapterId": 3,
+  "title": "The Endocrine System",
+  "learningObjectives": [
+    "Explain how the endocrine system communicates using hormones",
+    "Identify the major endocrine glands and the hormones they produce",
+    "Describe the relationship between the nervous system and the endocrine system"
+  ],
+  "keyTerms": [
+    { "term": "Endocrine system", "definition": "A network of glands that produce, store, and secrete hormones into the bloodstream to regulate bodily functions." },
+    { "term": "Hormone", "definition": "A chemical messenger produced by an endocrine gland that travels through the bloodstream and affects target organs and tissues." },
+    { "term": "Pituitary gland", "definition": "A small gland at the base of the brain often called the 'master gland' because it controls the activity of many other endocrine glands." },
+    { "term": "Adrenal glands", "definition": "Glands located on top of each kidney that produce hormones involved in the stress response, including cortisol and adrenaline (epinephrine)." },
+    { "term": "Thyroid gland", "definition": "A gland in the neck that produces hormones regulating metabolism, energy levels, and growth." },
+    { "term": "Hypothalamus", "definition": "A brain structure that links the nervous system to the endocrine system by directing the pituitary gland to release hormones." }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "The Endocrine System: Chemical Communication",
+      "body": "While the nervous system transmits rapid electrical and chemical signals through neurons, the body has a second major communication system that operates more slowly but with widespread, long-lasting effects. The **endocrine system** is a collection of glands that produce chemical messengers called **hormones**. Unlike neurotransmitters, which act across a tiny synaptic gap, hormones are released directly into the bloodstream and travel throughout the body to reach target cells that have the appropriate receptors.\n\nBecause hormones must travel through the circulatory system, their effects take longer to appear — seconds to minutes rather than the milliseconds of neural transmission. However, hormonal effects tend to be more sustained and can influence a wide range of bodily functions including growth, metabolism, reproduction, mood, and the stress response.\n\nThe nervous and endocrine systems are closely integrated. The **hypothalamus**, a brain structure at the base of the forebrain, serves as the critical link between the two systems. It receives information from the nervous system and responds by directing the **pituitary gland** to release or inhibit various hormones. Because the pituitary gland in turn controls many other endocrine glands, it is often called the \"master gland\" of the body."
+    },
+    {
+      "type": "concept",
+      "title": "Major Endocrine Glands and Their Functions",
+      "body": "Several endocrine glands play especially important roles in behavior and psychological functioning. The **pituitary gland**, located at the base of the brain just below the hypothalamus, releases hormones that regulate growth (growth hormone), reproduction (follicle-stimulating hormone and luteinizing hormone), and the activity of other glands. It also releases oxytocin, which is associated with social bonding and trust, and vasopressin, which affects water retention and blood pressure.\n\nThe **thyroid gland** in the neck produces hormones that regulate metabolism and energy levels. An overactive thyroid (hyperthyroidism) can produce symptoms resembling anxiety, including rapid heartbeat, nervousness, and weight loss. An underactive thyroid (hypothyroidism) can mimic depression, causing fatigue, weight gain, and sluggishness.\n\nThe **adrenal glands**, perched atop the kidneys, are central to the body's stress response. The adrenal medulla releases **epinephrine** (adrenaline) and **norepinephrine** during the fight-or-flight response, producing immediate effects such as increased heart rate and heightened alertness. The adrenal cortex releases **cortisol**, a hormone that helps the body sustain its response to prolonged stress by regulating blood sugar levels and suppressing the immune system. Chronically elevated cortisol levels, as seen in prolonged stress, have been linked to impaired memory, weakened immunity, and increased risk of depression.\n\nThe gonads (ovaries and testes) produce sex hormones — estrogen, progesterone, and testosterone — that influence sexual development, reproductive behavior, and mood. Both males and females produce all three hormones, though in different proportions."
+    },
+    {
+      "type": "example",
+      "title": "Real-World Example: Chronic Stress and Cortisol",
+      "body": "Consider a college student facing a demanding semester with exams, a part-time job, and financial worries. Under sustained stress, the **adrenal glands** continuously release **cortisol**. In the short term, cortisol helps the student stay alert and mobilize energy. However, when cortisol levels remain elevated for weeks, the consequences become harmful: the student may experience difficulty concentrating, disrupted sleep, frequent illness due to immune suppression, and feelings of anxiety or depression. This example illustrates how the endocrine system's stress response, which evolved to handle brief threats, can become maladaptive under the chronic stress conditions common in modern life."
+    },
+    {
+      "type": "summary",
+      "body": "The endocrine system communicates through hormones released into the bloodstream, producing slower but longer-lasting effects than the nervous system. The hypothalamus links the two systems by directing the pituitary gland. Key glands include the thyroid (metabolism), adrenal glands (stress response via cortisol and adrenaline), and gonads (sex hormones). Chronic stress can dysregulate hormonal responses, leading to both physical and psychological consequences."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-3.5",
+    "prompt": "A friend tells you they have been feeling constantly tired, gaining weight, and experiencing low mood for several months. They wonder if it might be related to their hormones. Using what you learned about the endocrine system, explain which gland and hormone(s) might be involved, how this could produce the symptoms described, and how the endocrine and nervous systems work together in this process.",
+    "minWords": 100,
+    "rubric": "A strong response should: (1) identify the thyroid gland and its hormones as a likely factor in the described symptoms, (2) explain hypothyroidism and how reduced thyroid hormone levels produce fatigue, weight gain, and mood changes, (3) describe the connection between the hypothalamus, pituitary gland, and thyroid in the feedback loop, (4) distinguish between endocrine system effects and nervous system communication, and (5) note that medical evaluation would be needed for diagnosis."
+  }
+}

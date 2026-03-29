@@ -1,0 +1,21 @@
+{
+  "chapterId": 6,
+  "weekNum": 6,
+  "title": "Learning and Behavior Change",
+  "prompt": "We have explored three major types of learning: classical conditioning, operant conditioning, and observational learning. Choose a behavior you would like to change in yourself or encourage in someone else (e.g., exercising more, reducing screen time, developing a new skill). Design a plan that uses principles from at least two of the three types of learning covered in this chapter. Be specific about which principles you would apply and how. Why might combining multiple learning approaches be more effective than relying on just one?",
+  "requirements": {
+    "initialPost": {
+      "minWords": 150,
+      "maxWords": 200,
+      "dueDay": "Wednesday",
+      "dueTime": "11:59 PM ET"
+    },
+    "replies": {
+      "count": 2,
+      "minWords": 75,
+      "maxWords": 100,
+      "dueDay": "Sunday",
+      "dueTime": "11:59 PM ET"
+    }
+  }
+}

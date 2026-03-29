@@ -1,0 +1,13 @@
+{
+  "chapterId": 8,
+  "title": "Memory",
+  "weekNum": 8,
+  "reading": "Psychology 2e (OpenStax), Chapter 8 (Sections 8.1-8.4)",
+  "learningObjectives": [
+    "Describe the three stages of memory encoding, storage, and retrieval and the models that explain them",
+    "Identify the brain structures involved in memory formation and storage",
+    "Explain common memory errors and failures, including the misinformation effect and false memories",
+    "Apply evidence-based strategies for improving memory and study effectiveness"
+  ],
+  "sections": ["8.1", "8.2", "8.3", "8.4"]
+}

@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cp -r _temp_clone/adaptive-learning ./adaptive-learning)",
+      "Bash(rm -rf _temp_clone)",
+      "Bash(rm -rf adaptive-learning/.git adaptive-learning/.vercel adaptive-learning/.next adaptive-learning/node_modules)",
+      "Bash(npm install:*)",
+      "Bash(python -c \":*)",
+      "Bash(npx tsx:*)",
+      "Bash(npm run:*)",
+      "Bash(gh auth:*)"
+    ]
+  }
+}

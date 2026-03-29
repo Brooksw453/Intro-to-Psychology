@@ -1,0 +1,29 @@
+{
+  "sectionId": "9.2",
+  "chapterId": 9,
+  "questions": [
+    {
+      "id": "ch09-q03",
+      "question": "According to Piaget, a child who believes that a tall, thin glass holds more water than a short, wide glass with the same amount of liquid has not yet mastered which concept?",
+      "options": [
+        { "text": "Object permanence", "correct": false },
+        { "text": "Egocentrism", "correct": false },
+        { "text": "Conservation", "correct": true },
+        { "text": "Assimilation", "correct": false }
+      ],
+      "explanation": "Conservation is the understanding that quantity remains the same despite changes in shape or appearance. Children in the preoperational stage have not yet developed this ability, which is why they focus on the height of the glass rather than the volume of liquid."
+    },
+    {
+      "id": "ch09-q04",
+      "question": "In Erikson's theory, the primary psychosocial crisis of adolescence involves which conflict?",
+      "options": [
+        { "text": "Trust vs. Mistrust", "correct": false },
+        { "text": "Intimacy vs. Isolation", "correct": false },
+        { "text": "Industry vs. Inferiority", "correct": false },
+        { "text": "Identity vs. Role Confusion", "correct": true }
+      ],
+      "explanation": "Erikson proposed that adolescents face the crisis of Identity vs. Role Confusion, in which they work to develop a coherent sense of self and personal identity. Trust vs. Mistrust occurs in infancy, Industry vs. Inferiority in school age, and Intimacy vs. Isolation in young adulthood."
+    }
+  ],
+  "passThreshold": 80
+}

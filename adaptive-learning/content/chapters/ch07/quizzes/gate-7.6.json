@@ -1,0 +1,29 @@
+{
+  "sectionId": "7.6",
+  "chapterId": 7,
+  "questions": [
+    {
+      "id": "ch07-q11",
+      "question": "The concept of range of reaction suggests that:",
+      "options": [
+        { "text": "Intelligence is entirely determined by genetics with no environmental influence", "correct": false },
+        { "text": "Genes establish a range of possible outcomes, and the environment determines where within that range an individual falls", "correct": true },
+        { "text": "All people have the same genetic potential for intelligence regardless of their DNA", "correct": false },
+        { "text": "Environmental factors are the sole determinant of intelligence", "correct": false }
+      ],
+      "explanation": "The range of reaction concept holds that genes do not determine a fixed level of intelligence but instead establish a range of possible outcomes. The environment then determines where within that genetically influenced range an individual's actual intelligence falls, illustrating the interaction between nature and nurture."
+    },
+    {
+      "id": "ch07-q12",
+      "question": "Stereotype threat can negatively affect test performance by:",
+      "options": [
+        { "text": "Reducing the number of questions on the test", "correct": false },
+        { "text": "Changing the genetic potential of the test-taker", "correct": false },
+        { "text": "Creating anxiety and cognitive load that impairs performance when a person is aware of a negative stereotype about their group", "correct": true },
+        { "text": "Lowering the reliability of the test instrument itself", "correct": false }
+      ],
+      "explanation": "Stereotype threat occurs when awareness of a negative stereotype about one's social group creates anxiety that consumes cognitive resources and impairs performance. This effect demonstrates how social and psychological factors -- not ability -- can influence test scores, highlighting the importance of testing conditions."
+    }
+  ],
+  "passThreshold": 80
+}

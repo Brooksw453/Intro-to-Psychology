@@ -1,0 +1,117 @@
+{
+  "sectionId": "full",
+  "chapterId": 7,
+  "questions": [
+    {
+      "id": "ch07-q13",
+      "question": "Which of the following best illustrates the difference between a natural concept and an artificial concept?",
+      "options": [
+        { "text": "A natural concept has a fixed definition, while an artificial concept is flexible", "correct": false },
+        { "text": "A natural concept is formed through everyday experience and has fuzzy boundaries, while an artificial concept is defined by strict rules", "correct": true },
+        { "text": "A natural concept applies only to living things, while an artificial concept applies to non-living things", "correct": false },
+        { "text": "A natural concept is innate, while an artificial concept must be learned", "correct": false }
+      ],
+      "explanation": "Natural concepts are formed through everyday experience and have somewhat flexible, fuzzy boundaries (e.g., the concept of 'vehicle'). Artificial concepts are defined by strict, clearly stated rules (e.g., a triangle must have exactly three sides)."
+    },
+    {
+      "id": "ch07-q14",
+      "question": "Noam Chomsky argued that children are born with an innate capacity for learning language. He called this the:",
+      "options": [
+        { "text": "Linguistic relativity device", "correct": false },
+        { "text": "Language acquisition device", "correct": true },
+        { "text": "Universal phoneme system", "correct": false },
+        { "text": "Semantic processing module", "correct": false }
+      ],
+      "explanation": "Chomsky proposed that humans are born with a language acquisition device (LAD), an innate mental structure that provides the basic grammatical framework common to all languages, explaining why children can generate sentences they have never heard before."
+    },
+    {
+      "id": "ch07-q15",
+      "question": "A detective who only looks for evidence that supports their initial suspect while ignoring evidence pointing to other people is demonstrating:",
+      "options": [
+        { "text": "The availability heuristic", "correct": false },
+        { "text": "Functional fixedness", "correct": false },
+        { "text": "Confirmation bias", "correct": true },
+        { "text": "Anchoring bias", "correct": false }
+      ],
+      "explanation": "Confirmation bias is the tendency to search for, interpret, and remember information that confirms one's preexisting beliefs while ignoring contradictory evidence. A detective seeking only evidence that confirms their initial theory is a classic example."
+    },
+    {
+      "id": "ch07-q16",
+      "question": "Howard Gardner's theory of multiple intelligences differs from Spearman's concept of general intelligence (g) primarily because Gardner:",
+      "options": [
+        { "text": "Believes intelligence cannot be measured", "correct": false },
+        { "text": "Argues that intelligence consists of several distinct and independent types rather than a single underlying factor", "correct": true },
+        { "text": "Focuses exclusively on emotional and social skills", "correct": false },
+        { "text": "Rejects the idea that genetics plays any role in intelligence", "correct": false }
+      ],
+      "explanation": "Gardner proposed that intelligence is not a single general ability but consists of at least eight distinct types (linguistic, logical-mathematical, spatial, musical, bodily-kinesthetic, interpersonal, intrapersonal, and naturalistic). This contrasts with Spearman's view that a single factor (g) underlies all cognitive abilities."
+    },
+    {
+      "id": "ch07-q17",
+      "question": "Which psychometric property ensures that a test actually measures what it claims to measure?",
+      "options": [
+        { "text": "Reliability", "correct": false },
+        { "text": "Standardization", "correct": false },
+        { "text": "Validity", "correct": true },
+        { "text": "Normal distribution", "correct": false }
+      ],
+      "explanation": "Validity is the extent to which a test measures what it claims to measure. A test can be reliable (consistent) without being valid -- it might consistently measure the wrong thing. Validity is essential for ensuring that test results are meaningful."
+    },
+    {
+      "id": "ch07-q18",
+      "question": "A heritability estimate of 0.60 for intelligence means that:",
+      "options": [
+        { "text": "60% of any individual's intelligence is determined by their genes", "correct": false },
+        { "text": "60% of the variation in IQ scores within a population can be attributed to genetic differences", "correct": true },
+        { "text": "Intelligence is 60% nature and 40% nurture for every person", "correct": false },
+        { "text": "Genes and environment each contribute exactly 60% to intelligence", "correct": false }
+      ],
+      "explanation": "Heritability is a population-level statistic indicating the proportion of variation in a trait within a population attributable to genetic differences. It does not tell us about any individual's intelligence or provide a simple nature-nurture ratio for a specific person."
+    },
+    {
+      "id": "ch07-q19",
+      "question": "An algorithm differs from a heuristic in that an algorithm:",
+      "options": [
+        { "text": "Is faster but less accurate", "correct": false },
+        { "text": "Relies on intuition rather than systematic procedures", "correct": false },
+        { "text": "Guarantees a correct solution if followed properly but may be time-consuming", "correct": true },
+        { "text": "Can only be used for mathematical problems", "correct": false }
+      ],
+      "explanation": "An algorithm is a step-by-step procedure that guarantees a correct solution when followed precisely, though it may be slow or impractical for complex problems. A heuristic is a mental shortcut that is faster but does not guarantee accuracy."
+    },
+    {
+      "id": "ch07-q20",
+      "question": "Which of the following best describes the relationship between creativity and intelligence?",
+      "options": [
+        { "text": "Creativity and intelligence are the same construct measured in different ways", "correct": false },
+        { "text": "A baseline level of intelligence is needed for creativity, but beyond that threshold, higher intelligence does not necessarily mean greater creativity", "correct": true },
+        { "text": "Higher intelligence always leads to higher creativity", "correct": false },
+        { "text": "Creativity and intelligence are completely unrelated", "correct": false }
+      ],
+      "explanation": "Research suggests that a certain minimum level of intelligence is necessary for creative work, but beyond that threshold, the correlation between intelligence and creativity weakens. Other factors such as openness to experience, persistence, and tolerance for ambiguity also contribute to creativity."
+    },
+    {
+      "id": "ch07-q21",
+      "question": "Carol Dweck's research on growth mindset suggests that students who believe intelligence can be developed through effort tend to:",
+      "options": [
+        { "text": "Avoid challenging tasks to protect their self-esteem", "correct": false },
+        { "text": "Embrace challenges and persist through difficulties, leading to higher achievement", "correct": true },
+        { "text": "Perform the same as students with a fixed mindset on all measures", "correct": false },
+        { "text": "Rely more heavily on innate ability than practice", "correct": false }
+      ],
+      "explanation": "Dweck's research found that students with a growth mindset -- who believe intelligence and abilities can be developed through effort -- tend to embrace challenges, persist through difficulties, and ultimately achieve more than students with a fixed mindset who view intelligence as an innate, unchangeable trait."
+    },
+    {
+      "id": "ch07-q22",
+      "question": "The morpheme is defined as the smallest unit of language that:",
+      "options": [
+        { "text": "Can be physically produced by the vocal cords", "correct": false },
+        { "text": "Distinguishes one sound from another", "correct": false },
+        { "text": "Carries meaning", "correct": true },
+        { "text": "Forms a complete sentence", "correct": false }
+      ],
+      "explanation": "A morpheme is the smallest meaningful unit of language. The word 'unhappiness' contains three morphemes: 'un-' (not), 'happy' (a state of well-being), and '-ness' (a quality). This is distinct from a phoneme, which is the smallest unit of sound."
+    }
+  ],
+  "passThreshold": 80
+}

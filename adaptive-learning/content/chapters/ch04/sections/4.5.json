@@ -1,0 +1,46 @@
+{
+  "sectionId": "4.5",
+  "chapterId": 4,
+  "title": "Substance Use and Abuse",
+  "learningObjectives": [
+    "Classify psychoactive drugs into major categories: depressants, stimulants, opioids, and hallucinogens",
+    "Explain how different categories of drugs affect neurotransmitter systems in the brain",
+    "Describe the concepts of tolerance, dependence, and substance use disorder"
+  ],
+  "keyTerms": [
+    { "term": "Psychoactive drug", "definition": "A chemical substance that alters mood, perception, or behavior by acting on the central nervous system." },
+    { "term": "Depressant", "definition": "A class of drugs that slows CNS activity, reduces neural firing, and decreases arousal; includes alcohol, barbiturates, and benzodiazepines." },
+    { "term": "Stimulant", "definition": "A class of drugs that increases CNS activity, heightens alertness, and elevates mood; includes caffeine, nicotine, cocaine, and amphetamines." },
+    { "term": "Opioid", "definition": "A class of drugs derived from or chemically similar to the opium poppy that reduces pain perception and produces euphoria by mimicking endorphins." },
+    { "term": "Hallucinogen", "definition": "A class of drugs that distort perceptions, alter mood, and may produce vivid sensory experiences not based in reality; includes LSD, psilocybin, and marijuana." },
+    { "term": "Tolerance", "definition": "The need for increasing amounts of a drug to achieve the same effect, resulting from the brain's adaptation to repeated exposure." },
+    { "term": "Substance use disorder", "definition": "A pattern of compulsive drug use despite significant negative consequences to health, relationships, or daily functioning." }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "Categories of Psychoactive Drugs",
+      "body": "A **psychoactive drug** is any chemical substance that crosses the blood-brain barrier and alters mood, perception, cognition, or behavior. These substances work by affecting neurotransmitter systems in the brain — either by mimicking, enhancing, or blocking the action of natural chemical messengers.\n\n**Depressants** slow down CNS activity by enhancing the effects of inhibitory neurotransmitters, particularly GABA (gamma-aminobutyric acid). Alcohol, the most widely used depressant, reduces neural firing and impairs judgment, coordination, and memory. At low doses it produces relaxation and lowered inhibitions; at high doses it can cause unconsciousness and death.\n\n**Stimulants** increase CNS activity, producing heightened alertness, energy, and mood elevation. Caffeine and nicotine are the most commonly used stimulants. More powerful stimulants like cocaine and amphetamines produce intense euphoria by flooding the synapse with dopamine — a neurotransmitter associated with pleasure and reward — either by blocking its reuptake or stimulating its release.\n\n**Opioids** include drugs like morphine, heroin, and prescription painkillers such as oxycodone. These substances mimic the body's natural endorphins, binding to opioid receptors to reduce pain perception and produce feelings of intense pleasure. The powerful rewarding effects of opioids make them highly addictive.\n\n**Hallucinogens** distort sensory perception and can produce experiences that have no basis in external reality. LSD and psilocybin (found in certain mushrooms) affect serotonin receptors. Marijuana (cannabis) contains THC, which binds to cannabinoid receptors throughout the brain and can produce relaxation, altered time perception, and mild perceptual distortions."
+    },
+    {
+      "type": "concept",
+      "title": "Tolerance, Dependence, and Substance Use Disorder",
+      "body": "With repeated use of a psychoactive substance, the brain adapts to its presence through several mechanisms. **Tolerance** occurs when the brain reduces its sensitivity to a drug, requiring the user to consume larger amounts to achieve the same effect. This happens because the brain adjusts its own neurotransmitter production or receptor density in response to the drug's presence.\n\nPhysical dependence develops when the body has adapted so thoroughly to the drug that removing it produces withdrawal symptoms — which are often the opposite of the drug's effects. For example, withdrawal from a depressant like alcohol can produce anxiety, tremors, and seizures.\n\nPsychological dependence involves a strong emotional or mental craving for the drug, often driven by the desire to experience its rewarding effects or to avoid negative emotional states. **Substance use disorder** is diagnosed when drug use becomes compulsive and continues despite significant harm to the individual's health, relationships, work, or other important areas of functioning.\n\nThe neuroscience of addiction centers on the brain's reward circuit, particularly the mesolimbic dopamine pathway. Addictive drugs produce surges of dopamine far beyond what natural rewards provide, and over time the brain recalibrates, reducing its baseline dopamine activity. This leaves the individual needing the drug just to feel normal, creating a powerful cycle of craving and use."
+    },
+    {
+      "type": "example",
+      "title": "Real-World Example: The Opioid Crisis",
+      "body": "The opioid epidemic illustrates how tolerance, dependence, and substance use disorder develop in practice. Many individuals were initially prescribed **opioid** painkillers for legitimate medical conditions. Over time, **tolerance** developed, leading them to require higher doses for pain relief. Physical dependence followed, meaning that attempting to stop produced severe withdrawal symptoms including pain, nausea, and anxiety. Some individuals progressed to cheaper or more potent opioids like heroin or illicitly manufactured fentanyl. This trajectory from medical prescription to **substance use disorder** demonstrates how powerfully these drugs can hijack the brain's reward system."
+    },
+    {
+      "type": "summary",
+      "body": "Psychoactive drugs alter consciousness by affecting neurotransmitter systems: depressants enhance GABA to slow the CNS, stimulants boost dopamine and norepinephrine, opioids mimic endorphins, and hallucinogens affect serotonin and other systems. Repeated use can lead to tolerance, physical and psychological dependence, and substance use disorder driven by changes in the brain's reward circuitry."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-4.5",
+    "prompt": "Choose one category of psychoactive drug (depressant, stimulant, opioid, or hallucinogen) and explain how it alters consciousness at the neurochemical level. Then discuss why repeated use of this type of drug can lead to tolerance and potentially substance use disorder, connecting your explanation to the brain's dopamine reward system.",
+    "minWords": 100,
+    "rubric": "A strong response should: (1) select a specific drug category and name at least one example drug, (2) correctly identify the neurotransmitter system(s) affected, (3) explain the mechanism of action at the synapse, (4) describe how tolerance develops through neural adaptation, (5) connect addiction risk to the mesolimbic dopamine pathway, and (6) demonstrate understanding of why the brain's reward system makes certain drugs particularly addictive."
+  }
+}

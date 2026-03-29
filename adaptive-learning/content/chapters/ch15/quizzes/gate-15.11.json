@@ -1,0 +1,29 @@
+{
+  "sectionId": "15.11",
+  "chapterId": 15,
+  "questions": [
+    {
+      "id": "ch15-q21",
+      "question": "Which cluster of personality disorders is characterized by dramatic, emotional, or erratic behavior?",
+      "options": [
+        { "text": "Cluster A", "correct": false },
+        { "text": "Cluster B", "correct": true },
+        { "text": "Cluster C", "correct": false },
+        { "text": "Cluster D", "correct": false }
+      ],
+      "explanation": "Cluster B personality disorders are characterized by dramatic, emotional, or erratic behavior and include antisocial, borderline, histrionic, and narcissistic personality disorders. Cluster A involves odd/eccentric behavior, and Cluster C involves anxious/fearful behavior."
+    },
+    {
+      "id": "ch15-q22",
+      "question": "A person with antisocial personality disorder would most likely exhibit which pattern of behavior?",
+      "options": [
+        { "text": "Excessive fear of abandonment and unstable relationships", "correct": false },
+        { "text": "Persistent distrust and suspiciousness of others' motives", "correct": false },
+        { "text": "Pervasive disregard for the rights of others and lack of remorse", "correct": true },
+        { "text": "Chronic feelings of emptiness and need for admiration", "correct": false }
+      ],
+      "explanation": "Antisocial personality disorder is characterized by a pervasive pattern of disregard for and violation of the rights of others, including deceitfulness, impulsivity, irritability, and a notable lack of remorse for harm caused."
+    }
+  ],
+  "passThreshold": 80
+}

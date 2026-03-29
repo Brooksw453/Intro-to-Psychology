@@ -1,0 +1,29 @@
+{
+  "sectionId": "13.1",
+  "chapterId": 13,
+  "questions": [
+    {
+      "id": "ch13-q01",
+      "question": "Which branch of I-O psychology focuses on hiring, training, and evaluating employees?",
+      "options": [
+        { "text": "Organizational psychology", "correct": false },
+        { "text": "Industrial psychology", "correct": true },
+        { "text": "Human factors psychology", "correct": false },
+        { "text": "Clinical psychology", "correct": false }
+      ],
+      "explanation": "Industrial psychology (also called personnel psychology) focuses on job analysis, employee selection, training, and performance appraisal — all aspects of matching people to jobs."
+    },
+    {
+      "id": "ch13-q02",
+      "question": "The Hawthorne effect refers to the tendency for people to:",
+      "options": [
+        { "text": "Perform worse under time pressure", "correct": false },
+        { "text": "Change their behavior when they know they are being observed", "correct": true },
+        { "text": "Prefer transformational leaders over transactional leaders", "correct": false },
+        { "text": "Become more productive as they gain experience", "correct": false }
+      ],
+      "explanation": "The Hawthorne effect was discovered during studies at the Western Electric Hawthorne Works, where workers' productivity increased simply because they knew they were being observed, regardless of the actual changes made to working conditions."
+    }
+  ],
+  "passThreshold": 80
+}

@@ -1,0 +1,59 @@
+{
+  "sectionId": "10.3",
+  "chapterId": 10,
+  "title": "Sexual Behavior",
+  "learningObjectives": [
+    "Describe the biological factors that influence sexual motivation and behavior",
+    "Explain how psychological and sociocultural factors shape sexual attitudes and behavior",
+    "Discuss the research contributions of Kinsey and Masters and Johnson to the scientific study of human sexuality"
+  ],
+  "keyTerms": [
+    {
+      "term": "Sexual orientation",
+      "definition": "An enduring pattern of emotional, romantic, and sexual attraction to people of the same sex, the opposite sex, or both sexes."
+    },
+    {
+      "term": "Sexual response cycle",
+      "definition": "The four-stage model of physiological responses during sexual activity, identified by Masters and Johnson: excitement, plateau, orgasm, and resolution."
+    },
+    {
+      "term": "Testosterone",
+      "definition": "The primary androgen hormone that plays a key role in sexual desire and behavior in both males and females."
+    },
+    {
+      "term": "Estrogen",
+      "definition": "A class of hormones primarily associated with female reproductive processes, but also present in males and influencing sexual function."
+    },
+    {
+      "term": "Gender identity",
+      "definition": "A person's internal sense of their own gender, which may or may not correspond to their sex assigned at birth."
+    }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "Biological Foundations of Sexual Behavior",
+      "body": "Human sexual behavior is influenced by a combination of biological, psychological, and sociocultural factors. On the biological side, hormones play a significant role in sexual motivation. **Testosterone**, the primary androgen, is important for sexual desire in both males and females. While testosterone levels are much higher in males, it contributes to sexual motivation across genders. **Estrogen** and other hormones also influence sexual function and desire, particularly in females.\n\nThe hypothalamus plays a central role in regulating the hormonal systems that influence sexual behavior, connecting the nervous system to the endocrine system through the pituitary gland. The limbic system, including structures such as the amygdala, is involved in the emotional and motivational aspects of sexual behavior.\n\nWilliam Masters and Virginia Johnson conducted groundbreaking research on human sexual physiology in the 1960s. Through direct observation and physiological measurement, they identified the **sexual response cycle** -- a four-stage model describing the physiological responses that occur during sexual activity. The cycle consists of (1) the **excitement phase**, characterized by initial arousal and increased blood flow; (2) the **plateau phase**, during which arousal intensifies; (3) the **orgasm phase**, the peak of sexual pleasure involving rhythmic muscle contractions; and (4) the **resolution phase**, during which the body returns to its unaroused state. Masters and Johnson's work was revolutionary in applying scientific methods to a topic that had previously been considered too private or taboo for empirical study."
+    },
+    {
+      "type": "concept",
+      "title": "Sexual Orientation and Gender Identity",
+      "body": "**Sexual orientation** refers to an enduring pattern of emotional, romantic, and sexual attraction. It is generally described along a spectrum, with exclusive heterosexuality at one end and exclusive homosexuality at the other, with varying degrees of bisexuality in between. Alfred Kinsey's landmark surveys in the 1940s and 1950s were among the first to document the diversity of human sexual behavior and suggested that sexual orientation exists on a continuum rather than as a strict binary.\n\nResearch into the origins of sexual orientation has explored genetic, hormonal, neurological, and environmental factors. Twin studies suggest a heritable component, as identical twins are more likely to share the same sexual orientation than fraternal twins. Prenatal hormone exposure may also play a role, with some research suggesting that levels of androgens during critical periods of fetal development influence later sexual orientation. However, no single factor fully explains sexual orientation, and most researchers view it as the result of a complex interplay of multiple influences.\n\n**Gender identity** -- a person's internal sense of being male, female, both, or neither -- is distinct from sexual orientation. While most people's gender identity aligns with their sex assigned at birth (cisgender), some individuals experience incongruence between their gender identity and their assigned sex (transgender). Research increasingly recognizes gender identity as a complex trait influenced by biological, psychological, and social factors. The psychological and medical communities have moved toward affirming approaches that support individuals in expressing their gender identity authentically."
+    },
+    {
+      "type": "example",
+      "title": "Cultural and Psychological Influences on Sexuality",
+      "body": "Attitudes toward sexuality vary enormously across cultures and historical periods. In some societies, open discussion of sexuality is encouraged as a natural part of life, while in others, sexuality is considered a strictly private matter surrounded by taboos and restrictions. These cultural norms shape sexual attitudes, behaviors, and the experience of sexual minorities.\n\nKinsey's research revealed that many Americans engaged in sexual behaviors that were widely condemned at the time, highlighting the gap between public norms and private behavior. His work challenged the prevailing assumption that sexual behavior was uniform and narrowly defined, demonstrating instead that human sexuality encompasses a wide range of behaviors, attractions, and identities.\n\nPsychological factors also influence sexual behavior. Cognitive processes such as sexual scripts -- the mental frameworks that guide people's understanding of sexual situations -- shape expectations about who initiates sexual activity, what behaviors are appropriate, and how sexual encounters should unfold. These scripts are learned through socialization and vary across cultures, genders, and generations.\n\nThe intersection of technology and sexuality presents new psychological questions. The widespread availability of online content has changed how many people learn about and engage with sexuality, with both positive and negative implications for sexual health, relationship formation, and body image."
+    },
+    {
+      "type": "summary",
+      "body": "Human sexual behavior is shaped by biological factors including hormones and the sexual response cycle identified by Masters and Johnson, as well as psychological factors such as sexual scripts and sociocultural norms. Sexual orientation exists on a spectrum and results from a complex interplay of genetic, hormonal, and environmental influences. Gender identity is distinct from sexual orientation and is increasingly recognized as a multifaceted aspect of human experience."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-10.3",
+    "prompt": "Consider how cultural norms and societal attitudes influence people's understanding and expression of sexuality. Choose a specific example of how cultural or historical context has shaped attitudes toward some aspect of sexual behavior, sexual orientation, or gender identity. How does this example illustrate the interaction between biological and sociocultural factors in human sexuality? What role has scientific research (such as Kinsey's surveys or Masters and Johnson's work) played in challenging or reinforcing these attitudes?",
+    "minWords": 100,
+    "rubric": "A strong response identifies a specific cultural or historical example, explains how it illustrates the interaction between biological and sociocultural factors, references at least one scientific contribution discussed in the section, and demonstrates critical thinking about the relationship between research and social attitudes."
+  }
+}

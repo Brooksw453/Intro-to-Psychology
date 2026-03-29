@@ -1,0 +1,60 @@
+{
+  "sectionId": "15.10",
+  "chapterId": 15,
+  "title": "Disorders in Childhood",
+  "learningObjectives": [
+    "Describe the key features of attention-deficit/hyperactivity disorder (ADHD) and the debate surrounding its diagnosis",
+    "Explain the characteristics of autism spectrum disorder and the concept of a spectrum",
+    "Discuss the prevalence, causes, and treatment considerations for childhood psychological disorders"
+  ],
+  "keyTerms": [
+    {
+      "term": "Attention-deficit/hyperactivity disorder (ADHD)",
+      "definition": "A neurodevelopmental disorder characterized by a persistent pattern of inattention and/or hyperactivity-impulsivity that interferes with functioning and development."
+    },
+    {
+      "term": "Autism spectrum disorder (ASD)",
+      "definition": "A neurodevelopmental disorder characterized by persistent deficits in social communication and interaction, along with restricted, repetitive patterns of behavior, interests, or activities."
+    },
+    {
+      "term": "Neurodevelopmental disorder",
+      "definition": "A group of disorders that emerge during the developmental period and are characterized by developmental deficits in personal, social, academic, or occupational functioning."
+    },
+    {
+      "term": "Inattention",
+      "definition": "Difficulty sustaining focus, following detailed instructions, organizing tasks, and managing time, often resulting in careless mistakes and unfinished work."
+    },
+    {
+      "term": "Hyperactivity",
+      "definition": "Excessive motor activity such as fidgeting, inability to remain seated, running or climbing inappropriately, and difficulty engaging in activities quietly."
+    }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "Attention-Deficit/Hyperactivity Disorder",
+      "body": "**Attention-deficit/hyperactivity disorder (ADHD)** is one of the most commonly diagnosed **neurodevelopmental disorders** of childhood, affecting approximately 5-11% of children in the United States. ADHD is characterized by a persistent pattern of **inattention** and/or **hyperactivity**-impulsivity that is more severe than what is typically observed at a comparable developmental level.\n\nThe DSM-5 identifies three presentations of ADHD. The **predominantly inattentive presentation** involves difficulty sustaining attention, following through on tasks, organizing activities, and managing time. Children with this presentation may appear forgetful, easily distracted, and prone to making careless mistakes. The **predominantly hyperactive-impulsive presentation** involves excessive fidgeting, difficulty remaining seated, running or climbing in inappropriate situations, excessive talking, blurting out answers, and difficulty waiting their turn. The **combined presentation** includes both inattentive and hyperactive-impulsive symptoms.\n\nTo receive a diagnosis of ADHD, symptoms must be present before age 12, occur in two or more settings (such as home and school), and clearly interfere with functioning. This requirement helps distinguish ADHD from normal childhood energy and distractibility.\n\nThe causes of ADHD are complex and involve genetic, neurobiological, and environmental factors. ADHD runs strongly in families, and twin studies suggest heritability of approximately 75%. Brain imaging studies have identified differences in the prefrontal cortex and basal ganglia -- regions involved in attention, impulse control, and executive functioning. Environmental factors such as prenatal exposure to tobacco or alcohol, premature birth, and lead exposure may also contribute."
+    },
+    {
+      "type": "concept",
+      "title": "Autism Spectrum Disorder",
+      "body": "**Autism spectrum disorder (ASD)** is a neurodevelopmental disorder characterized by persistent deficits in social communication and social interaction, along with restricted, repetitive patterns of behavior, interests, or activities. The term \"spectrum\" reflects the wide range of symptoms and severity levels -- some individuals with ASD require substantial support in daily life, while others function independently with minimal support.\n\nDeficits in social communication may include difficulty with back-and-forth conversation, reduced sharing of interests or emotions, challenges understanding and using nonverbal communication (such as eye contact, facial expressions, and gestures), and difficulty developing and maintaining relationships. Restricted and repetitive behaviors may include stereotyped movements (such as hand flapping or rocking), insistence on sameness and inflexible adherence to routines, highly fixated interests of unusual intensity, and hyper- or hypo-reactivity to sensory input.\n\nASD affects approximately 1 in 36 children in the United States according to recent estimates, and it is diagnosed approximately four times more often in males than females. Symptoms typically emerge in early childhood, often becoming apparent by age 2-3, though they may not fully manifest until social demands exceed the child's capacity.\n\nThe causes of ASD are not fully understood but involve a strong genetic component. Research has conclusively debunked the fraudulent claim linking vaccines to autism -- extensive studies involving millions of children have found no association. Early behavioral interventions, speech and language therapy, and social skills training can significantly improve outcomes for children with ASD."
+    },
+    {
+      "type": "example",
+      "title": "The Debate Over Diagnosis Rates",
+      "body": "The rates of both ADHD and ASD diagnoses have increased substantially over the past several decades, sparking debate about whether these increases reflect genuine changes in prevalence or shifts in awareness, diagnostic criteria, and social pressures.\n\nCritics of rising ADHD diagnosis rates argue that normal childhood behavior is being pathologized, that cultural expectations for classroom behavior have become unreasonably rigid, and that pharmaceutical marketing has driven overdiagnosis. They point to significant geographic variation in diagnosis rates as evidence of inconsistent application of diagnostic criteria.\n\nDefenders of current diagnostic practices counter that increased awareness among parents, teachers, and clinicians has led to better identification of children who genuinely need support. They note that untreated ADHD carries significant risks, including academic failure, social difficulties, and higher rates of substance use and accidents in adolescence and adulthood.\n\nSimilarly, the increase in ASD diagnoses likely reflects broadened diagnostic criteria (the DSM-5 consolidated several previously separate diagnoses under the autism spectrum umbrella), increased awareness and screening, and better identification of individuals -- particularly girls and people of color -- who were previously overlooked. Regardless of one's position on these debates, the goal should be ensuring that all children who need support receive accurate assessment and evidence-based intervention."
+    },
+    {
+      "type": "summary",
+      "title": "Section Summary",
+      "body": "ADHD and autism spectrum disorder are the most commonly discussed neurodevelopmental disorders of childhood. ADHD involves persistent inattention and/or hyperactivity-impulsivity that impairs functioning across settings, while ASD is characterized by deficits in social communication and restricted, repetitive behaviors. Both disorders have strong genetic components and involve neurobiological differences. Rising diagnosis rates have generated debate about overdiagnosis versus improved recognition, but the priority remains ensuring accurate assessment and appropriate support for all children who need it."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-15.10",
+    "prompt": "The rates of ADHD and autism spectrum disorder diagnoses have increased significantly in recent decades. Some argue this represents overdiagnosis, while others believe it reflects better awareness and recognition. What factors might explain the increase in diagnosis rates? Take a position on this debate and support it with evidence and reasoning from this section.",
+    "minWords": 100,
+    "rubric": "A strong response identifies multiple factors that could explain increased diagnosis rates (e.g., broader diagnostic criteria, increased awareness, better screening, cultural factors, pharmaceutical marketing). The response should take a clear position while acknowledging the complexity of the issue and the valid points on both sides. It should demonstrate understanding of the potential consequences of both overdiagnosis and underdiagnosis."
+  }
+}

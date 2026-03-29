@@ -1,0 +1,29 @@
+{
+  "sectionId": "15.2",
+  "chapterId": 15,
+  "questions": [
+    {
+      "id": "ch15-q03",
+      "question": "What is the primary purpose of the DSM-5?",
+      "options": [
+        { "text": "To prescribe specific medications for each psychological disorder", "correct": false },
+        { "text": "To provide standardized criteria for diagnosing and classifying psychological disorders", "correct": true },
+        { "text": "To determine the legal competency of individuals in court proceedings", "correct": false },
+        { "text": "To rank psychological disorders by severity from mild to life-threatening", "correct": false }
+      ],
+      "explanation": "The DSM-5, published by the American Psychiatric Association, provides standardized diagnostic criteria that help clinicians make consistent and reliable diagnoses of psychological disorders."
+    },
+    {
+      "id": "ch15-q04",
+      "question": "What does comorbidity mean in the context of psychological disorders?",
+      "options": [
+        { "text": "A disorder that is fatal if left untreated", "correct": false },
+        { "text": "A disorder that only occurs in combination with a medical illness", "correct": false },
+        { "text": "The co-occurrence of two or more disorders in the same individual at the same time", "correct": true },
+        { "text": "A disorder that affects both mental and physical health equally", "correct": false }
+      ],
+      "explanation": "Comorbidity refers to the co-occurrence of two or more disorders in the same person at the same time. For example, a person with an anxiety disorder may also experience depression. Comorbidity is common and complicates both diagnosis and treatment."
+    }
+  ],
+  "passThreshold": 80
+}

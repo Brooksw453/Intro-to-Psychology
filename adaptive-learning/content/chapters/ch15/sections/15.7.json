@@ -1,0 +1,65 @@
+{
+  "sectionId": "15.7",
+  "chapterId": 15,
+  "title": "Mood and Related Disorders",
+  "learningObjectives": [
+    "Describe the symptoms and diagnostic criteria for major depressive disorder and persistent depressive disorder",
+    "Explain the key features of bipolar disorder including manic and depressive episodes",
+    "Discuss the biological, cognitive, and social factors that contribute to mood disorders",
+    "Identify warning signs associated with suicidal ideation and the importance of crisis intervention"
+  ],
+  "keyTerms": [
+    {
+      "term": "Major depressive disorder",
+      "definition": "A mood disorder characterized by at least two weeks of persistent depressed mood or loss of interest, along with other symptoms such as changes in sleep, appetite, energy, concentration, and feelings of worthlessness."
+    },
+    {
+      "term": "Persistent depressive disorder (dysthymia)",
+      "definition": "A chronic form of depression in which a person experiences a depressed mood for most of the day, for more days than not, for at least two years."
+    },
+    {
+      "term": "Bipolar disorder",
+      "definition": "A mood disorder characterized by alternating periods of mania (or hypomania) and depression."
+    },
+    {
+      "term": "Mania",
+      "definition": "A state of abnormally elevated, expansive, or irritable mood accompanied by increased energy, decreased need for sleep, racing thoughts, and impulsive behavior."
+    },
+    {
+      "term": "Suicidal ideation",
+      "definition": "Thoughts about, consideration of, or planning for ending one's own life."
+    },
+    {
+      "term": "Rumination",
+      "definition": "The tendency to repetitively focus on the causes, consequences, and symptoms of one's distress without taking action to address it."
+    }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "Depressive Disorders",
+      "body": "**Major depressive disorder (MDD)** is one of the most prevalent psychological disorders worldwide. To meet diagnostic criteria, a person must experience at least five of nine symptoms during the same two-week period, with at least one symptom being either depressed mood or markedly diminished interest or pleasure in activities. Other symptoms include significant weight change, insomnia or hypersomnia, psychomotor agitation or retardation, fatigue, feelings of worthlessness or excessive guilt, difficulty concentrating, and recurrent thoughts of death or **suicidal ideation**.\n\nMDD is more than ordinary sadness. A person with major depression may find it impossible to get out of bed, maintain personal hygiene, or fulfill basic responsibilities. The disorder affects approximately 7% of adults in the United States each year, with women diagnosed at roughly twice the rate of men. While a single episode may resolve, MDD is often recurrent -- a person who has experienced one episode has a 50% chance of experiencing another.\n\n**Persistent depressive disorder (dysthymia)** involves a chronically depressed mood that persists for at least two years in adults (one year in children and adolescents). While the symptoms may be less severe than those of MDD, the chronic nature of the condition means that it can profoundly affect a person's quality of life, relationships, and occupational functioning. Some individuals experience \"double depression,\" in which episodes of MDD are superimposed on persistent depressive disorder."
+    },
+    {
+      "type": "concept",
+      "title": "Bipolar Disorder",
+      "body": "**Bipolar disorder** is characterized by dramatic shifts in mood, energy, and activity levels that go far beyond ordinary mood fluctuations. The defining feature of bipolar I disorder is the occurrence of at least one **manic episode** -- a period of abnormally elevated, expansive, or irritable mood lasting at least one week (or requiring hospitalization). During mania, a person may feel euphoric or invincible, sleep very little without feeling tired, talk rapidly and excessively, pursue multiple projects simultaneously, engage in risky behaviors (such as spending sprees, sexual indiscretions, or reckless driving), and exhibit grandiose beliefs about their abilities.\n\nBipolar II disorder involves at least one hypomanic episode (a less severe form of mania lasting at least four days) and at least one major depressive episode. While hypomania may feel productive and energizing to the person experiencing it, it can still lead to poor judgment and strained relationships.\n\nMultiple factors contribute to mood disorders. **Biological factors** include genetics (mood disorders run strongly in families), neurotransmitter imbalances (particularly involving serotonin, norepinephrine, and dopamine), and structural and functional brain differences. **Cognitive factors** include negative thinking patterns such as **rumination** -- the tendency to dwell repetitively on distressing thoughts -- and the cognitive triad described by Aaron Beck, in which a person holds negative views of themselves, the world, and the future. **Social factors** include stressful life events, social isolation, poverty, and adverse childhood experiences."
+    },
+    {
+      "type": "example",
+      "title": "Suicide Prevention and Awareness",
+      "body": "Mood disorders, particularly major depression and bipolar disorder, are among the strongest risk factors for suicide. Approximately 90% of people who die by suicide had a diagnosable psychological disorder at the time of death, most commonly depression. Recognizing warning signs and knowing how to respond can save lives.\n\nWarning signs of **suicidal ideation** include talking about wanting to die or feeling like a burden, withdrawing from social activities, giving away valued possessions, increased use of alcohol or drugs, dramatic mood changes, expressing feelings of hopelessness or being trapped, and searching for methods of self-harm. If you are concerned about someone, asking directly about suicidal thoughts does not increase the risk -- in fact, it can provide crucial relief and open the door to getting help.\n\nThe National Suicide Prevention Lifeline (988 Suicide and Crisis Lifeline, available by calling or texting 988) and the Crisis Text Line (text HOME to 741741) provide immediate support. On college campuses, counseling centers offer confidential mental health services. Reducing access to lethal means, maintaining social connections, and ensuring continuity of mental health care are all evidence-based strategies for suicide prevention.\n\nIt is important to convey that mood disorders are treatable. A combination of psychotherapy (particularly cognitive-behavioral therapy and interpersonal therapy) and medication (such as antidepressants or mood stabilizers) is effective for many people. Recovery is possible, and seeking help is a sign of strength."
+    },
+    {
+      "type": "summary",
+      "title": "Section Summary",
+      "body": "Mood disorders include major depressive disorder, persistent depressive disorder, and bipolar disorder. MDD involves persistent depressed mood and loss of interest along with other cognitive, physical, and emotional symptoms. Bipolar disorder is characterized by alternating periods of mania (or hypomania) and depression. Biological, cognitive, and social factors all contribute to mood disorders. Suicide is a serious risk associated with mood disorders, and recognizing warning signs, providing support, and connecting individuals with professional help are essential components of prevention. Effective treatments are available."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-15.7",
+    "prompt": "Many people confuse everyday sadness with clinical depression or assume that a person with depression can simply \"snap out of it.\" Drawing on the diagnostic criteria and contributing factors discussed in this section, explain why major depressive disorder is a serious medical condition and not simply a matter of willpower. What would you say to someone who holds this misconception?",
+    "minWords": 100,
+    "rubric": "A strong response distinguishes clinical depression from ordinary sadness by referencing specific diagnostic criteria (number, duration, and severity of symptoms), discusses at least two contributing factors (biological, cognitive, or social), and explains why depression cannot be overcome through willpower alone. The response should demonstrate empathy and use non-stigmatizing language. Mentioning available treatments is a plus."
+  }
+}

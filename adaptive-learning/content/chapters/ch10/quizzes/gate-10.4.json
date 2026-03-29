@@ -1,0 +1,29 @@
+{
+  "sectionId": "10.4",
+  "chapterId": 10,
+  "questions": [
+    {
+      "id": "ch10-q07",
+      "question": "According to the Schachter-Singer two-factor theory, emotion is the result of:",
+      "options": [
+        { "text": "Physiological arousal alone", "correct": false },
+        { "text": "Cognitive appraisal of a situation without any physiological involvement", "correct": false },
+        { "text": "Physiological arousal combined with a cognitive label for that arousal", "correct": true },
+        { "text": "Simultaneous but independent activation of the cortex and autonomic nervous system", "correct": false }
+      ],
+      "explanation": "The Schachter-Singer two-factor theory proposes that emotion requires both physiological arousal and a cognitive interpretation (label) of that arousal. The same arousal could be experienced as different emotions depending on how the person interprets the situation."
+    },
+    {
+      "id": "ch10-q08",
+      "question": "Cultural norms that dictate when, where, and how emotions should be expressed are called:",
+      "options": [
+        { "text": "Emotional schemas", "correct": false },
+        { "text": "Cognitive appraisals", "correct": false },
+        { "text": "Display rules", "correct": true },
+        { "text": "Arousal patterns", "correct": false }
+      ],
+      "explanation": "Display rules are culturally learned norms about the appropriate expression of emotions. For example, some cultures encourage open expression of grief at funerals, while others value emotional restraint. These rules shape the behavioral component of emotion."
+    }
+  ],
+  "passThreshold": 80
+}

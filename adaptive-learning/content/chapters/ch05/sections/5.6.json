@@ -1,0 +1,63 @@
+{
+  "sectionId": "5.6",
+  "chapterId": 5,
+  "title": "Gestalt Principles of Perception",
+  "learningObjectives": [
+    "Explain the Gestalt approach to understanding perception",
+    "Identify and apply the major Gestalt principles of perceptual organization",
+    "Describe how depth cues and perceptual constancies contribute to stable visual perception"
+  ],
+  "keyTerms": [
+    {
+      "term": "Figure-ground relationship",
+      "definition": "The Gestalt principle that we automatically separate visual input into a central figure and a surrounding background."
+    },
+    {
+      "term": "Proximity",
+      "definition": "The Gestalt principle that objects near each other tend to be perceived as belonging to the same group."
+    },
+    {
+      "term": "Similarity",
+      "definition": "The Gestalt principle that objects sharing visual characteristics (such as color, shape, or size) tend to be grouped together."
+    },
+    {
+      "term": "Closure",
+      "definition": "The Gestalt principle that the brain tends to fill in gaps to perceive incomplete figures as complete, whole shapes."
+    },
+    {
+      "term": "Binocular disparity",
+      "definition": "A depth cue based on the slightly different images each eye receives due to their horizontal separation."
+    },
+    {
+      "term": "Perceptual constancy",
+      "definition": "The tendency to perceive objects as stable and unchanging despite changes in sensory input, such as differences in size, shape, or color on the retina."
+    }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "Gestalt Principles of Organization",
+      "body": "The **Gestalt psychologists**, a group of German researchers working in the early 20th century, argued that perception is more than the sum of its sensory parts. The brain actively organizes incoming information according to innate principles, and the whole perceptual experience is different from the mere collection of its individual elements. Their central idea is often summarized as \"the whole is other than the sum of its parts.\"\n\nThe most fundamental Gestalt principle is the **figure-ground relationship**: we automatically separate our visual field into a main object of focus (the **figure**) and the surrounding area (the **ground**). This is typically effortless -- you see words as the figure against the white page as the ground. However, ambiguous images like Rubin's vase demonstrate that figure and ground can reverse, creating two equally valid interpretations.\n\nSeveral additional principles describe how we group elements together:\n\n- **Proximity**: Objects that are close together are perceived as a group. Rows of dots spaced closely are seen as lines rather than individual dots.\n- **Similarity**: Objects that look alike (same color, shape, or size) are grouped together. In a field of circles and squares, you instinctively group the circles with circles.\n- **Continuity**: We tend to perceive smooth, continuous lines rather than abrupt changes in direction. Two crossing lines are seen as two continuous lines, not as four lines meeting at a point.\n- **Closure**: The brain fills in missing information to perceive incomplete shapes as whole. You can recognize a circle even if part of its outline is missing.\n- **Common fate**: Elements that move together in the same direction at the same speed are perceived as a single group, such as a flock of birds."
+    },
+    {
+      "type": "concept",
+      "title": "Depth Perception and Perceptual Constancies",
+      "body": "Our visual world is three-dimensional, but the image projected onto the retina is flat and two-dimensional. The brain uses multiple **depth cues** to reconstruct a sense of three-dimensional space.\n\n**Binocular cues** require input from both eyes. **Binocular disparity** (also called retinal disparity) occurs because your two eyes, separated by a few inches, receive slightly different images of the same scene. The brain fuses these two images and uses the degree of difference to calculate depth -- objects closer to you produce greater disparity. **Convergence**, the inward turning of the eyes when focusing on a nearby object, also provides depth information.\n\n**Monocular cues** work with just one eye and include: **relative size** (smaller objects appear farther away), **interposition** or overlap (an object blocking another appears closer), **linear perspective** (parallel lines appear to converge in the distance), **texture gradient** (textures become finer and less detailed with distance), and **aerial perspective** (distant objects appear hazier and bluer).\n\n**Perceptual constancies** help us experience a stable world despite constantly changing sensory input. **Size constancy** means we perceive an object as the same size whether it is near or far, even though its retinal image changes dramatically. **Shape constancy** means a door is perceived as rectangular whether viewed straight-on or at an angle. **Color constancy** means a red apple looks red whether viewed in bright sunlight or dim shadow. These constancies demonstrate that perception is an active interpretive process, not a passive recording."
+    },
+    {
+      "type": "example",
+      "title": "Gestalt Principles in Everyday Design",
+      "body": "Gestalt principles are widely used in graphic design, user interface design, and advertising. Consider your smartphone home screen: apps are organized into a grid using **proximity** to create visual groups. Apps with similar icons (such as social media apps with similar blue icons) may be perceived as related through **similarity**.\n\nThe principle of **closure** explains why logos can be simplified and still recognized. The World Wildlife Fund panda logo is made of a few black shapes with gaps between them, yet your brain effortlessly fills in the missing contours to perceive a complete panda. Similarly, the FedEx logo contains a hidden arrow in the negative space between the E and x -- once you see it, the principle of figure-ground makes it hard to unsee.\n\nWebsite designers use **continuity** to guide users' eyes along navigation bars and through content. They use **proximity** to group related information and whitespace to separate distinct sections. Understanding these principles helps explain not just how we see, but how designers can leverage perceptual tendencies to communicate more effectively."
+    },
+    {
+      "type": "summary",
+      "body": "Gestalt psychologists demonstrated that the brain actively organizes sensory information rather than passively recording it. Key principles include figure-ground, proximity, similarity, continuity, closure, and common fate. Depth perception relies on binocular cues (disparity and convergence) and monocular cues (relative size, interposition, linear perspective). Perceptual constancies for size, shape, and color ensure that we experience a stable world despite constantly changing retinal images. Together, these principles reveal perception as a constructive, interpretive process."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-5.6",
+    "prompt": "Choose a website, app, or physical space you use regularly and analyze how at least three Gestalt principles of perception are at work in its design. For each principle, identify a specific design element that demonstrates it and explain how the principle helps users understand and navigate the layout. Why would a designer benefit from understanding these psychological principles?",
+    "minWords": 100,
+    "rubric": "A strong response selects a specific, concrete example (website, app, or space), correctly identifies at least three Gestalt principles (proximity, similarity, closure, continuity, figure-ground, or common fate), provides specific design elements as evidence for each principle, explains how each principle aids user comprehension or navigation, and articulates why knowledge of perceptual psychology is valuable for designers."
+  }
+}

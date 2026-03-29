@@ -1,0 +1,29 @@
+{
+  "sectionId": "12.6",
+  "chapterId": 12,
+  "questions": [
+    {
+      "id": "ch12-q11",
+      "question": "A bully who threatens a classmate to take their lunch money is demonstrating which type of aggression?",
+      "options": [
+        { "text": "Hostile aggression", "correct": false },
+        { "text": "Instrumental aggression", "correct": true },
+        { "text": "Relational aggression", "correct": false },
+        { "text": "Reactive aggression", "correct": false }
+      ],
+      "explanation": "Instrumental aggression is calculated and premeditated, used as a means to achieve a goal other than causing pain. The bully's primary goal is obtaining the money, not inflicting harm for its own sake."
+    },
+    {
+      "id": "ch12-q12",
+      "question": "Bandura's Bobo doll experiments provided strong evidence that aggressive behavior can be:",
+      "options": [
+        { "text": "Eliminated entirely through punishment", "correct": false },
+        { "text": "Learned through observation and imitation of aggressive models", "correct": true },
+        { "text": "Attributed solely to biological instincts", "correct": false },
+        { "text": "Prevented by exposure to violent media", "correct": false }
+      ],
+      "explanation": "Bandura's Bobo doll experiments demonstrated that children who observed an adult behaving aggressively were significantly more likely to imitate that aggression, supporting social learning theory's claim that aggression is learned through observation."
+    }
+  ],
+  "passThreshold": 80
+}

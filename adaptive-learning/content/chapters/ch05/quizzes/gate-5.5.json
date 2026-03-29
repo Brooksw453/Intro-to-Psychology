@@ -1,0 +1,29 @@
+{
+  "sectionId": "5.5",
+  "chapterId": 5,
+  "questions": [
+    {
+      "id": "ch05-q09",
+      "question": "Why does food often taste bland when you have a cold?",
+      "options": [
+        { "text": "Cold viruses directly damage the taste buds on the tongue", "correct": false },
+        { "text": "Nasal congestion blocks olfactory input, which contributes significantly to the perception of flavor", "correct": true },
+        { "text": "Illness reduces the number of taste receptor cells on the tongue", "correct": false },
+        { "text": "Medications taken for colds suppress the gustatory cortex in the brain", "correct": false }
+      ],
+      "explanation": "Much of what we experience as flavor comes from olfaction (smell) rather than gustation (taste) alone. When nasal congestion blocks airborne molecules from reaching the olfactory receptors, the rich complexity of flavor is lost, leaving only the basic taste qualities detectable on the tongue."
+    },
+    {
+      "id": "ch05-q10",
+      "question": "According to gate control theory, which of the following could help reduce the perception of pain?",
+      "options": [
+        { "text": "Focusing all attention on the painful area", "correct": false },
+        { "text": "Rubbing the area near the injury, which sends competing touch signals", "correct": true },
+        { "text": "Increasing the temperature at the site of injury", "correct": false },
+        { "text": "Avoiding any physical contact with the injured area", "correct": false }
+      ],
+      "explanation": "Gate control theory proposes that a neural gate in the spinal cord can be closed by competing non-pain signals. Rubbing a bumped elbow sends touch signals that compete with pain signals, partially closing the gate and reducing the pain message reaching the brain."
+    }
+  ],
+  "passThreshold": 80
+}

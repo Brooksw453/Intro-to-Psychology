@@ -1,0 +1,14 @@
+{
+  "chapterId": 3,
+  "title": "Biopsychology",
+  "weekNum": 3,
+  "reading": "Psychology 2e (OpenStax), Chapter 3 (Sections 3.1-3.5)",
+  "learningObjectives": [
+    "Explain the basic principles of human genetics, including dominant and recessive traits",
+    "Describe the structure and function of neurons and glial cells",
+    "Differentiate between the central and peripheral nervous systems",
+    "Identify the major structures of the brain and their functions",
+    "Explain how the endocrine system influences behavior through hormones"
+  ],
+  "sections": ["3.1", "3.2", "3.3", "3.4", "3.5"]
+}

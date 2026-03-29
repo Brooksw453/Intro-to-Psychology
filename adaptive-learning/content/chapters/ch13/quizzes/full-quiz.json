@@ -1,0 +1,95 @@
+{
+  "sectionId": "full",
+  "chapterId": 13,
+  "questions": [
+    {
+      "id": "ch13-q09",
+      "question": "Which of the following best describes the difference between industrial and organizational psychology?",
+      "options": [
+        { "text": "Industrial psychology studies factories; organizational psychology studies offices", "correct": false },
+        { "text": "Industrial psychology focuses on hiring and evaluation; organizational psychology focuses on workplace social dynamics", "correct": true },
+        { "text": "Industrial psychology is applied; organizational psychology is theoretical", "correct": false },
+        { "text": "Industrial psychology studies individuals; organizational psychology studies groups only", "correct": false }
+      ],
+      "explanation": "Industrial psychology focuses on personnel issues like job analysis, selection, training, and performance appraisal, while organizational psychology examines the social and psychological dynamics of the workplace including satisfaction, leadership, and culture."
+    },
+    {
+      "id": "ch13-q10",
+      "question": "KSAOs are identified through the process of:",
+      "options": [
+        { "text": "Performance appraisal", "correct": false },
+        { "text": "Job analysis", "correct": true },
+        { "text": "360-degree feedback", "correct": false },
+        { "text": "Organizational culture assessment", "correct": false }
+      ],
+      "explanation": "KSAOs (Knowledge, Skills, Abilities, and Other characteristics) are identified through job analysis, which systematically determines what a job requires and what personal attributes are needed to perform it."
+    },
+    {
+      "id": "ch13-q11",
+      "question": "A Theory X manager would most likely believe that employees:",
+      "options": [
+        { "text": "Are self-motivated and seek responsibility", "correct": false },
+        { "text": "Need close supervision and external motivation to perform", "correct": true },
+        { "text": "Perform best with transformational leadership", "correct": false },
+        { "text": "Benefit most from 360-degree feedback", "correct": false }
+      ],
+      "explanation": "McGregor's Theory X assumes that workers are inherently lazy, dislike work, and need close supervision and external control to be productive. Theory Y, by contrast, assumes workers are self-motivated and seek responsibility."
+    },
+    {
+      "id": "ch13-q12",
+      "question": "The halo effect in performance appraisal occurs when:",
+      "options": [
+        { "text": "A supervisor rates all employees as average", "correct": false },
+        { "text": "Recent performance is weighted more heavily than earlier performance", "correct": false },
+        { "text": "An employee who excels in one area is rated highly in all areas", "correct": true },
+        { "text": "Employees rate their own performance more highly than their supervisors do", "correct": false }
+      ],
+      "explanation": "The halo effect is a bias in performance appraisal where a supervisor rates an employee highly on all dimensions because they excel in one particular area, rather than evaluating each dimension independently."
+    },
+    {
+      "id": "ch13-q13",
+      "question": "Which of the following is an example of organizational citizenship behavior?",
+      "options": [
+        { "text": "Completing assigned tasks by their deadline", "correct": false },
+        { "text": "Voluntarily helping a new coworker learn the job", "correct": true },
+        { "text": "Attending a mandatory training session", "correct": false },
+        { "text": "Following workplace safety regulations", "correct": false }
+      ],
+      "explanation": "Organizational citizenship behavior (OCB) involves voluntary behaviors that go beyond formal job requirements. Helping a new coworker learn the job is voluntary and contributes to organizational functioning, making it a classic example of OCB."
+    },
+    {
+      "id": "ch13-q14",
+      "question": "An ergonomist redesigning a hospital medication dispensing system to reduce errors would be working in the area of:",
+      "options": [
+        { "text": "Industrial psychology", "correct": false },
+        { "text": "Organizational psychology", "correct": false },
+        { "text": "Human factors psychology", "correct": true },
+        { "text": "Clinical psychology", "correct": false }
+      ],
+      "explanation": "Human factors psychology (ergonomics) studies how people interact with systems and technology, aiming to design interfaces that reduce errors and improve safety — exactly what redesigning a medication dispensing system entails."
+    },
+    {
+      "id": "ch13-q15",
+      "question": "Crew resource management (CRM) training in aviation was developed primarily because research showed that many accidents resulted from:",
+      "options": [
+        { "text": "Pilot incompetence and lack of training", "correct": false },
+        { "text": "Poorly designed systems and communication breakdowns", "correct": true },
+        { "text": "Inadequate pay and low job satisfaction", "correct": false },
+        { "text": "Theory X management approaches by airlines", "correct": false }
+      ],
+      "explanation": "Human factors research revealed that many aviation accidents were caused by poorly designed cockpit systems, confusing alarms, and communication failures between crew members — not by individual pilot incompetence. CRM training was developed to address these systemic issues."
+    },
+    {
+      "id": "ch13-q16",
+      "question": "Which research finding at the Hawthorne Works was most significant for the development of organizational psychology?",
+      "options": [
+        { "text": "Better lighting directly increased worker productivity", "correct": false },
+        { "text": "Workers' behavior changed simply because they were being observed", "correct": true },
+        { "text": "Higher pay was the strongest predictor of worker satisfaction", "correct": false },
+        { "text": "Structured interviews were more valid than unstructured interviews", "correct": false }
+      ],
+      "explanation": "The Hawthorne studies revealed that workers' productivity changed simply because they knew they were being observed, regardless of the actual experimental conditions. This discovery shifted attention toward the social and psychological factors influencing work behavior, helping establish organizational psychology."
+    }
+  ],
+  "passThreshold": 80
+}

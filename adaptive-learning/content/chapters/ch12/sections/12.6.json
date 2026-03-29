@@ -1,0 +1,44 @@
+{
+  "sectionId": "12.6",
+  "chapterId": 12,
+  "title": "Aggression",
+  "learningObjectives": [
+    "Define aggression and distinguish between hostile and instrumental aggression",
+    "Describe biological, psychological, and social factors that contribute to aggression",
+    "Explain how media exposure and situational factors influence aggressive behavior"
+  ],
+  "keyTerms": [
+    { "term": "Aggression", "definition": "Behavior intended to harm another individual who does not wish to be harmed." },
+    { "term": "Hostile aggression", "definition": "Impulsive aggression driven by anger or frustration, with the primary goal of inflicting harm." },
+    { "term": "Instrumental aggression", "definition": "Premeditated aggression used as a means to achieve a specific goal other than causing pain." },
+    { "term": "Frustration-aggression hypothesis", "definition": "The theory that frustration -- the blocking of a goal -- always leads to some form of aggression." },
+    { "term": "Social learning theory of aggression", "definition": "The perspective that aggressive behavior is learned through observation and imitation of aggressive models." }
+  ],
+  "contentBlocks": [
+    {
+      "type": "concept",
+      "title": "Defining and Classifying Aggression",
+      "body": "**Aggression** is defined as behavior intended to harm another individual who does not wish to be harmed. This definition has two important elements: the behavior must be intentional, and the target must be an unwilling recipient. Accidentally bumping into someone is not aggression; deliberately pushing them is.\n\nPsychologists distinguish between two main types of aggression. **Hostile aggression** (also called reactive or affective aggression) is impulsive, driven by anger or frustration, with the primary goal of causing harm or pain. A person who punches a wall after receiving bad news is displaying hostile aggression. **Instrumental aggression** (also called proactive aggression) is calculated and premeditated, used as a means to achieve some other goal. A bully who threatens a classmate to obtain lunch money is displaying instrumental aggression -- the harm is a means to an end, not the primary objective.\n\nAggression can also be physical or relational. **Physical aggression** involves bodily harm or the threat of it. **Relational aggression** involves harming someone's social relationships or status through behaviors like gossiping, social exclusion, or spreading rumors. Research suggests that while boys tend to show higher rates of physical aggression, relational aggression is more equally distributed across genders."
+    },
+    {
+      "type": "concept",
+      "title": "Causes of Aggression",
+      "body": "Aggression arises from a complex interplay of biological, psychological, and social factors. At the biological level, the neurotransmitter **serotonin** plays a regulatory role; low serotonin levels have been associated with increased impulsive aggression. The hormone **testosterone** is also linked to aggression, though the relationship is not straightforward -- testosterone may increase dominance-seeking behavior rather than aggression per se. Brain structures such as the **amygdala** (which processes threats and emotional responses) and the **prefrontal cortex** (which regulates impulse control) are also implicated.\n\nThe **frustration-aggression hypothesis**, proposed by John Dollard and colleagues, states that frustration -- the blocking of a goal-directed behavior -- produces a readiness for aggression. While the original theory claimed that frustration always leads to aggression, subsequent revisions recognize that frustration increases the likelihood of aggression but does not guarantee it. Other responses to frustration, such as problem-solving or withdrawal, are also possible.\n\nBandura's **social learning theory** emphasizes that aggression is learned through observation and imitation. His famous **Bobo doll experiments** demonstrated that children who observed an adult model behaving aggressively toward an inflatable doll were significantly more likely to imitate that aggressive behavior. This finding has important implications for the debate about media violence: extensive exposure to violent content in television, movies, and video games may desensitize individuals to violence and provide aggressive scripts for behavior, though the effect sizes are debated among researchers."
+    },
+    {
+      "type": "example",
+      "title": "Situational Triggers for Aggression",
+      "body": "Research has identified several situational factors that increase the likelihood of aggression. **Heat** is one of the most consistent environmental predictors: violent crimes, riots, and road rage incidents all increase during hot weather. **Alcohol** consumption is another powerful trigger, as it impairs the prefrontal cortex's ability to regulate impulses. **Deindividuation** -- the loss of self-awareness and individual accountability that occurs in crowds or when anonymous -- can also unleash aggressive behavior that individuals would normally suppress.\n\nConsider the phenomenon of road rage. A normally calm person may become furious behind the wheel due to a combination of frustration (being stuck in traffic), anonymity (being inside a vehicle), and arousal (the stimulating environment of driving). The car creates a barrier that reduces social accountability, making aggressive responses more likely. Understanding these situational triggers does not excuse aggressive behavior, but it does help explain why aggression often occurs in contexts that would not be predicted by personality alone."
+    },
+    {
+      "type": "summary",
+      "body": "Aggression is intentional behavior aimed at harming an unwilling target, classified as hostile (impulsive, anger-driven) or instrumental (calculated, goal-directed). Biological factors (serotonin, testosterone, brain structures), psychological factors (frustration, learned scripts), and social factors (modeling, media exposure, situational triggers) all contribute. The frustration-aggression hypothesis and social learning theory offer complementary explanations, while situational factors like heat, alcohol, and deindividuation increase the likelihood of aggressive behavior."
+    }
+  ],
+  "freeTextPrompt": {
+    "id": "ft-12.6",
+    "prompt": "Choose a specific example of aggression from the news, a film, or your own experience. Classify it as hostile or instrumental aggression and explain your reasoning. Then analyze the behavior using at least two of the theoretical perspectives discussed in this section (biological, frustration-aggression, or social learning). What factors might have prevented or reduced the aggressive behavior?",
+    "minWords": 100,
+    "rubric": "A strong response should: (1) describe a specific instance of aggression, (2) correctly classify it as hostile or instrumental with clear justification, (3) apply at least two theoretical perspectives to analyze the behavior, (4) propose realistic factors that could have prevented or reduced the aggression, and (5) demonstrate understanding of the multifaceted nature of aggressive behavior."
+  }
+}

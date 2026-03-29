@@ -1,0 +1,29 @@
+{
+  "sectionId": "7.3",
+  "chapterId": 7,
+  "questions": [
+    {
+      "id": "ch07-q05",
+      "question": "After a widely publicized airplane crash, people tend to overestimate the danger of flying compared to driving. This is an example of:",
+      "options": [
+        { "text": "The representativeness heuristic", "correct": false },
+        { "text": "Functional fixedness", "correct": false },
+        { "text": "The availability heuristic", "correct": true },
+        { "text": "Anchoring bias", "correct": false }
+      ],
+      "explanation": "The availability heuristic leads people to judge the likelihood of events based on how easily examples come to mind. Because airplane crashes are vivid and heavily covered by media, they come to mind easily, causing people to overestimate their frequency compared to the far more common but less dramatic risk of car accidents."
+    },
+    {
+      "id": "ch07-q06",
+      "question": "A person cannot figure out how to prop open a door because they do not think to use a shoe as a doorstop. This is an example of:",
+      "options": [
+        { "text": "Confirmation bias", "correct": false },
+        { "text": "Mental set", "correct": false },
+        { "text": "The representativeness heuristic", "correct": false },
+        { "text": "Functional fixedness", "correct": true }
+      ],
+      "explanation": "Functional fixedness is the tendency to see objects only in terms of their typical functions. Failing to recognize that a shoe could serve as a doorstop reflects an inability to see beyond the object's conventional use, which is a specific type of barrier to creative problem solving."
+    }
+  ],
+  "passThreshold": 80
+}
