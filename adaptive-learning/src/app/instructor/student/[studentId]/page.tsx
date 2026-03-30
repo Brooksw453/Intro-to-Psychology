@@ -126,12 +126,6 @@ const ACTIVITY_TYPE_CONFIG: Record<string, { label: string; color: string; icon:
   free_text_submit: { label: 'Written response', color: 'bg-teal-100 text-teal-700', icon: '✏' },
 };
 
-const ASSIGNMENT_TITLES: Record<number, string> = {
-  1: 'Business Concept & Environment Analysis',
-  2: 'Organizational & Management Plan',
-  3: 'Marketing & Technology Strategy',
-  4: 'Financial Overview & Funding Strategy',
-};
 
 function formatRelativeTime(dateStr: string): string {
   const date = new Date(dateStr);
@@ -310,7 +304,7 @@ export default async function StudentDetailPage({
 
     return {
       assignmentId: a.assignmentId,
-      title: ASSIGNMENT_TITLES[a.assignmentId] || a.title,
+      title: a.title,
       points: a.points,
       totalSections: a.sections.length,
       sectionsSubmitted: sectionResults.filter(s => s.score !== null).length,

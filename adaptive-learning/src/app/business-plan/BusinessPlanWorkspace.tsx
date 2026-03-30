@@ -22,12 +22,6 @@ interface BusinessPlanProps {
   isSubmitted?: boolean;
 }
 
-const PART_LABELS = [
-  'Part 1: Business Concept & Environment Analysis',
-  'Part 2: Organizational & Management Plan',
-  'Part 3: Marketing & Technology Strategy',
-  'Part 4: Financial Overview & Funding Strategy',
-];
 
 export default function BusinessPlanWorkspace({
   studentName,
@@ -45,6 +39,13 @@ export default function BusinessPlanWorkspace({
   const [showExecChat, setShowExecChat] = useState(false);
   const [showIntroChat, setShowIntroChat] = useState(false);
   const [submitted, setSubmitted] = useState(initialSubmitted);
+
+  // Build part labels dynamically from assignment titles
+  const PART_LABELS = useMemo(
+    () => assignments.map((a, i) => `Part ${i + 1}: ${a.title}`),
+    [assignments]
+  );
+
   const [submitting, setSubmitting] = useState(false);
 
   // Load from localStorage on mount as fallback
