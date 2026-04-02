@@ -7,6 +7,11 @@ export interface TTSBlock {
   text: string;
 }
 
+export interface TTSMediaMetadata {
+  title: string;
+  artist: string;
+}
+
 interface UseTextToSpeechReturn {
   isPlaying: boolean;
   isPaused: boolean;
@@ -66,7 +71,108 @@ export function chunkText(text: string): string[] {
   return chunks.length > 0 ? chunks : [text];
 }
 
-export function useTextToSpeech(blocks: TTSBlock[]): UseTextToSpeechReturn {
+// ─── Silent audio keepalive ───────────────────────────────────────────
+// Mobile browsers suspend SpeechSynthesis when the screen locks because
+// there's no active audio session. Playing a near-silent audio loop
+// keeps the browser's audio session alive so TTS continues on the lock screen.
+
+let silentAudio: HTMLAudioElement | null = null;
+
+function startSilentAudio() {
+  if (typeof document === 'undefined') return;
+  if (silentAudio) return; // Already running
+
+  // Generate a tiny WAV file: 1 second of near-silence (single quiet sample)
+  // This is a valid WAV with minimal data — just enough to establish an audio session
+  const sampleRate = 8000;
+  const numSamples = sampleRate; // 1 second
+  const buffer = new ArrayBuffer(44 + numSamples * 2);
+  const view = new DataView(buffer);
+
+  // WAV header
+  const writeString = (offset: number, str: string) => {
+    for (let i = 0; i < str.length; i++) view.setUint8(offset + i, str.charCodeAt(i));
+  };
+  writeString(0, 'RIFF');
+  view.setUint32(4, 36 + numSamples * 2, true);
+  writeString(8, 'WAVE');
+  writeString(12, 'fmt ');
+  view.setUint32(16, 16, true); // chunk size
+  view.setUint16(20, 1, true);  // PCM
+  view.setUint16(22, 1, true);  // mono
+  view.setUint32(24, sampleRate, true);
+  view.setUint32(28, sampleRate * 2, true); // byte rate
+  view.setUint16(32, 2, true);  // block align
+  view.setUint16(34, 16, true); // bits per sample
+  writeString(36, 'data');
+  view.setUint32(40, numSamples * 2, true);
+
+  // Near-silent samples (value 1 — essentially inaudible)
+  for (let i = 0; i < numSamples; i++) {
+    view.setInt16(44 + i * 2, 1, true);
+  }
+
+  const blob = new Blob([buffer], { type: 'audio/wav' });
+  const url = URL.createObjectURL(blob);
+
+  silentAudio = new Audio(url);
+  silentAudio.loop = true;
+  silentAudio.volume = 0.01; // Near-silent
+  silentAudio.play().catch(() => {
+    // Autoplay might be blocked — that's OK, the user gesture from the play
+    // button will have already unlocked audio
+  });
+}
+
+function stopSilentAudio() {
+  if (silentAudio) {
+    silentAudio.pause();
+    silentAudio.src = '';
+    silentAudio = null;
+  }
+}
+
+// ─── Media Session API ────────────────────────────────────────────────
+// Shows lock screen controls (play/pause, skip forward/back) on mobile.
+
+function updateMediaSession(
+  metadata: TTSMediaMetadata | null,
+  blockLabel: string,
+  handlers: {
+    play: () => void;
+    pause: () => void;
+    skipForward: () => void;
+    skipBack: () => void;
+  } | null,
+) {
+  if (typeof navigator === 'undefined' || !('mediaSession' in navigator)) return;
+
+  if (metadata && handlers) {
+    navigator.mediaSession.metadata = new MediaMetadata({
+      title: blockLabel || metadata.title,
+      artist: metadata.artist,
+      album: metadata.title,
+    });
+
+    navigator.mediaSession.setActionHandler('play', handlers.play);
+    navigator.mediaSession.setActionHandler('pause', handlers.pause);
+    navigator.mediaSession.setActionHandler('previoustrack', handlers.skipBack);
+    navigator.mediaSession.setActionHandler('nexttrack', handlers.skipForward);
+  } else {
+    // Clear handlers
+    navigator.mediaSession.setActionHandler('play', null);
+    navigator.mediaSession.setActionHandler('pause', null);
+    navigator.mediaSession.setActionHandler('previoustrack', null);
+    navigator.mediaSession.setActionHandler('nexttrack', null);
+  }
+}
+
+// ─── Main hook ────────────────────────────────────────────────────────
+
+export function useTextToSpeech(
+  blocks: TTSBlock[],
+  mediaMetadata?: TTSMediaMetadata,
+): UseTextToSpeechReturn {
   const [isPlaying, setIsPlaying] = useState(false);
   const [isPaused, setIsPaused] = useState(false);
   const [isSupported, setIsSupported] = useState(false);
@@ -106,6 +212,8 @@ export function useTextToSpeech(blocks: TTSBlock[]): UseTextToSpeechReturn {
       setCurrentChunkIndex(0);
       blockIndexRef.current = 0;
       chunkIndexRef.current = 0;
+      stopSilentAudio();
+      updateMediaSession(null, '', null);
       return;
     }
 
@@ -151,17 +259,24 @@ export function useTextToSpeech(blocks: TTSBlock[]): UseTextToSpeechReturn {
     isPlayingRef.current = true;
     setIsPlaying(true);
     setIsPaused(false);
+    startSilentAudio();
     speakChunk();
   }, [isSupported, speakChunk]);
 
   const pause = useCallback(() => {
     window.speechSynthesis.pause();
     setIsPaused(true);
+    if ('mediaSession' in navigator) {
+      navigator.mediaSession.playbackState = 'paused';
+    }
   }, []);
 
   const resume = useCallback(() => {
     window.speechSynthesis.resume();
     setIsPaused(false);
+    if ('mediaSession' in navigator) {
+      navigator.mediaSession.playbackState = 'playing';
+    }
   }, []);
 
   const stop = useCallback(() => {
@@ -173,6 +288,8 @@ export function useTextToSpeech(blocks: TTSBlock[]): UseTextToSpeechReturn {
     setCurrentChunkIndex(0);
     blockIndexRef.current = 0;
     chunkIndexRef.current = 0;
+    stopSilentAudio();
+    updateMediaSession(null, '', null);
   }, []);
 
   const skipForward = useCallback(() => {
@@ -216,23 +333,39 @@ export function useTextToSpeech(blocks: TTSBlock[]): UseTextToSpeechReturn {
     });
   }, [speakChunk]);
 
-  // Auto-pause when page loses visibility
+  // Register / update Media Session controls when playing state or block changes
   useEffect(() => {
-    if (!isSupported) return;
-    function handleVisibility() {
-      if (document.hidden && isPlayingRef.current && !window.speechSynthesis.paused) {
+    if (!isPlaying || !mediaMetadata) return;
+
+    const currentLabel = blocks[currentBlockIndex]?.label || '';
+    updateMediaSession(mediaMetadata, currentLabel, {
+      play: () => {
+        if (isPaused) {
+          window.speechSynthesis.resume();
+          setIsPaused(false);
+        }
+        if ('mediaSession' in navigator) navigator.mediaSession.playbackState = 'playing';
+      },
+      pause: () => {
         window.speechSynthesis.pause();
         setIsPaused(true);
-      }
+        if ('mediaSession' in navigator) navigator.mediaSession.playbackState = 'paused';
+      },
+      skipForward,
+      skipBack,
+    });
+
+    if ('mediaSession' in navigator) {
+      navigator.mediaSession.playbackState = isPaused ? 'paused' : 'playing';
     }
-    document.addEventListener('visibilitychange', handleVisibility);
-    return () => document.removeEventListener('visibilitychange', handleVisibility);
-  }, [isSupported]);
+  }, [isPlaying, isPaused, currentBlockIndex, blocks, mediaMetadata, skipForward, skipBack]);
 
   // Cleanup on unmount
   useEffect(() => {
     return () => {
       isPlayingRef.current = false;
+      stopSilentAudio();
+      updateMediaSession(null, '', null);
       if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
         window.speechSynthesis.cancel();
       }

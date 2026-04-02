@@ -1,18 +1,20 @@
 'use client';
 
 import { useMemo, useEffect } from 'react';
-import { useTextToSpeech, type TTSBlock } from '@/hooks/useTextToSpeech';
+import { useTextToSpeech, type TTSBlock, type TTSMediaMetadata } from '@/hooks/useTextToSpeech';
 import { stripMarkdown } from '@/lib/stripMarkdown';
+import { courseConfig } from '@/lib/course.config';
 import type { SectionContent } from '@/lib/types';
 
 interface TTSControllerProps {
   section: SectionContent;
+  courseName?: string;
   onBlockIndexChange?: (index: number) => void;
   onChunkIndexChange?: (index: number) => void;
   onClose: () => void;
 }
 
-export default function TTSController({ section, onBlockIndexChange, onChunkIndexChange, onClose }: TTSControllerProps) {
+export default function TTSController({ section, courseName, onBlockIndexChange, onChunkIndexChange, onClose }: TTSControllerProps) {
   const blocks: TTSBlock[] = useMemo(() => {
     const result: TTSBlock[] = [];
 
@@ -54,6 +56,11 @@ export default function TTSController({ section, onBlockIndexChange, onChunkInde
     return result;
   }, [section]);
 
+  const mediaMetadata: TTSMediaMetadata = useMemo(() => ({
+    title: `${section.sectionId}: ${section.title}`,
+    artist: courseName || courseConfig.title,
+  }), [section, courseName]);
+
   const {
     isPlaying,
     isPaused,
@@ -70,7 +77,7 @@ export default function TTSController({ section, onBlockIndexChange, onChunkInde
     skipBack,
     rateLabel,
     cycleRate,
-  } = useTextToSpeech(blocks);
+  } = useTextToSpeech(blocks, mediaMetadata);
 
   // Notify parent of block and chunk changes for highlighting
   useEffect(() => {
