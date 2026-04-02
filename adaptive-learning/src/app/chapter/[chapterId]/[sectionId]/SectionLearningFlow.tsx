@@ -1,12 +1,13 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { useRouter } from 'next/navigation';
 import ContentRenderer from '@/components/ContentRenderer';
 import QuizGate from '@/components/QuizGate';
 import FreeTextPrompt from '@/components/FreeTextPrompt';
 import RemediationPanel from '@/components/RemediationPanel';
 import AskQuestionPanel from '@/components/AskQuestionPanel';
+import TTSController from '@/components/TTSController';
 import type { SectionContent, GateQuiz, ProgressStatus } from '@/lib/types';
 
 type FlowStep = 'content' | 'quiz' | 'remediation' | 'free_text' | 'completed';
@@ -56,6 +57,20 @@ export default function SectionLearningFlow({
     blockTitle: string;
     blockBody: string;
   } | null>(null);
+  const [showTTS, setShowTTS] = useState(false);
+  const [ttsBlockIndex, setTTSBlockIndex] = useState<number | undefined>(undefined);
+
+  // Auto-stop TTS when leaving content step
+  useEffect(() => {
+    if (currentStep !== 'content') {
+      setShowTTS(false);
+      setTTSBlockIndex(undefined);
+    }
+  }, [currentStep]);
+
+  const handleTTSBlockChange = useCallback((index: number) => {
+    setTTSBlockIndex(index);
+  }, []);
 
   function handleReadyForQuiz() {
     setCurrentStep('quiz');
@@ -178,11 +193,29 @@ export default function SectionLearningFlow({
       {/* Content Step */}
       {currentStep === 'content' && (
         <>
+          {/* Listen button */}
+          <div className="flex justify-end">
+            <button
+              onClick={() => setShowTTS(!showTTS)}
+              className={`inline-flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-lg transition-colors ${
+                showTTS
+                  ? 'bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 border border-blue-300 dark:border-blue-700'
+                  : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-blue-900/20 hover:text-blue-600 dark:hover:text-blue-400 border border-gray-200 dark:border-gray-600'
+              }`}
+            >
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z" />
+              </svg>
+              {showTTS ? 'Close Player' : 'Listen'}
+            </button>
+          </div>
+
           <ContentRenderer
             section={section}
             onAskQuestion={(title, body) => setAskQuestionContext({ blockTitle: title, blockBody: body })}
+            highlightBlockIndex={showTTS ? ttsBlockIndex : undefined}
           />
-          <div className="flex justify-center pt-4">
+          <div className={`flex justify-center pt-4 ${showTTS ? 'pb-20' : ''}`}>
             <button
               onClick={handleReadyForQuiz}
               className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg shadow-sm transition-colors text-lg"
@@ -190,6 +223,15 @@ export default function SectionLearningFlow({
               I&apos;m ready for the Knowledge Check
             </button>
           </div>
+
+          {/* TTS Controller - fixed bottom bar */}
+          {showTTS && (
+            <TTSController
+              section={section}
+              onBlockIndexChange={handleTTSBlockChange}
+              onClose={() => { setShowTTS(false); setTTSBlockIndex(undefined); }}
+            />
+          )}
         </>
       )}
 

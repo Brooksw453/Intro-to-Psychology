@@ -4,6 +4,7 @@ import { useState, useCallback } from 'react';
 import { useRouter } from 'next/navigation';
 import type { AssignmentConfig, AssignmentDraft } from '@/lib/types';
 import DraftChat from './DraftChat';
+import MicrophoneButton from '@/components/MicrophoneButton';
 
 interface Props {
   assignment: AssignmentConfig;
@@ -265,12 +266,18 @@ export default function AssignmentWorkspace({ assignment, savedDrafts }: Props) 
                 </div>
               </div>
 
-              <textarea
-                value={currentContent}
-                onChange={(e) => setDrafts(prev => ({ ...prev, [section.key]: e.target.value }))}
-                placeholder={`Write your response here... (${section.minWords}-${section.maxWords} words)`}
-                className="w-full h-48 sm:h-64 p-3 sm:p-4 border border-gray-300 dark:border-gray-600 rounded-lg text-gray-900 dark:text-white dark:bg-gray-700 dark:placeholder-gray-400 text-base sm:text-sm leading-relaxed resize-y focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
-              />
+              <div className="relative">
+                <textarea
+                  value={currentContent}
+                  onChange={(e) => setDrafts(prev => ({ ...prev, [section.key]: e.target.value }))}
+                  placeholder={`Write your response here... (${section.minWords}-${section.maxWords} words)`}
+                  className="w-full h-48 sm:h-64 p-3 sm:p-4 pr-16 border border-gray-300 dark:border-gray-600 rounded-lg text-gray-900 dark:text-white dark:bg-gray-700 dark:placeholder-gray-400 text-base sm:text-sm leading-relaxed resize-y focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
+                />
+                <MicrophoneButton
+                  onTranscript={(text) => setDrafts(prev => ({ ...prev, [section.key]: prev[section.key] + (prev[section.key] && !prev[section.key].endsWith(' ') ? ' ' : '') + text }))}
+                  className="absolute bottom-3 right-3"
+                />
+              </div>
 
               {error && (
                 <div className="mt-2 p-3 bg-red-50 dark:bg-red-900/30 border border-red-200 dark:border-red-800 rounded-lg text-sm text-red-700 dark:text-red-300">

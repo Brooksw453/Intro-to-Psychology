@@ -6,9 +6,11 @@ import { renderMarkdown } from '@/lib/renderMarkdown';
 interface ContentRendererProps {
   section: SectionContent;
   onAskQuestion?: (blockTitle: string, blockBody: string) => void;
+  /** Index of the content block currently being read aloud (offset by 2 for title + objectives) */
+  highlightBlockIndex?: number;
 }
 
-export default function ContentRenderer({ section, onAskQuestion }: ContentRendererProps) {
+export default function ContentRenderer({ section, onAskQuestion, highlightBlockIndex }: ContentRendererProps) {
   return (
     <div className="space-y-8">
       {/* Section Header */}
@@ -20,7 +22,7 @@ export default function ContentRenderer({ section, onAskQuestion }: ContentRende
       </div>
 
       {/* Learning Objectives */}
-      <div className="bg-blue-50 dark:bg-blue-900/30 border border-blue-200 dark:border-blue-800 rounded-lg p-5">
+      <div className={`bg-blue-50 dark:bg-blue-900/30 border rounded-lg p-5 transition-all duration-300 ${highlightBlockIndex === 1 ? 'border-blue-400 dark:border-blue-500 ring-2 ring-blue-200 dark:ring-blue-800' : 'border-blue-200 dark:border-blue-800'}`}>
         <h3 className="text-sm font-semibold text-blue-800 dark:text-blue-300 uppercase tracking-wide mb-3">
           After this section, you should be able to:
         </h3>
@@ -37,8 +39,11 @@ export default function ContentRenderer({ section, onAskQuestion }: ContentRende
       </div>
 
       {/* Content Blocks */}
-      {section.contentBlocks.map((block, i) => (
-        <div key={i}>
+      {section.contentBlocks.map((block, i) => {
+        const ttsIndex = i + 2; // offset: 0=title, 1=objectives, 2+=content blocks
+        const isHighlighted = highlightBlockIndex === ttsIndex;
+        return (
+        <div key={i} className={`transition-all duration-300 rounded-lg ${isHighlighted ? 'ring-2 ring-blue-300 dark:ring-blue-700 bg-blue-50/50 dark:bg-blue-900/10' : ''}`}>
           <div className={block.type === 'summary' ? 'bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-6' : ''}>
             {block.title && (
               <h3 className={`text-xl font-semibold mb-3 ${
@@ -70,10 +75,11 @@ export default function ContentRenderer({ section, onAskQuestion }: ContentRende
             </div>
           )}
         </div>
-      ))}
+        );
+      })}
 
       {/* Key Terms */}
-      <div className="bg-amber-50 dark:bg-amber-900/30 border border-amber-200 dark:border-amber-800 rounded-lg p-6">
+      <div className={`bg-amber-50 dark:bg-amber-900/30 border rounded-lg p-6 transition-all duration-300 ${highlightBlockIndex === section.contentBlocks.length + 2 ? 'border-amber-400 dark:border-amber-500 ring-2 ring-amber-200 dark:ring-amber-800' : 'border-amber-200 dark:border-amber-800'}`}>
         <h3 className="text-lg font-semibold text-amber-900 dark:text-amber-300 mb-4">
           📖 Key Terms
         </h3>

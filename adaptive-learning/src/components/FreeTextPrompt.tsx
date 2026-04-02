@@ -1,7 +1,8 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useCallback } from 'react';
 import type { FreeTextPrompt as FreeTextPromptType } from '@/lib/types';
+import MicrophoneButton from '@/components/MicrophoneButton';
 
 interface FreeTextPromptProps {
   prompt: FreeTextPromptType;
@@ -33,6 +34,10 @@ export default function FreeTextPrompt({
   const wordCount = countWords(response);
   const meetsMinimum = wordCount >= prompt.minWords;
   const passed = evaluation ? evaluation.score >= 70 : false;
+
+  const handleMicTranscript = useCallback((text: string) => {
+    setResponse(prev => prev + (prev && !prev.endsWith(' ') ? ' ' : '') + text);
+  }, []);
 
   async function handleSubmit() {
     if (!meetsMinimum) return;
@@ -97,16 +102,23 @@ export default function FreeTextPrompt({
       {/* Response textarea */}
       <div>
         <label htmlFor="free-text-response" className="sr-only">Your written response</label>
-        <textarea
-          id="free-text-response"
-          value={response}
-          onChange={(e) => setResponse(e.target.value)}
-          disabled={!!evaluation}
-          rows={8}
-          aria-describedby="word-count"
-          className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-50 dark:disabled:bg-gray-800 disabled:text-gray-600 dark:disabled:text-gray-400 resize-y text-gray-900 dark:text-white dark:bg-gray-700 dark:placeholder-gray-400 text-base sm:text-sm"
-          placeholder="Type your response here..."
-        />
+        <div className="relative">
+          <textarea
+            id="free-text-response"
+            value={response}
+            onChange={(e) => setResponse(e.target.value)}
+            disabled={!!evaluation}
+            rows={8}
+            aria-describedby="word-count"
+            className="w-full px-4 py-3 pr-16 border border-gray-300 dark:border-gray-600 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-50 dark:disabled:bg-gray-800 disabled:text-gray-600 dark:disabled:text-gray-400 resize-y text-gray-900 dark:text-white dark:bg-gray-700 dark:placeholder-gray-400 text-base sm:text-sm"
+            placeholder="Type your response here..."
+          />
+          <MicrophoneButton
+            onTranscript={handleMicTranscript}
+            disabled={!!evaluation}
+            className="absolute bottom-3 right-3"
+          />
+        </div>
         <div className="flex justify-between mt-2">
           <span id="word-count" className={`text-sm ${meetsMinimum ? 'text-green-600 dark:text-green-400' : 'text-gray-500 dark:text-gray-400'}`}>
             {wordCount} word{wordCount !== 1 ? 's' : ''}
