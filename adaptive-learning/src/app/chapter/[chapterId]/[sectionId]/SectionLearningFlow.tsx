@@ -59,17 +59,23 @@ export default function SectionLearningFlow({
   } | null>(null);
   const [showTTS, setShowTTS] = useState(false);
   const [ttsBlockIndex, setTTSBlockIndex] = useState<number | undefined>(undefined);
+  const [ttsChunkIndex, setTTSChunkIndex] = useState<number | undefined>(undefined);
 
   // Auto-stop TTS when leaving content step
   useEffect(() => {
     if (currentStep !== 'content') {
       setShowTTS(false);
       setTTSBlockIndex(undefined);
+      setTTSChunkIndex(undefined);
     }
   }, [currentStep]);
 
   const handleTTSBlockChange = useCallback((index: number) => {
     setTTSBlockIndex(index);
+  }, []);
+
+  const handleTTSChunkChange = useCallback((index: number) => {
+    setTTSChunkIndex(index);
   }, []);
 
   function handleReadyForQuiz() {
@@ -214,6 +220,7 @@ export default function SectionLearningFlow({
             section={section}
             onAskQuestion={(title, body) => setAskQuestionContext({ blockTitle: title, blockBody: body })}
             highlightBlockIndex={showTTS ? ttsBlockIndex : undefined}
+            highlightChunkIndex={showTTS ? ttsChunkIndex : undefined}
           />
           <div className={`flex justify-center pt-4 ${showTTS ? 'pb-20' : ''}`}>
             <button
@@ -229,7 +236,8 @@ export default function SectionLearningFlow({
             <TTSController
               section={section}
               onBlockIndexChange={handleTTSBlockChange}
-              onClose={() => { setShowTTS(false); setTTSBlockIndex(undefined); }}
+              onChunkIndexChange={handleTTSChunkChange}
+              onClose={() => { setShowTTS(false); setTTSBlockIndex(undefined); setTTSChunkIndex(undefined); }}
             />
           )}
         </>

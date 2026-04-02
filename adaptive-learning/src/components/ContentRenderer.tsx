@@ -1,16 +1,67 @@
 'use client';
 
+import { useMemo, useEffect, useRef } from 'react';
 import type { SectionContent } from '@/lib/types';
 import { renderMarkdown } from '@/lib/renderMarkdown';
+import { stripMarkdown } from '@/lib/stripMarkdown';
+import { chunkText } from '@/hooks/useTextToSpeech';
 
 interface ContentRendererProps {
   section: SectionContent;
   onAskQuestion?: (blockTitle: string, blockBody: string) => void;
-  /** Index of the content block currently being read aloud (offset by 2 for title + objectives) */
+  /** TTS block index currently being read (offset: 0=title, 1=objectives, 2+=content blocks) */
   highlightBlockIndex?: number;
+  /** TTS sentence chunk index within the current block */
+  highlightChunkIndex?: number;
 }
 
-export default function ContentRenderer({ section, onAskQuestion, highlightBlockIndex }: ContentRendererProps) {
+/**
+ * Renders a content block's body as sentence-highlighted spans
+ * when TTS is reading it, with the active sentence highlighted.
+ */
+function SentenceHighlightedText({ body, activeChunkIndex, blockTitle }: {
+  body: string;
+  activeChunkIndex: number;
+  blockTitle?: string;
+}) {
+  const activeRef = useRef<HTMLSpanElement>(null);
+
+  // Build chunks from the same text the TTS speaks
+  const chunks = useMemo(() => {
+    const plainBody = stripMarkdown(body);
+    const spokenText = blockTitle ? `${blockTitle}. ${plainBody}` : plainBody;
+    return chunkText(spokenText);
+  }, [body, blockTitle]);
+
+  // Auto-scroll the active sentence into view
+  useEffect(() => {
+    if (activeRef.current) {
+      activeRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  }, [activeChunkIndex]);
+
+  return (
+    <div className="leading-relaxed text-gray-700 dark:text-gray-200">
+      {chunks.map((chunk, i) => (
+        <span
+          key={i}
+          ref={i === activeChunkIndex ? activeRef : undefined}
+          className={`transition-colors duration-200 ${
+            i === activeChunkIndex
+              ? 'bg-blue-100 dark:bg-blue-900/50 text-gray-900 dark:text-white rounded px-0.5'
+              : i < activeChunkIndex
+                ? 'text-gray-400 dark:text-gray-500'
+                : ''
+          }`}
+        >
+          {chunk}{' '}
+        </span>
+      ))}
+    </div>
+  );
+}
+
+export default function ContentRenderer({ section, onAskQuestion, highlightBlockIndex, highlightChunkIndex }: ContentRendererProps) {
   return (
     <div className="space-y-8">
       {/* Section Header */}
@@ -41,9 +92,10 @@ export default function ContentRenderer({ section, onAskQuestion, highlightBlock
       {/* Content Blocks */}
       {section.contentBlocks.map((block, i) => {
         const ttsIndex = i + 2; // offset: 0=title, 1=objectives, 2+=content blocks
-        const isHighlighted = highlightBlockIndex === ttsIndex;
+        const isActiveBlock = highlightBlockIndex === ttsIndex;
+        const showSentenceHighlight = isActiveBlock && highlightChunkIndex !== undefined;
         return (
-        <div key={i} className={`transition-all duration-300 rounded-lg ${isHighlighted ? 'ring-2 ring-blue-300 dark:ring-blue-700 bg-blue-50/50 dark:bg-blue-900/10' : ''}`}>
+        <div key={i} className={`transition-all duration-300 rounded-lg ${isActiveBlock ? 'ring-2 ring-blue-300 dark:ring-blue-700 bg-blue-50/50 dark:bg-blue-900/10' : ''}`}>
           <div className={block.type === 'summary' ? 'bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-6' : ''}>
             {block.title && (
               <h3 className={`text-xl font-semibold mb-3 ${
@@ -55,7 +107,18 @@ export default function ContentRenderer({ section, onAskQuestion, highlightBlock
             {!block.title && block.type === 'summary' && (
               <h3 className="text-xl font-semibold mb-3 text-gray-800 dark:text-gray-200">📋 Summary</h3>
             )}
-            <div className="max-w-full overflow-hidden [&_pre]:overflow-x-auto [&_code]:break-words [&_table]:block [&_table]:overflow-x-auto [&_img]:max-w-full">{renderMarkdown(block.body)}</div>
+
+            {/* Show sentence-highlighted plain text when TTS is reading this block,
+                otherwise show normal markdown rendering */}
+            {showSentenceHighlight ? (
+              <SentenceHighlightedText
+                body={block.body}
+                activeChunkIndex={highlightChunkIndex}
+                blockTitle={block.title}
+              />
+            ) : (
+              <div className="max-w-full overflow-hidden [&_pre]:overflow-x-auto [&_code]:break-words [&_table]:block [&_table]:overflow-x-auto [&_img]:max-w-full">{renderMarkdown(block.body)}</div>
+            )}
           </div>
 
           {/* Ask about this concept button + section divider */}

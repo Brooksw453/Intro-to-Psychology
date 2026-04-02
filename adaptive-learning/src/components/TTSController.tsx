@@ -8,10 +8,11 @@ import type { SectionContent } from '@/lib/types';
 interface TTSControllerProps {
   section: SectionContent;
   onBlockIndexChange?: (index: number) => void;
+  onChunkIndexChange?: (index: number) => void;
   onClose: () => void;
 }
 
-export default function TTSController({ section, onBlockIndexChange, onClose }: TTSControllerProps) {
+export default function TTSController({ section, onBlockIndexChange, onChunkIndexChange, onClose }: TTSControllerProps) {
   const blocks: TTSBlock[] = useMemo(() => {
     const result: TTSBlock[] = [];
 
@@ -58,6 +59,7 @@ export default function TTSController({ section, onBlockIndexChange, onClose }: 
     isPaused,
     isSupported,
     currentBlockIndex,
+    currentChunkIndex,
     totalBlocks,
     currentBlockLabel,
     play,
@@ -70,12 +72,13 @@ export default function TTSController({ section, onBlockIndexChange, onClose }: 
     cycleRate,
   } = useTextToSpeech(blocks);
 
-  // Notify parent of block changes for highlighting
+  // Notify parent of block and chunk changes for highlighting
   useEffect(() => {
-    if (onBlockIndexChange && isPlaying) {
-      onBlockIndexChange(currentBlockIndex);
+    if (isPlaying) {
+      onBlockIndexChange?.(currentBlockIndex);
+      onChunkIndexChange?.(currentChunkIndex);
     }
-  }, [currentBlockIndex, isPlaying, onBlockIndexChange]);
+  }, [currentBlockIndex, currentChunkIndex, isPlaying, onBlockIndexChange, onChunkIndexChange]);
 
   // Clean up on close
   function handleClose() {

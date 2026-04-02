@@ -12,6 +12,7 @@ interface UseTextToSpeechReturn {
   isPaused: boolean;
   isSupported: boolean;
   currentBlockIndex: number;
+  currentChunkIndex: number;
   totalBlocks: number;
   currentBlockLabel: string;
   play: () => void;
@@ -44,8 +45,9 @@ function getRateOptions(): number[] {
 /**
  * Split text into sentence-sized chunks (~200 chars max) to avoid
  * the iOS Safari bug where long utterances get cut off after ~15 seconds.
+ * Exported so ContentRenderer can split text the same way for highlighting.
  */
-function chunkText(text: string): string[] {
+export function chunkText(text: string): string[] {
   const sentences = text.split(/(?<=[.!?])\s+/);
   const chunks: string[] = [];
   let current = '';
@@ -69,6 +71,7 @@ export function useTextToSpeech(blocks: TTSBlock[]): UseTextToSpeechReturn {
   const [isPaused, setIsPaused] = useState(false);
   const [isSupported, setIsSupported] = useState(false);
   const [currentBlockIndex, setCurrentBlockIndex] = useState(0);
+  const [currentChunkIndex, setCurrentChunkIndex] = useState(0);
   const [rateIndex, setRateIndex] = useState(1); // index 1 = 1.0x
 
   const blockIndexRef = useRef(0);
@@ -100,6 +103,7 @@ export function useTextToSpeech(blocks: TTSBlock[]): UseTextToSpeechReturn {
       setIsPlaying(false);
       setIsPaused(false);
       setCurrentBlockIndex(0);
+      setCurrentChunkIndex(0);
       blockIndexRef.current = 0;
       chunkIndexRef.current = 0;
       return;
@@ -115,6 +119,8 @@ export function useTextToSpeech(blocks: TTSBlock[]): UseTextToSpeechReturn {
       setTimeout(() => speakChunk(), 500);
       return;
     }
+
+    setCurrentChunkIndex(chunkIdx);
 
     const utterance = new SpeechSynthesisUtterance(blockChunks[chunkIdx]);
     utterance.lang = 'en-US';
@@ -141,6 +147,7 @@ export function useTextToSpeech(blocks: TTSBlock[]): UseTextToSpeechReturn {
     blockIndexRef.current = 0;
     chunkIndexRef.current = 0;
     setCurrentBlockIndex(0);
+    setCurrentChunkIndex(0);
     isPlayingRef.current = true;
     setIsPlaying(true);
     setIsPaused(false);
@@ -163,6 +170,7 @@ export function useTextToSpeech(blocks: TTSBlock[]): UseTextToSpeechReturn {
     setIsPlaying(false);
     setIsPaused(false);
     setCurrentBlockIndex(0);
+    setCurrentChunkIndex(0);
     blockIndexRef.current = 0;
     chunkIndexRef.current = 0;
   }, []);
@@ -173,6 +181,7 @@ export function useTextToSpeech(blocks: TTSBlock[]): UseTextToSpeechReturn {
     blockIndexRef.current += 1;
     chunkIndexRef.current = 0;
     setCurrentBlockIndex(blockIndexRef.current);
+    setCurrentChunkIndex(0);
     setIsPaused(false);
     speakChunk();
   }, [blocks.length, speakChunk]);
@@ -183,6 +192,7 @@ export function useTextToSpeech(blocks: TTSBlock[]): UseTextToSpeechReturn {
     blockIndexRef.current -= 1;
     chunkIndexRef.current = 0;
     setCurrentBlockIndex(blockIndexRef.current);
+    setCurrentChunkIndex(0);
     setIsPaused(false);
     speakChunk();
   }, [speakChunk]);
@@ -234,6 +244,7 @@ export function useTextToSpeech(blocks: TTSBlock[]): UseTextToSpeechReturn {
     isPaused,
     isSupported,
     currentBlockIndex,
+    currentChunkIndex,
     totalBlocks: blocks.length,
     currentBlockLabel: blocks[currentBlockIndex]?.label || '',
     play,
