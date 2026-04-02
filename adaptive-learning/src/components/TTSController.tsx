@@ -66,7 +66,7 @@ export default function TTSController({ section, onBlockIndexChange, onClose }: 
     stop,
     skipForward,
     skipBack,
-    rate,
+    rateLabel,
     cycleRate,
   } = useTextToSpeech(blocks);
 
@@ -146,10 +146,10 @@ export default function TTSController({ section, onBlockIndexChange, onClose }: 
         {/* Speed control */}
         <button
           onClick={cycleRate}
-          aria-label={`Playback speed: ${rate}x`}
+          aria-label={`Playback speed: ${rateLabel}`}
           className="flex-shrink-0 px-2.5 py-1 text-xs font-semibold text-gray-600 dark:text-gray-400 bg-gray-100 dark:bg-gray-700 rounded-full hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
         >
-          {rate}x
+          {rateLabel}
         </button>
 
         {/* Close */}

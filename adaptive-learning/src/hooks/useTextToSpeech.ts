@@ -20,11 +20,26 @@ interface UseTextToSpeechReturn {
   stop: () => void;
   skipForward: () => void;
   skipBack: () => void;
-  rate: number;
+  rateLabel: string;
   cycleRate: () => void;
 }
 
-const RATE_OPTIONS = [0.75, 1.0, 1.25, 1.5, 2.0];
+// Mobile browsers (especially iOS) scale speech rate much more aggressively
+// than desktop — a rate of 1.5 on iOS sounds like 5x on desktop.
+// Use compressed rates on mobile to keep speeds natural.
+const DESKTOP_RATES = [0.75, 1.0, 1.25, 1.5, 2.0];
+const MOBILE_RATES = [0.85, 1.0, 1.05, 1.1, 1.15];
+// Display labels shown to the user (same for both platforms)
+const RATE_LABELS = ['0.75x', '1x', '1.25x', '1.5x', '2x'];
+
+function isMobile(): boolean {
+  if (typeof navigator === 'undefined') return false;
+  return /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+}
+
+function getRateOptions(): number[] {
+  return isMobile() ? MOBILE_RATES : DESKTOP_RATES;
+}
 
 /**
  * Split text into sentence-sized chunks (~200 chars max) to avoid
@@ -54,14 +69,14 @@ export function useTextToSpeech(blocks: TTSBlock[]): UseTextToSpeechReturn {
   const [isPaused, setIsPaused] = useState(false);
   const [isSupported, setIsSupported] = useState(false);
   const [currentBlockIndex, setCurrentBlockIndex] = useState(0);
-  const [rate, setRate] = useState(1.0);
+  const [rateIndex, setRateIndex] = useState(1); // index 1 = 1.0x
 
   const blockIndexRef = useRef(0);
   const chunkIndexRef = useRef(0);
   const chunksRef = useRef<string[][]>([]);
   const isPlayingRef = useRef(false);
   const rateRef = useRef(1.0);
-  rateRef.current = rate;
+  rateRef.current = getRateOptions()[rateIndex];
 
   useEffect(() => {
     setIsSupported(typeof window !== 'undefined' && 'speechSynthesis' in window);
@@ -175,10 +190,10 @@ export function useTextToSpeech(blocks: TTSBlock[]): UseTextToSpeechReturn {
   // When rate changes mid-playback, cancel current speech and restart
   // from the current chunk so the new rate takes effect immediately.
   const cycleRate = useCallback(() => {
-    setRate(prev => {
-      const currentIdx = RATE_OPTIONS.indexOf(prev);
-      const nextRate = RATE_OPTIONS[(currentIdx + 1) % RATE_OPTIONS.length];
-      rateRef.current = nextRate;
+    setRateIndex(prev => {
+      const rates = getRateOptions();
+      const nextIdx = (prev + 1) % rates.length;
+      rateRef.current = rates[nextIdx];
 
       // If currently playing (not paused), restart current chunk at new rate
       if (isPlayingRef.current && !window.speechSynthesis.paused) {
@@ -187,7 +202,7 @@ export function useTextToSpeech(blocks: TTSBlock[]): UseTextToSpeechReturn {
         setTimeout(() => speakChunk(), 50);
       }
 
-      return nextRate;
+      return nextIdx;
     });
   }, [speakChunk]);
 
@@ -227,7 +242,7 @@ export function useTextToSpeech(blocks: TTSBlock[]): UseTextToSpeechReturn {
     stop,
     skipForward,
     skipBack,
-    rate,
+    rateLabel: RATE_LABELS[rateIndex],
     cycleRate,
   };
 }
