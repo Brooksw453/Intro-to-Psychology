@@ -21,8 +21,10 @@ interface UseTextToSpeechReturn {
   skipForward: () => void;
   skipBack: () => void;
   rate: number;
-  setRate: (rate: number) => void;
+  cycleRate: () => void;
 }
+
+const RATE_OPTIONS = [0.75, 1.0, 1.25, 1.5, 2.0];
 
 /**
  * Split text into sentence-sized chunks (~200 chars max) to avoid
@@ -170,6 +172,25 @@ export function useTextToSpeech(blocks: TTSBlock[]): UseTextToSpeechReturn {
     speakChunk();
   }, [speakChunk]);
 
+  // When rate changes mid-playback, cancel current speech and restart
+  // from the current chunk so the new rate takes effect immediately.
+  const cycleRate = useCallback(() => {
+    setRate(prev => {
+      const currentIdx = RATE_OPTIONS.indexOf(prev);
+      const nextRate = RATE_OPTIONS[(currentIdx + 1) % RATE_OPTIONS.length];
+      rateRef.current = nextRate;
+
+      // If currently playing (not paused), restart current chunk at new rate
+      if (isPlayingRef.current && !window.speechSynthesis.paused) {
+        window.speechSynthesis.cancel();
+        // Small delay to let cancel complete before speaking again
+        setTimeout(() => speakChunk(), 50);
+      }
+
+      return nextRate;
+    });
+  }, [speakChunk]);
+
   // Auto-pause when page loses visibility
   useEffect(() => {
     if (!isSupported) return;
@@ -207,6 +228,6 @@ export function useTextToSpeech(blocks: TTSBlock[]): UseTextToSpeechReturn {
     skipForward,
     skipBack,
     rate,
-    setRate,
+    cycleRate,
   };
 }

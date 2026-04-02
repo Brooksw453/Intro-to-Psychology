@@ -275,7 +275,8 @@ export default function AssignmentWorkspace({ assignment, savedDrafts }: Props) 
                 />
                 <MicrophoneButton
                   onTranscript={(text) => setDrafts(prev => ({ ...prev, [section.key]: prev[section.key] + (prev[section.key] && !prev[section.key].endsWith(' ') ? ' ' : '') + text }))}
-                  className="absolute bottom-3 right-3"
+                  className="absolute top-3 right-3"
+                  showStatus
                 />
               </div>
 

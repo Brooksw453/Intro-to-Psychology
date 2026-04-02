@@ -11,8 +11,6 @@ interface TTSControllerProps {
   onClose: () => void;
 }
 
-const RATE_OPTIONS = [0.75, 1.0, 1.25, 1.5];
-
 export default function TTSController({ section, onBlockIndexChange, onClose }: TTSControllerProps) {
   const blocks: TTSBlock[] = useMemo(() => {
     const result: TTSBlock[] = [];
@@ -69,7 +67,7 @@ export default function TTSController({ section, onBlockIndexChange, onClose }: 
     skipForward,
     skipBack,
     rate,
-    setRate,
+    cycleRate,
   } = useTextToSpeech(blocks);
 
   // Notify parent of block changes for highlighting
@@ -83,12 +81,6 @@ export default function TTSController({ section, onBlockIndexChange, onClose }: 
   function handleClose() {
     stop();
     onClose();
-  }
-
-  function cycleRate() {
-    const currentIdx = RATE_OPTIONS.indexOf(rate);
-    const nextIdx = (currentIdx + 1) % RATE_OPTIONS.length;
-    setRate(RATE_OPTIONS[nextIdx]);
   }
 
   if (!isSupported) return null;
