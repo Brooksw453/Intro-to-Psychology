@@ -722,7 +722,7 @@ export default async function ChaptersPage() {
                           <h3 className="font-semibold text-gray-900 dark:text-white truncate">
                             {a.title}
                           </h3>
-                          <p className="text-sm text-gray-500 dark:text-gray-400">{a.sections.length} sections &bull; Business Plan Component</p>
+                          <p className="text-sm text-gray-500 dark:text-gray-400">{a.sections.length} sections &bull; {courseConfig.capstone.labels?.assignmentTag || 'Portfolio Component'}</p>
                           {aStarted && (
                             <div className="flex items-center gap-3 mt-2">
                               <div className="flex-1 bg-purple-100 rounded-full h-2">
@@ -789,12 +789,12 @@ export default async function ChaptersPage() {
                         </span>
                       </div>
                       <h3 className="font-semibold text-white text-lg truncate">
-                        Final Business Plan
+                        {courseConfig.capstone.labels?.finalTitle || 'Final Portfolio'}
                       </h3>
                       <p className="text-white/80 text-sm">
                         {portfolioIsSubmitted
                           ? 'Portfolio submitted — view, edit, or download anytime'
-                          : 'Compile your complete business plan from all assignments'}
+                          : courseConfig.capstone.labels?.compileDescription || 'Compile your complete portfolio from all assignments'}
                       </p>
                     </div>
                     <svg className="w-5 h-5 text-white/70 flex-shrink-0" aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke="currentColor">

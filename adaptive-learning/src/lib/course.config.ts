@@ -26,6 +26,19 @@ export const courseConfig = {
     title: "Psychology Research Portfolio & Presentation",
     route: "/business-plan",
     navLabel: "Research Portfolio",
+    // Labels used throughout the capstone/portfolio UI
+    labels: {
+      finalTitle: "Final Research Portfolio",
+      yourTitle: "Your Research Portfolio",
+      compileDescription: "Compile your complete research portfolio",
+      previewButton: "Preview Portfolio",
+      printButton: "Print Portfolio",
+      assignmentTag: "Portfolio Component",
+      summaryPrompt: "Summarize your research findings, key insights, and conclusions in a compelling overview.",
+      summaryPlaceholder: "Write a compelling summary of your entire research portfolio...",
+      introPrompt: "Introduce your research portfolio. What drew you to this topic? What will the reader learn?",
+      introPlaceholder: "Introduce your portfolio and the research journey behind it...",
+    },
   },
 
   // AI tutor personality (used in system prompts for all AI endpoints)

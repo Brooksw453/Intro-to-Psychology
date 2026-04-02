@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useRef, useEffect } from 'react';
+import { courseConfig } from '@/lib/course.config';
 
 interface ChatMessage {
   role: 'user' | 'assistant';
@@ -45,11 +46,11 @@ export default function BPDraftChat({
       const welcome: ChatMessage = sectionType === 'exec-summary'
         ? {
             role: 'assistant',
-            content: `I'll help you write your Executive Summary by synthesizing all the work you've done across your business plan. I can see your completed sections and will draft a compelling summary that highlights your key points.\n\nWould you like me to draft the executive summary now, or is there anything specific you'd like to emphasize?`,
+            content: `I'll help you write your Executive Summary by synthesizing all the work you've done across your ${courseConfig.capstone.navLabel.toLowerCase()}. I can see your completed sections and will draft a compelling summary that highlights your key points.\n\nWould you like me to draft the executive summary now, or is there anything specific you'd like to emphasize?`,
           }
         : {
             role: 'assistant',
-            content: `Let's write your Introduction together! This is your chance to reflect on the journey of creating this business plan.\n\nTo get started, I'd love to hear: What inspired you to choose this particular business idea? And what was the most surprising thing you learned while developing your plan?`,
+            content: `Let's write your Introduction together! This is your chance to reflect on the journey of creating this ${courseConfig.capstone.navLabel.toLowerCase()}.\n\nTo get started, I'd love to hear: What inspired you to choose this particular topic? And what was the most surprising thing you learned while developing your ${courseConfig.capstone.navLabel.toLowerCase()}?`,
           };
       setMessages([welcome]);
     }

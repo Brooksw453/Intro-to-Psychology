@@ -202,7 +202,7 @@ export default function BusinessPlanWorkspace({
                 <svg aria-hidden="true" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
                 </svg>
-                Print Business Plan
+                {courseConfig.capstone.labels?.printButton || 'Print Portfolio'}
               </button>
             </div>
           </div>
@@ -215,7 +215,7 @@ export default function BusinessPlanWorkspace({
               <div className="cover-page text-center px-16 py-24">
                 <div className="border-b-4 border-navy-800 pb-8 mb-8" style={{ borderColor: '#1e3a5f' }}>
                   <h1 className="text-5xl font-bold text-gray-900 mb-2" style={{ fontFamily: 'system-ui, -apple-system, sans-serif', color: '#1e3a5f' }}>
-                    Business Plan
+                    {courseConfig.capstone.navLabel}
                   </h1>
                 </div>
                 <div className="mt-12 space-y-4">
@@ -310,8 +310,8 @@ export default function BusinessPlanWorkspace({
                 </svg>
               </div>
               <div>
-                <h1 className="text-xl sm:text-2xl font-bold">Your Business Plan</h1>
-                <p className="text-indigo-200 text-sm">Compile your complete business plan</p>
+                <h1 className="text-xl sm:text-2xl font-bold">{courseConfig.capstone.labels?.yourTitle || 'Your Portfolio'}</h1>
+                <p className="text-indigo-200 text-sm">{courseConfig.capstone.labels?.compileDescription || 'Compile your complete portfolio'}</p>
               </div>
             </div>
             <Link
@@ -359,13 +359,13 @@ export default function BusinessPlanWorkspace({
             )}
           </div>
           <p className="text-sm text-gray-500 dark:text-gray-400 mb-3">
-            Summarize your business concept, key strategies, and financial outlook in a compelling overview.
+            {courseConfig.capstone.labels?.summaryPrompt || 'Summarize your key findings and conclusions in a compelling overview.'}
           </p>
           <textarea
             value={execSummary}
             onChange={(e) => setExecSummary(e.target.value)}
             className="w-full h-40 p-3 border border-gray-300 dark:border-gray-600 rounded-lg text-gray-900 dark:text-white dark:bg-gray-700 dark:placeholder-gray-400 text-sm resize-y focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
-            placeholder="Write a compelling summary of your entire business plan..."
+            placeholder={courseConfig.capstone.labels?.summaryPlaceholder || 'Write a compelling summary of your portfolio...'}
           />
           <div className="flex justify-between mt-1">
             <span className="text-xs text-gray-500 dark:text-gray-400">200-500 words recommended</span>
@@ -395,13 +395,13 @@ export default function BusinessPlanWorkspace({
             )}
           </div>
           <p className="text-sm text-gray-500 dark:text-gray-400 mb-3">
-            Introduce your business plan. What inspired this venture? What will the reader learn?
+            {courseConfig.capstone.labels?.introPrompt || 'Introduce your portfolio. What inspired this project? What will the reader learn?'}
           </p>
           <textarea
             value={introduction}
             onChange={(e) => setIntroduction(e.target.value)}
             className="w-full h-32 p-3 border border-gray-300 dark:border-gray-600 rounded-lg text-gray-900 dark:text-white dark:bg-gray-700 dark:placeholder-gray-400 text-sm resize-y focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
-            placeholder="Introduce your business plan and the journey behind it..."
+            placeholder={courseConfig.capstone.labels?.introPlaceholder || 'Introduce your portfolio and the journey behind it...'}
           />
           <div className="flex justify-between mt-1">
             <span className="text-xs text-gray-500 dark:text-gray-400">150-300 words recommended</span>
@@ -526,7 +526,7 @@ export default function BusinessPlanWorkspace({
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
             </svg>
-            Preview Business Plan
+            {courseConfig.capstone.labels?.previewButton || 'Preview Portfolio'}
           </button>
 
           {canPreview && !submitted && (
