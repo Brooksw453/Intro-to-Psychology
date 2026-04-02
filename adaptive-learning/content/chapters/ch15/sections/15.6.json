@@ -50,7 +50,7 @@
   "freeTextPrompt": {
     "id": "ft-15.6",
     "prompt": "Why do some people develop PTSD after a traumatic event while others do not? Drawing on the risk and protective factors discussed in this section, explain the factors that influence whether trauma leads to PTSD. How might understanding these factors help us design better prevention and intervention programs for trauma survivors?",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response identifies multiple risk factors (e.g., prior trauma, lack of support, severity of event) and protective factors (e.g., social support, coping skills, access to services) and explains how they interact to influence PTSD development. The response should demonstrate understanding that PTSD is not a sign of weakness and should propose at least one practical implication for prevention or intervention based on these factors."
   }
 }

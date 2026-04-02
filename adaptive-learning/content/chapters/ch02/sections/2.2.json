@@ -66,7 +66,7 @@
   "freeTextPrompt": {
     "id": "ft-2.2",
     "prompt": "A news headline reports: \"Study finds that people who eat breakfast every day earn higher salaries.\" Based on what you have learned about research methods, evaluate this claim. What type of research design was likely used? Can we conclude that eating breakfast causes higher earnings? What alternative explanations (third variables) might account for this relationship? What kind of study would be needed to establish a causal connection?",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response correctly identifies this as likely correlational research, explains why correlation does not imply causation, proposes at least one plausible third variable (e.g., socioeconomic status, health consciousness), and describes how an experiment with random assignment could better test causation. The response should demonstrate clear understanding of the differences between correlational and experimental research."
   }
 }

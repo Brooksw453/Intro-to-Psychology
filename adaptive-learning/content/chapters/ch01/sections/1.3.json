@@ -58,7 +58,7 @@
   "freeTextPrompt": {
     "id": "ft-1.3",
     "prompt": "Choose a specific human behavior (e.g., aggression, helping a stranger, fear of public speaking). Explain how at least three different contemporary psychological perspectives (biological, cognitive, evolutionary, sociocultural, etc.) would each explain this behavior differently. What does this multi-perspective approach tell us about the complexity of understanding human behavior?",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response selects a specific behavior, accurately applies at least three contemporary perspectives to explain it, demonstrates understanding of how perspectives complement one another, and reflects on the value of a multi-perspective approach to understanding complex human behavior."
   }
 }

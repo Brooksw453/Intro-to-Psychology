@@ -37,7 +37,7 @@
   "freeTextPrompt": {
     "id": "ft-11.8",
     "prompt": "Consider how growing up in an individualistic versus a collectivistic culture might shape a person's personality development. Choose one Big Five trait (openness, conscientiousness, extraversion, agreeableness, or neuroticism) and explain how its expression might differ across these two cultural contexts. What implications might these differences have for personality assessment?",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response should: (1) correctly distinguish individualistic and collectivistic cultures, (2) select a specific Big Five trait and explain how its expression might vary across cultures, (3) provide concrete examples of cultural differences in trait expression, (4) discuss implications for personality assessment (e.g., translation issues, response biases, cultural validity), and (5) avoid stereotyping while acknowledging real cultural differences."
   }
 }

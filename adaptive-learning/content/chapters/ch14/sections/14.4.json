@@ -38,7 +38,7 @@
   "freeTextPrompt": {
     "id": "ft-14.4",
     "prompt": "Describe a stressful situation you have faced and analyze the coping strategies you used. Were they primarily problem-focused or emotion-focused? Were they effective? Based on the research presented in this section, what alternative strategies might you try in a similar future situation, and why?",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "Student should correctly identify their coping strategies as problem-focused or emotion-focused, evaluate their effectiveness using concepts from the section, and propose research-based alternatives. Should demonstrate understanding of flexible coping and the match between coping strategy and stressor controllability."
   }
 }

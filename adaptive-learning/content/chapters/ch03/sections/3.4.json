@@ -41,7 +41,7 @@
   "freeTextPrompt": {
     "id": "ft-3.4",
     "prompt": "Imagine a neuroscientist discovers that a patient has damage to a specific brain structure. The patient can still move, see, and hear, but cannot form new memories of personal experiences. Based on what you learned in this section, identify which brain structure is most likely damaged, explain its normal function, describe what brain system it belongs to, and discuss how this damage would affect the patient's daily life.",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response should: (1) correctly identify the hippocampus as the damaged structure, (2) explain its role in forming new explicit/declarative memories, (3) place it within the limbic system, (4) describe realistic daily-life consequences such as inability to remember new people or events, and (5) potentially reference relevant case studies like patient H.M."
   }
 }

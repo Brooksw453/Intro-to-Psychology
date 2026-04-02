@@ -49,7 +49,7 @@
   "freeTextPrompt": {
     "id": "ft-6.1",
     "prompt": "Identify three specific behaviors you engage in regularly and classify each as primarily the result of classical conditioning, operant conditioning, or observational learning. For each behavior, explain which type of learning produced it and describe the specific stimuli, consequences, or models that were involved. How does recognizing the learning process behind your behaviors change your understanding of them?",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response identifies three distinct behaviors, correctly classifies each under the appropriate type of learning (classical conditioning, operant conditioning, or observational learning), provides specific details about the learning process involved (e.g., the unconditioned and conditioned stimuli, reinforcers/punishers, or the model observed), and includes some reflection on how awareness of these learning processes provides insight into one's own behavior."
   }
 }

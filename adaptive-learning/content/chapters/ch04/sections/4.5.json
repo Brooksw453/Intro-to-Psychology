@@ -40,7 +40,7 @@
   "freeTextPrompt": {
     "id": "ft-4.5",
     "prompt": "Choose one category of psychoactive drug (depressant, stimulant, opioid, or hallucinogen) and explain how it alters consciousness at the neurochemical level. Then discuss why repeated use of this type of drug can lead to tolerance and potentially substance use disorder, connecting your explanation to the brain's dopamine reward system.",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response should: (1) select a specific drug category and name at least one example drug, (2) correctly identify the neurotransmitter system(s) affected, (3) explain the mechanism of action at the synapse, (4) describe how tolerance develops through neural adaptation, (5) connect addiction risk to the mesolimbic dopamine pathway, and (6) demonstrate understanding of why the brain's reward system makes certain drugs particularly addictive."
   }
 }

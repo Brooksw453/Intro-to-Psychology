@@ -40,7 +40,7 @@
   "freeTextPrompt": {
     "id": "ft-11.2",
     "prompt": "Identify a defense mechanism from Freud's theory and describe a realistic scenario in which a person might use it. Then evaluate Freud's psychodynamic perspective: What do you see as its greatest strength and its most significant limitation as a theory of personality?",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response should: (1) correctly identify and define a specific defense mechanism, (2) provide a realistic and detailed scenario illustrating its use, (3) identify a genuine strength of psychodynamic theory (e.g., recognition of unconscious processes), (4) identify a meaningful limitation (e.g., lack of empirical testability, overemphasis on sexuality), and (5) demonstrate critical thinking rather than simple recall."
   }
 }

@@ -52,7 +52,7 @@
   "freeTextPrompt": {
     "id": "ft-8.2",
     "prompt": "The case of Patient H.M. revealed that different types of memory rely on different brain structures. Explain what H.M.'s case taught researchers about the distinction between explicit and implicit memory. Then, using what you know about the roles of the hippocampus, amygdala, and cerebellum, predict what types of memory difficulties a person might experience if they had damage to their amygdala rather than their hippocampus.",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response accurately summarizes what H.M.'s case revealed (hippocampal damage impairs explicit but not implicit memory formation), correctly identifies the role of the amygdala in emotional memory, and makes a logical prediction about the effects of amygdala damage (impaired emotional memory encoding, reduced flashbulb memories, while factual and procedural memory remain relatively intact). The response should demonstrate clear understanding of the dissociation between memory systems."
   }
 }

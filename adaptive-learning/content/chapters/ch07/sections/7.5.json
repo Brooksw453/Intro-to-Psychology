@@ -57,7 +57,7 @@
   "freeTextPrompt": {
     "id": "ft-7.5",
     "prompt": "A school district is considering using a single IQ test score to place students into academic tracks (advanced, regular, or remedial). Drawing on your understanding of reliability, validity, the Flynn effect, and the limitations of IQ testing, argue for or against this policy. What alternative approaches might provide a more complete picture of student ability?",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response demonstrates understanding of key psychometric concepts (reliability, validity, standardization), identifies specific limitations of using a single IQ score for placement decisions, references the Flynn effect or cultural/socioeconomic factors that affect test performance, and proposes concrete alternatives (multiple assessments, adaptive functioning measures, portfolio-based evaluation) for a more equitable approach."
   }
 }

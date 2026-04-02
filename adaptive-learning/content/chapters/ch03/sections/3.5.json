@@ -39,7 +39,7 @@
   "freeTextPrompt": {
     "id": "ft-3.5",
     "prompt": "A friend tells you they have been feeling constantly tired, gaining weight, and experiencing low mood for several months. They wonder if it might be related to their hormones. Using what you learned about the endocrine system, explain which gland and hormone(s) might be involved, how this could produce the symptoms described, and how the endocrine and nervous systems work together in this process.",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response should: (1) identify the thyroid gland and its hormones as a likely factor in the described symptoms, (2) explain hypothyroidism and how reduced thyroid hormone levels produce fatigue, weight gain, and mood changes, (3) describe the connection between the hypothalamus, pituitary gland, and thyroid in the feedback loop, (4) distinguish between endocrine system effects and nervous system communication, and (5) note that medical evaluation would be needed for diagnosis."
   }
 }

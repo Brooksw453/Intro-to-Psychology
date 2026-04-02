@@ -58,7 +58,7 @@
   "freeTextPrompt": {
     "id": "ft-15.11",
     "prompt": "Terms like \"narcissist\" and \"borderline\" are frequently used in everyday conversation to describe difficult people. How does the casual use of personality disorder labels differ from their clinical meaning? Discuss at least one specific personality disorder and explain why using diagnostic terms loosely can be harmful both to individuals who have these conditions and to public understanding of mental health.",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response contrasts the casual use of at least one personality disorder term with its clinical definition (including specific diagnostic criteria such as pervasiveness, inflexibility, onset, and impairment). It should explain how casual misuse trivializes genuine suffering, contributes to stigma, and undermines accurate understanding of mental health conditions. The response should use person-first language throughout."
   }
 }

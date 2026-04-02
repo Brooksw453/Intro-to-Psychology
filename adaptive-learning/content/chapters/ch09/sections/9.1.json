@@ -61,7 +61,7 @@
   "freeTextPrompt": {
     "id": "ft-9.1",
     "prompt": "Consider a specific behavior or trait that interests you (e.g., intelligence, shyness, athletic ability, or musical talent). How would you explain the development of this trait using both nature and nurture? Describe how genetic and environmental factors might interact to shape this characteristic across a person's lifespan, and explain which research design (cross-sectional, longitudinal, or cross-sequential) would be best suited to study this trait and why.",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response selects a specific trait, explains both genetic and environmental contributions to its development, describes how nature and nurture interact (not just operate independently), addresses how the trait might change across the lifespan, and justifies the choice of research design with attention to its strengths and limitations."
   }
 }

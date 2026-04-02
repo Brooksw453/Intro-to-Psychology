@@ -53,7 +53,7 @@
   "freeTextPrompt": {
     "id": "ft-9.4",
     "prompt": "Reflect on how your own cultural background, family experiences, or personal beliefs have shaped your understanding of death and dying. How do these influences compare to the psychological perspectives discussed in this section (e.g., Kubler-Ross, the dual process model)? If you were designing a grief support program for a diverse community, what cultural considerations would you incorporate and why?",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response reflects thoughtfully on personal or cultural influences on attitudes toward death, connects personal experience to at least one psychological perspective from the section, and proposes specific culturally sensitive elements for a grief support program with clear reasoning."
   }
 }

@@ -58,7 +58,7 @@
   "freeTextPrompt": {
     "id": "ft-8.4",
     "prompt": "Design a one-week study plan for an upcoming exam using at least three evidence-based memory strategies discussed in this section (such as the testing effect, spacing effect, interleaving, mnemonic devices, or the self-reference effect). For each strategy, explain why it works based on what you have learned about how memory functions, and describe specifically how you would implement it.",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response creates a concrete, realistic study plan that incorporates at least three evidence-based strategies, provides accurate psychological explanations for why each strategy enhances memory (referencing concepts like retrieval strengthening, consolidation, desirable difficulty, or elaborative encoding), and includes specific implementation details rather than vague descriptions."
   }
 }

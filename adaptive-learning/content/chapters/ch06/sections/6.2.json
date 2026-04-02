@@ -65,7 +65,7 @@
   "freeTextPrompt": {
     "id": "ft-6.2",
     "prompt": "Describe a real-world example of classical conditioning from your own life or from a situation you have observed. Identify the unconditioned stimulus (US), unconditioned response (UR), conditioned stimulus (CS), and conditioned response (CR) in your example. Then explain how extinction might be used to weaken or eliminate the conditioned response. Has stimulus generalization occurred in your example? If so, how?",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response provides a specific, concrete example of classical conditioning, correctly identifies all four components (US, UR, CS, CR), explains how the association was formed through pairing, describes a plausible extinction procedure (repeated CS presentation without the US), and addresses whether stimulus generalization has occurred with appropriate reasoning."
   }
 }

@@ -38,7 +38,7 @@
   "freeTextPrompt": {
     "id": "ft-4.1",
     "prompt": "Reflect on your own daily routines and habits. Describe at least two ways in which your circadian rhythm influences your behavior, mood, or cognitive performance throughout the day. Then identify one habit (e.g., screen use, caffeine consumption, irregular sleep schedule) that might be disrupting your circadian rhythm and explain the biological mechanism behind the disruption.",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response should: (1) correctly define or reference the circadian rhythm and its biological basis, (2) provide two specific personal examples of how daily rhythms affect behavior or mood, (3) identify a specific disrupting habit, (4) explain the biological mechanism (e.g., melatonin suppression from blue light, SCN signaling), and (5) demonstrate application of section concepts to personal experience."
   }
 }

@@ -54,7 +54,7 @@
   "freeTextPrompt": {
     "id": "ft-16.3",
     "prompt": "Consider a scenario in which a college student is experiencing social anxiety, strained family relationships, and feelings of isolation. Which treatment modality or combination of modalities (individual, group, family, couples, self-help, teletherapy) would you recommend, and why? Explain the specific advantages each modality would offer for this student's situation.",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response recommends at least two treatment modalities and provides a clear rationale for each based on the specific features of the student's situation. It should demonstrate understanding of the unique advantages of different modalities (e.g., individual therapy for personal processing, group therapy for reducing isolation, family therapy for relational dynamics) and explain how they complement each other."
   }
 }

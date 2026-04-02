@@ -59,7 +59,7 @@
   "freeTextPrompt": {
     "id": "ft-15.7",
     "prompt": "Many people confuse everyday sadness with clinical depression or assume that a person with depression can simply \"snap out of it.\" Drawing on the diagnostic criteria and contributing factors discussed in this section, explain why major depressive disorder is a serious medical condition and not simply a matter of willpower. What would you say to someone who holds this misconception?",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response distinguishes clinical depression from ordinary sadness by referencing specific diagnostic criteria (number, duration, and severity of symptoms), discusses at least two contributing factors (biological, cognitive, or social), and explains why depression cannot be overcome through willpower alone. The response should demonstrate empathy and use non-stigmatizing language. Mentioning available treatments is a plus."
   }
 }

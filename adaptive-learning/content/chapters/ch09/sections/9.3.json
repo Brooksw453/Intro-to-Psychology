@@ -57,7 +57,7 @@
   "freeTextPrompt": {
     "id": "ft-9.3",
     "prompt": "Think about a person you know well who is in a different life stage than you (e.g., a grandparent, a young child, or a teenager). Describe at least two specific developmental changes this person is experiencing or has experienced in their current life stage, drawing on the physical, cognitive, and psychosocial domains. How do these changes align with or differ from the normative patterns described in this section? What environmental or cultural factors might be influencing their development?",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response identifies a specific person and life stage, describes at least two developmental changes across different domains (physical, cognitive, or psychosocial), connects observations to normative patterns from the section content, and considers environmental or cultural influences on development."
   }
 }

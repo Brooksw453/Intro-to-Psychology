@@ -38,7 +38,7 @@
   "freeTextPrompt": {
     "id": "ft-11.6",
     "prompt": "Consider the finding that personality traits are roughly 40-60% heritable based on twin studies. What does this mean, and what does it not mean? Explain why high heritability does not imply that personality is fixed or that the environment does not matter. Use examples from this section to support your explanation.",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response should: (1) correctly define heritability and explain that it refers to variation within a population, not the degree to which an individual's trait is genetic, (2) explain that heritability does not mean immutability, (3) provide examples showing how environment interacts with genetic predispositions (e.g., temperament research, nonshared environment), (4) avoid common misconceptions about heritability, and (5) demonstrate nuanced thinking about the nature-nurture interaction."
   }
 }

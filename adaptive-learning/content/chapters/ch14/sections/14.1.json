@@ -39,7 +39,7 @@
   "freeTextPrompt": {
     "id": "ft-14.1",
     "prompt": "Describe a recent stressful experience in your life. Using Lazarus's cognitive appraisal model, explain how your primary and secondary appraisals influenced your stress level. Would you classify this experience as eustress or distress, and why? Which stage of Selye's general adaptation syndrome best describes your physiological response?",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "Student should correctly apply Lazarus's primary and secondary appraisal concepts to their experience, accurately distinguish between eustress and distress, and connect their experience to at least one stage of Selye's GAS. Should demonstrate understanding that stress is subjective and influenced by cognitive appraisal."
   }
 }

@@ -40,7 +40,7 @@
   "freeTextPrompt": {
     "id": "ft-11.9",
     "prompt": "Compare and contrast self-report inventories and projective tests as methods of personality assessment. For each approach, identify one specific strength and one specific limitation. If you were a psychologist needing to assess a client's personality, which approach would you prefer and why? Consider the concepts of reliability and validity in your response.",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response should: (1) accurately describe how self-report inventories and projective tests work, (2) identify specific strengths and limitations of each approach, (3) correctly define and apply the concepts of reliability and validity, (4) make a reasoned argument for preferring one approach over the other in a specific context, and (5) demonstrate understanding that different assessment contexts may call for different methods."
   }
 }

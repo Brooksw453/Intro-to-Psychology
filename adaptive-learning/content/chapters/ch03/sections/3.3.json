@@ -40,7 +40,7 @@
   "freeTextPrompt": {
     "id": "ft-3.3",
     "prompt": "Describe a stressful situation you have experienced or can imagine (e.g., a job interview, a near-miss car accident, or a surprise encounter). Explain how your sympathetic and parasympathetic nervous systems would respond during and after the event. Include specific physiological changes for each division.",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response should: (1) describe a specific stressful scenario, (2) correctly identify at least three physiological changes triggered by the sympathetic nervous system, (3) describe the parasympathetic response that follows, (4) demonstrate understanding that the two divisions work in opposition, and (5) use correct terminology including fight-or-flight and rest-and-digest."
   }
 }

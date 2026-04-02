@@ -65,7 +65,7 @@
   "freeTextPrompt": {
     "id": "ft-7.3",
     "prompt": "Describe a real-life decision you have made (or observed someone make) where a cognitive bias such as confirmation bias, anchoring bias, the availability heuristic, or the representativeness heuristic played a role. Explain which bias was at work, how it influenced the decision, and what a more rational decision-making process might have looked like.",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response identifies a specific real-life decision, correctly names and defines the relevant cognitive bias, clearly explains how the bias influenced the outcome, and proposes a concrete alternative approach that would reduce the bias's influence. The response should demonstrate understanding of why these biases are natural features of human cognition."
   }
 }

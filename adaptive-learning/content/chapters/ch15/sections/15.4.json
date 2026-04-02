@@ -58,7 +58,7 @@
   "freeTextPrompt": {
     "id": "ft-15.4",
     "prompt": "Imagine you are explaining the difference between normal anxiety and an anxiety disorder to a friend who says, \"Everyone gets anxious sometimes -- it's not a real disorder.\" How would you explain the distinction? Use at least one specific anxiety disorder as an example to illustrate how clinical anxiety differs from everyday worry or nervousness.",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response clearly distinguishes between normal adaptive anxiety and clinical anxiety disorders by discussing factors such as intensity, duration, proportionality to the threat, and functional impairment. The response should describe at least one specific anxiety disorder (e.g., GAD, panic disorder, specific phobia) with enough detail to demonstrate understanding. It should convey a compassionate, non-stigmatizing tone."
   }
 }

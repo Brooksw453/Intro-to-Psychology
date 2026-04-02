@@ -39,7 +39,7 @@
   "freeTextPrompt": {
     "id": "ft-12.5",
     "prompt": "Using the concepts from this section, explain why prejudice is so difficult to eliminate even when people consciously reject discriminatory attitudes. Discuss at least two psychological mechanisms that maintain prejudice (such as implicit bias, in-group favoritism, or the out-group homogeneity effect). Then describe one evidence-based strategy for reducing prejudice and explain why it works.",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response should: (1) distinguish between implicit and explicit prejudice, (2) accurately describe at least two psychological mechanisms that perpetuate prejudice, (3) identify a specific evidence-based reduction strategy (e.g., contact hypothesis, jigsaw classroom), (4) explain the psychological principles that make this strategy effective, and (5) demonstrate critical thinking about the complexity of prejudice reduction."
   }
 }

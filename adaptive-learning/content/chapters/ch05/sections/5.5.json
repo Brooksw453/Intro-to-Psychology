@@ -57,7 +57,7 @@
   "freeTextPrompt": {
     "id": "ft-5.5",
     "prompt": "The gate control theory of pain suggests that psychological factors can influence the physical experience of pain. Drawing on this theory, explain why a soldier wounded in battle might not feel pain until after the fighting is over, or why a person receiving a placebo might report genuine pain relief. What are the practical implications of this theory for modern approaches to pain management?",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response accurately describes gate control theory (neural gate in spinal cord modulated by competing signals, brain signals, and endorphins), applies it to explain the provided examples (e.g., adrenaline, distraction, and cognitive appraisal closing the gate; placebo expectations triggering endorphin release), and discusses practical implications such as cognitive-behavioral pain management, mindfulness, or the integration of psychological and medical approaches to treating chronic pain."
   }
 }

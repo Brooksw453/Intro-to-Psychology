@@ -54,7 +54,7 @@
   "freeTextPrompt": {
     "id": "ft-2.4",
     "prompt": "Consider Milgram's obedience study, in which participants were deceived into believing they were administering painful electric shocks. Do you think this study should have been conducted? Weigh the scientific value of the findings (what the study revealed about human obedience to authority) against the ethical concerns (participant distress, deception). If you were on an IRB reviewing this study today, what changes would you require, and why?",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response addresses both the scientific value of Milgram's findings and the ethical concerns, takes a reasoned position on whether the study was justified, proposes specific changes an IRB might require (e.g., enhanced informed consent, right to withdraw, debriefing, reduced deception), and demonstrates understanding of how modern ethical principles balance the pursuit of knowledge with the protection of participants."
   }
 }

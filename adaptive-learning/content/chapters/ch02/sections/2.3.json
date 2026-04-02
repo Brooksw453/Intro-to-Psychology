@@ -62,7 +62,7 @@
   "freeTextPrompt": {
     "id": "ft-2.3",
     "prompt": "Imagine a researcher reports that a new therapy technique produces a \"statistically significant\" improvement in depression scores compared to a control group, with a mean improvement of 1.2 points on a 50-point depression scale. Based on what you have learned about analyzing findings, discuss whether statistical significance alone is enough to conclude that this therapy is practically useful. What additional information would you want to know before recommending this therapy, and why?",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response distinguishes between statistical significance and practical significance, identifies that a 1.2-point improvement on a 50-point scale may be too small to be meaningful, discusses additional information needed (effect size, sample size, standard deviation, clinical significance thresholds), and demonstrates understanding of how inferential statistics inform but do not solely determine the value of research findings."
   }
 }

@@ -54,7 +54,7 @@
   "freeTextPrompt": {
     "id": "ft-15.1",
     "prompt": "Consider the criteria used to define psychological disorders (statistical rarity, violation of social norms, personal distress, and maladaptive functioning). Can you think of a behavior that might meet one or two of these criteria but would NOT be considered a psychological disorder? Explain why no single criterion is sufficient for defining abnormality, and discuss how cultural context influences our understanding of what is \"normal\" versus \"disordered.\"",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response identifies a specific behavior that meets some but not all criteria for abnormality (e.g., extreme sports, cultural rituals, grief), explains why multiple criteria must be considered together, and demonstrates understanding of how cultural and historical context shapes definitions of normality. The response should reference at least two of the four criteria discussed in the section."
   }
 }

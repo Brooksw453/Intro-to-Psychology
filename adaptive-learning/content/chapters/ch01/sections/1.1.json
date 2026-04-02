@@ -54,7 +54,7 @@
   "freeTextPrompt": {
     "id": "ft-1.1",
     "prompt": "Think of a common belief or piece of folk wisdom about human behavior (e.g., \"money can't buy happiness\" or \"first impressions are always accurate\"). How would a psychologist use the scientific method to test whether this belief is actually true? Describe the steps you would take, including forming a hypothesis, choosing a method of data collection, and what kind of evidence would support or refute the belief.",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response identifies a specific common belief, formulates a clear testable hypothesis, outlines a reasonable research approach (observation, survey, experiment), considers what evidence would confirm or disconfirm the belief, and acknowledges the difference between scientific evidence and intuition."
   }
 }

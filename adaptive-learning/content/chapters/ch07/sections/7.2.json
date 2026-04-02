@@ -61,7 +61,7 @@
   "freeTextPrompt": {
     "id": "ft-7.2",
     "prompt": "Consider the linguistic relativity hypothesis in the context of modern life. How might the specific language or terminology used in a particular field (such as technology, medicine, or law) influence how professionals in that field think about problems? Provide a specific example and explain whether you believe language shapes thought, thought shapes language, or both.",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response demonstrates understanding of the linguistic relativity hypothesis (both strong and weak versions), provides a concrete example from a professional field showing how specialized vocabulary may shape cognitive processing, and takes a reasoned position on the relationship between language and thought with supporting logic."
   }
 }

@@ -38,7 +38,7 @@
   "freeTextPrompt": {
     "id": "ft-11.1",
     "prompt": "Think about your own personality or that of someone you know well. Choose two of the theoretical perspectives discussed in this section (psychodynamic, humanistic, trait, social-cognitive, or biological) and explain how each would account for a specific personality characteristic you have observed. Which perspective do you find more convincing for explaining this trait, and why?",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response should: (1) identify a specific personality characteristic, (2) accurately apply two different theoretical perspectives to explain that characteristic, (3) demonstrate understanding of the key assumptions of each perspective, (4) provide a reasoned argument for which perspective is more convincing, and (5) use vocabulary from the section correctly."
   }
 }

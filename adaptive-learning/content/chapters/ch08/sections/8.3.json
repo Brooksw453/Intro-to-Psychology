@@ -62,7 +62,7 @@
   "freeTextPrompt": {
     "id": "ft-8.3",
     "prompt": "Elizabeth Loftus's research on the misinformation effect and false memories has had significant implications for the legal system. Describe how memory distortion could affect a criminal investigation -- from the initial witness interview through the trial. What specific safeguards could be put in place at each stage to minimize the impact of memory errors? Reference at least two concepts from this section in your answer.",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response accurately describes the misinformation effect and/or false memory research, traces potential memory distortion across multiple stages of a criminal investigation (witness interviews, police lineups, courtroom testimony), proposes specific evidence-based safeguards (double-blind lineups, avoiding leading questions, recording initial statements), and correctly references at least two relevant concepts such as source monitoring errors, interference, or the reconstructive nature of memory."
   }
 }

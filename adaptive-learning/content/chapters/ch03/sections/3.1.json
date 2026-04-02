@@ -41,7 +41,7 @@
   "freeTextPrompt": {
     "id": "ft-3.1",
     "prompt": "Choose a psychological trait or behavior (e.g., intelligence, shyness, risk-taking) and explain how both genetic and environmental factors might interact to shape its development in an individual. Use specific concepts from this section such as genotype, phenotype, and gene-environment interaction in your response.",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response should: (1) identify a specific psychological trait, (2) explain the genetic component using terms like genotype, alleles, or heritability, (3) describe relevant environmental factors that could influence expression of the trait, (4) demonstrate understanding that genes and environment interact rather than acting independently, and (5) provide a concrete example illustrating the interaction."
   }
 }

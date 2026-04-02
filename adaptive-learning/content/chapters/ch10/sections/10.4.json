@@ -57,7 +57,7 @@
   "freeTextPrompt": {
     "id": "ft-10.4",
     "prompt": "Recall a recent situation in which you experienced a strong emotion (positive or negative). Describe the physiological sensations, subjective feelings, and behavioral responses you experienced. Then, apply at least two theories of emotion from this section (James-Lange, Cannon-Bard, Schachter-Singer, or cognitive appraisal) to explain how each theory would account for your emotional experience. Which theory do you think best explains what happened, and why?",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response describes a specific emotional experience with attention to all three components (physiological, subjective, behavioral), accurately applies at least two emotion theories to the experience, evaluates which theory provides the best explanation with clear reasoning, and uses correct terminology from the section."
   }
 }

@@ -66,7 +66,7 @@
   "freeTextPrompt": {
     "id": "ft-8.1",
     "prompt": "Describe your current study habits in terms of the memory concepts covered in this section. Are you primarily using maintenance rehearsal or elaborative rehearsal? Based on what you have learned about encoding, storage, and retrieval, identify at least two specific changes you could make to your study approach and explain the psychological reasoning behind each change.",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response accurately describes the student's current study habits using correct memory terminology (encoding, rehearsal types, short-term vs. long-term memory), identifies at least two specific evidence-based changes (such as elaborative rehearsal, spacing, chunking, or retrieval practice), and provides clear psychological reasoning connecting each change to memory processes described in the section."
   }
 }

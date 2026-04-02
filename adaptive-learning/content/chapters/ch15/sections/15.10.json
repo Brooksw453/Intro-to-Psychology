@@ -54,7 +54,7 @@
   "freeTextPrompt": {
     "id": "ft-15.10",
     "prompt": "The rates of ADHD and autism spectrum disorder diagnoses have increased significantly in recent decades. Some argue this represents overdiagnosis, while others believe it reflects better awareness and recognition. What factors might explain the increase in diagnosis rates? Take a position on this debate and support it with evidence and reasoning from this section.",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response identifies multiple factors that could explain increased diagnosis rates (e.g., broader diagnostic criteria, increased awareness, better screening, cultural factors, pharmaceutical marketing). The response should take a clear position while acknowledging the complexity of the issue and the valid points on both sides. It should demonstrate understanding of the potential consequences of both overdiagnosis and underdiagnosis."
   }
 }

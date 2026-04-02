@@ -38,7 +38,7 @@
   "freeTextPrompt": {
     "id": "ft-13.4",
     "prompt": "Identify a product, system, or interface you use regularly that is poorly designed from a human factors perspective. Describe the specific design flaws, explain how they increase cognitive load or lead to errors, and propose improvements based on human factors principles from this section.",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "Student should identify a specific design problem, explain it using human factors concepts (cognitive load, usability, human error), and propose evidence-based improvements. Strong answers demonstrate understanding that design should accommodate human limitations rather than expecting users to adapt to poor design."
   }
 }

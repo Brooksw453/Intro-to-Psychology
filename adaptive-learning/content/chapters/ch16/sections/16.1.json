@@ -54,7 +54,7 @@
   "freeTextPrompt": {
     "id": "ft-16.1",
     "prompt": "The deinstitutionalization movement aimed to improve the lives of people with severe mental illness by moving them from large institutions into community-based care. In what ways did deinstitutionalization succeed, and in what ways did it fall short? What changes would you recommend to better serve people with severe psychological disorders in modern society?",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response identifies both successes (recognition of patients' rights, potential for community integration, development of outpatient treatments) and failures (homelessness, incarceration, inadequate funding for community services) of deinstitutionalization. It should propose at least one specific, practical recommendation for improvement and demonstrate understanding of the ongoing challenges in mental health care delivery."
   }
 }

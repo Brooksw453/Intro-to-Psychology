@@ -39,7 +39,7 @@
   "freeTextPrompt": {
     "id": "ft-13.3",
     "prompt": "Consider a workplace you are familiar with (a current or past job, a school organization, or even a sports team). Would you describe the leadership style as more transactional or transformational? How does the organizational culture influence members' satisfaction and behavior? Use specific concepts from this section to support your analysis.",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "Student should correctly identify and describe a leadership style using concepts from this section, analyze how organizational culture influences behavior, and apply at least two specific concepts (e.g., Theory X/Y, OCB, Herzberg's factors) to their real-world example. Analysis should go beyond surface-level observations."
   }
 }

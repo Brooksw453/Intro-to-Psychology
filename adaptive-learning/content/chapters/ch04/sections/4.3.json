@@ -39,7 +39,7 @@
   "freeTextPrompt": {
     "id": "ft-4.3",
     "prompt": "A friend tells you they have been setting their alarm to get only five hours of sleep so they can study more before exams. Using your knowledge of sleep stages and the sleep cycle, explain what specific stages of sleep they are most likely losing, what functions those stages serve, and how this strategy is likely to affect their exam performance and overall health.",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response should: (1) identify that later sleep cycles contain more REM sleep, which is disproportionately lost when total sleep time is cut short, (2) explain the functions of REM sleep (memory consolidation, emotional processing, dreaming), (3) note that deep NREM stage 3 sleep is also important for physical restoration, (4) connect the loss of these stages to impaired memory consolidation and exam performance, and (5) provide a recommendation based on sleep science."
   }
 }

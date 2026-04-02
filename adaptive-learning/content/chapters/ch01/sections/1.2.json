@@ -58,7 +58,7 @@
   "freeTextPrompt": {
     "id": "ft-1.2",
     "prompt": "Choose two of the major schools of thought in psychology's history (structuralism, functionalism, psychoanalysis, behaviorism, or humanism). Compare them by explaining how each would approach understanding a specific behavior, such as why a student procrastinates on studying for an exam. What would each perspective emphasize, and what would each potentially overlook?",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response selects two distinct perspectives, accurately describes each approach, applies both to the specific behavior example, identifies what each perspective emphasizes and what it might miss, and demonstrates understanding of the historical progression of psychological thought."
   }
 }

@@ -65,7 +65,7 @@
   "freeTextPrompt": {
     "id": "ft-6.3",
     "prompt": "Social media platforms are often described as being designed to be addictive. Using your understanding of operant conditioning, analyze how a specific social media platform uses reinforcement principles to keep users engaged. Identify the specific reinforcement schedule at work, explain why it is effective based on what you know about schedules of reinforcement, and discuss whether this represents an ethical use of psychological principles. What could users do to counteract these effects?",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response identifies a specific platform and describes its reinforcement mechanisms (e.g., likes, notifications, content feeds), correctly identifies the variable-ratio schedule and explains why it produces high, persistent response rates resistant to extinction, offers a thoughtful ethical analysis (considering both user engagement and potential harms), and proposes at least one concrete strategy for counteracting conditioned checking behavior."
   }
 }

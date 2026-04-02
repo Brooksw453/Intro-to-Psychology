@@ -54,7 +54,7 @@
   "freeTextPrompt": {
     "id": "ft-16.5",
     "prompt": "Imagine you are designing a mental health program for a diverse community that includes immigrants, low-income families, and individuals from cultures that stigmatize mental illness. What barriers to treatment would you anticipate, and what specific strategies would you implement to make your program accessible and effective for all community members? Draw on the concepts of cultural competence and health disparities discussed in this section.",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response identifies at least three specific barriers (e.g., language, cost, cultural stigma, provider shortage, distrust) and proposes concrete strategies to address each one (e.g., bilingual providers, sliding scale fees, community outreach, culturally adapted interventions, integration with trusted community institutions). The response should demonstrate understanding of cultural competence and the importance of systemic approaches rather than placing the burden of access on individual clients."
   }
 }

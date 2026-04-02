@@ -58,7 +58,7 @@
   "freeTextPrompt": {
     "id": "ft-16.2",
     "prompt": "If you were seeking therapy for anxiety or depression, which therapeutic approach (psychodynamic, humanistic, cognitive-behavioral, or biomedical) would you most want to try first, and why? Describe the key features of your chosen approach and explain what aspects appeal to you. What potential limitations should you be aware of?",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response selects a specific therapeutic approach, accurately describes its key techniques and theoretical basis, and provides a thoughtful rationale for the choice. It should also acknowledge at least one limitation of the chosen approach (e.g., time commitment, cost, side effects for medication) and demonstrate understanding of what the treatment process involves."
   }
 }

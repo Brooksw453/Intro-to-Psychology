@@ -8,7 +8,11 @@
       "Bash(python -c \":*)",
       "Bash(npx tsx:*)",
       "Bash(npm run:*)",
-      "Bash(gh auth:*)"
+      "Bash(gh auth:*)",
+      "Bash(gh repo:*)",
+      "Bash(zero)",
+      "Bash(agent \")",
+      "Bash(grep -r accessibility.esdesigns C:UsersbrookOneDriveDocumentsGitHubCourse-Dashboard --include=*.ts --include=*.tsx --include=*.sql)"
     ]
   }
 }

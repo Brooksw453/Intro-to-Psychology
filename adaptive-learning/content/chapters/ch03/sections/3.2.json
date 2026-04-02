@@ -41,7 +41,7 @@
   "freeTextPrompt": {
     "id": "ft-3.2",
     "prompt": "Imagine you are explaining to a friend how a pain signal travels from their hand (after touching a hot stove) to their brain. Trace the path of the neural impulse, describing what happens at each stage including the roles of dendrites, the axon, the action potential, the synapse, and neurotransmitters.",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response should: (1) correctly sequence the steps of neural communication from stimulus to brain, (2) accurately describe the action potential and its all-or-none nature, (3) explain what happens at the synapse including neurotransmitter release and receptor binding, (4) use key vocabulary terms correctly, and (5) demonstrate understanding that the process involves both electrical and chemical transmission."
   }
 }

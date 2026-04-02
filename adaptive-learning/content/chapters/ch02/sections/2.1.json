@@ -58,7 +58,7 @@
   "freeTextPrompt": {
     "id": "ft-2.1",
     "prompt": "Think about a claim you have encountered in the media or on social media about human behavior or psychology (e.g., \"listening to Mozart makes babies smarter\" or \"people only use 10% of their brains\"). How would you apply the scientific method to evaluate this claim? Describe the steps you would take, including what would make the claim falsifiable, how you might test it, and why replication would be important.",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response identifies a specific claim, explains what makes a claim scientifically testable (falsifiable), outlines a reasonable research approach with hypothesis and data collection, discusses the importance of replication, and demonstrates understanding of why the scientific method is superior to accepting claims based on authority or anecdote."
   }
 }

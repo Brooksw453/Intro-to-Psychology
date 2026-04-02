@@ -57,7 +57,7 @@
   "freeTextPrompt": {
     "id": "ft-10.2",
     "prompt": "Consider the various factors that influence your own eating behavior -- physiological signals (hunger, fullness), emotional states, social situations, cultural norms, and media influences. Choose a specific recent eating experience and analyze the factors that influenced what, when, and how much you ate. Which factors were you consciously aware of at the time, and which operated outside your awareness? How does this analysis connect to the physiological and psychological concepts discussed in this section?",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response describes a specific eating experience, identifies at least three influencing factors (from different categories such as physiological, psychological, social, or cultural), distinguishes between conscious and unconscious influences, and connects the analysis to specific concepts from the section (e.g., ghrelin, emotional eating, social facilitation)."
   }
 }

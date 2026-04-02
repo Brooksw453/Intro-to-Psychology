@@ -54,7 +54,7 @@
   "freeTextPrompt": {
     "id": "ft-15.2",
     "prompt": "Consider the advantages and disadvantages of using a standardized diagnostic system like the DSM-5 to classify psychological disorders. In what ways does having a common diagnostic framework benefit patients, clinicians, and researchers? What are the potential risks or drawbacks of diagnostic labeling? Use specific examples to support your argument.",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response identifies at least two benefits of standardized diagnosis (e.g., common language, treatment guidance, research consistency) and at least two risks (e.g., stigma from labeling, cultural bias, medicalization of normal experiences). The response should demonstrate critical thinking about the balance between the utility and limitations of diagnostic classification, using specific examples such as the Rosenhan study or cultural considerations."
   }
 }

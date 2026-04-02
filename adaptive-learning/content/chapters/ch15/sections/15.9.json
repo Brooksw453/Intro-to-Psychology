@@ -54,7 +54,7 @@
   "freeTextPrompt": {
     "id": "ft-15.9",
     "prompt": "Dissociative identity disorder (DID) is one of the most controversial diagnoses in psychology. Some researchers view it as a genuine disorder caused by severe childhood trauma, while others argue that it may be influenced by therapeutic suggestion or cultural factors. Summarize the key arguments on both sides of this debate. What evidence would you find most convincing in resolving the controversy?",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response presents arguments from both perspectives fairly: the trauma model (association with childhood abuse, neuroimaging evidence, cross-cultural consistency) and the sociocognitive model (increase in cases after media attention, potential iatrogenic influence, therapist variability in diagnosis rates). The response should identify what type of evidence might help resolve the debate and demonstrate critical thinking rather than simply taking a side."
   }
 }

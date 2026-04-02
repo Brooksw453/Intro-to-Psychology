@@ -191,7 +191,7 @@ For each chapter, create the following files. Use the textbook PDF as the source
   "freeTextPrompt": {
     "id": "ft-1.1",
     "prompt": "Application-focused question that requires students to connect concepts to real situations. Should require 100+ words to answer well.",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "What a good answer should include. Be specific about which concepts must be addressed."
   }
 }

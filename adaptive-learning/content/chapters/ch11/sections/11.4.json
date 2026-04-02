@@ -38,7 +38,7 @@
   "freeTextPrompt": {
     "id": "ft-11.4",
     "prompt": "Using Bandura's concept of reciprocal determinism, analyze a specific behavior or habit of your own. Identify the personal factors (beliefs, expectations), behaviors, and environmental factors involved, and explain how they interact to reinforce the behavior pattern. How might changing one element of the triad alter the others?",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response should: (1) correctly define reciprocal determinism, (2) identify a specific personal behavior or habit, (3) clearly distinguish the personal, behavioral, and environmental components, (4) explain how these three components interact to maintain the behavior, and (5) propose a realistic change to one element and predict its effects on the others."
   }
 }

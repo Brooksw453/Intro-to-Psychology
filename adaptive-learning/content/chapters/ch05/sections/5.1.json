@@ -57,7 +57,7 @@
   "freeTextPrompt": {
     "id": "ft-5.1",
     "prompt": "Think about a time when your expectations influenced how you perceived something -- perhaps you misheard song lyrics, saw a shape in the clouds, or tasted something differently because of how it looked. Describe the experience and explain how top-down processing and bottom-up processing each played a role. How does this example illustrate the difference between sensation and perception?",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response provides a specific personal or relatable example, correctly distinguishes between sensation (raw sensory input) and perception (interpretation), explains how top-down processing (expectations, prior knowledge) influenced the experience, identifies the role of bottom-up processing (stimulus-driven input), and demonstrates understanding that perception is an active, constructive process."
   }
 }

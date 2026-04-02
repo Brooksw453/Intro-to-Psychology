@@ -53,7 +53,7 @@
   "freeTextPrompt": {
     "id": "ft-5.2",
     "prompt": "Imagine you are explaining to a friend why different animals experience the world differently based on their sensory capabilities. Using your knowledge of the electromagnetic spectrum and sound wave properties, compare how a human, a bee, and a bat might each perceive the same outdoor environment differently. What does this tell us about the relationship between physical reality and our experience of it?",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response explains that different species have different sensory ranges (e.g., bees see UV light, bats use echolocation with ultrasonic frequencies), correctly relates wavelength and frequency to sensory experience, discusses the human visible spectrum and audible range as limited windows into physical reality, and reflects on how biology shapes perception of the environment."
   }
 }

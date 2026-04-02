@@ -58,7 +58,7 @@
   "freeTextPrompt": {
     "id": "ft-15.8",
     "prompt": "Popular media often portrays people with schizophrenia as dangerous or as having \"split personalities.\" Based on what you have learned in this section, how do these portrayals differ from the clinical reality of schizophrenia? Discuss at least two common misconceptions and explain why accurate public understanding of this disorder matters for the well-being of people who live with it.",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response identifies at least two specific misconceptions (e.g., schizophrenia equals split personality, people with schizophrenia are inherently violent) and corrects them with accurate information from the section. The response should explain how misconceptions contribute to stigma and barriers to treatment, and demonstrate respectful, person-first language throughout."
   }
 }

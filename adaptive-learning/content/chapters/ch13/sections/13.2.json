@@ -39,7 +39,7 @@
   "freeTextPrompt": {
     "id": "ft-13.2",
     "prompt": "Imagine you are an I-O psychologist hired by a company that is experiencing high employee turnover. Describe how you would use job analysis and improved selection methods to address this problem. What specific tools or approaches would you recommend, and why?",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "Student should describe the job analysis process, recommend at least two specific selection tools (e.g., structured interviews, cognitive ability tests, personality assessments), explain why each would help reduce turnover, and demonstrate understanding of concepts like validity, KSAOs, and person-job fit."
   }
 }

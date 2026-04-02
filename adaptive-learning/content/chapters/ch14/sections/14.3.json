@@ -38,7 +38,7 @@
   "freeTextPrompt": {
     "id": "ft-14.3",
     "prompt": "Explain the biological pathway through which chronic stress can lead to illness, tracing the chain from stressor perception through the stress response to specific health outcomes. Use at least three specific terms from this section (e.g., HPA axis, cortisol, immunosuppression, psychoneuroimmunology) in your explanation.",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "Student should accurately trace the physiological pathway from stress perception to health outcomes, correctly use at least three key terms from the section, and demonstrate understanding of how chronic (not just acute) stress produces illness. Should show understanding of both direct biological pathways and indirect behavioral pathways."
   }
 }

@@ -53,7 +53,7 @@
   "freeTextPrompt": {
     "id": "ft-6.4",
     "prompt": "Consider a behavior or skill you learned primarily through observation rather than direct instruction or reinforcement. Describe the situation and identify the model you observed. Then analyze your experience through the lens of Bandura's four processes: How did attention, retention, reproduction, and motivation each play a role? Was vicarious reinforcement or punishment involved? How does this experience illustrate the difference between learning and performance?",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response provides a specific example of observational learning from personal experience, identifies the model, systematically addresses all four of Bandura's processes (attention, retention, reproduction, motivation) with relevant details, discusses whether vicarious reinforcement or punishment was involved, and reflects on the distinction between learning (acquiring the behavior) and performance (displaying it)."
   }
 }

@@ -65,7 +65,7 @@
   "freeTextPrompt": {
     "id": "ft-7.4",
     "prompt": "Compare two different theories of intelligence (such as Spearman's g, Gardner's multiple intelligences, or Sternberg's triarchic theory). Which theory do you believe best captures what it means to be intelligent, and why? Use a concrete example of a person (real or hypothetical) whose abilities would be assessed differently under each theory.",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response accurately describes at least two theories of intelligence, identifies key differences between them, provides a concrete example showing how a person might be evaluated differently under each theory, and takes a reasoned position supported by logical argument. The response should demonstrate understanding of the strengths and limitations of each theory."
   }
 }

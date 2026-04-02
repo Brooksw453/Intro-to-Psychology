@@ -58,7 +58,7 @@
   "freeTextPrompt": {
     "id": "ft-16.4",
     "prompt": "Some people view substance use disorders as a matter of personal choice or moral weakness, while the medical and psychological community increasingly views them as chronic medical conditions. Based on what you have learned about the biological, psychological, and social factors involved, which perspective do you find more supported by the evidence? How does the way we frame substance use disorders affect the types of treatment and support that people receive?",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response discusses the biological (tolerance, withdrawal, neurochemical changes), psychological (cognitive patterns, coping mechanisms), and social (environmental triggers, peer influence) factors that support viewing substance use disorders as medical conditions. It should explain how the framing of addiction as a moral failing versus a medical condition affects access to treatment, stigma, and public policy. The response should use person-first, non-stigmatizing language."
   }
 }

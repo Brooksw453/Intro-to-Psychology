@@ -61,7 +61,7 @@
   "freeTextPrompt": {
     "id": "ft-10.1",
     "prompt": "Think about an activity you are deeply committed to (a hobby, a sport, a career goal, or a course of study). Analyze your motivation for this activity using at least two of the theories discussed in this section (drive theory, arousal theory, Maslow's hierarchy, or intrinsic vs. extrinsic motivation). Has your motivation for this activity changed over time? If so, how would you explain that shift using motivational concepts?",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response identifies a specific activity, applies at least two motivational theories accurately and in a way that demonstrates understanding, reflects on whether motivation has changed over time, and uses correct terminology from the section."
   }
 }

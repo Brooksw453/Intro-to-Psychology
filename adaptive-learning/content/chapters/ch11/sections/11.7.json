@@ -39,7 +39,7 @@
   "freeTextPrompt": {
     "id": "ft-11.7",
     "prompt": "Rate yourself on each of the Big Five personality dimensions (openness, conscientiousness, extraversion, agreeableness, neuroticism) as high, medium, or low. Choose the two dimensions you rated most strongly and explain how they manifest in your daily life. Do you think these traits have been stable over time, or have they changed? What might account for any changes?",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response should: (1) demonstrate accurate understanding of each Big Five dimension, (2) provide specific behavioral examples for the two chosen dimensions, (3) reflect thoughtfully on the stability or change of these traits over time, (4) consider possible explanations for stability or change (e.g., maturation, life experiences, environmental factors), and (5) avoid simply listing traits without meaningful self-analysis."
   }
 }

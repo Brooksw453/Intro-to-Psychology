@@ -38,7 +38,7 @@
   "freeTextPrompt": {
     "id": "ft-14.2",
     "prompt": "Using the concepts from this section, categorize the stressors in your current life into daily hassles, life events, and chronic stressors. Which category has the greatest impact on your well-being, and why? How does this relate to the research findings about the cumulative effects of different types of stressors?",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "Student should correctly categorize their stressors using the terminology from the section, reflect meaningfully on which type has the greatest impact, and connect their personal experience to research findings (e.g., Lazarus's work on daily hassles or Holmes and Rahe's SRRS). Should demonstrate understanding that stress is cumulative."
   }
 }

@@ -54,7 +54,7 @@
   "freeTextPrompt": {
     "id": "ft-15.5",
     "prompt": "Many people casually say things like \"I'm so OCD\" when they prefer things neat or organized. How does this colloquial use of the term differ from the clinical reality of obsessive-compulsive disorder? Explain the actual nature of OCD, including the obsession-compulsion cycle, and discuss why trivializing the disorder through casual language can be harmful.",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response distinguishes between ordinary preferences for order and the clinical features of OCD (intrusive unwanted thoughts, compulsions performed to reduce distress, significant impairment). It should describe the obsession-compulsion cycle and explain how casual misuse of the term minimizes the suffering of people with OCD and contributes to misunderstanding. The response should use person-first, respectful language."
   }
 }

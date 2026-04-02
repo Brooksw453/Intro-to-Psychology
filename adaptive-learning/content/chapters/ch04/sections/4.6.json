@@ -38,7 +38,7 @@
   "freeTextPrompt": {
     "id": "ft-4.6",
     "prompt": "Have you ever experienced an altered state of consciousness outside of sleep — such as being deeply absorbed in a task (flow state), practicing meditation, or being hypnotized? Describe the experience and explain which theory or concept from this section best accounts for what you experienced. If you have not had such an experience, choose either hypnosis or meditation and argue which theoretical explanation you find most convincing and why.",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response should: (1) describe a specific experience or clearly identify a chosen topic, (2) connect the experience to at least one theory or concept from the section (dissociation theory, social-cognitive theory, flow, mindfulness), (3) demonstrate understanding of the chosen theory's key claims, (4) evaluate the theory's strengths or limitations, and (5) reflect thoughtfully on how the experience relates to the broader concept of consciousness as a continuum."
   }
 }

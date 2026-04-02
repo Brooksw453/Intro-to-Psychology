@@ -38,7 +38,7 @@
   "freeTextPrompt": {
     "id": "ft-4.2",
     "prompt": "Think about a time when you were significantly sleep-deprived (or imagine such a scenario). Describe the specific cognitive, emotional, and physical effects you experienced or would expect. Then, using the theories of sleep discussed in this section, explain why sleep deprivation produces these effects and what this tells us about the functions of sleep.",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response should: (1) describe specific effects of sleep deprivation across at least two domains (cognitive, emotional, physical), (2) connect each effect to at least one theory of sleep function (restorative, adaptive, or memory consolidation), (3) demonstrate understanding of why sleep is necessary rather than just listing effects, (4) reference relevant concepts such as sleep debt or memory consolidation, and (5) provide a thoughtful personal or hypothetical example."
   }
 }

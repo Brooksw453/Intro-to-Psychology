@@ -65,7 +65,7 @@
   "freeTextPrompt": {
     "id": "ft-5.3",
     "prompt": "Consider a person who has red-green color blindness. Using your understanding of the trichromatic and opponent-process theories, explain why this condition occurs at a biological level. Then describe at least two specific real-world challenges this person might face and how modern design practices (such as in traffic signals or digital interfaces) attempt to accommodate color vision differences.",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response correctly explains that red-green color blindness results from absent or dysfunctional medium- or long-wavelength cones (trichromatic theory), connects this to the X-linked genetic pattern, identifies specific real-world challenges (e.g., distinguishing traffic lights, interpreting color-coded information), and describes at least one accommodation strategy (e.g., positional cues in traffic lights, using patterns or labels alongside color in design)."
   }
 }

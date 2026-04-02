@@ -39,7 +39,7 @@
   "freeTextPrompt": {
     "id": "ft-11.5",
     "prompt": "Using Rogers' concepts of the real self, ideal self, and congruence, describe a situation (real or hypothetical) in which a person experiences incongruence. What role might conditions of worth play in creating this incongruence? How could unconditional positive regard help the person move toward greater congruence and well-being?",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response should: (1) accurately define the real self, ideal self, and congruence, (2) describe a specific and realistic scenario of incongruence, (3) explain how conditions of worth contribute to the gap between the real and ideal selves, (4) describe how unconditional positive regard could address the incongruence, and (5) demonstrate understanding of Rogers' broader theoretical perspective."
   }
 }

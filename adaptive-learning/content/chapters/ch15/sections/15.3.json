@@ -54,7 +54,7 @@
   "freeTextPrompt": {
     "id": "ft-15.3",
     "prompt": "Choose a psychological disorder you are aware of (such as depression, anxiety, or an eating disorder) and explain how the biopsychosocial model would account for its development. Identify at least one biological, one psychological, and one social factor that might contribute to this disorder. How does this integrative approach differ from relying on a single perspective?",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response selects a specific disorder and identifies at least one relevant factor from each domain of the biopsychosocial model (biological, psychological, social). The response should demonstrate understanding of how these factors interact rather than simply listing them independently. It should also explain how the integrative approach provides a more complete picture than any single-perspective explanation."
   }
 }

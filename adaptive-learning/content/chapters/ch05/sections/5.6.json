@@ -57,7 +57,7 @@
   "freeTextPrompt": {
     "id": "ft-5.6",
     "prompt": "Choose a website, app, or physical space you use regularly and analyze how at least three Gestalt principles of perception are at work in its design. For each principle, identify a specific design element that demonstrates it and explain how the principle helps users understand and navigate the layout. Why would a designer benefit from understanding these psychological principles?",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response selects a specific, concrete example (website, app, or space), correctly identifies at least three Gestalt principles (proximity, similarity, closure, continuity, figure-ground, or common fate), provides specific design elements as evidence for each principle, explains how each principle aids user comprehension or navigation, and articulates why knowledge of perceptual psychology is valuable for designers."
   }
 }

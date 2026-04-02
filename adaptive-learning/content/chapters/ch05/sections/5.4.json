@@ -57,7 +57,7 @@
   "freeTextPrompt": {
     "id": "ft-5.4",
     "prompt": "Many young adults regularly use earbuds or headphones at high volumes for extended periods. Using your understanding of auditory anatomy and the process of sound transduction, explain what specifically happens inside the ear that leads to noise-induced hearing loss. Then propose and justify at least two evidence-based strategies for preventing this type of damage while still enjoying music.",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response traces the path of sound through the ear to the hair cells in the cochlea, explains that excessive sound amplitude damages or destroys hair cells that cannot regenerate, correctly identifies this as sensorineural hearing loss, proposes at least two prevention strategies (e.g., volume limiting, breaks, noise-canceling headphones to reduce need for high volume), and provides reasoning grounded in auditory science."
   }
 }

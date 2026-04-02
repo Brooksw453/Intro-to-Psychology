@@ -54,7 +54,7 @@
   "freeTextPrompt": {
     "id": "ft-1.4",
     "prompt": "Imagine you are advising a college student who is interested in psychology but unsure about career options. Based on what you have learned about the different career paths in psychology, recommend two specific career paths that might suit someone who enjoys both working with people and conducting research. Explain what training each path requires and how it combines interpersonal work with scientific inquiry.",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response recommends two specific career paths, accurately describes the educational and training requirements for each, explains how each career combines interpersonal and research components, and demonstrates understanding of the breadth of career options available in psychology."
   }
 }

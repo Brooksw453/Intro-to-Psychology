@@ -39,7 +39,7 @@
   "freeTextPrompt": {
     "id": "ft-12.3",
     "prompt": "Describe a time when you experienced cognitive dissonance -- a conflict between your behavior and your beliefs or between two of your beliefs. How did you resolve the dissonance? Did you change your behavior, change your attitude, or add a new cognition to reduce the discomfort? Explain how Festinger's theory of cognitive dissonance accounts for your experience.",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response should: (1) accurately define cognitive dissonance, (2) describe a specific personal experience of dissonance, (3) identify the conflicting cognitions or the behavior-attitude conflict, (4) explain the strategy used to reduce dissonance, and (5) connect the experience to Festinger's theoretical framework."
   }
 }

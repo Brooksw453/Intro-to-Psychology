@@ -53,7 +53,7 @@
   "freeTextPrompt": {
     "id": "ft-7.6",
     "prompt": "How might understanding the concepts of range of reaction, stereotype threat, and growth mindset change the way schools approach student assessment and academic support? Propose at least two specific changes a school could implement based on these research findings, and explain the psychological reasoning behind each change.",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response accurately defines at least two of the three concepts (range of reaction, stereotype threat, growth mindset), proposes specific and actionable school changes grounded in these concepts, provides clear psychological reasoning connecting each proposed change to the underlying research, and demonstrates understanding of how environment interacts with genetic potential."
   }
 }

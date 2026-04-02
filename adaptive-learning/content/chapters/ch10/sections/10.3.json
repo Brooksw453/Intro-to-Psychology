@@ -53,7 +53,7 @@
   "freeTextPrompt": {
     "id": "ft-10.3",
     "prompt": "Consider how cultural norms and societal attitudes influence people's understanding and expression of sexuality. Choose a specific example of how cultural or historical context has shaped attitudes toward some aspect of sexual behavior, sexual orientation, or gender identity. How does this example illustrate the interaction between biological and sociocultural factors in human sexuality? What role has scientific research (such as Kinsey's surveys or Masters and Johnson's work) played in challenging or reinforcing these attitudes?",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response identifies a specific cultural or historical example, explains how it illustrates the interaction between biological and sociocultural factors, references at least one scientific contribution discussed in the section, and demonstrates critical thinking about the relationship between research and social attitudes."
   }
 }

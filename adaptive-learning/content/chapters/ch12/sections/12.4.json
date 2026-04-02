@@ -39,7 +39,7 @@
   "freeTextPrompt": {
     "id": "ft-12.4",
     "prompt": "Describe a situation from your own experience in which you conformed to group pressure or resisted it. Was the social influence normative (desire to fit in), informational (believing the group might be right), or both? What factors made conformity more or less likely in that situation? Connect your experience to the findings from Asch's or Milgram's research.",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response should: (1) describe a specific and realistic conformity situation, (2) correctly identify the type of social influence at work (normative vs. informational), (3) discuss factors that increased or decreased conformity pressure, (4) draw a meaningful connection to Asch's or Milgram's research findings, and (5) demonstrate critical reflection rather than simple narrative."
   }
 }

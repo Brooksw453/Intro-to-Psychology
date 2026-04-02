@@ -39,7 +39,7 @@
   "freeTextPrompt": {
     "id": "ft-4.4",
     "prompt": "A coworker mentions that they feel exhausted every day even though they go to bed early and think they sleep through the night. Their partner reports that they snore very loudly. Based on what you learned about sleep disorders, what condition might this person have? Describe the disorder, explain why the person feels tired despite spending adequate time in bed, and suggest what steps they should take.",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response should: (1) correctly identify sleep apnea as the likely disorder, (2) explain the mechanism (repeated airway blockage causing brief arousals that prevent restorative deep sleep), (3) describe why the person is unaware of the disruptions, (4) mention health risks associated with untreated sleep apnea, and (5) recommend seeking a medical evaluation or sleep study."
   }
 }

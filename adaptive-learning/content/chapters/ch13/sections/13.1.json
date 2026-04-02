@@ -38,7 +38,7 @@
   "freeTextPrompt": {
     "id": "ft-13.1",
     "prompt": "Think about a job you have held or a workplace you are familiar with. Identify one challenge that could be addressed by an industrial psychologist and one that could be addressed by an organizational psychologist. Explain how each branch of I-O psychology would approach the problem differently, using specific concepts from this section.",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "Student should correctly distinguish between industrial and organizational psychology, identify a realistic workplace problem for each branch, and describe how each would approach the problem using specific I-O concepts (e.g., job analysis, selection, satisfaction, leadership). Strong answers demonstrate understanding that the two branches address different but complementary aspects of work."
   }
 }

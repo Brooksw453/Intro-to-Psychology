@@ -38,7 +38,7 @@
   "freeTextPrompt": {
     "id": "ft-12.1",
     "prompt": "Think of a recent situation in which you made a judgment about someone's behavior (for example, a driver who cut you off, a coworker who was short with you, or a friend who canceled plans). Describe the attribution you initially made. Was it dispositional or situational? Now reconsider the situation using the concept of the fundamental attribution error. What situational factors might have been at play that you initially overlooked?",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response should: (1) describe a specific real or realistic situation, (2) identify the initial attribution as dispositional or situational, (3) correctly define the fundamental attribution error, (4) generate plausible situational explanations for the behavior, and (5) demonstrate genuine reflection on how this cognitive bias influenced the initial judgment."
   }
 }

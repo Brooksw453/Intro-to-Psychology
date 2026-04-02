@@ -39,7 +39,7 @@
   "freeTextPrompt": {
     "id": "ft-12.7",
     "prompt": "Describe a situation (real or hypothetical) in which the bystander effect might prevent someone from receiving help. Using Darley and Latane's five-step decision model, identify at which step(s) the helping process might break down. Then propose at least two specific strategies that could be used to overcome the bystander effect in that situation.",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response should: (1) describe a realistic scenario involving the bystander effect, (2) correctly outline the five steps of Darley and Latane's decision model, (3) identify the specific step(s) at which helping breaks down, (4) propose at least two practical strategies for overcoming the bystander effect, and (5) explain the psychological mechanisms that make these strategies effective."
   }
 }

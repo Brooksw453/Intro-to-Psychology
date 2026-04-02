@@ -61,7 +61,7 @@
   "freeTextPrompt": {
     "id": "ft-7.1",
     "prompt": "Think about a cognitive script you follow regularly in your daily life (such as going to a grocery store, attending a class, or visiting the doctor). Describe the script in detail, then explain what happens cognitively when that script is disrupted -- for example, if a step is missing or occurs out of order. How do schemas and prototypes also play a role in your expectations during this routine?",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response identifies a specific cognitive script with its sequential steps, explains the cognitive disruption that occurs when the script is violated (confusion, discomfort, need for conscious processing), and connects the experience to schemas and prototypes. The response should demonstrate understanding of how these cognitive structures both help and hinder our daily functioning."
   }
 }

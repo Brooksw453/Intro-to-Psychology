@@ -38,7 +38,7 @@
   "freeTextPrompt": {
     "id": "ft-14.5",
     "prompt": "Based on the happiness research presented in this section, design a personal 'well-being plan' for yourself that includes at least three evidence-based strategies for increasing your subjective well-being. For each strategy, explain the research that supports its effectiveness and how you would implement it in your daily life.",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "Student should propose at least three evidence-based strategies from the section (e.g., gratitude practice, social connection, flow activities, acts of kindness), cite the supporting research for each, and describe realistic implementation plans. Should demonstrate understanding of hedonic adaptation and why intentional activities are more effective than circumstantial changes."
   }
 }

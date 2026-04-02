@@ -57,7 +57,7 @@
   "freeTextPrompt": {
     "id": "ft-9.2",
     "prompt": "Choose one of Erikson's psychosocial stages that you have personally experienced or observed in someone you know. Describe the central conflict of that stage and explain how it was resolved (or is being resolved). How did the resolution -- or lack of resolution -- of this crisis affect the person's development? Connect your example to at least one other developmental theory discussed in this section (Piaget, Kohlberg, Gilligan, or Vygotsky).",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response identifies a specific Erikson stage, describes the central conflict accurately, provides a concrete personal or observed example, analyzes how the crisis resolution affected development, and meaningfully connects the example to at least one other developmental theory from the section."
   }
 }

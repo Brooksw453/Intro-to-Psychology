@@ -38,7 +38,7 @@
   "freeTextPrompt": {
     "id": "ft-12.6",
     "prompt": "Choose a specific example of aggression from the news, a film, or your own experience. Classify it as hostile or instrumental aggression and explain your reasoning. Then analyze the behavior using at least two of the theoretical perspectives discussed in this section (biological, frustration-aggression, or social learning). What factors might have prevented or reduced the aggressive behavior?",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response should: (1) describe a specific instance of aggression, (2) correctly classify it as hostile or instrumental with clear justification, (3) apply at least two theoretical perspectives to analyze the behavior, (4) propose realistic factors that could have prevented or reduced the aggression, and (5) demonstrate understanding of the multifaceted nature of aggressive behavior."
   }
 }

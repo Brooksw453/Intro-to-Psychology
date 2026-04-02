@@ -39,7 +39,7 @@
   "freeTextPrompt": {
     "id": "ft-11.3",
     "prompt": "Choose one of the neo-Freudian theorists discussed in this section (Adler, Erikson, Jung, or Horney). Explain how their theory improves upon or departs from Freud's original psychodynamic perspective. Provide a specific example of how their theory could explain a personality trait or behavior that Freud's original theory handles less effectively.",
-    "minWords": 100,
+    "minWords": 75,
     "rubric": "A strong response should: (1) accurately describe the chosen neo-Freudian's key theoretical contributions, (2) clearly explain how the theory departs from Freud's original ideas, (3) provide a specific and realistic example illustrating the theory's explanatory power, (4) demonstrate understanding of why the departure represents an improvement or alternative perspective, and (5) use terminology from the section accurately."
   }
 }
