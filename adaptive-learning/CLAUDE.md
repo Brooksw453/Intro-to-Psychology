@@ -327,9 +327,9 @@ For each chapter, create the following files. Use the extracted textbook text as
 }
 ```
 
-### Step 5b: Extract and Embed Textbook Images (Optional but Recommended)
+### Step 5b: Extract and Embed Textbook Images (REQUIRED)
 
-This pipeline extracts images from the textbook PDF and embeds the best ones into section content.
+This pipeline extracts images from the textbook PDF and embeds them into section content. Textbook images are essential for visual learners and significantly improve content quality — this step must not be skipped.
 
 #### 1. Extract images from PDF
 
@@ -567,6 +567,7 @@ When generating content, verify:
 - [ ] Content uses **bold** for vocabulary terms
 - [ ] Content uses proper markdown: `>` for blockquotes, `**` for bold, numbered/bullet lists
 - [ ] Bloom's taxonomy progression: early sections = remember/understand, later = apply/analyze
+- [ ] Textbook images have been extracted and embedded (Step 5b is REQUIRED, not optional)
 - [ ] Embedded images have contextual captions with page numbers
 - [ ] Assignment sections use `minWords: 75` (not 100 or 150)
 - [ ] Assignment sections have a `rubric` field (shown to students via "What We Look For" button)
