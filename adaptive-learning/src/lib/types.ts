@@ -8,9 +8,12 @@ export interface KeyTerm {
 }
 
 export interface ContentBlock {
-  type: 'concept' | 'example' | 'summary';
+  type: 'concept' | 'example' | 'summary' | 'image';
   title?: string;
   body: string;
+  imageSrc?: string;
+  imageAlt?: string;
+  imageCaption?: string;
 }
 
 export interface FreeTextPrompt {
