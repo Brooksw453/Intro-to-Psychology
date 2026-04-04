@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { createClient } from '@/lib/supabase/server';
 import { createClaudeClient } from '@/lib/claude';
-import { getAssignment } from '@/lib/content';
+import { getAssignment, getChapterMeta, getSectionContent } from '@/lib/content';
 import { rateLimit } from '@/lib/rateLimit';
 import { courseConfig, COURSE_ID } from '@/lib/course.config';
 
@@ -58,6 +58,17 @@ export async function POST(request: NextRequest) {
     const draftNumber = (previousDrafts?.[0]?.draft_number || 0) + 1;
     const previousFeedback = previousDrafts?.[0]?.ai_feedback;
 
+    // Build section reference map from related chapters
+    const relatedSections: string[] = [];
+    for (const chId of (assignment.relatedChapters || [])) {
+      try {
+        const meta = getChapterMeta(chId);
+        for (const sid of meta.sections) {
+          try { relatedSections.push(`Section ${sid}: ${getSectionContent(chId, sid).title}`); } catch { relatedSections.push(`Section ${sid}`); }
+        }
+      } catch { /* chapter not found */ }
+    }
+
     // Build system prompt
     const systemPrompt = `You are ${courseConfig.aiTutor.role}. You are evaluating a section of their assignment.
 
@@ -82,6 +93,9 @@ GRADING GUIDELINES:
 - Focus feedback on being ACTIONABLE — tell them exactly what to add or change
 - If this is a revision, highlight what improved since the last draft
 - Be warm and encouraging, especially for first drafts
+- When suggesting improvements, reference specific course sections the student should review:
+${relatedSections.join('\n')}
+- Format improvement suggestions like: "Review Section X.Y (Topic) for more depth on [concept]"
 
 Respond in this exact JSON format:
 {

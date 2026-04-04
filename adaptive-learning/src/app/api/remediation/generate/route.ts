@@ -23,7 +23,7 @@ export async function POST(request: Request) {
       );
     }
 
-    const { chapterId, sectionId, missedQuestionIds } = await request.json();
+    const { chapterId, sectionId, missedQuestionIds, studentAnswers } = await request.json();
 
     // Load section content and quiz for context
     const section = getSectionContent(chapterId, sectionId);
@@ -37,7 +37,9 @@ export async function POST(request: Request) {
     const missedContext = missedQuestions
       .map((q) => {
         const correctOption = q.options.find((o) => o.correct);
-        return `- Question: "${q.question}"\n  Correct answer: "${correctOption?.text}"\n  Explanation: ${q.explanation}`;
+        const studentSelectedIndex = studentAnswers?.[q.id];
+        const studentAnswer = studentSelectedIndex !== undefined ? q.options[studentSelectedIndex]?.text : null;
+        return `- Question: "${q.question}"\n  Student's answer: "${studentAnswer || 'unknown'}"\n  Correct answer: "${correctOption?.text}"\n  Explanation: ${q.explanation}`;
       })
       .join('\n\n');
 
@@ -53,10 +55,11 @@ Key terms for this section:
 ${keyTermsList}
 
 Generate supplementary learning content that:
-1. Re-explains the missed concepts in a different way than the original textbook
-2. Uses relatable, real-world examples (think everyday businesses students interact with)
-3. Includes a simple analogy or memory trick where helpful
-4. Is encouraging and supportive in tone
+1. Addresses WHY the student's specific wrong answer is incorrect — explain the misconception behind their choice
+2. Re-explains the missed concepts in a different way than the original textbook
+3. Uses relatable, real-world examples (think everyday businesses students interact with)
+4. Includes a simple analogy or memory trick where helpful
+5. Is encouraging and supportive in tone
 
 Respond with ONLY valid JSON in this exact format (no other text):
 {

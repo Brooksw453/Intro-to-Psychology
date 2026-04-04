@@ -13,6 +13,7 @@ interface StudentData {
   assignmentProgress: string;
   assignmentAvg: number;
   status: string;
+  atRiskReasons?: string[];
 }
 
 interface ClassData {
@@ -35,6 +36,8 @@ export default function StudentRoster({ students, classes }: StudentRosterProps)
         const cls = classes.find(c => c.id === selectedClassId);
         return cls?.studentIds.includes(s.id);
       });
+
+  const atRiskStudents = filteredStudents.filter(s => s.atRiskReasons && s.atRiskReasons.length > 0);
 
   return (
     <div className="bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 shadow-sm mb-8">
@@ -61,6 +64,25 @@ export default function StudentRoster({ students, classes }: StudentRosterProps)
           </span>
         </div>
       </div>
+      {/* At-Risk Alert Banner */}
+      {atRiskStudents.length > 0 && (
+        <div className="px-4 py-3 bg-red-50 dark:bg-red-900/20 border-b border-red-200 dark:border-red-800 flex items-center gap-3">
+          <div className="flex-shrink-0 w-8 h-8 bg-red-100 dark:bg-red-900/40 rounded-full flex items-center justify-center">
+            <svg className="w-4 h-4 text-red-600 dark:text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+            </svg>
+          </div>
+          <div>
+            <p className="text-sm font-medium text-red-800 dark:text-red-300">
+              {atRiskStudents.length} student{atRiskStudents.length !== 1 ? 's' : ''} may need attention
+            </p>
+            <p className="text-xs text-red-600 dark:text-red-400">
+              {atRiskStudents.map(s => s.full_name).join(', ')}
+            </p>
+          </div>
+        </div>
+      )}
+
       <div className="overflow-x-auto">
         <table className="w-full min-w-[600px]" aria-label="Student roster">
           <thead>
@@ -75,11 +97,25 @@ export default function StudentRoster({ students, classes }: StudentRosterProps)
             </tr>
           </thead>
           <tbody className="divide-y divide-gray-100 dark:divide-gray-700">
-            {filteredStudents.map(student => (
-              <tr key={student.id} className="hover:bg-gray-50 dark:hover:bg-gray-700">
+            {filteredStudents.map(student => {
+              const isAtRisk = student.atRiskReasons && student.atRiskReasons.length > 0;
+              return (
+              <tr key={student.id} className={`hover:bg-gray-50 dark:hover:bg-gray-700 ${isAtRisk ? 'bg-red-50/50 dark:bg-red-900/10' : ''}`}>
                 <td className="px-4 py-3">
-                  <div className="font-medium text-gray-900 dark:text-white text-sm">{student.full_name}</div>
-                  <div className="text-xs text-gray-500 dark:text-gray-400">{student.email}</div>
+                  <div className="flex items-center gap-2">
+                    <div className="font-medium text-gray-900 dark:text-white text-sm">{student.full_name}</div>
+                    {isAtRisk && (
+                      <span className="inline-flex px-1.5 py-0.5 text-[10px] font-bold rounded bg-red-100 text-red-700 dark:bg-red-900/40 dark:text-red-400" title={student.atRiskReasons?.join(', ')}>
+                        AT RISK
+                      </span>
+                    )}
+                  </div>
+                  <div className="text-xs text-gray-500 dark:text-gray-400">
+                    {student.email}
+                    {isAtRisk && (
+                      <span className="ml-2 text-red-500 dark:text-red-400">{student.atRiskReasons?.join(' · ')}</span>
+                    )}
+                  </div>
                 </td>
                 <td className="px-4 py-3 text-center">
                   <div className="flex items-center gap-2 justify-center">
@@ -151,7 +187,8 @@ export default function StudentRoster({ students, classes }: StudentRosterProps)
                   </Link>
                 </td>
               </tr>
-            ))}
+            );
+            })}
             {filteredStudents.length === 0 && (
               <tr>
                 <td colSpan={7} className="px-4 py-8 text-center text-sm text-gray-500 dark:text-gray-400">

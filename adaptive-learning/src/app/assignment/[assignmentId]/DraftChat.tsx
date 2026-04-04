@@ -16,6 +16,7 @@ interface DraftChatProps {
   isOpen: boolean;
   onClose: () => void;
   onInsertDraft: (text: string) => void;
+  initialMessage?: string;
 }
 
 export default function DraftChat({
@@ -26,6 +27,7 @@ export default function DraftChat({
   isOpen,
   onClose,
   onInsertDraft,
+  initialMessage,
 }: DraftChatProps) {
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [input, setInput] = useState('');
@@ -61,6 +63,43 @@ export default function DraftChat({
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [messages]);
+
+  // Auto-send initial message (e.g., "Ask about this feedback")
+  const initialMessageSentRef = useRef<string | null>(null);
+  useEffect(() => {
+    if (isOpen && initialMessage && initialMessageSentRef.current !== initialMessage && messages.length <= 1) {
+      initialMessageSentRef.current = initialMessage;
+      setInput(initialMessage);
+      // Use a microtask to let the input state update before sending
+      setTimeout(() => {
+        setInput('');
+        const userMsg: ChatMessage = { role: 'user', content: initialMessage };
+        const welcomeAndUser = [...messages, userMsg];
+        setMessages(welcomeAndUser);
+        setLoading(true);
+
+        fetch('/api/assignment/draft-chat', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            assignmentId,
+            sectionKey,
+            messages: welcomeAndUser.filter((_, i) => i > 0 || welcomeAndUser[0].role === 'user').map(m => ({ role: m.role, content: m.content })),
+            currentDraft,
+          }),
+        })
+          .then(res => res.json())
+          .then(data => {
+            setMessages(prev => [...prev, { role: 'assistant', content: data.message || 'I can help you with that feedback. What specific part would you like to discuss?' }]);
+            setLoading(false);
+          })
+          .catch(() => {
+            setMessages(prev => [...prev, { role: 'assistant', content: 'Sorry, something went wrong. Please try asking again.' }]);
+            setLoading(false);
+          });
+      }, 100);
+    }
+  }, [isOpen, initialMessage, messages, assignmentId, sectionKey, currentDraft]);
 
   // Focus input when opened
   useEffect(() => {

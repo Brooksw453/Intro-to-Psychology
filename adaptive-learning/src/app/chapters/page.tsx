@@ -302,21 +302,39 @@ export default async function ChaptersPage() {
   const totalHours = Math.floor(totalMinutes / 60);
   const remainingMinutes = Math.round(totalMinutes % 60);
 
-  // Current streak (consecutive completed sections)
-  let currentStreak = 0;
-  for (const ch of chapters) {
-    const chProgress = progressByChapter.get(ch.chapterId) || [];
-    for (const sectionId of ch.sections) {
-      const prog = chProgress.find(p => p.section_id === sectionId);
-      if (prog?.status === 'completed') {
-        currentStreak++;
-      } else {
-        break;
-      }
+  // Daily streak: consecutive days with at least 1 section completed
+  const completionDates = new Set<string>();
+  (progressData || []).forEach((p: SectionProgress) => {
+    if (p.status === 'completed' && p.completed_at) {
+      completionDates.add(new Date(p.completed_at).toDateString());
     }
-    // If not all sections in this chapter are complete, stop counting
-    const chCompleted = chProgress.filter(p => p.status === 'completed').length;
-    if (chCompleted < ch.sections.length) break;
+  });
+
+  let currentStreak = 0;
+  const today = new Date();
+  for (let i = 0; i < 365; i++) {
+    const d = new Date(today);
+    d.setDate(d.getDate() - i);
+    if (completionDates.has(d.toDateString())) {
+      currentStreak++;
+    } else if (i === 0) {
+      // Today doesn't count against streak if they haven't done anything yet today
+      continue;
+    } else {
+      break;
+    }
+  }
+
+  // Activity heatmap data (last 12 weeks)
+  const heatmapData: { date: string; count: number }[] = [];
+  for (let i = 83; i >= 0; i--) {
+    const d = new Date(today);
+    d.setDate(d.getDate() - i);
+    const dateStr = d.toDateString();
+    const count = (progressData || []).filter(
+      (p: SectionProgress) => p.status === 'completed' && p.completed_at && new Date(p.completed_at).toDateString() === dateStr
+    ).length;
+    heatmapData.push({ date: d.toISOString().split('T')[0], count });
   }
 
   // Achievements
@@ -342,6 +360,21 @@ export default async function ChaptersPage() {
   if (completedSections < 5 && completedSections >= 1) lockedAchievements.push({ icon: '🔒', label: 'Rising Star', desc: 'Complete 5 sections' });
   if (completedSections < 10 && completedSections >= 5) lockedAchievements.push({ icon: '🔒', label: 'On Fire', desc: 'Complete 10 sections' });
   if (chaptersCompleted < 1 && completedSections >= 1) lockedAchievements.push({ icon: '🔒', label: 'Chapter Master', desc: 'Complete a full chapter' });
+
+  // Grade projection (40% mastery + 30% quiz + 30% assignment)
+  const allAssignmentScores = Array.from(assignmentProgress.values())
+    .filter(a => a.avgScore > 0)
+    .map(a => a.avgScore);
+  const avgAssignmentScore = allAssignmentScores.length > 0
+    ? Math.round(allAssignmentScores.reduce((s, v) => s + v, 0) / allAssignmentScores.length)
+    : 0;
+  const hasGradeData = avgMastery > 0 || avgQuizScore > 0 || avgAssignmentScore > 0;
+  const projectedGrade = hasGradeData
+    ? Math.round(avgMastery * 0.4 + avgQuizScore * 0.3 + avgAssignmentScore * 0.3)
+    : null;
+  const projectedLetter = projectedGrade !== null
+    ? (projectedGrade >= 90 ? 'A' : projectedGrade >= 80 ? 'B' : projectedGrade >= 70 ? 'C' : projectedGrade >= 60 ? 'D' : 'F')
+    : null;
 
   // Sign out handler
   async function signOut() {
@@ -524,30 +557,102 @@ export default async function ChaptersPage() {
           </div>
         </div>
 
-        {/* Learning Stats Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
-          <div className="bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 shadow-sm p-4 text-center">
-            <div className="text-2xl font-bold text-blue-600">{avgMastery > 0 ? `${avgMastery}%` : '—'}</div>
-            <div className="text-xs text-gray-500 dark:text-gray-400 mt-1">Avg Mastery</div>
-          </div>
-          <div className="bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 shadow-sm p-4 text-center">
-            <div className="text-2xl font-bold text-green-600">{avgQuizScore > 0 ? `${avgQuizScore}%` : '—'}</div>
-            <div className="text-xs text-gray-500 dark:text-gray-400 mt-1">Avg Quiz Score</div>
-          </div>
-          <div className="bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 shadow-sm p-4 text-center">
-            <div className="text-2xl font-bold text-purple-600">
-              {totalMinutes > 0
-                ? (totalHours > 0 ? `${totalHours}h ${remainingMinutes}m` : `${remainingMinutes}m`)
-                : '—'
-              }
+        {/* Hero Stats + Collapsible Details */}
+        <div className="bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 shadow-sm mb-6">
+          {/* Hero: 3 key metrics */}
+          <div className="grid grid-cols-3 divide-x divide-gray-200 dark:divide-gray-700">
+            <div className="p-4 sm:p-5 text-center">
+              <div className="text-3xl font-bold text-blue-600">{overallPercent}%</div>
+              <div className="text-xs text-gray-500 dark:text-gray-400 mt-1">Overall Progress</div>
             </div>
-            <div className="text-xs text-gray-500 dark:text-gray-400 mt-1">Time Studied</div>
+            <div className="p-4 sm:p-5 text-center">
+              <div className="text-3xl font-bold text-green-600">{chaptersCompleted}/{chapters.length}</div>
+              <div className="text-xs text-gray-500 dark:text-gray-400 mt-1">Chapters Done</div>
+            </div>
+            <div className="p-4 sm:p-5 text-center">
+              <div className="text-3xl font-bold text-orange-500">{currentStreak}</div>
+              <div className="text-xs text-gray-500 dark:text-gray-400 mt-1">Section Streak</div>
+            </div>
           </div>
-          <div className="bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 shadow-sm p-4 text-center">
-            <div className="text-2xl font-bold text-orange-500">{currentStreak}</div>
-            <div className="text-xs text-gray-500 dark:text-gray-400 mt-1">Section Streak</div>
-          </div>
+          {/* Collapsible detailed stats */}
+          <details className="border-t border-gray-200 dark:border-gray-700">
+            <summary className="px-4 py-2 text-xs font-medium text-gray-500 dark:text-gray-400 cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors select-none">
+              Detailed Stats
+            </summary>
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 p-4 pt-2">
+              <div className="text-center">
+                <div className="text-lg font-bold text-blue-600">{avgMastery > 0 ? `${avgMastery}%` : '—'}</div>
+                <div className="text-xs text-gray-500 dark:text-gray-400">Avg Mastery</div>
+              </div>
+              <div className="text-center">
+                <div className="text-lg font-bold text-green-600">{avgQuizScore > 0 ? `${avgQuizScore}%` : '—'}</div>
+                <div className="text-xs text-gray-500 dark:text-gray-400">Avg Quiz Score</div>
+              </div>
+              <div className="text-center">
+                <div className="text-lg font-bold text-purple-600">
+                  {totalMinutes > 0
+                    ? (totalHours > 0 ? `${totalHours}h ${remainingMinutes}m` : `${remainingMinutes}m`)
+                    : '—'
+                  }
+                </div>
+                <div className="text-xs text-gray-500 dark:text-gray-400">Time Studied</div>
+              </div>
+              <div className="text-center">
+                <div className="text-lg font-bold text-indigo-600">{avgFreeTextScore > 0 ? `${avgFreeTextScore}%` : '—'}</div>
+                <div className="text-xs text-gray-500 dark:text-gray-400">Avg Writing Score</div>
+              </div>
+            </div>
+            {/* Activity Heatmap */}
+            {completedSections > 0 && (
+              <div className="px-4 pb-4">
+                <div className="text-xs font-medium text-gray-500 dark:text-gray-400 mb-2">Activity (last 12 weeks)</div>
+                <div className="flex gap-[3px] flex-wrap">
+                  {heatmapData.map(d => (
+                    <div
+                      key={d.date}
+                      className={`w-3 h-3 rounded-sm ${
+                        d.count >= 3 ? 'bg-green-600' :
+                        d.count === 2 ? 'bg-green-400' :
+                        d.count === 1 ? 'bg-green-200 dark:bg-green-800' :
+                        'bg-gray-100 dark:bg-gray-700'
+                      }`}
+                      title={`${d.date}: ${d.count} section${d.count !== 1 ? 's' : ''} completed`}
+                    />
+                  ))}
+                </div>
+                <div className="flex items-center gap-2 mt-1.5 text-[10px] text-gray-400">
+                  <span>Less</span>
+                  <div className="w-3 h-3 rounded-sm bg-gray-100 dark:bg-gray-700" />
+                  <div className="w-3 h-3 rounded-sm bg-green-200 dark:bg-green-800" />
+                  <div className="w-3 h-3 rounded-sm bg-green-400" />
+                  <div className="w-3 h-3 rounded-sm bg-green-600" />
+                  <span>More</span>
+                </div>
+              </div>
+            )}
+          </details>
         </div>
+
+        {/* Grade Projection */}
+        {projectedGrade !== null && projectedLetter && completedSections >= 3 && (
+          <div className="bg-gradient-to-r from-indigo-50 to-blue-50 dark:from-indigo-900/20 dark:to-blue-900/20 border border-indigo-200 dark:border-indigo-800 rounded-lg p-4 mb-6 flex items-center gap-4">
+            <div className={`w-12 h-12 rounded-xl flex items-center justify-center text-xl font-bold border-2 ${
+              projectedLetter === 'A' ? 'bg-green-100 text-green-800 border-green-200' :
+              projectedLetter === 'B' ? 'bg-blue-100 text-blue-800 border-blue-200' :
+              projectedLetter === 'C' ? 'bg-yellow-100 text-yellow-800 border-yellow-200' :
+              'bg-orange-100 text-orange-800 border-orange-200'
+            }`}>{projectedLetter}</div>
+            <div>
+              <p className="text-sm font-medium text-indigo-900 dark:text-indigo-300">
+                On track for a <strong>{projectedLetter}</strong> ({projectedGrade}%)
+              </p>
+              <p className="text-xs text-indigo-600 dark:text-indigo-400">
+                Based on mastery (40%), quizzes (30%), and assignments (30%).
+                {projectedGrade < 90 && ` Keep going — ${projectedGrade >= 80 ? 'a few more strong sections could push you to an A!' : 'consistent work will raise your grade!'}`}
+              </p>
+            </div>
+          </div>
+        )}
 
         {/* Achievements */}
         {(achievements.length > 0 || lockedAchievements.length > 0) && (

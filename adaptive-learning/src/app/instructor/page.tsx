@@ -1,5 +1,5 @@
 import { createClient } from '@/lib/supabase/server';
-import { getAllChapters, getAllAssignments } from '@/lib/content';
+import { getAllChapters, getAllAssignments, getSectionContent } from '@/lib/content';
 import { redirect } from 'next/navigation';
 import ClassManager from './ClassManager';
 import StudentRoster from './StudentRoster';
@@ -20,6 +20,12 @@ interface ProgressRow {
   section_id: string;
   status: string;
   mastery_score: number | null;
+  remediation_count?: number;
+}
+
+interface ActivityRow {
+  user_id: string;
+  created_at: string;
 }
 
 interface QuizRow {
@@ -115,35 +121,42 @@ export default async function InstructorDashboard() {
     // Tables may not exist yet
   }
 
-  // Load course-scoped data
+  // Load all course-scoped student data
   const [
     { data: allProgress },
     { data: allQuizzes },
     { data: allDrafts },
+    { data: allActivity },
   ] = await Promise.all([
-    supabase.from('section_progress').select('user_id, chapter_id, section_id, status, mastery_score').eq('course_id', COURSE_ID),
-    supabase.from('quiz_attempts').select('user_id, score, passed').eq('course_id', COURSE_ID),
+    supabase.from('section_progress').select('user_id, chapter_id, section_id, status, mastery_score, remediation_count').eq('course_id', COURSE_ID),
+    supabase.from('quiz_attempts').select('user_id, score, passed, chapter_id, section_id').eq('course_id', COURSE_ID),
     supabase.from('assignment_drafts').select('user_id, assignment_id, section_key, draft_number, ai_feedback').eq('course_id', COURSE_ID),
+    supabase.from('activity_log').select('user_id, created_at').eq('course_id', COURSE_ID).order('created_at', { ascending: false }),
   ]);
 
-  // Derive student list from course-specific activity
+  // Get students who have activity in THIS course
   const courseUserIds = new Set<string>();
-  (allProgress || []).forEach((p: ProgressRow) => courseUserIds.add(p.user_id));
-  (allQuizzes || []).forEach((q: QuizRow) => courseUserIds.add(q.user_id));
-  (allDrafts || []).forEach((d: DraftRow) => courseUserIds.add(d.user_id));
+  (allProgress || []).forEach((p: { user_id: string }) => courseUserIds.add(p.user_id));
+  (allQuizzes || []).forEach((q: { user_id: string }) => courseUserIds.add(q.user_id));
+  (allDrafts || []).forEach((d: { user_id: string }) => courseUserIds.add(d.user_id));
 
   let studentList: StudentRow[] = [];
   if (courseUserIds.size > 0) {
-    const { data } = await supabase
-      .from('profiles')
-      .select('id, full_name, email, created_at')
-      .in('id', Array.from(courseUserIds))
-      .order('full_name');
+    const { data } = await supabase.from('profiles').select('id, full_name, email, created_at').in('id', Array.from(courseUserIds)).order('full_name');
     studentList = (data || []) as StudentRow[];
   }
   const progressList = (allProgress || []) as ProgressRow[];
   const quizList = (allQuizzes || []) as QuizRow[];
   const draftList = (allDrafts || []) as DraftRow[];
+  const activityList = (allActivity || []) as ActivityRow[];
+
+  // Build last activity date per student
+  const lastActivityMap = new Map<string, string>();
+  activityList.forEach(a => {
+    if (!lastActivityMap.has(a.user_id)) {
+      lastActivityMap.set(a.user_id, a.created_at); // already sorted desc
+    }
+  });
 
   // Class-level stats
   const totalStudents = studentList.length;
@@ -181,6 +194,24 @@ export default async function InstructorDashboard() {
       ? Math.round(assignmentSections.reduce((s, d) => s + (d.ai_feedback?.score || 0), 0) / assignmentSections.length)
       : 0;
 
+    // At-risk detection
+    const atRiskReasons: string[] = [];
+    const lastActivity = lastActivityMap.get(student.id);
+    const daysSinceActivity = lastActivity
+      ? Math.floor((Date.now() - new Date(lastActivity).getTime()) / (1000 * 60 * 60 * 24))
+      : null;
+
+    if (daysSinceActivity !== null && daysSinceActivity >= 7) {
+      atRiskReasons.push(`Inactive ${daysSinceActivity}d`);
+    }
+    if (avgMastery > 0 && avgMastery < 70) {
+      atRiskReasons.push(`Low mastery (${avgMastery}%)`);
+    }
+    const highRemediation = progress.some(p => (p.remediation_count || 0) >= 3);
+    if (highRemediation) {
+      atRiskReasons.push('Multiple quiz retries');
+    }
+
     return {
       ...student,
       completed,
@@ -190,6 +221,7 @@ export default async function InstructorDashboard() {
       assignmentSectionsCompleted: assignmentSections.length,
       totalAssignmentSections,
       avgAssignment,
+      atRiskReasons,
     };
   });
 
@@ -204,6 +236,39 @@ export default async function InstructorDashboard() {
   const classAvgQuiz = activeStudents.length > 0
     ? Math.round(activeStudents.reduce((s, st) => s + st.avgQuiz, 0) / activeStudents.length)
     : 0;
+
+  // Section-level content insights (most struggled sections)
+  const sectionInsights: { sectionId: string; chapterId: number; title: string; failRate: number; avgRemediation: number; studentsAttempted: number }[] = [];
+  for (const ch of chapters) {
+    for (const secId of ch.sections) {
+      const secProgress = progressList.filter(p => p.chapter_id === ch.chapterId && p.section_id === secId);
+      const secQuizzes = quizList.filter(q => (q as unknown as { chapter_id: number; section_id: string }).chapter_id === ch.chapterId && (q as unknown as { section_id: string }).section_id === secId);
+      const studentsAttempted = new Set(secProgress.map(p => p.user_id)).size;
+      if (studentsAttempted === 0) continue;
+
+      const remediationCounts = secProgress.map(p => p.remediation_count || 0);
+      const avgRemediation = remediationCounts.length > 0
+        ? remediationCounts.reduce((s, v) => s + v, 0) / remediationCounts.length
+        : 0;
+
+      let sectionTitle = secId;
+      try { sectionTitle = getSectionContent(ch.chapterId, secId).title; } catch { /* */ }
+
+      sectionInsights.push({
+        sectionId: secId,
+        chapterId: ch.chapterId,
+        title: sectionTitle,
+        failRate: 0, // will compute from quizzes if available
+        avgRemediation: Math.round(avgRemediation * 10) / 10,
+        studentsAttempted,
+      });
+    }
+  }
+  // Sort by most struggled (highest avg remediation)
+  const topStruggled = sectionInsights
+    .filter(s => s.avgRemediation > 0)
+    .sort((a, b) => b.avgRemediation - a.avgRemediation)
+    .slice(0, 10);
 
   // Chapter difficulty analysis
   const chapterStats = chapters.map(ch => {
@@ -334,6 +399,7 @@ export default async function InstructorDashboard() {
                 : s.avgMastery > 0 && s.avgMastery < 70
                   ? 'Struggling'
                   : 'In Progress',
+            atRiskReasons: s.atRiskReasons,
           }))}
           classes={classesData.map(c => ({
             id: c.id,
@@ -393,6 +459,51 @@ export default async function InstructorDashboard() {
             </table>
           </div>
         </div>
+        {/* Content Insights */}
+        {topStruggled.length > 0 && (
+          <div className="bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 shadow-sm mt-8">
+            <div className="p-4 border-b border-gray-200 dark:border-gray-700">
+              <h2 className="text-lg font-semibold text-gray-900 dark:text-white">Content Insights</h2>
+              <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">Sections where students need the most remediation help</p>
+            </div>
+            <div className="overflow-x-auto">
+              <table className="w-full min-w-[500px]" role="table" aria-label="Content insights">
+                <thead>
+                  <tr className="bg-gray-50 dark:bg-gray-800 text-left">
+                    <th className="px-4 py-3 text-xs font-semibold text-gray-600 dark:text-gray-400 uppercase">Section</th>
+                    <th className="px-4 py-3 text-xs font-semibold text-gray-600 dark:text-gray-400 uppercase text-center">Students</th>
+                    <th className="px-4 py-3 text-xs font-semibold text-gray-600 dark:text-gray-400 uppercase text-center">Avg Remediation Attempts</th>
+                    <th className="px-4 py-3 text-xs font-semibold text-gray-600 dark:text-gray-400 uppercase text-center">Difficulty</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-gray-100 dark:divide-gray-700">
+                  {topStruggled.map(s => (
+                    <tr key={`${s.chapterId}-${s.sectionId}`} className="hover:bg-gray-50 dark:hover:bg-gray-700">
+                      <td className="px-4 py-3">
+                        <div className="text-sm font-medium text-gray-900 dark:text-white">Section {s.sectionId}</div>
+                        <div className="text-xs text-gray-500 dark:text-gray-400">{s.title}</div>
+                      </td>
+                      <td className="px-4 py-3 text-center text-sm text-gray-600 dark:text-gray-400">{s.studentsAttempted}</td>
+                      <td className="px-4 py-3 text-center">
+                        <span className={`text-sm font-medium ${s.avgRemediation >= 2 ? 'text-red-600' : s.avgRemediation >= 1 ? 'text-yellow-600' : 'text-green-600'}`}>
+                          {s.avgRemediation}
+                        </span>
+                      </td>
+                      <td className="px-4 py-3 text-center">
+                        <div className="w-16 mx-auto bg-gray-200 dark:bg-gray-600 rounded-full h-2">
+                          <div
+                            className={`h-2 rounded-full ${s.avgRemediation >= 2 ? 'bg-red-500' : s.avgRemediation >= 1 ? 'bg-yellow-500' : 'bg-green-500'}`}
+                            style={{ width: `${Math.min(100, (s.avgRemediation / 3) * 100)}%` }}
+                          />
+                        </div>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        )}
       </main>
     </div>
   );

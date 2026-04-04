@@ -7,7 +7,7 @@ interface QuizGateProps {
   quiz: GateQuiz;
   chapterId: number;
   sectionId: string;
-  onResult: (passed: boolean, score: number, missedQuestionIds?: string[]) => void;
+  onResult: (passed: boolean, score: number, missedQuestionIds?: string[], studentAnswers?: Record<string, number>) => void;
 }
 
 export default function QuizGate({ quiz, chapterId, sectionId, onResult }: QuizGateProps) {
@@ -64,7 +64,7 @@ export default function QuizGate({ quiz, chapterId, sectionId, onResult }: QuizG
       const missedIds = quiz.questions
         .filter((q) => answers[q.id] !== results.correctAnswers[q.id])
         .map((q) => q.id);
-      onResult(results.passed, results.score, missedIds);
+      onResult(results.passed, results.score, missedIds, answers);
     }
   }
 

@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import { createClient } from '@/lib/supabase/server';
-import { getSectionContent } from '@/lib/content';
+import { getSectionContent, getChapterMeta } from '@/lib/content';
 import { createClaudeClient } from '@/lib/claude';
 import { rateLimit } from '@/lib/rateLimit';
 import { courseConfig, COURSE_ID } from '@/lib/course.config';
@@ -28,6 +28,10 @@ export async function POST(request: Request) {
 
     // Load section content for context
     const section = getSectionContent(chapterId, sectionId);
+    const chapterMeta = getChapterMeta(chapterId);
+    const sectionList = chapterMeta.sections.map(sid => {
+      try { return `Section ${sid}: ${getSectionContent(chapterId, sid).title}`; } catch { return `Section ${sid}`; }
+    }).join('\n');
     const keyTermsList = section.keyTerms.map((t) => t.term).join(', ');
     const objectivesList = section.learningObjectives.join('\n- ');
 
@@ -54,13 +58,16 @@ GRADING GUIDELINES:
 - Spelling and grammar mistakes should NOT lower the score — focus on comprehension
 - Always find at least 2 genuine strengths to highlight
 - Frame improvements as "to make your response even stronger" not as criticisms
+- When suggesting improvements, reference specific course sections the student should review. Available sections in Chapter ${chapterId}:
+${sectionList}
+- Format improvement suggestions like: "To strengthen your answer, review Section X.Y (Topic) for more on [concept]"
 
 Respond with ONLY valid JSON in this exact format (no other text):
 {
   "score": <number 0-100>,
   "feedback": "<2-3 sentences of encouraging, constructive feedback>",
   "strengths": ["<strength 1>", "<strength 2>"],
-  "improvements": ["<suggestion to strengthen response 1>", "<suggestion to strengthen response 2>"]
+  "improvements": ["<suggestion with section reference>", "<suggestion with section reference>"]
 }`,
       messages: [
         {
@@ -102,7 +109,7 @@ Respond with ONLY valid JSON in this exact format (no other text):
     });
 
     // If passed, update section progress to completed
-    const passed = evaluation.score >= 70;
+    const passed = evaluation.score >= courseConfig.thresholds.freeTextPass;
     if (passed) {
       // Get the quiz score for mastery calculation
       const { data: quizAttempt } = await supabase

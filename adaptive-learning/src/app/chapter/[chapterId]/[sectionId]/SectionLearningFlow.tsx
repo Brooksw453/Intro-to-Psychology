@@ -50,6 +50,7 @@ export default function SectionLearningFlow({
   const [quizScore, setQuizScore] = useState<number | null>(savedQuizScore);
   const [freeTextScore, setFreeTextScore] = useState<number | null>(null);
   const [missedQuestionIds, setMissedQuestionIds] = useState<string[]>([]);
+  const [studentAnswers, setStudentAnswers] = useState<Record<string, number>>({});
   const [remediationCount, setRemediationCount] = useState(0);
   const [showReviewContent, setShowReviewContent] = useState(false);
   const [reviewingContent, setReviewingContent] = useState(false);
@@ -83,12 +84,13 @@ export default function SectionLearningFlow({
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
-  function handleQuizResult(passed: boolean, score: number, missedIds?: string[]) {
+  function handleQuizResult(passed: boolean, score: number, missedIds?: string[], answers?: Record<string, number>) {
     setQuizScore(score);
     if (passed) {
       setCurrentStep('free_text');
     } else {
       setMissedQuestionIds(missedIds || []);
+      if (answers) setStudentAnswers(answers);
       setRemediationCount((prev) => prev + 1);
       setCurrentStep('remediation');
     }
@@ -182,6 +184,7 @@ export default function SectionLearningFlow({
           chapterId={chapterId}
           sectionId={sectionId}
           missedQuestionIds={missedQuestionIds}
+          studentAnswers={studentAnswers}
           quizScore={quizScore || 0}
           passThreshold={quiz.passThreshold}
           remediationCount={remediationCount}

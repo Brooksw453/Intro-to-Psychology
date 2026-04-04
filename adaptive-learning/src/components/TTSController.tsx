@@ -87,6 +87,20 @@ export default function TTSController({ section, courseName, onBlockIndexChange,
     }
   }, [currentBlockIndex, currentChunkIndex, isPlaying, onBlockIndexChange, onChunkIndexChange]);
 
+  // Keyboard shortcut: Space to play/pause (only when not typing in an input)
+  useEffect(() => {
+    function handleKeyDown(e: KeyboardEvent) {
+      if (e.key === ' ' && !['INPUT', 'TEXTAREA', 'SELECT'].includes((e.target as HTMLElement).tagName)) {
+        e.preventDefault();
+        if (!isPlaying) play();
+        else if (isPaused) resume();
+        else pause();
+      }
+    }
+    document.addEventListener('keydown', handleKeyDown);
+    return () => document.removeEventListener('keydown', handleKeyDown);
+  }, [isPlaying, isPaused, play, pause, resume]);
+
   // Clean up on close
   function handleClose() {
     stop();

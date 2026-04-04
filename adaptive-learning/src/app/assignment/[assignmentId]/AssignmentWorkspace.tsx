@@ -5,13 +5,16 @@ import { useRouter } from 'next/navigation';
 import type { AssignmentConfig, AssignmentDraft } from '@/lib/types';
 import DraftChat from './DraftChat';
 import MicrophoneButton from '@/components/MicrophoneButton';
+import { courseConfig } from '@/lib/course.config';
+import { getScoreColor } from '@/lib/scoreUtils';
 
 interface Props {
   assignment: AssignmentConfig;
   savedDrafts: Record<string, AssignmentDraft>;
+  scoreHistory?: Record<string, { draft: number; score: number }[]>;
 }
 
-export default function AssignmentWorkspace({ assignment, savedDrafts }: Props) {
+export default function AssignmentWorkspace({ assignment, savedDrafts, scoreHistory = {} }: Props) {
   const router = useRouter();
   const [activeSection, setActiveSection] = useState(0);
   const [drafts, setDrafts] = useState<Record<string, string>>(() => {
@@ -40,8 +43,10 @@ export default function AssignmentWorkspace({ assignment, savedDrafts }: Props) 
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [showTips, setShowTips] = useState<string | null>(null);
+  const [showRubric, setShowRubric] = useState<string | null>(null);
   const [showGuide, setShowGuide] = useState(true);
   const [showChat, setShowChat] = useState(false);
+  const [chatInitialMessage, setChatInitialMessage] = useState<string | undefined>(undefined);
 
   const section = assignment.sections[activeSection];
   const currentContent = drafts[section.key] || '';
@@ -116,7 +121,7 @@ export default function AssignmentWorkspace({ assignment, savedDrafts }: Props) 
             <div className="text-left sm:text-right">
               <div className="text-sm text-gray-500 dark:text-gray-400">{sectionsWithFeedback}/{totalSections} sections submitted</div>
               {avgScore > 0 && (
-                <div className={`text-lg font-bold ${avgScore >= 80 ? 'text-green-600' : avgScore >= 70 ? 'text-yellow-600' : 'text-red-600'}`}>
+                <div className={`text-lg font-bold ${getScoreColor(avgScore)}`}>
                   Avg: {avgScore}%
                 </div>
               )}
@@ -183,13 +188,13 @@ export default function AssignmentWorkspace({ assignment, savedDrafts }: Props) 
                     }`}
                   >
                     <div className={`w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 text-xs font-bold ${
-                      hasFeedback && score !== undefined && score >= 80 ? 'bg-green-500 text-white' :
-                      hasFeedback && score !== undefined && score >= 70 ? 'bg-yellow-400 text-white' :
+                      hasFeedback && score !== undefined && score >= courseConfig.thresholds.gradeB ? 'bg-green-500 text-white' :
+                      hasFeedback && score !== undefined && score >= courseConfig.thresholds.gradeC ? 'bg-yellow-400 text-white' :
                       hasFeedback ? 'bg-orange-400 text-white' :
                       hasContent ? 'bg-blue-200 text-blue-700' :
                       'bg-gray-200 dark:bg-gray-600 text-gray-500 dark:text-gray-400'
                     }`}>
-                      {hasFeedback && score !== undefined && score >= 80 ? '✓' : (i + 1)}
+                      {hasFeedback && score !== undefined && score >= courseConfig.thresholds.gradeB ? '✓' : (i + 1)}
                     </div>
                     <div className="min-w-0">
                       <div className="text-sm font-medium text-gray-900 dark:text-white truncate">{s.title}</div>
@@ -215,12 +220,20 @@ export default function AssignmentWorkspace({ assignment, savedDrafts }: Props) 
                   </h2>
                   <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">{section.instructions}</p>
                 </div>
-                <button
-                  onClick={() => setShowTips(showTips === section.key ? null : section.key)}
-                  className="flex-shrink-0 ml-4 px-3 py-1.5 text-xs font-medium text-blue-600 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors"
-                >
-                  {showTips === section.key ? 'Hide Tips' : 'Show Tips'}
-                </button>
+                <div className="flex-shrink-0 ml-4 flex gap-2">
+                  <button
+                    onClick={() => setShowRubric(showRubric === section.key ? null : section.key)}
+                    className="px-3 py-1.5 text-xs font-medium text-indigo-600 bg-indigo-50 dark:bg-indigo-900/30 dark:text-indigo-400 rounded-lg hover:bg-indigo-100 dark:hover:bg-indigo-900/50 transition-colors"
+                  >
+                    {showRubric === section.key ? 'Hide Rubric' : 'What We Look For'}
+                  </button>
+                  <button
+                    onClick={() => setShowTips(showTips === section.key ? null : section.key)}
+                    className="px-3 py-1.5 text-xs font-medium text-blue-600 bg-blue-50 dark:bg-blue-900/30 dark:text-blue-400 rounded-lg hover:bg-blue-100 dark:hover:bg-blue-900/50 transition-colors"
+                  >
+                    {showTips === section.key ? 'Hide Tips' : 'Tips'}
+                  </button>
+                </div>
               </div>
 
               <div className="mt-3 flex gap-2">
@@ -235,6 +248,14 @@ export default function AssignmentWorkspace({ assignment, savedDrafts }: Props) 
                 </button>
                 <span className="text-xs text-gray-400 dark:text-gray-500 self-center">Use AI to help you build your response through guided questions</span>
               </div>
+
+              {showRubric === section.key && section.rubric && (
+                <div className="mt-3 p-3 bg-indigo-50 dark:bg-indigo-900/30 border border-indigo-200 dark:border-indigo-800 rounded-lg">
+                  <h4 className="text-xs font-semibold text-indigo-800 dark:text-indigo-300 uppercase mb-2">Evaluation Criteria</h4>
+                  <p className="text-sm text-indigo-700 dark:text-indigo-400 leading-relaxed">{section.rubric}</p>
+                  <p className="text-xs text-indigo-500 dark:text-indigo-500 mt-2">Scoring: 90-100 Excellent | 80-89 Good | 70-79 Satisfactory | Below 70 Needs Improvement</p>
+                </div>
+              )}
 
               {showTips === section.key && (
                 <div className="mt-3 p-3 bg-amber-50 dark:bg-amber-900/30 border border-amber-200 dark:border-amber-800 rounded-lg">
@@ -270,7 +291,7 @@ export default function AssignmentWorkspace({ assignment, savedDrafts }: Props) 
                 <textarea
                   value={currentContent}
                   onChange={(e) => setDrafts(prev => ({ ...prev, [section.key]: e.target.value }))}
-                  placeholder={`Write your response here... (${section.minWords}-${section.maxWords} words)`}
+                  placeholder={`Type or tap the mic to speak your response... (${section.minWords}-${section.maxWords} words)`}
                   className="w-full h-48 sm:h-64 p-3 sm:p-4 pr-16 border border-gray-300 dark:border-gray-600 rounded-lg text-gray-900 dark:text-white dark:bg-gray-700 dark:placeholder-gray-400 text-base sm:text-sm leading-relaxed resize-y focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
                 />
                 <MicrophoneButton
@@ -344,13 +365,46 @@ export default function AssignmentWorkspace({ assignment, savedDrafts }: Props) 
                     AI Coaching Feedback
                   </h3>
                   <div className={`px-3 py-1 rounded-full text-sm font-bold ${
-                    currentFeedback.score >= 80 ? 'bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400' :
-                    currentFeedback.score >= 70 ? 'bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-400' :
+                    currentFeedback.score >= courseConfig.thresholds.gradeB ? 'bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400' :
+                    currentFeedback.score >= courseConfig.thresholds.gradeC ? 'bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-400' :
                     'bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-400'
                   }`}>
                     {currentFeedback.score}%
                   </div>
                 </div>
+
+                {/* Score Trajectory */}
+                {scoreHistory[section.key] && scoreHistory[section.key].length > 1 && (
+                  <div className="mb-4 flex items-center gap-1 flex-wrap">
+                    <span className="text-xs text-gray-500 dark:text-gray-400 mr-1">Progress:</span>
+                    {scoreHistory[section.key].map((entry, i) => (
+                      <span key={entry.draft} className="flex items-center">
+                        <span className={`text-xs font-semibold ${
+                          entry.score >= courseConfig.thresholds.gradeB ? 'text-green-600 dark:text-green-400' :
+                          entry.score >= courseConfig.thresholds.gradeC ? 'text-yellow-600 dark:text-yellow-400' :
+                          'text-orange-600 dark:text-orange-400'
+                        }`}>
+                          Draft {entry.draft}: {entry.score}%
+                        </span>
+                        {i < scoreHistory[section.key].length - 1 && (
+                          <svg className="w-4 h-4 text-gray-400 mx-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                          </svg>
+                        )}
+                      </span>
+                    ))}
+                    {scoreHistory[section.key].length >= 2 && (() => {
+                      const scores = scoreHistory[section.key];
+                      const diff = scores[scores.length - 1].score - scores[0].score;
+                      if (diff > 0) return (
+                        <span className="ml-2 text-xs font-medium text-green-600 dark:text-green-400 bg-green-50 dark:bg-green-900/30 px-2 py-0.5 rounded-full">
+                          +{diff}% improvement
+                        </span>
+                      );
+                      return null;
+                    })()}
+                  </div>
+                )}
 
                 <p className="text-sm text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">{currentFeedback.feedback}</p>
 
@@ -382,9 +436,22 @@ export default function AssignmentWorkspace({ assignment, savedDrafts }: Props) 
                   </div>
                 )}
 
-                <div className="mt-4 p-3 bg-blue-50 dark:bg-blue-900/30 border border-blue-200 dark:border-blue-800 rounded-lg">
-                  <p className="text-xs text-blue-700 dark:text-blue-400">
-                    You can revise your response and resubmit as many times as you like. Your latest draft and score will be saved.
+                <div className="mt-4 flex items-center gap-3">
+                  <button
+                    onClick={() => {
+                      const msg = `I received this feedback on my "${section.title}" section (Score: ${currentFeedback.score}%):\n\nFeedback: ${currentFeedback.feedback}\n\nAreas to improve: ${currentFeedback.improvements.join('; ')}\n\nCan you help me understand this feedback and how to improve my response?`;
+                      setChatInitialMessage(msg);
+                      setShowChat(true);
+                    }}
+                    className="px-4 py-2 text-sm font-medium text-purple-600 dark:text-purple-400 bg-purple-50 dark:bg-purple-900/30 rounded-lg hover:bg-purple-100 dark:hover:bg-purple-900/50 transition-colors flex items-center gap-2"
+                  >
+                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                    </svg>
+                    Ask about this feedback
+                  </button>
+                  <p className="text-xs text-gray-400 dark:text-gray-500">
+                    Revise and resubmit as many times as you like.
                   </p>
                 </div>
               </div>
@@ -399,8 +466,9 @@ export default function AssignmentWorkspace({ assignment, savedDrafts }: Props) 
         sectionTitle={section.title}
         currentDraft={currentContent}
         isOpen={showChat}
-        onClose={() => setShowChat(false)}
+        onClose={() => { setShowChat(false); setChatInitialMessage(undefined); }}
         onInsertDraft={(text) => setDrafts(prev => ({ ...prev, [section.key]: text }))}
+        initialMessage={chatInitialMessage}
       />
     </div>
   );

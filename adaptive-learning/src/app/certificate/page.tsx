@@ -4,7 +4,9 @@ import { redirect } from 'next/navigation';
 import Link from 'next/link';
 import type { SectionProgress, AssignmentDraft } from '@/lib/types';
 import PrintButton from './PrintButton';
+import DownloadPDFButton from '@/components/DownloadPDFButton';
 import { courseConfig, COURSE_ID } from '@/lib/course.config';
+import { getLetterGrade } from '@/lib/scoreUtils';
 
 interface QuizAttempt {
   score: number;
@@ -18,15 +20,6 @@ interface DraftRow {
   section_key: string;
   draft_number: number;
   ai_feedback: AssignmentDraft['ai_feedback'];
-}
-
-
-function getLetterGrade(score: number): string {
-  if (score >= 90) return 'A';
-  if (score >= 80) return 'B';
-  if (score >= 70) return 'C';
-  if (score >= 60) return 'D';
-  return 'F';
 }
 
 export default async function CertificatePage() {
@@ -232,14 +225,18 @@ export default async function CertificatePage() {
           Back to Dashboard
         </Link>
         <div className="flex items-center gap-3">
-          <p className="text-sm text-gray-500 dark:text-gray-400">Use your browser&apos;s Print &gt; Save as PDF to download</p>
+          <DownloadPDFButton
+            targetSelector="#certificate-content"
+            filename={`certificate-${courseConfig.title.toLowerCase().replace(/\s+/g, '-')}`}
+            label="Download PDF"
+          />
           <PrintButton />
         </div>
       </div>
 
       {/* Certificate */}
       <div className="max-w-4xl mx-auto px-4 pb-8 print:px-0 print:pb-0 print:max-w-none">
-        <div className="bg-white rounded-xl shadow-lg print:shadow-none print:rounded-none overflow-hidden">
+        <div id="certificate-content" className="bg-white rounded-xl shadow-lg print:shadow-none print:rounded-none overflow-hidden">
           {/* Outer decorative border */}
           <div className="border-[12px] border-amber-500/20 m-4 print:m-0 print:border-[16px]">
             {/* Inner decorative border */}
@@ -350,8 +347,15 @@ export default async function CertificatePage() {
                   </div>
                 </div>
 
+                {/* Verification code */}
+                <div className="mt-8 text-center">
+                  <p className="text-[10px] tracking-wider text-gray-400" style={{ fontFamily: 'monospace' }}>
+                    Verification ID: {user.id.slice(0, 8).toUpperCase()}-{Math.abs(completionDate.getTime() % 9999).toString().padStart(4, '0')}
+                  </p>
+                </div>
+
                 {/* Bottom decorative line */}
-                <div className="flex items-center justify-center mt-8">
+                <div className="flex items-center justify-center mt-4">
                   <div className="flex-1 h-px bg-gradient-to-r from-transparent via-amber-400 to-transparent" />
                   <div className="mx-4">
                     <svg aria-hidden="true" className="w-6 h-6 text-amber-500" viewBox="0 0 24 24" fill="currentColor">
@@ -362,6 +366,26 @@ export default async function CertificatePage() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Share Section */}
+      <div className="print:hidden max-w-4xl mx-auto px-4 pb-8">
+        <div className="bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 shadow-sm p-6 text-center">
+          <h3 className="text-sm font-semibold text-gray-700 dark:text-gray-300 uppercase tracking-wide mb-3">Share Your Achievement</h3>
+          <div className="flex justify-center gap-3">
+            <a
+              href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(typeof window !== 'undefined' ? window.location.href : '')}&title=${encodeURIComponent(`I completed ${courseConfig.title}!`)}&summary=${encodeURIComponent(`I earned a ${letterGrade || ''} (${finalGrade ? Math.round(finalGrade) : ''}%) in ${courseConfig.title} - ${courseConfig.subtitle}`)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#0A66C2] text-white text-sm font-medium rounded-lg hover:bg-[#004182] transition-colors"
+            >
+              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+              Share on LinkedIn
+            </a>
           </div>
         </div>
       </div>

@@ -2,14 +2,7 @@ import { createClient } from '@/lib/supabase/server';
 import { getAllChapters, getAllAssignments } from '@/lib/content';
 import { NextResponse } from 'next/server';
 import { COURSE_ID } from '@/lib/course.config';
-
-function getLetterGrade(score: number): string {
-  if (score >= 90) return 'A';
-  if (score >= 80) return 'B';
-  if (score >= 70) return 'C';
-  if (score >= 60) return 'D';
-  return 'F';
-}
+import { getLetterGrade } from '@/lib/scoreUtils';
 
 export async function GET() {
   const supabase = await createClient();
@@ -34,7 +27,8 @@ export async function GET() {
   const assignments = getAllAssignments();
   const totalSections = chapters.reduce((sum, ch) => sum + ch.sections.length, 0);
 
-  // Load course-scoped data
+  // Load all data
+  // Load all course-scoped data
   const [
     { data: allProgress },
     { data: allQuizzes },
@@ -45,23 +39,17 @@ export async function GET() {
     supabase.from('assignment_drafts').select('user_id, assignment_id, section_key, draft_number, ai_feedback').eq('course_id', COURSE_ID),
   ]);
 
-  // Derive student list from course-specific activity (not global profiles)
+  // Get students who have activity in THIS course
   const courseUserIds = new Set<string>();
   (allProgress || []).forEach((p: { user_id: string }) => courseUserIds.add(p.user_id));
   (allQuizzes || []).forEach((q: { user_id: string }) => courseUserIds.add(q.user_id));
   (allDrafts || []).forEach((d: { user_id: string }) => courseUserIds.add(d.user_id));
 
-  let students: Array<{ id: string; full_name: string; email: string }> | null = [];
+  let studentList: { id: string; full_name: string; email: string }[] = [];
   if (courseUserIds.size > 0) {
-    const { data } = await supabase
-      .from('profiles')
-      .select('id, full_name, email')
-      .in('id', Array.from(courseUserIds))
-      .order('full_name');
-    students = data;
+    const { data } = await supabase.from('profiles').select('id, full_name, email').in('id', Array.from(courseUserIds)).order('full_name');
+    studentList = data || [];
   }
-
-  const studentList = students || [];
 
   // Build CSV header
   const assignmentHeaders = assignments.map(a => `Assignment ${a.assignmentId} Avg`).join(',');

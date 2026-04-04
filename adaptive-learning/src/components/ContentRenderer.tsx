@@ -48,7 +48,7 @@ function SentenceHighlightedText({ body, activeChunkIndex, blockTitle }: {
           ref={i === activeChunkIndex ? activeRef : undefined}
           className={`transition-colors duration-200 ${
             i === activeChunkIndex
-              ? 'bg-blue-100 dark:bg-blue-900/50 text-gray-900 dark:text-white rounded px-0.5'
+              ? 'bg-blue-100 dark:bg-blue-900/50 text-gray-900 dark:text-white rounded px-0.5 underline decoration-blue-400 decoration-2 underline-offset-2'
               : i < activeChunkIndex
                 ? 'text-gray-400 dark:text-gray-500'
                 : ''
@@ -94,6 +94,28 @@ export default function ContentRenderer({ section, onAskQuestion, highlightBlock
         const ttsIndex = i + 2; // offset: 0=title, 1=objectives, 2+=content blocks
         const isActiveBlock = highlightBlockIndex === ttsIndex;
         const showSentenceHighlight = isActiveBlock && highlightChunkIndex !== undefined;
+
+        // Image blocks render as <figure> elements
+        if (block.type === 'image' && block.imageSrc) {
+          return (
+            <div key={i} className={`transition-all duration-300 rounded-lg ${isActiveBlock ? 'ring-2 ring-blue-300 dark:ring-blue-700 bg-blue-50/50 dark:bg-blue-900/10' : ''}`}>
+              <figure className="my-6">
+                <img
+                  src={block.imageSrc}
+                  alt={block.imageAlt || block.title || 'Textbook illustration'}
+                  loading="lazy"
+                  className="w-full max-w-2xl mx-auto rounded-lg border border-gray-200 dark:border-gray-700 shadow-sm"
+                />
+                {(block.imageCaption || block.title) && (
+                  <figcaption className="mt-2 text-center text-sm text-gray-500 dark:text-gray-400 italic">
+                    {block.imageCaption || block.title}
+                  </figcaption>
+                )}
+              </figure>
+            </div>
+          );
+        }
+
         return (
         <div key={i} className={`transition-all duration-300 rounded-lg ${isActiveBlock ? 'ring-2 ring-blue-300 dark:ring-blue-700 bg-blue-50/50 dark:bg-blue-900/10' : ''}`}>
           <div className={block.type === 'summary' ? 'bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-6' : ''}>

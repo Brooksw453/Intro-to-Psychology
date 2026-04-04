@@ -3,6 +3,7 @@
 import { useState, useCallback } from 'react';
 import type { FreeTextPrompt as FreeTextPromptType } from '@/lib/types';
 import MicrophoneButton from '@/components/MicrophoneButton';
+import { courseConfig } from '@/lib/course.config';
 
 interface FreeTextPromptProps {
   prompt: FreeTextPromptType;
@@ -30,10 +31,11 @@ export default function FreeTextPrompt({
     improvements: string[];
   } | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [showRubric, setShowRubric] = useState(false);
 
   const wordCount = countWords(response);
   const meetsMinimum = wordCount >= prompt.minWords;
-  const passed = evaluation ? evaluation.score >= 70 : false;
+  const passed = evaluation ? evaluation.score >= courseConfig.thresholds.freeTextPass : false;
 
   const handleMicTranscript = useCallback((text: string) => {
     setResponse(prev => prev + (prev && !prev.endsWith(' ') ? ' ' : '') + text);
@@ -87,7 +89,7 @@ export default function FreeTextPrompt({
         </h3>
         <p className="text-sm text-gray-500 dark:text-gray-400">
           Demonstrate your understanding by responding to the prompt below.
-          Your response will be evaluated by AI. You need 70% or higher to proceed.
+          Your response will be evaluated by AI. You need {courseConfig.thresholds.freeTextPass}% or higher to proceed.
         </p>
       </div>
 
@@ -98,6 +100,35 @@ export default function FreeTextPrompt({
           Minimum {prompt.minWords} words required.
         </p>
       </div>
+
+      {/* Evaluation Criteria */}
+      {prompt.rubric && (
+        <div className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden">
+          <button
+            type="button"
+            onClick={() => setShowRubric(!showRubric)}
+            className="w-full px-4 py-3 flex items-center justify-between text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+          >
+            <span className="flex items-center gap-2">
+              <svg className="w-4 h-4 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+              </svg>
+              What we&apos;re looking for
+            </span>
+            <svg className={`w-4 h-4 transition-transform ${showRubric ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          {showRubric && (
+            <div className="px-4 pb-4 border-t border-gray-200 dark:border-gray-700 pt-3">
+              <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">{prompt.rubric}</p>
+              <p className="text-xs text-gray-400 dark:text-gray-500 mt-2">
+                Focus on demonstrating understanding — spelling and grammar are not graded.
+              </p>
+            </div>
+          )}
+        </div>
+      )}
 
       {/* Response textarea */}
       <div>

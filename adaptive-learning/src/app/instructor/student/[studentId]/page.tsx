@@ -3,7 +3,8 @@ import { getAllChapters, getAllAssignments } from '@/lib/content';
 import { redirect } from 'next/navigation';
 import Link from 'next/link';
 import CollapsibleSection from './CollapsibleSection';
-import { COURSE_ID } from '@/lib/course.config';
+import { courseConfig, COURSE_ID } from '@/lib/course.config';
+import { getScoreColor } from '@/lib/scoreUtils';
 
 interface ProgressRow {
   chapter_id: number;
@@ -126,6 +127,12 @@ const ACTIVITY_TYPE_CONFIG: Record<string, { label: string; color: string; icon:
   free_text_submit: { label: 'Written response', color: 'bg-teal-100 text-teal-700', icon: '✏' },
 };
 
+const ASSIGNMENT_TITLES: Record<number, string> = {
+  1: 'Business Concept & Environment Analysis',
+  2: 'Organizational & Management Plan',
+  3: 'Marketing & Technology Strategy',
+  4: 'Financial Overview & Funding Strategy',
+};
 
 function formatRelativeTime(dateStr: string): string {
   const date = new Date(dateStr);
@@ -304,7 +311,7 @@ export default async function StudentDetailPage({
 
     return {
       assignmentId: a.assignmentId,
-      title: a.title,
+      title: ASSIGNMENT_TITLES[a.assignmentId] || a.title,
       points: a.points,
       totalSections: a.sections.length,
       sectionsSubmitted: sectionResults.filter(s => s.score !== null).length,
@@ -514,7 +521,7 @@ export default async function StudentDetailPage({
                       <div
                         key={s.key}
                         className={`p-3 rounded-lg border ${
-                          s.score !== null && s.score >= 80
+                          s.score !== null && s.score >= courseConfig.thresholds.gradeB
                             ? 'bg-green-50 border-green-200 dark:bg-green-900/20 dark:border-green-800'
                             : s.score !== null
                             ? 'bg-yellow-50 border-yellow-200 dark:bg-yellow-900/20 dark:border-yellow-800'
@@ -526,7 +533,7 @@ export default async function StudentDetailPage({
                         <div className="flex items-center justify-between mb-1">
                           <div className="text-xs font-semibold text-gray-700 dark:text-gray-300 truncate">{s.title}</div>
                           {s.score !== null && (
-                            <span className={`text-xs font-bold ml-2 ${s.score >= 80 ? 'text-green-600' : 'text-yellow-600'}`}>
+                            <span className={`text-xs font-bold ml-2 ${s.score >= courseConfig.thresholds.gradeB ? 'text-green-600' : 'text-yellow-600'}`}>
                               {s.score}%
                             </span>
                           )}
@@ -627,7 +634,7 @@ export default async function StudentDetailPage({
                         <td className="px-4 py-3 text-sm text-gray-700 dark:text-gray-300">{q.section_id}</td>
                         <td className="px-4 py-3 text-sm text-gray-600 dark:text-gray-400 text-center">#{q.attempt_number}</td>
                         <td className="px-4 py-3 text-center">
-                          <span className={`text-sm font-medium ${q.score >= 80 ? 'text-green-600' : q.score >= 70 ? 'text-yellow-600' : 'text-red-600'}`}>
+                          <span className={`text-sm font-medium ${getScoreColor(q.score)}`}>
                             {q.score}%
                           </span>
                         </td>

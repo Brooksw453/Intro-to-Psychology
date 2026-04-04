@@ -4,6 +4,7 @@ import { redirect } from 'next/navigation';
 import Link from 'next/link';
 import GradebookTable from './GradebookTable';
 import { courseConfig, COURSE_ID } from '@/lib/course.config';
+import { getLetterGrade } from '@/lib/scoreUtils';
 
 interface StudentRow {
   id: string;
@@ -35,14 +36,6 @@ interface DraftRow {
   ai_feedback: { score: number } | null;
 }
 
-function getLetterGrade(score: number): string {
-  if (score >= 90) return 'A';
-  if (score >= 80) return 'B';
-  if (score >= 70) return 'C';
-  if (score >= 60) return 'D';
-  return 'F';
-}
-
 export default async function InstructorGradebook() {
   const supabase = await createClient();
   const { data: { user } } = await supabase.auth.getUser();
@@ -63,7 +56,7 @@ export default async function InstructorGradebook() {
   const chapters = getAllChapters();
   const assignments = getAllAssignments();
 
-  // Load course-scoped data
+  // Load all course-scoped student data
   const [
     { data: allProgress },
     { data: allQuizzes },
@@ -74,19 +67,15 @@ export default async function InstructorGradebook() {
     supabase.from('assignment_drafts').select('user_id, assignment_id, section_key, draft_number, ai_feedback').eq('course_id', COURSE_ID),
   ]);
 
-  // Derive student list from course-specific activity
+  // Get students who have activity in THIS course
   const courseUserIds = new Set<string>();
-  (allProgress || []).forEach((p: ProgressRow) => courseUserIds.add(p.user_id));
-  (allQuizzes || []).forEach((q: QuizRow) => courseUserIds.add(q.user_id));
-  (allDrafts || []).forEach((d: DraftRow) => courseUserIds.add(d.user_id));
+  (allProgress || []).forEach((p: { user_id: string }) => courseUserIds.add(p.user_id));
+  (allQuizzes || []).forEach((q: { user_id: string }) => courseUserIds.add(q.user_id));
+  (allDrafts || []).forEach((d: { user_id: string }) => courseUserIds.add(d.user_id));
 
   let studentList: StudentRow[] = [];
   if (courseUserIds.size > 0) {
-    const { data } = await supabase
-      .from('profiles')
-      .select('id, full_name, email')
-      .in('id', Array.from(courseUserIds))
-      .order('full_name');
+    const { data } = await supabase.from('profiles').select('id, full_name, email').in('id', Array.from(courseUserIds)).order('full_name');
     studentList = (data || []) as StudentRow[];
   }
   const progressList = (allProgress || []) as ProgressRow[];

@@ -68,6 +68,17 @@ export default async function InstructorFeedbackPage() {
   // Unique trigger points for filtering
   const triggerPoints = [...new Set(feedbackList.map(f => f.trigger_point))];
 
+  // Satisfaction by course stage (for trends)
+  const triggerOrder = ['after-chapter-1', 'after-assignment-1', 'mid-course', 'near-end'];
+  const stageSatisfaction = triggerOrder
+    .map(tp => {
+      const items = feedbackList.filter(f => f.trigger_point === tp);
+      if (items.length === 0) return null;
+      const avg = items.reduce((s, f) => s + f.rating, 0) / items.length;
+      return { trigger: tp, label: triggerLabels[tp] || tp, avg: Math.round(avg * 10) / 10, count: items.length };
+    })
+    .filter(Boolean) as { trigger: string; label: string; avg: number; count: number }[];
+
   // Sign out handler
   async function signOut() {
     'use server';
@@ -158,6 +169,60 @@ export default async function InstructorFeedbackPage() {
                 </div>
               </div>
             </div>
+
+            {/* Satisfaction by Course Stage */}
+            {stageSatisfaction.length > 1 && (
+              <div className="bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 shadow-sm p-6 mb-8">
+                <h3 className="text-sm font-semibold text-gray-700 dark:text-gray-300 uppercase tracking-wide mb-4">Satisfaction by Course Stage</h3>
+                <div className="flex items-end gap-4 justify-center">
+                  {stageSatisfaction.map((stage, i) => {
+                    const prev = i > 0 ? stageSatisfaction[i - 1] : null;
+                    const diff = prev ? stage.avg - prev.avg : 0;
+                    return (
+                      <div key={stage.trigger} className="flex flex-col items-center gap-2 flex-1 max-w-[160px]">
+                        <div className={`text-2xl font-bold ${stage.avg >= 4 ? 'text-green-600' : stage.avg >= 3 ? 'text-yellow-600' : 'text-red-600'}`}>
+                          {stage.avg}
+                        </div>
+                        <div className="w-full bg-gray-200 dark:bg-gray-600 rounded-full h-3">
+                          <div
+                            className={`h-3 rounded-full ${stage.avg >= 4 ? 'bg-green-500' : stage.avg >= 3 ? 'bg-yellow-500' : 'bg-red-500'}`}
+                            style={{ width: `${(stage.avg / 5) * 100}%` }}
+                          />
+                        </div>
+                        <div className="text-xs text-gray-600 dark:text-gray-400 text-center font-medium">{stage.label}</div>
+                        <div className="text-xs text-gray-400 dark:text-gray-500">{stage.count} responses</div>
+                        {diff !== 0 && (
+                          <span className={`text-xs font-medium ${diff > 0 ? 'text-green-600' : 'text-red-600'}`}>
+                            {diff > 0 ? '+' : ''}{diff.toFixed(1)}
+                          </span>
+                        )}
+                        {i < stageSatisfaction.length - 1 && (
+                          <div className="hidden" />
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
+                {(() => {
+                  if (stageSatisfaction.length >= 2) {
+                    const first = stageSatisfaction[0];
+                    const last = stageSatisfaction[stageSatisfaction.length - 1];
+                    const overallDiff = last.avg - first.avg;
+                    if (Math.abs(overallDiff) >= 0.3) {
+                      return (
+                        <p className={`text-sm mt-4 text-center ${overallDiff > 0 ? 'text-green-600' : 'text-red-600'}`}>
+                          {overallDiff > 0
+                            ? `Satisfaction improved +${overallDiff.toFixed(1)} from ${first.label} to ${last.label}`
+                            : `Satisfaction dropped ${overallDiff.toFixed(1)} from ${first.label} to ${last.label}`
+                          }
+                        </p>
+                      );
+                    }
+                  }
+                  return null;
+                })()}
+              </div>
+            )}
 
             {/* Recent Feedback with Filter */}
             <FeedbackFilter

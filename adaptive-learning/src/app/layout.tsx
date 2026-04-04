@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import ThemeProvider from "@/components/ThemeProvider";
+import Attribution from "@/components/Attribution";
 import { courseConfig } from '@/lib/course.config';
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
@@ -48,6 +49,7 @@ export default function RootLayout({
             Skip to main content
           </a>
           {children}
+          <Attribution />
         </ThemeProvider>
         <SpeedInsights />
       </body>

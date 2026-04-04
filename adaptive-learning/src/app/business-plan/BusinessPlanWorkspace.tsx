@@ -3,6 +3,7 @@
 import { useState, useCallback, useEffect, useMemo } from 'react';
 import Link from 'next/link';
 import BPDraftChat from './BPDraftChat';
+import DownloadPDFButton from '@/components/DownloadPDFButton';
 import { courseConfig } from '@/lib/course.config';
 
 interface BusinessPlanProps {
@@ -195,6 +196,11 @@ export default function BusinessPlanWorkspace({
                 </svg>
                 Back to Edit
               </button>
+              <DownloadPDFButton
+                targetSelector="#portfolio-preview"
+                filename={`${courseConfig.capstone.labels?.finalTitle?.toLowerCase().replace(/\s+/g, '-') || 'portfolio'}`}
+                label="Download PDF"
+              />
               <button
                 onClick={() => window.print()}
                 className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-white bg-indigo-600 rounded-lg hover:bg-indigo-700 transition-colors"
@@ -209,7 +215,7 @@ export default function BusinessPlanWorkspace({
 
           {/* Document */}
           <div className="print-document max-w-4xl mx-auto px-4 py-8">
-            <div className="bg-white shadow-lg" style={{ fontFamily: 'Georgia, "Times New Roman", serif' }}>
+            <div id="portfolio-preview" className="bg-white shadow-lg" style={{ fontFamily: 'Georgia, "Times New Roman", serif' }}>
 
               {/* Cover Page */}
               <div className="cover-page text-center px-16 py-24">
@@ -468,8 +474,8 @@ export default function BusinessPlanWorkspace({
                           <h4 className="font-medium text-gray-800 dark:text-gray-200 text-sm">{s.title}</h4>
                           {s.score !== null && (
                             <span className={`inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium ${
-                              s.score >= 80 ? 'bg-green-100 text-green-800' :
-                              s.score >= 70 ? 'bg-yellow-100 text-yellow-800' :
+                              s.score >= courseConfig.thresholds.gradeB ? 'bg-green-100 text-green-800' :
+                              s.score >= courseConfig.thresholds.gradeC ? 'bg-yellow-100 text-yellow-800' :
                               'bg-red-100 text-red-800'
                             }`}>
                               {s.score}%

@@ -2,6 +2,7 @@ import { createClient } from '@/lib/supabase/server';
 import { getAssignment } from '@/lib/content';
 import { redirect } from 'next/navigation';
 import type { AssignmentDraft } from '@/lib/types';
+import { COURSE_ID } from '@/lib/course.config';
 import AssignmentWorkspace from './AssignmentWorkspace';
 
 export default async function AssignmentPage({
@@ -32,6 +33,7 @@ export default async function AssignmentPage({
     .from('assignment_drafts')
     .select('*')
     .eq('user_id', user.id)
+    .eq('course_id', COURSE_ID)
     .eq('assignment_id', assignmentId)
     .order('section_key', { ascending: true })
     .order('draft_number', { ascending: false });
@@ -49,10 +51,22 @@ export default async function AssignmentPage({
     draftsMap[key] = draft;
   });
 
+  // Build score history per section (all drafts with scores, chronological)
+  const scoreHistory: Record<string, { draft: number; score: number }[]> = {};
+  (draftsData || []).forEach((d: AssignmentDraft) => {
+    if (d.ai_feedback?.score != null) {
+      if (!scoreHistory[d.section_key]) scoreHistory[d.section_key] = [];
+      scoreHistory[d.section_key].push({ draft: d.draft_number, score: d.ai_feedback.score });
+    }
+  });
+  // Sort each section's history ascending by draft number
+  Object.values(scoreHistory).forEach(arr => arr.sort((a, b) => a.draft - b.draft));
+
   return (
     <AssignmentWorkspace
       assignment={assignment}
       savedDrafts={draftsMap}
+      scoreHistory={scoreHistory}
     />
   );
 }

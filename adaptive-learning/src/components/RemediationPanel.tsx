@@ -18,6 +18,7 @@ interface RemediationPanelProps {
   chapterId: number;
   sectionId: string;
   missedQuestionIds: string[];
+  studentAnswers?: Record<string, number>;
   quizScore: number;
   passThreshold: number;
   remediationCount: number;
@@ -29,6 +30,7 @@ export default function RemediationPanel({
   chapterId,
   sectionId,
   missedQuestionIds,
+  studentAnswers,
   quizScore,
   passThreshold,
   remediationCount,
@@ -54,6 +56,7 @@ export default function RemediationPanel({
           chapterId,
           sectionId,
           missedQuestionIds,
+          studentAnswers,
         }),
       });
 
@@ -97,9 +100,9 @@ export default function RemediationPanel({
               Here&apos;s some extra help with the concepts you missed.
             </p>
             {canSkip && (
-              <p className="text-amber-600 dark:text-amber-500 text-xs mt-2 italic">
-                You&apos;ve attempted this quiz {remediationCount} times. You can skip ahead if needed,
-                but we recommend trying once more.
+              <p className="text-blue-600 dark:text-blue-400 text-xs mt-2 font-medium">
+                You&apos;ve shown great dedication with {remediationCount} attempts! You can move ahead to the writing section
+                where you&apos;ll demonstrate your understanding in your own words — that&apos;s a great way to solidify these concepts.
               </p>
             )}
           </div>
@@ -211,7 +214,7 @@ export default function RemediationPanel({
                   onClick={onSkip}
                   className="px-5 py-2.5 border border-gray-300 dark:border-gray-600 text-gray-600 dark:text-gray-400 font-medium rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors text-sm"
                 >
-                  Skip to Written Response
+                  Continue to Written Response
                 </button>
               )}
               <button

@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect, useCallback } from 'react';
 import { renderMarkdown } from '@/lib/renderMarkdown';
 
 interface ChatMessage {
@@ -18,7 +18,7 @@ interface AskQuestionPanelProps {
   sectionTitle: string;
 }
 
-const MAX_MESSAGES = 10; // 5 turns
+const MAX_MESSAGES = 16; // 8 turns
 
 export default function AskQuestionPanel({
   isOpen,
@@ -35,6 +35,7 @@ export default function AskQuestionPanel({
   const [error, setError] = useState<string | null>(null);
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLTextAreaElement>(null);
+  const panelRef = useRef<HTMLDivElement>(null);
 
   // Auto-scroll to bottom when new messages arrive
   useEffect(() => {
@@ -47,6 +48,40 @@ export default function AskQuestionPanel({
       setTimeout(() => inputRef.current?.focus(), 300);
     }
   }, [isOpen]);
+
+  // Escape key to close
+  useEffect(() => {
+    if (!isOpen) return;
+    function handleEscape(e: KeyboardEvent) {
+      if (e.key === 'Escape') onClose();
+    }
+    document.addEventListener('keydown', handleEscape);
+    return () => document.removeEventListener('keydown', handleEscape);
+  }, [isOpen, onClose]);
+
+  // Focus trap — keep Tab within the panel
+  const handleFocusTrap = useCallback((e: KeyboardEvent) => {
+    if (e.key !== 'Tab' || !panelRef.current) return;
+    const focusable = panelRef.current.querySelectorAll<HTMLElement>(
+      'button:not([disabled]), textarea:not([disabled]), input:not([disabled]), a[href], [tabindex]:not([tabindex="-1"])'
+    );
+    if (focusable.length === 0) return;
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+    if (e.shiftKey && document.activeElement === first) {
+      e.preventDefault();
+      last.focus();
+    } else if (!e.shiftKey && document.activeElement === last) {
+      e.preventDefault();
+      first.focus();
+    }
+  }, []);
+
+  useEffect(() => {
+    if (!isOpen) return;
+    document.addEventListener('keydown', handleFocusTrap);
+    return () => document.removeEventListener('keydown', handleFocusTrap);
+  }, [isOpen, handleFocusTrap]);
 
   // Reset conversation when context changes
   useEffect(() => {
@@ -122,7 +157,7 @@ export default function AskQuestionPanel({
   }
 
   const turnsUsed = Math.ceil(messages.length / 2);
-  const turnsRemaining = 5 - turnsUsed;
+  const turnsRemaining = 8 - turnsUsed;
 
   return (
     <>
@@ -137,6 +172,7 @@ export default function AskQuestionPanel({
 
       {/* Panel */}
       <div
+        ref={panelRef}
         role="dialog"
         aria-modal="true"
         aria-label="Ask a question about this concept"

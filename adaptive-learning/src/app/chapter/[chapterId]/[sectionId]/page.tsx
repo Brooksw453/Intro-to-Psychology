@@ -3,8 +3,8 @@ import { getSectionContent, getGateQuiz, getChapterMeta } from '@/lib/content';
 import { redirect } from 'next/navigation';
 import Link from 'next/link';
 import SectionLearningFlow from './SectionLearningFlow';
+import { courseConfig, COURSE_ID } from '@/lib/course.config';
 import ThemeToggle from '@/components/ThemeToggle';
-import { COURSE_ID } from '@/lib/course.config';
 
 export default async function SectionPage({
   params,
@@ -34,9 +34,9 @@ export default async function SectionPage({
       .from('section_progress')
       .select('status')
       .eq('user_id', user.id)
+      .eq('course_id', COURSE_ID)
       .eq('chapter_id', chapterId)
       .eq('section_id', prevSectionId)
-      .eq('course_id', COURSE_ID)
       .single();
 
     if (!prevProgress || prevProgress.status !== 'completed') {
@@ -49,9 +49,9 @@ export default async function SectionPage({
     .from('section_progress')
     .select('*')
     .eq('user_id', user.id)
+    .eq('course_id', COURSE_ID)
     .eq('chapter_id', chapterId)
     .eq('section_id', sectionId)
-    .eq('course_id', COURSE_ID)
     .single();
 
   // Determine next and previous sections
@@ -63,10 +63,10 @@ export default async function SectionPage({
     .from('quiz_attempts')
     .select('score')
     .eq('user_id', user.id)
+    .eq('course_id', COURSE_ID)
     .eq('chapter_id', chapterId)
     .eq('section_id', sectionId)
     .eq('passed', true)
-    .eq('course_id', COURSE_ID)
     .limit(1)
     .single();
 
@@ -75,9 +75,9 @@ export default async function SectionPage({
     .from('free_text_responses')
     .select('ai_evaluation')
     .eq('user_id', user.id)
+    .eq('course_id', COURSE_ID)
     .eq('chapter_id', chapterId)
     .eq('section_id', sectionId)
-    .eq('course_id', COURSE_ID)
     .order('submitted_at', { ascending: false })
     .limit(1)
     .single();
@@ -86,15 +86,15 @@ export default async function SectionPage({
   const hasPassedFreeText = passedFreeText?.ai_evaluation &&
     typeof passedFreeText.ai_evaluation === 'object' &&
     'score' in passedFreeText.ai_evaluation &&
-    (passedFreeText.ai_evaluation as { score: number }).score >= 70;
+    (passedFreeText.ai_evaluation as { score: number }).score >= courseConfig.thresholds.freeTextPass;
 
   // Mark section as started if not already
   if (!progress) {
     await supabase.from('section_progress').insert({
       user_id: user.id,
+      course_id: COURSE_ID,
       chapter_id: chapterId,
       section_id: sectionId,
-      course_id: COURSE_ID,
       status: 'in_progress',
       started_at: new Date().toISOString(),
     });

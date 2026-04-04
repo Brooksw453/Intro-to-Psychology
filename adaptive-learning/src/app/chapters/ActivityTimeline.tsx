@@ -86,9 +86,9 @@ function getActivityLabel(type: string, details: Record<string, string | number>
     case 'login': return 'Logged in';
     case 'section_start': return `Started ${details.section_name || 'a section'}`;
     case 'section_complete': return `Completed ${details.section_name || 'a section'}`;
-    case 'quiz_attempt': return `Quiz attempt${details.score ? ` - ${details.score}%` : ''}`;
-    case 'assignment_submit': return 'Submitted assignment section';
-    case 'draft_chat': return 'Used AI drafting assistant';
+    case 'quiz_attempt': return `Quiz${details.section_name ? ` ${details.section_name}` : ''} attempt${details.score ? ` — ${details.score}%` : ''}`;
+    case 'assignment_submit': return `Submitted ${details.section_name || details.assignment_name || 'assignment section'}`;
+    case 'draft_chat': return `Used AI drafting assistant${details.assignment_name ? ` for ${details.assignment_name}` : ''}`;
     case 'page_view': return `Viewed ${details.page || 'a page'}`;
     default: return type;
   }

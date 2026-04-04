@@ -4,6 +4,7 @@ import { redirect } from 'next/navigation';
 import Link from 'next/link';
 import type { SectionProgress, AssignmentDraft } from '@/lib/types';
 import { courseConfig, COURSE_ID } from '@/lib/course.config';
+import { getLetterGrade, getGradeColor, getGradeBg } from '@/lib/scoreUtils';
 
 interface QuizAttempt {
   score: number;
@@ -17,36 +18,6 @@ interface DraftRow {
   section_key: string;
   draft_number: number;
   ai_feedback: AssignmentDraft['ai_feedback'];
-}
-
-function getLetterGrade(score: number): string {
-  if (score >= 90) return 'A';
-  if (score >= 80) return 'B';
-  if (score >= 70) return 'C';
-  if (score >= 60) return 'D';
-  return 'F';
-}
-
-function getGradeColor(letter: string): string {
-  switch (letter) {
-    case 'A': return 'text-green-600';
-    case 'B': return 'text-blue-600';
-    case 'C': return 'text-yellow-600';
-    case 'D': return 'text-orange-600';
-    case 'F': return 'text-red-600';
-    default: return 'text-gray-600';
-  }
-}
-
-function getGradeBg(letter: string): string {
-  switch (letter) {
-    case 'A': return 'bg-green-100 text-green-800 border-green-200';
-    case 'B': return 'bg-blue-100 text-blue-800 border-blue-200';
-    case 'C': return 'bg-yellow-100 text-yellow-800 border-yellow-200';
-    case 'D': return 'bg-orange-100 text-orange-800 border-orange-200';
-    case 'F': return 'bg-red-100 text-red-800 border-red-200';
-    default: return 'bg-gray-100 text-gray-800 border-gray-200';
-  }
 }
 
 export default async function GradesPage() {
@@ -64,7 +35,7 @@ export default async function GradesPage() {
     .eq('id', user.id)
     .single();
 
-  if (userProfile?.role === 'instructor') {
+  if (['instructor', 'admin', 'super_admin'].includes(userProfile?.role)) {
     redirect('/instructor/gradebook');
   }
 
@@ -400,10 +371,10 @@ export default async function GradesPage() {
                     <td className="px-4 py-3 text-center">
                       {ch.mastery !== null ? (
                         <span className={`text-sm font-medium ${
-                          ch.mastery >= 90 ? 'text-green-600' :
-                          ch.mastery >= 80 ? 'text-blue-600' :
-                          ch.mastery >= 70 ? 'text-yellow-600' :
-                          ch.mastery >= 60 ? 'text-orange-600' : 'text-red-600'
+                          ch.mastery >= courseConfig.thresholds.gradeA ? 'text-green-600' :
+                          ch.mastery >= courseConfig.thresholds.gradeB ? 'text-blue-600' :
+                          ch.mastery >= courseConfig.thresholds.gradeC ? 'text-yellow-600' :
+                          ch.mastery >= courseConfig.thresholds.gradeD ? 'text-orange-600' : 'text-red-600'
                         }`}>
                           {ch.mastery}%
                         </span>
@@ -414,10 +385,10 @@ export default async function GradesPage() {
                     <td className="px-4 py-3 text-center">
                       {ch.quizScore !== null ? (
                         <span className={`text-sm font-medium ${
-                          ch.quizScore >= 90 ? 'text-green-600' :
-                          ch.quizScore >= 80 ? 'text-blue-600' :
-                          ch.quizScore >= 70 ? 'text-yellow-600' :
-                          ch.quizScore >= 60 ? 'text-orange-600' : 'text-red-600'
+                          ch.quizScore >= courseConfig.thresholds.gradeA ? 'text-green-600' :
+                          ch.quizScore >= courseConfig.thresholds.gradeB ? 'text-blue-600' :
+                          ch.quizScore >= courseConfig.thresholds.gradeC ? 'text-yellow-600' :
+                          ch.quizScore >= courseConfig.thresholds.gradeD ? 'text-orange-600' : 'text-red-600'
                         }`}>
                           {ch.quizScore}%
                         </span>
@@ -458,10 +429,10 @@ export default async function GradesPage() {
                     <td className="px-4 py-3 text-center">
                       {a.avgScore !== null ? (
                         <span className={`text-sm font-medium ${
-                          a.avgScore >= 90 ? 'text-green-600' :
-                          a.avgScore >= 80 ? 'text-blue-600' :
-                          a.avgScore >= 70 ? 'text-yellow-600' :
-                          a.avgScore >= 60 ? 'text-orange-600' : 'text-red-600'
+                          a.avgScore >= courseConfig.thresholds.gradeA ? 'text-green-600' :
+                          a.avgScore >= courseConfig.thresholds.gradeB ? 'text-blue-600' :
+                          a.avgScore >= courseConfig.thresholds.gradeC ? 'text-yellow-600' :
+                          a.avgScore >= courseConfig.thresholds.gradeD ? 'text-orange-600' : 'text-red-600'
                         }`}>
                           {a.avgScore}%
                         </span>
