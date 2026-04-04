@@ -5,7 +5,7 @@
   "prompt": "In today's world, we rely heavily on technology to store and access information -- smartphones, search engines, cloud storage, and social media all serve as external memory systems. Some researchers have described this as 'cognitive offloading' or the 'Google effect,' where we are less likely to remember information we know we can easily look up. Drawing on the memory concepts from this chapter (such as encoding, retrieval, the testing effect, or elaborative rehearsal), discuss how reliance on digital technology might affect our memory abilities. Is this cognitive offloading harmful, beneficial, or both? Support your argument with specific concepts from the chapter.",
   "requirements": {
     "initialPost": {
-      "minWords": 150,
+      "minWords": 75,
       "maxWords": 200,
       "dueDay": "Wednesday",
       "dueTime": "11:59 PM ET"

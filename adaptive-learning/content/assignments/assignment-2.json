@@ -19,7 +19,7 @@
       "key": "sensory-perceptual",
       "title": "Sensation & Perception Analysis",
       "instructions": "Examine how sensation and perception relate to your psychological topic. Consider how sensory processing, perceptual organization (e.g., Gestalt principles), attention, or perceptual illusions connect to your phenomenon. Discuss how individual differences in perception might influence experiences related to your topic.",
-      "minWords": 150,
+      "minWords": 75,
       "maxWords": 400,
       "rubric": "Student should correctly apply sensation and perception concepts, demonstrate understanding of the difference between sensation and perception, make specific connections to their topic, and discuss how perceptual processes influence the psychological phenomenon they are studying.",
       "tips": [
@@ -32,7 +32,7 @@
       "key": "learning-connections",
       "title": "Learning Theory Applications",
       "instructions": "Apply the major learning theories from Chapter 6 to your psychological topic. Discuss how classical conditioning, operant conditioning, and/or observational learning (modeling) might explain aspects of your topic. Provide specific examples of how these learning processes could shape behaviors or responses related to your phenomenon.",
-      "minWords": 150,
+      "minWords": 75,
       "maxWords": 400,
       "rubric": "Student should accurately describe at least two learning theories and apply them to their topic with specific, realistic examples. Should use correct terminology (unconditioned stimulus, reinforcement, modeling, etc.) and demonstrate understanding of how learning processes shape behavior related to their topic.",
       "tips": [
@@ -45,7 +45,7 @@
       "key": "cognitive-factors",
       "title": "Cognition, Intelligence & Memory",
       "instructions": "Analyze the cognitive processes and memory mechanisms involved in your psychological topic. Draw on concepts from Chapters 7 and 8, such as problem solving, decision making, language, intelligence, memory encoding, storage, retrieval, or memory errors. Explain how cognitive and memory processes influence or are influenced by your topic.",
-      "minWords": 150,
+      "minWords": 75,
       "maxWords": 400,
       "rubric": "Student should integrate concepts from both cognition and memory chapters, correctly use terminology (e.g., schemas, heuristics, encoding, retrieval, working memory), and provide thoughtful analysis of how cognitive processes interact with their topic. Should go beyond surface-level connections.",
       "tips": [
@@ -58,7 +58,7 @@
       "key": "developmental-perspective",
       "title": "Lifespan Development Perspective",
       "instructions": "Examine your psychological topic through the lens of lifespan development (Chapter 9). Discuss how your topic manifests differently across various life stages (prenatal, infancy, childhood, adolescence, adulthood, late adulthood). Apply at least one developmental theory (e.g., Piaget, Erikson, Kohlberg) to explain how understanding of or experience with your topic changes across the lifespan.",
-      "minWords": 150,
+      "minWords": 75,
       "maxWords": 400,
       "rubric": "Student should discuss at least two different life stages, correctly apply a developmental theory, and show how the psychological topic evolves or changes across the lifespan. Should demonstrate understanding that development is a continuous process influenced by biological, cognitive, and social factors.",
       "tips": [

@@ -4,7 +4,7 @@
   "title": "Discussion: Psychology in the Workplace",
   "prompt": "Think about a workplace challenge you have experienced or observed — it could involve hiring, management, teamwork, job satisfaction, or workplace design. Using concepts from Chapter 13, analyze this challenge from an I-O psychology perspective. Identify which branch of I-O psychology (industrial, organizational, or human factors) would be best suited to address the problem, and propose a specific, evidence-based solution. How might applying psychological research improve this workplace situation?",
   "requirements": {
-    "initialPost": { "minWords": 150, "maxWords": 200, "dueDay": "Wednesday", "dueTime": "11:59 PM ET" },
+    "initialPost": { "minWords": 75, "maxWords": 200, "dueDay": "Wednesday", "dueTime": "11:59 PM ET" },
     "replies": { "count": 2, "minWords": 75, "maxWords": 100, "dueDay": "Sunday", "dueTime": "11:59 PM ET" }
   }
 }

@@ -4,7 +4,7 @@
   "title": "Discussion: Stress Management and Well-Being",
   "prompt": "Reflect on the research presented in Chapter 14 about stress, coping, and happiness. What was the most surprising finding you encountered? Choose one evidence-based stress management or happiness strategy discussed in the chapter and explain how it could be applied in a specific real-world context (e.g., college student life, healthcare, the workplace). Consider potential barriers to implementation and how they might be overcome. How does understanding the psychology of stress and well-being change how you think about your own health?",
   "requirements": {
-    "initialPost": { "minWords": 150, "maxWords": 200, "dueDay": "Wednesday", "dueTime": "11:59 PM ET" },
+    "initialPost": { "minWords": 75, "maxWords": 200, "dueDay": "Wednesday", "dueTime": "11:59 PM ET" },
     "replies": { "count": 2, "minWords": 75, "maxWords": 100, "dueDay": "Sunday", "dueTime": "11:59 PM ET" }
   }
 }

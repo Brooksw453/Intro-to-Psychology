@@ -5,7 +5,7 @@
   "prompt": "Choose one of Erikson's eight psychosocial stages and explain how successfully or unsuccessfully resolving that stage's crisis could affect a person's functioning in a later stage. Use a specific real-world or hypothetical example to illustrate your argument. Consider how cultural context, socioeconomic factors, or individual differences might influence how a person navigates the crisis you selected.",
   "requirements": {
     "initialPost": {
-      "minWords": 150,
+      "minWords": 75,
       "maxWords": 200,
       "dueDay": "Wednesday",
       "dueTime": "11:59 PM ET"

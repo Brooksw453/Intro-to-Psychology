@@ -19,7 +19,7 @@
       "key": "stress-health",
       "title": "Stress, Health & Coping",
       "instructions": "Analyze how stress, health, and coping mechanisms relate to your psychological topic using concepts from Chapter 14. Discuss how your topic may cause stress or be affected by stress. Consider the role of coping strategies (problem-focused vs. emotion-focused), social support, and the biopsychosocial model. Examine how your topic relates to overall psychological well-being and the pursuit of happiness.",
-      "minWords": 150,
+      "minWords": 75,
       "maxWords": 400,
       "rubric": "Student should correctly apply stress and health concepts, discuss specific coping strategies, reference the biopsychosocial model or other health psychology frameworks, and make meaningful connections between stress/health and their psychological topic. Should demonstrate understanding of the mind-body connection.",
       "tips": [
@@ -32,7 +32,7 @@
       "key": "disorder-connections",
       "title": "Psychological Disorder Connections",
       "instructions": "Explore connections between your psychological topic and psychological disorders discussed in Chapter 15. Consider whether your topic is itself a disorder, contributes to disorders, or is affected by disorders. Discuss how the DSM-5 classifies relevant conditions, what diagnostic criteria apply, and how different perspectives (biological, psychological, sociocultural) explain the disorder connections. Use person-first language throughout.",
-      "minWords": 150,
+      "minWords": 75,
       "maxWords": 400,
       "rubric": "Student should accurately describe relevant psychological disorders using DSM-5 terminology, use person-first language consistently, discuss at least one theoretical perspective on the disorder connection, and demonstrate sensitive, non-stigmatizing understanding. Should distinguish between clinical disorders and normal psychological variation.",
       "tips": [
@@ -45,7 +45,7 @@
       "key": "treatment-approaches",
       "title": "Therapeutic Interventions",
       "instructions": "Examine the therapeutic and treatment approaches most relevant to your psychological topic using concepts from Chapter 16. Discuss which types of therapy (psychodynamic, cognitive-behavioral, humanistic, biomedical) are most effective for issues related to your topic. Consider treatment modalities (individual, group, family), barriers to treatment access, and the importance of culturally competent care.",
-      "minWords": 150,
+      "minWords": 75,
       "maxWords": 400,
       "rubric": "Student should accurately describe at least two therapeutic approaches, explain why specific treatments are appropriate for their topic, discuss evidence for treatment effectiveness, and consider barriers to treatment and cultural factors. Should demonstrate understanding that effective treatment often requires multiple approaches.",
       "tips": [
@@ -58,7 +58,7 @@
       "key": "synthesis-reflection",
       "title": "Portfolio Synthesis & Personal Reflection",
       "instructions": "Write a comprehensive synthesis that integrates your analysis across all four assignments. Reflect on how your understanding of your chosen psychological topic has deepened throughout this course. Discuss which perspectives (biological, cognitive, developmental, social, clinical) provided the most insight into your topic. Consider how studying this topic has changed your thinking about human behavior and mental processes. Finally, suggest one direction for future research that could advance understanding of your topic.",
-      "minWords": 150,
+      "minWords": 75,
       "maxWords": 400,
       "rubric": "Student should demonstrate integration across multiple chapters and assignments, show genuine reflection on their learning journey, identify which perspectives were most valuable and why, and propose a thoughtful research direction. The synthesis should feel like a conclusion that ties together the entire portfolio, not just a summary of previous sections.",
       "tips": [

@@ -5,7 +5,7 @@
   "prompt": "Stigma remains one of the greatest barriers to mental health treatment. Drawing on what you learned in this chapter about the nature, causes, and classification of psychological disorders, discuss what you believe is the most effective way to reduce stigma surrounding mental illness. Consider the role of language (such as person-first language), education, media portrayals, and personal contact with people who have lived experience. Use specific examples from the chapter to support your argument, and explain why reducing stigma matters for treatment outcomes and public health.",
   "requirements": {
     "initialPost": {
-      "minWords": 150,
+      "minWords": 75,
       "maxWords": 200,
       "dueDay": "Wednesday",
       "dueTime": "11:59 PM ET"

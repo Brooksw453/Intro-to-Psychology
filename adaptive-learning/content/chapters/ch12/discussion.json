@@ -4,7 +4,7 @@
   "title": "Social Influence: When Does Conformity Become Dangerous?",
   "prompt": "This chapter explored how social situations shape individual behavior, from everyday impression management to obedience that leads to harm. Drawing on research by Asch, Milgram, or Zimbardo, discuss a real-world situation (historical or contemporary) in which social influence led to harmful outcomes. Analyze the specific social psychological mechanisms at work (conformity, obedience, groupthink, deindividuation, etc.). Then propose at least one strategy that individuals or institutions could use to resist destructive social influence in similar situations. Support your argument with concepts from the chapter.",
   "requirements": {
-    "initialPost": { "minWords": 150, "maxWords": 200, "dueDay": "Wednesday", "dueTime": "11:59 PM ET" },
+    "initialPost": { "minWords": 75, "maxWords": 200, "dueDay": "Wednesday", "dueTime": "11:59 PM ET" },
     "replies": { "count": 2, "minWords": 75, "maxWords": 100, "dueDay": "Sunday", "dueTime": "11:59 PM ET" }
   }
 }

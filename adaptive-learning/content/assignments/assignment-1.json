@@ -19,7 +19,7 @@
       "key": "topic-selection",
       "title": "Topic Selection & Significance",
       "instructions": "Choose a psychological topic that genuinely interests you (e.g., memory and aging, the psychology of prejudice, sleep disorders, addiction, childhood development, stress and health). Describe your topic clearly, explain why it is significant to the field of psychology, and discuss why you personally find it compelling. Reference at least two perspectives from psychology's history (e.g., behaviorism, psychoanalysis, cognitive revolution) that have shaped how we understand this topic.",
-      "minWords": 150,
+      "minWords": 75,
       "maxWords": 400,
       "rubric": "Student should clearly identify a specific psychological topic, explain its significance to the field, connect it to at least two historical perspectives, and articulate personal interest. Strong answers show depth of understanding rather than surface-level descriptions.",
       "tips": [
@@ -32,7 +32,7 @@
       "key": "research-methods",
       "title": "Research Methods Analysis",
       "instructions": "Explain how psychologists study your chosen topic using the research methods covered in Chapter 2. Identify at least two research approaches (e.g., experiments, correlational studies, case studies, naturalistic observation) that are commonly used to investigate your topic. For each approach, explain why it is appropriate, what variables might be involved, and what ethical considerations researchers must address.",
-      "minWords": 150,
+      "minWords": 75,
       "maxWords": 400,
       "rubric": "Student should correctly identify and describe at least two research methods, explain their application to the chosen topic with specific examples, discuss relevant variables (independent, dependent, confounding), and address ethical considerations such as informed consent and debriefing.",
       "tips": [
@@ -45,7 +45,7 @@
       "key": "biological-basis",
       "title": "Biological Foundations",
       "instructions": "Analyze the biological underpinnings of your chosen psychological topic using concepts from Chapter 3 (Biopsychology). Discuss relevant brain structures, neurotransmitters, neural pathways, or genetic factors that play a role. Explain how the nervous system and/or endocrine system contribute to the psychological phenomenon you are studying.",
-      "minWords": 150,
+      "minWords": 75,
       "maxWords": 400,
       "rubric": "Student should accurately identify relevant brain structures or neural mechanisms, correctly describe the role of specific neurotransmitters or hormones, and clearly connect biological processes to the psychological phenomenon. Should demonstrate understanding of the biopsychological perspective.",
       "tips": [
@@ -58,7 +58,7 @@
       "key": "consciousness-connection",
       "title": "Consciousness & Awareness",
       "instructions": "Explore how states of consciousness relate to your chosen topic using concepts from Chapter 4. Consider how awareness, attention, sleep, altered states, or substance use might influence or be influenced by your topic. Discuss at least one specific connection between consciousness research and your psychological phenomenon.",
-      "minWords": 150,
+      "minWords": 75,
       "maxWords": 400,
       "rubric": "Student should demonstrate understanding of consciousness concepts, make meaningful connections between consciousness and their topic (not superficial links), and use specific terminology from Chapter 4. Strong answers show critical thinking about how awareness and conscious experience interact with their chosen phenomenon.",
       "tips": [

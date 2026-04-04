@@ -5,7 +5,7 @@
   "prompt": "Psychology is often described as a science of behavior and mental processes, yet many people rely on intuition and common sense to understand why people behave the way they do. Think about a situation in your own life where your intuition about human behavior turned out to be wrong, or where scientific evidence contradicted a widely held belief. How does the scientific approach of psychology offer advantages over relying on common sense? In your response, reference at least one concept from this chapter (e.g., the scientific method, the biopsychosocial model, or a specific psychological perspective) and explain how it helps provide a more complete understanding of human behavior than everyday intuition alone.",
   "requirements": {
     "initialPost": {
-      "minWords": 150,
+      "minWords": 75,
       "maxWords": 200,
       "dueDay": "Wednesday",
       "dueTime": "11:59 PM ET"

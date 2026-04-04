@@ -5,7 +5,7 @@
   "prompt": "This chapter explores the many states of consciousness we experience, from sleep and dreams to the effects of psychoactive substances and practices like meditation. Choose one topic from Chapter 4 that you found most relevant to your own life — for example, your sleep habits, caffeine use, experiences with flow states, or attitudes toward meditation. Describe how the scientific concepts from this chapter help you understand this everyday experience in a new way. What is one specific change you might make to your daily routine based on what you learned, and what does the research suggest about why this change would be beneficial?",
   "requirements": {
     "initialPost": {
-      "minWords": 150,
+      "minWords": 75,
       "maxWords": 200,
       "dueDay": "Wednesday",
       "dueTime": "11:59 PM ET"
