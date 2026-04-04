@@ -8,18 +8,44 @@
     "Discuss the role of organizational culture and teamwork in workplace effectiveness"
   ],
   "keyTerms": [
-    { "term": "Job satisfaction", "definition": "The degree to which an employee feels positively or negatively about their job, influenced by factors such as the work itself, pay, advancement opportunities, and relationships with coworkers." },
-    { "term": "Organizational culture", "definition": "The shared values, beliefs, norms, and practices that characterize an organization and shape how its members behave and interact." },
-    { "term": "Transformational leadership", "definition": "A leadership style in which leaders inspire and motivate followers to exceed expectations by articulating a compelling vision, providing intellectual stimulation, and showing genuine concern for followers' development." },
-    { "term": "Transactional leadership", "definition": "A leadership style focused on supervision, organization, and performance, using rewards and punishments to motivate employees based on established goals and expectations." },
-    { "term": "Theory X and Theory Y", "definition": "Douglas McGregor's contrasting management assumptions: Theory X assumes workers are lazy and need external control, while Theory Y assumes workers are self-motivated and seek responsibility." },
-    { "term": "Organizational citizenship behavior", "definition": "Voluntary behaviors that go beyond formal job requirements and contribute to organizational functioning, such as helping coworkers or volunteering for extra tasks." }
+    {
+      "term": "Job satisfaction",
+      "definition": "The degree to which an employee feels positively or negatively about their job, influenced by factors such as the work itself, pay, advancement opportunities, and relationships with coworkers."
+    },
+    {
+      "term": "Organizational culture",
+      "definition": "The shared values, beliefs, norms, and practices that characterize an organization and shape how its members behave and interact."
+    },
+    {
+      "term": "Transformational leadership",
+      "definition": "A leadership style in which leaders inspire and motivate followers to exceed expectations by articulating a compelling vision, providing intellectual stimulation, and showing genuine concern for followers' development."
+    },
+    {
+      "term": "Transactional leadership",
+      "definition": "A leadership style focused on supervision, organization, and performance, using rewards and punishments to motivate employees based on established goals and expectations."
+    },
+    {
+      "term": "Theory X and Theory Y",
+      "definition": "Douglas McGregor's contrasting management assumptions: Theory X assumes workers are lazy and need external control, while Theory Y assumes workers are self-motivated and seek responsibility."
+    },
+    {
+      "term": "Organizational citizenship behavior",
+      "definition": "Voluntary behaviors that go beyond formal job requirements and contribute to organizational functioning, such as helping coworkers or volunteering for extra tasks."
+    }
   ],
   "contentBlocks": [
     {
       "type": "concept",
       "title": "Job Satisfaction and Motivation",
       "body": "**Job satisfaction** refers to how content employees are with their jobs. Research consistently shows that job satisfaction is related to important outcomes including productivity, absenteeism, turnover, and even physical health. Satisfied workers tend to be more productive, miss fewer days of work, and are less likely to leave the organization.\n\nSeveral theories attempt to explain what makes workers satisfied. Frederick Herzberg's **two-factor theory** distinguishes between *hygiene factors* (salary, job security, working conditions) that prevent dissatisfaction and *motivator factors* (achievement, recognition, meaningful work) that actively produce satisfaction. According to Herzberg, simply eliminating sources of dissatisfaction does not create satisfaction — organizations must also provide opportunities for growth and accomplishment.\n\nDouglas McGregor proposed **Theory X and Theory Y** to describe contrasting management philosophies. Theory X managers assume employees are inherently lazy and need close supervision and external rewards to perform. Theory Y managers assume employees are self-motivated, seek responsibility, and can be trusted to work independently. Research suggests that Theory Y approaches generally lead to higher satisfaction and productivity."
+    },
+    {
+      "type": "image",
+      "title": "Organizational Psychology: The Social Dimension of Work — textbook illustration",
+      "body": "",
+      "imageSrc": "/images/ch13/fig-ch13-14.jpeg",
+      "imageAlt": "Screenshot illustrating organizational psychology: the social dimension of work",
+      "imageCaption": "Organizational Psychology: The Social Dimension of Work — textbook illustration"
     },
     {
       "type": "concept",

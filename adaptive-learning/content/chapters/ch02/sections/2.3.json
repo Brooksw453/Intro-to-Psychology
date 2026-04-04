@@ -44,6 +44,14 @@
       "body": "After collecting data, researchers need systematic ways to organize and summarize their findings. **Descriptive statistics** are numbers that describe and organize data in meaningful ways.\n\nThe most common descriptive statistics are **measures of central tendency**, which identify the center or typical value in a dataset. The **mean** is the arithmetic average -- add all the scores and divide by the number of scores. The **median** is the middle value when scores are arranged in order. The **mode** is the most frequently occurring value.\n\nWhy use different measures? Each has advantages. The mean uses all data points and is the most commonly reported, but it can be distorted by extreme scores (outliers). For example, if most employees at a company earn between $40,000 and $60,000, but the CEO earns $5 million, the mean salary would be misleadingly high. In such cases, the median provides a more accurate picture of the typical salary because it is not affected by outliers. The mode is useful for categorical data, such as identifying the most common response on a survey."
     },
     {
+      "type": "image",
+      "title": "Analyzing Findings — textbook illustration",
+      "body": "",
+      "imageSrc": "/images/ch02/fig-ch02-17.jpeg",
+      "imageAlt": "Screenshot illustrating analyzing findings",
+      "imageCaption": "Analyzing Findings — textbook illustration"
+    },
+    {
       "type": "concept",
       "title": "Variability and Distributions",
       "body": "Measures of central tendency tell us about the center of a distribution, but they do not reveal how spread out the data are. **Measures of variability** describe the degree to which scores in a dataset differ from one another.\n\nThe **range** is the simplest measure of variability -- the difference between the highest and lowest scores. However, it is affected by outliers and uses only two data points. The **standard deviation** provides a more informative measure by calculating the average distance of each score from the mean. A small standard deviation indicates that scores cluster closely around the mean, while a large standard deviation indicates that scores are widely spread.\n\nMany psychological variables follow a **normal distribution** (bell curve), where most scores cluster near the mean and fewer scores fall at the extremes. Understanding the shape of a distribution helps researchers interpret their data and identify patterns. When data are **skewed** -- with most scores clustered at one end and a long tail extending to the other -- the mean can be misleading, and the median may be a more appropriate measure of central tendency."

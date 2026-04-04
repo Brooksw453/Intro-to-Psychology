@@ -40,6 +40,14 @@
       "body": "The modern era of intelligence testing began in the early 1900s when the French government commissioned psychologist Alfred Binet and his colleague Theodore Simon to develop a test that could identify children who needed additional academic support. The resulting Binet-Simon scale assessed children's reasoning, judgment, and problem-solving abilities and introduced the concept of **mental age** -- the level of intellectual functioning typical of a particular chronological age.\n\nLewis Terman of Stanford University adapted the Binet-Simon scale for American use, creating the Stanford-Binet Intelligence Scale. Terman adopted the **intelligence quotient (IQ)**, a concept developed by William Stern, which was originally calculated by dividing a child's mental age by their chronological age and multiplying by 100. A child whose mental age matched their chronological age would have an IQ of 100.\n\nDavid Wechsler later developed a family of intelligence tests -- the Wechsler Adult Intelligence Scale (WAIS), the Wechsler Intelligence Scale for Children (WISC), and the Wechsler Preschool and Primary Scale of Intelligence (WPPSI). Wechsler's tests were innovative because they provided separate scores for verbal comprehension, perceptual reasoning, working memory, and processing speed, rather than a single overall score. Modern IQ scores are calculated using a deviation method, comparing an individual's performance to the distribution of scores in their age group."
     },
     {
+      "type": "image",
+      "title": "Measures of Intelligence — textbook illustration",
+      "body": "",
+      "imageSrc": "/images/ch07/fig-ch07-13.jpeg",
+      "imageAlt": "Screenshot illustrating measures of intelligence",
+      "imageCaption": "Measures of Intelligence — textbook illustration"
+    },
+    {
       "type": "concept",
       "title": "Psychometric Properties and Score Interpretation",
       "body": "For an intelligence test to be useful, it must meet several psychometric criteria. **Standardization** involves administering the test to a large, representative sample to establish norms -- average scores for different groups against which individual scores can be compared. Tests must also be administered and scored in a consistent manner.\n\n**Reliability** refers to the consistency of test results. A reliable test produces similar scores when the same person takes it on different occasions (test-retest reliability) or when different versions of the test are administered (alternate-forms reliability). **Validity** refers to whether the test actually measures what it claims to measure. A test can be reliable without being valid -- it might consistently measure something, but that something might not be intelligence.\n\nIQ scores follow a **normal distribution** (bell curve), with a mean of 100 and a standard deviation of approximately 15. This means that about 68% of people score between 85 and 115, and about 95% score between 70 and 130. Scores below 70 may indicate **intellectual disability** (when accompanied by deficits in adaptive functioning), while scores above 130 are sometimes used to classify individuals as **gifted**.\n\nThe **Flynn effect** refers to the well-documented finding that average IQ scores have been rising steadily -- approximately 3 points per decade -- across many countries over the past century. Proposed explanations include improved nutrition, greater access to education, increased environmental complexity, and greater familiarity with testing. This effect requires periodic renorming of intelligence tests to maintain the mean at 100."
@@ -48,6 +56,22 @@
       "type": "example",
       "title": "IQ Testing in Context",
       "body": "Consider a child who scores 75 on an IQ test. Does this score alone warrant a diagnosis of intellectual disability? The answer is no. Modern diagnostic criteria require that low IQ scores be accompanied by significant limitations in **adaptive functioning** -- the practical, everyday skills needed for self-care, communication, and social interaction. A person with an IQ of 75 who holds a job, maintains relationships, and lives independently would not be diagnosed with intellectual disability.\n\nSimilarly, a high IQ score does not guarantee success. Research on gifted individuals, including Terman's famous longitudinal study of high-IQ children, found that while high intelligence was associated with many positive outcomes, factors such as motivation, emotional health, and opportunity also played critical roles. This underscores the point that IQ scores capture one important dimension of human capability but not the whole picture."
+    },
+    {
+      "type": "image",
+      "title": "Measures of Intelligence — textbook illustration",
+      "body": "",
+      "imageSrc": "/images/ch07/fig-ch07-14.jpeg",
+      "imageAlt": "Screenshot illustrating measures of intelligence",
+      "imageCaption": "Measures of Intelligence — textbook illustration"
+    },
+    {
+      "type": "image",
+      "title": "Measures of Intelligence — textbook illustration",
+      "body": "",
+      "imageSrc": "/images/ch07/fig-ch07-15.jpeg",
+      "imageAlt": "Screenshot illustrating measures of intelligence",
+      "imageCaption": "Measures of Intelligence — textbook illustration"
     },
     {
       "type": "summary",

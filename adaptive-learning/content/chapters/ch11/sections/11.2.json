@@ -8,19 +8,48 @@
     "Identify and describe Freud's psychosexual stages of development and defense mechanisms"
   ],
   "keyTerms": [
-    { "term": "Unconscious", "definition": "The level of the mind containing thoughts, feelings, and desires that lie outside of conscious awareness but still influence behavior." },
-    { "term": "Id", "definition": "The component of personality that operates on the pleasure principle, seeking immediate gratification of basic drives." },
-    { "term": "Ego", "definition": "The component of personality that operates on the reality principle, mediating between the demands of the id, superego, and reality." },
-    { "term": "Superego", "definition": "The component of personality that serves as the moral compass, incorporating societal standards of right and wrong." },
-    { "term": "Defense mechanisms", "definition": "Unconscious strategies the ego uses to reduce anxiety by distorting reality." },
-    { "term": "Psychosexual stages", "definition": "Freud's theory that personality develops through a series of childhood stages in which pleasure-seeking energies focus on different erogenous zones." },
-    { "term": "Fixation", "definition": "A lingering focus of pleasure-seeking energies at an earlier psychosexual stage, caused by unresolved conflicts." }
+    {
+      "term": "Unconscious",
+      "definition": "The level of the mind containing thoughts, feelings, and desires that lie outside of conscious awareness but still influence behavior."
+    },
+    {
+      "term": "Id",
+      "definition": "The component of personality that operates on the pleasure principle, seeking immediate gratification of basic drives."
+    },
+    {
+      "term": "Ego",
+      "definition": "The component of personality that operates on the reality principle, mediating between the demands of the id, superego, and reality."
+    },
+    {
+      "term": "Superego",
+      "definition": "The component of personality that serves as the moral compass, incorporating societal standards of right and wrong."
+    },
+    {
+      "term": "Defense mechanisms",
+      "definition": "Unconscious strategies the ego uses to reduce anxiety by distorting reality."
+    },
+    {
+      "term": "Psychosexual stages",
+      "definition": "Freud's theory that personality develops through a series of childhood stages in which pleasure-seeking energies focus on different erogenous zones."
+    },
+    {
+      "term": "Fixation",
+      "definition": "A lingering focus of pleasure-seeking energies at an earlier psychosexual stage, caused by unresolved conflicts."
+    }
   ],
   "contentBlocks": [
     {
       "type": "concept",
       "title": "The Structure of the Mind and Personality",
       "body": "Sigmund Freud (1856-1939) was one of the most influential and controversial figures in the history of psychology. His **psychodynamic perspective** proposed that much of human behavior is driven by forces outside of conscious awareness. Freud compared the mind to an iceberg: only a small portion is visible above the surface (the **conscious** mind), while a vast reservoir of thoughts, memories, and desires lies hidden below (the **unconscious**).\n\nBetween these two levels lies the **preconscious**, which contains information not currently in awareness but readily accessible. The unconscious, however, holds repressed memories, forbidden desires, and painful experiences that are actively kept from awareness because they would produce anxiety.\n\nFreud proposed that personality is composed of three interacting systems. The **id** is the most primitive component, present from birth, and operates entirely on the **pleasure principle** -- seeking immediate satisfaction of basic drives such as hunger, thirst, and sexual desire. The **ego** develops during infancy and operates on the **reality principle**, finding realistic ways to satisfy the id's demands while considering social norms. The **superego** develops last, incorporating moral standards learned from parents and society. It strives for perfection and judges behavior as right or wrong.\n\nWhen these three systems conflict, anxiety results. The ego manages this anxiety through **defense mechanisms** -- unconscious strategies that distort reality to protect the individual from distress. Common defense mechanisms include **repression** (pushing threatening thoughts into the unconscious), **projection** (attributing one's own unacceptable thoughts to others), **displacement** (redirecting emotions toward a safer target), **sublimation** (channeling unacceptable impulses into socially acceptable activities), and **rationalization** (creating logical explanations for irrational behavior)."
+    },
+    {
+      "type": "image",
+      "title": "Freud and the Psychodynamic Perspective — textbook illustration",
+      "body": "",
+      "imageSrc": "/images/ch11/fig-ch11-07.jpeg",
+      "imageAlt": "Screenshot illustrating freud and the psychodynamic perspective",
+      "imageCaption": "Freud and the Psychodynamic Perspective — textbook illustration"
     },
     {
       "type": "concept",
@@ -31,6 +60,14 @@
       "type": "example",
       "title": "Defense Mechanisms in Action",
       "body": "Defense mechanisms operate unconsciously and are part of everyday life. Consider a student who receives a poor grade on an exam. Through **rationalization**, the student might claim, \"The test was unfair and poorly written,\" rather than acknowledging insufficient studying. Through **projection**, the student might accuse classmates of not studying either. Through **displacement**, the student might go home and snap at a roommate instead of confronting the professor.\n\nWhile defense mechanisms can be adaptive in the short term by reducing anxiety, excessive reliance on them can prevent individuals from dealing with problems realistically. Freud believed that psychoanalysis -- a therapeutic technique involving free association, dream analysis, and exploration of the unconscious -- could help individuals gain insight into their unconscious conflicts and reduce their dependence on maladaptive defenses."
+    },
+    {
+      "type": "image",
+      "title": "Freud and the Psychodynamic Perspective — textbook illustration",
+      "body": "",
+      "imageSrc": "/images/ch11/fig-ch11-04.jpeg",
+      "imageAlt": "Screenshot illustrating freud and the psychodynamic perspective",
+      "imageCaption": "Freud and the Psychodynamic Perspective — textbook illustration"
     },
     {
       "type": "summary",

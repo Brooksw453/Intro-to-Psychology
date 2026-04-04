@@ -8,18 +8,44 @@
     "Discuss approaches to training and performance appraisal"
   ],
   "keyTerms": [
-    { "term": "Job analysis", "definition": "A systematic process of identifying the tasks, duties, and responsibilities of a job, as well as the knowledge, skills, and abilities required to perform it." },
-    { "term": "KSAOs", "definition": "Knowledge, Skills, Abilities, and Other characteristics — the personal attributes needed to perform a job effectively, identified through job analysis." },
-    { "term": "Structured interview", "definition": "A job interview in which all candidates are asked the same predetermined questions, allowing for more objective comparison between applicants." },
-    { "term": "Performance appraisal", "definition": "A formal evaluation of an employee's job performance, typically conducted by a supervisor, used to provide feedback and make employment decisions." },
-    { "term": "360-degree feedback", "definition": "A performance appraisal method that gathers evaluations from an employee's supervisors, peers, subordinates, and sometimes customers to provide a comprehensive assessment." },
-    { "term": "Training", "definition": "A systematic process in which employees develop job-relevant knowledge, skills, and abilities through instruction, practice, and feedback." }
+    {
+      "term": "Job analysis",
+      "definition": "A systematic process of identifying the tasks, duties, and responsibilities of a job, as well as the knowledge, skills, and abilities required to perform it."
+    },
+    {
+      "term": "KSAOs",
+      "definition": "Knowledge, Skills, Abilities, and Other characteristics — the personal attributes needed to perform a job effectively, identified through job analysis."
+    },
+    {
+      "term": "Structured interview",
+      "definition": "A job interview in which all candidates are asked the same predetermined questions, allowing for more objective comparison between applicants."
+    },
+    {
+      "term": "Performance appraisal",
+      "definition": "A formal evaluation of an employee's job performance, typically conducted by a supervisor, used to provide feedback and make employment decisions."
+    },
+    {
+      "term": "360-degree feedback",
+      "definition": "A performance appraisal method that gathers evaluations from an employee's supervisors, peers, subordinates, and sometimes customers to provide a comprehensive assessment."
+    },
+    {
+      "term": "Training",
+      "definition": "A systematic process in which employees develop job-relevant knowledge, skills, and abilities through instruction, practice, and feedback."
+    }
   ],
   "contentBlocks": [
     {
       "type": "concept",
       "title": "Job Analysis and Employee Selection",
       "body": "The foundation of industrial psychology is **job analysis** — a systematic study of what a job entails. Through observation, interviews, questionnaires, and review of existing documentation, I-O psychologists identify the specific tasks involved in a position and the **KSAOs** (Knowledge, Skills, Abilities, and Other characteristics) required to perform those tasks effectively.\n\nJob analysis serves multiple purposes. It informs the creation of accurate job descriptions and advertisements, guides the development of selection criteria, helps determine fair compensation, and provides the basis for performance evaluation. Without a thorough job analysis, organizations risk hiring people who are poorly suited to their roles.\n\nEmployee selection involves choosing the best candidates from a pool of applicants. I-O psychologists have developed various tools to improve selection decisions, including cognitive ability tests, personality assessments, work sample tests, and **structured interviews**. Research consistently shows that structured interviews — in which all candidates are asked the same predetermined questions — are far more predictive of job performance than unstructured, conversational interviews.\n\nI-O psychologists also study the validity and reliability of selection tools. A selection method has **predictive validity** when scores on the assessment actually predict future job performance. Cognitive ability tests, for example, are among the strongest predictors of job performance across many occupations."
+    },
+    {
+      "type": "image",
+      "title": "Industrial Psychology: Selecting and Evaluating Employees — textbook illustration",
+      "body": "",
+      "imageSrc": "/images/ch13/fig-ch13-12.jpeg",
+      "imageAlt": "Screenshot illustrating industrial psychology: selecting and evaluating employees",
+      "imageCaption": "Industrial Psychology: Selecting and Evaluating Employees — textbook illustration"
     },
     {
       "type": "concept",
@@ -30,6 +56,22 @@
       "type": "example",
       "title": "Real-World Example: Bias in Hiring",
       "body": "Research has revealed significant biases in unstructured hiring processes. Studies show that identical resumes receive different callback rates depending on the applicant's name, suggesting racial and gender bias. I-O psychologists address this by developing structured selection processes with standardized criteria, blind resume reviews, and validated assessment tools. These evidence-based approaches help organizations make fairer and more effective hiring decisions."
+    },
+    {
+      "type": "image",
+      "title": "Industrial Psychology: Selecting and Evaluating Employees — textbook illustration",
+      "body": "",
+      "imageSrc": "/images/ch13/fig-ch13-08.jpeg",
+      "imageAlt": "Screenshot illustrating industrial psychology: selecting and evaluating employees",
+      "imageCaption": "Industrial Psychology: Selecting and Evaluating Employees — textbook illustration"
+    },
+    {
+      "type": "image",
+      "title": "Industrial Psychology: Selecting and Evaluating Employees — textbook illustration",
+      "body": "",
+      "imageSrc": "/images/ch13/fig-ch13-10.jpeg",
+      "imageAlt": "Screenshot illustrating industrial psychology: selecting and evaluating employees",
+      "imageCaption": "Industrial Psychology: Selecting and Evaluating Employees — textbook illustration"
     },
     {
       "type": "summary",

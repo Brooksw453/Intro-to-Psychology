@@ -8,17 +8,40 @@
     "Distinguish between industrial and organizational branches of the field"
   ],
   "keyTerms": [
-    { "term": "Industrial and organizational (I-O) psychology", "definition": "A branch of psychology that applies the principles of psychology to the workplace, focusing on both the selection and evaluation of employees (industrial) and the social dynamics of work (organizational)." },
-    { "term": "Industrial psychology", "definition": "The branch of I-O psychology that focuses on job analysis, employee selection, training, and performance appraisal." },
-    { "term": "Organizational psychology", "definition": "The branch of I-O psychology that examines job satisfaction, leadership, organizational culture, teamwork, and employee motivation." },
-    { "term": "Human factors psychology", "definition": "The study of how workers interact with tools, equipment, and technology in the workplace, with the goal of improving design for safety and efficiency." },
-    { "term": "Hawthorne effect", "definition": "The tendency for people to change their behavior when they know they are being observed, originally discovered during productivity studies at the Hawthorne Works factory." }
+    {
+      "term": "Industrial and organizational (I-O) psychology",
+      "definition": "A branch of psychology that applies the principles of psychology to the workplace, focusing on both the selection and evaluation of employees (industrial) and the social dynamics of work (organizational)."
+    },
+    {
+      "term": "Industrial psychology",
+      "definition": "The branch of I-O psychology that focuses on job analysis, employee selection, training, and performance appraisal."
+    },
+    {
+      "term": "Organizational psychology",
+      "definition": "The branch of I-O psychology that examines job satisfaction, leadership, organizational culture, teamwork, and employee motivation."
+    },
+    {
+      "term": "Human factors psychology",
+      "definition": "The study of how workers interact with tools, equipment, and technology in the workplace, with the goal of improving design for safety and efficiency."
+    },
+    {
+      "term": "Hawthorne effect",
+      "definition": "The tendency for people to change their behavior when they know they are being observed, originally discovered during productivity studies at the Hawthorne Works factory."
+    }
   ],
   "contentBlocks": [
     {
       "type": "concept",
       "title": "Defining I-O Psychology",
       "body": "**Industrial and organizational (I-O) psychology** is a branch of psychology that applies psychological theories, principles, and research findings to workplace settings. Unlike many areas of psychology that focus on understanding individuals in clinical or research settings, I-O psychology directly addresses the practical challenges of the modern workplace.\n\nThe field is broadly divided into two complementary branches. **Industrial psychology**, sometimes called personnel psychology, focuses on identifying the best person for a given job. This includes developing job analyses, creating selection criteria, designing training programs, and evaluating employee performance. The goal is to match the right people to the right positions and help them develop the skills they need to succeed.\n\n**Organizational psychology** takes a broader view, examining the social and psychological dynamics that shape work environments. This includes studying **job satisfaction**, leadership styles, organizational culture, teamwork, and employee motivation. Organizational psychologists seek to understand how workplace environments affect employee well-being and productivity.\n\nA third area, **human factors psychology** (sometimes called ergonomics), studies how workers interact with their tools, equipment, and work environments. Human factors psychologists design systems and interfaces that account for human capabilities and limitations, with the goal of reducing errors and improving safety."
+    },
+    {
+      "type": "image",
+      "title": "What Is Industrial and Organizational Psychology? — textbook illustration",
+      "body": "",
+      "imageSrc": "/images/ch13/fig-ch13-03.jpeg",
+      "imageAlt": "Screenshot illustrating what is industrial and organizational psychology?",
+      "imageCaption": "What Is Industrial and Organizational Psychology? — textbook illustration"
     },
     {
       "type": "concept",
@@ -29,6 +52,22 @@
       "type": "example",
       "title": "Real-World Application: Google's People Analytics",
       "body": "Modern companies like Google employ I-O psychologists and use data-driven approaches — sometimes called \"people analytics\" — to improve hiring, management, and employee satisfaction. Google's Project Oxygen, for example, used data to identify the key behaviors that distinguish effective managers from ineffective ones. They found that being a good coach, empowering teams, and expressing interest in employees' well-being were more important than technical expertise. This research-based approach to management directly reflects the principles of I-O psychology."
+    },
+    {
+      "type": "image",
+      "title": "What Is Industrial and Organizational Psychology? — textbook illustration",
+      "body": "",
+      "imageSrc": "/images/ch13/fig-ch13-05.jpeg",
+      "imageAlt": "Screenshot illustrating what is industrial and organizational psychology?",
+      "imageCaption": "What Is Industrial and Organizational Psychology? — textbook illustration"
+    },
+    {
+      "type": "image",
+      "title": "What Is Industrial and Organizational Psychology? — textbook illustration",
+      "body": "",
+      "imageSrc": "/images/ch13/fig-ch13-06.jpeg",
+      "imageAlt": "Screenshot illustrating what is industrial and organizational psychology?",
+      "imageCaption": "What Is Industrial and Organizational Psychology? — textbook illustration"
     },
     {
       "type": "summary",

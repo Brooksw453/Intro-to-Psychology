@@ -8,16 +8,36 @@
     "Discuss the universality versus cultural specificity of personality models like the Big Five"
   ],
   "keyTerms": [
-    { "term": "Individualistic culture", "definition": "A culture that values personal achievement, independence, and individual identity over group goals." },
-    { "term": "Collectivistic culture", "definition": "A culture that emphasizes group harmony, interdependence, and the well-being of the community over individual desires." },
-    { "term": "Cultural context", "definition": "The social norms, values, beliefs, and practices of a given society that shape how personality is expressed and interpreted." },
-    { "term": "Cross-cultural psychology", "definition": "A branch of psychology that examines how cultural factors influence human behavior, thought, and personality." }
+    {
+      "term": "Individualistic culture",
+      "definition": "A culture that values personal achievement, independence, and individual identity over group goals."
+    },
+    {
+      "term": "Collectivistic culture",
+      "definition": "A culture that emphasizes group harmony, interdependence, and the well-being of the community over individual desires."
+    },
+    {
+      "term": "Cultural context",
+      "definition": "The social norms, values, beliefs, and practices of a given society that shape how personality is expressed and interpreted."
+    },
+    {
+      "term": "Cross-cultural psychology",
+      "definition": "A branch of psychology that examines how cultural factors influence human behavior, thought, and personality."
+    }
   ],
   "contentBlocks": [
     {
       "type": "concept",
       "title": "Culture and the Self",
       "body": "Personality does not develop in a vacuum; it is profoundly shaped by **cultural context**. One of the most important cultural dimensions affecting personality is the distinction between **individualistic cultures** and **collectivistic cultures**.\n\nIn **individualistic cultures**, such as those found in the United States, Canada, Western Europe, and Australia, the emphasis is on personal achievement, autonomy, and self-expression. People in these cultures tend to define themselves by their unique attributes, personal goals, and individual accomplishments. Personality traits like assertiveness, independence, and self-promotion are valued and encouraged.\n\nIn **collectivistic cultures**, common in East Asia, Latin America, Africa, and the Middle East, the focus is on group harmony, social obligations, and interdependence. People in these cultures are more likely to define themselves in terms of their relationships and social roles rather than individual traits. Modesty, cooperation, and fitting in with the group are highly valued.\n\nThese cultural orientations shape not only which personality traits are considered desirable but also how individuals think about themselves. Research has shown that people in individualistic cultures tend to describe themselves using internal attributes (\"I am creative,\" \"I am ambitious\"), while people in collectivistic cultures are more likely to use relational and contextual descriptions (\"I am a good daughter,\" \"I am a loyal friend\")."
+    },
+    {
+      "type": "image",
+      "title": "Cultural Understandings of Personality — textbook illustration",
+      "body": "",
+      "imageSrc": "/images/ch11/fig-ch11-15.jpeg",
+      "imageAlt": "Screenshot illustrating cultural understandings of personality",
+      "imageCaption": "Cultural Understandings of Personality — textbook illustration"
     },
     {
       "type": "concept",

@@ -8,17 +8,40 @@
     "Describe the relationship between cognitive load, attention, and workplace errors"
   ],
   "keyTerms": [
-    { "term": "Human factors psychology", "definition": "The study of how people interact with machines, tools, and technology, with the goal of designing systems that are safe, efficient, and compatible with human capabilities and limitations." },
-    { "term": "Ergonomics", "definition": "The science of designing equipment, workspaces, and systems to fit the physical and cognitive capabilities of the people who use them." },
-    { "term": "Cognitive load", "definition": "The total amount of mental effort required to complete a task, which can be managed through good system design to reduce errors and improve performance." },
-    { "term": "Usability", "definition": "The degree to which a product, system, or interface can be used effectively, efficiently, and satisfactorily by its intended users." },
-    { "term": "Human error", "definition": "Mistakes or unintended actions by workers that can result from poor system design, excessive cognitive demands, fatigue, or inadequate training rather than individual carelessness." }
+    {
+      "term": "Human factors psychology",
+      "definition": "The study of how people interact with machines, tools, and technology, with the goal of designing systems that are safe, efficient, and compatible with human capabilities and limitations."
+    },
+    {
+      "term": "Ergonomics",
+      "definition": "The science of designing equipment, workspaces, and systems to fit the physical and cognitive capabilities of the people who use them."
+    },
+    {
+      "term": "Cognitive load",
+      "definition": "The total amount of mental effort required to complete a task, which can be managed through good system design to reduce errors and improve performance."
+    },
+    {
+      "term": "Usability",
+      "definition": "The degree to which a product, system, or interface can be used effectively, efficiently, and satisfactorily by its intended users."
+    },
+    {
+      "term": "Human error",
+      "definition": "Mistakes or unintended actions by workers that can result from poor system design, excessive cognitive demands, fatigue, or inadequate training rather than individual carelessness."
+    }
   ],
   "contentBlocks": [
     {
       "type": "concept",
       "title": "Understanding Human Factors Psychology",
       "body": "**Human factors psychology** (also called **ergonomics**) studies how people interact with machines, tools, and systems in their work environments. Rather than blaming workers for mistakes, human factors psychologists recognize that most **human errors** result from poorly designed systems that exceed human cognitive or physical capabilities.\n\nThe field encompasses several key areas of study. Attention research examines how workers maintain vigilance during monitoring tasks and how system design can support sustained attention. Cognitive engineering studies how workers interact with complex automated systems and make decisions based on the information software provides. Task analysis breaks down jobs into their component elements to identify opportunities for improving efficiency and safety.\n\nA central concept in human factors psychology is **cognitive load** — the total amount of mental effort required to complete a task. When cognitive demands exceed a worker's capacity, errors increase. Well-designed systems manage cognitive load by presenting information clearly, reducing unnecessary complexity, and providing appropriate decision support.\n\n**Usability** testing is a core method in human factors research. Psychologists observe users as they interact with products or systems, measuring factors like task completion time, error rates, and user satisfaction. This data drives iterative design improvements that make systems more intuitive and less error-prone."
+    },
+    {
+      "type": "image",
+      "title": "Human Factors Psychology and Workplace Design — textbook illustration",
+      "body": "",
+      "imageSrc": "/images/ch13/fig-ch13-15.jpeg",
+      "imageAlt": "Screenshot illustrating human factors psychology and workplace design",
+      "imageCaption": "Human Factors Psychology and Workplace Design — textbook illustration"
     },
     {
       "type": "concept",

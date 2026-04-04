@@ -8,17 +8,40 @@
     "Describe evidence-based stress reduction techniques"
   ],
   "keyTerms": [
-    { "term": "Coping", "definition": "The cognitive and behavioral efforts used to manage, reduce, or tolerate the demands created by stressful situations." },
-    { "term": "Problem-focused coping", "definition": "A coping strategy aimed at directly addressing the source of stress by changing the stressful situation itself, such as studying harder for an exam or seeking additional resources." },
-    { "term": "Emotion-focused coping", "definition": "A coping strategy aimed at managing the emotional distress caused by a stressor rather than changing the stressor itself, such as seeking emotional support or using relaxation techniques." },
-    { "term": "Social support", "definition": "The perception or reality that one is cared for, has assistance available from others, and is part of a supportive social network, which serves as a powerful buffer against the effects of stress." },
-    { "term": "Perceived control", "definition": "The belief that one has the ability to influence outcomes and manage stressors, which significantly reduces the negative effects of stress on health and well-being." }
+    {
+      "term": "Coping",
+      "definition": "The cognitive and behavioral efforts used to manage, reduce, or tolerate the demands created by stressful situations."
+    },
+    {
+      "term": "Problem-focused coping",
+      "definition": "A coping strategy aimed at directly addressing the source of stress by changing the stressful situation itself, such as studying harder for an exam or seeking additional resources."
+    },
+    {
+      "term": "Emotion-focused coping",
+      "definition": "A coping strategy aimed at managing the emotional distress caused by a stressor rather than changing the stressor itself, such as seeking emotional support or using relaxation techniques."
+    },
+    {
+      "term": "Social support",
+      "definition": "The perception or reality that one is cared for, has assistance available from others, and is part of a supportive social network, which serves as a powerful buffer against the effects of stress."
+    },
+    {
+      "term": "Perceived control",
+      "definition": "The belief that one has the ability to influence outcomes and manage stressors, which significantly reduces the negative effects of stress on health and well-being."
+    }
   ],
   "contentBlocks": [
     {
       "type": "concept",
       "title": "Coping Strategies",
       "body": "**Coping** refers to the cognitive and behavioral efforts people use to manage stressful demands. Lazarus and Folkman identified two major types of coping strategies.\n\n**Problem-focused coping** involves taking direct action to change or eliminate the source of stress. Examples include creating a study plan for an upcoming exam, seeking professional advice about a financial problem, or having a difficult conversation with someone causing interpersonal conflict. Problem-focused coping is generally most effective when the stressor is controllable — when there are concrete steps that can be taken to address the situation.\n\n**Emotion-focused coping** aims to reduce the emotional distress associated with a stressor without necessarily changing the situation. Strategies include seeking emotional support from friends and family, reframing the situation in more positive terms, meditation, exercise, and journaling. Emotion-focused coping is particularly valuable when stressors are uncontrollable — when direct action cannot change the situation.\n\nResearch suggests that the most resilient individuals use flexible coping, matching their strategy to the demands of the situation. People who rely exclusively on one type of coping tend to have worse outcomes than those who can adaptively shift between problem-focused and emotion-focused approaches."
+    },
+    {
+      "type": "image",
+      "title": "Regulation of Stress — textbook illustration",
+      "body": "",
+      "imageSrc": "/images/ch14/fig-ch14-22.jpeg",
+      "imageAlt": "Screenshot illustrating regulation of stress",
+      "imageCaption": "Regulation of Stress — textbook illustration"
     },
     {
       "type": "concept",

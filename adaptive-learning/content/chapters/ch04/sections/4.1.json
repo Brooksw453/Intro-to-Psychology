@@ -8,17 +8,40 @@
     "Explain the concept of biological rhythms and their influence on consciousness"
   ],
   "keyTerms": [
-    { "term": "Consciousness", "definition": "An individual's awareness of internal thoughts, feelings, and external stimuli at any given moment." },
-    { "term": "Biological rhythms", "definition": "Internal cycles of biological activity that occur on a regular basis, including circadian rhythms." },
-    { "term": "Circadian rhythm", "definition": "A roughly 24-hour cycle in physiological processes including the sleep-wake cycle, regulated by the brain's suprachiasmatic nucleus." },
-    { "term": "Suprachiasmatic nucleus (SCN)", "definition": "A small region in the hypothalamus that serves as the body's master biological clock, regulating circadian rhythms based on light exposure." },
-    { "term": "Melatonin", "definition": "A hormone produced by the pineal gland that promotes sleepiness and helps regulate the sleep-wake cycle." }
+    {
+      "term": "Consciousness",
+      "definition": "An individual's awareness of internal thoughts, feelings, and external stimuli at any given moment."
+    },
+    {
+      "term": "Biological rhythms",
+      "definition": "Internal cycles of biological activity that occur on a regular basis, including circadian rhythms."
+    },
+    {
+      "term": "Circadian rhythm",
+      "definition": "A roughly 24-hour cycle in physiological processes including the sleep-wake cycle, regulated by the brain's suprachiasmatic nucleus."
+    },
+    {
+      "term": "Suprachiasmatic nucleus (SCN)",
+      "definition": "A small region in the hypothalamus that serves as the body's master biological clock, regulating circadian rhythms based on light exposure."
+    },
+    {
+      "term": "Melatonin",
+      "definition": "A hormone produced by the pineal gland that promotes sleepiness and helps regulate the sleep-wake cycle."
+    }
   ],
   "contentBlocks": [
     {
       "type": "concept",
       "title": "The Nature of Consciousness",
       "body": "**Consciousness** refers to your awareness of your own thoughts, feelings, sensations, and the world around you. Rather than being a simple on-off switch, consciousness exists on a continuum ranging from full, focused awareness to complete unconsciousness.\n\nAt the highest level of awareness, you are fully alert and attentive — for example, when you are carefully following a lecture or navigating a tricky driving situation. Below this level lies a state of automatic processing, where you perform routine tasks (such as walking or brushing your teeth) with minimal conscious attention. Further along the continuum, daydreaming represents a state where your attention drifts away from the immediate environment and turns inward to fantasies and thoughts. Sleep represents a significantly reduced level of consciousness, though the brain remains remarkably active during certain sleep stages. At the far end of the continuum, states such as coma or general anesthesia involve the deepest loss of conscious awareness.\n\nThe study of consciousness has fascinated philosophers and psychologists for centuries. William James, one of the founders of American psychology, described consciousness as a \"stream\" — a continuous, ever-changing flow of thoughts and perceptions rather than a collection of separate, fixed states."
+    },
+    {
+      "type": "image",
+      "title": "What Is Consciousness? — textbook illustration",
+      "body": "",
+      "imageSrc": "/images/ch04/fig-ch04-02.jpeg",
+      "imageAlt": "Screenshot illustrating what is consciousness?",
+      "imageCaption": "What Is Consciousness? — textbook illustration"
     },
     {
       "type": "concept",

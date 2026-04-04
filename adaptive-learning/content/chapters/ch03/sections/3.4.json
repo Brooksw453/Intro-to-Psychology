@@ -8,20 +8,52 @@
     "Explain the role of the spinal cord in reflexes and information relay"
   ],
   "keyTerms": [
-    { "term": "Cerebral cortex", "definition": "The thin, wrinkled outer layer of the cerebrum responsible for higher-order functions such as thinking, planning, language, and voluntary movement." },
-    { "term": "Frontal lobe", "definition": "The region of the cerebral cortex at the front of the brain involved in reasoning, planning, motor control, and speech production." },
-    { "term": "Limbic system", "definition": "A group of interconnected brain structures including the hippocampus, amygdala, and hypothalamus involved in emotion, memory, and motivation." },
-    { "term": "Hippocampus", "definition": "A structure in the limbic system essential for the formation of new explicit memories." },
-    { "term": "Amygdala", "definition": "A limbic system structure involved in processing emotions, especially fear and aggression." },
-    { "term": "Brain stem", "definition": "The oldest and innermost region of the brain, responsible for automatic survival functions such as breathing, heart rate, and consciousness." },
-    { "term": "Cerebellum", "definition": "A structure at the rear of the brain that coordinates voluntary movement, balance, and motor learning." },
-    { "term": "Lateralization", "definition": "The tendency for certain cognitive processes to be specialized to one hemisphere of the brain." }
+    {
+      "term": "Cerebral cortex",
+      "definition": "The thin, wrinkled outer layer of the cerebrum responsible for higher-order functions such as thinking, planning, language, and voluntary movement."
+    },
+    {
+      "term": "Frontal lobe",
+      "definition": "The region of the cerebral cortex at the front of the brain involved in reasoning, planning, motor control, and speech production."
+    },
+    {
+      "term": "Limbic system",
+      "definition": "A group of interconnected brain structures including the hippocampus, amygdala, and hypothalamus involved in emotion, memory, and motivation."
+    },
+    {
+      "term": "Hippocampus",
+      "definition": "A structure in the limbic system essential for the formation of new explicit memories."
+    },
+    {
+      "term": "Amygdala",
+      "definition": "A limbic system structure involved in processing emotions, especially fear and aggression."
+    },
+    {
+      "term": "Brain stem",
+      "definition": "The oldest and innermost region of the brain, responsible for automatic survival functions such as breathing, heart rate, and consciousness."
+    },
+    {
+      "term": "Cerebellum",
+      "definition": "A structure at the rear of the brain that coordinates voluntary movement, balance, and motor learning."
+    },
+    {
+      "term": "Lateralization",
+      "definition": "The tendency for certain cognitive processes to be specialized to one hemisphere of the brain."
+    }
   ],
   "contentBlocks": [
     {
       "type": "concept",
       "title": "Major Brain Structures",
       "body": "The human brain can be understood as a series of structures that developed over the course of evolution, with older regions handling basic survival functions and newer regions supporting complex thought. At the base of the brain sits the **brain stem**, which controls fundamental life-sustaining processes such as breathing, heart rate, blood pressure, and sleep-wake cycles. The brain stem includes the medulla, pons, and midbrain, and it serves as the relay station connecting the spinal cord to higher brain regions.\n\nBehind the brain stem is the **cerebellum**, sometimes called the \"little brain.\" Despite its small size, the cerebellum contains more neurons than the rest of the brain combined. It coordinates voluntary movements, maintains balance and posture, and plays a role in motor learning — the process by which physical actions become automatic through practice.\n\nAbove the brain stem lies the **limbic system**, a ring of structures involved in emotion, motivation, and memory. The **amygdala** processes emotional reactions, particularly fear and aggression. The **hippocampus** is critical for forming new explicit (declarative) memories — the kind you can consciously recall, such as facts and personal experiences. Damage to the hippocampus can result in the inability to form new long-term memories, as demonstrated in the famous case of patient H.M. The hypothalamus, also part of the limbic system, regulates hunger, thirst, body temperature, and the endocrine system."
+    },
+    {
+      "type": "image",
+      "title": "The Brain and Spinal Cord — textbook illustration",
+      "body": "",
+      "imageSrc": "/images/ch03/fig-ch03-20.jpeg",
+      "imageAlt": "Screenshot illustrating the brain and spinal cord",
+      "imageCaption": "The Brain and Spinal Cord — textbook illustration"
     },
     {
       "type": "concept",

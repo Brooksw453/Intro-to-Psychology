@@ -8,18 +8,44 @@
     "Describe the relationship between the nervous system and the endocrine system"
   ],
   "keyTerms": [
-    { "term": "Endocrine system", "definition": "A network of glands that produce, store, and secrete hormones into the bloodstream to regulate bodily functions." },
-    { "term": "Hormone", "definition": "A chemical messenger produced by an endocrine gland that travels through the bloodstream and affects target organs and tissues." },
-    { "term": "Pituitary gland", "definition": "A small gland at the base of the brain often called the 'master gland' because it controls the activity of many other endocrine glands." },
-    { "term": "Adrenal glands", "definition": "Glands located on top of each kidney that produce hormones involved in the stress response, including cortisol and adrenaline (epinephrine)." },
-    { "term": "Thyroid gland", "definition": "A gland in the neck that produces hormones regulating metabolism, energy levels, and growth." },
-    { "term": "Hypothalamus", "definition": "A brain structure that links the nervous system to the endocrine system by directing the pituitary gland to release hormones." }
+    {
+      "term": "Endocrine system",
+      "definition": "A network of glands that produce, store, and secrete hormones into the bloodstream to regulate bodily functions."
+    },
+    {
+      "term": "Hormone",
+      "definition": "A chemical messenger produced by an endocrine gland that travels through the bloodstream and affects target organs and tissues."
+    },
+    {
+      "term": "Pituitary gland",
+      "definition": "A small gland at the base of the brain often called the 'master gland' because it controls the activity of many other endocrine glands."
+    },
+    {
+      "term": "Adrenal glands",
+      "definition": "Glands located on top of each kidney that produce hormones involved in the stress response, including cortisol and adrenaline (epinephrine)."
+    },
+    {
+      "term": "Thyroid gland",
+      "definition": "A gland in the neck that produces hormones regulating metabolism, energy levels, and growth."
+    },
+    {
+      "term": "Hypothalamus",
+      "definition": "A brain structure that links the nervous system to the endocrine system by directing the pituitary gland to release hormones."
+    }
   ],
   "contentBlocks": [
     {
       "type": "concept",
       "title": "The Endocrine System: Chemical Communication",
       "body": "While the nervous system transmits rapid electrical and chemical signals through neurons, the body has a second major communication system that operates more slowly but with widespread, long-lasting effects. The **endocrine system** is a collection of glands that produce chemical messengers called **hormones**. Unlike neurotransmitters, which act across a tiny synaptic gap, hormones are released directly into the bloodstream and travel throughout the body to reach target cells that have the appropriate receptors.\n\nBecause hormones must travel through the circulatory system, their effects take longer to appear — seconds to minutes rather than the milliseconds of neural transmission. However, hormonal effects tend to be more sustained and can influence a wide range of bodily functions including growth, metabolism, reproduction, mood, and the stress response.\n\nThe nervous and endocrine systems are closely integrated. The **hypothalamus**, a brain structure at the base of the forebrain, serves as the critical link between the two systems. It receives information from the nervous system and responds by directing the **pituitary gland** to release or inhibit various hormones. Because the pituitary gland in turn controls many other endocrine glands, it is often called the \"master gland\" of the body."
+    },
+    {
+      "type": "image",
+      "title": "The Endocrine System — textbook illustration",
+      "body": "",
+      "imageSrc": "/images/ch03/fig-ch03-30.jpeg",
+      "imageAlt": "Screenshot illustrating the endocrine system",
+      "imageCaption": "The Endocrine System — textbook illustration"
     },
     {
       "type": "concept",

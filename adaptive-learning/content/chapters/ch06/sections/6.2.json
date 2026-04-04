@@ -48,6 +48,14 @@
       "body": "**Classical conditioning** was discovered by the Russian physiologist Ivan Pavlov while studying digestion in dogs. Pavlov noticed that his dogs began salivating not only when food was placed in their mouths, but also when they saw the lab assistant who usually brought the food. The dogs had learned to associate the sight of the assistant with the arrival of food.\n\nTo study this phenomenon systematically, Pavlov designed an elegant experiment. He began by sounding a tone (a neutral stimulus that initially produced no salivation) and then immediately presenting food powder to the dog. The food powder is called the **unconditioned stimulus (US)** because it naturally and automatically triggers salivation -- the **unconditioned response (UR)**. After multiple pairings of the tone with the food, the tone alone began to produce salivation. The tone had become a **conditioned stimulus (CS)**, and the salivation it produced was now a **conditioned response (CR)**.\n\nSeveral factors influence the strength of classical conditioning. **Timing** is critical: the CS should ideally be presented just before the US (forward conditioning). **Consistency** matters: the CS should reliably predict the US. And **contingency** is essential: the CS must provide new information about the upcoming US. If the US occurs just as frequently without the CS, conditioning will not develop because the CS is not a reliable predictor."
     },
     {
+      "type": "image",
+      "title": "Classical Conditioning — textbook illustration",
+      "body": "",
+      "imageSrc": "/images/ch06/fig-ch06-05.jpeg",
+      "imageAlt": "Screenshot illustrating classical conditioning",
+      "imageCaption": "Classical Conditioning — textbook illustration"
+    },
+    {
       "type": "concept",
       "title": "Principles of Classical Conditioning",
       "body": "Once a conditioned response is established, several important processes can modify it. **Extinction** occurs when the CS is repeatedly presented without the US. Over time, the CR gradually weakens and eventually disappears. If Pavlov's dogs heard the tone many times without receiving food, they would eventually stop salivating to the tone.\n\nHowever, extinction does not erase the original learning. **Spontaneous recovery** is the reappearance of a previously extinguished CR after a rest period. If the dogs were removed from the lab and brought back days later, the tone might again produce some salivation, suggesting that the association was suppressed rather than eliminated during extinction.\n\n**Stimulus generalization** occurs when an organism responds to stimuli that are similar to the CS. A dog conditioned to salivate to a 1000 Hz tone might also salivate to tones of 900 Hz or 1100 Hz. The more similar the stimulus is to the original CS, the stronger the response. **Stimulus discrimination** is the complementary process -- learning to respond to the CS but not to similar stimuli. Through differential training (reinforcing responses to one tone but not others), the dog can learn to distinguish the original CS from similar sounds.\n\nJohn B. Watson famously demonstrated that emotional responses could be classically conditioned in humans. In his controversial **Little Albert** experiment, Watson and Rosalie Rayner conditioned a young child to fear a white rat by pairing the rat with a loud, startling noise. Albert's fear generalized to other white, furry objects, including a rabbit and a Santa Claus mask."
@@ -56,6 +64,14 @@
       "type": "example",
       "title": "Classical Conditioning in Modern Life",
       "body": "Classical conditioning shapes many aspects of everyday experience, often without our awareness. Consider the following examples:\n\n**Advertising** relies heavily on classical conditioning. Companies pair their products (neutral stimuli) with attractive models, upbeat music, or appealing imagery (unconditioned stimuli that naturally produce positive feelings). Over time, consumers develop positive associations with the brand itself.\n\n**Taste aversions** are a powerful form of classical conditioning. If you eat a particular food and then become ill (even if the illness was caused by a virus rather than the food), you may develop a strong aversion to that food. Remarkably, taste aversions can form after just a single pairing and can persist for years. This one-trial learning makes biological sense -- an organism that quickly learns to avoid foods associated with illness has a survival advantage.\n\n**Phobias** can develop through classical conditioning when a neutral object or situation becomes associated with a frightening experience. A child bitten by a dog may develop a lasting fear of all dogs. Understanding this process has led to effective treatments: **systematic desensitization** uses principles of extinction to gradually reduce phobic responses by pairing the feared stimulus with relaxation."
+    },
+    {
+      "type": "image",
+      "title": "Classical Conditioning — textbook illustration",
+      "body": "",
+      "imageSrc": "/images/ch06/fig-ch06-04.jpeg",
+      "imageAlt": "Screenshot illustrating classical conditioning",
+      "imageCaption": "Classical Conditioning — textbook illustration"
     },
     {
       "type": "summary",

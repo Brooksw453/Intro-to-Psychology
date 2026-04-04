@@ -48,6 +48,14 @@
       "body": "Vision begins when light enters the eye through the **cornea**, a transparent protective layer that bends (refracts) incoming light. The light then passes through the **pupil**, the adjustable opening controlled by the colored **iris**. In bright conditions, the iris contracts to reduce the pupil size and limit light entry; in dim conditions, the iris dilates to allow more light in.\n\nBehind the pupil, the **lens** further focuses the light onto the **retina** at the back of the eye. The lens changes shape through a process called **accommodation** to focus on objects at different distances -- flattening for distant objects and thickening for near ones. On the retina, the focused image is actually inverted (upside-down and reversed), but the brain corrects this during perception.\n\nThe retina contains two types of photoreceptor cells. **Rods** number approximately 120 million and are distributed mostly in the peripheral areas of the retina. They are extremely sensitive to light, making them essential for night vision, but they do not detect color. **Cones** number approximately 6 million and are concentrated in the **fovea**, a tiny pit at the center of the retina. Cones require more light to function but provide sharp detail and color vision. When you look directly at something, you are aiming the image at your fovea to take advantage of its dense concentration of cones."
     },
     {
+      "type": "image",
+      "title": "Vision — textbook illustration",
+      "body": "",
+      "imageSrc": "/images/ch05/fig-ch05-12.jpeg",
+      "imageAlt": "Screenshot illustrating vision",
+      "imageCaption": "Vision — textbook illustration"
+    },
+    {
       "type": "concept",
       "title": "Theories of Color Vision",
       "body": "How do we see color? Two complementary theories explain different stages of color processing. The **trichromatic theory** (also called the Young-Helmholtz theory) proposes that the retina contains three types of cones, each maximally sensitive to a different wavelength: short wavelengths (blue), medium wavelengths (green), and long wavelengths (red). Every color we perceive results from the combined pattern of activation across these three cone types. This theory explains color blindness -- if one type of cone is absent or malfunctioning, a person cannot distinguish certain colors. The most common form is red-green color blindness, which occurs more frequently in males because the genes for red and green cones are located on the X chromosome.\n\nThe **opponent-process theory**, proposed by Ewald Hering, argues that color processing occurs in opposing pairs: red versus green, blue versus yellow, and black versus white. This theory explains phenomena that trichromatic theory cannot, such as afterimages. If you stare at a red square for 30 seconds and then look at a white surface, you will see a green afterimage. This happens because the red-sensitive cells become fatigued, and when you shift your gaze, the opponent green process dominates temporarily.\n\nResearch has shown that both theories are correct but operate at different levels. Trichromatic processing occurs at the level of the retina (in the cones), while opponent-process mechanisms operate in the ganglion cells of the retina and in the **lateral geniculate nucleus** of the thalamus. Visual information then travels via the **optic nerve** to the visual cortex in the occipital lobe for higher-level processing."
@@ -56,6 +64,14 @@
       "type": "example",
       "title": "The Blind Spot and Visual Filling-In",
       "body": "Where the optic nerve exits the retina, there are no photoreceptors at all, creating a **blind spot** in each eye. You can demonstrate this: close your right eye, hold a piece of paper at arm's length with a small X on the right side and a dot on the left, focus on the X, and slowly bring the paper closer. At a certain distance, the dot will disappear as its image falls on your blind spot.\n\nRemarkably, you do not normally notice your blind spots. The brain fills in the missing information using data from the surrounding area and from the other eye. This phenomenon illustrates a crucial principle: perception is not a passive recording of reality but an active construction by the brain. Your visual system constantly makes predictions and fills in gaps to present a seamless, coherent visual experience."
+    },
+    {
+      "type": "image",
+      "title": "Vision — textbook illustration",
+      "body": "",
+      "imageSrc": "/images/ch05/fig-ch05-13.jpeg",
+      "imageAlt": "Screenshot illustrating vision",
+      "imageCaption": "Vision — textbook illustration"
     },
     {
       "type": "summary",

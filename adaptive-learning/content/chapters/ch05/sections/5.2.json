@@ -36,6 +36,14 @@
       "body": "Both light and sound travel in waves, and understanding these waves is essential for understanding how we see and hear. A wave can be described by three key properties: **wavelength**, **amplitude**, and **frequency**.\n\n**Wavelength** is the distance from one peak of a wave to the next. For light, wavelength determines the color we perceive -- shorter wavelengths correspond to blue and violet light, while longer wavelengths correspond to red and orange. For sound, wavelength is related to **pitch** -- how high or low a sound seems. Short-wavelength sound waves produce high-pitched sounds (like a whistle), while long-wavelength waves produce low-pitched sounds (like a bass drum).\n\n**Amplitude** refers to the height of the wave from its midpoint to its peak. For light, greater amplitude means greater brightness. For sound, greater amplitude means greater loudness. A whisper has low amplitude; a shout has high amplitude.\n\n**Frequency** is the number of complete wave cycles that pass a given point per second and is measured in **hertz (Hz)**. Frequency and wavelength are inversely related -- as wavelength increases, frequency decreases, and vice versa. The human ear can detect sounds ranging from about 20 Hz to 20,000 Hz, though sensitivity to high frequencies typically declines with age."
     },
     {
+      "type": "image",
+      "title": "Waves and Wavelengths — textbook illustration",
+      "body": "",
+      "imageSrc": "/images/ch05/fig-ch05-09.jpeg",
+      "imageAlt": "Screenshot illustrating waves and wavelengths",
+      "imageCaption": "Waves and Wavelengths — textbook illustration"
+    },
+    {
       "type": "concept",
       "title": "The Electromagnetic Spectrum and Visible Light",
       "body": "Light is a form of electromagnetic radiation that travels in waves at approximately 186,000 miles per second. The **electromagnetic spectrum** encompasses the full range of electromagnetic wavelengths, from extremely short gamma rays (used in medical imaging) to very long radio waves (used in broadcasting).\n\nHumans can only see a tiny sliver of this spectrum, known as the **visible spectrum**, which spans wavelengths of approximately 380 to 740 nanometers. Within this range, different wavelengths are perceived as different colors: violet at the short end, progressing through blue, green, yellow, and orange, to red at the long end. White light, such as sunlight, contains all wavelengths of the visible spectrum mixed together. When white light passes through a prism, it separates into its component wavelengths, producing a rainbow.\n\nOther animals can detect wavelengths outside the human visible range. Bees, for example, can see ultraviolet light, which helps them locate nectar-producing patterns on flowers that are invisible to the human eye. Some snakes can detect infrared radiation, allowing them to sense the body heat of prey in complete darkness. These examples remind us that our perception of reality is shaped and limited by the biological capabilities of our sensory systems."
@@ -44,6 +52,14 @@
       "type": "example",
       "title": "Sound Waves in Music",
       "body": "Music provides an excellent illustration of how wave properties translate into perceptual experience. When a guitarist plucks a string, the string vibrates back and forth, creating sound waves that travel through the air to your ears. A thicker, longer string vibrates more slowly, producing a low-frequency wave that you perceive as a low pitch. A thinner, shorter string vibrates faster, producing a high-frequency wave perceived as a high pitch.\n\nThe loudness of the note depends on amplitude -- how hard the string is plucked determines the height of the resulting sound wave. Strumming gently produces a soft tone (low amplitude), while strumming forcefully produces a loud tone (high amplitude). A note's **timbre**, or tonal quality, explains why a guitar and a piano playing the same note at the same volume still sound distinctly different. Timbre results from the unique combination of additional frequencies (overtones) that each instrument produces alongside the fundamental frequency."
+    },
+    {
+      "type": "image",
+      "title": "Waves and Wavelengths — textbook illustration",
+      "body": "",
+      "imageSrc": "/images/ch05/fig-ch05-07.jpeg",
+      "imageAlt": "Screenshot illustrating waves and wavelengths",
+      "imageCaption": "Waves and Wavelengths — textbook illustration"
     },
     {
       "type": "summary",

@@ -8,18 +8,44 @@
     "Discuss the typical sleep cycle and how it progresses through the night"
   ],
   "keyTerms": [
-    { "term": "NREM sleep", "definition": "Non-rapid eye movement sleep, encompassing stages 1-3 of the sleep cycle, characterized by progressively deeper sleep and slower brain waves." },
-    { "term": "REM sleep", "definition": "Rapid eye movement sleep, a stage characterized by fast brain wave activity, vivid dreaming, and temporary muscle paralysis." },
-    { "term": "Sleep spindles", "definition": "Brief bursts of rapid brain wave activity that occur during NREM stage 2, thought to be involved in memory consolidation." },
-    { "term": "Delta waves", "definition": "Slow, high-amplitude brain waves associated with deep NREM stage 3 sleep." },
-    { "term": "Sleep cycle", "definition": "A complete progression through all sleep stages, lasting approximately 90 minutes, repeated 4-5 times per night." },
-    { "term": "Electroencephalogram (EEG)", "definition": "A device that measures and records the brain's electrical activity through electrodes placed on the scalp." }
+    {
+      "term": "NREM sleep",
+      "definition": "Non-rapid eye movement sleep, encompassing stages 1-3 of the sleep cycle, characterized by progressively deeper sleep and slower brain waves."
+    },
+    {
+      "term": "REM sleep",
+      "definition": "Rapid eye movement sleep, a stage characterized by fast brain wave activity, vivid dreaming, and temporary muscle paralysis."
+    },
+    {
+      "term": "Sleep spindles",
+      "definition": "Brief bursts of rapid brain wave activity that occur during NREM stage 2, thought to be involved in memory consolidation."
+    },
+    {
+      "term": "Delta waves",
+      "definition": "Slow, high-amplitude brain waves associated with deep NREM stage 3 sleep."
+    },
+    {
+      "term": "Sleep cycle",
+      "definition": "A complete progression through all sleep stages, lasting approximately 90 minutes, repeated 4-5 times per night."
+    },
+    {
+      "term": "Electroencephalogram (EEG)",
+      "definition": "A device that measures and records the brain's electrical activity through electrodes placed on the scalp."
+    }
   ],
   "contentBlocks": [
     {
       "type": "concept",
       "title": "NREM Sleep Stages",
       "body": "Scientists study sleep by recording brain wave patterns using an **electroencephalogram (EEG)**. These recordings reveal that sleep is not a uniform state but a series of distinct stages with characteristic brain activity patterns.\n\n**NREM sleep** (non-rapid eye movement sleep) includes three stages of progressively deeper sleep. Stage 1 is the lightest stage, lasting only a few minutes as you transition from wakefulness to sleep. Brain waves slow from the rapid beta waves of alertness to the slightly slower alpha waves and then to theta waves. During this stage, you may experience hypnagogic hallucinations — brief, dreamlike sensory experiences — or sudden muscle contractions called hypnic jerks.\n\nStage 2 represents a deeper level of sleep and accounts for roughly half of your total sleep time. Brain waves continue to slow, but this stage is marked by the appearance of **sleep spindles** — brief bursts of rapid neural activity — and K-complexes (large, slow waves). Sleep spindles are believed to play an important role in memory consolidation, helping transfer information from short-term to long-term storage.\n\nStage 3 is the deepest stage of NREM sleep, often called slow-wave sleep. The EEG shows predominantly **delta waves** — slow, high-amplitude waves indicating that large groups of neurons are firing in synchrony. This stage is most important for physical restoration: growth hormone is released, tissue repair occurs, and the immune system is strengthened. It is very difficult to wake someone from stage 3 sleep, and if awakened, the person typically feels groggy and disoriented."
+    },
+    {
+      "type": "image",
+      "title": "Stages of Sleep — textbook illustration",
+      "body": "",
+      "imageSrc": "/images/ch04/fig-ch04-08.jpeg",
+      "imageAlt": "Screenshot illustrating stages of sleep",
+      "imageCaption": "Stages of Sleep — textbook illustration"
     },
     {
       "type": "concept",
@@ -30,6 +56,22 @@
       "type": "example",
       "title": "Real-World Example: Why Alarm Clocks Feel Worse at Certain Times",
       "body": "Have you ever noticed that waking up feels much harder at some times than others, even when you have slept the same number of hours? This is because your alarm may be interrupting different stages of sleep. Being awakened from deep stage 3 NREM sleep produces the most severe grogginess (called sleep inertia), while waking during lighter stage 1 or stage 2 sleep feels relatively easy. Some modern \"smart alarm\" apps attempt to address this by using motion sensors to estimate your sleep stage and wake you during a lighter phase within a set time window, aligning with the natural structure of the **sleep cycle**."
+    },
+    {
+      "type": "image",
+      "title": "Stages of Sleep — textbook illustration",
+      "body": "",
+      "imageSrc": "/images/ch04/fig-ch04-07.jpeg",
+      "imageAlt": "Screenshot illustrating stages of sleep",
+      "imageCaption": "Stages of Sleep — textbook illustration"
+    },
+    {
+      "type": "image",
+      "title": "Stages of Sleep — textbook illustration",
+      "body": "",
+      "imageSrc": "/images/ch04/fig-ch04-11.jpeg",
+      "imageAlt": "Screenshot illustrating stages of sleep",
+      "imageCaption": "Stages of Sleep — textbook illustration"
     },
     {
       "type": "summary",

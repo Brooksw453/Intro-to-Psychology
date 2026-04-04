@@ -8,18 +8,44 @@
     "Evaluate the strengths and limitations of the trait approach to personality"
   ],
   "keyTerms": [
-    { "term": "Traits", "definition": "Relatively stable characteristics that describe patterns of thinking, feeling, and behaving." },
-    { "term": "Five Factor Model (Big Five)", "definition": "A widely accepted model identifying five broad dimensions of personality: openness, conscientiousness, extraversion, agreeableness, and neuroticism." },
-    { "term": "Factor analysis", "definition": "A statistical technique used to identify clusters of related traits by analyzing correlations among a large number of variables." },
-    { "term": "Openness to experience", "definition": "A Big Five trait characterized by imagination, curiosity, appreciation for art, and willingness to try new things." },
-    { "term": "Conscientiousness", "definition": "A Big Five trait characterized by organization, dependability, self-discipline, and goal-directed behavior." },
-    { "term": "Neuroticism", "definition": "A Big Five trait characterized by emotional instability, anxiety, moodiness, and proneness to negative emotions." }
+    {
+      "term": "Traits",
+      "definition": "Relatively stable characteristics that describe patterns of thinking, feeling, and behaving."
+    },
+    {
+      "term": "Five Factor Model (Big Five)",
+      "definition": "A widely accepted model identifying five broad dimensions of personality: openness, conscientiousness, extraversion, agreeableness, and neuroticism."
+    },
+    {
+      "term": "Factor analysis",
+      "definition": "A statistical technique used to identify clusters of related traits by analyzing correlations among a large number of variables."
+    },
+    {
+      "term": "Openness to experience",
+      "definition": "A Big Five trait characterized by imagination, curiosity, appreciation for art, and willingness to try new things."
+    },
+    {
+      "term": "Conscientiousness",
+      "definition": "A Big Five trait characterized by organization, dependability, self-discipline, and goal-directed behavior."
+    },
+    {
+      "term": "Neuroticism",
+      "definition": "A Big Five trait characterized by emotional instability, anxiety, moodiness, and proneness to negative emotions."
+    }
   ],
   "contentBlocks": [
     {
       "type": "concept",
       "title": "Early Trait Theories",
       "body": "The trait approach to personality seeks to identify and measure the fundamental dimensions along which people differ. Rather than explaining the origins of personality (as psychodynamic and humanistic theories attempt to do), trait theories focus on describing personality in a systematic, quantifiable way.\n\n**Gordon Allport** (1897-1967) was one of the earliest trait theorists. He combed through an English dictionary and identified over 4,500 words describing personality traits. Allport organized these into three levels: **cardinal traits** (a single dominant trait that defines virtually everything a person does, which is rare), **central traits** (the five to ten traits that form the core of personality, such as honesty or sociability), and **secondary traits** (situational preferences and attitudes, such as disliking crowds).\n\n**Raymond Cattell** (1905-1998) used a statistical technique called **factor analysis** to reduce Allport's extensive list to 16 source traits, which he measured using his 16 Personality Factor (16PF) Questionnaire. Factor analysis identifies clusters of traits that tend to co-occur, grouping them into broader dimensions.\n\n**Hans Eysenck** (1916-1997) argued for an even simpler model, proposing that personality could be described along just two (later three) major dimensions: **extraversion-introversion**, **neuroticism-stability**, and **psychoticism** (the tendency toward aggressive, antisocial behavior). Eysenck linked these dimensions to biological differences in nervous system functioning."
+    },
+    {
+      "type": "image",
+      "title": "Trait Theorists — textbook illustration",
+      "body": "",
+      "imageSrc": "/images/ch11/fig-ch11-14.jpeg",
+      "imageAlt": "Screenshot illustrating trait theorists",
+      "imageCaption": "Trait Theorists — textbook illustration"
     },
     {
       "type": "concept",
@@ -30,6 +56,14 @@
       "type": "example",
       "title": "Big Five Traits in Everyday Life",
       "body": "Consider how the Big Five might describe two different roommates. Sam scores high on **conscientiousness** and **agreeableness** but low on **openness**. Sam keeps the apartment spotless, always pays bills on time, is considerate about noise, but prefers a predictable routine and rarely suggests trying new restaurants or activities.\n\nTaylor scores high on **extraversion** and **openness** but low on **conscientiousness**. Taylor is energetic, constantly inviting friends over, eager to explore new cuisines and hobbies, but often leaves dishes in the sink and forgets scheduled chores.\n\nTheir personality differences, quantifiable along Big Five dimensions, help explain both their individual behaviors and the friction that might arise between them. Importantly, trait theory does not label one profile as \"better\" than another -- each combination has its own strengths and challenges in different contexts."
+    },
+    {
+      "type": "image",
+      "title": "Trait Theorists — textbook illustration",
+      "body": "",
+      "imageSrc": "/images/ch11/fig-ch11-13.jpeg",
+      "imageAlt": "Screenshot illustrating trait theorists",
+      "imageCaption": "Trait Theorists — textbook illustration"
     },
     {
       "type": "summary",

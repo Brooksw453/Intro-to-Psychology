@@ -8,17 +8,40 @@
     "Discuss the connection between stress and mental health conditions"
   ],
   "keyTerms": [
-    { "term": "Psychoneuroimmunology", "definition": "The field that studies the connections between psychological processes, the nervous system, and the immune system, particularly how stress affects immune functioning." },
-    { "term": "Immunosuppression", "definition": "The reduction in immune system effectiveness caused by factors such as chronic stress, which increases vulnerability to illness and slows healing." },
-    { "term": "Coronary heart disease", "definition": "A condition in which the blood vessels supplying the heart become narrowed or blocked, strongly linked to chronic stress, hostility, and Type A behavior patterns." },
-    { "term": "Type A behavior pattern", "definition": "A behavioral style characterized by competitiveness, time urgency, hostility, and impatience, associated with increased risk of cardiovascular disease." },
-    { "term": "Psychosomatic illness", "definition": "A physical condition that is caused or significantly worsened by psychological factors such as stress, anxiety, or emotional conflict." }
+    {
+      "term": "Psychoneuroimmunology",
+      "definition": "The field that studies the connections between psychological processes, the nervous system, and the immune system, particularly how stress affects immune functioning."
+    },
+    {
+      "term": "Immunosuppression",
+      "definition": "The reduction in immune system effectiveness caused by factors such as chronic stress, which increases vulnerability to illness and slows healing."
+    },
+    {
+      "term": "Coronary heart disease",
+      "definition": "A condition in which the blood vessels supplying the heart become narrowed or blocked, strongly linked to chronic stress, hostility, and Type A behavior patterns."
+    },
+    {
+      "term": "Type A behavior pattern",
+      "definition": "A behavioral style characterized by competitiveness, time urgency, hostility, and impatience, associated with increased risk of cardiovascular disease."
+    },
+    {
+      "term": "Psychosomatic illness",
+      "definition": "A physical condition that is caused or significantly worsened by psychological factors such as stress, anxiety, or emotional conflict."
+    }
   ],
   "contentBlocks": [
     {
       "type": "concept",
       "title": "Stress and the Immune System",
       "body": "The field of **psychoneuroimmunology** studies how psychological processes, the nervous system, and the immune system interact. Research in this field has demonstrated that chronic stress significantly weakens immune function, a process called **immunosuppression**.\n\nWhen the body is under stress, cortisol released by the HPA axis suppresses the production and activity of lymphocytes — the white blood cells that fight infection. Short-term stress can actually enhance immune function temporarily (preparing the body for potential injury), but prolonged stress has the opposite effect, reducing the body's ability to fight infections, heal wounds, and respond to vaccines.\n\nClassic studies by Janice Kiecolt-Glaser and colleagues demonstrated this relationship clearly. In one study, medical students showed significant decreases in immune function during exam periods compared to less stressful times. In another, caregivers of people with Alzheimer's disease — who experience chronic stress — showed slower wound healing and reduced antibody response to flu vaccines compared to non-caregiving controls.\n\nStress also contributes to illness through behavioral pathways. People under stress are more likely to engage in unhealthy behaviors such as smoking, excessive alcohol consumption, poor diet, and inadequate sleep — all of which further compromise immune function and overall health."
+    },
+    {
+      "type": "image",
+      "title": "Stress and Illness — textbook illustration",
+      "body": "",
+      "imageSrc": "/images/ch14/fig-ch14-19.jpeg",
+      "imageAlt": "Screenshot illustrating stress and illness",
+      "imageCaption": "Stress and Illness — textbook illustration"
     },
     {
       "type": "concept",
@@ -29,6 +52,22 @@
       "type": "example",
       "title": "Real-World Example: Caregiver Stress and Health",
       "body": "Family caregivers of individuals with chronic illnesses such as Alzheimer's disease provide a compelling real-world example of how chronic stress affects health. Research shows that caregivers experience higher rates of depression, cardiovascular disease, and impaired immune function compared to non-caregivers of similar age. Kiecolt-Glaser's research found that wounds healed 24% more slowly in caregivers than in controls. This illustrates the profound biological impact of sustained psychological stress."
+    },
+    {
+      "type": "image",
+      "title": "Stress and Illness — textbook illustration",
+      "body": "",
+      "imageSrc": "/images/ch14/fig-ch14-21.jpeg",
+      "imageAlt": "Screenshot illustrating stress and illness",
+      "imageCaption": "Stress and Illness — textbook illustration"
+    },
+    {
+      "type": "image",
+      "title": "Stress and Illness — textbook illustration",
+      "body": "",
+      "imageSrc": "/images/ch14/fig-ch14-17.jpeg",
+      "imageAlt": "Screenshot illustrating stress and illness",
+      "imageCaption": "Stress and Illness — textbook illustration"
     },
     {
       "type": "summary",

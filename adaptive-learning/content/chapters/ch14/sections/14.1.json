@@ -8,18 +8,44 @@
     "Explain the role of the HPA axis and sympathetic nervous system in the stress response"
   ],
   "keyTerms": [
-    { "term": "Stress", "definition": "A process whereby an individual perceives and responds to events appraised as overwhelming or threatening to one's well-being." },
-    { "term": "Stressor", "definition": "An event, experience, or environmental condition that triggers the stress response." },
-    { "term": "Eustress", "definition": "A positive form of stress that can motivate performance and is associated with manageable challenges, excitement, or personal growth." },
-    { "term": "Distress", "definition": "A negative form of stress that overwhelms coping resources and can lead to anxiety, diminished performance, and health problems." },
-    { "term": "General adaptation syndrome (GAS)", "definition": "Hans Selye's three-stage model of the body's physiological response to prolonged stress: alarm, resistance, and exhaustion." },
-    { "term": "HPA axis", "definition": "The hypothalamic-pituitary-adrenal axis — a neuroendocrine system that regulates the body's stress response by releasing cortisol and other stress hormones." }
+    {
+      "term": "Stress",
+      "definition": "A process whereby an individual perceives and responds to events appraised as overwhelming or threatening to one's well-being."
+    },
+    {
+      "term": "Stressor",
+      "definition": "An event, experience, or environmental condition that triggers the stress response."
+    },
+    {
+      "term": "Eustress",
+      "definition": "A positive form of stress that can motivate performance and is associated with manageable challenges, excitement, or personal growth."
+    },
+    {
+      "term": "Distress",
+      "definition": "A negative form of stress that overwhelms coping resources and can lead to anxiety, diminished performance, and health problems."
+    },
+    {
+      "term": "General adaptation syndrome (GAS)",
+      "definition": "Hans Selye's three-stage model of the body's physiological response to prolonged stress: alarm, resistance, and exhaustion."
+    },
+    {
+      "term": "HPA axis",
+      "definition": "The hypothalamic-pituitary-adrenal axis — a neuroendocrine system that regulates the body's stress response by releasing cortisol and other stress hormones."
+    }
   ],
   "contentBlocks": [
     {
       "type": "concept",
       "title": "Understanding Stress",
       "body": "**Stress** is a process in which an individual perceives and responds to events that are appraised as overwhelming or threatening. The events that provoke the stress response are called **stressors**, while the reactions to those events — both physiological and psychological — constitute the stress response.\n\nImportantly, not all stress is harmful. **Eustress** is a positive form of stress associated with manageable challenges, excitement, and motivation. Starting a new job, preparing for a competition, or working toward an important goal can all produce eustress that enhances performance. **Distress**, by contrast, occurs when demands exceed coping resources and leads to anxiety, diminished functioning, and potential health problems.\n\nThe experience of stress is highly subjective. The same event can be perceived as threatening by one person and challenging by another. This is captured by Richard Lazarus's **cognitive appraisal** model, which proposes that stress depends on two evaluations: *primary appraisal* (\"Is this event a threat?\") and *secondary appraisal* (\"Do I have the resources to cope with it?\"). An event becomes stressful only when a person perceives it as threatening AND believes their coping resources are insufficient."
+    },
+    {
+      "type": "image",
+      "title": "What Is Stress? — textbook illustration",
+      "body": "",
+      "imageSrc": "/images/ch14/fig-ch14-06.jpeg",
+      "imageAlt": "Screenshot illustrating what is stress?",
+      "imageCaption": "What Is Stress? — textbook illustration"
     },
     {
       "type": "concept",
@@ -30,6 +56,22 @@
       "type": "example",
       "title": "Real-World Example: The Stress of College Life",
       "body": "College students frequently experience both eustress and distress. Preparing for an exam can produce eustress that motivates studying, while facing multiple deadlines, financial pressures, and social challenges simultaneously can produce distress. Research shows that college students who experience chronic stress without adequate coping resources are more susceptible to illness, particularly during finals week — a real-world demonstration of Selye's exhaustion stage."
+    },
+    {
+      "type": "image",
+      "title": "What Is Stress? — textbook illustration",
+      "body": "",
+      "imageSrc": "/images/ch14/fig-ch14-03.jpeg",
+      "imageAlt": "Screenshot illustrating what is stress?",
+      "imageCaption": "What Is Stress? — textbook illustration"
+    },
+    {
+      "type": "image",
+      "title": "What Is Stress? — textbook illustration",
+      "body": "",
+      "imageSrc": "/images/ch14/fig-ch14-08.jpeg",
+      "imageAlt": "Screenshot illustrating what is stress?",
+      "imageCaption": "What Is Stress? — textbook illustration"
     },
     {
       "type": "summary",

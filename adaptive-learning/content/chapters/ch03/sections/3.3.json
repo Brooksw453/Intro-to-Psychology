@@ -8,19 +8,48 @@
     "Explain the roles of the sympathetic and parasympathetic divisions of the autonomic nervous system"
   ],
   "keyTerms": [
-    { "term": "Central nervous system (CNS)", "definition": "The part of the nervous system consisting of the brain and spinal cord; serves as the main processing center for the entire nervous system." },
-    { "term": "Peripheral nervous system (PNS)", "definition": "The part of the nervous system that connects the central nervous system to the rest of the body, including sensory and motor neurons." },
-    { "term": "Somatic nervous system", "definition": "The division of the PNS that controls voluntary movements of skeletal muscles and carries sensory information to the CNS." },
-    { "term": "Autonomic nervous system", "definition": "The division of the PNS that regulates involuntary bodily functions such as heart rate, digestion, and breathing." },
-    { "term": "Sympathetic nervous system", "definition": "The division of the autonomic nervous system that mobilizes the body's energy and resources during times of stress or danger (fight-or-flight response)." },
-    { "term": "Parasympathetic nervous system", "definition": "The division of the autonomic nervous system that calms the body, conserves energy, and maintains routine bodily functions (rest-and-digest response)." },
-    { "term": "Fight-or-flight response", "definition": "A physiological reaction triggered by the sympathetic nervous system in response to perceived threat, preparing the body for action." }
+    {
+      "term": "Central nervous system (CNS)",
+      "definition": "The part of the nervous system consisting of the brain and spinal cord; serves as the main processing center for the entire nervous system."
+    },
+    {
+      "term": "Peripheral nervous system (PNS)",
+      "definition": "The part of the nervous system that connects the central nervous system to the rest of the body, including sensory and motor neurons."
+    },
+    {
+      "term": "Somatic nervous system",
+      "definition": "The division of the PNS that controls voluntary movements of skeletal muscles and carries sensory information to the CNS."
+    },
+    {
+      "term": "Autonomic nervous system",
+      "definition": "The division of the PNS that regulates involuntary bodily functions such as heart rate, digestion, and breathing."
+    },
+    {
+      "term": "Sympathetic nervous system",
+      "definition": "The division of the autonomic nervous system that mobilizes the body's energy and resources during times of stress or danger (fight-or-flight response)."
+    },
+    {
+      "term": "Parasympathetic nervous system",
+      "definition": "The division of the autonomic nervous system that calms the body, conserves energy, and maintains routine bodily functions (rest-and-digest response)."
+    },
+    {
+      "term": "Fight-or-flight response",
+      "definition": "A physiological reaction triggered by the sympathetic nervous system in response to perceived threat, preparing the body for action."
+    }
   ],
   "contentBlocks": [
     {
       "type": "concept",
       "title": "Organization of the Nervous System",
       "body": "The human nervous system is a vast communication network that can be divided into two major parts. The **central nervous system (CNS)** consists of the brain and spinal cord and serves as the command center for the entire body. The **peripheral nervous system (PNS)** includes all the nerves that branch out from the brain and spinal cord and extend to every other part of the body, connecting the CNS to muscles, glands, and sensory receptors.\n\nThe PNS is further divided into two functional components. The **somatic nervous system** controls voluntary movements — the actions you consciously decide to perform, such as reaching for a glass of water or typing on a keyboard. It also carries sensory information (such as touch, pain, and temperature) from the body's receptors back to the CNS for processing.\n\nThe **autonomic nervous system** operates largely below conscious awareness and regulates the body's internal environment. It controls functions that you generally do not think about, including heart rate, digestion, respiratory rate, and pupil dilation. The autonomic nervous system is essential for maintaining homeostasis, the stable internal conditions that the body needs to function properly."
+    },
+    {
+      "type": "image",
+      "title": "Parts of the Nervous System — textbook illustration",
+      "body": "",
+      "imageSrc": "/images/ch03/fig-ch03-13.jpeg",
+      "imageAlt": "Screenshot illustrating parts of the nervous system",
+      "imageCaption": "Parts of the Nervous System — textbook illustration"
     },
     {
       "type": "concept",
@@ -31,6 +60,14 @@
       "type": "example",
       "title": "Real-World Example: Stress and the Autonomic Nervous System",
       "body": "Consider what happens in your body before giving a public speech. As you approach the podium, your sympathetic nervous system activates: your heart pounds, your palms sweat, your mouth goes dry, and you may feel butterflies in your stomach as blood is diverted away from your digestive system. Once the speech is over and the perceived threat has passed, your parasympathetic nervous system gradually restores calm — your heart rate slows, your breathing deepens, and digestion resumes. This everyday experience demonstrates how the two branches of the autonomic nervous system constantly balance activation and relaxation to help you respond to the demands of your environment."
+    },
+    {
+      "type": "image",
+      "title": "Parts of the Nervous System — textbook illustration",
+      "body": "",
+      "imageSrc": "/images/ch03/fig-ch03-14.jpeg",
+      "imageAlt": "Screenshot illustrating parts of the nervous system",
+      "imageCaption": "Parts of the Nervous System — textbook illustration"
     },
     {
       "type": "summary",

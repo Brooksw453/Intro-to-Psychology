@@ -8,17 +8,40 @@
     "Describe the major theoretical perspectives on personality"
   ],
   "keyTerms": [
-    { "term": "Personality", "definition": "The long-standing traits and patterns that propel individuals to consistently think, feel, and behave in specific ways." },
-    { "term": "Psychodynamic perspective", "definition": "A theoretical approach that emphasizes unconscious processes and early childhood experiences as determinants of personality." },
-    { "term": "Humanistic perspective", "definition": "A theoretical approach that emphasizes personal growth, free will, and the inherent goodness of people." },
-    { "term": "Trait perspective", "definition": "A theoretical approach that focuses on identifying and measuring stable individual characteristics called traits." },
-    { "term": "Social-cognitive perspective", "definition": "A theoretical approach that emphasizes the interaction of cognitive processes, behavior, and the environment in shaping personality." }
+    {
+      "term": "Personality",
+      "definition": "The long-standing traits and patterns that propel individuals to consistently think, feel, and behave in specific ways."
+    },
+    {
+      "term": "Psychodynamic perspective",
+      "definition": "A theoretical approach that emphasizes unconscious processes and early childhood experiences as determinants of personality."
+    },
+    {
+      "term": "Humanistic perspective",
+      "definition": "A theoretical approach that emphasizes personal growth, free will, and the inherent goodness of people."
+    },
+    {
+      "term": "Trait perspective",
+      "definition": "A theoretical approach that focuses on identifying and measuring stable individual characteristics called traits."
+    },
+    {
+      "term": "Social-cognitive perspective",
+      "definition": "A theoretical approach that emphasizes the interaction of cognitive processes, behavior, and the environment in shaping personality."
+    }
   ],
   "contentBlocks": [
     {
       "type": "concept",
       "title": "Defining Personality",
       "body": "**Personality** refers to the long-standing traits and patterns that propel individuals to consistently think, feel, and behave in specific ways. It is what makes you uniquely you -- the characteristic way you approach the world, interact with others, and respond to challenges. While your mood may shift from hour to hour, your personality remains relatively stable across situations and over time.\n\nPsychologists who study personality are interested in several fundamental questions. Why do people differ from one another? How consistent is behavior across different situations? Can personality change over the lifespan, and if so, how? What makes someone psychologically healthy versus unhealthy? These questions have driven the development of multiple theoretical perspectives, each offering a different lens for understanding human individuality.\n\nPersonality is not merely an academic curiosity. Understanding personality has practical implications for clinical psychology, organizational behavior, education, and everyday social interactions. Employers use personality assessments in hiring decisions, therapists consider personality patterns when developing treatment plans, and researchers study personality to predict outcomes ranging from academic achievement to physical health."
+    },
+    {
+      "type": "image",
+      "title": "What Is Personality? — textbook illustration",
+      "body": "",
+      "imageSrc": "/images/ch11/fig-ch11-03.jpeg",
+      "imageAlt": "Screenshot illustrating what is personality?",
+      "imageCaption": "What Is Personality? — textbook illustration"
     },
     {
       "type": "concept",

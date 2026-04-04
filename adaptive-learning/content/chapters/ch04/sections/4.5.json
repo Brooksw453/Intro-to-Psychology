@@ -8,19 +8,48 @@
     "Describe the concepts of tolerance, dependence, and substance use disorder"
   ],
   "keyTerms": [
-    { "term": "Psychoactive drug", "definition": "A chemical substance that alters mood, perception, or behavior by acting on the central nervous system." },
-    { "term": "Depressant", "definition": "A class of drugs that slows CNS activity, reduces neural firing, and decreases arousal; includes alcohol, barbiturates, and benzodiazepines." },
-    { "term": "Stimulant", "definition": "A class of drugs that increases CNS activity, heightens alertness, and elevates mood; includes caffeine, nicotine, cocaine, and amphetamines." },
-    { "term": "Opioid", "definition": "A class of drugs derived from or chemically similar to the opium poppy that reduces pain perception and produces euphoria by mimicking endorphins." },
-    { "term": "Hallucinogen", "definition": "A class of drugs that distort perceptions, alter mood, and may produce vivid sensory experiences not based in reality; includes LSD, psilocybin, and marijuana." },
-    { "term": "Tolerance", "definition": "The need for increasing amounts of a drug to achieve the same effect, resulting from the brain's adaptation to repeated exposure." },
-    { "term": "Substance use disorder", "definition": "A pattern of compulsive drug use despite significant negative consequences to health, relationships, or daily functioning." }
+    {
+      "term": "Psychoactive drug",
+      "definition": "A chemical substance that alters mood, perception, or behavior by acting on the central nervous system."
+    },
+    {
+      "term": "Depressant",
+      "definition": "A class of drugs that slows CNS activity, reduces neural firing, and decreases arousal; includes alcohol, barbiturates, and benzodiazepines."
+    },
+    {
+      "term": "Stimulant",
+      "definition": "A class of drugs that increases CNS activity, heightens alertness, and elevates mood; includes caffeine, nicotine, cocaine, and amphetamines."
+    },
+    {
+      "term": "Opioid",
+      "definition": "A class of drugs derived from or chemically similar to the opium poppy that reduces pain perception and produces euphoria by mimicking endorphins."
+    },
+    {
+      "term": "Hallucinogen",
+      "definition": "A class of drugs that distort perceptions, alter mood, and may produce vivid sensory experiences not based in reality; includes LSD, psilocybin, and marijuana."
+    },
+    {
+      "term": "Tolerance",
+      "definition": "The need for increasing amounts of a drug to achieve the same effect, resulting from the brain's adaptation to repeated exposure."
+    },
+    {
+      "term": "Substance use disorder",
+      "definition": "A pattern of compulsive drug use despite significant negative consequences to health, relationships, or daily functioning."
+    }
   ],
   "contentBlocks": [
     {
       "type": "concept",
       "title": "Categories of Psychoactive Drugs",
       "body": "A **psychoactive drug** is any chemical substance that crosses the blood-brain barrier and alters mood, perception, cognition, or behavior. These substances work by affecting neurotransmitter systems in the brain — either by mimicking, enhancing, or blocking the action of natural chemical messengers.\n\n**Depressants** slow down CNS activity by enhancing the effects of inhibitory neurotransmitters, particularly GABA (gamma-aminobutyric acid). Alcohol, the most widely used depressant, reduces neural firing and impairs judgment, coordination, and memory. At low doses it produces relaxation and lowered inhibitions; at high doses it can cause unconsciousness and death.\n\n**Stimulants** increase CNS activity, producing heightened alertness, energy, and mood elevation. Caffeine and nicotine are the most commonly used stimulants. More powerful stimulants like cocaine and amphetamines produce intense euphoria by flooding the synapse with dopamine — a neurotransmitter associated with pleasure and reward — either by blocking its reuptake or stimulating its release.\n\n**Opioids** include drugs like morphine, heroin, and prescription painkillers such as oxycodone. These substances mimic the body's natural endorphins, binding to opioid receptors to reduce pain perception and produce feelings of intense pleasure. The powerful rewarding effects of opioids make them highly addictive.\n\n**Hallucinogens** distort sensory perception and can produce experiences that have no basis in external reality. LSD and psilocybin (found in certain mushrooms) affect serotonin receptors. Marijuana (cannabis) contains THC, which binds to cannabinoid receptors throughout the brain and can produce relaxation, altered time perception, and mild perceptual distortions."
+    },
+    {
+      "type": "image",
+      "title": "Substance Use and Abuse — textbook illustration",
+      "body": "",
+      "imageSrc": "/images/ch04/fig-ch04-16.jpeg",
+      "imageAlt": "Screenshot illustrating substance use and abuse",
+      "imageCaption": "Substance Use and Abuse — textbook illustration"
     },
     {
       "type": "concept",
@@ -31,6 +60,14 @@
       "type": "example",
       "title": "Real-World Example: The Opioid Crisis",
       "body": "The opioid epidemic illustrates how tolerance, dependence, and substance use disorder develop in practice. Many individuals were initially prescribed **opioid** painkillers for legitimate medical conditions. Over time, **tolerance** developed, leading them to require higher doses for pain relief. Physical dependence followed, meaning that attempting to stop produced severe withdrawal symptoms including pain, nausea, and anxiety. Some individuals progressed to cheaper or more potent opioids like heroin or illicitly manufactured fentanyl. This trajectory from medical prescription to **substance use disorder** demonstrates how powerfully these drugs can hijack the brain's reward system."
+    },
+    {
+      "type": "image",
+      "title": "Substance Use and Abuse — textbook illustration",
+      "body": "",
+      "imageSrc": "/images/ch04/fig-ch04-15.jpeg",
+      "imageAlt": "Screenshot illustrating substance use and abuse",
+      "imageCaption": "Substance Use and Abuse — textbook illustration"
     },
     {
       "type": "summary",
