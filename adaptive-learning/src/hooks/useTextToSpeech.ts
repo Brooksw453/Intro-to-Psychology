@@ -13,6 +13,18 @@ export interface TTSMediaMetadata {
   artist: string;
 }
 
+// Available OpenAI TTS voices
+export const TTS_VOICES = [
+  { id: 'nova', label: 'Nova', description: 'Female, warm' },
+  { id: 'shimmer', label: 'Shimmer', description: 'Female, bright' },
+  { id: 'alloy', label: 'Alloy', description: 'Neutral' },
+  { id: 'echo', label: 'Echo', description: 'Male' },
+  { id: 'fable', label: 'Fable', description: 'Male, warm' },
+  { id: 'onyx', label: 'Onyx', description: 'Male, deep' },
+] as const;
+
+export type TTSVoiceId = typeof TTS_VOICES[number]['id'];
+
 interface UseTextToSpeechReturn {
   isPlaying: boolean;
   isPaused: boolean;
@@ -29,6 +41,14 @@ interface UseTextToSpeechReturn {
   skipBack: () => void;
   rateLabel: string;
   cycleRate: () => void;
+  /** Current voice ID (only meaningful in OpenAI mode) */
+  voiceId: TTSVoiceId;
+  /** Current voice display label */
+  voiceLabel: string;
+  /** Cycle to the next voice */
+  cycleVoice: () => void;
+  /** Whether OpenAI TTS is active (vs SpeechSynthesis fallback) */
+  isOpenAIMode: boolean;
 }
 
 // Mobile browsers (especially iOS) scale speech rate much more aggressively
@@ -207,6 +227,18 @@ export function useTextToSpeech(
   const [rateIndex, setRateIndex] = useState(1); // index 1 = 1.0x
   const [useOpenAI, setUseOpenAI] = useState<boolean | null>(null);
 
+  // Voice state — persisted in localStorage
+  const [voiceIndex, setVoiceIndex] = useState(() => {
+    if (typeof localStorage !== 'undefined') {
+      const saved = localStorage.getItem('tts-voice');
+      if (saved) {
+        const idx = TTS_VOICES.findIndex(v => v.id === saved);
+        if (idx >= 0) return idx;
+      }
+    }
+    return 0; // Default: nova
+  });
+
   const blockIndexRef = useRef(0);
   const chunkIndexRef = useRef(0);
   const chunksRef = useRef<string[][]>([]);
@@ -383,6 +415,7 @@ export function useTextToSpeech(
       if (!ttsPlayerRef.current) {
         ttsPlayerRef.current = createTTSPlayer();
       }
+      ttsPlayerRef.current.setVoice(TTS_VOICES[voiceIndex].id);
       ttsPlayerRef.current.setPlaybackRate(OPENAI_RATES[rateIndex]);
       blockIndexRef.current = 0;
       chunkIndexRef.current = 0;
@@ -495,6 +528,31 @@ export function useTextToSpeech(
     }
   }, [useOpenAI, speakChunkOpenAI, speakChunkSpeechSynthesis]);
 
+  const cycleVoice = useCallback(() => {
+    setVoiceIndex(prev => {
+      const nextIdx = (prev + 1) % TTS_VOICES.length;
+      const newVoice = TTS_VOICES[nextIdx].id;
+
+      // Persist preference
+      if (typeof localStorage !== 'undefined') {
+        localStorage.setItem('tts-voice', newVoice);
+      }
+
+      // Update player's voice (clears cache for new voice)
+      if (ttsPlayerRef.current) {
+        ttsPlayerRef.current.setVoice(newVoice);
+      }
+
+      // If currently playing in OpenAI mode, restart current chunk with new voice
+      if (useOpenAI && isPlayingRef.current && ttsPlayerRef.current) {
+        ttsPlayerRef.current.stopCurrent();
+        setTimeout(() => speakChunkOpenAI(), 50);
+      }
+
+      return nextIdx;
+    });
+  }, [useOpenAI, speakChunkOpenAI]);
+
   const cycleRate = useCallback(() => {
     setRateIndex(prev => {
       const nextIdx = (prev + 1) % RATE_LABELS.length;
@@ -585,5 +643,9 @@ export function useTextToSpeech(
     skipBack,
     rateLabel: RATE_LABELS[rateIndex],
     cycleRate,
+    voiceId: TTS_VOICES[voiceIndex].id,
+    voiceLabel: TTS_VOICES[voiceIndex].label,
+    cycleVoice,
+    isOpenAIMode: useOpenAI === true,
   };
 }

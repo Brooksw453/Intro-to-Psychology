@@ -34,6 +34,10 @@ export interface TTSPlayer {
   setPlaybackRate(rate: number): void;
   /** Get current playback rate. */
   getPlaybackRate(): number;
+  /** Set the voice for subsequent API calls. Clears cache (different voice = different audio). */
+  setVoice(voice: string): void;
+  /** Get current voice. */
+  getVoice(): string;
   /** Tear down AudioContext and clear cache. */
   cleanup(): void;
 }
@@ -44,6 +48,7 @@ export function createTTSPlayer(): TTSPlayer {
   let currentGain: GainNode | null = null;
   let onEndedCallback: (() => void) | null = null;
   let playbackRate = 1.0;
+  let currentVoice = 'nova';
 
   // Cache: text → decoded AudioBuffer
   const cache = new Map<string, AudioBuffer>();
@@ -75,7 +80,7 @@ export function createTTSPlayer(): TTSPlayer {
       const response = await fetch('/api/tts', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ text }),
+        body: JSON.stringify({ text, voice: currentVoice }),
       });
 
       if (!response.ok) {
@@ -185,6 +190,19 @@ export function createTTSPlayer(): TTSPlayer {
     return playbackRate;
   }
 
+  function setVoice(voice: string) {
+    if (voice !== currentVoice) {
+      currentVoice = voice;
+      // Clear cache — different voice produces different audio
+      cache.clear();
+      inflight.clear();
+    }
+  }
+
+  function getVoice(): string {
+    return currentVoice;
+  }
+
   function cleanup() {
     stopCurrent();
     onEndedCallback = null;
@@ -206,6 +224,8 @@ export function createTTSPlayer(): TTSPlayer {
     setOnEnded,
     setPlaybackRate,
     getPlaybackRate,
+    setVoice,
+    getVoice,
     cleanup,
   };
 }

@@ -34,7 +34,9 @@ export async function POST(request: Request) {
       );
     }
 
-    const { text } = await request.json() as { text: string };
+    const VALID_VOICES = ['alloy', 'echo', 'fable', 'nova', 'onyx', 'shimmer'];
+
+    const { text, voice } = await request.json() as { text: string; voice?: string };
 
     if (!text || typeof text !== 'string') {
       return NextResponse.json({ error: 'Missing text' }, { status: 400 });
@@ -43,6 +45,9 @@ export async function POST(request: Request) {
     if (text.length > 4096) {
       return NextResponse.json({ error: 'Text too long (max 4096 chars)' }, { status: 400 });
     }
+
+    // Validate voice or use default
+    const selectedVoice = voice && VALID_VOICES.includes(voice) ? voice : DEFAULT_VOICE;
 
     // Call OpenAI TTS API
     const openaiResponse = await fetch(OPENAI_TTS_URL, {
@@ -53,7 +58,7 @@ export async function POST(request: Request) {
       },
       body: JSON.stringify({
         model: DEFAULT_MODEL,
-        voice: DEFAULT_VOICE,
+        voice: selectedVoice,
         input: text,
         response_format: 'mp3',
       }),
