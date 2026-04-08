@@ -57,8 +57,11 @@ interface UseTextToSpeechReturn {
 // These only apply to SpeechSynthesis fallback — OpenAI mode uses actual rates.
 const DESKTOP_RATES = [0.75, 1.0, 1.25, 1.5, 2.0];
 const MOBILE_RATES = [0.85, 1.0, 1.05, 1.1, 1.15];
-// Actual rate values for OpenAI TTS (AudioBufferSourceNode.playbackRate)
-const OPENAI_RATES = [0.75, 1.0, 1.25, 1.5, 2.0];
+// Rate values for OpenAI TTS (AudioBufferSourceNode.playbackRate).
+// Unlike SpeechSynthesis, playbackRate literally speeds up the audio
+// waveform which also shifts pitch. Keep the range narrow to avoid
+// the "chipmunk effect" at high speeds or "slow-motion" at low speeds.
+const OPENAI_RATES = [0.92, 1.0, 1.08, 1.15, 1.25];
 // Display labels shown to the user (same for all platforms)
 const RATE_LABELS = ['0.75x', '1x', '1.25x', '1.5x', '2x'];
 
@@ -432,6 +435,15 @@ export function useTextToSpeech(
       ttsPlayerRef.current.init();
       ttsPlayerRef.current.setVoice(TTS_VOICES[voiceIndex].id);
       ttsPlayerRef.current.setPlaybackRate(OPENAI_RATES[rateIndex]);
+
+      // Pre-fetch first few chunks to reduce initial delay
+      const firstChunks = chunksRef.current[0];
+      if (firstChunks) {
+        for (let i = 0; i < Math.min(3, firstChunks.length); i++) {
+          ttsPlayerRef.current.prefetch(firstChunks[i]);
+        }
+      }
+
       blockIndexRef.current = 0;
       chunkIndexRef.current = 0;
       setCurrentBlockIndex(0);
@@ -553,15 +565,19 @@ export function useTextToSpeech(
         localStorage.setItem('tts-voice', newVoice);
       }
 
-      // Update player's voice (clears cache for new voice)
+      // Update player's voice (stops current + clears cache for new voice)
       if (ttsPlayerRef.current) {
         ttsPlayerRef.current.setVoice(newVoice);
-      }
 
-      // If currently playing in OpenAI mode, restart current chunk with new voice
-      if (useOpenAI && isPlayingRef.current && ttsPlayerRef.current) {
-        ttsPlayerRef.current.stopCurrent();
-        setTimeout(() => speakChunkOpenAI(), 50);
+        // If currently playing, restart current chunk with new voice
+        // Use a short delay to ensure stopCurrent() fully completes
+        if (useOpenAI && isPlayingRef.current) {
+          setTimeout(() => {
+            if (isPlayingRef.current) {
+              speakChunkOpenAI();
+            }
+          }, 100);
+        }
       }
 
       return nextIdx;

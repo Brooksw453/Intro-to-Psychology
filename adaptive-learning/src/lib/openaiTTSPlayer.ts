@@ -9,7 +9,8 @@
  * Features:
  * - Pre-fetch cache: decoded AudioBuffers stored by text key (max 50)
  * - Pause/resume via audioContext.suspend()/resume()
- * - Playback rate via bufferSource.playbackRate (instant, no re-fetch)
+ * - Playback rate via bufferSource.playbackRate (conservative range to avoid pitch distortion)
+ * - Generation counter to prevent overlapping playback from stale callbacks
  * - onEnded callback for sequential chunk playback
  */
 
@@ -22,7 +23,7 @@ export interface TTSPlayer {
   playChunk(text: string): Promise<void>;
   /** Fetch and decode a chunk into the cache without playing. */
   prefetch(text: string): Promise<void>;
-  /** Stop current playback. */
+  /** Stop all current playback and cancel pending callbacks. */
   stopCurrent(): void;
   /** Pause (freezes audio position). */
   pause(): void;
@@ -32,11 +33,11 @@ export interface TTSPlayer {
   isPaused(): boolean;
   /** Register callback fired when current chunk finishes playing. */
   setOnEnded(cb: (() => void) | null): void;
-  /** Adjust playback speed (0.5–2.0). Applies instantly to current audio. */
+  /** Adjust playback speed. Uses conservative range to avoid pitch distortion. */
   setPlaybackRate(rate: number): void;
   /** Get current playback rate. */
   getPlaybackRate(): number;
-  /** Set the voice for subsequent API calls. Clears cache (different voice = different audio). */
+  /** Set the voice for subsequent API calls. Stops current playback and clears cache. */
   setVoice(voice: string): void;
   /** Get current voice. */
   getVoice(): string;
@@ -47,10 +48,15 @@ export interface TTSPlayer {
 export function createTTSPlayer(): TTSPlayer {
   let audioCtx: AudioContext | null = null;
   let currentSource: AudioBufferSourceNode | null = null;
-  let currentGain: GainNode | null = null;
   let onEndedCallback: (() => void) | null = null;
   let playbackRate = 1.0;
   let currentVoice = 'nova';
+
+  // Generation counter: incremented on every stop/voice-change/cleanup.
+  // Each playChunk call captures the current generation; if it changes
+  // before playback finishes, the onended callback is suppressed.
+  // This prevents overlapping audio from stale callbacks.
+  let generation = 0;
 
   // Cache: text → decoded AudioBuffer
   const cache = new Map<string, AudioBuffer>();
@@ -62,7 +68,8 @@ export function createTTSPlayer(): TTSPlayer {
       const AC = window.AudioContext || (window as unknown as { webkitAudioContext: typeof AudioContext }).webkitAudioContext;
       audioCtx = new AC();
     }
-    // Resume if suspended (iOS requires this after user gesture)
+    // Resume if suspended (iOS requires this after user gesture,
+    // also needed when Bluetooth disconnects and reconnects to phone speaker)
     if (audioCtx.state === 'suspended') {
       audioCtx.resume().catch(() => {});
     }
@@ -112,14 +119,15 @@ export function createTTSPlayer(): TTSPlayer {
     })();
 
     inflight.set(text, promise);
-
-    // Clean up inflight on error too
     promise.catch(() => inflight.delete(text));
 
     return promise;
   }
 
   function stopCurrent() {
+    // Increment generation to invalidate any pending onended callbacks
+    generation++;
+
     if (currentSource) {
       try {
         currentSource.onended = null;
@@ -134,29 +142,34 @@ export function createTTSPlayer(): TTSPlayer {
     stopCurrent();
 
     const ctx = getContext();
+    // Ensure context is running (handles Bluetooth disconnect → phone speaker switch)
+    if (ctx.state === 'suspended') {
+      await ctx.resume();
+    }
+
+    const myGeneration = generation;
     const buffer = await fetchAndDecode(text);
+
+    // If generation changed while we were fetching, another play/stop happened — abort
+    if (generation !== myGeneration) return;
 
     // Create new source for this chunk
     const source = ctx.createBufferSource();
     source.buffer = buffer;
     source.playbackRate.value = playbackRate;
 
-    // Gain node (at full volume — volume controlled by device)
-    const gain = ctx.createGain();
-    gain.gain.value = 1.0;
-    source.connect(gain);
-    gain.connect(ctx.destination);
+    // Connect directly to destination (volume controlled by device)
+    source.connect(ctx.destination);
 
     source.onended = () => {
-      if (currentSource === source) {
+      // Only fire callback if this is still the active generation
+      if (currentSource === source && generation === myGeneration) {
         currentSource = null;
-        currentGain = null;
         onEndedCallback?.();
       }
     };
 
     currentSource = source;
-    currentGain = gain;
     source.start();
   }
 
@@ -201,6 +214,7 @@ export function createTTSPlayer(): TTSPlayer {
 
   function setVoice(voice: string) {
     if (voice !== currentVoice) {
+      stopCurrent(); // Stop + increment generation to prevent overlap
       currentVoice = voice;
       // Clear cache — different voice produces different audio
       cache.clear();
@@ -214,7 +228,7 @@ export function createTTSPlayer(): TTSPlayer {
 
   /** Initialize AudioContext eagerly — call from user gesture (click handler). */
   function init() {
-    getContext(); // Creates and resumes AudioContext
+    getContext();
   }
 
   function cleanup() {
