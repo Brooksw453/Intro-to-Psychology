@@ -96,38 +96,48 @@ export function chunkText(text: string): string[] {
 }
 
 // ─── OpenAI TTS availability detection ───────────────────────────────
-// Probe the /api/tts endpoint once per session to determine if OpenAI
-// TTS is available. Result is cached in sessionStorage.
+// Lightweight GET check to /api/tts — returns { available: true/false }
+// without requiring auth or making an OpenAI API call.
+// Cached in sessionStorage for 5 minutes.
 
 let openaiAvailable: boolean | null = null;
 
 async function checkOpenAIAvailability(): Promise<boolean> {
   if (openaiAvailable !== null) return openaiAvailable;
 
-  // Check sessionStorage cache
+  // Check sessionStorage cache (with expiry)
   if (typeof sessionStorage !== 'undefined') {
-    const cached = sessionStorage.getItem('tts-openai-available');
-    if (cached !== null) {
-      openaiAvailable = cached === 'true';
-      return openaiAvailable;
+    const cached = sessionStorage.getItem('tts-openai-check');
+    if (cached) {
+      try {
+        const { available, timestamp } = JSON.parse(cached);
+        // Cache valid for 5 minutes
+        if (Date.now() - timestamp < 5 * 60 * 1000) {
+          openaiAvailable = !!available;
+          return openaiAvailable;
+        }
+      } catch { /* invalid cache, re-check */ }
     }
   }
 
   try {
-    // Send a minimal probe request
-    const response = await fetch('/api/tts', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ text: 'test' }),
-    });
-    openaiAvailable = response.ok;
+    const response = await fetch('/api/tts', { method: 'GET' });
+    if (response.ok) {
+      const data = await response.json();
+      openaiAvailable = data.available === true;
+    } else {
+      openaiAvailable = false;
+    }
   } catch {
     openaiAvailable = false;
   }
 
-  // Cache result
+  // Cache result with timestamp
   if (typeof sessionStorage !== 'undefined') {
-    sessionStorage.setItem('tts-openai-available', String(openaiAvailable));
+    sessionStorage.setItem('tts-openai-check', JSON.stringify({
+      available: openaiAvailable,
+      timestamp: Date.now(),
+    }));
   }
 
   return openaiAvailable;

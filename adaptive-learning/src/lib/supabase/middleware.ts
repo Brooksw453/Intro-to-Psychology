@@ -2,7 +2,7 @@ import { createServerClient } from '@supabase/ssr';
 import { NextResponse, type NextRequest } from 'next/server';
 
 const DASHBOARD_URL = process.env.DASHBOARD_URL || 'https://courses.esdesigns.org';
-const COURSE_SLUG = process.env.COURSE_SLUG || 'introduction-to-psychology';
+const COURSE_SLUG = process.env.COURSE_SLUG || 'introduction-to-business';
 
 export async function updateSession(request: NextRequest) {
   let supabaseResponse = NextResponse.next({
@@ -40,7 +40,9 @@ export async function updateSession(request: NextRequest) {
   // Public routes that don't require auth
   const isPublicRoute =
     request.nextUrl.pathname.startsWith('/auth') ||
-    request.nextUrl.pathname === '/';
+    request.nextUrl.pathname === '/' ||
+    // TTS availability check (GET only — POST still requires auth)
+    (request.nextUrl.pathname === '/api/tts' && request.method === 'GET');
 
   // If user is not signed in and trying to access protected routes,
   // redirect to the course dashboard for signup/enrollment
@@ -58,8 +60,7 @@ export async function updateSession(request: NextRequest) {
       .single();
 
     const url = request.nextUrl.clone();
-    const isInstructor = ['instructor', 'admin', 'super_admin'].includes(profile?.role);
-    url.pathname = isInstructor ? '/instructor' : '/chapters';
+    url.pathname = ['instructor', 'admin', 'super_admin'].includes(profile?.role) ? '/instructor' : '/chapters';
     return NextResponse.redirect(url);
   }
 

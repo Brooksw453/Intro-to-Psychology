@@ -8,6 +8,18 @@ const OPENAI_TTS_URL = 'https://api.openai.com/v1/audio/speech';
 const DEFAULT_VOICE = 'nova';
 const DEFAULT_MODEL = 'tts-1';
 
+// GET /api/tts — lightweight check: is OpenAI TTS configured?
+// No auth required — just returns { available: true/false }
+export async function GET() {
+  return NextResponse.json(
+    { available: !!OPENAI_API_KEY },
+    {
+      status: 200,
+      headers: { 'Cache-Control': 'public, max-age=300' }, // Cache 5 min
+    }
+  );
+}
+
 export async function POST(request: Request) {
   // If no OpenAI key configured, signal client to fall back to SpeechSynthesis
   if (!OPENAI_API_KEY) {
