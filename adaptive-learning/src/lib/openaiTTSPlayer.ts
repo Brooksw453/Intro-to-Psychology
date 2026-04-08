@@ -16,6 +16,8 @@
 const MAX_CACHE_SIZE = 50;
 
 export interface TTSPlayer {
+  /** Initialize AudioContext — MUST be called from a user gesture (click/tap). */
+  init(): void;
   /** Fetch (or use cache), decode, and play a chunk. Resolves when playback starts. */
   playChunk(text: string): Promise<void>;
   /** Fetch and decode a chunk into the cache without playing. */
@@ -203,6 +205,11 @@ export function createTTSPlayer(): TTSPlayer {
     return currentVoice;
   }
 
+  /** Initialize AudioContext eagerly — call from user gesture (click handler). */
+  function init() {
+    getContext(); // Creates and resumes AudioContext
+  }
+
   function cleanup() {
     stopCurrent();
     onEndedCallback = null;
@@ -215,6 +222,7 @@ export function createTTSPlayer(): TTSPlayer {
   }
 
   return {
+    init,
     playChunk,
     prefetch,
     stopCurrent,

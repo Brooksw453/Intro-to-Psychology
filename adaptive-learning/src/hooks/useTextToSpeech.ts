@@ -425,6 +425,11 @@ export function useTextToSpeech(
       if (!ttsPlayerRef.current) {
         ttsPlayerRef.current = createTTSPlayer();
       }
+      // CRITICAL: init AudioContext NOW, within the user gesture (click/tap).
+      // iOS Safari requires AudioContext to be created+resumed in the direct
+      // call stack of a user interaction. If deferred to an async callback
+      // (like inside playChunk's fetch), iOS silently blocks audio output.
+      ttsPlayerRef.current.init();
       ttsPlayerRef.current.setVoice(TTS_VOICES[voiceIndex].id);
       ttsPlayerRef.current.setPlaybackRate(OPENAI_RATES[rateIndex]);
       blockIndexRef.current = 0;
