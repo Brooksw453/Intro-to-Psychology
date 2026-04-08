@@ -10,46 +10,8 @@ const DEFAULT_VOICE = 'nova';
 const DEFAULT_MODEL = 'tts-1';
 const CACHE_BUCKET = 'audio-cache';
 
-// Daily character limit for UNCACHED (new) generations only.
-// Cached audio is free and doesn't count toward the quota.
-const DAILY_CHAR_LIMIT = 50000;
-// Emails that bypass the daily limit (unlimited new generations)
-const UNLIMITED_EMAILS = ['bwinchell@esdesigns.org'];
-
-// In-memory daily usage tracker: userId → { chars, date }
-const dailyUsage = new Map<string, { chars: number; date: string }>();
-
-function getDailyUsage(userId: string): number {
-  const today = new Date().toISOString().slice(0, 10);
-  const entry = dailyUsage.get(userId);
-  if (!entry || entry.date !== today) {
-    dailyUsage.set(userId, { chars: 0, date: today });
-    return 0;
-  }
-  return entry.chars;
-}
-
-function addDailyUsage(userId: string, chars: number) {
-  const today = new Date().toISOString().slice(0, 10);
-  const entry = dailyUsage.get(userId);
-  if (!entry || entry.date !== today) {
-    dailyUsage.set(userId, { chars, date: today });
-  } else {
-    entry.chars += chars;
-  }
-}
-
-function getResetTime(): string {
-  const now = new Date();
-  const tomorrow = new Date(now);
-  tomorrow.setUTCDate(tomorrow.getUTCDate() + 1);
-  tomorrow.setUTCHours(0, 0, 0, 0);
-  const diffMs = tomorrow.getTime() - now.getTime();
-  const hours = Math.floor(diffMs / (1000 * 60 * 60));
-  const minutes = Math.floor((diffMs % (1000 * 60 * 60)) / (1000 * 60));
-  if (hours > 0) return `${hours}h ${minutes}m`;
-  return `${minutes}m`;
-}
+// No daily character limit — caching makes ongoing cost near zero.
+// Only first-time generations cost money (~$15/voice/course one-time).
 
 /** Generate a short hash for cache keys */
 async function hashKey(text: string, voice: string): Promise<string> {
@@ -188,29 +150,7 @@ export async function POST(request: Request) {
       });
     }
 
-    // ─── Cache MISS — need to generate ──────────────────────────────
-
-    // Daily quota check (only for uncached generations)
-    const userEmail = user.email || '';
-    const isUnlimited = UNLIMITED_EMAILS.includes(userEmail.toLowerCase());
-
-    if (!isUnlimited) {
-      const used = getDailyUsage(user.id);
-      if (used + text.length > DAILY_CHAR_LIMIT) {
-        const remaining = Math.max(0, DAILY_CHAR_LIMIT - used);
-        return NextResponse.json(
-          {
-            error: 'quota_exceeded',
-            message: `You've reached your daily premium voice limit. It resets in ${getResetTime()}.`,
-            used,
-            limit: DAILY_CHAR_LIMIT,
-            remaining,
-            resetIn: getResetTime(),
-          },
-          { status: 429 }
-        );
-      }
-    }
+    // ─── Cache MISS — need to generate via OpenAI ─────────────────
 
     // Call OpenAI TTS API
     const openaiResponse = await fetch(OPENAI_TTS_URL, {
@@ -237,11 +177,6 @@ export async function POST(request: Request) {
     }
 
     const audioBuffer = await openaiResponse.arrayBuffer();
-
-    // Track usage (only for uncached, after successful generation)
-    if (!isUnlimited) {
-      addDailyUsage(user.id, text.length);
-    }
 
     // Store in cache (fire and forget — don't block audio delivery)
     admin.storage
