@@ -94,6 +94,16 @@ export function createTTSPlayer(): TTSPlayer {
       });
 
       if (!response.ok) {
+        // Check for quota exceeded — special error the hook needs to detect
+        if (response.status === 429) {
+          const errorData = await response.json().catch(() => null);
+          if (errorData?.error === 'quota_exceeded') {
+            const quotaError = new Error('quota_exceeded');
+            (quotaError as unknown as Record<string, string>).resetIn = errorData.resetIn || '';
+            (quotaError as unknown as Record<string, string>).message = errorData.message || '';
+            throw quotaError;
+          }
+        }
         throw new Error(`TTS fetch failed: ${response.status}`);
       }
 

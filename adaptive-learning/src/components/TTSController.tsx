@@ -80,6 +80,7 @@ export default function TTSController({ section, courseName, onBlockIndexChange,
     voiceLabel,
     cycleVoice,
     isOpenAIMode,
+    quotaMessage,
   } = useTextToSpeech(blocks, mediaMetadata);
 
   // Notify parent of block and chunk changes for highlighting
@@ -113,8 +114,16 @@ export default function TTSController({ section, courseName, onBlockIndexChange,
   if (!isSupported) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-50 bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 shadow-lg px-4 py-3 safe-bottom">
-      <div className="max-w-4xl mx-auto flex items-center gap-3">
+    <div className="fixed bottom-0 left-0 right-0 z-50 bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 shadow-lg safe-bottom">
+      {/* Quota exceeded banner */}
+      {quotaMessage && (
+        <div className="bg-amber-50 dark:bg-amber-900/30 border-b border-amber-200 dark:border-amber-800 px-4 py-2">
+          <p className="text-xs text-amber-800 dark:text-amber-200 text-center">
+            {quotaMessage}
+          </p>
+        </div>
+      )}
+      <div className="max-w-4xl mx-auto flex items-center gap-3 px-4 py-3">
         {/* Skip back */}
         <button
           onClick={skipBack}

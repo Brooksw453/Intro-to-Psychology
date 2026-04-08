@@ -49,6 +49,8 @@ interface UseTextToSpeechReturn {
   cycleVoice: () => void;
   /** Whether OpenAI TTS is active (vs SpeechSynthesis fallback) */
   isOpenAIMode: boolean;
+  /** If set, the premium voice quota was exceeded — shows reset info */
+  quotaMessage: string | null;
 }
 
 // Mobile browsers (especially iOS) scale speech rate much more aggressively
@@ -239,6 +241,7 @@ export function useTextToSpeech(
   const [currentChunkIndex, setCurrentChunkIndex] = useState(0);
   const [rateIndex, setRateIndex] = useState(1); // index 1 = 1.0x
   const [useOpenAI, setUseOpenAI] = useState<boolean | null>(null);
+  const [quotaMessage, setQuotaMessage] = useState<string | null>(null);
 
   // Voice state — persisted in localStorage
   const [voiceIndex, setVoiceIndex] = useState(() => {
@@ -258,6 +261,7 @@ export function useTextToSpeech(
   const isPlayingRef = useRef(false);
   const rateRef = useRef(1.0);
   const ttsPlayerRef = useRef<TTSPlayer | null>(null);
+  const speakChunkSpeechSynthesisRef = useRef<() => void>(() => {});
 
   // Update rate ref based on mode
   rateRef.current = useOpenAI
@@ -350,7 +354,26 @@ export function useTextToSpeech(
 
     player.playChunk(blockChunks[chunkIdx]).catch((err) => {
       console.warn('OpenAI TTS chunk error:', err);
-      // Retry once after 1 second
+
+      // Quota exceeded — fall back to SpeechSynthesis for the rest of this session
+      if (err?.message === 'quota_exceeded') {
+        const resetMsg = (err as Record<string, string>).message
+          || 'Premium voice limit reached for today. Switching to standard voice.';
+        setQuotaMessage(resetMsg);
+
+        // Clean up OpenAI player
+        player.cleanup();
+        ttsPlayerRef.current = null;
+
+        // Switch to SpeechSynthesis mode and continue playing from current position
+        setUseOpenAI(false);
+        rateRef.current = getSpeechSynthesisRates()[rateIndex];
+        startSilentAudio();
+        speakChunkSpeechSynthesisRef.current();
+        return;
+      }
+
+      // Other errors — retry once after 1 second
       setTimeout(() => {
         if (isPlayingRef.current) {
           player.playChunk(blockChunks[chunkIdx]).catch(() => {
@@ -365,7 +388,7 @@ export function useTextToSpeech(
     });
 
     prefetchAhead(2);
-  }, [prefetchAhead]);
+  }, [prefetchAhead, rateIndex]);
 
   // ─── SpeechSynthesis playback (fallback) ─────────────────────────
 
@@ -417,6 +440,9 @@ export function useTextToSpeech(
 
     window.speechSynthesis.speak(utterance);
   }, []);
+
+  // Keep ref in sync so OpenAI fallback can call it
+  speakChunkSpeechSynthesisRef.current = speakChunkSpeechSynthesis;
 
   // ─── Unified controls ────────────────────────────────────────────
 
@@ -678,5 +704,6 @@ export function useTextToSpeech(
     voiceLabel: TTS_VOICES[voiceIndex].label,
     cycleVoice,
     isOpenAIMode: useOpenAI === true,
+    quotaMessage,
   };
 }
