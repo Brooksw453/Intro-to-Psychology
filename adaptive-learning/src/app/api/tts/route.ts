@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import { createClient } from '@/lib/supabase/server';
+import { createAdminClient } from '@/lib/supabase/admin';
 import { rateLimit } from '@/lib/rateLimit';
 import { COURSE_ID } from '@/lib/course.config';
 
@@ -7,17 +8,19 @@ const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
 const OPENAI_TTS_URL = 'https://api.openai.com/v1/audio/speech';
 const DEFAULT_VOICE = 'nova';
 const DEFAULT_MODEL = 'tts-1';
+const CACHE_BUCKET = 'audio-cache';
 
-// Daily character limit per user (~1 hour of listening)
+// Daily character limit for UNCACHED (new) generations only.
+// Cached audio is free and doesn't count toward the quota.
 const DAILY_CHAR_LIMIT = 50000;
-// Emails that bypass the daily limit (unlimited)
+// Emails that bypass the daily limit (unlimited new generations)
 const UNLIMITED_EMAILS = ['bwinchell@esdesigns.org'];
 
 // In-memory daily usage tracker: userId → { chars, date }
 const dailyUsage = new Map<string, { chars: number; date: string }>();
 
 function getDailyUsage(userId: string): number {
-  const today = new Date().toISOString().slice(0, 10); // YYYY-MM-DD
+  const today = new Date().toISOString().slice(0, 10);
   const entry = dailyUsage.get(userId);
   if (!entry || entry.date !== today) {
     dailyUsage.set(userId, { chars: 0, date: today });
@@ -48,6 +51,14 @@ function getResetTime(): string {
   return `${minutes}m`;
 }
 
+/** Generate a short hash for cache keys */
+async function hashKey(text: string, voice: string): Promise<string> {
+  const data = new TextEncoder().encode(`${voice}:${text}`);
+  const hashBuffer = await crypto.subtle.digest('SHA-256', data);
+  const hashArray = Array.from(new Uint8Array(hashBuffer));
+  return hashArray.map(b => b.toString(16).padStart(2, '0')).join('').slice(0, 32);
+}
+
 // GET /api/tts — lightweight check + optional debug
 export async function GET(request: Request) {
   const url = new URL(request.url);
@@ -63,7 +74,6 @@ export async function GET(request: Request) {
     );
   }
 
-  // Debug mode: test the actual OpenAI TTS call
   if (!OPENAI_API_KEY) {
     return NextResponse.json({ available: false, error: 'No OPENAI_API_KEY env var' });
   }
@@ -94,11 +104,18 @@ export async function GET(request: Request) {
     }
 
     const audioBytes = (await openaiResponse.arrayBuffer()).byteLength;
+
+    // Check if cache bucket exists
+    const admin = createAdminClient();
+    const { data: buckets } = await admin.storage.listBuckets();
+    const bucketExists = buckets?.some(b => b.name === CACHE_BUCKET) || false;
+
     return NextResponse.json({
       available: true,
       openaiStatus: 200,
       audioBytes,
       voice: DEFAULT_VOICE,
+      cacheBucket: bucketExists ? 'exists' : 'missing — create it in Supabase Dashboard → Storage',
       keyPrefix: OPENAI_API_KEY.slice(0, 8) + '...',
     });
   } catch (err) {
@@ -111,7 +128,6 @@ export async function GET(request: Request) {
 }
 
 export async function POST(request: Request) {
-  // If no OpenAI key configured, signal client to fall back to SpeechSynthesis
   if (!OPENAI_API_KEY) {
     return NextResponse.json(
       { error: 'TTS not configured' },
@@ -127,7 +143,7 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
     }
 
-    // Rate limit: 120 req/min (TTS chunks are small and cheap)
+    // Rate limit: 120 req/min
     const { success } = rateLimit(user.id, 120, 60000);
     if (!success) {
       return NextResponse.json(
@@ -137,18 +153,44 @@ export async function POST(request: Request) {
     }
 
     const VALID_VOICES = ['alloy', 'echo', 'fable', 'nova', 'onyx', 'shimmer'];
-
     const { text, voice } = await request.json() as { text: string; voice?: string };
 
     if (!text || typeof text !== 'string') {
       return NextResponse.json({ error: 'Missing text' }, { status: 400 });
     }
-
     if (text.length > 4096) {
       return NextResponse.json({ error: 'Text too long (max 4096 chars)' }, { status: 400 });
     }
 
-    // Daily character quota check (skip for unlimited accounts)
+    const selectedVoice = voice && VALID_VOICES.includes(voice) ? voice : DEFAULT_VOICE;
+
+    // ─── Check cache first ──────────────────────────────────────────
+    const cacheKey = await hashKey(text, selectedVoice);
+    const cachePath = `${COURSE_ID}/${cacheKey}.mp3`;
+    const admin = createAdminClient();
+
+    // Try to download from cache
+    const { data: cachedData } = await admin.storage
+      .from(CACHE_BUCKET)
+      .download(cachePath);
+
+    if (cachedData) {
+      // Cache HIT — return cached audio (free, no quota impact)
+      const audioBuffer = await cachedData.arrayBuffer();
+      return new Response(audioBuffer, {
+        status: 200,
+        headers: {
+          'Content-Type': 'audio/mpeg',
+          'Content-Length': audioBuffer.byteLength.toString(),
+          'Cache-Control': 'public, max-age=86400',
+          'X-TTS-Cache': 'hit',
+        },
+      });
+    }
+
+    // ─── Cache MISS — need to generate ──────────────────────────────
+
+    // Daily quota check (only for uncached generations)
     const userEmail = user.email || '';
     const isUnlimited = UNLIMITED_EMAILS.includes(userEmail.toLowerCase());
 
@@ -169,9 +211,6 @@ export async function POST(request: Request) {
         );
       }
     }
-
-    // Validate voice or use default
-    const selectedVoice = voice && VALID_VOICES.includes(voice) ? voice : DEFAULT_VOICE;
 
     // Call OpenAI TTS API
     const openaiResponse = await fetch(OPENAI_TTS_URL, {
@@ -197,31 +236,42 @@ export async function POST(request: Request) {
       );
     }
 
-    // Track usage (after successful generation)
+    const audioBuffer = await openaiResponse.arrayBuffer();
+
+    // Track usage (only for uncached, after successful generation)
     if (!isUnlimited) {
       addDailyUsage(user.id, text.length);
     }
 
-    // Log interaction (fire and forget — don't block audio delivery)
+    // Store in cache (fire and forget — don't block audio delivery)
+    admin.storage
+      .from(CACHE_BUCKET)
+      .upload(cachePath, audioBuffer, {
+        contentType: 'audio/mpeg',
+        upsert: true,
+      })
+      .then(({ error }) => {
+        if (error) console.error('TTS cache store error:', error.message);
+      });
+
+    // Log interaction
     supabase.from('ai_interactions').insert({
       user_id: user.id,
       course_id: COURSE_ID,
       interaction_type: 'tts',
-      context: { chars: text.length, voice: selectedVoice },
+      context: { chars: text.length, voice: selectedVoice, cached: false },
       prompt_sent: text.slice(0, 200),
       response_received: 'audio/mp3',
       tokens_used: 0,
     }).then(() => {});
-
-    // Stream the MP3 back to client
-    const audioBuffer = await openaiResponse.arrayBuffer();
 
     return new Response(audioBuffer, {
       status: 200,
       headers: {
         'Content-Type': 'audio/mpeg',
         'Content-Length': audioBuffer.byteLength.toString(),
-        'Cache-Control': 'public, max-age=3600',
+        'Cache-Control': 'public, max-age=86400',
+        'X-TTS-Cache': 'miss',
       },
     });
   } catch (error) {
