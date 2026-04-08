@@ -59,11 +59,10 @@ interface UseTextToSpeechReturn {
 // These only apply to SpeechSynthesis fallback — OpenAI mode uses actual rates.
 const DESKTOP_RATES = [0.75, 1.0, 1.25, 1.5, 2.0];
 const MOBILE_RATES = [0.85, 1.0, 1.05, 1.1, 1.15];
-// Rate values for OpenAI TTS (AudioBufferSourceNode.playbackRate).
-// Unlike SpeechSynthesis, playbackRate literally speeds up the audio
-// waveform which also shifts pitch. Keep the range narrow to avoid
-// the "chipmunk effect" at high speeds or "slow-motion" at low speeds.
-const OPENAI_RATES = [0.92, 1.0, 1.08, 1.15, 1.25];
+// Rate values for OpenAI TTS (HTMLAudioElement.playbackRate).
+// HTMLAudioElement uses time-stretching (preserves pitch) unlike
+// AudioBufferSourceNode which pitch-shifts. So we can use natural rates.
+const OPENAI_RATES = [0.75, 1.0, 1.25, 1.5, 2.0];
 // Display labels shown to the user (same for all platforms)
 const RATE_LABELS = ['0.75x', '1x', '1.25x', '1.5x', '2x'];
 
