@@ -48,6 +48,7 @@ export interface TTSPlayer {
 export function createTTSPlayer(): TTSPlayer {
   let audioCtx: AudioContext | null = null;
   let currentSource: AudioBufferSourceNode | null = null;
+  let keepaliveSource: AudioBufferSourceNode | null = null;
   let onEndedCallback: (() => void) | null = null;
   let playbackRate = 1.0;
   let currentVoice = 'nova';
@@ -236,13 +237,48 @@ export function createTTSPlayer(): TTSPlayer {
     return currentVoice;
   }
 
+  /**
+   * Start a silent looping buffer to keep the iOS audio session alive.
+   * Without this, iOS suspends the AudioContext between chunks (during
+   * fetch latency or the 500ms block pause), which stops playback on
+   * the lock screen and when switching apps.
+   */
+  function startKeepalive() {
+    if (keepaliveSource) return; // Already running
+    const ctx = getContext();
+    const sampleRate = ctx.sampleRate;
+    const buffer = ctx.createBuffer(1, sampleRate, sampleRate);
+    const data = buffer.getChannelData(0);
+    for (let i = 0; i < data.length; i++) {
+      data[i] = 0.00001; // Near-silent — keeps audio session active
+    }
+    keepaliveSource = ctx.createBufferSource();
+    keepaliveSource.buffer = buffer;
+    keepaliveSource.loop = true;
+    const gain = ctx.createGain();
+    gain.gain.value = 0.01;
+    keepaliveSource.connect(gain);
+    gain.connect(ctx.destination);
+    keepaliveSource.start();
+  }
+
+  function stopKeepalive() {
+    if (keepaliveSource) {
+      try { keepaliveSource.stop(); } catch { /* already stopped */ }
+      keepaliveSource.disconnect();
+      keepaliveSource = null;
+    }
+  }
+
   /** Initialize AudioContext eagerly — call from user gesture (click handler). */
   function init() {
     getContext();
+    startKeepalive();
   }
 
   function cleanup() {
     stopCurrent();
+    stopKeepalive();
     onEndedCallback = null;
     cache.clear();
     inflight.clear();
