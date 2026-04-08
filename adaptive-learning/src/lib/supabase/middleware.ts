@@ -40,13 +40,16 @@ export async function updateSession(request: NextRequest) {
   // Public routes that don't require auth
   const isPublicRoute =
     request.nextUrl.pathname.startsWith('/auth') ||
-    request.nextUrl.pathname === '/' ||
-    // TTS availability check (GET only — POST still requires auth)
-    (request.nextUrl.pathname === '/api/tts' && request.method === 'GET');
+    request.nextUrl.pathname === '/';
 
-  // If user is not signed in and trying to access protected routes,
+  // API routes handle their own auth (return 401 JSON, not a redirect).
+  // Redirecting API calls to the dashboard login page breaks fetch() callers
+  // because they get back HTML instead of JSON/audio.
+  const isApiRoute = request.nextUrl.pathname.startsWith('/api/');
+
+  // If user is not signed in and trying to access protected page routes,
   // redirect to the course dashboard for signup/enrollment
-  if (!user && !isPublicRoute) {
+  if (!user && !isPublicRoute && !isApiRoute) {
     const dashboardCourseUrl = `${DASHBOARD_URL}/courses/${COURSE_SLUG}`;
     return NextResponse.redirect(dashboardCourseUrl);
   }

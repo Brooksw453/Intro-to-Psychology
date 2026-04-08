@@ -82,11 +82,18 @@ export function createTTSPlayer(): TTSPlayer {
       const response = await fetch('/api/tts', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
+        credentials: 'same-origin',
         body: JSON.stringify({ text, voice: currentVoice }),
       });
 
       if (!response.ok) {
         throw new Error(`TTS fetch failed: ${response.status}`);
+      }
+
+      // Verify we got audio, not HTML (middleware redirect returns HTML)
+      const contentType = response.headers.get('content-type') || '';
+      if (!contentType.includes('audio')) {
+        throw new Error(`TTS returned non-audio: ${contentType}`);
       }
 
       const arrayBuffer = await response.arrayBuffer();
