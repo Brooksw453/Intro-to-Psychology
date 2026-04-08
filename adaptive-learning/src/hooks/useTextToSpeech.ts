@@ -71,64 +71,66 @@ export function chunkText(text: string): string[] {
   return chunks.length > 0 ? chunks : [text];
 }
 
-// ─── Silent audio keepalive ───────────────────────────────────────────
+// ─── Silent audio keepalive (AudioContext) ───────────────────────────
 // Mobile browsers suspend SpeechSynthesis when the screen locks because
-// there's no active audio session. Playing a near-silent audio loop
-// keeps the browser's audio session alive so TTS continues on the lock screen.
+// there's no active audio session. We use AudioContext (Web Audio API)
+// instead of a plain <audio> element because AudioContext properly
+// establishes an A2DP (media audio) session on iOS. This is critical
+// for Bluetooth speakers and CarPlay — without it, SpeechSynthesis
+// only routes through HFP (hands-free profile), which AirPods support
+// but most speakers and car systems do not.
+//
+// The AudioContext plays a looping silent buffer that:
+// 1. Keeps the browser audio session alive on the lock screen
+// 2. Claims the A2DP Bluetooth route so SpeechSynthesis piggybacks on it
+// 3. Enables Media Session API (lock screen controls)
 
-let silentAudio: HTMLAudioElement | null = null;
+let audioCtx: AudioContext | null = null;
+let silentSource: AudioBufferSourceNode | null = null;
 
 function startSilentAudio() {
-  if (typeof document === 'undefined') return;
-  if (silentAudio) return; // Already running
+  if (typeof window === 'undefined') return;
+  if (audioCtx && audioCtx.state !== 'closed') return; // Already running
 
-  // Generate a tiny WAV file: 1 second of near-silence (single quiet sample)
-  // This is a valid WAV with minimal data — just enough to establish an audio session
-  const sampleRate = 8000;
-  const numSamples = sampleRate; // 1 second
-  const buffer = new ArrayBuffer(44 + numSamples * 2);
-  const view = new DataView(buffer);
+  const AC = window.AudioContext || (window as unknown as { webkitAudioContext: typeof AudioContext }).webkitAudioContext;
+  if (!AC) return;
 
-  // WAV header
-  const writeString = (offset: number, str: string) => {
-    for (let i = 0; i < str.length; i++) view.setUint8(offset + i, str.charCodeAt(i));
-  };
-  writeString(0, 'RIFF');
-  view.setUint32(4, 36 + numSamples * 2, true);
-  writeString(8, 'WAVE');
-  writeString(12, 'fmt ');
-  view.setUint32(16, 16, true); // chunk size
-  view.setUint16(20, 1, true);  // PCM
-  view.setUint16(22, 1, true);  // mono
-  view.setUint32(24, sampleRate, true);
-  view.setUint32(28, sampleRate * 2, true); // byte rate
-  view.setUint16(32, 2, true);  // block align
-  view.setUint16(34, 16, true); // bits per sample
-  writeString(36, 'data');
-  view.setUint32(40, numSamples * 2, true);
+  audioCtx = new AC();
 
-  // Near-silent samples (value 1 — essentially inaudible)
-  for (let i = 0; i < numSamples; i++) {
-    view.setInt16(44 + i * 2, 1, true);
+  // Create a 1-second silent buffer and loop it
+  const sampleRate = audioCtx.sampleRate;
+  const buffer = audioCtx.createBuffer(1, sampleRate, sampleRate);
+  const channelData = buffer.getChannelData(0);
+  // Near-zero samples — inaudible but enough to keep the audio session active
+  for (let i = 0; i < channelData.length; i++) {
+    channelData[i] = 0.00001;
   }
 
-  const blob = new Blob([buffer], { type: 'audio/wav' });
-  const url = URL.createObjectURL(blob);
+  silentSource = audioCtx.createBufferSource();
+  silentSource.buffer = buffer;
+  silentSource.loop = true;
 
-  silentAudio = new Audio(url);
-  silentAudio.loop = true;
-  silentAudio.volume = 0.01; // Near-silent
-  silentAudio.play().catch(() => {
-    // Autoplay might be blocked — that's OK, the user gesture from the play
-    // button will have already unlocked audio
-  });
+  // Route through a gain node at near-zero volume
+  const gain = audioCtx.createGain();
+  gain.gain.value = 0.01;
+  silentSource.connect(gain);
+  gain.connect(audioCtx.destination);
+  silentSource.start();
+
+  // iOS requires explicit resume after user gesture
+  if (audioCtx.state === 'suspended') {
+    audioCtx.resume().catch(() => {});
+  }
 }
 
 function stopSilentAudio() {
-  if (silentAudio) {
-    silentAudio.pause();
-    silentAudio.src = '';
-    silentAudio = null;
+  if (silentSource) {
+    try { silentSource.stop(); } catch { /* already stopped */ }
+    silentSource = null;
+  }
+  if (audioCtx) {
+    audioCtx.close().catch(() => {});
+    audioCtx = null;
   }
 }
 
