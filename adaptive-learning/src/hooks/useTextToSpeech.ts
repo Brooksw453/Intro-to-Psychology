@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useRef, useCallback, useEffect } from 'react';
+import { createTTSPlayer, type TTSPlayer } from '@/lib/openaiTTSPlayer';
 
 export interface TTSBlock {
   label: string;
@@ -33,9 +34,12 @@ interface UseTextToSpeechReturn {
 // Mobile browsers (especially iOS) scale speech rate much more aggressively
 // than desktop — a rate of 1.5 on iOS sounds like 5x on desktop.
 // Use compressed rates on mobile to keep speeds natural.
+// These only apply to SpeechSynthesis fallback — OpenAI mode uses actual rates.
 const DESKTOP_RATES = [0.75, 1.0, 1.25, 1.5, 2.0];
 const MOBILE_RATES = [0.85, 1.0, 1.05, 1.1, 1.15];
-// Display labels shown to the user (same for both platforms)
+// Actual rate values for OpenAI TTS (AudioBufferSourceNode.playbackRate)
+const OPENAI_RATES = [0.75, 1.0, 1.25, 1.5, 2.0];
+// Display labels shown to the user (same for all platforms)
 const RATE_LABELS = ['0.75x', '1x', '1.25x', '1.5x', '2x'];
 
 function isMobile(): boolean {
@@ -43,7 +47,7 @@ function isMobile(): boolean {
   return /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 }
 
-function getRateOptions(): number[] {
+function getSpeechSynthesisRates(): number[] {
   return isMobile() ? MOBILE_RATES : DESKTOP_RATES;
 }
 
@@ -71,55 +75,77 @@ export function chunkText(text: string): string[] {
   return chunks.length > 0 ? chunks : [text];
 }
 
-// ─── Silent audio keepalive (AudioContext) ───────────────────────────
-// Mobile browsers suspend SpeechSynthesis when the screen locks because
-// there's no active audio session. We use AudioContext (Web Audio API)
-// instead of a plain <audio> element because AudioContext properly
-// establishes an A2DP (media audio) session on iOS. This is critical
-// for Bluetooth speakers and CarPlay — without it, SpeechSynthesis
-// only routes through HFP (hands-free profile), which AirPods support
-// but most speakers and car systems do not.
-//
-// The AudioContext plays a looping silent buffer that:
-// 1. Keeps the browser audio session alive on the lock screen
-// 2. Claims the A2DP Bluetooth route so SpeechSynthesis piggybacks on it
-// 3. Enables Media Session API (lock screen controls)
+// ─── OpenAI TTS availability detection ───────────────────────────────
+// Probe the /api/tts endpoint once per session to determine if OpenAI
+// TTS is available. Result is cached in sessionStorage.
 
-let audioCtx: AudioContext | null = null;
+let openaiAvailable: boolean | null = null;
+
+async function checkOpenAIAvailability(): Promise<boolean> {
+  if (openaiAvailable !== null) return openaiAvailable;
+
+  // Check sessionStorage cache
+  if (typeof sessionStorage !== 'undefined') {
+    const cached = sessionStorage.getItem('tts-openai-available');
+    if (cached !== null) {
+      openaiAvailable = cached === 'true';
+      return openaiAvailable;
+    }
+  }
+
+  try {
+    // Send a minimal probe request
+    const response = await fetch('/api/tts', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ text: 'test' }),
+    });
+    openaiAvailable = response.ok;
+  } catch {
+    openaiAvailable = false;
+  }
+
+  // Cache result
+  if (typeof sessionStorage !== 'undefined') {
+    sessionStorage.setItem('tts-openai-available', String(openaiAvailable));
+  }
+
+  return openaiAvailable;
+}
+
+// ─── SpeechSynthesis silent audio keepalive ──────────────────────────
+// Only used in SpeechSynthesis fallback mode. Keeps audio session alive
+// on lock screen. (In OpenAI mode, real audio maintains the session.)
+
+let silentAudioCtx: AudioContext | null = null;
 let silentSource: AudioBufferSourceNode | null = null;
 
 function startSilentAudio() {
   if (typeof window === 'undefined') return;
-  if (audioCtx && audioCtx.state !== 'closed') return; // Already running
+  if (silentAudioCtx && silentAudioCtx.state !== 'closed') return;
 
   const AC = window.AudioContext || (window as unknown as { webkitAudioContext: typeof AudioContext }).webkitAudioContext;
   if (!AC) return;
 
-  audioCtx = new AC();
-
-  // Create a 1-second silent buffer and loop it
-  const sampleRate = audioCtx.sampleRate;
-  const buffer = audioCtx.createBuffer(1, sampleRate, sampleRate);
+  silentAudioCtx = new AC();
+  const sampleRate = silentAudioCtx.sampleRate;
+  const buffer = silentAudioCtx.createBuffer(1, sampleRate, sampleRate);
   const channelData = buffer.getChannelData(0);
-  // Near-zero samples — inaudible but enough to keep the audio session active
   for (let i = 0; i < channelData.length; i++) {
     channelData[i] = 0.00001;
   }
 
-  silentSource = audioCtx.createBufferSource();
+  silentSource = silentAudioCtx.createBufferSource();
   silentSource.buffer = buffer;
   silentSource.loop = true;
-
-  // Route through a gain node at near-zero volume
-  const gain = audioCtx.createGain();
+  const gain = silentAudioCtx.createGain();
   gain.gain.value = 0.01;
   silentSource.connect(gain);
-  gain.connect(audioCtx.destination);
+  gain.connect(silentAudioCtx.destination);
   silentSource.start();
 
-  // iOS requires explicit resume after user gesture
-  if (audioCtx.state === 'suspended') {
-    audioCtx.resume().catch(() => {});
+  if (silentAudioCtx.state === 'suspended') {
+    silentAudioCtx.resume().catch(() => {});
   }
 }
 
@@ -128,14 +154,13 @@ function stopSilentAudio() {
     try { silentSource.stop(); } catch { /* already stopped */ }
     silentSource = null;
   }
-  if (audioCtx) {
-    audioCtx.close().catch(() => {});
-    audioCtx = null;
+  if (silentAudioCtx) {
+    silentAudioCtx.close().catch(() => {});
+    silentAudioCtx = null;
   }
 }
 
 // ─── Media Session API ────────────────────────────────────────────────
-// Shows lock screen controls (play/pause, skip forward/back) on mobile.
 
 function updateMediaSession(
   metadata: TTSMediaMetadata | null,
@@ -161,7 +186,6 @@ function updateMediaSession(
     navigator.mediaSession.setActionHandler('previoustrack', handlers.skipBack);
     navigator.mediaSession.setActionHandler('nexttrack', handlers.skipForward);
   } else {
-    // Clear handlers
     navigator.mediaSession.setActionHandler('play', null);
     navigator.mediaSession.setActionHandler('pause', null);
     navigator.mediaSession.setActionHandler('previoustrack', null);
@@ -181,16 +205,28 @@ export function useTextToSpeech(
   const [currentBlockIndex, setCurrentBlockIndex] = useState(0);
   const [currentChunkIndex, setCurrentChunkIndex] = useState(0);
   const [rateIndex, setRateIndex] = useState(1); // index 1 = 1.0x
+  const [useOpenAI, setUseOpenAI] = useState<boolean | null>(null);
 
   const blockIndexRef = useRef(0);
   const chunkIndexRef = useRef(0);
   const chunksRef = useRef<string[][]>([]);
   const isPlayingRef = useRef(false);
   const rateRef = useRef(1.0);
-  rateRef.current = getRateOptions()[rateIndex];
+  const ttsPlayerRef = useRef<TTSPlayer | null>(null);
 
+  // Update rate ref based on mode
+  rateRef.current = useOpenAI
+    ? OPENAI_RATES[rateIndex]
+    : getSpeechSynthesisRates()[rateIndex];
+
+  // Detect support and OpenAI availability on mount
   useEffect(() => {
-    setIsSupported(typeof window !== 'undefined' && 'speechSynthesis' in window);
+    const hasSpeechSynthesis = typeof window !== 'undefined' && 'speechSynthesis' in window;
+
+    checkOpenAIAvailability().then((available) => {
+      setUseOpenAI(available);
+      setIsSupported(available || hasSpeechSynthesis);
+    });
   }, []);
 
   // Pre-chunk all blocks
@@ -198,8 +234,37 @@ export function useTextToSpeech(
     chunksRef.current = blocks.map(b => chunkText(b.text));
   }, [blocks]);
 
-  const speakChunk = useCallback(() => {
+  // ─── Pre-fetch helper (OpenAI mode) ──────────────────────────────
+
+  const prefetchAhead = useCallback((count: number) => {
+    const player = ttsPlayerRef.current;
+    if (!player) return;
+
+    let blockIdx = blockIndexRef.current;
+    let chunkIdx = chunkIndexRef.current + 1;
+    const allChunks = chunksRef.current;
+    let fetched = 0;
+
+    while (fetched < count && blockIdx < allChunks.length) {
+      const blockChunks = allChunks[blockIdx];
+      if (chunkIdx < blockChunks.length) {
+        player.prefetch(blockChunks[chunkIdx]);
+        fetched++;
+        chunkIdx++;
+      } else {
+        blockIdx++;
+        chunkIdx = 0;
+      }
+    }
+  }, []);
+
+  // ─── OpenAI playback ────────────────────────────────────────────
+
+  const speakChunkOpenAI = useCallback(() => {
     if (!isPlayingRef.current) return;
+
+    const player = ttsPlayerRef.current;
+    if (!player) return;
 
     const blockIdx = blockIndexRef.current;
     const chunkIdx = chunkIndexRef.current;
@@ -214,7 +279,8 @@ export function useTextToSpeech(
       setCurrentChunkIndex(0);
       blockIndexRef.current = 0;
       chunkIndexRef.current = 0;
-      stopSilentAudio();
+      player.cleanup();
+      ttsPlayerRef.current = null;
       updateMediaSession(null, '', null);
       return;
     }
@@ -225,8 +291,65 @@ export function useTextToSpeech(
       blockIndexRef.current = blockIdx + 1;
       chunkIndexRef.current = 0;
       setCurrentBlockIndex(blockIdx + 1);
-      // 500ms pause between blocks
-      setTimeout(() => speakChunk(), 500);
+      setTimeout(() => speakChunkOpenAI(), 500);
+      return;
+    }
+
+    setCurrentChunkIndex(chunkIdx);
+
+    player.setOnEnded(() => {
+      chunkIndexRef.current = chunkIdx + 1;
+      prefetchAhead(2);
+      speakChunkOpenAI();
+    });
+
+    player.playChunk(blockChunks[chunkIdx]).catch((err) => {
+      console.warn('OpenAI TTS chunk error:', err);
+      // Retry once after 1 second
+      setTimeout(() => {
+        if (isPlayingRef.current) {
+          player.playChunk(blockChunks[chunkIdx]).catch(() => {
+            // Give up — stop playback
+            isPlayingRef.current = false;
+            setIsPlaying(false);
+            player.cleanup();
+            ttsPlayerRef.current = null;
+          });
+        }
+      }, 1000);
+    });
+
+    prefetchAhead(2);
+  }, [prefetchAhead]);
+
+  // ─── SpeechSynthesis playback (fallback) ─────────────────────────
+
+  const speakChunkSpeechSynthesis = useCallback(() => {
+    if (!isPlayingRef.current) return;
+
+    const blockIdx = blockIndexRef.current;
+    const chunkIdx = chunkIndexRef.current;
+    const allChunks = chunksRef.current;
+
+    if (blockIdx >= allChunks.length) {
+      isPlayingRef.current = false;
+      setIsPlaying(false);
+      setIsPaused(false);
+      setCurrentBlockIndex(0);
+      setCurrentChunkIndex(0);
+      blockIndexRef.current = 0;
+      chunkIndexRef.current = 0;
+      stopSilentAudio();
+      updateMediaSession(null, '', null);
+      return;
+    }
+
+    const blockChunks = allChunks[blockIdx];
+    if (chunkIdx >= blockChunks.length) {
+      blockIndexRef.current = blockIdx + 1;
+      chunkIndexRef.current = 0;
+      setCurrentBlockIndex(blockIdx + 1);
+      setTimeout(() => speakChunkSpeechSynthesis(), 500);
       return;
     }
 
@@ -238,11 +361,10 @@ export function useTextToSpeech(
 
     utterance.onend = () => {
       chunkIndexRef.current = chunkIdx + 1;
-      speakChunk();
+      speakChunkSpeechSynthesis();
     };
 
     utterance.onerror = (e) => {
-      // 'interrupted' and 'canceled' are expected when stopping/skipping
       if (e.error !== 'interrupted' && e.error !== 'canceled') {
         console.warn('TTS error:', e.error);
       }
@@ -251,105 +373,173 @@ export function useTextToSpeech(
     window.speechSynthesis.speak(utterance);
   }, []);
 
+  // ─── Unified controls ────────────────────────────────────────────
+
   const play = useCallback(() => {
     if (!isSupported) return;
-    window.speechSynthesis.cancel();
-    blockIndexRef.current = 0;
-    chunkIndexRef.current = 0;
-    setCurrentBlockIndex(0);
-    setCurrentChunkIndex(0);
-    isPlayingRef.current = true;
-    setIsPlaying(true);
-    setIsPaused(false);
-    startSilentAudio();
-    speakChunk();
-  }, [isSupported, speakChunk]);
+
+    if (useOpenAI) {
+      // OpenAI mode
+      if (!ttsPlayerRef.current) {
+        ttsPlayerRef.current = createTTSPlayer();
+      }
+      ttsPlayerRef.current.setPlaybackRate(OPENAI_RATES[rateIndex]);
+      blockIndexRef.current = 0;
+      chunkIndexRef.current = 0;
+      setCurrentBlockIndex(0);
+      setCurrentChunkIndex(0);
+      isPlayingRef.current = true;
+      setIsPlaying(true);
+      setIsPaused(false);
+      speakChunkOpenAI();
+    } else {
+      // SpeechSynthesis fallback
+      window.speechSynthesis.cancel();
+      blockIndexRef.current = 0;
+      chunkIndexRef.current = 0;
+      setCurrentBlockIndex(0);
+      setCurrentChunkIndex(0);
+      isPlayingRef.current = true;
+      setIsPlaying(true);
+      setIsPaused(false);
+      startSilentAudio();
+      speakChunkSpeechSynthesis();
+    }
+  }, [isSupported, useOpenAI, rateIndex, speakChunkOpenAI, speakChunkSpeechSynthesis]);
 
   const pause = useCallback(() => {
-    window.speechSynthesis.pause();
+    if (useOpenAI && ttsPlayerRef.current) {
+      ttsPlayerRef.current.pause();
+    } else {
+      window.speechSynthesis.pause();
+    }
     setIsPaused(true);
     if ('mediaSession' in navigator) {
       navigator.mediaSession.playbackState = 'paused';
     }
-  }, []);
+  }, [useOpenAI]);
 
   const resume = useCallback(() => {
-    window.speechSynthesis.resume();
+    if (useOpenAI && ttsPlayerRef.current) {
+      ttsPlayerRef.current.resume();
+    } else {
+      window.speechSynthesis.resume();
+    }
     setIsPaused(false);
     if ('mediaSession' in navigator) {
       navigator.mediaSession.playbackState = 'playing';
     }
-  }, []);
+  }, [useOpenAI]);
 
   const stop = useCallback(() => {
     isPlayingRef.current = false;
-    window.speechSynthesis.cancel();
+
+    if (useOpenAI && ttsPlayerRef.current) {
+      ttsPlayerRef.current.cleanup();
+      ttsPlayerRef.current = null;
+    } else {
+      window.speechSynthesis.cancel();
+      stopSilentAudio();
+    }
+
     setIsPlaying(false);
     setIsPaused(false);
     setCurrentBlockIndex(0);
     setCurrentChunkIndex(0);
     blockIndexRef.current = 0;
     chunkIndexRef.current = 0;
-    stopSilentAudio();
     updateMediaSession(null, '', null);
-  }, []);
+  }, [useOpenAI]);
 
   const skipForward = useCallback(() => {
     if (blockIndexRef.current >= blocks.length - 1) return;
-    window.speechSynthesis.cancel();
+
+    if (useOpenAI && ttsPlayerRef.current) {
+      ttsPlayerRef.current.stopCurrent();
+    } else {
+      window.speechSynthesis.cancel();
+    }
+
     blockIndexRef.current += 1;
     chunkIndexRef.current = 0;
     setCurrentBlockIndex(blockIndexRef.current);
     setCurrentChunkIndex(0);
     setIsPaused(false);
-    speakChunk();
-  }, [blocks.length, speakChunk]);
+
+    if (useOpenAI) {
+      speakChunkOpenAI();
+    } else {
+      speakChunkSpeechSynthesis();
+    }
+  }, [blocks.length, useOpenAI, speakChunkOpenAI, speakChunkSpeechSynthesis]);
 
   const skipBack = useCallback(() => {
     if (blockIndexRef.current <= 0) return;
-    window.speechSynthesis.cancel();
+
+    if (useOpenAI && ttsPlayerRef.current) {
+      ttsPlayerRef.current.stopCurrent();
+    } else {
+      window.speechSynthesis.cancel();
+    }
+
     blockIndexRef.current -= 1;
     chunkIndexRef.current = 0;
     setCurrentBlockIndex(blockIndexRef.current);
     setCurrentChunkIndex(0);
     setIsPaused(false);
-    speakChunk();
-  }, [speakChunk]);
 
-  // When rate changes mid-playback, cancel current speech and restart
-  // from the current chunk so the new rate takes effect immediately.
+    if (useOpenAI) {
+      speakChunkOpenAI();
+    } else {
+      speakChunkSpeechSynthesis();
+    }
+  }, [useOpenAI, speakChunkOpenAI, speakChunkSpeechSynthesis]);
+
   const cycleRate = useCallback(() => {
     setRateIndex(prev => {
-      const rates = getRateOptions();
-      const nextIdx = (prev + 1) % rates.length;
-      rateRef.current = rates[nextIdx];
+      const nextIdx = (prev + 1) % RATE_LABELS.length;
 
-      // If currently playing (not paused), restart current chunk at new rate
-      if (isPlayingRef.current && !window.speechSynthesis.paused) {
-        window.speechSynthesis.cancel();
-        // Small delay to let cancel complete before speaking again
-        setTimeout(() => speakChunk(), 50);
+      if (useOpenAI && ttsPlayerRef.current) {
+        // OpenAI: adjust AudioBufferSourceNode.playbackRate (instant)
+        const newRate = OPENAI_RATES[nextIdx];
+        rateRef.current = newRate;
+        ttsPlayerRef.current.setPlaybackRate(newRate);
+      } else {
+        // SpeechSynthesis: cancel and restart chunk at new rate
+        const rates = getSpeechSynthesisRates();
+        rateRef.current = rates[nextIdx];
+        if (isPlayingRef.current && !window.speechSynthesis.paused) {
+          window.speechSynthesis.cancel();
+          setTimeout(() => speakChunkSpeechSynthesis(), 50);
+        }
       }
 
       return nextIdx;
     });
-  }, [speakChunk]);
+  }, [useOpenAI, speakChunkSpeechSynthesis]);
 
-  // Register / update Media Session controls when playing state or block changes
+  // ─── Media Session registration ──────────────────────────────────
+
   useEffect(() => {
     if (!isPlaying || !mediaMetadata) return;
 
     const currentLabel = blocks[currentBlockIndex]?.label || '';
     updateMediaSession(mediaMetadata, currentLabel, {
       play: () => {
-        if (isPaused) {
+        if (useOpenAI && ttsPlayerRef.current) {
+          ttsPlayerRef.current.resume();
+        } else {
           window.speechSynthesis.resume();
-          setIsPaused(false);
         }
+        setIsPaused(false);
         if ('mediaSession' in navigator) navigator.mediaSession.playbackState = 'playing';
       },
       pause: () => {
-        window.speechSynthesis.pause();
+        if (useOpenAI && ttsPlayerRef.current) {
+          ttsPlayerRef.current.pause();
+        } else {
+          window.speechSynthesis.pause();
+        }
         setIsPaused(true);
         if ('mediaSession' in navigator) navigator.mediaSession.playbackState = 'paused';
       },
@@ -360,12 +550,17 @@ export function useTextToSpeech(
     if ('mediaSession' in navigator) {
       navigator.mediaSession.playbackState = isPaused ? 'paused' : 'playing';
     }
-  }, [isPlaying, isPaused, currentBlockIndex, blocks, mediaMetadata, skipForward, skipBack]);
+  }, [isPlaying, isPaused, currentBlockIndex, blocks, mediaMetadata, useOpenAI, skipForward, skipBack]);
 
-  // Cleanup on unmount
+  // ─── Cleanup on unmount ──────────────────────────────────────────
+
   useEffect(() => {
     return () => {
       isPlayingRef.current = false;
+      if (ttsPlayerRef.current) {
+        ttsPlayerRef.current.cleanup();
+        ttsPlayerRef.current = null;
+      }
       stopSilentAudio();
       updateMediaSession(null, '', null);
       if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
