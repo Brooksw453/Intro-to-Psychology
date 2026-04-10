@@ -6,10 +6,22 @@
       "id": "ch08-q03",
       "question": "Patient H.M.'s case was groundbreaking because it demonstrated that:",
       "options": [
-        { "text": "All types of memory are stored in the hippocampus", "correct": false },
-        { "text": "Explicit and implicit memory depend on different brain structures", "correct": true },
-        { "text": "The cerebellum is the primary brain area for all memory formation", "correct": false },
-        { "text": "Short-term memory and long-term memory use the same neural pathways", "correct": false }
+        {
+          "text": "The cerebellum is the primary brain area for all memory formation",
+          "correct": false
+        },
+        {
+          "text": "Short-term memory and long-term memory use the same neural pathways",
+          "correct": false
+        },
+        {
+          "text": "All types of memory are stored in the hippocampus",
+          "correct": false
+        },
+        {
+          "text": "Explicit and implicit memory depend on different brain structures",
+          "correct": true
+        }
       ],
       "explanation": "After H.M.'s hippocampal removal, he could no longer form new explicit (declarative) memories but could still learn new procedural skills (implicit memory). This dissociation provided strong evidence that explicit and implicit memory systems are neurologically distinct."
     },
@@ -17,10 +29,22 @@
       "id": "ch08-q04",
       "question": "Which brain structure is most directly responsible for enhancing the encoding and storage of emotionally charged memories?",
       "options": [
-        { "text": "The cerebellum", "correct": false },
-        { "text": "The hippocampus", "correct": false },
-        { "text": "The amygdala", "correct": true },
-        { "text": "The prefrontal cortex", "correct": false }
+        {
+          "text": "The amygdala",
+          "correct": true
+        },
+        {
+          "text": "The cerebellum",
+          "correct": false
+        },
+        {
+          "text": "The prefrontal cortex",
+          "correct": false
+        },
+        {
+          "text": "The hippocampus",
+          "correct": false
+        }
       ],
       "explanation": "The amygdala plays a critical role in processing emotional memories and enhancing the encoding of emotionally significant events. This is why emotionally charged experiences -- both positive and negative -- tend to be remembered more vividly than neutral events."
     }

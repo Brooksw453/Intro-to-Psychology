@@ -7,10 +7,22 @@
       "id": "ch02-q01",
       "question": "Which of the following best explains why psychologists rely on the scientific method rather than intuition?",
       "options": [
-        { "text": "Intuition is always wrong, while science is always right", "correct": false },
-        { "text": "Human reasoning is susceptible to cognitive biases like confirmation bias that distort our perception", "correct": true },
-        { "text": "The scientific method is faster and cheaper than relying on personal experience", "correct": false },
-        { "text": "Intuition can only be used for simple problems, not complex ones", "correct": false }
+        {
+          "text": "Intuition is always wrong, while science is always right",
+          "correct": false
+        },
+        {
+          "text": "The scientific method is faster and cheaper than relying on personal experience",
+          "correct": false
+        },
+        {
+          "text": "Human reasoning is susceptible to cognitive biases like confirmation bias that distort our perception",
+          "correct": true
+        },
+        {
+          "text": "Intuition can only be used for simple problems, not complex ones",
+          "correct": false
+        }
       ],
       "explanation": "Psychologists use the scientific method because human reasoning is vulnerable to cognitive biases such as confirmation bias, which leads us to selectively notice evidence that supports our existing beliefs. The scientific method provides a systematic framework for minimizing these biases."
     },
@@ -18,10 +30,22 @@
       "id": "ch02-q02",
       "question": "A hypothesis must be falsifiable. This means that it must:",
       "options": [
-        { "text": "Be proven false before it can be published", "correct": false },
-        { "text": "Be based on previous research that was shown to be incorrect", "correct": false },
-        { "text": "Be capable of being tested and potentially shown to be wrong", "correct": true },
-        { "text": "Include a prediction that is certain to be confirmed by the data", "correct": false }
+        {
+          "text": "Be capable of being tested and potentially shown to be wrong",
+          "correct": true
+        },
+        {
+          "text": "Include a prediction that is certain to be confirmed by the data",
+          "correct": false
+        },
+        {
+          "text": "Be proven false before it can be published",
+          "correct": false
+        },
+        {
+          "text": "Be based on previous research that was shown to be incorrect",
+          "correct": false
+        }
       ],
       "explanation": "Falsifiability means that a hypothesis must be stated in a way that allows it to be tested and potentially disproven through observation or experimentation. If a claim cannot possibly be shown to be wrong, it falls outside the realm of science."
     }

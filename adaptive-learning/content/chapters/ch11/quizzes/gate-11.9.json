@@ -6,10 +6,22 @@
       "id": "ch11-q17",
       "question": "Which of the following is a key advantage of projective tests over self-report inventories?",
       "options": [
-        { "text": "They have higher reliability and validity", "correct": false },
-        { "text": "They are less susceptible to deliberate impression management", "correct": true },
-        { "text": "They are easier to administer and score", "correct": false },
-        { "text": "They produce more objective, standardized results", "correct": false }
+        {
+          "text": "They produce more objective, standardized results",
+          "correct": false
+        },
+        {
+          "text": "They are less susceptible to deliberate impression management",
+          "correct": true
+        },
+        {
+          "text": "They have higher reliability and validity",
+          "correct": false
+        },
+        {
+          "text": "They are easier to administer and score",
+          "correct": false
+        }
       ],
       "explanation": "Because the 'correct' response to a projective test is ambiguous, individuals cannot easily manipulate their responses to create a favorable impression, unlike self-report inventories where socially desirable responses may be obvious."
     },
@@ -17,10 +29,22 @@
       "id": "ch11-q18",
       "question": "The MMPI is best described as:",
       "options": [
-        { "text": "A projective test that uses inkblots to assess unconscious processes", "correct": false },
-        { "text": "A behavioral observation checklist used by clinicians", "correct": false },
-        { "text": "A self-report inventory designed to assess psychological disorders and personality characteristics", "correct": true },
-        { "text": "A measure of the Big Five personality traits exclusively", "correct": false }
+        {
+          "text": "A projective test that uses inkblots to assess unconscious processes",
+          "correct": false
+        },
+        {
+          "text": "A measure of the Big Five personality traits exclusively",
+          "correct": false
+        },
+        {
+          "text": "A self-report inventory designed to assess psychological disorders and personality characteristics",
+          "correct": true
+        },
+        {
+          "text": "A behavioral observation checklist used by clinicians",
+          "correct": false
+        }
       ],
       "explanation": "The Minnesota Multiphasic Personality Inventory (MMPI) is a widely used self-report inventory containing hundreds of true/false items that produce scores on clinical scales and validity scales, making it a key tool in clinical assessment."
     }

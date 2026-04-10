@@ -6,10 +6,22 @@
       "id": "ch06-q05",
       "question": "A teenager loses their phone privileges after breaking curfew, and subsequently breaks curfew less often. This is an example of:",
       "options": [
-        { "text": "Positive reinforcement", "correct": false },
-        { "text": "Negative reinforcement", "correct": false },
-        { "text": "Positive punishment", "correct": false },
-        { "text": "Negative punishment", "correct": true }
+        {
+          "text": "Negative punishment",
+          "correct": true
+        },
+        {
+          "text": "Positive reinforcement",
+          "correct": false
+        },
+        {
+          "text": "Positive punishment",
+          "correct": false
+        },
+        {
+          "text": "Negative reinforcement",
+          "correct": false
+        }
       ],
       "explanation": "Negative punishment involves removing a desirable stimulus (phone privileges) after an undesired behavior (breaking curfew), which decreases the likelihood of the behavior. 'Negative' refers to the removal of something, and 'punishment' means the behavior decreases."
     },
@@ -17,10 +29,22 @@
       "id": "ch06-q06",
       "question": "Which reinforcement schedule produces the highest and most consistent rate of responding and the greatest resistance to extinction?",
       "options": [
-        { "text": "Fixed-ratio", "correct": false },
-        { "text": "Variable-ratio", "correct": true },
-        { "text": "Fixed-interval", "correct": false },
-        { "text": "Continuous reinforcement", "correct": false }
+        {
+          "text": "Fixed-ratio",
+          "correct": false
+        },
+        {
+          "text": "Continuous reinforcement",
+          "correct": false
+        },
+        {
+          "text": "Variable-ratio",
+          "correct": true
+        },
+        {
+          "text": "Fixed-interval",
+          "correct": false
+        }
       ],
       "explanation": "Variable-ratio schedules (reward after an unpredictable number of responses) produce the highest, most consistent response rates and the greatest resistance to extinction. This is why behaviors maintained on variable-ratio schedules (like gambling or checking social media) are so persistent."
     }

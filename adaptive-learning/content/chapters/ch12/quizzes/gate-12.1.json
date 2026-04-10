@@ -6,10 +6,22 @@
       "id": "ch12-q01",
       "question": "The fundamental attribution error refers to the tendency to:",
       "options": [
-        { "text": "Overestimate situational factors and underestimate dispositional factors when explaining others' behavior", "correct": false },
-        { "text": "Overestimate dispositional factors and underestimate situational factors when explaining others' behavior", "correct": true },
-        { "text": "Attribute our own successes to effort and our failures to bad luck", "correct": false },
-        { "text": "Assume that all members of a group share the same personality traits", "correct": false }
+        {
+          "text": "Overestimate dispositional factors and underestimate situational factors when explaining others' behavior",
+          "correct": true
+        },
+        {
+          "text": "Overestimate situational factors and underestimate dispositional factors when explaining others' behavior",
+          "correct": false
+        },
+        {
+          "text": "Attribute our own successes to effort and our failures to bad luck",
+          "correct": false
+        },
+        {
+          "text": "Assume that all members of a group share the same personality traits",
+          "correct": false
+        }
       ],
       "explanation": "The fundamental attribution error is the tendency to overestimate the role of internal, dispositional factors (personality) and underestimate the role of external, situational factors when explaining why other people behave as they do."
     },
@@ -17,10 +29,22 @@
       "id": "ch12-q02",
       "question": "Social psychology is best defined as the scientific study of how:",
       "options": [
-        { "text": "Personality traits remain stable across the lifespan", "correct": false },
-        { "text": "Mental disorders develop and can be treated", "correct": false },
-        { "text": "Individuals' thoughts, feelings, and behaviors are influenced by the presence of others", "correct": true },
-        { "text": "Groups evolve and maintain their organizational structures", "correct": false }
+        {
+          "text": "Mental disorders develop and can be treated",
+          "correct": false
+        },
+        {
+          "text": "Individuals' thoughts, feelings, and behaviors are influenced by the presence of others",
+          "correct": true
+        },
+        {
+          "text": "Groups evolve and maintain their organizational structures",
+          "correct": false
+        },
+        {
+          "text": "Personality traits remain stable across the lifespan",
+          "correct": false
+        }
       ],
       "explanation": "Social psychology specifically examines how the actual, imagined, or implied presence of others influences individual thoughts, feelings, and behaviors, distinguishing it from other branches of psychology."
     }

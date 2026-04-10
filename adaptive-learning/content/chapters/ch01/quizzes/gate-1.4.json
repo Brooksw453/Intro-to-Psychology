@@ -7,10 +7,22 @@
       "id": "ch01-q07",
       "question": "What is a key difference between a clinical psychologist and a psychiatrist?",
       "options": [
-        { "text": "Clinical psychologists work only in hospitals, while psychiatrists work in private practice", "correct": false },
-        { "text": "Psychiatrists hold medical degrees and can typically prescribe medication, while clinical psychologists typically cannot", "correct": true },
-        { "text": "Clinical psychologists treat only children, while psychiatrists treat only adults", "correct": false },
-        { "text": "Psychiatrists focus on research, while clinical psychologists focus on therapy", "correct": false }
+        {
+          "text": "Clinical psychologists treat only children, while psychiatrists treat only adults",
+          "correct": false
+        },
+        {
+          "text": "Psychiatrists hold medical degrees and can typically prescribe medication, while clinical psychologists typically cannot",
+          "correct": true
+        },
+        {
+          "text": "Clinical psychologists work only in hospitals, while psychiatrists work in private practice",
+          "correct": false
+        },
+        {
+          "text": "Psychiatrists focus on research, while clinical psychologists focus on therapy",
+          "correct": false
+        }
       ],
       "explanation": "The primary distinction is in training and prescriptive authority. Psychiatrists hold medical degrees (MD or DO) and can prescribe medication, while clinical psychologists hold doctoral degrees in psychology (PhD or PsyD) and typically cannot prescribe medication (with limited exceptions in some states)."
     },
@@ -18,10 +30,22 @@
       "id": "ch01-q08",
       "question": "An industrial-organizational (I-O) psychologist would most likely be involved in which of the following activities?",
       "options": [
-        { "text": "Diagnosing a client with major depressive disorder", "correct": false },
-        { "text": "Evaluating a defendant's competency to stand trial", "correct": false },
-        { "text": "Developing employee selection procedures and improving workplace motivation", "correct": true },
-        { "text": "Conducting brain imaging studies on patients with traumatic brain injuries", "correct": false }
+        {
+          "text": "Evaluating a defendant's competency to stand trial",
+          "correct": false
+        },
+        {
+          "text": "Conducting brain imaging studies on patients with traumatic brain injuries",
+          "correct": false
+        },
+        {
+          "text": "Diagnosing a client with major depressive disorder",
+          "correct": false
+        },
+        {
+          "text": "Developing employee selection procedures and improving workplace motivation",
+          "correct": true
+        }
       ],
       "explanation": "I-O psychologists apply psychological principles to workplace settings. Their work includes developing hiring and selection procedures, improving employee motivation and satisfaction, studying leadership, and enhancing organizational effectiveness."
     }

@@ -6,10 +6,22 @@
       "id": "ch14-q07",
       "question": "Problem-focused coping is generally most effective when:",
       "options": [
-        { "text": "The stressor is uncontrollable", "correct": false },
-        { "text": "The stressor is controllable and concrete steps can be taken", "correct": true },
-        { "text": "The person has limited social support", "correct": false },
-        { "text": "Emotion-focused coping has already failed", "correct": false }
+        {
+          "text": "The stressor is uncontrollable",
+          "correct": false
+        },
+        {
+          "text": "The stressor is controllable and concrete steps can be taken",
+          "correct": true
+        },
+        {
+          "text": "Emotion-focused coping has already failed",
+          "correct": false
+        },
+        {
+          "text": "The person has limited social support",
+          "correct": false
+        }
       ],
       "explanation": "Problem-focused coping involves taking direct action to change or eliminate the source of stress. It is most effective when the stressor is controllable — when there are concrete steps that can be taken to address the situation. For uncontrollable stressors, emotion-focused coping may be more appropriate."
     },
@@ -17,10 +29,22 @@
       "id": "ch14-q08",
       "question": "Research by Langer and Rodin with nursing home residents demonstrated that:",
       "options": [
-        { "text": "Social support is more important than coping strategies", "correct": false },
-        { "text": "Exercise is the most effective stress reduction technique", "correct": false },
-        { "text": "Perceived control over daily decisions improved health and reduced mortality", "correct": true },
-        { "text": "Problem-focused coping is always superior to emotion-focused coping", "correct": false }
+        {
+          "text": "Problem-focused coping is always superior to emotion-focused coping",
+          "correct": false
+        },
+        {
+          "text": "Exercise is the most effective stress reduction technique",
+          "correct": false
+        },
+        {
+          "text": "Perceived control over daily decisions improved health and reduced mortality",
+          "correct": true
+        },
+        {
+          "text": "Social support is more important than coping strategies",
+          "correct": false
+        }
       ],
       "explanation": "Langer and Rodin found that nursing home residents given greater control over simple daily decisions showed improved health, greater happiness, and even lower mortality rates compared to those who had decisions made for them, demonstrating the powerful role of perceived control in stress management."
     }

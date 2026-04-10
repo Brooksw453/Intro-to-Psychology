@@ -6,10 +6,22 @@
       "id": "ch11-q09",
       "question": "According to Maslow, self-actualization can only become a primary motivating force when:",
       "options": [
-        { "text": "A person has resolved all unconscious conflicts", "correct": false },
-        { "text": "A person has received unconditional positive regard", "correct": false },
-        { "text": "Lower-level needs in the hierarchy have been substantially met", "correct": true },
-        { "text": "A person reaches middle adulthood", "correct": false }
+        {
+          "text": "A person has received unconditional positive regard",
+          "correct": false
+        },
+        {
+          "text": "A person has resolved all unconscious conflicts",
+          "correct": false
+        },
+        {
+          "text": "A person reaches middle adulthood",
+          "correct": false
+        },
+        {
+          "text": "Lower-level needs in the hierarchy have been substantially met",
+          "correct": true
+        }
       ],
       "explanation": "Maslow's hierarchy of needs proposes that higher-level needs like self-actualization become motivating forces only after more basic needs (physiological, safety, belongingness, esteem) have been substantially satisfied."
     },
@@ -17,10 +29,22 @@
       "id": "ch11-q10",
       "question": "In Rogers' theory, a significant gap between the real self and the ideal self produces:",
       "options": [
-        { "text": "Self-actualization", "correct": false },
-        { "text": "Incongruence and psychological distress", "correct": true },
-        { "text": "An inferiority complex", "correct": false },
-        { "text": "Increased self-efficacy", "correct": false }
+        {
+          "text": "An inferiority complex",
+          "correct": false
+        },
+        {
+          "text": "Self-actualization",
+          "correct": false
+        },
+        {
+          "text": "Increased self-efficacy",
+          "correct": false
+        },
+        {
+          "text": "Incongruence and psychological distress",
+          "correct": true
+        }
       ],
       "explanation": "Rogers proposed that when there is a large discrepancy between who a person actually is (real self) and who they want to be (ideal self), the result is incongruence, which leads to anxiety and dissatisfaction."
     }

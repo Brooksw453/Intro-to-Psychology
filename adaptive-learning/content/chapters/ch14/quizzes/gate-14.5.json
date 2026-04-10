@@ -6,10 +6,22 @@
       "id": "ch14-q09",
       "question": "Hedonic adaptation refers to the tendency for people to:",
       "options": [
-        { "text": "Become happier as they accumulate more wealth", "correct": false },
-        { "text": "Return to a baseline level of happiness after major positive or negative events", "correct": true },
-        { "text": "Experience flow states more frequently with practice", "correct": false },
-        { "text": "Develop gratitude as they age", "correct": false }
+        {
+          "text": "Become happier as they accumulate more wealth",
+          "correct": false
+        },
+        {
+          "text": "Return to a baseline level of happiness after major positive or negative events",
+          "correct": true
+        },
+        {
+          "text": "Develop gratitude as they age",
+          "correct": false
+        },
+        {
+          "text": "Experience flow states more frequently with practice",
+          "correct": false
+        }
       ],
       "explanation": "Hedonic adaptation is the well-documented tendency for people to return to a relatively stable baseline level of happiness despite major positive or negative life events. This is why lottery winners typically return to their pre-winning happiness level within a year or two."
     },
@@ -17,10 +29,22 @@
       "id": "ch14-q10",
       "question": "According to happiness research, which factor is the single strongest predictor of subjective well-being?",
       "options": [
-        { "text": "Income level", "correct": false },
-        { "text": "Physical health", "correct": false },
-        { "text": "Strong social relationships", "correct": true },
-        { "text": "Career success", "correct": false }
+        {
+          "text": "Income level",
+          "correct": false
+        },
+        {
+          "text": "Career success",
+          "correct": false
+        },
+        {
+          "text": "Physical health",
+          "correct": false
+        },
+        {
+          "text": "Strong social relationships",
+          "correct": true
+        }
       ],
       "explanation": "Research consistently identifies strong social relationships as the single strongest predictor of subjective well-being. People with close friendships, supportive family relationships, and romantic partnerships report significantly higher life satisfaction, and the quality of relationships matters more than quantity."
     }

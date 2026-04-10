@@ -6,10 +6,22 @@
       "id": "ch04-q03",
       "question": "According to the restorative theory of sleep, what is one of the primary functions of sleep?",
       "options": [
-        { "text": "To conserve energy by reducing metabolic activity to near zero", "correct": false },
-        { "text": "To allow the body and brain to repair themselves and consolidate memories", "correct": true },
-        { "text": "To practice survival skills through dream rehearsal", "correct": false },
-        { "text": "To reduce consciousness so the brain can shut down completely", "correct": false }
+        {
+          "text": "To reduce consciousness so the brain can shut down completely",
+          "correct": false
+        },
+        {
+          "text": "To allow the body and brain to repair themselves and consolidate memories",
+          "correct": true
+        },
+        {
+          "text": "To conserve energy by reducing metabolic activity to near zero",
+          "correct": false
+        },
+        {
+          "text": "To practice survival skills through dream rehearsal",
+          "correct": false
+        }
       ],
       "explanation": "The restorative theory proposes that sleep allows the body to repair cellular damage, release growth hormone, strengthen the immune system, and consolidate memories. The brain also clears metabolic waste products through the glymphatic system during sleep."
     },
@@ -17,10 +29,22 @@
       "id": "ch04-q04",
       "question": "Which of the following is a documented consequence of chronic sleep deprivation?",
       "options": [
-        { "text": "Improved long-term memory consolidation", "correct": false },
-        { "text": "Increased emotional stability and reduced stress", "correct": false },
-        { "text": "Enhanced creative thinking and problem-solving", "correct": false },
-        { "text": "Impaired attention, weakened immune function, and increased risk of depression", "correct": true }
+        {
+          "text": "Improved long-term memory consolidation",
+          "correct": false
+        },
+        {
+          "text": "Increased emotional stability and reduced stress",
+          "correct": false
+        },
+        {
+          "text": "Enhanced creative thinking and problem-solving",
+          "correct": false
+        },
+        {
+          "text": "Impaired attention, weakened immune function, and increased risk of depression",
+          "correct": true
+        }
       ],
       "explanation": "Chronic sleep deprivation impairs cognitive functions like attention and memory, weakens the immune system, increases emotional instability, and raises the risk of depression, obesity, and cardiovascular disease. Sleep debt accumulates and is difficult to fully repay."
     }

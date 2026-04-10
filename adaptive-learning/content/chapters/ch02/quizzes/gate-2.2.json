@@ -7,10 +7,22 @@
       "id": "ch02-q03",
       "question": "A researcher finds that students who exercise more frequently tend to have higher GPAs. Based on this finding alone, we can conclude that:",
       "options": [
-        { "text": "Exercise causes higher GPAs", "correct": false },
-        { "text": "Higher GPAs motivate students to exercise more", "correct": false },
-        { "text": "There is a relationship between exercise frequency and GPA, but we cannot determine causation", "correct": true },
-        { "text": "A third variable has been ruled out as an explanation", "correct": false }
+        {
+          "text": "There is a relationship between exercise frequency and GPA, but we cannot determine causation",
+          "correct": true
+        },
+        {
+          "text": "Higher GPAs motivate students to exercise more",
+          "correct": false
+        },
+        {
+          "text": "A third variable has been ruled out as an explanation",
+          "correct": false
+        },
+        {
+          "text": "Exercise causes higher GPAs",
+          "correct": false
+        }
       ],
       "explanation": "This is a correlational finding. While it identifies a relationship between exercise and GPA, correlation does not equal causation. A third variable (such as self-discipline or socioeconomic status) could explain both behaviors. Only an experiment with random assignment can establish causation."
     },
@@ -18,10 +30,22 @@
       "id": "ch02-q04",
       "question": "In an experiment testing whether background music affects reading comprehension, the independent variable is:",
       "options": [
-        { "text": "The participants' reading comprehension scores", "correct": false },
-        { "text": "The presence or absence of background music", "correct": true },
-        { "text": "The participants' age and education level", "correct": false },
-        { "text": "The difficulty level of the reading passages", "correct": false }
+        {
+          "text": "The difficulty level of the reading passages",
+          "correct": false
+        },
+        {
+          "text": "The participants' age and education level",
+          "correct": false
+        },
+        {
+          "text": "The presence or absence of background music",
+          "correct": true
+        },
+        {
+          "text": "The participants' reading comprehension scores",
+          "correct": false
+        }
       ],
       "explanation": "The independent variable is the factor that the researcher deliberately manipulates -- in this case, whether background music is present or absent. The dependent variable (reading comprehension scores) is what is measured to see if the manipulation had an effect."
     }

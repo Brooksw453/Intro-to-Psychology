@@ -6,10 +6,22 @@
       "id": "ch15-q09",
       "question": "In obsessive-compulsive disorder, compulsions are best described as:",
       "options": [
-        { "text": "Enjoyable rituals that the person chooses to perform for pleasure", "correct": false },
-        { "text": "Repetitive behaviors or mental acts performed to reduce the anxiety caused by obsessions", "correct": true },
-        { "text": "Involuntary muscle movements caused by neurological damage", "correct": false },
-        { "text": "Delusional beliefs about contamination or danger", "correct": false }
+        {
+          "text": "Repetitive behaviors or mental acts performed to reduce the anxiety caused by obsessions",
+          "correct": true
+        },
+        {
+          "text": "Enjoyable rituals that the person chooses to perform for pleasure",
+          "correct": false
+        },
+        {
+          "text": "Involuntary muscle movements caused by neurological damage",
+          "correct": false
+        },
+        {
+          "text": "Delusional beliefs about contamination or danger",
+          "correct": false
+        }
       ],
       "explanation": "Compulsions are repetitive behaviors (such as hand washing or checking) or mental acts (such as counting or praying) that a person feels driven to perform in response to an obsession. They aim to reduce anxiety, but the relief is temporary and reinforces the cycle."
     },
@@ -17,10 +29,22 @@
       "id": "ch15-q10",
       "question": "A person who is preoccupied with perceived flaws in their physical appearance that are not observable to others most likely has:",
       "options": [
-        { "text": "Obsessive-compulsive disorder", "correct": false },
-        { "text": "Body dysmorphic disorder", "correct": true },
-        { "text": "Hoarding disorder", "correct": false },
-        { "text": "Social anxiety disorder", "correct": false }
+        {
+          "text": "Hoarding disorder",
+          "correct": false
+        },
+        {
+          "text": "Obsessive-compulsive disorder",
+          "correct": false
+        },
+        {
+          "text": "Body dysmorphic disorder",
+          "correct": true
+        },
+        {
+          "text": "Social anxiety disorder",
+          "correct": false
+        }
       ],
       "explanation": "Body dysmorphic disorder involves a preoccupation with one or more perceived defects in physical appearance that are not observable or appear slight to others. It is classified as an obsessive-compulsive and related disorder in the DSM-5."
     }

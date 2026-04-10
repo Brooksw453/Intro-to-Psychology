@@ -6,10 +6,22 @@
       "id": "ch11-q13",
       "question": "The Five Factor Model (Big Five) includes all of the following personality dimensions EXCEPT:",
       "options": [
-        { "text": "Openness to experience", "correct": false },
-        { "text": "Conscientiousness", "correct": false },
-        { "text": "Self-efficacy", "correct": true },
-        { "text": "Neuroticism", "correct": false }
+        {
+          "text": "Neuroticism",
+          "correct": false
+        },
+        {
+          "text": "Conscientiousness",
+          "correct": false
+        },
+        {
+          "text": "Openness to experience",
+          "correct": false
+        },
+        {
+          "text": "Self-efficacy",
+          "correct": true
+        }
       ],
       "explanation": "The Big Five dimensions are openness, conscientiousness, extraversion, agreeableness, and neuroticism (OCEAN). Self-efficacy is a concept from Bandura's social-cognitive theory, not one of the Big Five traits."
     },
@@ -17,10 +29,22 @@
       "id": "ch11-q14",
       "question": "Which statistical technique did Cattell use to identify clusters of related personality traits?",
       "options": [
-        { "text": "Correlation analysis", "correct": false },
-        { "text": "Factor analysis", "correct": true },
-        { "text": "Regression analysis", "correct": false },
-        { "text": "Content analysis", "correct": false }
+        {
+          "text": "Regression analysis",
+          "correct": false
+        },
+        {
+          "text": "Correlation analysis",
+          "correct": false
+        },
+        {
+          "text": "Factor analysis",
+          "correct": true
+        },
+        {
+          "text": "Content analysis",
+          "correct": false
+        }
       ],
       "explanation": "Raymond Cattell used factor analysis, a statistical technique that identifies clusters of traits that tend to co-occur, to reduce thousands of trait descriptors to 16 source traits measured by his 16PF Questionnaire."
     }

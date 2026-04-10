@@ -6,10 +6,22 @@
       "id": "ch15-q11",
       "question": "Which of the following is NOT one of the four symptom clusters of PTSD?",
       "options": [
-        { "text": "Intrusion symptoms such as flashbacks and nightmares", "correct": false },
-        { "text": "Avoidance of trauma-related stimuli", "correct": false },
-        { "text": "Compulsive rituals performed to prevent the trauma from recurring", "correct": true },
-        { "text": "Negative alterations in cognition and mood", "correct": false }
+        {
+          "text": "Intrusion symptoms such as flashbacks and nightmares",
+          "correct": false
+        },
+        {
+          "text": "Compulsive rituals performed to prevent the trauma from recurring",
+          "correct": true
+        },
+        {
+          "text": "Avoidance of trauma-related stimuli",
+          "correct": false
+        },
+        {
+          "text": "Negative alterations in cognition and mood",
+          "correct": false
+        }
       ],
       "explanation": "The four symptom clusters of PTSD are intrusion (flashbacks, nightmares), avoidance, negative alterations in cognition and mood, and alterations in arousal and reactivity. Compulsive rituals are a feature of OCD, not PTSD."
     },
@@ -17,10 +29,22 @@
       "id": "ch15-q12",
       "question": "Which factor is most likely to PROTECT a person from developing PTSD after a traumatic event?",
       "options": [
-        { "text": "Prior exposure to multiple traumatic events", "correct": false },
-        { "text": "Strong social support networks", "correct": true },
-        { "text": "A pre-existing anxiety disorder", "correct": false },
-        { "text": "Perceiving a high level of life threat during the event", "correct": false }
+        {
+          "text": "Perceiving a high level of life threat during the event",
+          "correct": false
+        },
+        {
+          "text": "A pre-existing anxiety disorder",
+          "correct": false
+        },
+        {
+          "text": "Prior exposure to multiple traumatic events",
+          "correct": false
+        },
+        {
+          "text": "Strong social support networks",
+          "correct": true
+        }
       ],
       "explanation": "Strong social support is a well-established protective factor against PTSD. Prior trauma exposure, pre-existing mental health conditions, and perceived life threat are all risk factors that increase vulnerability to PTSD."
     }

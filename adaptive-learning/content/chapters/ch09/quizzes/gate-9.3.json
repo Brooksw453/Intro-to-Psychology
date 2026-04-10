@@ -6,10 +6,22 @@
       "id": "ch09-q05",
       "question": "Which term describes any environmental agent that can cause harm to a developing embryo or fetus during prenatal development?",
       "options": [
-        { "text": "Attachment figure", "correct": false },
-        { "text": "Teratogen", "correct": true },
-        { "text": "Temperament factor", "correct": false },
-        { "text": "Schema", "correct": false }
+        {
+          "text": "Attachment figure",
+          "correct": false
+        },
+        {
+          "text": "Schema",
+          "correct": false
+        },
+        {
+          "text": "Teratogen",
+          "correct": true
+        },
+        {
+          "text": "Temperament factor",
+          "correct": false
+        }
       ],
       "explanation": "A teratogen is any environmental agent -- such as alcohol, certain drugs, viruses, or chemicals -- that can cause harm to a developing embryo or fetus. Fetal alcohol spectrum disorders are a well-known example of teratogenic effects."
     },
@@ -17,10 +29,22 @@
       "id": "ch09-q06",
       "question": "According to research on attachment, a securely attached infant in the Strange Situation typically:",
       "options": [
-        { "text": "Shows little distress when the caregiver leaves and ignores them upon return", "correct": false },
-        { "text": "Uses the caregiver as a safe base for exploration and is comforted upon their return", "correct": true },
-        { "text": "Clings to the caregiver constantly and refuses to explore the environment", "correct": false },
-        { "text": "Shows no preference for the caregiver over a stranger", "correct": false }
+        {
+          "text": "Clings to the caregiver constantly and refuses to explore the environment",
+          "correct": false
+        },
+        {
+          "text": "Shows no preference for the caregiver over a stranger",
+          "correct": false
+        },
+        {
+          "text": "Shows little distress when the caregiver leaves and ignores them upon return",
+          "correct": false
+        },
+        {
+          "text": "Uses the caregiver as a safe base for exploration and is comforted upon their return",
+          "correct": true
+        }
       ],
       "explanation": "Securely attached infants use the caregiver as a safe base from which to explore. They may show distress when the caregiver leaves but are quickly comforted upon return. This pattern is associated with consistent, responsive caregiving."
     }

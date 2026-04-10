@@ -6,10 +6,22 @@
       "id": "ch15-q13",
       "question": "To receive a diagnosis of major depressive disorder, a person must experience symptoms for a minimum of:",
       "options": [
-        { "text": "One week", "correct": false },
-        { "text": "Two weeks", "correct": true },
-        { "text": "One month", "correct": false },
-        { "text": "Six months", "correct": false }
+        {
+          "text": "One month",
+          "correct": false
+        },
+        {
+          "text": "Six months",
+          "correct": false
+        },
+        {
+          "text": "Two weeks",
+          "correct": true
+        },
+        {
+          "text": "One week",
+          "correct": false
+        }
       ],
       "explanation": "The DSM-5 requires that at least five symptoms of depression be present during the same two-week period, with at least one being depressed mood or loss of interest, for a diagnosis of major depressive disorder."
     },
@@ -17,10 +29,22 @@
       "id": "ch15-q14",
       "question": "A person experiencing a manic episode would most likely exhibit which of the following?",
       "options": [
-        { "text": "Persistent sadness, fatigue, and social withdrawal lasting several weeks", "correct": false },
-        { "text": "Abnormally elevated mood, decreased need for sleep, and impulsive behavior", "correct": true },
-        { "text": "Intrusive thoughts followed by repetitive checking behaviors", "correct": false },
-        { "text": "Intense fear of social situations and avoidance of public speaking", "correct": false }
+        {
+          "text": "Persistent sadness, fatigue, and social withdrawal lasting several weeks",
+          "correct": false
+        },
+        {
+          "text": "Intense fear of social situations and avoidance of public speaking",
+          "correct": false
+        },
+        {
+          "text": "Intrusive thoughts followed by repetitive checking behaviors",
+          "correct": false
+        },
+        {
+          "text": "Abnormally elevated mood, decreased need for sleep, and impulsive behavior",
+          "correct": true
+        }
       ],
       "explanation": "Mania is characterized by abnormally elevated or irritable mood, increased energy, decreased need for sleep, rapid speech, racing thoughts, and impulsive or risky behavior. It is a defining feature of bipolar I disorder."
     }

@@ -7,10 +7,22 @@
       "id": "ch02-q05",
       "question": "A company reports that its average employee salary is $95,000. However, most employees earn between $40,000 and $60,000, while a few executives earn over $1 million. Which measure of central tendency would most accurately represent the typical employee's salary?",
       "options": [
-        { "text": "Mean", "correct": false },
-        { "text": "Median", "correct": true },
-        { "text": "Mode", "correct": false },
-        { "text": "Standard deviation", "correct": false }
+        {
+          "text": "Standard deviation",
+          "correct": false
+        },
+        {
+          "text": "Median",
+          "correct": true
+        },
+        {
+          "text": "Mean",
+          "correct": false
+        },
+        {
+          "text": "Mode",
+          "correct": false
+        }
       ],
       "explanation": "The median is the best measure of central tendency when data are skewed by extreme values (outliers). In this case, a few very high executive salaries inflate the mean, making it unrepresentative of the typical employee. The median, which is the middle value when scores are ordered, is not affected by outliers."
     },
@@ -18,10 +30,22 @@
       "id": "ch02-q06",
       "question": "A researcher reports that the results of a study are statistically significant at p < .05. This means that:",
       "options": [
-        { "text": "The results are practically meaningful and should be applied immediately", "correct": false },
-        { "text": "There is less than a 5% probability that the results occurred by chance alone", "correct": true },
-        { "text": "The study has been replicated at least five times with the same results", "correct": false },
-        { "text": "At least 95% of participants showed the predicted effect", "correct": false }
+        {
+          "text": "The study has been replicated at least five times with the same results",
+          "correct": false
+        },
+        {
+          "text": "At least 95% of participants showed the predicted effect",
+          "correct": false
+        },
+        {
+          "text": "There is less than a 5% probability that the results occurred by chance alone",
+          "correct": true
+        },
+        {
+          "text": "The results are practically meaningful and should be applied immediately",
+          "correct": false
+        }
       ],
       "explanation": "Statistical significance at p < .05 means there is less than a 5% probability that the observed results would have occurred if there were no real effect (by chance alone). It does not guarantee that the results are practically important, replicated, or that most participants showed the effect."
     }

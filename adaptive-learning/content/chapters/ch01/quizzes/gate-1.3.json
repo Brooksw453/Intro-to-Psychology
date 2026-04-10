@@ -7,10 +7,22 @@
       "id": "ch01-q05",
       "question": "A psychologist uses fMRI technology to examine which brain regions are active when a person experiences fear. This researcher is working within which contemporary perspective?",
       "options": [
-        { "text": "Evolutionary psychology", "correct": false },
-        { "text": "Cognitive psychology", "correct": false },
-        { "text": "Biological perspective (biopsychology)", "correct": true },
-        { "text": "Sociocultural perspective", "correct": false }
+        {
+          "text": "Cognitive psychology",
+          "correct": false
+        },
+        {
+          "text": "Biological perspective (biopsychology)",
+          "correct": true
+        },
+        {
+          "text": "Sociocultural perspective",
+          "correct": false
+        },
+        {
+          "text": "Evolutionary psychology",
+          "correct": false
+        }
       ],
       "explanation": "The biological perspective (biopsychology) examines how the brain, neurotransmitters, and other physiological processes influence behavior and mental processes. Using brain imaging technology like fMRI to study neural activity is a hallmark of this approach."
     },
@@ -18,10 +30,22 @@
       "id": "ch01-q06",
       "question": "Kenneth and Mamie Clark's doll studies, which examined the psychological effects of segregation on African American children, are significant because they:",
       "options": [
-        { "text": "Established the first psychology laboratory focused on child development", "correct": false },
-        { "text": "Proved that behaviorism was superior to other psychological perspectives", "correct": false },
-        { "text": "Were cited in the Brown v. Board of Education Supreme Court decision", "correct": true },
-        { "text": "Introduced the concept of cross-cultural psychology to the field", "correct": false }
+        {
+          "text": "Proved that behaviorism was superior to other psychological perspectives",
+          "correct": false
+        },
+        {
+          "text": "Introduced the concept of cross-cultural psychology to the field",
+          "correct": false
+        },
+        {
+          "text": "Were cited in the Brown v. Board of Education Supreme Court decision",
+          "correct": true
+        },
+        {
+          "text": "Established the first psychology laboratory focused on child development",
+          "correct": false
+        }
       ],
       "explanation": "The Clarks' doll studies demonstrated the negative psychological impact of racial segregation on Black children and were cited as evidence in the landmark Brown v. Board of Education (1954) Supreme Court case that declared school segregation unconstitutional."
     }

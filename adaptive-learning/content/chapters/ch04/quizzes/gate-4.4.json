@@ -6,10 +6,22 @@
       "id": "ch04-q07",
       "question": "A person frequently falls asleep suddenly during the day and occasionally experiences cataplexy — sudden muscle weakness triggered by strong emotions. Which sleep disorder does this person most likely have?",
       "options": [
-        { "text": "Insomnia", "correct": false },
-        { "text": "Sleep apnea", "correct": false },
-        { "text": "Narcolepsy", "correct": true },
-        { "text": "Night terrors", "correct": false }
+        {
+          "text": "Insomnia",
+          "correct": false
+        },
+        {
+          "text": "Sleep apnea",
+          "correct": false
+        },
+        {
+          "text": "Narcolepsy",
+          "correct": true
+        },
+        {
+          "text": "Night terrors",
+          "correct": false
+        }
       ],
       "explanation": "Narcolepsy is characterized by excessive daytime sleepiness, sudden involuntary sleep episodes, and often cataplexy (sudden loss of muscle control triggered by emotions). It is caused by the loss of hypocretin-producing neurons that regulate wakefulness."
     },
@@ -17,10 +29,22 @@
       "id": "ch04-q08",
       "question": "A patient reports feeling exhausted every day despite spending eight hours in bed. A sleep study reveals that their breathing stops repeatedly during the night. What is the most likely diagnosis?",
       "options": [
-        { "text": "Chronic insomnia", "correct": false },
-        { "text": "Narcolepsy", "correct": false },
-        { "text": "REM sleep behavior disorder", "correct": false },
-        { "text": "Sleep apnea", "correct": true }
+        {
+          "text": "Narcolepsy",
+          "correct": false
+        },
+        {
+          "text": "Sleep apnea",
+          "correct": true
+        },
+        {
+          "text": "Chronic insomnia",
+          "correct": false
+        },
+        {
+          "text": "REM sleep behavior disorder",
+          "correct": false
+        }
       ],
       "explanation": "Sleep apnea involves repeated interruptions in breathing during sleep, which cause brief arousals that prevent the sleeper from reaching deep, restorative sleep stages. This explains why the patient spends adequate time in bed but still feels exhausted."
     }

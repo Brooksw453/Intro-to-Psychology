@@ -6,10 +6,22 @@
       "id": "ch15-q01",
       "question": "According to the harmful dysfunction model, a psychological disorder exists when which two conditions are met?",
       "options": [
-        { "text": "The behavior is statistically rare and the person feels distressed about it", "correct": false },
-        { "text": "An internal mechanism fails its natural function and this failure causes harm to the individual", "correct": true },
-        { "text": "The behavior violates social norms and is disapproved of by the majority of people", "correct": false },
-        { "text": "A medical test confirms a brain abnormality and the person cannot work", "correct": false }
+        {
+          "text": "The behavior violates social norms and is disapproved of by the majority of people",
+          "correct": false
+        },
+        {
+          "text": "A medical test confirms a brain abnormality and the person cannot work",
+          "correct": false
+        },
+        {
+          "text": "The behavior is statistically rare and the person feels distressed about it",
+          "correct": false
+        },
+        {
+          "text": "An internal mechanism fails its natural function and this failure causes harm to the individual",
+          "correct": true
+        }
       ],
       "explanation": "Jerome Wakefield's harmful dysfunction model requires both an internal dysfunction (a psychological mechanism failing its evolved function) and harm to the individual as judged by cultural standards."
     },
@@ -17,10 +29,22 @@
       "id": "ch15-q02",
       "question": "Why is using person-first language (e.g., 'a person with schizophrenia' rather than 'a schizophrenic') important when discussing psychological disorders?",
       "options": [
-        { "text": "It is required by federal law in all clinical settings", "correct": false },
-        { "text": "It emphasizes the individual's humanity rather than defining them by their diagnosis", "correct": true },
-        { "text": "It indicates that the person has been formally diagnosed by a licensed professional", "correct": false },
-        { "text": "It signals that the disorder is temporary and will eventually resolve", "correct": false }
+        {
+          "text": "It emphasizes the individual's humanity rather than defining them by their diagnosis",
+          "correct": true
+        },
+        {
+          "text": "It is required by federal law in all clinical settings",
+          "correct": false
+        },
+        {
+          "text": "It indicates that the person has been formally diagnosed by a licensed professional",
+          "correct": false
+        },
+        {
+          "text": "It signals that the disorder is temporary and will eventually resolve",
+          "correct": false
+        }
       ],
       "explanation": "Person-first language emphasizes the humanity of the individual rather than reducing them to a diagnostic label. This approach helps reduce stigma and promotes compassionate discourse about mental health."
     }

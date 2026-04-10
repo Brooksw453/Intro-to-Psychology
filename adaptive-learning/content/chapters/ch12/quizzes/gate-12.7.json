@@ -6,10 +6,22 @@
       "id": "ch12-q13",
       "question": "The bystander effect occurs primarily because of:",
       "options": [
-        { "text": "Fundamental attribution error and actor-observer bias", "correct": false },
-        { "text": "Diffusion of responsibility and pluralistic ignorance", "correct": true },
-        { "text": "Cognitive dissonance and insufficient justification", "correct": false },
-        { "text": "Hostile aggression and frustration", "correct": false }
+        {
+          "text": "Cognitive dissonance and insufficient justification",
+          "correct": false
+        },
+        {
+          "text": "Diffusion of responsibility and pluralistic ignorance",
+          "correct": true
+        },
+        {
+          "text": "Fundamental attribution error and actor-observer bias",
+          "correct": false
+        },
+        {
+          "text": "Hostile aggression and frustration",
+          "correct": false
+        }
       ],
       "explanation": "The bystander effect operates through diffusion of responsibility (each person feels less personally responsible when others are present) and pluralistic ignorance (bystanders look to each other for cues and each concludes the situation is not an emergency)."
     },
@@ -17,10 +29,22 @@
       "id": "ch12-q14",
       "question": "According to Batson's empathy-altruism hypothesis, truly altruistic helping behavior is most likely when a person:",
       "options": [
-        { "text": "Expects to receive a reward for helping", "correct": false },
-        { "text": "Is the only bystander present", "correct": false },
-        { "text": "Feels genuine empathic concern for the person in distress", "correct": true },
-        { "text": "Has a personality high in extraversion", "correct": false }
+        {
+          "text": "Feels genuine empathic concern for the person in distress",
+          "correct": true
+        },
+        {
+          "text": "Has a personality high in extraversion",
+          "correct": false
+        },
+        {
+          "text": "Expects to receive a reward for helping",
+          "correct": false
+        },
+        {
+          "text": "Is the only bystander present",
+          "correct": false
+        }
       ],
       "explanation": "Batson's empathy-altruism hypothesis proposes that when people feel genuine empathic concern for another person, they are motivated to help regardless of personal benefit, representing truly altruistic motivation."
     }

@@ -6,10 +6,22 @@
       "id": "ch15-q05",
       "question": "The diathesis-stress model proposes that psychological disorders result from:",
       "options": [
-        { "text": "Exclusively genetic factors passed down through families", "correct": false },
-        { "text": "The interaction between a predisposition toward a disorder and environmental stressors", "correct": true },
-        { "text": "Supernatural forces that cannot be measured scientifically", "correct": false },
-        { "text": "Poor coping skills that develop during adolescence", "correct": false }
+        {
+          "text": "Exclusively genetic factors passed down through families",
+          "correct": false
+        },
+        {
+          "text": "The interaction between a predisposition toward a disorder and environmental stressors",
+          "correct": true
+        },
+        {
+          "text": "Poor coping skills that develop during adolescence",
+          "correct": false
+        },
+        {
+          "text": "Supernatural forces that cannot be measured scientifically",
+          "correct": false
+        }
       ],
       "explanation": "The diathesis-stress model proposes that psychological disorders develop when a predisposition (diathesis) -- which may be biological, psychological, or social -- interacts with environmental stressors. Neither the predisposition nor the stress alone is sufficient."
     },
@@ -17,10 +29,22 @@
       "id": "ch15-q06",
       "question": "Which model considers biological, psychological, and social factors together when explaining psychological disorders?",
       "options": [
-        { "text": "The medical model", "correct": false },
-        { "text": "The supernatural perspective", "correct": false },
-        { "text": "The biopsychosocial model", "correct": true },
-        { "text": "The psychodynamic perspective", "correct": false }
+        {
+          "text": "The biopsychosocial model",
+          "correct": true
+        },
+        {
+          "text": "The supernatural perspective",
+          "correct": false
+        },
+        {
+          "text": "The psychodynamic perspective",
+          "correct": false
+        },
+        {
+          "text": "The medical model",
+          "correct": false
+        }
       ],
       "explanation": "The biopsychosocial model is an integrative approach that considers how biological factors (genetics, neurochemistry), psychological factors (cognition, coping), and social factors (culture, relationships) interact to produce and maintain psychological disorders."
     }

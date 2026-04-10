@@ -6,10 +6,22 @@
       "id": "ch16-q09",
       "question": "Cultural competence in mental health care involves:",
       "options": [
-        { "text": "Applying the same therapeutic techniques regardless of the client's cultural background", "correct": false },
-        { "text": "Understanding, appreciating, and working effectively with individuals from diverse cultural backgrounds", "correct": true },
-        { "text": "Requiring all clients to adopt Western models of psychological treatment", "correct": false },
-        { "text": "Only treating clients who share the therapist's cultural background", "correct": false }
+        {
+          "text": "Understanding, appreciating, and working effectively with individuals from diverse cultural backgrounds",
+          "correct": true
+        },
+        {
+          "text": "Applying the same therapeutic techniques regardless of the client's cultural background",
+          "correct": false
+        },
+        {
+          "text": "Requiring all clients to adopt Western models of psychological treatment",
+          "correct": false
+        },
+        {
+          "text": "Only treating clients who share the therapist's cultural background",
+          "correct": false
+        }
       ],
       "explanation": "Cultural competence requires therapists to understand and appreciate clients' cultural backgrounds, examine their own biases, adapt techniques to be culturally appropriate, and advocate for systemic changes that improve access to care for diverse populations."
     },
@@ -17,10 +29,22 @@
       "id": "ch16-q10",
       "question": "Which factor is consistently identified as one of the strongest predictors of positive treatment outcomes across all therapeutic approaches?",
       "options": [
-        { "text": "The specific therapeutic technique used", "correct": false },
-        { "text": "The length of each therapy session", "correct": false },
-        { "text": "The therapeutic alliance between therapist and client", "correct": true },
-        { "text": "The therapist's academic credentials and years of training", "correct": false }
+        {
+          "text": "The therapeutic alliance between therapist and client",
+          "correct": true
+        },
+        {
+          "text": "The therapist's academic credentials and years of training",
+          "correct": false
+        },
+        {
+          "text": "The specific therapeutic technique used",
+          "correct": false
+        },
+        {
+          "text": "The length of each therapy session",
+          "correct": false
+        }
       ],
       "explanation": "The therapeutic alliance -- the collaborative, trusting relationship between therapist and client -- is consistently found to be one of the strongest predictors of positive treatment outcomes, regardless of the specific therapeutic approach being used."
     }

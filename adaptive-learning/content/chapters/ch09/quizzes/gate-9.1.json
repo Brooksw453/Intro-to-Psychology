@@ -6,10 +6,22 @@
       "id": "ch09-q01",
       "question": "A researcher wants to study how memory changes with age. She tests groups of 20-year-olds, 40-year-olds, and 60-year-olds at the same time. What type of research design is she using?",
       "options": [
-        { "text": "Longitudinal research", "correct": false },
-        { "text": "Cross-sectional research", "correct": true },
-        { "text": "Experimental research", "correct": false },
-        { "text": "Cross-sequential research", "correct": false }
+        {
+          "text": "Longitudinal research",
+          "correct": false
+        },
+        {
+          "text": "Experimental research",
+          "correct": false
+        },
+        {
+          "text": "Cross-sectional research",
+          "correct": true
+        },
+        {
+          "text": "Cross-sequential research",
+          "correct": false
+        }
       ],
       "explanation": "Cross-sectional research compares different age groups at a single point in time. Longitudinal research would follow the same individuals over time, while cross-sequential combines both approaches."
     },
@@ -17,10 +29,22 @@
       "id": "ch09-q02",
       "question": "Which of the following best describes the concept of discontinuous development?",
       "options": [
-        { "text": "Development occurs as a slow, steady accumulation of abilities over time", "correct": false },
-        { "text": "Development is determined entirely by genetic factors", "correct": false },
-        { "text": "Development occurs in distinct stages with qualitatively different abilities at each stage", "correct": true },
-        { "text": "Development is shaped primarily by environmental experiences", "correct": false }
+        {
+          "text": "Development occurs in distinct stages with qualitatively different abilities at each stage",
+          "correct": true
+        },
+        {
+          "text": "Development occurs as a slow, steady accumulation of abilities over time",
+          "correct": false
+        },
+        {
+          "text": "Development is shaped primarily by environmental experiences",
+          "correct": false
+        },
+        {
+          "text": "Development is determined entirely by genetic factors",
+          "correct": false
+        }
       ],
       "explanation": "Discontinuous development views change as occurring in distinct stages, where each stage involves qualitatively different ways of thinking or behaving -- like a caterpillar transforming into a butterfly, rather than gradual incremental growth."
     }

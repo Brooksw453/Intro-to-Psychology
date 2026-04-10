@@ -6,10 +6,22 @@
       "id": "ch07-q01",
       "question": "When you encounter a new animal and quickly compare it to your mental image of a 'typical' dog to decide whether it is a dog, you are relying on which cognitive tool?",
       "options": [
-        { "text": "A cognitive script", "correct": false },
-        { "text": "An artificial concept", "correct": false },
-        { "text": "A prototype", "correct": true },
-        { "text": "A schema", "correct": false }
+        {
+          "text": "A prototype",
+          "correct": true
+        },
+        {
+          "text": "A schema",
+          "correct": false
+        },
+        {
+          "text": "An artificial concept",
+          "correct": false
+        },
+        {
+          "text": "A cognitive script",
+          "correct": false
+        }
       ],
       "explanation": "A prototype is the best or most typical example of a concept. When you compare a new animal to your mental image of a 'typical' dog, you are using your prototype for the category 'dog' to make a rapid categorization judgment."
     },
@@ -17,10 +29,22 @@
       "id": "ch07-q02",
       "question": "A cognitive script is best described as:",
       "options": [
-        { "text": "A strict set of rules defining a category, such as geometric shapes", "correct": false },
-        { "text": "A set of expected behaviors and sequences associated with a familiar situation", "correct": true },
-        { "text": "The most typical example of a natural concept", "correct": false },
-        { "text": "A mental shortcut used for rapid decision making", "correct": false }
+        {
+          "text": "A mental shortcut used for rapid decision making",
+          "correct": false
+        },
+        {
+          "text": "A strict set of rules defining a category, such as geometric shapes",
+          "correct": false
+        },
+        {
+          "text": "The most typical example of a natural concept",
+          "correct": false
+        },
+        {
+          "text": "A set of expected behaviors and sequences associated with a familiar situation",
+          "correct": true
+        }
       ],
       "explanation": "A cognitive script is a type of schema that outlines a predictable sequence of events for a familiar situation, such as the expected steps when dining at a restaurant. It guides behavior in routine contexts."
     }

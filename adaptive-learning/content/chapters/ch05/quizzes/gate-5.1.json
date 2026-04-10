@@ -6,10 +6,22 @@
       "id": "ch05-q01",
       "question": "What is the key difference between sensation and perception?",
       "options": [
-        { "text": "Sensation occurs in the brain, while perception occurs in the sensory organs", "correct": false },
-        { "text": "Sensation involves detecting stimuli, while perception involves interpreting and organizing that sensory information", "correct": true },
-        { "text": "Sensation requires conscious effort, while perception is automatic", "correct": false },
-        { "text": "Sensation and perception are two terms for the same process", "correct": false }
+        {
+          "text": "Sensation involves detecting stimuli, while perception involves interpreting and organizing that sensory information",
+          "correct": true
+        },
+        {
+          "text": "Sensation occurs in the brain, while perception occurs in the sensory organs",
+          "correct": false
+        },
+        {
+          "text": "Sensation and perception are two terms for the same process",
+          "correct": false
+        },
+        {
+          "text": "Sensation requires conscious effort, while perception is automatic",
+          "correct": false
+        }
       ],
       "explanation": "Sensation is the process by which sensory receptors detect and transduce stimulus energy, while perception is the brain's process of organizing and interpreting that sensory information to give it meaning. They are related but distinct processes."
     },
@@ -17,10 +29,22 @@
       "id": "ch05-q02",
       "question": "According to Weber's Law, which scenario best illustrates the concept of the difference threshold (just noticeable difference)?",
       "options": [
-        { "text": "You can hear a pin drop in a silent room", "correct": false },
-        { "text": "You stop noticing the smell of coffee after sitting in a cafe for an hour", "correct": false },
-        { "text": "You can detect a one-ounce increase on a one-pound weight but not on a fifty-pound weight", "correct": true },
-        { "text": "A bright flash of light temporarily blinds you after being in the dark", "correct": false }
+        {
+          "text": "A bright flash of light temporarily blinds you after being in the dark",
+          "correct": false
+        },
+        {
+          "text": "You stop noticing the smell of coffee after sitting in a cafe for an hour",
+          "correct": false
+        },
+        {
+          "text": "You can detect a one-ounce increase on a one-pound weight but not on a fifty-pound weight",
+          "correct": true
+        },
+        {
+          "text": "You can hear a pin drop in a silent room",
+          "correct": false
+        }
       ],
       "explanation": "Weber's Law states that the just noticeable difference (JND) is proportional to the magnitude of the original stimulus. A one-ounce change is detectable against a one-pound baseline but not against a fifty-pound baseline because the proportional change is much smaller."
     }

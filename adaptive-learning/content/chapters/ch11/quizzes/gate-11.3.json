@@ -6,10 +6,22 @@
       "id": "ch11-q05",
       "question": "Which neo-Freudian theorist proposed that the primary human motivation is striving for superiority rather than sexual gratification?",
       "options": [
-        { "text": "Karen Horney", "correct": false },
-        { "text": "Carl Jung", "correct": false },
-        { "text": "Erik Erikson", "correct": false },
-        { "text": "Alfred Adler", "correct": true }
+        {
+          "text": "Alfred Adler",
+          "correct": true
+        },
+        {
+          "text": "Carl Jung",
+          "correct": false
+        },
+        {
+          "text": "Karen Horney",
+          "correct": false
+        },
+        {
+          "text": "Erik Erikson",
+          "correct": false
+        }
       ],
       "explanation": "Alfred Adler departed from Freud by arguing that the primary motivation in human life is the striving for superiority -- the desire to overcome challenges and improve oneself -- rather than sexual drives."
     },
@@ -17,10 +29,22 @@
       "id": "ch11-q06",
       "question": "Jung's concept of the collective unconscious refers to:",
       "options": [
-        { "text": "Repressed memories shared between family members", "correct": false },
-        { "text": "A shared repository of knowledge and experiences inherited from all of humanity's past", "correct": true },
-        { "text": "The conscious thoughts that all humans have in common", "correct": false },
-        { "text": "A set of defense mechanisms used universally across cultures", "correct": false }
+        {
+          "text": "The conscious thoughts that all humans have in common",
+          "correct": false
+        },
+        {
+          "text": "A shared repository of knowledge and experiences inherited from all of humanity's past",
+          "correct": true
+        },
+        {
+          "text": "A set of defense mechanisms used universally across cultures",
+          "correct": false
+        },
+        {
+          "text": "Repressed memories shared between family members",
+          "correct": false
+        }
       ],
       "explanation": "Jung's collective unconscious is a universal layer of the mind shared by all humans, containing inherited memories and universal symbols (archetypes) that emerge in dreams, myths, and art across cultures."
     }

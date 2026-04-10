@@ -6,10 +6,22 @@
       "id": "ch11-q03",
       "question": "According to Freud, which component of personality operates on the pleasure principle and demands immediate gratification?",
       "options": [
-        { "text": "The ego", "correct": false },
-        { "text": "The superego", "correct": false },
-        { "text": "The id", "correct": true },
-        { "text": "The preconscious", "correct": false }
+        {
+          "text": "The id",
+          "correct": true
+        },
+        {
+          "text": "The preconscious",
+          "correct": false
+        },
+        {
+          "text": "The superego",
+          "correct": false
+        },
+        {
+          "text": "The ego",
+          "correct": false
+        }
       ],
       "explanation": "The id is the most primitive component of personality in Freud's theory. It operates entirely on the pleasure principle, seeking immediate satisfaction of basic drives without regard for reality or morality."
     },
@@ -17,10 +29,22 @@
       "id": "ch11-q04",
       "question": "A person who attributes their own hostile feelings to someone else, believing that the other person is angry at them, is using which defense mechanism?",
       "options": [
-        { "text": "Repression", "correct": false },
-        { "text": "Projection", "correct": true },
-        { "text": "Sublimation", "correct": false },
-        { "text": "Displacement", "correct": false }
+        {
+          "text": "Projection",
+          "correct": true
+        },
+        {
+          "text": "Displacement",
+          "correct": false
+        },
+        {
+          "text": "Sublimation",
+          "correct": false
+        },
+        {
+          "text": "Repression",
+          "correct": false
+        }
       ],
       "explanation": "Projection involves attributing one's own unacceptable thoughts or feelings to another person. By projecting hostile feelings outward, the individual avoids confronting their own anger."
     }

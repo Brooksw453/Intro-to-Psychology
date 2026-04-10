@@ -6,10 +6,22 @@
       "id": "ch16-q01",
       "question": "The deinstitutionalization movement of the 1960s aimed to:",
       "options": [
-        { "text": "Build larger, more modern psychiatric hospitals", "correct": false },
-        { "text": "Close psychiatric hospitals and shift care to community-based mental health centers", "correct": true },
-        { "text": "Eliminate all forms of medication for psychological disorders", "correct": false },
-        { "text": "Require people with mental illness to receive treatment through the criminal justice system", "correct": false }
+        {
+          "text": "Eliminate all forms of medication for psychological disorders",
+          "correct": false
+        },
+        {
+          "text": "Close psychiatric hospitals and shift care to community-based mental health centers",
+          "correct": true
+        },
+        {
+          "text": "Build larger, more modern psychiatric hospitals",
+          "correct": false
+        },
+        {
+          "text": "Require people with mental illness to receive treatment through the criminal justice system",
+          "correct": false
+        }
       ],
       "explanation": "Deinstitutionalization aimed to close large state psychiatric hospitals and replace them with community-based care. While the vision was to provide humane, community-integrated treatment, inadequate funding led to many individuals experiencing homelessness or incarceration."
     },
@@ -17,10 +29,22 @@
       "id": "ch16-q02",
       "question": "Which reformer is credited with campaigning for state-funded hospitals to provide humane care for people with mental illness in the United States?",
       "options": [
-        { "text": "Sigmund Freud", "correct": false },
-        { "text": "Carl Rogers", "correct": false },
-        { "text": "Dorothea Dix", "correct": true },
-        { "text": "Aaron Beck", "correct": false }
+        {
+          "text": "Dorothea Dix",
+          "correct": true
+        },
+        {
+          "text": "Sigmund Freud",
+          "correct": false
+        },
+        {
+          "text": "Carl Rogers",
+          "correct": false
+        },
+        {
+          "text": "Aaron Beck",
+          "correct": false
+        }
       ],
       "explanation": "Dorothea Dix was a 19th-century American reformer who campaigned tirelessly for the establishment of state-funded hospitals that would provide clean, safe environments with compassionate care for people with psychological disorders."
     }

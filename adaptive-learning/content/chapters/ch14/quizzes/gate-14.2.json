@@ -6,10 +6,22 @@
       "id": "ch14-q03",
       "question": "Research by Lazarus suggests that the cumulative impact of daily hassles on health can be:",
       "options": [
-        { "text": "Insignificant compared to major life events", "correct": false },
-        { "text": "Equal to or stronger than the impact of major life events", "correct": true },
-        { "text": "Only significant for people with Type A behavior", "correct": false },
-        { "text": "Limited to psychological symptoms without physical effects", "correct": false }
+        {
+          "text": "Equal to or stronger than the impact of major life events",
+          "correct": true
+        },
+        {
+          "text": "Insignificant compared to major life events",
+          "correct": false
+        },
+        {
+          "text": "Only significant for people with Type A behavior",
+          "correct": false
+        },
+        {
+          "text": "Limited to psychological symptoms without physical effects",
+          "correct": false
+        }
       ],
       "explanation": "Research by Lazarus and colleagues showed that the cumulative effect of daily hassles can be an even stronger predictor of health problems than major life events. This is because hassles are frequent, ongoing, and their effects accumulate over time."
     },
@@ -17,10 +29,22 @@
       "id": "ch14-q04",
       "question": "On the Social Readjustment Rating Scale (SRRS), which of the following would receive the HIGHEST stress score?",
       "options": [
-        { "text": "Marriage", "correct": false },
-        { "text": "Retirement", "correct": false },
-        { "text": "Death of a spouse", "correct": true },
-        { "text": "Being fired from work", "correct": false }
+        {
+          "text": "Being fired from work",
+          "correct": false
+        },
+        {
+          "text": "Retirement",
+          "correct": false
+        },
+        {
+          "text": "Marriage",
+          "correct": false
+        },
+        {
+          "text": "Death of a spouse",
+          "correct": true
+        }
       ],
       "explanation": "On Holmes and Rahe's Social Readjustment Rating Scale, death of a spouse receives the highest score (100 life change units), reflecting the profound adjustment required by this major life event."
     }

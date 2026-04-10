@@ -6,10 +6,22 @@
       "id": "ch08-q05",
       "question": "In Loftus's classic car accident study, participants who were asked how fast the cars were going when they 'smashed into' each other gave higher speed estimates than those asked about cars that 'hit' each other. This is an example of:",
       "options": [
-        { "text": "Proactive interference", "correct": false },
-        { "text": "The misinformation effect", "correct": true },
-        { "text": "Retrograde amnesia", "correct": false },
-        { "text": "Storage decay", "correct": false }
+        {
+          "text": "Storage decay",
+          "correct": false
+        },
+        {
+          "text": "Proactive interference",
+          "correct": false
+        },
+        {
+          "text": "The misinformation effect",
+          "correct": true
+        },
+        {
+          "text": "Retrograde amnesia",
+          "correct": false
+        }
       ],
       "explanation": "The misinformation effect occurs when new, misleading information introduced after an event distorts a person's memory of the original event. The wording of the question ('smashed' vs. 'hit') served as post-event misinformation that altered participants' memories of the accident."
     },
@@ -17,10 +29,22 @@
       "id": "ch08-q06",
       "question": "You recently learned Spanish, and now when you try to recall your high school French vocabulary, Spanish words keep coming to mind instead. This is an example of:",
       "options": [
-        { "text": "Proactive interference", "correct": false },
-        { "text": "Encoding failure", "correct": false },
-        { "text": "Retroactive interference", "correct": true },
-        { "text": "Source monitoring error", "correct": false }
+        {
+          "text": "Retroactive interference",
+          "correct": true
+        },
+        {
+          "text": "Source monitoring error",
+          "correct": false
+        },
+        {
+          "text": "Encoding failure",
+          "correct": false
+        },
+        {
+          "text": "Proactive interference",
+          "correct": false
+        }
       ],
       "explanation": "Retroactive interference occurs when newly learned information interferes with the recall of previously learned information. In this case, recently learned Spanish vocabulary is interfering with the retrieval of older French vocabulary."
     }

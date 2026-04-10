@@ -6,10 +6,22 @@
       "id": "ch05-q11",
       "question": "Which Gestalt principle explains why you perceive a circle even when part of its outline is missing?",
       "options": [
-        { "text": "Proximity", "correct": false },
-        { "text": "Similarity", "correct": false },
-        { "text": "Closure", "correct": true },
-        { "text": "Common fate", "correct": false }
+        {
+          "text": "Common fate",
+          "correct": false
+        },
+        {
+          "text": "Proximity",
+          "correct": false
+        },
+        {
+          "text": "Similarity",
+          "correct": false
+        },
+        {
+          "text": "Closure",
+          "correct": true
+        }
       ],
       "explanation": "The Gestalt principle of closure describes the brain's tendency to fill in gaps in incomplete figures to perceive them as complete, whole shapes. Even when part of a circle's outline is missing, we perceive it as a full circle because our brain fills in the gaps."
     },
@@ -17,10 +29,22 @@
       "id": "ch05-q12",
       "question": "Binocular disparity is a depth cue that relies on which of the following?",
       "options": [
-        { "text": "The fact that distant objects appear smaller than nearby objects", "correct": false },
-        { "text": "The slightly different images received by each eye due to their horizontal separation", "correct": true },
-        { "text": "The convergence of parallel lines at the horizon", "correct": false },
-        { "text": "Changes in object texture as distance increases", "correct": false }
+        {
+          "text": "The slightly different images received by each eye due to their horizontal separation",
+          "correct": true
+        },
+        {
+          "text": "The convergence of parallel lines at the horizon",
+          "correct": false
+        },
+        {
+          "text": "Changes in object texture as distance increases",
+          "correct": false
+        },
+        {
+          "text": "The fact that distant objects appear smaller than nearby objects",
+          "correct": false
+        }
       ],
       "explanation": "Binocular disparity occurs because our two eyes are separated horizontally by a few inches, so each eye receives a slightly different image. The brain fuses these two images and uses the degree of difference to calculate depth, with closer objects producing greater disparity."
     }

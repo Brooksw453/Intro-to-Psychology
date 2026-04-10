@@ -6,10 +6,22 @@
       "id": "ch15-q07",
       "question": "Which anxiety disorder is characterized by recurrent, unexpected panic attacks along with persistent worry about having additional attacks?",
       "options": [
-        { "text": "Generalized anxiety disorder", "correct": false },
-        { "text": "Specific phobia", "correct": false },
-        { "text": "Social anxiety disorder", "correct": false },
-        { "text": "Panic disorder", "correct": true }
+        {
+          "text": "Panic disorder",
+          "correct": true
+        },
+        {
+          "text": "Social anxiety disorder",
+          "correct": false
+        },
+        {
+          "text": "Generalized anxiety disorder",
+          "correct": false
+        },
+        {
+          "text": "Specific phobia",
+          "correct": false
+        }
       ],
       "explanation": "Panic disorder is defined by recurrent, unexpected panic attacks -- sudden surges of intense fear -- along with persistent concern about future attacks or their consequences. This distinguishes it from other anxiety disorders with more predictable triggers."
     },
@@ -17,10 +29,22 @@
       "id": "ch15-q08",
       "question": "A person who experiences excessive, uncontrollable worry about many different everyday concerns (finances, health, family) for at least six months most likely has:",
       "options": [
-        { "text": "Panic disorder", "correct": false },
-        { "text": "Social anxiety disorder", "correct": false },
-        { "text": "Generalized anxiety disorder", "correct": true },
-        { "text": "Agoraphobia", "correct": false }
+        {
+          "text": "Social anxiety disorder",
+          "correct": false
+        },
+        {
+          "text": "Generalized anxiety disorder",
+          "correct": true
+        },
+        {
+          "text": "Agoraphobia",
+          "correct": false
+        },
+        {
+          "text": "Panic disorder",
+          "correct": false
+        }
       ],
       "explanation": "Generalized anxiety disorder (GAD) is characterized by excessive, uncontrollable worry about a wide range of everyday matters persisting for at least six months. Unlike phobias, which focus on specific triggers, GAD involves diffuse, free-floating anxiety across many domains."
     }

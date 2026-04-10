@@ -6,10 +6,22 @@
       "id": "ch15-q15",
       "question": "Which of the following are considered positive symptoms of schizophrenia?",
       "options": [
-        { "text": "Flat affect and social withdrawal", "correct": false },
-        { "text": "Hallucinations and delusions", "correct": true },
-        { "text": "Difficulty with attention and working memory", "correct": false },
-        { "text": "Inability to experience pleasure and reduced speech", "correct": false }
+        {
+          "text": "Hallucinations and delusions",
+          "correct": true
+        },
+        {
+          "text": "Inability to experience pleasure and reduced speech",
+          "correct": false
+        },
+        {
+          "text": "Difficulty with attention and working memory",
+          "correct": false
+        },
+        {
+          "text": "Flat affect and social withdrawal",
+          "correct": false
+        }
       ],
       "explanation": "Positive symptoms of schizophrenia represent additions to or distortions of normal experience and include hallucinations (perceptual experiences without external stimuli) and delusions (firmly held false beliefs). Flat affect and social withdrawal are negative symptoms."
     },
@@ -17,10 +29,22 @@
       "id": "ch15-q16",
       "question": "The dopamine hypothesis suggests that schizophrenia is associated with:",
       "options": [
-        { "text": "Deficiency of serotonin in the limbic system", "correct": false },
-        { "text": "Excessive dopamine activity in certain brain pathways", "correct": true },
-        { "text": "Overproduction of cortisol due to chronic stress", "correct": false },
-        { "text": "Degeneration of acetylcholine-producing neurons", "correct": false }
+        {
+          "text": "Overproduction of cortisol due to chronic stress",
+          "correct": false
+        },
+        {
+          "text": "Degeneration of acetylcholine-producing neurons",
+          "correct": false
+        },
+        {
+          "text": "Excessive dopamine activity in certain brain pathways",
+          "correct": true
+        },
+        {
+          "text": "Deficiency of serotonin in the limbic system",
+          "correct": false
+        }
       ],
       "explanation": "The dopamine hypothesis proposes that schizophrenia is related to excessive dopamine activity in certain brain pathways. This is supported by the effectiveness of dopamine-blocking antipsychotic medications and the observation that dopamine-increasing drugs can produce psychotic symptoms."
     }

@@ -6,10 +6,22 @@
       "id": "ch16-q05",
       "question": "A unique advantage of group therapy compared to individual therapy is that it:",
       "options": [
-        { "text": "Provides complete privacy for discussing sensitive issues", "correct": false },
-        { "text": "Allows clients to discover that others share similar struggles, reducing isolation", "correct": true },
-        { "text": "Eliminates the need for a trained therapist to facilitate sessions", "correct": false },
-        { "text": "Guarantees faster recovery than individual therapy in all cases", "correct": false }
+        {
+          "text": "Guarantees faster recovery than individual therapy in all cases",
+          "correct": false
+        },
+        {
+          "text": "Allows clients to discover that others share similar struggles, reducing isolation",
+          "correct": true
+        },
+        {
+          "text": "Eliminates the need for a trained therapist to facilitate sessions",
+          "correct": false
+        },
+        {
+          "text": "Provides complete privacy for discussing sensitive issues",
+          "correct": false
+        }
       ],
       "explanation": "Group therapy provides universality -- the discovery that others share similar struggles -- which reduces feelings of isolation. Group members also benefit from observing others' coping strategies, practicing social skills, and giving and receiving peer feedback."
     },
@@ -17,10 +29,22 @@
       "id": "ch16-q06",
       "question": "Family therapy differs from individual therapy primarily because it:",
       "options": [
-        { "text": "Uses only behavioral techniques and avoids cognitive approaches", "correct": false },
-        { "text": "Treats the family as an interconnected system rather than focusing on one individual", "correct": true },
-        { "text": "Is only appropriate for families with children under age 12", "correct": false },
-        { "text": "Requires all family members to have the same diagnosis", "correct": false }
+        {
+          "text": "Uses only behavioral techniques and avoids cognitive approaches",
+          "correct": false
+        },
+        {
+          "text": "Is only appropriate for families with children under age 12",
+          "correct": false
+        },
+        {
+          "text": "Requires all family members to have the same diagnosis",
+          "correct": false
+        },
+        {
+          "text": "Treats the family as an interconnected system rather than focusing on one individual",
+          "correct": true
+        }
       ],
       "explanation": "Family therapy views the family as a system in which each member's behavior affects all others. Rather than identifying one person as the 'problem,' family therapists work to change dysfunctional patterns of interaction and communication within the system."
     }

@@ -6,10 +6,22 @@
       "id": "ch14-q05",
       "question": "Psychoneuroimmunology is the field that studies the connections between:",
       "options": [
-        { "text": "Personality traits and career choices", "correct": false },
-        { "text": "Psychological processes, the nervous system, and the immune system", "correct": true },
-        { "text": "Social relationships and job satisfaction", "correct": false },
-        { "text": "Motivation and learning strategies", "correct": false }
+        {
+          "text": "Psychological processes, the nervous system, and the immune system",
+          "correct": true
+        },
+        {
+          "text": "Motivation and learning strategies",
+          "correct": false
+        },
+        {
+          "text": "Social relationships and job satisfaction",
+          "correct": false
+        },
+        {
+          "text": "Personality traits and career choices",
+          "correct": false
+        }
       ],
       "explanation": "Psychoneuroimmunology is an interdisciplinary field that studies how psychological processes (such as stress), the nervous system, and the immune system interact. Research in this field has demonstrated that chronic stress weakens immune function."
     },
@@ -17,10 +29,22 @@
       "id": "ch14-q06",
       "question": "Research by Friedman and Rosenman found that the component of Type A behavior most strongly associated with heart disease risk is:",
       "options": [
-        { "text": "Competitiveness", "correct": false },
-        { "text": "Time urgency", "correct": false },
-        { "text": "Hostility", "correct": true },
-        { "text": "Impatience", "correct": false }
+        {
+          "text": "Impatience",
+          "correct": false
+        },
+        {
+          "text": "Competitiveness",
+          "correct": false
+        },
+        {
+          "text": "Time urgency",
+          "correct": false
+        },
+        {
+          "text": "Hostility",
+          "correct": true
+        }
       ],
       "explanation": "While the original Type A behavior pattern includes competitiveness, time urgency, hostility, and impatience, subsequent research refined the finding to show that hostility is the component most strongly predictive of cardiovascular disease risk."
     }

@@ -6,10 +6,22 @@
       "id": "ch10-q05",
       "question": "Masters and Johnson's sexual response cycle includes which of the following phases in correct order?",
       "options": [
-        { "text": "Desire, arousal, orgasm, resolution", "correct": false },
-        { "text": "Excitement, plateau, orgasm, resolution", "correct": true },
-        { "text": "Attraction, excitement, climax, refractory", "correct": false },
-        { "text": "Arousal, plateau, climax, recovery", "correct": false }
+        {
+          "text": "Arousal, plateau, climax, recovery",
+          "correct": false
+        },
+        {
+          "text": "Desire, arousal, orgasm, resolution",
+          "correct": false
+        },
+        {
+          "text": "Attraction, excitement, climax, refractory",
+          "correct": false
+        },
+        {
+          "text": "Excitement, plateau, orgasm, resolution",
+          "correct": true
+        }
       ],
       "explanation": "Masters and Johnson identified four phases of the sexual response cycle: excitement (initial arousal), plateau (intensification of arousal), orgasm (peak of pleasure with muscle contractions), and resolution (return to unaroused state)."
     },
@@ -17,10 +29,22 @@
       "id": "ch10-q06",
       "question": "Alfred Kinsey's research on human sexuality was significant primarily because it:",
       "options": [
-        { "text": "Identified the hormones responsible for sexual desire", "correct": false },
-        { "text": "Proved that sexual orientation is entirely genetic", "correct": false },
-        { "text": "Documented the diversity of sexual behavior and suggested orientation exists on a continuum", "correct": true },
-        { "text": "Established the biological basis of gender identity", "correct": false }
+        {
+          "text": "Established the biological basis of gender identity",
+          "correct": false
+        },
+        {
+          "text": "Documented the diversity of sexual behavior and suggested orientation exists on a continuum",
+          "correct": true
+        },
+        {
+          "text": "Proved that sexual orientation is entirely genetic",
+          "correct": false
+        },
+        {
+          "text": "Identified the hormones responsible for sexual desire",
+          "correct": false
+        }
       ],
       "explanation": "Kinsey's landmark surveys in the 1940s and 1950s were among the first to systematically document the wide range of human sexual behaviors and suggested that sexual orientation exists on a continuum rather than as a strict binary classification."
     }

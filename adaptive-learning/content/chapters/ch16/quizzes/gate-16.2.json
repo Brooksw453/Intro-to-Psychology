@@ -6,10 +6,22 @@
       "id": "ch16-q03",
       "question": "Which therapeutic approach focuses on identifying and modifying distorted thinking patterns that contribute to emotional distress?",
       "options": [
-        { "text": "Psychodynamic therapy", "correct": false },
-        { "text": "Humanistic therapy", "correct": false },
-        { "text": "Cognitive therapy", "correct": true },
-        { "text": "Biomedical therapy", "correct": false }
+        {
+          "text": "Psychodynamic therapy",
+          "correct": false
+        },
+        {
+          "text": "Humanistic therapy",
+          "correct": false
+        },
+        {
+          "text": "Biomedical therapy",
+          "correct": false
+        },
+        {
+          "text": "Cognitive therapy",
+          "correct": true
+        }
       ],
       "explanation": "Cognitive therapy, pioneered by Aaron Beck, focuses on identifying and changing distorted thinking patterns (such as catastrophizing and all-or-nothing thinking) that maintain emotional distress. It helps clients develop more balanced, realistic perspectives."
     },
@@ -17,10 +29,22 @@
       "id": "ch16-q04",
       "question": "Systematic desensitization is a behavioral therapy technique used primarily to treat:",
       "options": [
-        { "text": "Schizophrenia", "correct": false },
-        { "text": "Phobias and anxiety", "correct": true },
-        { "text": "Bipolar disorder", "correct": false },
-        { "text": "Personality disorders", "correct": false }
+        {
+          "text": "Schizophrenia",
+          "correct": false
+        },
+        {
+          "text": "Bipolar disorder",
+          "correct": false
+        },
+        {
+          "text": "Personality disorders",
+          "correct": false
+        },
+        {
+          "text": "Phobias and anxiety",
+          "correct": true
+        }
       ],
       "explanation": "Systematic desensitization, developed by Joseph Wolpe, reduces anxiety through the gradual pairing of relaxation with increasingly anxiety-provoking stimuli. It is widely used to treat phobias and other anxiety-related conditions."
     }

@@ -6,10 +6,22 @@
       "id": "ch11-q15",
       "question": "In collectivistic cultures, people are most likely to define themselves by:",
       "options": [
-        { "text": "Their unique personal attributes and individual achievements", "correct": false },
-        { "text": "Their relationships, social roles, and group memberships", "correct": true },
-        { "text": "Their scores on personality assessments", "correct": false },
-        { "text": "Their position in Maslow's hierarchy of needs", "correct": false }
+        {
+          "text": "Their position in Maslow's hierarchy of needs",
+          "correct": false
+        },
+        {
+          "text": "Their relationships, social roles, and group memberships",
+          "correct": true
+        },
+        {
+          "text": "Their scores on personality assessments",
+          "correct": false
+        },
+        {
+          "text": "Their unique personal attributes and individual achievements",
+          "correct": false
+        }
       ],
       "explanation": "In collectivistic cultures, which emphasize group harmony and interdependence, people tend to define themselves in terms of their relationships and social roles rather than individual attributes."
     },
@@ -17,10 +29,22 @@
       "id": "ch11-q16",
       "question": "Research on the Big Five across cultures has generally found that:",
       "options": [
-        { "text": "The Big Five applies only in Western, individualistic cultures", "correct": false },
-        { "text": "The five factors appear in many cultures, but their expression may differ across cultural contexts", "correct": true },
-        { "text": "Collectivistic cultures consistently produce a completely different set of personality factors", "correct": false },
-        { "text": "Cultural factors have no influence on personality trait expression", "correct": false }
+        {
+          "text": "The five factors appear in many cultures, but their expression may differ across cultural contexts",
+          "correct": true
+        },
+        {
+          "text": "Cultural factors have no influence on personality trait expression",
+          "correct": false
+        },
+        {
+          "text": "The Big Five applies only in Western, individualistic cultures",
+          "correct": false
+        },
+        {
+          "text": "Collectivistic cultures consistently produce a completely different set of personality factors",
+          "correct": false
+        }
       ],
       "explanation": "Cross-cultural research has found the Big Five factors in over 50 countries, suggesting some universal structure to personality. However, traits may manifest differently across cultures, and some culturally important dimensions may not be fully captured by the model."
     }

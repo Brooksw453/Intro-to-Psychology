@@ -6,10 +6,22 @@
       "id": "ch04-q01",
       "question": "Which brain structure acts as the body's master biological clock, regulating the circadian rhythm based on light exposure?",
       "options": [
-        { "text": "The hippocampus", "correct": false },
-        { "text": "The suprachiasmatic nucleus (SCN)", "correct": true },
-        { "text": "The amygdala", "correct": false },
-        { "text": "The cerebellum", "correct": false }
+        {
+          "text": "The cerebellum",
+          "correct": false
+        },
+        {
+          "text": "The amygdala",
+          "correct": false
+        },
+        {
+          "text": "The suprachiasmatic nucleus (SCN)",
+          "correct": true
+        },
+        {
+          "text": "The hippocampus",
+          "correct": false
+        }
       ],
       "explanation": "The suprachiasmatic nucleus (SCN), located in the hypothalamus, receives light information from the eyes and uses it to synchronize the body's circadian rhythm with the external light-dark cycle. It signals the pineal gland to release melatonin when light decreases."
     },
@@ -17,10 +29,22 @@
       "id": "ch04-q02",
       "question": "Which of the following best describes consciousness?",
       "options": [
-        { "text": "A fixed state that is either fully on or fully off", "correct": false },
-        { "text": "A continuum of awareness ranging from full alertness to deep unconsciousness", "correct": true },
-        { "text": "A state that only occurs during wakefulness and disappears entirely during sleep", "correct": false },
-        { "text": "A process controlled entirely by the endocrine system", "correct": false }
+        {
+          "text": "A continuum of awareness ranging from full alertness to deep unconsciousness",
+          "correct": true
+        },
+        {
+          "text": "A process controlled entirely by the endocrine system",
+          "correct": false
+        },
+        {
+          "text": "A fixed state that is either fully on or fully off",
+          "correct": false
+        },
+        {
+          "text": "A state that only occurs during wakefulness and disappears entirely during sleep",
+          "correct": false
+        }
       ],
       "explanation": "Consciousness exists on a continuum rather than being an all-or-nothing state. It ranges from full, focused awareness through daydreaming and automatic processing to sleep and deep unconsciousness, with varying levels of awareness at each point."
     }

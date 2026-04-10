@@ -7,10 +7,22 @@
       "id": "ch02-q07",
       "question": "Informed consent in research requires that participants:",
       "options": [
-        { "text": "Have a college degree or equivalent education", "correct": false },
-        { "text": "Are told about the study's purpose, procedures, risks, and their right to withdraw before agreeing to participate", "correct": true },
-        { "text": "Sign a contract agreeing not to discuss the study with anyone afterward", "correct": false },
-        { "text": "Are paid for their participation in the study", "correct": false }
+        {
+          "text": "Have a college degree or equivalent education",
+          "correct": false
+        },
+        {
+          "text": "Are told about the study's purpose, procedures, risks, and their right to withdraw before agreeing to participate",
+          "correct": true
+        },
+        {
+          "text": "Are paid for their participation in the study",
+          "correct": false
+        },
+        {
+          "text": "Sign a contract agreeing not to discuss the study with anyone afterward",
+          "correct": false
+        }
       ],
       "explanation": "Informed consent requires that participants be provided with information about the study's purpose, procedures, potential risks, and their right to withdraw at any time without penalty. They must voluntarily agree to participate based on this information."
     },
@@ -18,10 +30,22 @@
       "id": "ch02-q08",
       "question": "The Tuskegee Syphilis Study is historically significant in research ethics because it:",
       "options": [
-        { "text": "Was the first study to use random assignment in medical research", "correct": false },
-        { "text": "Demonstrated the effectiveness of the peer review process", "correct": false },
-        { "text": "Led directly to the establishment of modern research ethics regulations and IRBs", "correct": true },
-        { "text": "Proved that deception is never acceptable in psychological research", "correct": false }
+        {
+          "text": "Proved that deception is never acceptable in psychological research",
+          "correct": false
+        },
+        {
+          "text": "Was the first study to use random assignment in medical research",
+          "correct": false
+        },
+        {
+          "text": "Led directly to the establishment of modern research ethics regulations and IRBs",
+          "correct": true
+        },
+        {
+          "text": "Demonstrated the effectiveness of the peer review process",
+          "correct": false
+        }
       ],
       "explanation": "The Tuskegee Syphilis Study, in which African American men with syphilis were denied available treatment so researchers could study the disease's progression, is one of the most infamous cases of research ethics violations. The outrage over this study was a major catalyst for the establishment of Institutional Review Boards (IRBs) and modern research ethics protections."
     }

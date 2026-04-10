@@ -6,10 +6,22 @@
       "id": "ch16-q07",
       "question": "According to the DSM-5, substance use disorder is diagnosed based on meeting at least how many criteria within a 12-month period?",
       "options": [
-        { "text": "One criterion", "correct": false },
-        { "text": "Two criteria", "correct": true },
-        { "text": "Five criteria", "correct": false },
-        { "text": "Eight criteria", "correct": false }
+        {
+          "text": "Two criteria",
+          "correct": true
+        },
+        {
+          "text": "One criterion",
+          "correct": false
+        },
+        {
+          "text": "Eight criteria",
+          "correct": false
+        },
+        {
+          "text": "Five criteria",
+          "correct": false
+        }
       ],
       "explanation": "The DSM-5 requires at least two of eleven criteria to be met within a 12-month period for a diagnosis of substance use disorder. Severity is rated on a continuum: mild (2-3 criteria), moderate (4-5), or severe (6 or more)."
     },
@@ -17,10 +29,22 @@
       "id": "ch16-q08",
       "question": "Which statement about relapse in substance use disorders is most accurate?",
       "options": [
-        { "text": "Relapse indicates that treatment has completely failed and should be discontinued", "correct": false },
-        { "text": "Relapse is common and should be viewed as a part of the recovery process", "correct": true },
-        { "text": "Relapse only occurs in people who did not receive medication-assisted treatment", "correct": false },
-        { "text": "Relapse rates for substance use disorders are much higher than for any other chronic condition", "correct": false }
+        {
+          "text": "Relapse rates for substance use disorders are much higher than for any other chronic condition",
+          "correct": false
+        },
+        {
+          "text": "Relapse only occurs in people who did not receive medication-assisted treatment",
+          "correct": false
+        },
+        {
+          "text": "Relapse indicates that treatment has completely failed and should be discontinued",
+          "correct": false
+        },
+        {
+          "text": "Relapse is common and should be viewed as a part of the recovery process",
+          "correct": true
+        }
       ],
       "explanation": "Relapse is a common part of the recovery process for substance use disorders, with rates (40-60%) comparable to other chronic conditions like diabetes and hypertension. It should be viewed as an indication that treatment needs adjustment, not that it has failed."
     }

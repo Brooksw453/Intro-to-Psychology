@@ -6,10 +6,22 @@
       "id": "ch04-q05",
       "question": "During which stage of sleep do delta waves predominate, indicating the deepest level of sleep?",
       "options": [
-        { "text": "NREM stage 1", "correct": false },
-        { "text": "NREM stage 2", "correct": false },
-        { "text": "NREM stage 3", "correct": true },
-        { "text": "REM sleep", "correct": false }
+        {
+          "text": "NREM stage 3",
+          "correct": true
+        },
+        {
+          "text": "NREM stage 1",
+          "correct": false
+        },
+        {
+          "text": "REM sleep",
+          "correct": false
+        },
+        {
+          "text": "NREM stage 2",
+          "correct": false
+        }
       ],
       "explanation": "NREM stage 3 (slow-wave sleep) is characterized by predominantly delta waves — slow, high-amplitude brain waves. This is the deepest stage of sleep, during which physical restoration occurs and it is most difficult to wake someone."
     },
@@ -17,10 +29,22 @@
       "id": "ch04-q06",
       "question": "As the night progresses, how does the composition of each sleep cycle change?",
       "options": [
-        { "text": "Later cycles contain more deep NREM stage 3 sleep and less REM sleep", "correct": false },
-        { "text": "Later cycles contain longer periods of REM sleep and less deep NREM sleep", "correct": true },
-        { "text": "All cycles throughout the night have identical proportions of each stage", "correct": false },
-        { "text": "Later cycles skip NREM stages entirely and consist only of REM sleep", "correct": false }
+        {
+          "text": "Later cycles contain more deep NREM stage 3 sleep and less REM sleep",
+          "correct": false
+        },
+        {
+          "text": "Later cycles skip NREM stages entirely and consist only of REM sleep",
+          "correct": false
+        },
+        {
+          "text": "All cycles throughout the night have identical proportions of each stage",
+          "correct": false
+        },
+        {
+          "text": "Later cycles contain longer periods of REM sleep and less deep NREM sleep",
+          "correct": true
+        }
       ],
       "explanation": "Early sleep cycles emphasize deep NREM stage 3 sleep (for physical restoration), while later cycles contain progressively longer REM periods (for memory consolidation and emotional processing). This is why cutting sleep short disproportionately reduces REM sleep."
     }

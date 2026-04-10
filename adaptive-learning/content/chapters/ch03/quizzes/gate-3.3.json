@@ -6,10 +6,22 @@
       "id": "ch03-q05",
       "question": "Which division of the nervous system controls voluntary muscle movements such as walking and picking up objects?",
       "options": [
-        { "text": "The autonomic nervous system", "correct": false },
-        { "text": "The sympathetic nervous system", "correct": false },
-        { "text": "The somatic nervous system", "correct": true },
-        { "text": "The parasympathetic nervous system", "correct": false }
+        {
+          "text": "The autonomic nervous system",
+          "correct": false
+        },
+        {
+          "text": "The somatic nervous system",
+          "correct": true
+        },
+        {
+          "text": "The parasympathetic nervous system",
+          "correct": false
+        },
+        {
+          "text": "The sympathetic nervous system",
+          "correct": false
+        }
       ],
       "explanation": "The somatic nervous system is the division of the peripheral nervous system responsible for voluntary movements of skeletal muscles. The autonomic nervous system controls involuntary functions, and the sympathetic and parasympathetic systems are subdivisions of the autonomic system."
     },
@@ -17,10 +29,22 @@
       "id": "ch03-q06",
       "question": "You narrowly avoid a car accident. Your heart is pounding, your breathing is rapid, and you feel a surge of energy. Which nervous system division is primarily responsible for these responses?",
       "options": [
-        { "text": "The central nervous system", "correct": false },
-        { "text": "The parasympathetic nervous system", "correct": false },
-        { "text": "The somatic nervous system", "correct": false },
-        { "text": "The sympathetic nervous system", "correct": true }
+        {
+          "text": "The central nervous system",
+          "correct": false
+        },
+        {
+          "text": "The sympathetic nervous system",
+          "correct": true
+        },
+        {
+          "text": "The somatic nervous system",
+          "correct": false
+        },
+        {
+          "text": "The parasympathetic nervous system",
+          "correct": false
+        }
       ],
       "explanation": "The sympathetic nervous system triggers the fight-or-flight response during perceived danger, causing increased heart rate, rapid breathing, and energy mobilization. The parasympathetic system would later restore the body to a calm state."
     }

@@ -6,10 +6,22 @@
       "id": "ch13-q07",
       "question": "Human factors psychologists primarily aim to:",
       "options": [
-        { "text": "Increase employee job satisfaction through better pay", "correct": false },
-        { "text": "Design systems and tools that fit human capabilities and reduce errors", "correct": true },
-        { "text": "Select the best candidates for job positions", "correct": false },
-        { "text": "Treat workplace-related mental health issues", "correct": false }
+        {
+          "text": "Increase employee job satisfaction through better pay",
+          "correct": false
+        },
+        {
+          "text": "Treat workplace-related mental health issues",
+          "correct": false
+        },
+        {
+          "text": "Select the best candidates for job positions",
+          "correct": false
+        },
+        {
+          "text": "Design systems and tools that fit human capabilities and reduce errors",
+          "correct": true
+        }
       ],
       "explanation": "Human factors psychology focuses on designing systems, tools, and work environments that accommodate human cognitive and physical capabilities, thereby reducing errors and improving safety and efficiency."
     },
@@ -17,10 +29,22 @@
       "id": "ch13-q08",
       "question": "When a worker makes a mistake because a control panel displays too much information at once, this is best explained by the concept of:",
       "options": [
-        { "text": "The Hawthorne effect", "correct": false },
-        { "text": "Organizational citizenship behavior", "correct": false },
-        { "text": "Cognitive load", "correct": true },
-        { "text": "Job dissatisfaction", "correct": false }
+        {
+          "text": "Cognitive load",
+          "correct": true
+        },
+        {
+          "text": "Organizational citizenship behavior",
+          "correct": false
+        },
+        {
+          "text": "Job dissatisfaction",
+          "correct": false
+        },
+        {
+          "text": "The Hawthorne effect",
+          "correct": false
+        }
       ],
       "explanation": "Cognitive load refers to the total amount of mental effort required to complete a task. When cognitive demands exceed a worker's capacity — such as when too much information is displayed at once — errors increase. Good design manages cognitive load to reduce errors."
     }

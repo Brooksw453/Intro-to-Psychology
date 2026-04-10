@@ -6,10 +6,22 @@
       "id": "ch12-q09",
       "question": "The tendency to perceive members of an out-group as more similar to each other than members of one's own in-group is called:",
       "options": [
-        { "text": "In-group bias", "correct": false },
-        { "text": "The fundamental attribution error", "correct": false },
-        { "text": "The out-group homogeneity effect", "correct": true },
-        { "text": "Scapegoating", "correct": false }
+        {
+          "text": "The out-group homogeneity effect",
+          "correct": true
+        },
+        {
+          "text": "In-group bias",
+          "correct": false
+        },
+        {
+          "text": "Scapegoating",
+          "correct": false
+        },
+        {
+          "text": "The fundamental attribution error",
+          "correct": false
+        }
       ],
       "explanation": "The out-group homogeneity effect is the cognitive tendency to see members of groups we do not belong to as more alike than they actually are, while recognizing greater diversity within our own group."
     },
@@ -17,10 +29,22 @@
       "id": "ch12-q10",
       "question": "According to the contact hypothesis, prejudice is most likely to be reduced when groups interact under conditions that include:",
       "options": [
-        { "text": "Competition for scarce resources and minimal oversight", "correct": false },
-        { "text": "Equal status, common goals, cooperation, and institutional support", "correct": true },
-        { "text": "Large group sizes and anonymous interactions", "correct": false },
-        { "text": "Brief, superficial exposure to out-group members", "correct": false }
+        {
+          "text": "Competition for scarce resources and minimal oversight",
+          "correct": false
+        },
+        {
+          "text": "Brief, superficial exposure to out-group members",
+          "correct": false
+        },
+        {
+          "text": "Large group sizes and anonymous interactions",
+          "correct": false
+        },
+        {
+          "text": "Equal status, common goals, cooperation, and institutional support",
+          "correct": true
+        }
       ],
       "explanation": "Allport's contact hypothesis specifies that prejudice reduction requires particular conditions: equal status between groups, common goals, intergroup cooperation, and support from authorities or institutions."
     }

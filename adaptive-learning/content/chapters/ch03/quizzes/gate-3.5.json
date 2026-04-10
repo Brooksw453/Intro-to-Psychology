@@ -6,10 +6,22 @@
       "id": "ch03-q09",
       "question": "Which brain structure serves as the primary link between the nervous system and the endocrine system?",
       "options": [
-        { "text": "The cerebellum", "correct": false },
-        { "text": "The hippocampus", "correct": false },
-        { "text": "The hypothalamus", "correct": true },
-        { "text": "The amygdala", "correct": false }
+        {
+          "text": "The hypothalamus",
+          "correct": true
+        },
+        {
+          "text": "The cerebellum",
+          "correct": false
+        },
+        {
+          "text": "The hippocampus",
+          "correct": false
+        },
+        {
+          "text": "The amygdala",
+          "correct": false
+        }
       ],
       "explanation": "The hypothalamus links the nervous system to the endocrine system by directing the pituitary gland to release or inhibit hormones. It receives neural signals and translates them into hormonal commands, making it the critical bridge between the two communication systems."
     },
@@ -17,10 +29,22 @@
       "id": "ch03-q10",
       "question": "A person experiences prolonged work-related stress over several months and begins suffering from impaired memory and frequent illness. Which hormone is most likely elevated and contributing to these symptoms?",
       "options": [
-        { "text": "Oxytocin", "correct": false },
-        { "text": "Thyroid hormone", "correct": false },
-        { "text": "Testosterone", "correct": false },
-        { "text": "Cortisol", "correct": true }
+        {
+          "text": "Thyroid hormone",
+          "correct": false
+        },
+        {
+          "text": "Cortisol",
+          "correct": true
+        },
+        {
+          "text": "Oxytocin",
+          "correct": false
+        },
+        {
+          "text": "Testosterone",
+          "correct": false
+        }
       ],
       "explanation": "Cortisol is released by the adrenal glands during the stress response. While helpful in short bursts, chronically elevated cortisol impairs memory formation (by damaging the hippocampus) and suppresses the immune system, leading to increased susceptibility to illness."
     }
