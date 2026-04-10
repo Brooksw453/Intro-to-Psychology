@@ -4,17 +4,18 @@ import { useMemo, useEffect } from 'react';
 import { useTextToSpeech, type TTSBlock, type TTSMediaMetadata } from '@/hooks/useTextToSpeech';
 import { stripMarkdown } from '@/lib/stripMarkdown';
 import { courseConfig } from '@/lib/course.config';
-import type { SectionContent } from '@/lib/types';
+import type { SectionContent, GateQuiz } from '@/lib/types';
 
 interface TTSControllerProps {
   section: SectionContent;
+  quiz?: GateQuiz;
   courseName?: string;
   onBlockIndexChange?: (index: number) => void;
   onChunkIndexChange?: (index: number) => void;
   onClose: () => void;
 }
 
-export default function TTSController({ section, courseName, onBlockIndexChange, onChunkIndexChange, onClose }: TTSControllerProps) {
+export default function TTSController({ section, quiz, courseName, onBlockIndexChange, onChunkIndexChange, onClose }: TTSControllerProps) {
   const blocks: TTSBlock[] = useMemo(() => {
     const result: TTSBlock[] = [];
 
@@ -53,8 +54,37 @@ export default function TTSController({ section, courseName, onBlockIndexChange,
       });
     }
 
+    // Quiz transition and questions
+    if (quiz) {
+      result.push({
+        label: 'Knowledge Check',
+        text: 'Time for the knowledge check.',
+      });
+
+      for (let i = 0; i < quiz.questions.length; i++) {
+        const q = quiz.questions[i];
+        result.push({
+          label: `Question ${i + 1}`,
+          text: `Question ${i + 1}. ${q.question} A: ${q.options[0].text}. B: ${q.options[1].text}. C: ${q.options[2].text}. D: ${q.options[3].text}.`,
+        });
+      }
+    }
+
+    // Free-text transition and prompt
+    if (section.freeTextPrompt) {
+      result.push({
+        label: 'Written Response',
+        text: 'Written response.',
+      });
+
+      result.push({
+        label: section.freeTextPrompt.id,
+        text: section.freeTextPrompt.prompt,
+      });
+    }
+
     return result;
-  }, [section]);
+  }, [section, quiz]);
 
   const mediaMetadata: TTSMediaMetadata = useMemo(() => ({
     title: `${section.sectionId}: ${section.title}`,
@@ -73,6 +103,7 @@ export default function TTSController({ section, courseName, onBlockIndexChange,
     pause,
     resume,
     stop,
+    destroy,
     skipForward,
     skipBack,
     rateLabel,
@@ -105,9 +136,9 @@ export default function TTSController({ section, courseName, onBlockIndexChange,
     return () => document.removeEventListener('keydown', handleKeyDown);
   }, [isPlaying, isPaused, play, pause, resume]);
 
-  // Clean up on close
+  // Full cleanup on close (kills keepalive)
   function handleClose() {
-    stop();
+    destroy();
     onClose();
   }
 

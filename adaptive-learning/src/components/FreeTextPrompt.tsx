@@ -37,8 +37,25 @@ export default function FreeTextPrompt({
   const meetsMinimum = wordCount >= prompt.minWords;
   const passed = evaluation ? evaluation.score >= courseConfig.thresholds.freeTextPass : false;
 
+  // Mic glow hint counter (Improvement 1)
+  const [micHintCount, setMicHintCount] = useState(() => {
+    if (typeof localStorage !== 'undefined') {
+      return parseInt(localStorage.getItem('mic-hint-count') || '0', 10);
+    }
+    return 0;
+  });
+
   const handleMicTranscript = useCallback((text: string) => {
     setResponse(prev => prev + (prev && !prev.endsWith(' ') ? ' ' : '') + text);
+    // Increment mic hint counter
+    setMicHintCount(prev => {
+      if (prev < 3) {
+        const newCount = prev + 1;
+        localStorage.setItem('mic-hint-count', String(newCount));
+        return newCount;
+      }
+      return prev;
+    });
   }, []);
 
   async function handleSubmit() {
@@ -157,6 +174,9 @@ export default function FreeTextPrompt({
             {!meetsMinimum && ` (${prompt.minWords - wordCount} more needed)`}
           </span>
         </div>
+        {micHintCount < 3 && (
+          <p className="text-xs text-blue-400 mt-1 text-right">Tap the mic to speak your response</p>
+        )}
       </div>
 
       {error && (

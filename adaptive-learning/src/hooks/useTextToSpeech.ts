@@ -37,6 +37,7 @@ interface UseTextToSpeechReturn {
   pause: () => void;
   resume: () => void;
   stop: () => void;
+  destroy: () => void;
   skipForward: () => void;
   skipBack: () => void;
   rateLabel: string;
@@ -520,6 +521,26 @@ export function useTextToSpeech(
     isPlayingRef.current = false;
 
     if (useOpenAI && ttsPlayerRef.current) {
+      ttsPlayerRef.current.stopCurrent();
+      // Keep player and keepalive alive for Bluetooth persistence
+    } else {
+      window.speechSynthesis.cancel();
+      // Don't stop silent audio — keep audio session alive
+    }
+
+    setIsPlaying(false);
+    setIsPaused(false);
+    setCurrentBlockIndex(0);
+    setCurrentChunkIndex(0);
+    blockIndexRef.current = 0;
+    chunkIndexRef.current = 0;
+    updateMediaSession(null, '', null);
+  }, [useOpenAI]);
+
+  const destroy = useCallback(() => {
+    isPlayingRef.current = false;
+
+    if (useOpenAI && ttsPlayerRef.current) {
       ttsPlayerRef.current.cleanup();
       ttsPlayerRef.current = null;
     } else {
@@ -666,7 +687,7 @@ export function useTextToSpeech(
     }
   }, [isPlaying, isPaused, currentBlockIndex, blocks, mediaMetadata, useOpenAI, skipForward, skipBack]);
 
-  // ─── Cleanup on unmount ──────────────────────────────────────────
+  // ─── Cleanup on unmount (full destroy) ───────────────────────────
 
   useEffect(() => {
     return () => {
@@ -695,6 +716,7 @@ export function useTextToSpeech(
     pause,
     resume,
     stop,
+    destroy,
     skipForward,
     skipBack,
     rateLabel: RATE_LABELS[rateIndex],

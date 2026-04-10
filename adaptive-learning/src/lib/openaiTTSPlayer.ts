@@ -45,6 +45,10 @@ export interface TTSPlayer {
   setVoice(voice: string): void;
   /** Get current voice. */
   getVoice(): string;
+  /** Pause current chunk but keep keepalive running. */
+  pausePlayback(): void;
+  /** Whether the keepalive audio element is active. */
+  isKeepaliveActive(): boolean;
   /** Tear down and clear cache. */
   cleanup(): void;
 }
@@ -220,6 +224,17 @@ export function createTTSPlayer(): TTSPlayer {
     }
   }
 
+  function pausePlayback() {
+    if (currentAudio) {
+      currentAudio.pause();
+    }
+    // keepalive keeps running
+  }
+
+  function isKeepaliveActive(): boolean {
+    return keepaliveAudio !== null;
+  }
+
   function pause() {
     if (currentAudio) {
       currentAudio.pause();
@@ -289,6 +304,8 @@ export function createTTSPlayer(): TTSPlayer {
     playChunk,
     prefetch,
     stopCurrent,
+    pausePlayback,
+    isKeepaliveActive,
     pause,
     resume,
     isPaused,
