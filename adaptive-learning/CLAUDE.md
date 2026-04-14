@@ -25,13 +25,13 @@ This repo is a fully-featured AI-powered adaptive learning platform. It is a bla
 | `src/lib/rateLimit.ts` | In-memory rate limiter for AI endpoints (15 req/min) |
 | `src/lib/sso.ts` | JWT verification, dashboard URL, course slug constants |
 | `src/lib/renderMarkdown.tsx` | Markdown-to-React renderer (supports `![alt](src)` image syntax) |
-| `src/components/ContentRenderer.tsx` | Renders content blocks including `image` type with `<figure>` elements; supports TTS sentence highlighting |
+| `src/components/ContentRenderer.tsx` | Renders content blocks including `image` type with `<figure>` elements; highlights active block during TTS |
 | `src/components/MicrophoneButton.tsx` | Speech-to-text microphone button with first-visit tooltip (Web Speech API) |
 | `src/components/Attribution.tsx` | OER/Creative Commons attribution footer — compact (every page) and full (detail) variants |
 | `src/components/DownloadPDFButton.tsx` | "Download as PDF" button using browser print with optimized print CSS |
-| `src/components/TTSController.tsx` | Text-to-speech audio player bar — fixed bottom, skip/pause/speed controls |
+| `src/components/TTSController.tsx` | Text-to-speech audio player bar — accepts section or pre-built blocks, voice/speed/skip controls |
 | `src/hooks/useSpeechToText.ts` | React hook wrapping SpeechRecognition API with auto-restart and error handling |
-| `src/hooks/useTextToSpeech.ts` | React hook wrapping SpeechSynthesis API with sentence chunking, block tracking, mobile-optimized rates |
+| `src/hooks/useTextToSpeech.ts` | React hook — OpenAI TTS + SpeechSynthesis fallback, block/chunk tracking, voice/speed control |
 | `src/lib/stripMarkdown.ts` | Converts markdown to plain text for speech synthesis |
 | `src/lib/supabase/client.ts` | Browser-side Supabase client |
 | `src/lib/supabase/server.ts` | Server-side Supabase client (cookie-based) |
@@ -845,41 +845,47 @@ Allows students to dictate written responses instead of typing, especially helpf
 
 **Browser support:** Chrome (desktop + Android), Safari (iOS 14.5+), Edge. Not supported on Firefox (<3% mobile share) — button hidden.
 
-### Text-to-Speech (TTS) — Listen Button
+### Text-to-Speech (TTS) — Per-Page Listen Buttons
 
-Allows students to listen to section content read aloud with sentence-level highlighting.
+Allows students to listen to content read aloud with block-level highlighting. Uses **OpenAI TTS API** (Echo voice by default) with Supabase audio caching, falling back to browser SpeechSynthesis if OpenAI is unavailable.
+
+**Per-page architecture:**
+Each page has its own independent Listen button and TTSController instance:
+- **Content page**: reads title → learning objectives → content blocks → key terms, then stops
+- **Knowledge Check page**: reads quiz questions and options aloud, then stops
+- **Written Response page**: reads the prompt aloud, then stops
+- TTS does **not** continue across pages — each page is self-contained
 
 **How it works:**
-- "Listen" button appears in the content step of `SectionLearningFlow.tsx`
-- `TTSController` component renders a fixed-bottom audio player bar with play/pause, skip, speed, and close controls
-- `useTextToSpeech` hook splits content into ~200-char sentence chunks (avoids iOS 15-sec cutoff bug)
-- Reads blocks sequentially: title → learning objectives → content blocks → key terms
-- `ContentRenderer` switches to sentence-highlighted plain text view for the active block
-- Active sentence gets light blue highlight; already-read sentences are dimmed; auto-scrolls into view
-- Uses same `chunkText()` splitting as TTS engine so highlighting stays perfectly in sync
+- Listen button with glow animation (`animate-listen-glow`) appears at the top of each page
+- `TTSController` component renders a fixed-bottom audio player bar with play/pause, skip, speed, voice selector, and close controls
+- `useTextToSpeech` hook handles both OpenAI TTS (via `openaiTTSPlayer.ts` + `/api/tts` route) and SpeechSynthesis fallback
+- OpenAI mode: fetches audio per sentence chunk from `/api/tts`, caches in Supabase Storage (`audio-cache` bucket), plays via Web Audio API
+- SpeechSynthesis fallback: splits text into ~200-char chunks (avoids iOS 15-sec cutoff bug), uses silent audio keepalive for lock screen
+- `ContentRenderer` highlights the active block (ring + background) and auto-scrolls it into view
+- Voice selector cycles through OpenAI voices (Echo default); speed control adjusts playback rate
+- Space key toggles play/pause when not in a text input
 
-**Speed control (mobile-optimized):**
-- Mobile browsers scale `SpeechSynthesis.rate` much more aggressively than desktop
-- Desktop rates: 0.75, 1.0, 1.25, 1.5, 2.0 (actual values)
-- Mobile rates: 0.85, 1.0, 1.05, 1.1, 1.15 (compressed — same user-facing labels)
-- Rate changes cancel current utterance and restart at new rate immediately
-
-**Auto-pause behavior:**
-- TTS automatically stops when transitioning from content to knowledge checks, written responses, or assignments
-- Pauses when the browser tab is hidden (via `visibilitychange` event)
+**Voice & speed:**
+- Default voice: Echo (configurable in `courseConfig.tts.voice`)
+- Available voices: Alloy, Echo, Fable, Nova, Onyx, Shimmer (persisted in localStorage)
+- Speed options: 0.75x, 1x, 1.25x, 1.5x, 2x (HTMLAudioElement.playbackRate for OpenAI; compressed rates for mobile SpeechSynthesis)
 
 **Key files:**
 | File | Purpose |
 |------|---------|
 | `src/hooks/useSpeechToText.ts` | STT hook — browser detection, start/stop, interim results, error handling |
-| `src/hooks/useTextToSpeech.ts` | TTS hook — sentence chunking, block/chunk tracking, speed control, auto-pause |
+| `src/hooks/useTextToSpeech.ts` | TTS hook — OpenAI + SpeechSynthesis fallback, block/chunk tracking, speed/voice control |
+| `src/lib/openaiTTSPlayer.ts` | OpenAI TTS audio player — Web Audio API, prefetch queue, Supabase cache |
 | `src/lib/stripMarkdown.ts` | Strips `**bold**`, headings, lists, blockquotes → plain text for speech |
+| `src/app/api/tts/route.ts` | OpenAI TTS API route — generates audio, caches in Supabase Storage |
 | `src/components/MicrophoneButton.tsx` | Mic button — idle/recording/error states, 44px touch target |
-| `src/components/TTSController.tsx` | Audio player bar — constructs reading queue from `SectionContent`, controls |
-| `src/components/ContentRenderer.tsx` | Renders sentence-highlighted text when TTS is active for a block |
-| `src/components/FreeTextPrompt.tsx` | Written response textarea — mic button integrated |
+| `src/components/TTSController.tsx` | Audio player bar — accepts `section` or pre-built `blocks[]`, voice/speed/skip controls |
+| `src/components/ContentRenderer.tsx` | Renders content blocks with active-block highlighting when TTS is playing |
+| `src/components/QuizGate.tsx` | Knowledge Check — includes its own Listen button and TTSController for quiz questions |
+| `src/components/FreeTextPrompt.tsx` | Written response — includes its own Listen button and TTSController for prompt |
 | `src/app/assignment/[assignmentId]/AssignmentWorkspace.tsx` | Assignment textarea — mic button integrated |
-| `src/app/chapter/[chapterId]/[sectionId]/SectionLearningFlow.tsx` | Orchestrates TTS state, passes block/chunk indices to ContentRenderer |
+| `src/app/chapter/[chapterId]/[sectionId]/SectionLearningFlow.tsx` | Content page TTS state, auto-stops when leaving content step |
 
 ## Architecture Notes
 
@@ -898,7 +904,7 @@ Allows students to listen to section content read aloud with sentence-level high
 - **Shared Supabase** — all course apps share one Supabase instance via the Course Dashboard. No per-course Supabase projects needed. Migrations will error on shared instances (tables already exist) — this is expected.
 - **Image pipeline** — PyMuPDF extracts images from PDF → curate-images.py selects best per section → update-captions.py adds contextual captions. Images served from `public/images/`.
 - **Speech-to-text** — browser-native Web Speech API, zero cost. `MicrophoneButton` component in `FreeTextPrompt` and `AssignmentWorkspace`. Hidden on unsupported browsers (Firefox).
-- **Text-to-speech** — browser-native Web Speech API, zero cost. `TTSController` with sentence-level highlighting in `ContentRenderer`. Mobile-optimized speed rates. Auto-pauses at knowledge checks and written responses. Space key toggles play/pause. Active sentence uses underline + background for colorblind accessibility.
+- **Text-to-speech** — OpenAI TTS API (Echo voice default) with Supabase audio caching + browser SpeechSynthesis fallback. Per-page Listen buttons on Content, Knowledge Check, and Written Response pages. Each page has its own TTSController that stops at page end. Voice selector, speed control, block-level highlighting. Configurable via `courseConfig.tts`.
 - **Centralized thresholds** — all pass/fail thresholds and grade boundaries live in `courseConfig.thresholds`. Never hardcode 70, 80, 90 etc. — always reference config.
 - **Shared score utilities** — `scoreUtils.ts` provides `getLetterGrade()`, `getScoreColor()`, `getGradeColor()`, `getGradeBg()`. Import from `@/lib/scoreUtils` instead of defining locally.
 - **Attribution** — `Attribution.tsx` footer on every page via `layout.tsx`. Reads from `courseConfig.attribution`. Required for CC BY 4.0 compliance on OpenStax content.
