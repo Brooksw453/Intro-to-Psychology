@@ -252,7 +252,7 @@ export function useTextToSpeech(
         if (idx >= 0) return idx;
       }
     }
-    return 0; // Default: nova
+    return 3; // Default: echo
   });
 
   const blockIndexRef = useRef(0);

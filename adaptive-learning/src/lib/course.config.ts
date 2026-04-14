@@ -65,6 +65,12 @@ export const courseConfig = {
     draftChat: true,
   },
 
+  // Text-to-speech settings (OpenAI TTS API)
+  tts: {
+    voice: 'echo' as const,   // OpenAI voices: alloy, echo, fable, onyx, nova, shimmer
+    model: 'tts-1' as const,  // tts-1 (fast) or tts-1-hd (higher quality, slower)
+  },
+
   // Attribution (required for OER/Creative Commons content)
   attribution: {
     enabled: true,

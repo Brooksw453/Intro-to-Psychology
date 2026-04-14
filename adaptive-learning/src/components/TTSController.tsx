@@ -4,19 +4,24 @@ import { useMemo, useEffect } from 'react';
 import { useTextToSpeech, type TTSBlock, type TTSMediaMetadata } from '@/hooks/useTextToSpeech';
 import { stripMarkdown } from '@/lib/stripMarkdown';
 import { courseConfig } from '@/lib/course.config';
-import type { SectionContent, GateQuiz } from '@/lib/types';
+import type { SectionContent } from '@/lib/types';
 
 interface TTSControllerProps {
-  section: SectionContent;
-  quiz?: GateQuiz;
+  section?: SectionContent;
+  blocks?: TTSBlock[];
+  mediaTitle?: string;
   courseName?: string;
   onBlockIndexChange?: (index: number) => void;
   onChunkIndexChange?: (index: number) => void;
   onClose: () => void;
 }
 
-export default function TTSController({ section, quiz, courseName, onBlockIndexChange, onChunkIndexChange, onClose }: TTSControllerProps) {
+export default function TTSController({ section, blocks: externalBlocks, mediaTitle, courseName, onBlockIndexChange, onChunkIndexChange, onClose }: TTSControllerProps) {
   const blocks: TTSBlock[] = useMemo(() => {
+    // If pre-built blocks are provided, use them directly
+    if (externalBlocks && externalBlocks.length > 0) return externalBlocks;
+    if (!section) return [];
+
     const result: TTSBlock[] = [];
 
     // Section title
@@ -54,42 +59,13 @@ export default function TTSController({ section, quiz, courseName, onBlockIndexC
       });
     }
 
-    // Quiz transition and questions
-    if (quiz) {
-      result.push({
-        label: 'Knowledge Check',
-        text: 'Time for the knowledge check.',
-      });
-
-      for (let i = 0; i < quiz.questions.length; i++) {
-        const q = quiz.questions[i];
-        result.push({
-          label: `Question ${i + 1}`,
-          text: `Question ${i + 1}. ${q.question} A: ${q.options[0].text}. B: ${q.options[1].text}. C: ${q.options[2].text}. D: ${q.options[3].text}.`,
-        });
-      }
-    }
-
-    // Free-text transition and prompt
-    if (section.freeTextPrompt) {
-      result.push({
-        label: 'Written Response',
-        text: 'Written response.',
-      });
-
-      result.push({
-        label: section.freeTextPrompt.id,
-        text: section.freeTextPrompt.prompt,
-      });
-    }
-
     return result;
-  }, [section, quiz]);
+  }, [section, externalBlocks]);
 
   const mediaMetadata: TTSMediaMetadata = useMemo(() => ({
-    title: `${section.sectionId}: ${section.title}`,
+    title: mediaTitle || (section ? `${section.sectionId}: ${section.title}` : 'Audio'),
     artist: courseName || courseConfig.title,
-  }), [section, courseName]);
+  }), [section, mediaTitle, courseName]);
 
   const {
     isPlaying,
