@@ -261,6 +261,7 @@ export default function QuizGate({ quiz, chapterId, sectionId, onResult }: QuizG
         <TTSController
           blocks={ttsBlocks}
           mediaTitle="Knowledge Check"
+          autoPlay
           onClose={() => setShowTTS(false)}
         />
       )}

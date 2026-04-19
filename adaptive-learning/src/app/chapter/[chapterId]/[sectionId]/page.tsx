@@ -98,6 +98,14 @@ export default async function SectionPage({
       status: 'in_progress',
       started_at: new Date().toISOString(),
     });
+
+    // Log section start activity
+    await supabase.from('activity_log').insert({
+      user_id: user.id,
+      course_id: COURSE_ID,
+      activity_type: 'section_start',
+      details: { chapter_id: chapterId, section_id: sectionId, section_name: section.title },
+    });
   }
 
   return (

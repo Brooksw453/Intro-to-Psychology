@@ -253,7 +253,7 @@ export default async function ChaptersPage() {
   const completedSections = (progressData || []).filter(
     (p: SectionProgress) => p.status === 'completed'
   ).length;
-  const overallPercent = totalSections > 0 ? Math.round((completedSections / totalSections) * 100) : 0;
+  const overallPercent = totalSections > 0 ? Math.min(100, Math.round((completedSections / totalSections) * 100)) : 0;
 
   // Quiz stats
   const quizAttempts = (quizData || []) as QuizAttempt[];
@@ -723,7 +723,7 @@ export default async function ChaptersPage() {
               const chapterProgress = progressByChapter.get(chapter.chapterId) || [];
               const completed = chapterProgress.filter(p => p.status === 'completed').length;
               const total = chapter.sections.length;
-              const percent = total > 0 ? Math.round((completed / total) * 100) : 0;
+              const percent = total > 0 ? Math.min(100, Math.round((completed / total) * 100)) : 0;
               const isStarted = chapterProgress.length > 0;
               const isComplete = completed === total;
 
@@ -833,9 +833,9 @@ export default async function ChaptersPage() {
                               <div className="flex-1 bg-purple-100 rounded-full h-2">
                                 <div
                                   className={`h-2 rounded-full transition-all duration-500 ${aComplete ? 'bg-green-500' : 'bg-purple-500'}`}
-                                  style={{ width: `${Math.round((aSubmitted / aTotal) * 100)}%` }}
+                                  style={{ width: `${Math.min(100, Math.round((aSubmitted / aTotal) * 100))}%` }}
                                   role="progressbar"
-                                  aria-valuenow={Math.round((aSubmitted / aTotal) * 100)}
+                                  aria-valuenow={Math.min(100, Math.round((aSubmitted / aTotal) * 100))}
                                   aria-valuemin={0}
                                   aria-valuemax={100}
                                   aria-label={`Assignment ${a.assignmentId} progress`}

@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo, useEffect } from 'react';
+import { useMemo, useEffect, useRef } from 'react';
 import { useTextToSpeech, type TTSBlock, type TTSMediaMetadata } from '@/hooks/useTextToSpeech';
 import { stripMarkdown } from '@/lib/stripMarkdown';
 import { courseConfig } from '@/lib/course.config';
@@ -14,9 +14,11 @@ interface TTSControllerProps {
   onBlockIndexChange?: (index: number) => void;
   onChunkIndexChange?: (index: number) => void;
   onClose: () => void;
+  /** Auto-start playback on mount (once). */
+  autoPlay?: boolean;
 }
 
-export default function TTSController({ section, blocks: externalBlocks, mediaTitle, courseName, onBlockIndexChange, onChunkIndexChange, onClose }: TTSControllerProps) {
+export default function TTSController({ section, blocks: externalBlocks, mediaTitle, courseName, onBlockIndexChange, onChunkIndexChange, onClose, autoPlay = false }: TTSControllerProps) {
   const blocks: TTSBlock[] = useMemo(() => {
     // If pre-built blocks are provided, use them directly
     if (externalBlocks && externalBlocks.length > 0) return externalBlocks;
@@ -97,6 +99,17 @@ export default function TTSController({ section, blocks: externalBlocks, mediaTi
       onChunkIndexChange?.(currentChunkIndex);
     }
   }, [currentBlockIndex, currentChunkIndex, isPlaying, onBlockIndexChange, onChunkIndexChange]);
+
+  // Auto-start playback once, when TTS reports ready. The parent mounts
+  // this component in direct response to a user tap on "Listen", so the
+  // call chain stays close enough to the gesture for most browsers.
+  const didAutoPlayRef = useRef(false);
+  useEffect(() => {
+    if (!autoPlay || didAutoPlayRef.current) return;
+    if (!isSupported || blocks.length === 0) return;
+    didAutoPlayRef.current = true;
+    play();
+  }, [autoPlay, isSupported, blocks.length, play]);
 
   // Keyboard shortcut: Space to play/pause (only when not typing in an input)
   useEffect(() => {

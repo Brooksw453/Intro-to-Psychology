@@ -303,6 +303,7 @@ export default function FreeTextPrompt({
         <TTSController
           blocks={ttsBlocks}
           mediaTitle="Written Response"
+          autoPlay
           onClose={() => setShowTTS(false)}
         />
       )}

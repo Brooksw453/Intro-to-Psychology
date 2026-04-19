@@ -747,7 +747,13 @@ Certificate displays: student name, course title, letter grade (A-F) + percentag
 
 ### Activity tracking
 - `activity_log` table records student actions with `activity_type` and `details` JSON
-- `ActivityTimeline.tsx` on student dashboard shows recent activity
+- Events are logged server-side at the point of action:
+  - `login` — logged in `src/app/auth/sso/route.ts` after SSO profile upsert
+  - `section_start` — logged in `src/app/chapter/[chapterId]/[sectionId]/page.tsx` when section_progress is first created
+  - `section_complete` — logged in `src/app/api/free-text/evaluate/route.ts` when mastery score meets threshold
+  - `quiz_attempt` — logged in `src/app/api/quiz/submit/route.ts` after quiz_attempts insert
+  - `assignment_submit` — logged in `src/app/api/assignment/evaluate/route.ts` after assignment_drafts insert
+- `ActivityTimeline.tsx` on student dashboard shows recent activity grouped by date
 - `MilestoneBanner.tsx` celebrates student achievements
 
 ## Database Schema (Supabase)
@@ -858,13 +864,20 @@ Each page has its own independent Listen button and TTSController instance:
 
 **How it works:**
 - Listen button with glow animation (`animate-listen-glow`) appears at the top of each page
+- Tapping **Listen** opens the player AND starts playback in one tap (`autoPlay` prop on `TTSController`) — no second tap on Play required
 - `TTSController` component renders a fixed-bottom audio player bar with play/pause, skip, speed, voice selector, and close controls
 - `useTextToSpeech` hook handles both OpenAI TTS (via `openaiTTSPlayer.ts` + `/api/tts` route) and SpeechSynthesis fallback
-- OpenAI mode: fetches audio per sentence chunk from `/api/tts`, caches in Supabase Storage (`audio-cache` bucket), plays via Web Audio API
+- OpenAI mode: fetches audio per sentence chunk from `/api/tts`, caches in Supabase Storage (`audio-cache` bucket), plays via `HTMLAudioElement`
 - SpeechSynthesis fallback: splits text into ~200-char chunks (avoids iOS 15-sec cutoff bug), uses silent audio keepalive for lock screen
 - `ContentRenderer` highlights the active block (ring + background) and auto-scrolls it into view
 - Voice selector cycles through OpenAI voices (Echo default); speed control adjusts playback rate
 - Space key toggles play/pause when not in a text input
+
+**Bluetooth / A2DP persistence across pages:**
+- The silent-WAV keepalive audio element in `openaiTTSPlayer.ts` is **module-scoped**, not per-player-instance — it survives component unmount and page navigation
+- On natural end of a section (and on component unmount), the player stops the current chunk but leaves the keepalive running, so iOS holds onto the audio session and the next section's TTS still routes through Bluetooth / CarPlay
+- Only the explicit "close player" action (X button) calls `shutdownKeepalive()` to fully release the audio session
+- The end-of-section handler also avoids publishing an out-of-bounds block index, so Bluetooth / lock-screen metadata never briefly displays a stale "next section" label between the last chunk and state reset
 
 **Voice & speed:**
 - Default voice: Echo (configurable in `courseConfig.tts.voice`)

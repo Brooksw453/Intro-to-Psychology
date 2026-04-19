@@ -63,6 +63,14 @@ export async function POST(request: Request) {
       passed,
     });
 
+    // Log quiz attempt activity
+    await supabase.from('activity_log').insert({
+      user_id: user.id,
+      course_id: COURSE_ID,
+      activity_type: 'quiz_attempt',
+      details: { section_name: `${sectionId}`, score: Math.round(score), passed, attempt: attemptNumber },
+    });
+
     // Update section progress
     if (passed) {
       await supabase

@@ -366,6 +366,7 @@ export default function SectionLearningFlow({
       {showTTS && currentStep === 'content' && (
         <TTSController
           section={section}
+          autoPlay
           onBlockIndexChange={handleTTSBlockChange}
           onChunkIndexChange={handleTTSChunkChange}
           onClose={() => { setShowTTS(false); setTTSBlockIndex(undefined); setTTSChunkIndex(undefined); }}
